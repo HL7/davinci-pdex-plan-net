@@ -1,0 +1,14 @@
+﻿DaVinciPayerDataExchangePlanNetwork : Validation Results
+=========================================
+
+err = 6, warn = 0, info = 0
+Generated Thu May 02 15:32:23 EDT 2019. FHIR version 4.1.0 for 4.0.0
+
+ Build Errors : 0 / 0
+ C:\Windows\Temp\tmp-6956QENZnituipjM\source\resources\implementationguide\4y9cKSGi : 3 / 0
+</table>
+== n/a ==
+== C:\Windows\Temp\tmp-6956QENZnituipjM\source\resources\implementationguide\4y9cKSGi.xml ==
+ERROR: ImplementationGuide/4y9cKSGi: ImplementationGuide: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.fhirVersion': minimum required = 1, but only found 0
+ERROR: ImplementationGuide/4y9cKSGi: ImplementationGuide.definition: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.definition.resource': minimum required = 1, but only found 0
+ERROR: C:\Windows\Temp\tmp-6956QENZnituipjM\source\resources\implementationguide\4y9cKSGi: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/4y9cKSGi vs http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/davinci-pdex-plan-net
