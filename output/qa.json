@@ -3,7 +3,7 @@
   "name": "DaVinciPayerDataExchangePlanNetwork",
   "package-id": "hl7.fhir.us.davinci-pdex-plan-net",
   "ig-ver": "0.0.1.0",
-  "date": "Thu, 02 May, 2019 15:31:53 -0400",
+  "date": "Fri, 03 May, 2019 12:12:17 -0400",
   "errs": 6,
   "warnings": 0,
   "hints": 0,

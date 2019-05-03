@@ -7,15 +7,15 @@
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Windows\\Temp\\tmp-6956QENZnituipjM\\source\\resources"
+    "valueString" : "C:\\Windows\\Temp\\tmp-6956Uss0NfnCQ2e6\\source\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Windows\\Temp\\tmp-6956QENZnituipjM\\framework"
+    "valueString" : "C:\\Windows\\Temp\\tmp-6956Uss0NfnCQ2e6\\framework"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Windows\\Temp\\tmp-6956QENZnituipjM\\source\\pages"
+    "valueString" : "C:\\Windows\\Temp\\tmp-6956Uss0NfnCQ2e6\\source\\pages"
   }],
   "url" : "http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/davinci-pdex-plan-net",
   "version" : "0.0.1.0",

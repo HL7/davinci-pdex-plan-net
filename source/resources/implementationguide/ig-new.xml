@@ -7,13 +7,13 @@
     <lastUpdated value="2019-04-26T08:35:28.000-04:00"/>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Windows\Temp\tmp-6956QENZnituipjM\source\resources"/>
+    <valueString value="C:\Windows\Temp\tmp-6956Uss0NfnCQ2e6\source\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Windows\Temp\tmp-6956QENZnituipjM\framework"/>
+    <valueString value="C:\Windows\Temp\tmp-6956Uss0NfnCQ2e6\framework"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Windows\Temp\tmp-6956QENZnituipjM\source\pages"/>
+    <valueString value="C:\Windows\Temp\tmp-6956Uss0NfnCQ2e6\source\pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/davinci-pdex-plan-net"/>
   <version value="0.0.1.0"/>
