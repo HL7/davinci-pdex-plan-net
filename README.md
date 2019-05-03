@@ -1,7 +1,7 @@
 # davinci-pdex-plan-network
-FHIR IG: Payer Data Exchange Plan Network Directory (PDex-Planet)
+FHIR IG: Payer Data Exchange Plan Network Directory (PDex-Plan-net)
 
-This Repository is used by HL7 to publish the Continuous Integration Build of the Da Vinci Payer Data Exchange (PDex) for Plan Network Directories (PDex-Planet)
+This Repository is used by HL7 to publish the Continuous Integration Build of the Da Vinci Payer Data Exchange (PDex) for Plan Network Directories (PDex-Plan-net)
 Implementation Guide (IG). You can find the published IG at: http://build.fhir.org/ig/HL7/davinci-pdex-plan-net/
 
 The PDex-Planet IG is the work product of the HL7 Da Vinci Project.
