@@ -1,6 +1,6 @@
 {
 	"tool": "jekyll",
-	"source": "implementationguide/4y9cKSGi.xml",
+	"source": "implementationguide/pdex-plan-net.xml",
 	"npm-name": "hl7.fhir.us.davinci-pdex-plan-net",
 	"license": "CC0-1.0",
 	"paths": {
@@ -93,8 +93,47 @@
 			"template-base": "ex.html"
 		}
 	},
-	"resources": {},
+	"resources": {
+		"StructureDefinition/us-core-practitioner": {
+			"base": "StructureDefinition-us-core-practitioner.html",
+			"defns": "StructureDefinition-us-core-practitioner-definitions.html"
+		},
+		"StructureDefinition/us-core-organization": {
+			"base": "StructureDefinition-us-core-organization.html",
+			"defns": "StructureDefinition-us-core-organization-definitions.html"
+		},
+		"StructureDefinition/us-core-practitionerrole": {
+			"base": "StructureDefinition-us-core-practitionerrole.html",
+			"defns": "StructureDefinition-us-core-practitionerrole-definitions.html"
+		},
+		"StructureDefinition/us-core-organizationaffiliation": {
+			"base": "StructureDefinition-us-core-organizationaffiliation.html",
+			"defns": "StructureDefinition-us-core-organizationaffiliation-definitions.html"
+		},
+		"StructureDefinition/us-core-location": {
+			"base": "StructureDefinition-us-core-location.html",
+			"defns": "StructureDefinition-us-core-location-definitions.html"
+		},
+		"StructureDefinition/us-core-insuranceplan": {
+			"base": "StructureDefinition-us-core-insuranceplan.html",
+			"defns": "StructureDefinition-us-core-insuranceplan-definitions.html"
+		},
+		"StructureDefinition/us-core-healthcareservice": {
+			"base": "StructureDefinition-us-core-healthcareservice.html",
+			"defns": "StructureDefinition-us-core-healthcareservice-definitions.html"
+		},
+		"StructureDefinition/us-core-network": {
+			"base": "StructureDefinition-us-core-network.html",
+			"defns": "StructureDefinition-us-core-network-definitions.html"
+		}
+	},
 	"version": "4.0.0",
 	"fixed-business-version": "0.0.1.0",
-	"dependencyList": []
+	"dependencyList": [
+		{
+			"location": "http://hl7.org/fhir/us/core",
+			"name": "USCoreR4",
+			"version": "current"
+		}
+	]
 }

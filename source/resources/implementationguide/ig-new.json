@@ -1,23 +1,31 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "4y9cKSGi",
+  "id" : "pdex-plan-net",
   "meta" : {
-    "versionId" : "8",
-    "lastUpdated" : "2019-04-26T08:35:28.000-04:00"
+    "versionId" : "13",
+    "lastUpdated" : "2019-07-08T12:22:21.000-04:00",
+    "security" : [{
+      "system" : "https://trifolia-fhir.lantanagroup.com/security",
+      "code" : "everyone^read"
+    },
+    {
+      "system" : "https://trifolia-fhir.lantanagroup.com/security",
+      "code" : "everyone^write"
+    }]
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Windows\\Temp\\tmp-6956Uss0NfnCQ2e6\\source\\resources"
+    "valueString" : "C:\\Windows\\Temp\\tmp-860H3h6jMJOQMR6\\source\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Windows\\Temp\\tmp-6956Uss0NfnCQ2e6\\framework"
+    "valueString" : "C:\\Windows\\Temp\\tmp-860H3h6jMJOQMR6\\framework"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Windows\\Temp\\tmp-6956Uss0NfnCQ2e6\\source\\pages"
+    "valueString" : "C:\\Windows\\Temp\\tmp-860H3h6jMJOQMR6\\source\\pages"
   }],
-  "url" : "http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/davinci-pdex-plan-net",
+  "url" : "http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/pdex-plan-net",
   "version" : "0.0.1.0",
   "name" : "DaVinciPayerDataExchangePlanNetwork",
   "title" : "Da Vinci Payer Data exchange Plan Network Directory",
@@ -27,7 +35,77 @@
   "packageId" : "hl7.fhir.us.davinci-pdex-plan-net",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.0"],
+  "dependsOn" : [{
+    "id" : "USCoreR4",
+    "uri" : "http://hl7.org/fhir/us/core",
+    "packageId" : "hl7.fhir.us.core",
+    "version" : "current"
+  }],
   "definition" : {
+    "resource" : [{
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-practitioner",
+        "display" : "Practitioner"
+      },
+      "name" : "Practitioner",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-organization",
+        "display" : "Organization"
+      },
+      "name" : "Organization",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-practitionerrole",
+        "display" : "PracitionerRole"
+      },
+      "name" : "Practitioner Role",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-organizationaffiliation",
+        "display" : "OrganizationAffiliation"
+      },
+      "name" : "Organization Affiliation",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-location",
+        "display" : "Location"
+      },
+      "name" : "Location",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-insuranceplan",
+        "display" : "InsurancePlan"
+      },
+      "name" : "Insurance Plan",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-healthcareservice",
+        "display" : "HealthcareService"
+      },
+      "name" : "Healthcare Service",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-network",
+        "display" : "Network"
+      },
+      "name" : "Network",
+      "exampleBoolean" : false
+    }],
     "page" : {
       "nameUrl" : "toc.md",
       "title" : "Table of Contents",

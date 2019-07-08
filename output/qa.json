@@ -1,12 +1,10 @@
 ﻿{
-  "url": "http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/davinci-pdex-plan-net",
+  "url": "http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/pdex-plan-net",
   "name": "DaVinciPayerDataExchangePlanNetwork",
   "package-id": "hl7.fhir.us.davinci-pdex-plan-net",
   "ig-ver": "0.0.1.0",
-  "date": "Fri, 03 May, 2019 12:12:17 -0400",
-  "errs": 6,
-  "warnings": 0,
-  "hints": 0,
+  "date": "Mon, 08 Jul, 2019 16:52:42 -0400",
+  "exception": "base is null (null from http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/us-core-practitioner)",
   "version": "4.0.0",
   "tool": "4.1.0 (3)"
 }

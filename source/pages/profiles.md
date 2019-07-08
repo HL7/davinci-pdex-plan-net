@@ -16,3 +16,49 @@ active: profiles
 ---
 <br />
 
+### Profiles
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="StructureDefinition-us-core-practitioner.html">undefined</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-us-core-organization.html">undefined</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-us-core-practitionerrole.html">undefined</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-us-core-organizationaffiliation.html">undefined</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-us-core-location.html">undefined</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-us-core-insuranceplan.html">undefined</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-us-core-healthcareservice.html">undefined</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-us-core-network.html">undefined</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
