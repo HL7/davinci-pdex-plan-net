@@ -37,6 +37,10 @@ active: profiles
 </td>
 </tr>
 <tr>
+<td><a href="StructureDefinition-pdexplanlocation.html">PdexPlanLocation</a></td>
+<td>The Location profile identifies the facilities related to an organization.</td>
+</tr>
+<tr>
 <td><a href="StructureDefinition-pdexplanorganization.html">PdexPlanOrganization</a></td>
 <td>This is the Organization resource. It uses the US Core Organization profile. </td>
 </tr>

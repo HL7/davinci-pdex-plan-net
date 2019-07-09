@@ -10,11 +10,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource defines the Organizations that are represented in a Health Plan Directory</div>"
   },
   "url": "pdex-plan-net/structuredefinition/pdex-plan-organization",
-  "version": "0.0.1.040",
+  "version": "0.0.1.044",
   "name": "PdexPlanOrganization",
   "title": "PDex Plan Organization",
   "status": "draft",
-  "date": "2019-07-08T23:09:29-04:00",
+  "date": "2019-07-08T23:28:07-04:00",
   "publisher": "HL7 Da Vinci",
   "description": "This is the Organization resource. It uses the US Core Organization profile. ",
   "fhirVersion": "4.0.0",

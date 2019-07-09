@@ -1,14 +1,15 @@
 ﻿DaVinciPayerDataExchangePlanNetwork : Validation Results
 =========================================
 
-err = 14, warn = 0, info = 0
-Generated Mon Jul 08 23:09:51 EDT 2019. FHIR version 4.1.0 for 4.0.0
+err = 18, warn = 0, info = 0
+Generated Mon Jul 08 23:28:31 EDT 2019. FHIR version 4.1.0 for 4.0.0
 
- Build Errors : 9 / 0
- C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\implementationguide\pdex-plan-net : 0 / 0
- C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\structuredefinition\PdexPlanPractitionerRole : 2 / 0
- C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\structuredefinition\pdexplanorganization : 2 / 0
- C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\structuredefinition\pdexplanpractitioner : 3 / 0
+ Build Errors : 14 / 0
+ C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\implementationguide\pdex-plan-net : 0 / 0
+ C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\PdexPlanPractitionerRole : 2 / 0
+ C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\pdexplanlocation : 2 / 0
+ C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\pdexplanorganization : 2 / 0
+ C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\pdexplanpractitioner : 3 / 0
 </table>
 == n/a ==
 ERROR: Practitioner.qualification.code: The reference http://hl7.org/fhir/ValueSet/v2-2.7-0360 could not be resolved
@@ -16,18 +17,26 @@ ERROR: ??: The reference pdex-plan-net/structuredefinition/pdex-plan-practitione
 ERROR: Organization.address.state: The reference http://hl7.org/fhir/ValueSet/usps-state could not be resolved
 ERROR: ??: The reference pdex-plan-net/structuredefinition/pdex-plan-organization could not be resolved
 ERROR: ??: The reference pdex-plan-net/structuredefinition/pdex-plan-practitionerrole could not be resolved
-ERROR: C:\Windows\Temp\tmp-8603tFYwkSswlNy\output\StructureDefinition-pdexplanorganization-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/br/tr/td/a at Line 570, column 152: The link 'usps-state.html' for "usps-state" cannot be resolved
-ERROR: C:\Windows\Temp\tmp-8603tFYwkSswlNy\output\StructureDefinition-pdexplanpractitioner-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/br/tr/td/a at Line 605, column 176: The link 'v2-2.7-0360.html' for "v2-2.7-0360" cannot be resolved
-ERROR: C:\Windows\Temp\tmp-8603tFYwkSswlNy\output\StructureDefinition-pdexplanorganization.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 411, column 2067: The link 'usps-state.html' for "usps-state" cannot be resolved
-ERROR: C:\Windows\Temp\tmp-8603tFYwkSswlNy\output\StructureDefinition-pdexplanpractitioner.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 435, column 1689: The link 'v2-2.7-0360.html' for "v2-2.7-0360" cannot be resolved
-== C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\implementationguide\pdex-plan-net.xml ==
-== C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\structuredefinition\PdexPlanPractitionerRole.json ==
-ERROR: pdex-plan-net/structuredefinition/pdex-plan-practitionerrole: conformance resource C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\structuredefinition\PdexPlanPractitionerRole.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/PdexPlanPractitionerRole) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-practitionerrole)
-ERROR: C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\structuredefinition\PdexPlanPractitionerRole: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/PdexPlanPractitionerRole vs pdex-plan-net/structuredefinition/pdex-plan-practitionerrole
-== C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\structuredefinition\pdexplanorganization.json ==
-ERROR: pdex-plan-net/structuredefinition/pdex-plan-organization: conformance resource C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\structuredefinition\pdexplanorganization.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanorganization) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-organization)
-ERROR: C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\structuredefinition\pdexplanorganization: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanorganization vs pdex-plan-net/structuredefinition/pdex-plan-organization
-== C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\structuredefinition\pdexplanpractitioner.json ==
+ERROR: Location.operationalStatus: The reference http://hl7.org/fhir/ValueSet/v2-0116 could not be resolved
+ERROR: C:\Windows\Temp\tmp-860qvlWjIvGtuJT\output\StructureDefinition-pdexplanlocation-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/br/tr/td/a at Line 367, column 187: The link 'v2-0116.html' for "v2-0116" cannot be resolved
+ERROR: C:\Windows\Temp\tmp-860qvlWjIvGtuJT\output\StructureDefinition-pdexplanlocation-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/br/tr/td/a at Line 505, column 152: The link 'usps-state.html' for "usps-state" cannot be resolved
+ERROR: C:\Windows\Temp\tmp-860qvlWjIvGtuJT\output\StructureDefinition-pdexplanorganization-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/br/tr/td/a at Line 570, column 152: The link 'usps-state.html' for "usps-state" cannot be resolved
+ERROR: C:\Windows\Temp\tmp-860qvlWjIvGtuJT\output\StructureDefinition-pdexplanpractitioner.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 435, column 1689: The link 'v2-2.7-0360.html' for "v2-2.7-0360" cannot be resolved
+ERROR: C:\Windows\Temp\tmp-860qvlWjIvGtuJT\output\StructureDefinition-pdexplanlocation.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 390, column 1977: The link 'v2-0116.html' for "v2-0116" cannot be resolved
+ERROR: C:\Windows\Temp\tmp-860qvlWjIvGtuJT\output\StructureDefinition-pdexplanlocation.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 406, column 2055: The link 'usps-state.html' for "usps-state" cannot be resolved
+ERROR: C:\Windows\Temp\tmp-860qvlWjIvGtuJT\output\StructureDefinition-pdexplanorganization.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 411, column 2067: The link 'usps-state.html' for "usps-state" cannot be resolved
+ERROR: C:\Windows\Temp\tmp-860qvlWjIvGtuJT\output\StructureDefinition-pdexplanpractitioner-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/br/tr/td/a at Line 605, column 176: The link 'v2-2.7-0360.html' for "v2-2.7-0360" cannot be resolved
+== C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\implementationguide\pdex-plan-net.xml ==
+== C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\PdexPlanPractitionerRole.json ==
+ERROR: pdex-plan-net/structuredefinition/pdex-plan-practitionerrole: conformance resource C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\PdexPlanPractitionerRole.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/PdexPlanPractitionerRole) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-practitionerrole)
+ERROR: C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\PdexPlanPractitionerRole: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/PdexPlanPractitionerRole vs pdex-plan-net/structuredefinition/pdex-plan-practitionerrole
+== C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\pdexplanlocation.json ==
+ERROR: pdex-plan-net/structuredefinition/pdex-plan-organization: conformance resource C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\pdexplanlocation.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanlocation) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-organization)
+ERROR: C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\pdexplanlocation: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanlocation vs pdex-plan-net/structuredefinition/pdex-plan-organization
+== C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\pdexplanorganization.json ==
+ERROR: pdex-plan-net/structuredefinition/pdex-plan-organization: conformance resource C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\pdexplanorganization.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanorganization) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-organization)
+ERROR: C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\pdexplanorganization: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanorganization vs pdex-plan-net/structuredefinition/pdex-plan-organization
+== C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\pdexplanpractitioner.json ==
 ERROR: StructureDefinition/pdexplanpractitioner: StructureDefinition.differential.element[3].slicing: If there are no discriminators, there must be a definition [discriminator.exists() or description.exists()]
-ERROR: pdex-plan-net/structuredefinition/pdex-plan-practitioner: conformance resource C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\structuredefinition\pdexplanpractitioner.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanpractitioner) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-practitioner)
-ERROR: C:\Windows\Temp\tmp-8603tFYwkSswlNy\source\resources\structuredefinition\pdexplanpractitioner: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanpractitioner vs pdex-plan-net/structuredefinition/pdex-plan-practitioner
+ERROR: pdex-plan-net/structuredefinition/pdex-plan-practitioner: conformance resource C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\pdexplanpractitioner.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanpractitioner) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-practitioner)
+ERROR: C:\Windows\Temp\tmp-860qvlWjIvGtuJT\source\resources\structuredefinition\pdexplanpractitioner: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanpractitioner vs pdex-plan-net/structuredefinition/pdex-plan-practitioner

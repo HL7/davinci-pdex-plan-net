@@ -10,11 +10,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The PreactitionerRole defines the services a Practitioner undertakes</div>"
   },
   "url": "pdex-plan-net/structuredefinition/pdex-plan-practitionerrole",
-  "version": "0.0.1.040",
+  "version": "0.0.1.044",
   "name": "PdexPlanPractitionerRole",
   "title": "PDex Plan PractitionerRole",
   "status": "draft",
-  "date": "2019-07-08T23:09:29-04:00",
+  "date": "2019-07-08T23:28:07-04:00",
   "publisher": "HL7 Da Vinci",
   "description": "The PractitionerRole identifies the services and functions a Practitioner can perform.",
   "fhirVersion": "4.0.0",

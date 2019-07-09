@@ -17,11 +17,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource defines the Organizations that are represented in a Health Plan Directory</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "pdex-plan-net/structuredefinition/pdex-plan-organization"];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1.040"];
+  fhir:StructureDefinition.version [ fhir:value "0.0.1.044"];
   fhir:StructureDefinition.name [ fhir:value "PdexPlanOrganization"];
   fhir:StructureDefinition.title [ fhir:value "PDex Plan Organization"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-07-08T23:09:29-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-07-08T23:28:07-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Da Vinci"];
   fhir:StructureDefinition.description [ fhir:value "This is the Organization resource. It uses the US Core Organization profile. "];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
