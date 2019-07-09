@@ -10,11 +10,11 @@
     <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">The PractitionerRole resource is defined here</div>
   </text>
   <url value="pdex-plan-net/structuredefinition/pdex-plan-practitionerrole"/>
-  <version value="0.0.1.29"/>
+  <version value="0.0.1.31"/>
   <name value="PDexPlanPractitionerRole"/>
   <title value="Practitioner Role"/>
   <status value="draft"/>
-  <date value="2019-07-08T20:06:03-04:00"/>
+  <date value="2019-07-08T20:36:41-04:00"/>
   <publisher value="HL7 Da Vinci"/>
   <description value="This defines the PractitionerRole and it&#39;s relationship to the Practitioner and other resources"/>
   <fhirVersion value="4.0.0"/>

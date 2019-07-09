@@ -214,7 +214,7 @@ can only resize using html  or css ;-(
     
       <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a><a class="breadcrumb-item" href="index.html">Home</a>
       /
-      <span class="breadcrumb-item active">3-3 OAuth2.0 and FHIR APIs</span>
+      <span class="breadcrumb-item active">3-3 OAuth2 and FHIR APIs</span>
     
     
 
@@ -224,19 +224,20 @@ can only resize using html  or css ;-(
 
   <!-- ============CONTENT CONTENT=============== -->
 
-<h1>3-3 OAuth2.0 and FHIR APIs</h1>
+<h1>3-3 OAuth2 and FHIR APIs</h1>
 
-<!--page source: 3-3_OAuth2.0_and_FHIR_APIs-->
+<!--page source: 3-3_OAuth2_and_FHIR_APIs.md-->
 
-The well defined mechanism for enabling Member/Patient authorization to share information with an application using the FHIR API is to use OAuth2.0 as the Authorization protocol. The member **SHALL** authenticate using credentials they have been issued by, or are accepted by the Health Plan. This **MAY** be the member's customer portal credentials.
+<p>The well defined mechanism for enabling Member/Patient authorization to share information with an application using the FHIR API is to use OAuth2.0 as the Authorization protocol. The member <strong>SHALL</strong> authenticate using credentials they have been issued by, or are accepted by the Health Plan. This <strong>MAY</strong> be the member’s customer portal credentials.</p>
 
-After authenticating the Member **SHALL** be presented with an Authorization screen that enables them to approve the sharing of some or all information with the Third Party Application that has client application credentials registered with the Health Plan.
+<p>After authenticating the Member <strong>SHALL</strong> be presented with an Authorization screen that enables them to approve the sharing of some or all information with the Third Party Application that has client application credentials registered with the Health Plan.</p>
 
-After successfully authorizing an application an Access Token and Optional Refresh Token **SHALL** be returned to the requesting application. 
+<p>After successfully authorizing an application an Access Token and Optional Refresh Token <strong>SHALL</strong> be returned to the requesting application.</p>
 
-The requesting application **SHALL** use the access token to access the Health Plan's secure FHIR API to download the information that the Member is allowed to access. 
+<p>The requesting application <strong>SHALL</strong> use the access token to access the Health Plan’s secure FHIR API to download the information that the Member is allowed to access.</p>
 
-The Health Plan **MAY** choose to make the Healthcare and Pharmacy Network directory resources available without requiring Member authorization. 
+<p>The Health Plan <strong>MAY</strong> choose to make the Healthcare and Pharmacy Network directory resources available without requiring Member authorization.</p>
+
 
 
   <!-- ==============END CONTENT END CONTENT=================== -->
@@ -266,7 +267,7 @@ The Health Plan **MAY** choose to make the Healthcare and Pharmacy Network direc
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      DaVinciPayerDataExchangePlanNetwork Version: 0.0.1.29  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.0</a> (IG Publisher v4.0.0-a53ec6ee1b) generated on Mon, Jul 8, 2019 20:06-0400.
+      DaVinciPayerDataExchangePlanNetwork Version: 0.0.1.31  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.0</a> (IG Publisher v4.0.0-a53ec6ee1b) generated on Mon, Jul 8, 2019 20:36-0400.
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

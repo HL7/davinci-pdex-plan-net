@@ -3,8 +3,8 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="pdex-plan-net"/>
   <meta>
-    <versionId value="30"/>
-    <lastUpdated value="2019-07-08T19:33:51.000-04:00"/>
+    <versionId value="32"/>
+    <lastUpdated value="2019-07-08T20:36:16.000-04:00"/>
     <security>
       <system value="https://trifolia-fhir.lantanagroup.com/security"/>
       <code value="everyone^read"/>
@@ -15,16 +15,16 @@
     </security>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Windows\Temp\tmp-860K7aDcq6O0ZX4\source\resources"/>
+    <valueString value="C:\Windows\Temp\tmp-860rOX4ZY5p0db9\source\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Windows\Temp\tmp-860K7aDcq6O0ZX4\framework"/>
+    <valueString value="C:\Windows\Temp\tmp-860rOX4ZY5p0db9\framework"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Windows\Temp\tmp-860K7aDcq6O0ZX4\source\pages"/>
+    <valueString value="C:\Windows\Temp\tmp-860rOX4ZY5p0db9\source\pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/pdex-plan-net"/>
-  <version value="0.0.1.29"/>
+  <version value="0.0.1.31"/>
   <name value="DaVinciPayerDataExchangePlanNetwork"/>
   <title value="Da Vinci Payer Data exchange Plan Network Directory"/>
   <status value="draft"/>
@@ -39,7 +39,7 @@
       <value value="mark@ekivemark.com"/>
     </telecom>
   </contact>
-  <description value="This specification is currently undergoing ballot and connectathon testing. It is expected to evolve, possibly significantly, as part of that process.&#xA;Feedback is welcome and may be submitted through the FHIR gForge tracker indicating US Da Vinci PDex-plan-net as the specification. If balloting on this Implementation Guide (IG), please submit your comments via the tracker and just reference them in your ballot submission.&#xA;&#xA;This Implementation Guide should be read in conjunction with the Payer Data exchange Implementation Guide (PDex-IG).&#xA;This IG covers the requirements and profiles required to enable health plans to publish Healthcare and Pharmacy network information to members via API.&#xA;&#xA;See the [Table of Contents](toc.html) for more information.&#xA;&#xA;#### Latest Changes&#xA;First commit."/>
+  <description value="This specification is currently undergoing ballot and connectathon testing. It is expected to evolve, possibly significantly, as part of that process.&#xA;Feedback is welcome and may be submitted through the FHIR gForge tracker indicating US Da Vinci PDex-plan-net as the specification. If balloting on this Implementation Guide (IG), please submit your comments via the tracker and just reference them in your ballot submission.&#xA;&#xA;This Implementation Guide should be read in conjunction with the Payer Data exchange Implementation Guide (PDex-IG).&#xA;This IG covers the requirements and profiles required to enable health plans to publish Healthcare and Pharmacy network information to members via API.&#xA;&#xA;See the [Table of Contents](toc.html) for more information.&#xA;&#xA;#### Latest Changes&#xA;31 - fixed 2.0 in page name - it breaks markdown/html"/>
   <packageId value="hl7.fhir.us.davinci-pdex-plan-net"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
@@ -115,8 +115,8 @@
           <generation value="markdown"/>
         </page>
         <page>
-          <nameUrl value="3-3_OAuth2.0_and_FHIR_APIs.html"/>
-          <title value="3-3 OAuth2.0 and FHIR APIs"/>
+          <nameUrl value="3-3_OAuth2_and_FHIR_APIs.html"/>
+          <title value="3-3 OAuth2 and FHIR APIs"/>
           <generation value="markdown"/>
         </page>
       </page>

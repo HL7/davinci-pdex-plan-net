@@ -14,5 +14,5 @@ active: toc
     * <a href="3_Actors,_Profiles_and_Methods.html">3 Actors, Profiles and Methods</a>
         * <a href="3-1_Actors.html">3-1 Actors</a>
         * <a href="3-2_Profiles.html">3-2 Profiles</a>
-        * <a href="3-3_OAuth2.0_and_FHIR_APIs">3-3 OAuth2.0 and FHIR APIs</a>
+        * <a href="3-3_OAuth2_and_FHIR_APIs.html">3-3 OAuth2 and FHIR APIs</a>
     * <a href="4_Credits.html">4 Credits</a>

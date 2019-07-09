@@ -1,7 +1,7 @@
 ---
-title: 3-3 OAuth2.0 and FHIR APIs
+title: 3-3 OAuth2 and FHIR APIs
 layout: default
-active: 3-3 OAuth2.0 and FHIR APIs
+active: 3-3 OAuth2 and FHIR APIs
 ---
 
 The well defined mechanism for enabling Member/Patient authorization to share information with an application using the FHIR API is to use OAuth2.0 as the Authorization protocol. The member **SHALL** authenticate using credentials they have been issued by, or are accepted by the Health Plan. This **MAY** be the member's customer portal credentials.
