@@ -2,8 +2,8 @@
   "resourceType" : "ImplementationGuide",
   "id" : "pdex-plan-net",
   "meta" : {
-    "versionId" : "45",
-    "lastUpdated" : "2019-07-08T23:27:42.000-04:00",
+    "versionId" : "47",
+    "lastUpdated" : "2019-07-09T12:12:36.000-04:00",
     "security" : [{
       "system" : "https://trifolia-fhir.lantanagroup.com/security",
       "code" : "everyone^read"
@@ -15,18 +15,18 @@
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Windows\\Temp\\tmp-860qvlWjIvGtuJT\\source\\resources"
+    "valueString" : "C:\\Windows\\Temp\\tmp-86017Fm26IYleZH\\source\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Windows\\Temp\\tmp-860qvlWjIvGtuJT\\framework"
+    "valueString" : "C:\\Windows\\Temp\\tmp-86017Fm26IYleZH\\framework"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Windows\\Temp\\tmp-860qvlWjIvGtuJT\\source\\pages"
+    "valueString" : "C:\\Windows\\Temp\\tmp-86017Fm26IYleZH\\source\\pages"
   }],
   "url" : "http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/pdex-plan-net",
-  "version" : "0.0.1.044",
+  "version" : "0.0.1.046",
   "name" : "DaVinciPayerDataExchangePlanNetwork",
   "title" : "Da Vinci Payer Data exchange Plan Network Directory",
   "status" : "draft",
@@ -41,7 +41,7 @@
       "value" : "mark@ekivemark.com"
     }]
   }],
-  "description" : "This specification is currently undergoing ballot and connectathon testing. It is expected to evolve, possibly significantly, as part of that process.\nFeedback is welcome and may be submitted through the FHIR gForge tracker indicating US Da Vinci PDex-plan-net as the specification. If balloting on this Implementation Guide (IG), please submit your comments via the tracker and just reference them in your ballot submission.\n\nThis Implementation Guide should be read in conjunction with the Payer Data exchange Implementation Guide (PDex-IG).\nThis IG covers the requirements and profiles required to enable health plans to publish Healthcare and Pharmacy network information to members via API.\n\nSee the [Table of Contents](toc.html) for more information.\n\n#### Latest Changes\n- 044: Adding Location Profile\n- 040: Fix PractitionerRole links\n- 035: fixing profile references\n- 033: Added Organization to resources\n- 031: fixed 2.0 in page name - it breaks markdown/html\n",
+  "description" : "This specification is currently undergoing ballot and connectathon testing. It is expected to evolve, possibly significantly, as part of that process.\nFeedback is welcome and may be submitted through the FHIR gForge tracker indicating US Da Vinci PDex-plan-net as the specification. If balloting on this Implementation Guide (IG), please submit your comments via the tracker and just reference them in your ballot submission.\n\nThis Implementation Guide should be read in conjunction with the Payer Data exchange Implementation Guide (PDex-IG).\nThis IG covers the requirements and profiles required to enable health plans to publish Healthcare and Pharmacy network information to members via API.\n\nSee the [Table of Contents](toc.html) for more information.\n\n#### Latest Changes\n- 046: Adding Network\n- 044: Adding Location Profile\n- 040: Fix PractitionerRole links\n- 035: fixing profile references\n- 033: Added Organization to resources\n- 031: fixed 2.0 in page name - it breaks markdown/html\n",
   "packageId" : "hl7.fhir.us.davinci-pdex-plan-net",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.0",
@@ -83,6 +83,14 @@
         "display" : "PdexPlanLocation"
       },
       "name" : "PdexPlanLocation",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/pdexplannetwork",
+        "display" : "PdexPlanNetwork"
+      },
+      "name" : "PdexPlanNetwork",
       "exampleBoolean" : false
     }],
     "page" : {

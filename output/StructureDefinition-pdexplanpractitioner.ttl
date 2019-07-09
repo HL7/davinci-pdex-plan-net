@@ -17,11 +17,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">This is the Practitioner Record for the Directory</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "pdex-plan-net/structuredefinition/pdex-plan-practitioner"];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1.044"];
+  fhir:StructureDefinition.version [ fhir:value "0.0.1.046"];
   fhir:StructureDefinition.name [ fhir:value "PDexPlanPractitioner"];
   fhir:StructureDefinition.title [ fhir:value "Practitioner"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-07-08T23:28:07-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-07-09T12:13:09-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Da Vinci"];
   fhir:StructureDefinition.description [ fhir:value "A Health Plan **SHOULD** provide the following minimum fields:\n\n- Human Name\n- ContactPoint\n- etc.etc...\n\n"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];

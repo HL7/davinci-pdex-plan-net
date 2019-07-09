@@ -10,11 +10,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">This is the Practitioner Record for the Directory</div>"
   },
   "url": "pdex-plan-net/structuredefinition/pdex-plan-practitioner",
-  "version": "0.0.1.044",
+  "version": "0.0.1.046",
   "name": "PDexPlanPractitioner",
   "title": "Practitioner",
   "status": "draft",
-  "date": "2019-07-08T23:28:07-04:00",
+  "date": "2019-07-09T12:13:09-04:00",
   "publisher": "HL7 Da Vinci",
   "description": "A Health Plan **SHOULD** provide the following minimum fields:\n\n- Human Name\n- ContactPoint\n- etc.etc...\n\n",
   "fhirVersion": "4.0.0",

@@ -26,6 +26,7 @@ This IG covers the requirements and profiles required to enable health plans to 
 See the [Table of Contents](toc.html) for more information.
 
 #### Latest Changes
+- 046: Adding Network
 - 044: Adding Location Profile
 - 040: Fix PractitionerRole links
 - 035: fixing profile references

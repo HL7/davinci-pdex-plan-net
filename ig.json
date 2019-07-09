@@ -109,10 +109,14 @@
 		"StructureDefinition/pdexplanlocation": {
 			"base": "StructureDefinition-pdexplanlocation.html",
 			"defns": "StructureDefinition-pdexplanlocation-definitions.html"
+		},
+		"StructureDefinition/pdexplannetwork": {
+			"base": "StructureDefinition-pdexplannetwork.html",
+			"defns": "StructureDefinition-pdexplannetwork-definitions.html"
 		}
 	},
 	"version": "4.0.0",
-	"fixed-business-version": "0.0.1.044",
+	"fixed-business-version": "0.0.1.046",
 	"dependencyList": [
 		{
 			"location": "http://hl7.org/fhir/us/core",

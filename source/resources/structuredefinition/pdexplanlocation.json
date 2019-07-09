@@ -2,14 +2,14 @@
 	"resourceType": "StructureDefinition",
 	"id": "pdexplanlocation",
 	"meta": {
-		"versionId": "4",
-		"lastUpdated": "2019-07-08T23:26:57.000-04:00"
+		"versionId": "5",
+		"lastUpdated": "2019-07-09T09:54:38.000-04:00"
 	},
 	"text": {
 		"status": "additional",
 		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">This is the Location Profile. It identifies the facilities associated with an organization</div>"
 	},
-	"url": "pdex-plan-net/structuredefinition/pdex-plan-organization",
+	"url": "pdex-plan-net/structuredefinition/pdex-plan-location",
 	"name": "PdexPlanLocation",
 	"title": "PDex Plan Location",
 	"status": "draft",

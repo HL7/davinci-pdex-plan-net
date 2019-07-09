@@ -9,19 +9,19 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "pdexplanlocation"];
   fhir:Resource.meta [
-     fhir:Meta.versionId [ fhir:value "4" ];
-     fhir:Meta.lastUpdated [ fhir:value "2019-07-08T23:26:57.000-04:00"^^xsd:dateTime ]
+     fhir:Meta.versionId [ fhir:value "5" ];
+     fhir:Meta.lastUpdated [ fhir:value "2019-07-09T09:54:38.000-04:00"^^xsd:dateTime ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "additional" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">This is the Location Profile. It identifies the facilities associated with an organization</div>"
   ];
-  fhir:StructureDefinition.url [ fhir:value "pdex-plan-net/structuredefinition/pdex-plan-organization"];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1.044"];
+  fhir:StructureDefinition.url [ fhir:value "pdex-plan-net/structuredefinition/pdex-plan-location"];
+  fhir:StructureDefinition.version [ fhir:value "0.0.1.046"];
   fhir:StructureDefinition.name [ fhir:value "PdexPlanLocation"];
   fhir:StructureDefinition.title [ fhir:value "PDex Plan Location"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-07-08T23:28:07-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-07-09T12:13:09-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Da Vinci"];
   fhir:StructureDefinition.description [ fhir:value "The Location profile identifies the facilities related to an organization."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
