@@ -3,18 +3,18 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="pdexplanpractitioner"/>
   <meta>
-    <versionId value="5"/>
-    <lastUpdated value="2019-07-08T20:04:13.000-04:00"/>
+    <versionId value="7"/>
+    <lastUpdated value="2019-07-08T21:05:50.000-04:00"/>
   </meta>
   <text>
     <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">This is the Practitioner Record for the Directory</div>
   </text>
   <url value="pdex-plan-net/structuredefinition/pdex-plan-practitioner"/>
-  <version value="0.0.1.33"/>
+  <version value="0.0.1.035"/>
   <name value="PDexPlanPractitioner"/>
   <title value="Practitioner"/>
   <status value="draft"/>
-  <date value="2019-07-08T20:56:16-04:00"/>
+  <date value="2019-07-08T21:11:22-04:00"/>
   <description value="A Health Plan **SHOULD** provide the following minimum fields:&#xA;&#xA;- Human Name&#xA;- ContactPoint&#xA;- etc.etc...&#xA;&#xA;"/>
   <fhirVersion value="4.0.0"/>
   <mapping>

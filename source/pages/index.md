@@ -26,6 +26,7 @@ This IG covers the requirements and profiles required to enable health plans to 
 See the [Table of Contents](toc.html) for more information.
 
 #### Latest Changes
+035 - fixing profile references
 033 - Added Organization to resources
 031 - fixed 2.0 in page name - it breaks markdown/html
 

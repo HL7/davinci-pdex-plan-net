@@ -2,30 +2,30 @@
 =========================================
 
 err = 16, warn = 0, info = 0
-Generated Mon Jul 08 20:56:37 EDT 2019. FHIR version 4.1.0 for 4.0.0
+Generated Mon Jul 08 21:11:42 EDT 2019. FHIR version 4.1.0 for 4.0.0
 
  Build Errors : 6 / 0
- C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\implementationguide\pdex-plan-net : 1 / 0
- C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\structuredefinition\pdexplanorganization : 2 / 0
- C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\structuredefinition\pdexplanpractitioner : 3 / 0
- C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\structuredefinition\pdexplanpractitionerrole : 2 / 0
+ C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\implementationguide\pdex-plan-net : 1 / 0
+ C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\structuredefinition\PDexPlanPractitionerRole : 2 / 0
+ C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\structuredefinition\pdexplanorganization : 2 / 0
+ C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\structuredefinition\pdexplanpractitioner : 3 / 0
 </table>
 == n/a ==
 ERROR: ??: The reference pdex-plan-net/structuredefinition/pdex-plan-practitioner could not be resolved
 ERROR: ??: The reference pdex-plan-net/structuredefinition/pdex-plan-practitionerrole could not be resolved
 ERROR: Organization.address.state: The reference http://hl7.org/fhir/ValueSet/usps-state could not be resolved
 ERROR: ??: The reference pdex-plan-net/structuredefinition/pdex-plan-organization could not be resolved
-ERROR: C:\Windows\Temp\tmp-86012aZ0on0DSAU\output\StructureDefinition-pdexplanorganization.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 411, column 2067: The link 'usps-state.html' for "usps-state" cannot be resolved
-ERROR: C:\Windows\Temp\tmp-86012aZ0on0DSAU\output\StructureDefinition-pdexplanorganization-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/br/tr/td/a at Line 570, column 152: The link 'usps-state.html' for "usps-state" cannot be resolved
-== C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\implementationguide\pdex-plan-net.xml ==
-ERROR: ImplementationGuide/pdex-plan-net: ImplementationGuide.definition.resource[2].reference: Unable to resolve resource 'StructureDefinition/pdexplanpractitionerrole'
-== C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\structuredefinition\pdexplanorganization.json ==
-ERROR: pdex-plan-net/structuredefinition/pdex-plan-organization: conformance resource C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\structuredefinition\pdexplanorganization.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanorganization) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-organization)
-ERROR: C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\structuredefinition\pdexplanorganization: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanorganization vs pdex-plan-net/structuredefinition/pdex-plan-organization
-== C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\structuredefinition\pdexplanpractitioner.json ==
+ERROR: C:\Windows\Temp\tmp-860FaKC9uxBLl2o\output\StructureDefinition-pdexplanorganization.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 411, column 2067: The link 'usps-state.html' for "usps-state" cannot be resolved
+ERROR: C:\Windows\Temp\tmp-860FaKC9uxBLl2o\output\StructureDefinition-pdexplanorganization-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/br/tr/td/a at Line 570, column 152: The link 'usps-state.html' for "usps-state" cannot be resolved
+== C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\implementationguide\pdex-plan-net.xml ==
+ERROR: ImplementationGuide/pdex-plan-net: ImplementationGuide.definition.resource[2].reference: Unable to resolve resource 'StructureDefinition/PDexPlanPractitionerRole'
+== C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\structuredefinition\PdexPlanPractitionerRole.json ==
+ERROR: pdex-plan-net/structuredefinition/pdex-plan-practitionerrole: conformance resource C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\structuredefinition\PdexPlanPractitionerRole.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/PdexPlanPractitionerRole) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-practitionerrole)
+ERROR: C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\structuredefinition\PDexPlanPractitionerRole: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/PdexPlanPractitionerRole vs pdex-plan-net/structuredefinition/pdex-plan-practitionerrole
+== C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\structuredefinition\pdexplanorganization.json ==
+ERROR: pdex-plan-net/structuredefinition/pdex-plan-organization: conformance resource C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\structuredefinition\pdexplanorganization.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanorganization) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-organization)
+ERROR: C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\structuredefinition\pdexplanorganization: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanorganization vs pdex-plan-net/structuredefinition/pdex-plan-organization
+== C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\structuredefinition\pdexplanpractitioner.json ==
 ERROR: StructureDefinition/pdexplanpractitioner: StructureDefinition.differential.element[3].slicing: If there are no discriminators, there must be a definition [discriminator.exists() or description.exists()]
-ERROR: pdex-plan-net/structuredefinition/pdex-plan-practitioner: conformance resource C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\structuredefinition\pdexplanpractitioner.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanpractitioner) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-practitioner)
-ERROR: C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\structuredefinition\pdexplanpractitioner: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanpractitioner vs pdex-plan-net/structuredefinition/pdex-plan-practitioner
-== C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\structuredefinition\PdexPlanPractitionerRole.json ==
-ERROR: pdex-plan-net/structuredefinition/pdex-plan-practitionerrole: conformance resource C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\structuredefinition\PdexPlanPractitionerRole.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/PdexPlanPractitionerRole) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-practitionerrole)
-ERROR: C:\Windows\Temp\tmp-86012aZ0on0DSAU\source\resources\structuredefinition\pdexplanpractitionerrole: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/PdexPlanPractitionerRole vs pdex-plan-net/structuredefinition/pdex-plan-practitionerrole
+ERROR: pdex-plan-net/structuredefinition/pdex-plan-practitioner: conformance resource C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\structuredefinition\pdexplanpractitioner.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanpractitioner) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-practitioner)
+ERROR: C:\Windows\Temp\tmp-860FaKC9uxBLl2o\source\resources\structuredefinition\pdexplanpractitioner: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanpractitioner vs pdex-plan-net/structuredefinition/pdex-plan-practitioner

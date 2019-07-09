@@ -2,8 +2,8 @@
 	"resourceType": "StructureDefinition",
 	"id": "pdexplanpractitioner",
 	"meta": {
-		"versionId": "5",
-		"lastUpdated": "2019-07-08T20:04:13.000-04:00"
+		"versionId": "7",
+		"lastUpdated": "2019-07-08T21:05:50.000-04:00"
 	},
 	"text": {
 		"status": "additional",

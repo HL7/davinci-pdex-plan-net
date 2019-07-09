@@ -5,12 +5,12 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.0.1.33> a fhir:ImplementationGuide;
+<http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.0.1.035> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "hl7.fhir.us.davinci-pdex-plan-net-0.0.1.33"];
+  fhir:Resource.id [ fhir:value "hl7.fhir.us.davinci-pdex-plan-net-0.0.1.035"];
   fhir:Resource.meta [
-     fhir:Meta.versionId [ fhir:value "35" ];
-     fhir:Meta.lastUpdated [ fhir:value "2019-07-08T20:51:00.000-04:00"^^xsd:dateTime ];
+     fhir:Meta.versionId [ fhir:value "37" ];
+     fhir:Meta.lastUpdated [ fhir:value "2019-07-08T21:08:35.000-04:00"^^xsd:dateTime ];
      fhir:Meta.security [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "https://trifolia-fhir.lantanagroup.com/security" ];
@@ -23,10 +23,10 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DaVinciPayerDataExchangePlanNetwork</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/pdex-plan-net</pre><div><p>This specification is currently undergoing ballot and connectathon testing. It is expected to evolve, possibly significantly, as part of that process.\nFeedback is welcome and may be submitted through the FHIR gForge tracker indicating US Da Vinci PDex-plan-net as the specification. If balloting on this Implementation Guide (IG), please submit your comments via the tracker and just reference them in your ballot submission.</p>\n<p>This Implementation Guide should be read in conjunction with the Payer Data exchange Implementation Guide (PDex-IG).\nThis IG covers the requirements and profiles required to enable health plans to publish Healthcare and Pharmacy network information to members via API.</p>\n<p>See the <a href=\"toc.html\">Table of Contents</a> for more information.</p>\n<h4>Latest Changes</h4>\n<p>033 - Added Organization to resources\n031 - fixed 2.0 in page name - it breaks markdown/html</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DaVinciPayerDataExchangePlanNetwork</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/pdex-plan-net</pre><div><p>This specification is currently undergoing ballot and connectathon testing. It is expected to evolve, possibly significantly, as part of that process.\nFeedback is welcome and may be submitted through the FHIR gForge tracker indicating US Da Vinci PDex-plan-net as the specification. If balloting on this Implementation Guide (IG), please submit your comments via the tracker and just reference them in your ballot submission.</p>\n<p>This Implementation Guide should be read in conjunction with the Payer Data exchange Implementation Guide (PDex-IG).\nThis IG covers the requirements and profiles required to enable health plans to publish Healthcare and Pharmacy network information to members via API.</p>\n<p>See the <a href=\"toc.html\">Table of Contents</a> for more information.</p>\n<h4>Latest Changes</h4>\n<p>035 - fixing profile references\n033 - Added Organization to resources\n031 - fixed 2.0 in page name - it breaks markdown/html</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/pdex-plan-net"];
-  fhir:ImplementationGuide.version [ fhir:value "0.0.1.33"];
+  fhir:ImplementationGuide.version [ fhir:value "0.0.1.035"];
   fhir:ImplementationGuide.name [ fhir:value "DaVinciPayerDataExchangePlanNetwork"];
   fhir:ImplementationGuide.title [ fhir:value "Da Vinci Payer Data exchange Plan Network Directory"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
@@ -43,7 +43,7 @@
        fhir:ContactPoint.value [ fhir:value "mark@ekivemark.com" ]
      ]
   ];
-  fhir:ImplementationGuide.description [ fhir:value "This specification is currently undergoing ballot and connectathon testing. It is expected to evolve, possibly significantly, as part of that process.\nFeedback is welcome and may be submitted through the FHIR gForge tracker indicating US Da Vinci PDex-plan-net as the specification. If balloting on this Implementation Guide (IG), please submit your comments via the tracker and just reference them in your ballot submission.\n\nThis Implementation Guide should be read in conjunction with the Payer Data exchange Implementation Guide (PDex-IG).\nThis IG covers the requirements and profiles required to enable health plans to publish Healthcare and Pharmacy network information to members via API.\n\nSee the [Table of Contents](toc.html) for more information.\n\n#### Latest Changes\n033 - Added Organization to resources\n031 - fixed 2.0 in page name - it breaks markdown/html"];
+  fhir:ImplementationGuide.description [ fhir:value "This specification is currently undergoing ballot and connectathon testing. It is expected to evolve, possibly significantly, as part of that process.\nFeedback is welcome and may be submitted through the FHIR gForge tracker indicating US Da Vinci PDex-plan-net as the specification. If balloting on this Implementation Guide (IG), please submit your comments via the tracker and just reference them in your ballot submission.\n\nThis Implementation Guide should be read in conjunction with the Payer Data exchange Implementation Guide (PDex-IG).\nThis IG covers the requirements and profiles required to enable health plans to publish Healthcare and Pharmacy network information to members via API.\n\nSee the [Table of Contents](toc.html) for more information.\n\n#### Latest Changes\n035 - fixing profile references\n033 - Added Organization to resources\n031 - fixed 2.0 in page name - it breaks markdown/html"];
   fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.us.davinci-pdex-plan-net"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -77,8 +77,8 @@
      ], [
        fhir:index 1;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanpractitionerrole>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/pdexplanpractitionerrole" ];
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/PDexPlanPractitionerRole>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PDexPlanPractitionerRole" ];
          fhir:Reference.display [ fhir:value "PDexPlanPractitionerRole" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDexPlanPractitionerRole" ];
@@ -166,15 +166,15 @@
 
 <http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanpractitioner> a fhir:us .
 
-<http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanpractitionerrole> a fhir:us .
+<http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/PDexPlanPractitionerRole> a fhir:us .
 
 <http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanorganization> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.0.1.33.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.0.1.035.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/davinci-pdex/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.0.1.33.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/davinci-pdex/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.0.1.035.ttl> .
 
 # -------------------------------------------------------------------------------------
 

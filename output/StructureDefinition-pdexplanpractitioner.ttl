@@ -9,19 +9,19 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "pdexplanpractitioner"];
   fhir:Resource.meta [
-     fhir:Meta.versionId [ fhir:value "5" ];
-     fhir:Meta.lastUpdated [ fhir:value "2019-07-08T20:04:13.000-04:00"^^xsd:dateTime ]
+     fhir:Meta.versionId [ fhir:value "7" ];
+     fhir:Meta.lastUpdated [ fhir:value "2019-07-08T21:05:50.000-04:00"^^xsd:dateTime ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "additional" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">This is the Practitioner Record for the Directory</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "pdex-plan-net/structuredefinition/pdex-plan-practitioner"];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1.33"];
+  fhir:StructureDefinition.version [ fhir:value "0.0.1.035"];
   fhir:StructureDefinition.name [ fhir:value "PDexPlanPractitioner"];
   fhir:StructureDefinition.title [ fhir:value "Practitioner"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-07-08T20:56:16-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-07-08T21:11:22-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "A Health Plan **SHOULD** provide the following minimum fields:\n\n- Human Name\n- ContactPoint\n- etc.etc...\n\n"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
   fhir:StructureDefinition.mapping [
