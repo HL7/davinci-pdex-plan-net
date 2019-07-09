@@ -27,36 +27,18 @@ active: profiles
 </thead>
 <tbody>
 <tr>
-<td><a href="StructureDefinition-us-core-practitioner.html">undefined</a></td>
-<td></td>
+<td><a href="StructureDefinition-pdexplanpractitioner.html">PDexPlanPractitioner</a></td>
+<td>A Health Plan **SHOULD** provide the following minimum fields:
+
+- Human Name
+- ContactPoint
+- etc.etc...
+
+</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-us-core-organization.html">undefined</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-us-core-practitionerrole.html">undefined</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-us-core-organizationaffiliation.html">undefined</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-us-core-location.html">undefined</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-us-core-insuranceplan.html">undefined</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-us-core-healthcareservice.html">undefined</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-us-core-network.html">undefined</a></td>
-<td></td>
+<td><a href="StructureDefinition-PdexPlanPractitionerRole.html">PDexPlanPractitionerRole</a></td>
+<td>This defines the PractitionerRole and it's relationship to the Practitioner and other resources</td>
 </tr>
 </tbody>
 </table>

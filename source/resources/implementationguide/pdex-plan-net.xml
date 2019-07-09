@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="pdex-plan-net"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2019-07-08T12:22:21.000-04:00"/>
+        <versionId value="30"/>
+        <lastUpdated value="2019-07-08T19:33:51.000-04:00"/>
         <security>
             <system value="https://trifolia-fhir.lantanagroup.com/security"/>
             <code value="everyone^read"/>
@@ -15,13 +15,24 @@
         </security>
     </meta>
     <url value="http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/pdex-plan-net"/>
-    <version value="0.0.1.0"/>
+    <version value="0.0.1.29"/>
     <name value="DaVinciPayerDataExchangePlanNetwork"/>
     <title value="Da Vinci Payer Data exchange Plan Network Directory"/>
     <status value="draft"/>
     <publisher value="HL7 Da Vinci"/>
+    <contact>
+        <name value="Dan Chaput"/>
+    </contact>
+    <contact>
+        <name value="Mark Scrimshire"/>
+        <telecom>
+            <system value="email"/>
+            <value value="mark@ekivemark.com"/>
+        </telecom>
+    </contact>
     <description value="This specification is currently undergoing ballot and connectathon testing. It is expected to evolve, possibly significantly, as part of that process.&#xA;Feedback is welcome and may be submitted through the FHIR gForge tracker indicating US Da Vinci PDex-plan-net as the specification. If balloting on this Implementation Guide (IG), please submit your comments via the tracker and just reference them in your ballot submission.&#xA;&#xA;This Implementation Guide should be read in conjunction with the Payer Data exchange Implementation Guide (PDex-IG).&#xA;This IG covers the requirements and profiles required to enable health plans to publish Healthcare and Pharmacy network information to members via API.&#xA;&#xA;See the [Table of Contents](toc.html) for more information.&#xA;&#xA;#### Latest Changes&#xA;First commit."/>
     <packageId value="hl7.fhir.us.davinci-pdex-plan-net"/>
+    <fhirVersion value="4.0.0"/>
     <dependsOn>
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core-3.0.0"/>
         <packageId value="hl7.fhir.us.core"/>
@@ -30,66 +41,18 @@
     <definition>
         <resource>
             <reference>
-                <reference value="StructureDefinition/us-core-practitioner"/>
-                <display value="Practitioner"/>
+                <reference value="StructureDefinition/pdexplanpractitioner"/>
+                <display value="PDexPlanPractitioner"/>
             </reference>
-            <name value="Practitioner"/>
+            <name value="PDexPlanPractitioner"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/us-core-organization"/>
-                <display value="Organization"/>
+                <reference value="StructureDefinition/PdexPlanPractitionerRole"/>
+                <display value="PDexPlanPractitionerRole"/>
             </reference>
-            <name value="Organization"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/us-core-practitionerrole"/>
-                <display value="PracitionerRole"/>
-            </reference>
-            <name value="Practitioner Role"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/us-core-organizationaffiliation"/>
-                <display value="OrganizationAffiliation"/>
-            </reference>
-            <name value="Organization Affiliation"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/us-core-location"/>
-                <display value="Location"/>
-            </reference>
-            <name value="Location"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/us-core-insuranceplan"/>
-                <display value="InsurancePlan"/>
-            </reference>
-            <name value="Insurance Plan"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/us-core-healthcareservice"/>
-                <display value="HealthcareService"/>
-            </reference>
-            <name value="Healthcare Service"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/us-core-network"/>
-                <display value="Network"/>
-            </reference>
-            <name value="Network"/>
+            <name value="PDexPlanPractitionerRole"/>
             <exampleBoolean value="false"/>
         </resource>
         <page>

@@ -1,0 +1,31 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "PdexPlanPractitionerRole",
+	"meta": {
+		"versionId": "5",
+		"lastUpdated": "2019-07-08T20:05:19.000-04:00"
+	},
+	"text": {
+		"status": "additional",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The PractitionerRole resource is defined here</div>"
+	},
+	"url": "pdex-plan-net/structuredefinition/pdex-plan-practitionerrole",
+	"name": "PDexPlanPractitionerRole",
+	"title": "Practitioner Role",
+	"status": "draft",
+	"publisher": "HL7 Da Vinci",
+	"description": "This defines the PractitionerRole and it's relationship to the Practitioner and other resources",
+	"kind": "resource",
+	"abstract": false,
+	"type": "PractitionerRole",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "PractitionerRole",
+				"path": "PractitionerRole"
+			}
+		]
+	}
+}

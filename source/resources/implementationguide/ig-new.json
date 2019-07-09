@@ -2,8 +2,8 @@
   "resourceType" : "ImplementationGuide",
   "id" : "pdex-plan-net",
   "meta" : {
-    "versionId" : "13",
-    "lastUpdated" : "2019-07-08T12:22:21.000-04:00",
+    "versionId" : "30",
+    "lastUpdated" : "2019-07-08T19:33:51.000-04:00",
     "security" : [{
       "system" : "https://trifolia-fhir.lantanagroup.com/security",
       "code" : "everyone^read"
@@ -15,26 +15,37 @@
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Windows\\Temp\\tmp-860H3h6jMJOQMR6\\source\\resources"
+    "valueString" : "C:\\Windows\\Temp\\tmp-860K7aDcq6O0ZX4\\source\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Windows\\Temp\\tmp-860H3h6jMJOQMR6\\framework"
+    "valueString" : "C:\\Windows\\Temp\\tmp-860K7aDcq6O0ZX4\\framework"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Windows\\Temp\\tmp-860H3h6jMJOQMR6\\source\\pages"
+    "valueString" : "C:\\Windows\\Temp\\tmp-860K7aDcq6O0ZX4\\source\\pages"
   }],
   "url" : "http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/pdex-plan-net",
-  "version" : "0.0.1.0",
+  "version" : "0.0.1.29",
   "name" : "DaVinciPayerDataExchangePlanNetwork",
   "title" : "Da Vinci Payer Data exchange Plan Network Directory",
   "status" : "draft",
   "publisher" : "HL7 Da Vinci",
+  "contact" : [{
+    "name" : "Dan Chaput"
+  },
+  {
+    "name" : "Mark Scrimshire",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mark@ekivemark.com"
+    }]
+  }],
   "description" : "This specification is currently undergoing ballot and connectathon testing. It is expected to evolve, possibly significantly, as part of that process.\nFeedback is welcome and may be submitted through the FHIR gForge tracker indicating US Da Vinci PDex-plan-net as the specification. If balloting on this Implementation Guide (IG), please submit your comments via the tracker and just reference them in your ballot submission.\n\nThis Implementation Guide should be read in conjunction with the Payer Data exchange Implementation Guide (PDex-IG).\nThis IG covers the requirements and profiles required to enable health plans to publish Healthcare and Pharmacy network information to members via API.\n\nSee the [Table of Contents](toc.html) for more information.\n\n#### Latest Changes\nFirst commit.",
   "packageId" : "hl7.fhir.us.davinci-pdex-plan-net",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["4.0.0"],
+  "fhirVersion" : ["4.0.0",
+  "4.0.0"],
   "dependsOn" : [{
     "id" : "USCoreR4",
     "uri" : "http://hl7.org/fhir/us/core",
@@ -44,66 +55,18 @@
   "definition" : {
     "resource" : [{
       "reference" : {
-        "reference" : "StructureDefinition/us-core-practitioner",
-        "display" : "Practitioner"
+        "reference" : "StructureDefinition/pdexplanpractitioner",
+        "display" : "PDexPlanPractitioner"
       },
-      "name" : "Practitioner",
+      "name" : "PDexPlanPractitioner",
       "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/us-core-organization",
-        "display" : "Organization"
+        "reference" : "StructureDefinition/PdexPlanPractitionerRole",
+        "display" : "PDexPlanPractitionerRole"
       },
-      "name" : "Organization",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/us-core-practitionerrole",
-        "display" : "PracitionerRole"
-      },
-      "name" : "Practitioner Role",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/us-core-organizationaffiliation",
-        "display" : "OrganizationAffiliation"
-      },
-      "name" : "Organization Affiliation",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/us-core-location",
-        "display" : "Location"
-      },
-      "name" : "Location",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/us-core-insuranceplan",
-        "display" : "InsurancePlan"
-      },
-      "name" : "Insurance Plan",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/us-core-healthcareservice",
-        "display" : "HealthcareService"
-      },
-      "name" : "Healthcare Service",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/us-core-network",
-        "display" : "Network"
-      },
-      "name" : "Network",
+      "name" : "PDexPlanPractitionerRole",
       "exampleBoolean" : false
     }],
     "page" : {

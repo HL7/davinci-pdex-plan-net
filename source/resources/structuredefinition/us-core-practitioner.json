@@ -1,8 +1,0 @@
-{
-	"resourceType": "StructureDefinition",
-	"id": "us-core-practitioner",
-	"meta": {
-		"versionId": "1",
-		"lastUpdated": "2019-06-28T16:10:20.000-04:00"
-	}
-}

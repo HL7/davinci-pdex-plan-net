@@ -1,0 +1,22 @@
+﻿DaVinciPayerDataExchangePlanNetwork : Validation Results
+=========================================
+
+err = 10, warn = 0, info = 0
+Generated Mon Jul 08 20:06:56 EDT 2019. FHIR version 4.1.0 for 4.0.0
+
+ Build Errors : 2 / 0
+ C:\Windows\Temp\tmp-860K7aDcq6O0ZX4\source\resources\implementationguide\pdex-plan-net : 0 / 0
+ C:\Windows\Temp\tmp-860K7aDcq6O0ZX4\source\resources\structuredefinition\PdexPlanPractitionerRole : 2 / 0
+ C:\Windows\Temp\tmp-860K7aDcq6O0ZX4\source\resources\structuredefinition\pdexplanpractitioner : 3 / 0
+</table>
+== n/a ==
+ERROR: ??: The reference pdex-plan-net/structuredefinition/pdex-plan-practitioner could not be resolved
+ERROR: ??: The reference pdex-plan-net/structuredefinition/pdex-plan-practitionerrole could not be resolved
+== C:\Windows\Temp\tmp-860K7aDcq6O0ZX4\source\resources\implementationguide\pdex-plan-net.xml ==
+== C:\Windows\Temp\tmp-860K7aDcq6O0ZX4\source\resources\structuredefinition\PdexPlanPractitionerRole.json ==
+ERROR: pdex-plan-net/structuredefinition/pdex-plan-practitionerrole: conformance resource C:\Windows\Temp\tmp-860K7aDcq6O0ZX4\source\resources\structuredefinition\PdexPlanPractitionerRole.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/PdexPlanPractitionerRole) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-practitionerrole)
+ERROR: C:\Windows\Temp\tmp-860K7aDcq6O0ZX4\source\resources\structuredefinition\PdexPlanPractitionerRole: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/PdexPlanPractitionerRole vs pdex-plan-net/structuredefinition/pdex-plan-practitionerrole
+== C:\Windows\Temp\tmp-860K7aDcq6O0ZX4\source\resources\structuredefinition\pdexplanpractitioner.json ==
+ERROR: StructureDefinition/pdexplanpractitioner: StructureDefinition.differential.element[3].slicing: If there are no discriminators, there must be a definition [discriminator.exists() or description.exists()]
+ERROR: pdex-plan-net/structuredefinition/pdex-plan-practitioner: conformance resource C:\Windows\Temp\tmp-860K7aDcq6O0ZX4\source\resources\structuredefinition\pdexplanpractitioner.json canonical URL (http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanpractitioner) does not match the URL (pdex-plan-net/structuredefinition/pdex-plan-practitioner)
+ERROR: C:\Windows\Temp\tmp-860K7aDcq6O0ZX4\source\resources\structuredefinition\pdexplanpractitioner: URL Mismatch http://hl7.org/fhir/us/davinci-pdex/StructureDefinition/pdexplanpractitioner vs pdex-plan-net/structuredefinition/pdex-plan-practitioner

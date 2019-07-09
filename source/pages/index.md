@@ -28,3 +28,25 @@ See the [Table of Contents](toc.html) for more information.
 #### Latest Changes
 First commit.
 
+### Authors
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dan Chaput</td>
+<td></td>
+</tr>
+<tr>
+<td>Mark Scrimshire</td>
+<td><a href="mailto:mark@ekivemark.com">mark@ekivemark.com</a></td>
+</tr>
+</tbody>
+</table>
+
+
