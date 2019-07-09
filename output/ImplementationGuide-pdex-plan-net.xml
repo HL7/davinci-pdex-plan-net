@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7.fhir.us.davinci-pdex-plan-net-0.0.1.31"/>
+  <id value="hl7.fhir.us.davinci-pdex-plan-net-0.0.1.33"/>
   <meta>
-    <versionId value="32"/>
-    <lastUpdated value="2019-07-08T20:36:16.000-04:00"/>
+    <versionId value="35"/>
+    <lastUpdated value="2019-07-08T20:51:00.000-04:00"/>
     <security>
       <system value="https://trifolia-fhir.lantanagroup.com/security"/>
       <code value="everyone^read"/>
@@ -21,11 +21,12 @@ Feedback is welcome and may be submitted through the FHIR gForge tracker indicat
 This IG covers the requirements and profiles required to enable health plans to publish Healthcare and Pharmacy network information to members via API.</p>
 <p>See the <a href="toc.html">Table of Contents</a> for more information.</p>
 <h4>Latest Changes</h4>
-<p>31 - fixed 2.0 in page name - it breaks markdown/html</p>
+<p>033 - Added Organization to resources
+031 - fixed 2.0 in page name - it breaks markdown/html</p>
 </div></div>
   </text>
   <url value="http://hl7.org/fhir/us/davinci-pdex/ImplementationGuide/pdex-plan-net"/>
-  <version value="0.0.1.31"/>
+  <version value="0.0.1.33"/>
   <name value="DaVinciPayerDataExchangePlanNetwork"/>
   <title value="Da Vinci Payer Data exchange Plan Network Directory"/>
   <status value="draft"/>
@@ -40,7 +41,7 @@ This IG covers the requirements and profiles required to enable health plans to 
       <value value="mark@ekivemark.com"/>
     </telecom>
   </contact>
-  <description value="This specification is currently undergoing ballot and connectathon testing. It is expected to evolve, possibly significantly, as part of that process.&#xA;Feedback is welcome and may be submitted through the FHIR gForge tracker indicating US Da Vinci PDex-plan-net as the specification. If balloting on this Implementation Guide (IG), please submit your comments via the tracker and just reference them in your ballot submission.&#xA;&#xA;This Implementation Guide should be read in conjunction with the Payer Data exchange Implementation Guide (PDex-IG).&#xA;This IG covers the requirements and profiles required to enable health plans to publish Healthcare and Pharmacy network information to members via API.&#xA;&#xA;See the [Table of Contents](toc.html) for more information.&#xA;&#xA;#### Latest Changes&#xA;31 - fixed 2.0 in page name - it breaks markdown/html"/>
+  <description value="This specification is currently undergoing ballot and connectathon testing. It is expected to evolve, possibly significantly, as part of that process.&#xA;Feedback is welcome and may be submitted through the FHIR gForge tracker indicating US Da Vinci PDex-plan-net as the specification. If balloting on this Implementation Guide (IG), please submit your comments via the tracker and just reference them in your ballot submission.&#xA;&#xA;This Implementation Guide should be read in conjunction with the Payer Data exchange Implementation Guide (PDex-IG).&#xA;This IG covers the requirements and profiles required to enable health plans to publish Healthcare and Pharmacy network information to members via API.&#xA;&#xA;See the [Table of Contents](toc.html) for more information.&#xA;&#xA;#### Latest Changes&#xA;033 - Added Organization to resources&#xA;031 - fixed 2.0 in page name - it breaks markdown/html"/>
   <packageId value="hl7.fhir.us.davinci-pdex-plan-net"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
@@ -62,14 +63,22 @@ This IG covers the requirements and profiles required to enable health plans to 
       <exampleBoolean value="false"/>
     </resource>
     <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-PdexPlanPractitionerRole.html"/>
-      </extension>
       <reference>
-        <reference value="StructureDefinition/PdexPlanPractitionerRole"/>
+        <reference value="StructureDefinition/pdexplanpractitionerrole"/>
         <display value="PDexPlanPractitionerRole"/>
       </reference>
       <name value="PDexPlanPractitionerRole"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-pdexplanorganization.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdexplanorganization"/>
+        <display value="PdexPlanOrganization"/>
+      </reference>
+      <name value="PdexPlanOrganization"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

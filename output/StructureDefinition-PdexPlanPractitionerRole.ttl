@@ -17,11 +17,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">The PractitionerRole resource is defined here</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "pdex-plan-net/structuredefinition/pdex-plan-practitionerrole"];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1.31"];
+  fhir:StructureDefinition.version [ fhir:value "0.0.1.33"];
   fhir:StructureDefinition.name [ fhir:value "PDexPlanPractitionerRole"];
   fhir:StructureDefinition.title [ fhir:value "Practitioner Role"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-07-08T20:36:41-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-07-08T20:56:16-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Da Vinci"];
   fhir:StructureDefinition.description [ fhir:value "This defines the PractitionerRole and it's relationship to the Practitioner and other resources"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];

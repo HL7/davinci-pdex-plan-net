@@ -101,10 +101,14 @@
 		"StructureDefinition/PdexPlanPractitionerRole": {
 			"base": "StructureDefinition-PdexPlanPractitionerRole.html",
 			"defns": "StructureDefinition-PdexPlanPractitionerRole-definitions.html"
+		},
+		"StructureDefinition/pdexplanorganization": {
+			"base": "StructureDefinition-pdexplanorganization.html",
+			"defns": "StructureDefinition-pdexplanorganization-definitions.html"
 		}
 	},
 	"version": "4.0.0",
-	"fixed-business-version": "0.0.1.31",
+	"fixed-business-version": "0.0.1.33",
 	"dependencyList": [
 		{
 			"location": "http://hl7.org/fhir/us/core",

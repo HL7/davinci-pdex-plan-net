@@ -40,6 +40,10 @@ active: profiles
 <td><a href="StructureDefinition-PdexPlanPractitionerRole.html">PDexPlanPractitionerRole</a></td>
 <td>This defines the PractitionerRole and it's relationship to the Practitioner and other resources</td>
 </tr>
+<tr>
+<td><a href="StructureDefinition-pdexplanorganization.html">PdexPlanOrganization</a></td>
+<td>This is the Organization resource. It uses the US Core Organization profile. </td>
+</tr>
 </tbody>
 </table>
 

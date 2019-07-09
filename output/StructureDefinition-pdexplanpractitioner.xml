@@ -10,11 +10,11 @@
     <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">This is the Practitioner Record for the Directory</div>
   </text>
   <url value="pdex-plan-net/structuredefinition/pdex-plan-practitioner"/>
-  <version value="0.0.1.31"/>
+  <version value="0.0.1.33"/>
   <name value="PDexPlanPractitioner"/>
   <title value="Practitioner"/>
   <status value="draft"/>
-  <date value="2019-07-08T20:36:41-04:00"/>
+  <date value="2019-07-08T20:56:16-04:00"/>
   <description value="A Health Plan **SHOULD** provide the following minimum fields:&#xA;&#xA;- Human Name&#xA;- ContactPoint&#xA;- etc.etc...&#xA;&#xA;"/>
   <fhirVersion value="4.0.0"/>
   <mapping>
