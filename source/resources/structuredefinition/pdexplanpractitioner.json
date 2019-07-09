@@ -2,8 +2,8 @@
 	"resourceType": "StructureDefinition",
 	"id": "pdexplanpractitioner",
 	"meta": {
-		"versionId": "7",
-		"lastUpdated": "2019-07-08T21:05:50.000-04:00"
+		"versionId": "10",
+		"lastUpdated": "2019-07-08T23:08:59.000-04:00"
 	},
 	"text": {
 		"status": "additional",
@@ -13,11 +13,12 @@
 	"name": "PDexPlanPractitioner",
 	"title": "Practitioner",
 	"status": "draft",
+	"publisher": "HL7 Da Vinci",
 	"description": "A Health Plan **SHOULD** provide the following minimum fields:\n\n- Human Name\n- ContactPoint\n- etc.etc...\n\n",
 	"kind": "resource",
 	"abstract": false,
 	"type": "Practitioner",
-	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+	"baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
 	"derivation": "constraint",
 	"differential": {
 		"element": [

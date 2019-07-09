@@ -4,4 +4,4 @@ layout: default
 active: StructureDefinition-PdexPlanPractitionerRole-intro
 ---
 
-This defines the PractitionerRole and it's relationship to the Practitioner and other resources
+The PractitionerRole identifies the services and functions a Practitioner can perform.

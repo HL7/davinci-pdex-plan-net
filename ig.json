@@ -98,17 +98,17 @@
 			"base": "StructureDefinition-pdexplanpractitioner.html",
 			"defns": "StructureDefinition-pdexplanpractitioner-definitions.html"
 		},
-		"StructureDefinition/PdexPlanPractitionerRole": {
-			"base": "StructureDefinition-PdexPlanPractitionerRole.html",
-			"defns": "StructureDefinition-PdexPlanPractitionerRole-definitions.html"
-		},
 		"StructureDefinition/pdexplanorganization": {
 			"base": "StructureDefinition-pdexplanorganization.html",
 			"defns": "StructureDefinition-pdexplanorganization-definitions.html"
+		},
+		"StructureDefinition/PdexPlanPractitionerRole": {
+			"base": "StructureDefinition-PdexPlanPractitionerRole.html",
+			"defns": "StructureDefinition-PdexPlanPractitionerRole-definitions.html"
 		}
 	},
 	"version": "4.0.0",
-	"fixed-business-version": "0.0.1.035",
+	"fixed-business-version": "0.0.1.040",
 	"dependencyList": [
 		{
 			"location": "http://hl7.org/fhir/us/core",
