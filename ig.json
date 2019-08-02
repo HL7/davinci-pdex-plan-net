@@ -30,7 +30,7 @@
     },
     {
       "package": "hl7.fhir.uv.vhdir",
-      "version": "0.2.0",
+      "version": "current",
       "name": "VhDir",
       "location": "http://build.fhir.org/ig/HL7/VhDir/"
     }
