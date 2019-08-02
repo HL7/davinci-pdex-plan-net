@@ -1,0 +1,18 @@
+
+<p> </p>
+<p><b>Mapping Source</b></p>
+<p>This structure represents the following mapping definition:</p>
+<pre>
+plannet.PlanNet-Network maps to Organization:
+  LocationReference maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference
+  PartOf maps to partOf
+  constrain contact.name to 1..1
+  constrain contact.name.family to 1..1
+  constrain contact.name.given to 1..*
+  constrain contact.telecom.system to 1..1
+  constrain contact.telecom.value to 1..1
+  constrain telecom to 0..0
+  constrain partOf to 1..1
+  constrain address.line to 0..4
+
+</pre>

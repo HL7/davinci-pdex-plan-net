@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/skravitz/cimpl/plan-net-out/fhir/guide/resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/skravitz/cimpl/plan-net-out/fhir/guide/examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="/Users/skravitz/cimpl/plan-net-out/fhir/guide/pages"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
+  <version value="0.1.0"/>
+  <name value="DaVinci_PDEX_Plan_Net"/>
+  <title value="DaVinci PDEX Plan Net"/>
+  <status value="draft"/>
+  <publisher value="HL7 Pharmacy WG"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/medication/"/>
+    </telecom>
+  </contact>
+  <packageId value="hl7.fhir.us.davinci-pdex-plan-net"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.0"/>
+  <dependsOn id="uscore">
+    <uri value="http://hl7.org/fhir/us/core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.0.0"/>
+  </dependsOn>
+  <definition>
+    <grouping>
+      <name value="Profiles in this Implementation Guide"/>
+      <description value="Profiles in this Implementation Guide"/>
+    </grouping>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-Endpoint"/>
+      </reference>
+      <name value="plannet-PlanNet-Endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-HealthcareService"/>
+      </reference>
+      <name value="plannet-PlanNet-HealthcareService"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-InsurancePlan"/>
+      </reference>
+      <name value="plannet-PlanNet-InsurancePlan"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-Location"/>
+      </reference>
+      <name value="plannet-PlanNet-Location"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-Network"/>
+      </reference>
+      <name value="plannet-PlanNet-Network"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-Organization"/>
+      </reference>
+      <name value="plannet-PlanNet-Organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-OrganizationAffiliation"/>
+      </reference>
+      <name value="plannet-PlanNet-OrganizationAffiliation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-Practitioner"/>
+      </reference>
+      <name value="plannet-PlanNet-Practitioner"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-PractitionerRole"/>
+      </reference>
+      <name value="plannet-PlanNet-PractitionerRole"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="DaVinci PDEX Plan Net"/>
+      <generation value="html"/>
+    </page>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

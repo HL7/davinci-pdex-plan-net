@@ -1,0 +1,24 @@
+{
+  "package-id": "hl7.fhir.us.davinci-pdex-plan-net", 
+  "title": "Davinci pdex Plan Net",
+  "canonical": "http://hl7.org/fhir/us/davinci-pdex-plan-net",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/",
+      "status": "ci-build",
+      "current": true
+    },
+    {
+      "version": "0.1.0",
+      "date": "2019-06-18",
+      "desc": "Davinci pdex Plan Net - STU Ballot",
+      "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net/Jan2010",
+      "status": "draft",
+      "sequence": "STU 1",
+      "fhir-version": "4.0.0",
+      "current": true
+    }
+  ]
+}

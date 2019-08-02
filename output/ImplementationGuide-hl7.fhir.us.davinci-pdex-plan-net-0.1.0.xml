@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>DaVinci_PDEX_Plan_Net</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0</pre></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
+  <version value="0.1.0"/>
+  <name value="DaVinci_PDEX_Plan_Net"/>
+  <title value="DaVinci PDEX Plan Net"/>
+  <status value="draft"/>
+  <publisher value="HL7 Pharmacy WG"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/medication/"/>
+    </telecom>
+  </contact>
+  <packageId value="hl7.fhir.us.davinci-pdex-plan-net"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+    <grouping>
+      <name value="Profiles in this Implementation Guide"/>
+      <description value="Profiles in this Implementation Guide"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-plannet-PlanNet-Endpoint.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-Endpoint"/>
+      </reference>
+      <name value="plannet-PlanNet-Endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-plannet-PlanNet-HealthcareService.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-HealthcareService"/>
+      </reference>
+      <name value="plannet-PlanNet-HealthcareService"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-plannet-PlanNet-InsurancePlan.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-InsurancePlan"/>
+      </reference>
+      <name value="plannet-PlanNet-InsurancePlan"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-plannet-PlanNet-Location.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-Location"/>
+      </reference>
+      <name value="plannet-PlanNet-Location"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-plannet-PlanNet-Network.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-Network"/>
+      </reference>
+      <name value="plannet-PlanNet-Network"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-plannet-PlanNet-Organization.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-Organization"/>
+      </reference>
+      <name value="plannet-PlanNet-Organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-plannet-PlanNet-OrganizationAffiliation.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-OrganizationAffiliation"/>
+      </reference>
+      <name value="plannet-PlanNet-OrganizationAffiliation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-plannet-PlanNet-Practitioner.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-Practitioner"/>
+      </reference>
+      <name value="plannet-PlanNet-Practitioner"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-plannet-PlanNet-PractitionerRole.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/plannet-PlanNet-PractitionerRole"/>
+      </reference>
+      <name value="plannet-PlanNet-PractitionerRole"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="DaVinci PDEX Plan Net"/>
+      <generation value="html"/>
+    </page>
+  </definition>
+</ImplementationGuide>
