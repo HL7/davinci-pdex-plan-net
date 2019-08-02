@@ -1,0 +1,204 @@
+---
+# jekyll header
+---
+{% include header.html %}
+
+<!-- ============BreadCrumb=============== -->
+<div id="segment-breadcrumb" class="segmnt">
+  <!-- segment-breadcrumb -->
+  <div class="container">
+    <!-- container -->
+    <ul class="breadcrumb">
+      <li title="home"><a href="index.html"><b>Home</b></a></li>
+      <li><b>Value Sets</b></li>
+    </ul>
+  </div>
+  <!-- /container -->
+</div>
+<!-- /segment-breadcrumb -->
+
+{% include container-start.html %}
+
+<!-- ============CONTENT CONTENT=============== -->
+
+<h2>Primary local value sets used in this Implementation Guide</h2>
+
+None
+<table class="codes local" style="display: none">
+  <thead>
+    <tr>
+      <td>
+        <b>Name</b>
+      </td>
+      <td>
+        <b>Definition</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    
+  </tbody>
+</table>
+
+<h2>Primary external value sets used in this Implementation Guide</h2>
+
+<table class="codes external">
+  <thead>
+    <tr>
+      <td>
+        <b>Name</b>
+      </td>
+      <td>
+        <b>Definition</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/address-type">AddressType</a></td>
+        <td>{% capture md_text %}The type of an address (physical / postal).{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/address-use">AddressUse</a></td>
+        <td>{% capture md_text %}The use of an address.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/administrative-gender">AdministrativeGender</a></td>
+        <td>{% capture md_text %}The gender of a person used for administrative purposes.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/insuranceplan-applicability">BenefitCostApplicability</a></td>
+        <td>{% capture md_text %}Whether the cost applies to in-network or out-of-network providers.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/languages">CommonLanguages</a></td>
+        <td>{% capture md_text %}This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47){% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/contactentity-type">ContactEntityType</a></td>
+        <td>{% capture md_text %}This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/contact-point-system">ContactPointSystem</a></td>
+        <td>{% capture md_text %}Telecommunications form for contact point.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/contact-point-use">ContactPointUse</a></td>
+        <td>{% capture md_text %}Use of contact point.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/days-of-week">DaysOfWeek</a></td>
+        <td>{% capture md_text %}The days of the week.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/endpoint-connection-type">EndpointConnectionType</a></td>
+        <td>{% capture md_text %}This is an example value set defined by the FHIR project, that could be used to represent possible connection type profile values.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/endpoint-payload-type">EndpointPayloadType</a></td>
+        <td>{% capture md_text %}This is an example value set defined by the FHIR project, that could be used to represent possible payload document types.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/endpoint-status">EndpointStatus</a></td>
+        <td>{% capture md_text %}The status of the endpoint.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/identifier-type">Identifier Type Codes</a></td>
+        <td>{% capture md_text %}A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/identifier-use">IdentifierUse</a></td>
+        <td>{% capture md_text %}Identifies the purpose for this identifier, if known .{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/insuranceplan-type">InsurancePlanType</a></td>
+        <td>{% capture md_text %}This example value set defines a set of codes that can be used to indicate a type of insurance plan.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/location-mode">LocationMode</a></td>
+        <td>{% capture md_text %}Indicates whether a resource instance represents a specific location or a class of locations.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/location-status">LocationStatus</a></td>
+        <td>{% capture md_text %}Indicates whether the location is still in use.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/location-physical-type">LocationType</a></td>
+        <td>{% capture md_text %}This example value set defines a set of codes that can be used to indicate the physical form of the Location.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/mimetypes">Mime Types</a></td>
+        <td>{% capture md_text %}This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13){% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/name-use">NameUse</a></td>
+        <td>{% capture md_text %}The use of a human name.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/organization-role">OrganizationAffiliationRole</a></td>
+        <td>{% capture md_text %}This example value set defines a set of codes that can be used to indicate the role of one Organization in relation to another.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/organization-type">OrganizationType</a></td>
+        <td>{% capture md_text %}This example value set defines a set of codes that can be used to indicate a type of organization.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/c80-practice-codes">PracticeSettingCodeValueSet</a></td>
+        <td>{% capture md_text %}This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/program">Program</a></td>
+        <td>{% capture md_text %}This value set defines an example set of codes that could be can be used to classify groupings of service-types/specialties.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/publication-status">PublicationStatus</a></td>
+        <td>{% capture md_text %}The lifecycle status of an artifact.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/service-referral-method">ReferralMethod</a></td>
+        <td>{% capture md_text %}The methods of referral can be used when referring to a specific HealthCareService resource.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/service-category">ServiceCategory</a></td>
+        <td>{% capture md_text %}This value set defines an example set of codes that can be used to classify groupings of service-types/specialties.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/service-provision-conditions">ServiceProvisionConditions</a></td>
+        <td>{% capture md_text %}The code(s) that detail the conditions under which the healthcare service is available/offered.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/service-type">ServiceType</a></td>
+        <td>{% capture md_text %}This value set defines an example set of codes of service-types.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-provider-role.html">USCoreProviderRoleNucc</a></td>
+        <td>{% capture md_text %}Provider roles codes which are composed of the NUCC Health Care Provider Taxonomy Code Set classification codes for providers. Only concepts with a classification and no specialization are included. {% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-provider-specialty.html">USCoreProviderSpecialityNucc</a></td>
+        <td>{% capture md_text %}Provider speciality roles codes which are composed of the NUCC Health Care Provider Taxonomy Code Set for providers{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-usps-state.html">UspsTwoLetterAlphabeticCodes</a></td>
+        <td>{% capture md_text %}This value set defines two letter USPS alphabetic codes.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v2-0116">http://terminology.hl7.org/ValueSet/v2-0116</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v2-2.7-0360">http://terminology.hl7.org/ValueSet/v2-2.7-0360</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType">http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType</a></td>
+        <td></td>
+      </tr>
+      
+  </tbody>
+</table>
+
+<!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+{% include footer.html %}

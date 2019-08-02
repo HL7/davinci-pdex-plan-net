@@ -1,0 +1,21 @@
+
+<p> </p>
+<p><b>Mapping Source</b></p>
+<p>This structure represents the following mapping definition:</p>
+<pre>
+plannet.PlanNet-Organization maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization:
+  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification
+  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime
+  ViaIntermediary maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary
+  GeoLocation maps to http://hl7.org/fhir/StructureDefinition/geolocation
+  Description maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description
+  constrain active to 1..1
+  constrain type to 1..*
+  constrain name to 1..1
+  constrain telecom.system to 1..1
+  constrain telecom.value to 1..1
+  constrain contact.name.family to 1..1
+  constrain contact.name.given to 1..*
+  constrain address.line to 0..4
+
+</pre>
