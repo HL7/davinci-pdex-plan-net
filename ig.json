@@ -27,6 +27,12 @@
       "version": "3.0.0",
       "name": "uscore",
       "location": "http://hl7.org/fhir/us/core"
+    },
+    {
+      "package": "hl7.fhir.uv.vhdir",
+      "version": "0.2.0",
+      "name": "VhDir",
+      "location": "http://build.fhir.org/ig/HL7/VhDir/"
     }
   ],
   "defaults": {
