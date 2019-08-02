@@ -28,11 +28,11 @@
       "name": "uscore",
       "location": "http://hl7.org/fhir/us/core"
     },
-    {
-      "package": "hl7.fhir.uv.vhdir",
-      "version": "current",
-      "name": "VhDir",
-      "location": "http://build.fhir.org/ig/HL7/VhDir/"
+{
+"package": "hl7.fhir.uv.vhdir",
+"version": "current",
+"name": "VhDir",
+"location": "http://build.fhir.org/ig/HL7/VhDir/"
     }
   ],
   "defaults": {
@@ -52,6 +52,10 @@
     "Any": {
       "template-format": "format.html",
       "template-base": "base.html"
+    },
+    "Location": {
+      "template-base": "ex.html",
+      "template-format": "ex.html"
     }
   },
   "extraTemplates": [
@@ -84,6 +88,10 @@
     },
     "StructureDefinition/plannet-PlanNet-PractitionerRole": {
       "base": "StructureDefinition-plannet-PlanNet-PractitionerRole.html"
+    },
+    "Location/location1WSAddress": {
+      "base": "Location-location1WSAddress.html",
+      "source": "location1WSAddress.json"
     }
   },
   "special-urls": [],
