@@ -105,42 +105,45 @@ body {
 }
 /* SCAFFOlDING OBJECTS
 ----------------------------------------------------------------------------------------*/
-.logo {
+#logo {
   float: left;
   margin-top: 6px;
   margin-left: 20px;
   margin-bottom: 4px;
+  display: block;
 }
-
-#project-nav {
+#logo img {
+  max-width: 100%;
+}
+#hl7-nav {
   line-height: 50px;
   float: right;
   margin-top: 16px;
   color: #808080;
 }
-#project-nav a {
+#hl7-nav a {
   color: inherit;
 }
-.project-status {
-  margin-top: 16px;
-  color: maroon;
-}
-#project-search {
+#hl7-status {
   line-height: 50px;
   float: left;
   margin-top: 16px;
   color: maroon;
 }
-#project-search a {
+#hl7-search {
+  line-height: 50px;
+  float: right;
+  margin-top: 16px;
+  color: maroon;
+}
+#hl7-search a {
   color: inherit;
 }
-.project-logo {
+#hl7-logo {
   float: right;
-  margin-right: 20px;
-  margin-top: 6px;
-  margin-bottom: 4px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
-
 #stripe {
   position: absolute;
   left: 0;
@@ -151,6 +154,18 @@ body {
 }
 #notes a {
   color: #555555;
+}
+#publish-box {
+  list-style: none;
+  padding: 0;
+}
+p#publish-box {
+  background-color: yellow;
+  border:1px solid maroon;
+  padding: 5px;
+}
+img#publish-box {
+  text-align: baseline;
 }
 /* GENERIC OBJECTS
 ----------------------------------------------------------------------------------------*/
@@ -279,10 +294,6 @@ body {
 .breadcrumb a {
   color: #555555;
 }
-.breadcrumb .btn-link {
-  font-weight: bold;
-}
-
 .nav-listing {
   overflow: hidden;
 }
@@ -366,90 +377,3 @@ a.to-top {
 ----------------------------------------------------------------------------------------*/
 /* D-I-D AREA
 ----------------------------------------------------------------------------------------*/
-
-/* ----------TOC styling ------*/
-
-// Adding 'Contents' headline to the TOC
-#markdown-toc {
-}
-
-#markdown-toc::before {
-  content: 'Contents:';
-  /*font-size: 1.5em;*/
-}
-
-
-ul#markdown-toc {
-  /* font-size: 0.8em; */
-  /* list-style: none; */
-    list-style-position: inside;
-    margin: 4px;
-    padding: 4px;
-    /*float: right;*/
-    z-index: 10;
-    width: 100%;
-    background-color: #f5f5f5;
-    border: 1px solid #f5f5f5;
-    border-radius: 5px;
-}
-
-li#markdown-toc {
-/* font-size: 1.5em; */
-}
-
-
-/* ----------Publish box styling------*/
-
-
-#publish-box {
-  list-style: none;
-  padding: 0;
-}
-
-p#publish-box {
-  background-color: yellow;
-  border:1px solid maroon;
-  padding: 5px;
-}
-
-img#publish-box {
-text-align: baseline;
-}
-
-#markdown-toc li{
-font-size: 1em;
-
-}
-
-/* ----- increase li font sized fhir.css makes it all 12 px---*/
-
-p, li {
-    font-size: 1em;
-}
-
-/* ----- numbered headings ------
-
-
-body{counter-reset: section}
-h2{counter-reset: sub-section}
-h3{counter-reset: composite}
-h4{counter-reset: detail}
-
-h2:before{
-  counter-increment: section;
-  content: counter(section) " ";
-}
-h3:before{
-  counter-increment: sub-section;
-  content: counter(section) "." counter(sub-section) " ";
-}
-h4:before{
-  counter-increment: composite;
-  content: counter(section) "." counter(sub-section) "." counter(composite) " ";
-}
-h5:before{
-  counter-increment: detail;
-  content: counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
-}
-
-*/
