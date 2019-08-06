@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="insuranceplan-specific-cost-cost-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-cost-type</b></p><p><b>name</b>: VhDir_sp_insuranceplan_specific_cost_cost_type</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select plans which include the specified type of cost</p><p><b>code</b>: specific-cost-cost-type</p><p><b>base</b>: InsurancePlan</p><p><b>type</b>: TOKEN</p><p><b>expression</b>: InsurancePlan.plan.specificCost.benefit.cost.type</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: TEXT</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-cost-type"/>
+  <version value="0.2.0"/>
+  <name value="VhDir_sp_insuranceplan_specific_cost_cost_type"/>
+  <status value="draft"/>
+  <date value="2018-05-23T00:00:00+00:00"/>
+  <publisher value="HL7 Patient Administration Committee"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Select plans which include the specified type of cost"/>
+  <code value="specific-cost-cost-type"/>
+  <base value="InsurancePlan"/>
+  <type value="token"/>
+  <expression value="InsurancePlan.plan.specificCost.benefit.cost.type"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <modifier value="text"/>
+</SearchParameter>

@@ -142,6 +142,1917 @@
       <name value="plannet-PlanNet-PractitionerRole"/>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-plannet-Network-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/plannet-Network-extension"/>
+      </reference>
+      <name value="plannet-Network"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-plannet-ViaIntermediary-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/plannet-ViaIntermediary-extension"/>
+      </reference>
+      <name value="plannet-ViaIntermediary"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-careteam-category.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careteam-category"/>
+      </reference>
+      <name value="VhDir_sp_careteam_category"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-careteam-endpoint.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careteam-endpoint"/>
+      </reference>
+      <name value="VhDir_sp_careteam_endpoint"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-careteam-identifier-assigner.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careteam-identifier-assigner"/>
+      </reference>
+      <name value="VhDir_sp_careteam_identifier_assigner"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-careteam-identifier.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careteam-identifier"/>
+      </reference>
+      <name value="VhDir_sp_careteam_identifier"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-careteam-location.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careteam-location"/>
+      </reference>
+      <name value="VhDir_sp_careteam_location"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-careteam-name.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careteam-name"/>
+      </reference>
+      <name value="VhDir_sp_careteam_name"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-careteam-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careteam-organization"/>
+      </reference>
+      <name value="VhDir_sp_careteam_organization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-careteam-participant.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careteam-participant"/>
+      </reference>
+      <name value="VhDir_sp_careteam_member"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-careteam-service.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careteam-service"/>
+      </reference>
+      <name value="VhDir_sp_careteam_service"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-careteam-status.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careteam-status"/>
+      </reference>
+      <name value="VhDir_sp_careteam_status"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-careteam-via-intermediary.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careteam-via-intermediary"/>
+      </reference>
+      <name value="VhDir_sp_careteam_via_intermediary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-endpoint-connection-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/endpoint-connection-type"/>
+      </reference>
+      <name value="VhDir_sp_endpoint_connection_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-endpoint-identifier-assigner.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/endpoint-identifier-assigner"/>
+      </reference>
+      <name value="VhDir_sp_endpoint_identifier_assigner"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-endpoint-identifier.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/endpoint-identifier"/>
+      </reference>
+      <name value="VhDir_sp_endpoint_identifier"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-endpoint-mime-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/endpoint-mime-type"/>
+      </reference>
+      <name value="VhDir_sp_endpoint_mime_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-endpoint-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/endpoint-organization"/>
+      </reference>
+      <name value="VhDir_sp_endpoint_organization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-endpoint-payload-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/endpoint-payload-type"/>
+      </reference>
+      <name value="VhDir_sp_endpoint_payload_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-endpoint-status.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/endpoint-status"/>
+      </reference>
+      <name value="VhDir_sp_endpoint_status"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-endpoint-usecase-standard.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/endpoint-usecase-standard"/>
+      </reference>
+      <name value="VhDir_sp_endpoint_usecase_standard"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-endpoint-usecase-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/endpoint-usecase-type"/>
+      </reference>
+      <name value="VhDir_sp_endpoint_usecase_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-endpoint-via-intermediary.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/endpoint-via-intermediary"/>
+      </reference>
+      <name value="VhDir_sp_endpoint_via_intermediary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-characteristic.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-characteristic"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_characteristic"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-coverage-area.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-coverage-area"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_coverage_area"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-eligibility.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-eligibility"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_eligibility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-endpoint.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-endpoint"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_endpoint"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-identifier-assigner.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-identifier-assigner"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_identifier_assigner"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-identifier.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-identifier"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_identifier"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-location.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-location"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_location"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-name.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-name"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_name"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-new-patient-network.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-new-patient-network"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_new_patient_network"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-new-patient.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-new-patient"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_new_patient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-organization"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_organization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-service-category.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-service-category"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_category"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-service-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-service-type"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-specialty.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-specialty"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_specialty"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-healthcareservice-via-intermediary.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-via-intermediary"/>
+      </reference>
+      <name value="VhDir_sp_healthcareservice_via_intermediary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-administered-by.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-administered-by"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_administered_by"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-coverage-area.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-coverage-area"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_coverage_area"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-coverage-benefit-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-coverage-benefit-type"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_coverage_benefit_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-coverage-limit-value.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-coverage-limit-value"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_coverage_limit_value"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-coverage-network.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-coverage-network"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_coverage_network"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-coverage-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-coverage-type"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_coverage_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-endpoint.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-endpoint"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_endpoint"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-general-cost-groupsize.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-general-cost-groupsize"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_general_cost_groupsize"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-general-cost-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-general-cost-type"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_general_cost_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-general-cost-value.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-general-cost-value"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_general_cost_value"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-identifier.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-identifier"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_identifier"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-name.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-name"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_name"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-network.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-network"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_network"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-owned-by.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-owned-by"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_owned_by"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-plan-coverage-area.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-plan-coverage-area"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_plan_coverage_area"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-plan-identifier.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-plan-identifier"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_plan_identifier"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-plan-network.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-plan-network"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_plan_network"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-plan-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-plan-type"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_plan_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-specific-cost-benefit-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-specific-cost-benefit-type"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_specific_cost_benefit_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-specific-cost-category.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-specific-cost-category"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_specific_cost_category"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-specific-cost-cost-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-specific-cost-cost-type"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_specific_cost_cost_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-specific-cost-value.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-specific-cost-value"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_specific_cost_value"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-status.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-status"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_status"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-insuranceplan-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-type"/>
+      </reference>
+      <name value="VhDir_sp_insuranceplan_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-location-accessibility.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-accessibility"/>
+      </reference>
+      <name value="VhDir_sp_location_accessibility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-location-address.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-address"/>
+      </reference>
+      <name value="VhDir_sp_location_address"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-location-contains.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-contains"/>
+      </reference>
+      <name value="VhDir_sp_location_contains"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-location-endpoint.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-endpoint"/>
+      </reference>
+      <name value="VhDir_sp_location_endpoint"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-location-identifier-assigner.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-identifier-assigner"/>
+      </reference>
+      <name value="VhDir_sp_location_identifier_assigner"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-location-identifier.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-identifier"/>
+      </reference>
+      <name value="VhDir_sp_location_identifier"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-location-new-patient-network.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-new-patient-network"/>
+      </reference>
+      <name value="VhDir_sp_location_new_patient_network"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-location-new-patient.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-new-patient"/>
+      </reference>
+      <name value="VhDir_sp_location_new_patient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-location-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-organization"/>
+      </reference>
+      <name value="VhDir_sp_location_organization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-location-partof.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-partof"/>
+      </reference>
+      <name value="VhDir_sp_location_partof"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-location-status.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-status"/>
+      </reference>
+      <name value="VhDir_sp_location_status"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-location-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-type"/>
+      </reference>
+      <name value="VhDir_sp_location_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-location-via-intermediary.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-via-intermediary"/>
+      </reference>
+      <name value="VhDir_sp_location_via_intermediary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-address-city.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-address-city"/>
+      </reference>
+      <name value="VhDir_sp_organization_address_city"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-address-country.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-address-country"/>
+      </reference>
+      <name value="VhDir_sp_organization_address_country"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-address-postalcode.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-address-postalcode"/>
+      </reference>
+      <name value="VhDir_sp_organization_address_postalcode"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-address-state.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-address-state"/>
+      </reference>
+      <name value="VhDir_sp_organization_address_state"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-address.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-address"/>
+      </reference>
+      <name value="VhDir_sp_organization_address"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-coverage-area.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-coverage-area"/>
+      </reference>
+      <name value="VhDir_sp_network_coverage_area"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-endpoint.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-endpoint"/>
+      </reference>
+      <name value="VhDir_sp_organization_endpoint"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-identifier-assigner.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-identifier-assigner"/>
+      </reference>
+      <name value="VhDir_sp_organization_identifier_assigner"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-identifier.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-identifier"/>
+      </reference>
+      <name value="VhDir_sp_organization_identifier"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-name.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-name"/>
+      </reference>
+      <name value="VhDir_sp_organization_name"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-partof.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-partof"/>
+      </reference>
+      <name value="VhDir_sp_organization_partof"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-qualification-code.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-qualification-code"/>
+      </reference>
+      <name value="VhDir_sp_organization_qualification_code"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-qualification-issuer.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-qualification-issuer"/>
+      </reference>
+      <name value="VhDir_sp_organization_qualification_issuer"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-qualification-status.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-qualification-status"/>
+      </reference>
+      <name value="VhDir_sp_organization_qualification_status"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-qualification-wherevalid-code.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-qualification-wherevalid-code"/>
+      </reference>
+      <name value="VhDir_sp_organization_qualification_wherevalid_code"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-qualification-wherevalid-location.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-qualification-wherevalid-location"/>
+      </reference>
+      <name value="VhDir_sp_organization_qualification_wherevalid_location"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-type"/>
+      </reference>
+      <name value="VhDir_sp_organization_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organization-via-intermediary.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-via-intermediary"/>
+      </reference>
+      <name value="VhDir_sp_organization_via_intermediary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organizationaffiliation-endpoint.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-endpoint"/>
+      </reference>
+      <name value="VhDir_sp_organizationaffiliation_endpoint"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organizationaffiliation-identifier-assigner.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-identifier-assigner"/>
+      </reference>
+      <name value="VhDir_sp_organizationaffiliation_identifier_assigner"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organizationaffiliation-identifier.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-identifier"/>
+      </reference>
+      <name value="VhDir_sp_organizationaffiliation_identifier"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organizationaffiliation-location.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-location"/>
+      </reference>
+      <name value="VhDir_sp_organizationaffiliation_location"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organizationaffiliation-network.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-network"/>
+      </reference>
+      <name value="VhDir_sp_organizationaffiliation_network"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organizationaffiliation-participating-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-participating-organization"/>
+      </reference>
+      <name value="VhDir_sp_organizationaffiliation_participating_organization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organizationaffiliation-primary-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-primary-organization"/>
+      </reference>
+      <name value="VhDir_sp_organizationaffiliation_primary_organization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organizationaffiliation-role.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-role"/>
+      </reference>
+      <name value="VhDir_sp_organizationaffiliation_role"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organizationaffiliation-service.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-service"/>
+      </reference>
+      <name value="VhDir_sp_organizationaffiliation_service"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organizationaffiliation-specialty.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-specialty"/>
+      </reference>
+      <name value="VhDir_sp_organizationaffiliation_specialty"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-organizationaffiliation-via-intermediary.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-via-intermediary"/>
+      </reference>
+      <name value="VhDir_sp_organizationaffiliation_via_intermediary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-endpoint.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-endpoint"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_endpoint"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-family-name.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-family-name"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_family_name"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-given-name.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-given-name"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_given_name"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-identifier-assigner.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-identifier-assigner"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_identifier_assigner"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-identifier.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-identifier"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_identifier"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-name.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-name"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_name"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-phonetic.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-phonetic"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_phonetic"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-qualification-code.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-qualification-code"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_qualification_code"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-qualification-issuer.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-qualification-issuer"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_qualification_issuer"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-qualification-period.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-qualification-period"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_qualification_period"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-qualification-status.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-qualification-status"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_qualification_status"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-qualification-wherevalid-code.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-qualification-wherevalid-code"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_qualification_wherevalid_code"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-qualification-wherevalid-location.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-qualification-wherevalid-location"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_qualification_wherevalid_location"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitioner-via-intermediary.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-via-intermediary"/>
+      </reference>
+      <name value="VhDir_sp_practitioner_via_intermediary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-endpoint.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-endpoint"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_endpoint"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-identifier-assigner.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-identifier-assigner"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_identifier_assigner"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-identifier.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-identifier"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_identifier"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-location.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-location"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_location"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-network.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-network"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_network"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-new-patient-network.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-new-patient-network"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_new_patient_network"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-new-patient.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-new-patient"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_new_patient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-organization"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_organization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-practitioner.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-practitioner"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_practitioner"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-qualification-code.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-qualification-code"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_qualification_code"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-qualification-issuer.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-qualification-issuer"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_qualification_issuer"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-qualification-status.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-qualification-status"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_qualification_status"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-qualification-wherevalid-code.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-qualification-wherevalid-code"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_qualification_wherevalid_code"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-qualification-wherevalid-location.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-qualification-wherevalid-location"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_qualification_wherevalid_location"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-role.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-role"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_role"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-service.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-service"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_service"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-specialty.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-specialty"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_specialty"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-practitionerrole-via-intermediary.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-via-intermediary"/>
+      </reference>
+      <name value="VhDir_sp_practitionerrole_via_intermediary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-verificationresult-attestation-method.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/verificationresult-attestation-method"/>
+      </reference>
+      <name value="VhDir_sp_verificationresult_attestation_method"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-verificationresult-attestation-onbehalfof.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/verificationresult-attestation-onbehalfof"/>
+      </reference>
+      <name value="VhDir_sp_verificationresult_attestation_onbehalfof"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-verificationresult-attestation-who.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/verificationresult-attestation-who"/>
+      </reference>
+      <name value="VhDir_sp_verificationresult_attestation_who"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-verificationresult-primarysource-date.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/verificationresult-primarysource-date"/>
+      </reference>
+      <name value="VhDir_sp_verificationresult_primarysource_date"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-verificationresult-primarysource-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/verificationresult-primarysource-type"/>
+      </reference>
+      <name value="VhDir_sp_verificationresult_primarysource_type"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-verificationresult-primarysource-who.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/verificationresult-primarysource-who"/>
+      </reference>
+      <name value="VhDir_sp_verificationresult_primarysource_who"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-verificationresult-status-date.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/verificationresult-status-date"/>
+      </reference>
+      <name value="VhDir_sp_verificationresult_status_date"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-verificationresult-target.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/verificationresult-target"/>
+      </reference>
+      <name value="VhDir_sp_verificationresult_target"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-verificationresult-validation-status.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/verificationresult-validation-status"/>
+      </reference>
+      <name value="VhDir_sp_verificationresult_validation_status"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-verificationresult-validator-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/verificationresult-validator-organization"/>
+      </reference>
+      <name value="VhDir_sp_verificationresult_validator_organization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Location-location1WSAddress.html"/>
+      </extension>
+      <reference>
+        <reference value="Location/location1WSAddress"/>
+      </reference>
+      <name value="Example: location1WSAddress"/>
+      <exampleBoolean value="true"/>
+    </resource>
     <page>
       <nameUrl value="index.html"/>
       <title value="DaVinci PDEX Plan Net"/>

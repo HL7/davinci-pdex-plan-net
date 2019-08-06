@@ -3,7 +3,7 @@
   "id": "plannet-PlanNet-Location",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Location Profile</b></p>\n  <p>PlanNet-Location</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Location maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-location:\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Location Profile</b></p>\n  <p>A PlanNet-Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Location maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-location:\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to extension\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Location",
   "version": "0.1.0",
@@ -11,7 +11,7 @@
   "title": "plannet-PlanNet-Location",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-02T00:00:00-04:00",
+  "date": "2019-08-06T00:00:00-04:00",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -23,7 +23,7 @@
       ]
     }
   ],
-  "description": "PlanNet-Location",
+  "description": "A PlanNet-Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.",
   "jurisdiction": [
     {
       "coding": [
@@ -64,7 +64,7 @@
         "id": "Location",
         "path": "Location",
         "short": "plannet-PlanNet-Location",
-        "definition": "PlanNet-Location",
+        "definition": "A PlanNet-Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.",
         "min": 0,
         "max": "*",
         "base": {
@@ -353,10 +353,33 @@
         ]
       },
       {
+        "id": "Location.extension:viaintermediary",
+        "path": "Location.extension",
+        "sliceName": "viaintermediary",
+        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "Location.extension:accessibility",
         "path": "Location.extension",
         "sliceName": "accessibility",
-        "definition": "Accessibilty",
+        "definition": "Accessibilty indicates accessibility options offered by the practitioner (e.g. cultural competence)",
         "min": 0,
         "max": "*",
         "base": {
@@ -379,7 +402,7 @@
         "id": "Location.extension:availabletime",
         "path": "Location.extension",
         "sliceName": "availabletime",
-        "definition": "AvailableTime",
+        "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
         "max": "*",
         "base": {
@@ -399,33 +422,10 @@
         "isSummary": false
       },
       {
-        "id": "Location.extension:viaintermediary",
-        "path": "Location.extension",
-        "sliceName": "viaintermediary",
-        "definition": "ViaIntermediary",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "Location.extension:newpatientprofile",
         "path": "Location.extension",
         "sliceName": "newpatientprofile",
-        "definition": "New Patient Profile",
+        "definition": "New Patient Profile is a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)",
         "min": 0,
         "max": "*",
         "base": {
@@ -448,7 +448,7 @@
         "id": "Location.extension:newpatients",
         "path": "Location.extension",
         "sliceName": "newpatients",
-        "definition": "New Patients",
+        "definition": "New Patients indicates whether the practitioner is accepting new patients in their role",
         "min": 0,
         "max": "*",
         "base": {
@@ -1959,7 +1959,7 @@
         "id": "Location",
         "path": "Location",
         "short": "plannet-PlanNet-Location",
-        "definition": "PlanNet-Location",
+        "definition": "A PlanNet-Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.",
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -1980,10 +1980,33 @@
         }
       },
       {
+        "id": "Location.extension:viaintermediary",
+        "path": "Location.extension",
+        "sliceName": "viaintermediary",
+        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "Location.extension:accessibility",
         "path": "Location.extension",
         "sliceName": "accessibility",
-        "definition": "Accessibilty",
+        "definition": "Accessibilty indicates accessibility options offered by the practitioner (e.g. cultural competence)",
         "min": 0,
         "max": "*",
         "base": {
@@ -2006,7 +2029,7 @@
         "id": "Location.extension:availabletime",
         "path": "Location.extension",
         "sliceName": "availabletime",
-        "definition": "AvailableTime",
+        "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
         "max": "*",
         "base": {
@@ -2026,33 +2049,10 @@
         "isSummary": false
       },
       {
-        "id": "Location.extension:viaintermediary",
-        "path": "Location.extension",
-        "sliceName": "viaintermediary",
-        "definition": "ViaIntermediary",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "Location.extension:newpatientprofile",
         "path": "Location.extension",
         "sliceName": "newpatientprofile",
-        "definition": "New Patient Profile",
+        "definition": "New Patient Profile is a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)",
         "min": 0,
         "max": "*",
         "base": {
@@ -2075,7 +2075,7 @@
         "id": "Location.extension:newpatients",
         "path": "Location.extension",
         "sliceName": "newpatients",
-        "definition": "New Patients",
+        "definition": "New Patients indicates whether the practitioner is accepting new patients in their role",
         "min": 0,
         "max": "*",
         "base": {

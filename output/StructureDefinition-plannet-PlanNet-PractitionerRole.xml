@@ -5,15 +5,15 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>PlanNet-PractitionerRole Profile</b></p>
-  <p>PlanNet-PractitionerRole</p>
+  <p>PlanNet-PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.</p>
   <p><b>Mapping Summary</b></p>
   <p><pre>plannet.PlanNet-PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:
-  Network maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference
+  Network maps to extension
   NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients
   NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile
   Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification
   AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime
-  ViaIntermediary maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary
+  ViaIntermediary maps to extension
   constrain active to 1..1
   constrain code to 1..1
 </pre></p>
@@ -25,7 +25,7 @@
   <title value="plannet-PlanNet-PractitionerRole"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2019-08-02T00:00:00-04:00"/>
+  <date value="2019-08-06T00:00:00-04:00"/>
   <publisher value="HL7 Pharmacy WG"/>
   <contact>
     <telecom>
@@ -33,7 +33,7 @@
       <value value="http://www.hl7.org/Special/committees/medication/"/>
     </telecom>
   </contact>
-  <description value="PlanNet-PractitionerRole"/>
+  <description value="PlanNet-PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -71,7 +71,7 @@
     <element id="PractitionerRole">
       <path value="PractitionerRole"/>
       <short value="plannet-PlanNet-PractitionerRole"/>
-      <definition value="PlanNet-PractitionerRole"/>
+      <definition value="PlanNet-PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -321,10 +321,46 @@
         <map value="N/A"/>
       </mapping>
     </element>
+    <element id="PractitionerRole.extension:network">
+      <path value="PractitionerRole.extension"/>
+      <sliceName value="network"/>
+      <definition value="Health insurance provider network in which the participatingOrganization provides the role&#39;s services (if defined) at the indicated locations (if defined)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="PractitionerRole.extension:viaintermediary">
+      <path value="PractitionerRole.extension"/>
+      <sliceName value="viaintermediary"/>
+      <definition value="ViaIntermediary is a reference to an alternative point of contact for this organization"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
     <element id="PractitionerRole.extension:availabletime">
       <path value="PractitionerRole.extension"/>
       <sliceName value="availabletime"/>
-      <definition value="AvailableTime"/>
+      <definition value="AvailableTime indicates when an organization is available for contact"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -339,46 +375,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="PractitionerRole.extension:viaintermediary">
-      <path value="PractitionerRole.extension"/>
-      <sliceName value="viaintermediary"/>
-      <definition value="ViaIntermediary"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="DomainResource.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
-      </type>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-    </element>
-    <element id="PractitionerRole.extension:network">
-      <path value="PractitionerRole.extension"/>
-      <sliceName value="network"/>
-      <definition value="Network"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="DomainResource.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference"/>
-      </type>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-    </element>
     <element id="PractitionerRole.extension:newpatientprofile">
       <path value="PractitionerRole.extension"/>
       <sliceName value="newpatientprofile"/>
-      <definition value="New Patient Profile"/>
+      <definition value="New Patient Profile is a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -396,7 +396,7 @@
     <element id="PractitionerRole.extension:newpatients">
       <path value="PractitionerRole.extension"/>
       <sliceName value="newpatients"/>
-      <definition value="New Patients"/>
+      <definition value="New Patients indicates whether the practitioner is accepting new patients in their role"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -414,7 +414,7 @@
     <element id="PractitionerRole.extension:qualification">
       <path value="PractitionerRole.extension"/>
       <sliceName value="qualification"/>
-      <definition value="Qualification"/>
+      <definition value="Qualification indicates whether the organization has any formal qualifications"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1364,7 +1364,7 @@
     <element id="PractitionerRole">
       <path value="PractitionerRole"/>
       <short value="plannet-PlanNet-PractitionerRole"/>
-      <definition value="PlanNet-PractitionerRole"/>
+      <definition value="PlanNet-PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information."/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -1380,10 +1380,46 @@
         <rules value="open"/>
       </slicing>
     </element>
+    <element id="PractitionerRole.extension:network">
+      <path value="PractitionerRole.extension"/>
+      <sliceName value="network"/>
+      <definition value="Health insurance provider network in which the participatingOrganization provides the role&#39;s services (if defined) at the indicated locations (if defined)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="PractitionerRole.extension:viaintermediary">
+      <path value="PractitionerRole.extension"/>
+      <sliceName value="viaintermediary"/>
+      <definition value="ViaIntermediary is a reference to an alternative point of contact for this organization"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
     <element id="PractitionerRole.extension:availabletime">
       <path value="PractitionerRole.extension"/>
       <sliceName value="availabletime"/>
-      <definition value="AvailableTime"/>
+      <definition value="AvailableTime indicates when an organization is available for contact"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1398,46 +1434,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="PractitionerRole.extension:viaintermediary">
-      <path value="PractitionerRole.extension"/>
-      <sliceName value="viaintermediary"/>
-      <definition value="ViaIntermediary"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="DomainResource.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
-      </type>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-    </element>
-    <element id="PractitionerRole.extension:network">
-      <path value="PractitionerRole.extension"/>
-      <sliceName value="network"/>
-      <definition value="Network"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="DomainResource.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference"/>
-      </type>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-    </element>
     <element id="PractitionerRole.extension:newpatientprofile">
       <path value="PractitionerRole.extension"/>
       <sliceName value="newpatientprofile"/>
-      <definition value="New Patient Profile"/>
+      <definition value="New Patient Profile is a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1455,7 +1455,7 @@
     <element id="PractitionerRole.extension:newpatients">
       <path value="PractitionerRole.extension"/>
       <sliceName value="newpatients"/>
-      <definition value="New Patients"/>
+      <definition value="New Patients indicates whether the practitioner is accepting new patients in their role"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1473,7 +1473,7 @@
     <element id="PractitionerRole.extension:qualification">
       <path value="PractitionerRole.extension"/>
       <sliceName value="qualification"/>
-      <definition value="Qualification"/>
+      <definition value="Qualification indicates whether the organization has any formal qualifications"/>
       <min value="0"/>
       <max value="*"/>
       <base>

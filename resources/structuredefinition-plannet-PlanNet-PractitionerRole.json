@@ -3,14 +3,14 @@
   "id": "plannet-PlanNet-PractitionerRole",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-PractitionerRole Profile</b></p>\n  <p>PlanNet-PractitionerRole</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  Network maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary\n  constrain active to 1..1\n  constrain code to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-PractitionerRole Profile</b></p>\n  <p>PlanNet-PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  Network maps to extension\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to extension\n  constrain active to 1..1\n  constrain code to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-PractitionerRole",
   "name": "PlanNet_PractitionerRole",
   "title": "plannet-PlanNet-PractitionerRole",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-02",
+  "date": "2019-08-06",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -22,7 +22,7 @@
       ]
     }
   ],
-  "description": "PlanNet-PractitionerRole",
+  "description": "PlanNet-PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.",
   "jurisdiction": [
     {
       "coding": [
@@ -68,7 +68,7 @@
         "id": "PractitionerRole",
         "path": "PractitionerRole",
         "short": "plannet-PlanNet-PractitionerRole",
-        "definition": "PlanNet-PractitionerRole",
+        "definition": "PlanNet-PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.",
         "min": 0,
         "max": "*",
         "base": {
@@ -368,9 +368,55 @@
         }
       },
       {
+        "id": "PractitionerRole.extension:network",
+        "path": "PractitionerRole.extension",
+        "definition": "Health insurance provider network in which the participatingOrganization provides the role's services (if defined) at the indicated locations (if defined).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "network"
+      },
+      {
+        "id": "PractitionerRole.extension:viaintermediary",
+        "path": "PractitionerRole.extension",
+        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "viaintermediary"
+      },
+      {
         "id": "PractitionerRole.extension:availabletime",
         "path": "PractitionerRole.extension",
-        "definition": "AvailableTime",
+        "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
         "max": "*",
         "base": {
@@ -391,55 +437,9 @@
         "sliceName": "availabletime"
       },
       {
-        "id": "PractitionerRole.extension:viaintermediary",
-        "path": "PractitionerRole.extension",
-        "definition": "ViaIntermediary",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "viaintermediary"
-      },
-      {
-        "id": "PractitionerRole.extension:network",
-        "path": "PractitionerRole.extension",
-        "definition": "Network",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "network"
-      },
-      {
         "id": "PractitionerRole.extension:newpatientprofile",
         "path": "PractitionerRole.extension",
-        "definition": "New Patient Profile",
+        "definition": "New Patient Profile is a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)",
         "min": 0,
         "max": "*",
         "base": {
@@ -462,7 +462,7 @@
       {
         "id": "PractitionerRole.extension:newpatients",
         "path": "PractitionerRole.extension",
-        "definition": "New Patients",
+        "definition": "New Patients indicates whether the practitioner is accepting new patients in their role",
         "min": 0,
         "max": "*",
         "base": {
@@ -485,7 +485,7 @@
       {
         "id": "PractitionerRole.extension:qualification",
         "path": "PractitionerRole.extension",
-        "definition": "Qualification",
+        "definition": "Qualification indicates whether the organization has any formal qualifications",
         "min": 0,
         "max": "*",
         "base": {
@@ -1658,7 +1658,7 @@
         "id": "PractitionerRole",
         "path": "PractitionerRole",
         "short": "plannet-PlanNet-PractitionerRole",
-        "definition": "PlanNet-PractitionerRole",
+        "definition": "PlanNet-PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.",
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -1679,9 +1679,55 @@
         }
       },
       {
+        "id": "PractitionerRole.extension:network",
+        "path": "PractitionerRole.extension",
+        "definition": "Health insurance provider network in which the participatingOrganization provides the role's services (if defined) at the indicated locations (if defined).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "network"
+      },
+      {
+        "id": "PractitionerRole.extension:viaintermediary",
+        "path": "PractitionerRole.extension",
+        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "viaintermediary"
+      },
+      {
         "id": "PractitionerRole.extension:availabletime",
         "path": "PractitionerRole.extension",
-        "definition": "AvailableTime",
+        "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
         "max": "*",
         "base": {
@@ -1702,55 +1748,9 @@
         "sliceName": "availabletime"
       },
       {
-        "id": "PractitionerRole.extension:viaintermediary",
-        "path": "PractitionerRole.extension",
-        "definition": "ViaIntermediary",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "viaintermediary"
-      },
-      {
-        "id": "PractitionerRole.extension:network",
-        "path": "PractitionerRole.extension",
-        "definition": "Network",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "network"
-      },
-      {
         "id": "PractitionerRole.extension:newpatientprofile",
         "path": "PractitionerRole.extension",
-        "definition": "New Patient Profile",
+        "definition": "New Patient Profile is a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)",
         "min": 0,
         "max": "*",
         "base": {
@@ -1773,7 +1773,7 @@
       {
         "id": "PractitionerRole.extension:newpatients",
         "path": "PractitionerRole.extension",
-        "definition": "New Patients",
+        "definition": "New Patients indicates whether the practitioner is accepting new patients in their role",
         "min": 0,
         "max": "*",
         "base": {
@@ -1796,7 +1796,7 @@
       {
         "id": "PractitionerRole.extension:qualification",
         "path": "PractitionerRole.extension",
-        "definition": "Qualification",
+        "definition": "Qualification indicates whether the organization has any formal qualifications",
         "min": 0,
         "max": "*",
         "base": {

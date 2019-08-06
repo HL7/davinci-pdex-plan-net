@@ -191,6 +191,2505 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "plannet-PlanNet-PractitionerRole" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-plannet-Network-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/plannet-Network-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "plannet-Network" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-plannet-ViaIntermediary-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/plannet-ViaIntermediary-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "plannet-ViaIntermediary" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-careteam-category.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-category>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/careteam-category" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_careteam_category" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-careteam-endpoint.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-endpoint>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/careteam-endpoint" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_careteam_endpoint" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-careteam-identifier-assigner.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-identifier-assigner>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/careteam-identifier-assigner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_careteam_identifier_assigner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-careteam-identifier.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/careteam-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_careteam_identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-careteam-location.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-location>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/careteam-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_careteam_location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-careteam-name.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/careteam-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_careteam_name" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-careteam-organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-organization>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/careteam-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_careteam_organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-careteam-participant.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-participant>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/careteam-participant" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_careteam_member" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-careteam-service.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-service>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/careteam-service" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_careteam_service" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-careteam-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-status>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/careteam-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_careteam_status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-careteam-via-intermediary.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-via-intermediary>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/careteam-via-intermediary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_careteam_via_intermediary" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-endpoint-connection-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-connection-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/endpoint-connection-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_endpoint_connection_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-endpoint-identifier-assigner.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-identifier-assigner>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/endpoint-identifier-assigner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_endpoint_identifier_assigner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-endpoint-identifier.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/endpoint-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_endpoint_identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-endpoint-mime-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-mime-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/endpoint-mime-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_endpoint_mime_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-endpoint-organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-organization>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/endpoint-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_endpoint_organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-endpoint-payload-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-payload-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/endpoint-payload-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_endpoint_payload_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-endpoint-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-status>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/endpoint-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_endpoint_status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-endpoint-usecase-standard.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-usecase-standard>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/endpoint-usecase-standard" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_endpoint_usecase_standard" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-endpoint-usecase-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-usecase-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/endpoint-usecase-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_endpoint_usecase_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-endpoint-via-intermediary.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-via-intermediary>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/endpoint-via-intermediary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_endpoint_via_intermediary" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-characteristic.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-characteristic>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-characteristic" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_characteristic" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-coverage-area.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-coverage-area>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-coverage-area" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_coverage_area" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-eligibility.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-eligibility>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-eligibility" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_eligibility" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-endpoint.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-endpoint>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-endpoint" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_endpoint" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-identifier-assigner.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-identifier-assigner>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-identifier-assigner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_identifier_assigner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-identifier.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-location.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-location>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-name.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_name" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-new-patient-network.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-new-patient-network>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-new-patient-network" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_new_patient_network" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-new-patient.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-new-patient>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-new-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_new_patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-organization>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-service-category.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-service-category>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-service-category" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_category" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-service-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-service-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-service-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-specialty.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-specialty>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-specialty" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_specialty" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-healthcareservice-via-intermediary.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-via-intermediary>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/healthcareservice-via-intermediary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_healthcareservice_via_intermediary" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-administered-by.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-administered-by>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-administered-by" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_administered_by" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-coverage-area.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-coverage-area>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-coverage-area" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_coverage_area" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-coverage-benefit-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-coverage-benefit-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-coverage-benefit-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_coverage_benefit_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-coverage-limit-value.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-coverage-limit-value>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-coverage-limit-value" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_coverage_limit_value" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-coverage-network.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-coverage-network>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-coverage-network" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_coverage_network" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-coverage-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-coverage-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-coverage-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_coverage_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-endpoint.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-endpoint>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-endpoint" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_endpoint" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-general-cost-groupsize.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-general-cost-groupsize>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-general-cost-groupsize" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_general_cost_groupsize" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-general-cost-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-general-cost-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-general-cost-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_general_cost_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-general-cost-value.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-general-cost-value>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-general-cost-value" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_general_cost_value" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-identifier.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-name.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_name" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-network.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-network>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-network" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_network" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-owned-by.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-owned-by>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-owned-by" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_owned_by" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-plan-coverage-area.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-plan-coverage-area>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-plan-coverage-area" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_plan_coverage_area" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-plan-identifier.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-plan-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-plan-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_plan_identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-plan-network.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-plan-network>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-plan-network" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_plan_network" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-plan-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-plan-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-plan-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_plan_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-specific-cost-benefit-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-specific-cost-benefit-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-specific-cost-benefit-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_specific_cost_benefit_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-specific-cost-category.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-specific-cost-category>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-specific-cost-category" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_specific_cost_category" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-specific-cost-cost-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-specific-cost-cost-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-specific-cost-cost-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_specific_cost_cost_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-specific-cost-value.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-specific-cost-value>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-specific-cost-value" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_specific_cost_value" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-status>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-insuranceplan-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/insuranceplan-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_insuranceplan_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-location-accessibility.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-accessibility>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-accessibility" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_location_accessibility" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-location-address.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-address>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-address" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_location_address" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-location-contains.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-contains>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-contains" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_location_contains" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-location-endpoint.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-endpoint>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-endpoint" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_location_endpoint" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-location-identifier-assigner.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-identifier-assigner>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-identifier-assigner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_location_identifier_assigner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-location-identifier.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_location_identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-location-new-patient-network.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-new-patient-network>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-new-patient-network" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_location_new_patient_network" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-location-new-patient.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-new-patient>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-new-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_location_new_patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-location-organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-organization>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_location_organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-location-partof.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-partof>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-partof" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_location_partof" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-location-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-status>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_location_status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-location-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_location_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-location-via-intermediary.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-via-intermediary>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/location-via-intermediary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_location_via_intermediary" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-address-city.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-address-city>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-address-city" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_address_city" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-address-country.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-address-country>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-address-country" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_address_country" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-address-postalcode.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-address-postalcode>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-address-postalcode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_address_postalcode" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-address-state.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-address-state>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-address-state" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_address_state" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-address.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-address>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-address" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_address" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-coverage-area.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-coverage-area>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-coverage-area" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_network_coverage_area" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 90;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-endpoint.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-endpoint>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-endpoint" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_endpoint" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-identifier-assigner.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-identifier-assigner>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-identifier-assigner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_identifier_assigner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 92;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-identifier.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-name.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_name" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 94;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-partof.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-partof>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-partof" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_partof" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 95;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-qualification-code.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-qualification-code>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-qualification-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_qualification_code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 96;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-qualification-issuer.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-qualification-issuer>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-qualification-issuer" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_qualification_issuer" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 97;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-qualification-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-qualification-status>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-qualification-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_qualification_status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 98;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-qualification-wherevalid-code.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-qualification-wherevalid-code>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-qualification-wherevalid-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_qualification_wherevalid_code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 99;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-qualification-wherevalid-location.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-qualification-wherevalid-location>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-qualification-wherevalid-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_qualification_wherevalid_location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 100;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 101;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organization-via-intermediary.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-via-intermediary>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organization-via-intermediary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organization_via_intermediary" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 102;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organizationaffiliation-endpoint.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-endpoint>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organizationaffiliation-endpoint" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organizationaffiliation_endpoint" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 103;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organizationaffiliation-identifier-assigner.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-identifier-assigner>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organizationaffiliation-identifier-assigner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organizationaffiliation_identifier_assigner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 104;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organizationaffiliation-identifier.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organizationaffiliation-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organizationaffiliation_identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 105;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organizationaffiliation-location.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-location>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organizationaffiliation-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organizationaffiliation_location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 106;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organizationaffiliation-network.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-network>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organizationaffiliation-network" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organizationaffiliation_network" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 107;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organizationaffiliation-participating-organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-participating-organization>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organizationaffiliation-participating-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organizationaffiliation_participating_organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 108;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organizationaffiliation-primary-organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-primary-organization>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organizationaffiliation-primary-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organizationaffiliation_primary_organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 109;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organizationaffiliation-role.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-role>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organizationaffiliation-role" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organizationaffiliation_role" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 110;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organizationaffiliation-service.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-service>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organizationaffiliation-service" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organizationaffiliation_service" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 111;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organizationaffiliation-specialty.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-specialty>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organizationaffiliation-specialty" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organizationaffiliation_specialty" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 112;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-organizationaffiliation-via-intermediary.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-via-intermediary>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/organizationaffiliation-via-intermediary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_organizationaffiliation_via_intermediary" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 113;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-endpoint.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-endpoint>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-endpoint" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_endpoint" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 114;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-family-name.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-family-name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-family-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_family_name" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 115;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-given-name.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-given-name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-given-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_given_name" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 116;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-identifier-assigner.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-identifier-assigner>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-identifier-assigner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_identifier_assigner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 117;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-identifier.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 118;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-name.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-name>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_name" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 119;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-phonetic.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-phonetic>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-phonetic" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_phonetic" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 120;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-qualification-code.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-code>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-qualification-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_qualification_code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 121;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-qualification-issuer.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-issuer>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-qualification-issuer" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_qualification_issuer" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 122;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-qualification-period.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-period>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-qualification-period" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_qualification_period" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 123;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-qualification-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-status>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-qualification-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_qualification_status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 124;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-qualification-wherevalid-code.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-wherevalid-code>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-qualification-wherevalid-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_qualification_wherevalid_code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 125;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-qualification-wherevalid-location.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-wherevalid-location>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-qualification-wherevalid-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_qualification_wherevalid_location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 126;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitioner-via-intermediary.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-via-intermediary>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitioner-via-intermediary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitioner_via_intermediary" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 127;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-endpoint.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-endpoint>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-endpoint" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_endpoint" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 128;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-identifier-assigner.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-identifier-assigner>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-identifier-assigner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_identifier_assigner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 129;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-identifier.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-identifier>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 130;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-location.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-location>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 131;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-network.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-network>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-network" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_network" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 132;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-new-patient-network.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-new-patient-network>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-new-patient-network" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_new_patient_network" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 133;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-new-patient.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-new-patient>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-new-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_new_patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 134;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-organization>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 135;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-practitioner.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-practitioner>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_practitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 136;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-qualification-code.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-qualification-code>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-qualification-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_qualification_code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 137;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-qualification-issuer.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-qualification-issuer>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-qualification-issuer" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_qualification_issuer" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 138;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-qualification-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-qualification-status>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-qualification-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_qualification_status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 139;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-qualification-wherevalid-code.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-qualification-wherevalid-code>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-qualification-wherevalid-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_qualification_wherevalid_code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 140;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-qualification-wherevalid-location.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-qualification-wherevalid-location>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-qualification-wherevalid-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_qualification_wherevalid_location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 141;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-role.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-role>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-role" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_role" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 142;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-service.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-service>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-service" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_service" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 143;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-specialty.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-specialty>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-specialty" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_specialty" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 144;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-practitionerrole-via-intermediary.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-via-intermediary>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-via-intermediary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_practitionerrole_via_intermediary" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 145;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-verificationresult-attestation-method.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-attestation-method>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/verificationresult-attestation-method" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_verificationresult_attestation_method" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 146;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-verificationresult-attestation-onbehalfof.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-attestation-onbehalfof>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/verificationresult-attestation-onbehalfof" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_verificationresult_attestation_onbehalfof" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 147;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-verificationresult-attestation-who.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-attestation-who>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/verificationresult-attestation-who" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_verificationresult_attestation_who" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 148;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-verificationresult-primarysource-date.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-primarysource-date>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/verificationresult-primarysource-date" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_verificationresult_primarysource_date" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 149;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-verificationresult-primarysource-type.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-primarysource-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/verificationresult-primarysource-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_verificationresult_primarysource_type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 150;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-verificationresult-primarysource-who.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-primarysource-who>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/verificationresult-primarysource-who" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_verificationresult_primarysource_who" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 151;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-verificationresult-status-date.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-status-date>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/verificationresult-status-date" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_verificationresult_status_date" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 152;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-verificationresult-target.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-target>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/verificationresult-target" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_verificationresult_target" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 153;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-verificationresult-validation-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-validation-status>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/verificationresult-validation-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_verificationresult_validation_status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 154;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "SearchParameter-verificationresult-validator-organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-validator-organization>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/verificationresult-validator-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VhDir_sp_verificationresult_validator_organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 155;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Location-location1WSAddress.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/Location/location1WSAddress>;
+         fhir:Reference.reference [ fhir:value "Location/location1WSAddress" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: location1WSAddress" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
@@ -216,6 +2715,300 @@
 <http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Practitioner> a fhir:us .
 
 <http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-PractitionerRole> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-category> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-endpoint> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-identifier-assigner> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-identifier> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-location> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-name> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-organization> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-participant> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-service> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-status> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/careteam-via-intermediary> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-connection-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-identifier-assigner> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-identifier> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-mime-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-organization> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-payload-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-status> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-usecase-standard> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-usecase-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-via-intermediary> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-characteristic> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-coverage-area> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-eligibility> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-endpoint> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-identifier-assigner> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-identifier> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-location> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-name> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-new-patient-network> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-new-patient> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-organization> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-service-category> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-service-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-specialty> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-via-intermediary> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-administered-by> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-coverage-area> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-coverage-benefit-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-coverage-limit-value> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-coverage-network> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-coverage-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-endpoint> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-general-cost-groupsize> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-general-cost-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-general-cost-value> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-identifier> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-name> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-network> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-owned-by> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-plan-coverage-area> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-plan-identifier> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-plan-network> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-plan-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-specific-cost-benefit-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-specific-cost-category> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-specific-cost-cost-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-specific-cost-value> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-status> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-accessibility> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-address> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-contains> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-endpoint> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-identifier-assigner> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-identifier> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-new-patient-network> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-new-patient> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-organization> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-partof> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-status> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-via-intermediary> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-address-city> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-address-country> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-address-postalcode> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-address-state> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-address> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-coverage-area> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-endpoint> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-identifier-assigner> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-identifier> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-name> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-partof> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-qualification-code> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-qualification-issuer> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-qualification-status> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-qualification-wherevalid-code> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-qualification-wherevalid-location> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-via-intermediary> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-endpoint> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-identifier-assigner> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-identifier> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-location> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-network> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-participating-organization> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-primary-organization> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-role> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-service> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-specialty> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-via-intermediary> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-endpoint> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-family-name> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-given-name> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-identifier-assigner> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-identifier> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-name> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-phonetic> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-code> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-issuer> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-period> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-status> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-wherevalid-code> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-wherevalid-location> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-via-intermediary> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-endpoint> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-identifier-assigner> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-identifier> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-location> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-network> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-new-patient-network> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-new-patient> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-organization> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-practitioner> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-qualification-code> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-qualification-issuer> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-qualification-status> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-qualification-wherevalid-code> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-qualification-wherevalid-location> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-role> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-service> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-specialty> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-via-intermediary> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-attestation-method> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-attestation-onbehalfof> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-attestation-who> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-primarysource-date> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-primarysource-type> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-primarysource-who> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-status-date> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-target> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-validation-status> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/verificationresult-validator-organization> a fhir:us .
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/Location/location1WSAddress> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

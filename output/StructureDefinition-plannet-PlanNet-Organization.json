@@ -3,7 +3,7 @@
   "id": "plannet-PlanNet-Organization",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Organization Profile</b></p>\n  <p>PlanNet-Organization</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Organization maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization:\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary\n  GeoLocation maps to http://hl7.org/fhir/StructureDefinition/geolocation\n  Description maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description\n  constrain active to 1..1\n  constrain type to 1..*\n  constrain name to 1..1\n  constrain telecom.system to 1..1\n  constrain telecom.value to 1..1\n  constrain contact.name.family to 1..1\n  constrain contact.name.given to 1..*\n  constrain address.line to 0..4\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Organization Profile</b></p>\n  <p>An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Organization maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization:\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to extension\n  GeoLocation maps to http://hl7.org/fhir/StructureDefinition/geolocation\n  Description maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description\n  constrain active to 1..1\n  constrain type to 1..*\n  constrain name to 1..1\n  constrain telecom.system to 1..1\n  constrain telecom.value to 1..1\n  constrain contact.name.family to 1..1\n  constrain contact.name.given to 1..*\n  constrain address.line to 0..4\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Organization",
   "version": "0.1.0",
@@ -11,7 +11,7 @@
   "title": "plannet-PlanNet-Organization",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-02T00:00:00-04:00",
+  "date": "2019-08-06T00:00:00-04:00",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -23,7 +23,7 @@
       ]
     }
   ],
-  "description": "PlanNet-Organization",
+  "description": "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.",
   "jurisdiction": [
     {
       "coding": [
@@ -69,7 +69,7 @@
         "id": "Organization",
         "path": "Organization",
         "short": "plannet-PlanNet-Organization",
-        "definition": "PlanNet-Organization",
+        "definition": "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.",
         "min": 0,
         "max": "*",
         "base": {
@@ -370,10 +370,33 @@
         ]
       },
       {
+        "id": "Organization.extension:viaintermediary",
+        "path": "Organization.extension",
+        "sliceName": "viaintermediary",
+        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "Organization.extension:geolocation",
         "path": "Organization.extension",
         "sliceName": "geolocation",
-        "definition": "GeoLocation",
+        "definition": "GeoLocation indicates the absolute geographic location of an organization’s address",
         "min": 0,
         "max": "1",
         "base": {
@@ -396,7 +419,7 @@
         "id": "Organization.extension:availabletime",
         "path": "Organization.extension",
         "sliceName": "availabletime",
-        "definition": "AvailableTime",
+        "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
         "max": "*",
         "base": {
@@ -416,33 +439,10 @@
         "isSummary": false
       },
       {
-        "id": "Organization.extension:viaintermediary",
-        "path": "Organization.extension",
-        "sliceName": "viaintermediary",
-        "definition": "ViaIntermediary",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "Organization.extension:description",
         "path": "Organization.extension",
         "sliceName": "description",
-        "definition": "Description",
+        "definition": "Description is a  friendly description of the organization",
         "min": 0,
         "max": "1",
         "base": {
@@ -465,7 +465,7 @@
         "id": "Organization.extension:qualification",
         "path": "Organization.extension",
         "sliceName": "qualification",
-        "definition": "Qualification",
+        "definition": "Qualification indicates whether the organization has any formal qualifications",
         "min": 0,
         "max": "*",
         "base": {
@@ -2566,7 +2566,7 @@
         "id": "Organization",
         "path": "Organization",
         "short": "plannet-PlanNet-Organization",
-        "definition": "PlanNet-Organization",
+        "definition": "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.",
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -2587,10 +2587,33 @@
         }
       },
       {
+        "id": "Organization.extension:viaintermediary",
+        "path": "Organization.extension",
+        "sliceName": "viaintermediary",
+        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "Organization.extension:geolocation",
         "path": "Organization.extension",
         "sliceName": "geolocation",
-        "definition": "GeoLocation",
+        "definition": "GeoLocation indicates the absolute geographic location of an organization’s address",
         "min": 0,
         "max": "1",
         "base": {
@@ -2613,7 +2636,7 @@
         "id": "Organization.extension:availabletime",
         "path": "Organization.extension",
         "sliceName": "availabletime",
-        "definition": "AvailableTime",
+        "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
         "max": "*",
         "base": {
@@ -2633,33 +2656,10 @@
         "isSummary": false
       },
       {
-        "id": "Organization.extension:viaintermediary",
-        "path": "Organization.extension",
-        "sliceName": "viaintermediary",
-        "definition": "ViaIntermediary",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "Organization.extension:description",
         "path": "Organization.extension",
         "sliceName": "description",
-        "definition": "Description",
+        "definition": "Description is a  friendly description of the organization",
         "min": 0,
         "max": "1",
         "base": {
@@ -2682,7 +2682,7 @@
         "id": "Organization.extension:qualification",
         "path": "Organization.extension",
         "sliceName": "qualification",
-        "definition": "Qualification",
+        "definition": "Qualification indicates whether the organization has any formal qualifications",
         "min": 0,
         "max": "*",
         "base": {

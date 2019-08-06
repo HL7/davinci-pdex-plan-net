@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-code> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "practitioner-qualification-code"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-code</b></p><p><b>name</b>: VhDir_sp_practitioner_qualification_code</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select Practitioners with a type of qualification matching the specified code</p><p><b>code</b>: qualification-code</p><p><b>base</b>: Practitioner</p><p><b>type</b>: TOKEN</p><p><b>expression</b>: Practitioner.qualification.code</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: TEXT</p></div>"
+  ];
+  fhir:SearchParameter.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-code"];
+  fhir:SearchParameter.version [ fhir:value "0.2.0"];
+  fhir:SearchParameter.name [ fhir:value "VhDir_sp_practitioner_qualification_code"];
+  fhir:SearchParameter.status [ fhir:value "draft"];
+  fhir:SearchParameter.date [ fhir:value "2018-05-23T00:00:00+00:00"^^xsd:dateTime];
+  fhir:SearchParameter.publisher [ fhir:value "HL7 Patient Administration Committee"];
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/pafm/index.cfm" ]
+     ]
+  ];
+  fhir:SearchParameter.description [ fhir:value "Select Practitioners with a type of qualification matching the specified code"];
+  fhir:SearchParameter.code [ fhir:value "qualification-code"];
+  fhir:SearchParameter.base [
+     fhir:value "Practitioner";
+     fhir:index 0
+  ];
+  fhir:SearchParameter.type [ fhir:value "token"];
+  fhir:SearchParameter.expression [ fhir:value "Practitioner.qualification.code"];
+  fhir:SearchParameter.multipleOr [ fhir:value "true"^^xsd:boolean];
+  fhir:SearchParameter.multipleAnd [ fhir:value "true"^^xsd:boolean];
+  fhir:SearchParameter.modifier [
+     fhir:value "text";
+     fhir:index 0
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-code.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-code.ttl> .
+
+# -------------------------------------------------------------------------------------
+

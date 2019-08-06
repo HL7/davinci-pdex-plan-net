@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="healthcareservice-characteristic"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-characteristic</b></p><p><b>name</b>: VhDir_sp_healthcareservice_characteristic</p><p><b>derivedFrom</b>: <a href="http://hl7.org/fhir/SearchParameter/HealthcareService-characteristic">http://hl7.org/fhir/SearchParameter/HealthcareService-characteristic</a></p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select HealthcareServices with the specified characteristic</p><p><b>code</b>: characteristic</p><p><b>base</b>: HealthcareService</p><p><b>type</b>: TOKEN</p><p><b>expression</b>: HealthcareService.characteristic</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: TEXT</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-characteristic"/>
+  <version value="0.2.0"/>
+  <name value="VhDir_sp_healthcareservice_characteristic"/>
+  <derivedFrom value="http://hl7.org/fhir/SearchParameter/HealthcareService-characteristic"/>
+  <status value="draft"/>
+  <date value="2018-05-23T00:00:00+00:00"/>
+  <publisher value="HL7 Patient Administration Committee"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Select HealthcareServices with the specified characteristic"/>
+  <code value="characteristic"/>
+  <base value="HealthcareService"/>
+  <type value="token"/>
+  <expression value="HealthcareService.characteristic"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <modifier value="text"/>
+</SearchParameter>

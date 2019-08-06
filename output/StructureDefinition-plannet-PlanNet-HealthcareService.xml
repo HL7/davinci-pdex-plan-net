@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>PlanNet-HealthcareService Profile</b></p>
-  <p>PlanNet-HealthCareService</p>
+  <p>The PlanNet-HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnstics, hospital and ambulatory care, home care, long-term care, and other health-related and community services.</p>
   <p><b>Mapping Summary</b></p>
   <p><pre>plannet.PlanNet-HealthcareService maps to HealthcareService:
   ProvidedBy maps to providedBy
@@ -20,7 +20,7 @@
   <name value="PlanNet_HealthcareService"/>
   <title value="plannet-PlanNet-HealthcareService"/>
   <status value="draft"/>
-  <date value="2019-08-02T00:00:00-04:00"/>
+  <date value="2019-08-06T00:00:00-04:00"/>
   <publisher value="HL7 Pharmacy WG"/>
   <contact>
     <telecom>
@@ -28,7 +28,7 @@
       <value value="http://www.hl7.org/Special/committees/medication/"/>
     </telecom>
   </contact>
-  <description value="PlanNet-HealthCareService"/>
+  <description value="The PlanNet-HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnstics, hospital and ambulatory care, home care, long-term care, and other health-related and community services."/>
   <fhirVersion value="4.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="HealthcareService">
       <path value="HealthcareService"/>
       <short value="plannet-PlanNet-HealthcareService"/>
-      <definition value="PlanNet-HealthCareService"/>
+      <definition value="The PlanNet-HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnstics, hospital and ambulatory care, home care, long-term care, and other health-related and community services."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -286,7 +286,7 @@
     <element id="HealthcareService.extension:availabletime">
       <path value="HealthcareService.extension"/>
       <sliceName value="availabletime"/>
-      <definition value="AvailableTime"/>
+      <definition value="AvailableTime indicates when an organization is available for contact"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -304,7 +304,7 @@
     <element id="HealthcareService.extension:newpatients">
       <path value="HealthcareService.extension"/>
       <sliceName value="newpatients"/>
-      <definition value="New Patients"/>
+      <definition value="New Patients indicates whether the practitioner is accepting new patients in their role"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -1379,7 +1379,7 @@
     <element id="HealthcareService">
       <path value="HealthcareService"/>
       <short value="plannet-PlanNet-HealthcareService"/>
-      <definition value="PlanNet-HealthCareService"/>
+      <definition value="The PlanNet-HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnstics, hospital and ambulatory care, home care, long-term care, and other health-related and community services."/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
@@ -1399,7 +1399,7 @@
     <element id="HealthcareService.extension:availabletime">
       <path value="HealthcareService.extension"/>
       <sliceName value="availabletime"/>
-      <definition value="AvailableTime"/>
+      <definition value="AvailableTime indicates when an organization is available for contact"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1417,7 +1417,7 @@
     <element id="HealthcareService.extension:newpatients">
       <path value="HealthcareService.extension"/>
       <sliceName value="newpatients"/>
-      <definition value="New Patients"/>
+      <definition value="New Patients indicates whether the practitioner is accepting new patients in their role"/>
       <min value="1"/>
       <max value="1"/>
       <base>

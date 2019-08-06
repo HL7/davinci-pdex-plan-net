@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="verificationresult-primarysource-who"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-who</b></p><p><b>name</b>: VhDir_sp_verificationresult_primarysource_who</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select validation information for data that was validated against the specified primary source</p><p><b>code</b>: primarysource-who</p><p><b>base</b>: VerificationResult</p><p><b>type</b>: REFERENCE</p><p><b>expression</b>: VerificationResult.primarySource.who</p><p><b>target</b>: Practitioner, Organization, PractitionerRole</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: TYPE</p><p><b>chain</b>: identifier, address, name, partof, location, organization, practitioner</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-who"/>
+  <version value="0.2.0"/>
+  <name value="VhDir_sp_verificationresult_primarysource_who"/>
+  <status value="draft"/>
+  <date value="2018-05-23T00:00:00+00:00"/>
+  <publisher value="HL7 Patient Administration Committee"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Select validation information for data that was validated against the specified primary source"/>
+  <code value="primarysource-who"/>
+  <base value="VerificationResult"/>
+  <type value="reference"/>
+  <expression value="VerificationResult.primarySource.who"/>
+  <target value="Practitioner"/>
+  <target value="Organization"/>
+  <target value="PractitionerRole"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <modifier value="type"/>
+  <chain value="identifier"/>
+  <chain value="address"/>
+  <chain value="name"/>
+  <chain value="partof"/>
+  <chain value="location"/>
+  <chain value="organization"/>
+  <chain value="practitioner"/>
+</SearchParameter>

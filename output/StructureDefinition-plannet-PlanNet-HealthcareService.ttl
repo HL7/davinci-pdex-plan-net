@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "plannet-PlanNet-HealthcareService"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-HealthcareService Profile</b></p>\n  <p>PlanNet-HealthCareService</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-HealthcareService maps to HealthcareService:\n  ProvidedBy maps to providedBy\n  Location maps to location\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-HealthcareService Profile</b></p>\n  <p>The PlanNet-HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnstics, hospital and ambulatory care, home care, long-term care, and other health-related and community services.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-HealthcareService maps to HealthcareService:\n  ProvidedBy maps to providedBy\n  Location maps to location\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-HealthcareService"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "PlanNet_HealthcareService"];
   fhir:StructureDefinition.title [ fhir:value "plannet-PlanNet-HealthcareService"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-08-02T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-08-06T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Pharmacy WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -27,7 +27,7 @@
        fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/medication/" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "PlanNet-HealthCareService"];
+  fhir:StructureDefinition.description [ fhir:value "The PlanNet-HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnstics, hospital and ambulatory care, home care, long-term care, and other health-related and community services."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
@@ -54,7 +54,7 @@
        fhir:Element.id [ fhir:value "HealthcareService" ];
        fhir:ElementDefinition.path [ fhir:value "HealthcareService" ];
        fhir:ElementDefinition.short [ fhir:value "plannet-PlanNet-HealthcareService" ];
-       fhir:ElementDefinition.definition [ fhir:value "PlanNet-HealthCareService" ];
+       fhir:ElementDefinition.definition [ fhir:value "The PlanNet-HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnstics, hospital and ambulatory care, home care, long-term care, and other health-related and community services." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -347,7 +347,7 @@
        fhir:Element.id [ fhir:value "HealthcareService.extension:availabletime" ];
        fhir:ElementDefinition.path [ fhir:value "HealthcareService.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "availabletime" ];
-       fhir:ElementDefinition.definition [ fhir:value "AvailableTime" ];
+       fhir:ElementDefinition.definition [ fhir:value "AvailableTime indicates when an organization is available for contact" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -371,7 +371,7 @@
        fhir:Element.id [ fhir:value "HealthcareService.extension:newpatients" ];
        fhir:ElementDefinition.path [ fhir:value "HealthcareService.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "newpatients" ];
-       fhir:ElementDefinition.definition [ fhir:value "New Patients" ];
+       fhir:ElementDefinition.definition [ fhir:value "New Patients indicates whether the practitioner is accepting new patients in their role" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -1701,7 +1701,7 @@
        fhir:Element.id [ fhir:value "HealthcareService" ];
        fhir:ElementDefinition.path [ fhir:value "HealthcareService" ];
        fhir:ElementDefinition.short [ fhir:value "plannet-PlanNet-HealthcareService" ];
-       fhir:ElementDefinition.definition [ fhir:value "PlanNet-HealthCareService" ];
+       fhir:ElementDefinition.definition [ fhir:value "The PlanNet-HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnstics, hospital and ambulatory care, home care, long-term care, and other health-related and community services." ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -1725,7 +1725,7 @@
        fhir:Element.id [ fhir:value "HealthcareService.extension:availabletime" ];
        fhir:ElementDefinition.path [ fhir:value "HealthcareService.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "availabletime" ];
-       fhir:ElementDefinition.definition [ fhir:value "AvailableTime" ];
+       fhir:ElementDefinition.definition [ fhir:value "AvailableTime indicates when an organization is available for contact" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -1749,7 +1749,7 @@
        fhir:Element.id [ fhir:value "HealthcareService.extension:newpatients" ];
        fhir:ElementDefinition.path [ fhir:value "HealthcareService.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "newpatients" ];
-       fhir:ElementDefinition.definition [ fhir:value "New Patients" ];
+       fhir:ElementDefinition.definition [ fhir:value "New Patients indicates whether the practitioner is accepting new patients in their role" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [

@@ -3,14 +3,14 @@
   "id": "plannet-PlanNet-OrganizationAffiliation",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-OrganizationAffiliation Profile</b></p>\n  <p>PlanNet-OrganizationAffiliation</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-OrganizationAffiliation maps to OrganizationAffiliation:\n  Organization maps to organization\n  ParticipatingOrganization maps to participatingOrganization\n  Network maps to network\n  Location maps to location\n  HealthcareService maps to healthcareService\n  constrain active to 1..1\n  constrain telecom.system to 1..1\n  constrain telecom.value to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-OrganizationAffiliation Profile</b></p>\n  <p>The PlanNet-OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-OrganizationAffiliation maps to OrganizationAffiliation:\n  Organization maps to organization\n  ParticipatingOrganization maps to participatingOrganization\n  Network maps to network\n  Location maps to location\n  HealthcareService maps to healthcareService\n  constrain active to 1..1\n  constrain telecom.system to 1..1\n  constrain telecom.value to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-OrganizationAffiliation",
   "version": "0.1.0",
   "name": "PlanNet_OrganizationAffiliation",
   "title": "plannet-PlanNet-OrganizationAffiliation",
   "status": "draft",
-  "date": "2019-08-02T00:00:00-04:00",
+  "date": "2019-08-06T00:00:00-04:00",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -22,7 +22,7 @@
       ]
     }
   ],
-  "description": "PlanNet-OrganizationAffiliation",
+  "description": "The PlanNet-OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information.",
   "purpose": "Need to define relationships between organizations that are not sub-divisions of the same organization (part-of relationships).",
   "fhirVersion": "4.0.0",
   "mapping": [
@@ -48,7 +48,7 @@
         "id": "OrganizationAffiliation",
         "path": "OrganizationAffiliation",
         "short": "plannet-PlanNet-OrganizationAffiliation",
-        "definition": "PlanNet-OrganizationAffiliation",
+        "definition": "The PlanNet-OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information.",
         "min": 0,
         "max": "*",
         "base": {
@@ -996,7 +996,7 @@
         "id": "OrganizationAffiliation",
         "path": "OrganizationAffiliation",
         "short": "plannet-PlanNet-OrganizationAffiliation",
-        "definition": "PlanNet-OrganizationAffiliation",
+        "definition": "The PlanNet-OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information.",
         "isModifier": false,
         "isSummary": false
       },

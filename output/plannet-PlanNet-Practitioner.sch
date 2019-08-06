@@ -12,10 +12,10 @@
   <sch:pattern>
     <sch:title>f:Practitioner</sch:title>
     <sch:rule context="f:Practitioner">
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/geolocation']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/geolocation': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:name) &lt;= 1">name: maximum cardinality of 'name' is 1</sch:assert>
       <sch:assert test="count(f:photo) &lt;= 1">photo: maximum cardinality of 'photo' is 1</sch:assert>

@@ -5,14 +5,14 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>PlanNet-Location Profile</b></p>
-  <p>PlanNet-Location</p>
+  <p>A PlanNet-Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.</p>
   <p><b>Mapping Summary</b></p>
   <p><pre>plannet.PlanNet-Location maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-location:
   Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility
   NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients
   NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile
   AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime
-  ViaIntermediary maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary
+  ViaIntermediary maps to extension
 </pre></p>
 </div>
   </text>
@@ -22,7 +22,7 @@
   <title value="plannet-PlanNet-Location"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2019-08-02T00:00:00-04:00"/>
+  <date value="2019-08-06T00:00:00-04:00"/>
   <publisher value="HL7 Pharmacy WG"/>
   <contact>
     <telecom>
@@ -30,7 +30,7 @@
       <value value="http://www.hl7.org/Special/committees/medication/"/>
     </telecom>
   </contact>
-  <description value="PlanNet-Location"/>
+  <description value="A PlanNet-Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -63,7 +63,7 @@
     <element id="Location">
       <path value="Location"/>
       <short value="plannet-PlanNet-Location"/>
-      <definition value="PlanNet-Location"/>
+      <definition value="A PlanNet-Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -302,10 +302,28 @@
         <map value="N/A"/>
       </mapping>
     </element>
+    <element id="Location.extension:viaintermediary">
+      <path value="Location.extension"/>
+      <sliceName value="viaintermediary"/>
+      <definition value="ViaIntermediary is a reference to an alternative point of contact for this organization"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
     <element id="Location.extension:accessibility">
       <path value="Location.extension"/>
       <sliceName value="accessibility"/>
-      <definition value="Accessibilty"/>
+      <definition value="Accessibilty indicates accessibility options offered by the practitioner (e.g. cultural competence)"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -323,7 +341,7 @@
     <element id="Location.extension:availabletime">
       <path value="Location.extension"/>
       <sliceName value="availabletime"/>
-      <definition value="AvailableTime"/>
+      <definition value="AvailableTime indicates when an organization is available for contact"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -338,28 +356,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Location.extension:viaintermediary">
-      <path value="Location.extension"/>
-      <sliceName value="viaintermediary"/>
-      <definition value="ViaIntermediary"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="DomainResource.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
-      </type>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-    </element>
     <element id="Location.extension:newpatientprofile">
       <path value="Location.extension"/>
       <sliceName value="newpatientprofile"/>
-      <definition value="New Patient Profile"/>
+      <definition value="New Patient Profile is a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -377,7 +377,7 @@
     <element id="Location.extension:newpatients">
       <path value="Location.extension"/>
       <sliceName value="newpatients"/>
-      <definition value="New Patients"/>
+      <definition value="New Patients indicates whether the practitioner is accepting new patients in their role"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1601,7 +1601,7 @@
     <element id="Location">
       <path value="Location"/>
       <short value="plannet-PlanNet-Location"/>
-      <definition value="PlanNet-Location"/>
+      <definition value="A PlanNet-Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -1617,10 +1617,28 @@
         <rules value="open"/>
       </slicing>
     </element>
+    <element id="Location.extension:viaintermediary">
+      <path value="Location.extension"/>
+      <sliceName value="viaintermediary"/>
+      <definition value="ViaIntermediary is a reference to an alternative point of contact for this organization"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
     <element id="Location.extension:accessibility">
       <path value="Location.extension"/>
       <sliceName value="accessibility"/>
-      <definition value="Accessibilty"/>
+      <definition value="Accessibilty indicates accessibility options offered by the practitioner (e.g. cultural competence)"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1638,7 +1656,7 @@
     <element id="Location.extension:availabletime">
       <path value="Location.extension"/>
       <sliceName value="availabletime"/>
-      <definition value="AvailableTime"/>
+      <definition value="AvailableTime indicates when an organization is available for contact"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1653,28 +1671,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Location.extension:viaintermediary">
-      <path value="Location.extension"/>
-      <sliceName value="viaintermediary"/>
-      <definition value="ViaIntermediary"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="DomainResource.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
-      </type>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-    </element>
     <element id="Location.extension:newpatientprofile">
       <path value="Location.extension"/>
       <sliceName value="newpatientprofile"/>
-      <definition value="New Patient Profile"/>
+      <definition value="New Patient Profile is a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1692,7 +1692,7 @@
     <element id="Location.extension:newpatients">
       <path value="Location.extension"/>
       <sliceName value="newpatients"/>
-      <definition value="New Patients"/>
+      <definition value="New Patients indicates whether the practitioner is accepting new patients in their role"/>
       <min value="0"/>
       <max value="*"/>
       <base>

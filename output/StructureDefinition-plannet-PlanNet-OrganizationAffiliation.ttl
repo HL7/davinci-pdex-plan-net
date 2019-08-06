@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "plannet-PlanNet-OrganizationAffiliation"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-OrganizationAffiliation Profile</b></p>\n  <p>PlanNet-OrganizationAffiliation</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-OrganizationAffiliation maps to OrganizationAffiliation:\n  Organization maps to organization\n  ParticipatingOrganization maps to participatingOrganization\n  Network maps to network\n  Location maps to location\n  HealthcareService maps to healthcareService\n  constrain active to 1..1\n  constrain telecom.system to 1..1\n  constrain telecom.value to 1..1\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-OrganizationAffiliation Profile</b></p>\n  <p>The PlanNet-OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-OrganizationAffiliation maps to OrganizationAffiliation:\n  Organization maps to organization\n  ParticipatingOrganization maps to participatingOrganization\n  Network maps to network\n  Location maps to location\n  HealthcareService maps to healthcareService\n  constrain active to 1..1\n  constrain telecom.system to 1..1\n  constrain telecom.value to 1..1\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-OrganizationAffiliation"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "PlanNet_OrganizationAffiliation"];
   fhir:StructureDefinition.title [ fhir:value "plannet-PlanNet-OrganizationAffiliation"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-08-02T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-08-06T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Pharmacy WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -27,7 +27,7 @@
        fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/medication/" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "PlanNet-OrganizationAffiliation"];
+  fhir:StructureDefinition.description [ fhir:value "The PlanNet-OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."];
   fhir:StructureDefinition.purpose [ fhir:value "Need to define relationships between organizations that are not sub-divisions of the same organization (part-of relationships)."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
   fhir:StructureDefinition.mapping [
@@ -55,7 +55,7 @@
        fhir:Element.id [ fhir:value "OrganizationAffiliation" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation" ];
        fhir:ElementDefinition.short [ fhir:value "plannet-PlanNet-OrganizationAffiliation" ];
-       fhir:ElementDefinition.definition [ fhir:value "PlanNet-OrganizationAffiliation" ];
+       fhir:ElementDefinition.definition [ fhir:value "The PlanNet-OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -997,7 +997,7 @@
        fhir:Element.id [ fhir:value "OrganizationAffiliation" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation" ];
        fhir:ElementDefinition.short [ fhir:value "plannet-PlanNet-OrganizationAffiliation" ];
-       fhir:ElementDefinition.definition [ fhir:value "PlanNet-OrganizationAffiliation" ];
+       fhir:ElementDefinition.definition [ fhir:value "The PlanNet-OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information." ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
