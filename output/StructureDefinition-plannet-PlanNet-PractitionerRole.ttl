@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "plannet-PlanNet-PractitionerRole"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-PractitionerRole Profile</b></p>\n  <p>PlanNet-PractitionerRole</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  Network maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary\n  constrain active to 1..1\n  constrain code to 1..1\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-PractitionerRole Profile</b></p>\n  <p>PlanNet-PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  Network maps to extension\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to extension\n  constrain active to 1..1\n  constrain code to 1..1\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-PractitionerRole"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
@@ -18,7 +18,7 @@
   fhir:StructureDefinition.title [ fhir:value "plannet-PlanNet-PractitionerRole"];
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2019-08-02T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-08-06T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Pharmacy WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -28,7 +28,7 @@
        fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/medication/" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "PlanNet-PractitionerRole"];
+  fhir:StructureDefinition.description [ fhir:value "PlanNet-PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -74,7 +74,7 @@
        fhir:Element.id [ fhir:value "PractitionerRole" ];
        fhir:ElementDefinition.path [ fhir:value "PractitionerRole" ];
        fhir:ElementDefinition.short [ fhir:value "plannet-PlanNet-PractitionerRole" ];
-       fhir:ElementDefinition.definition [ fhir:value "PlanNet-PractitionerRole" ];
+       fhir:ElementDefinition.definition [ fhir:value "PlanNet-PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -380,10 +380,58 @@
        ]
      ], [
        fhir:index 8;
+       fhir:Element.id [ fhir:value "PractitionerRole.extension:network" ];
+       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "network" ];
+       fhir:ElementDefinition.definition [ fhir:value "Health insurance provider network in which the participatingOrganization provides the role's services (if defined) at the indicated locations (if defined)." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "PractitionerRole.extension:viaintermediary" ];
+       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "viaintermediary" ];
+       fhir:ElementDefinition.definition [ fhir:value "ViaIntermediary is a reference to an alternative point of contact for this organization" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
        fhir:Element.id [ fhir:value "PractitionerRole.extension:availabletime" ];
        fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "availabletime" ];
-       fhir:ElementDefinition.definition [ fhir:value "AvailableTime" ];
+       fhir:ElementDefinition.definition [ fhir:value "AvailableTime indicates when an organization is available for contact" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -403,59 +451,11 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
-       fhir:Element.id [ fhir:value "PractitionerRole.extension:viaintermediary" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "viaintermediary" ];
-       fhir:ElementDefinition.definition [ fhir:value "ViaIntermediary" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 10;
-       fhir:Element.id [ fhir:value "PractitionerRole.extension:network" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "network" ];
-       fhir:ElementDefinition.definition [ fhir:value "Network" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
-     ], [
        fhir:index 11;
        fhir:Element.id [ fhir:value "PractitionerRole.extension:newpatientprofile" ];
        fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "newpatientprofile" ];
-       fhir:ElementDefinition.definition [ fhir:value "New Patient Profile" ];
+       fhir:ElementDefinition.definition [ fhir:value "New Patient Profile is a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -479,7 +479,7 @@
        fhir:Element.id [ fhir:value "PractitionerRole.extension:newpatients" ];
        fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "newpatients" ];
-       fhir:ElementDefinition.definition [ fhir:value "New Patients" ];
+       fhir:ElementDefinition.definition [ fhir:value "New Patients indicates whether the practitioner is accepting new patients in their role" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -503,7 +503,7 @@
        fhir:Element.id [ fhir:value "PractitionerRole.extension:qualification" ];
        fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "qualification" ];
-       fhir:ElementDefinition.definition [ fhir:value "Qualification" ];
+       fhir:ElementDefinition.definition [ fhir:value "Qualification indicates whether the organization has any formal qualifications" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -1652,7 +1652,7 @@
        fhir:Element.id [ fhir:value "PractitionerRole" ];
        fhir:ElementDefinition.path [ fhir:value "PractitionerRole" ];
        fhir:ElementDefinition.short [ fhir:value "plannet-PlanNet-PractitionerRole" ];
-       fhir:ElementDefinition.definition [ fhir:value "PlanNet-PractitionerRole" ];
+       fhir:ElementDefinition.definition [ fhir:value "PlanNet-PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information." ];
        fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
@@ -1672,10 +1672,58 @@
        ]
      ], [
        fhir:index 2;
+       fhir:Element.id [ fhir:value "PractitionerRole.extension:network" ];
+       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "network" ];
+       fhir:ElementDefinition.definition [ fhir:value "Health insurance provider network in which the participatingOrganization provides the role's services (if defined) at the indicated locations (if defined)." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "PractitionerRole.extension:viaintermediary" ];
+       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "viaintermediary" ];
+       fhir:ElementDefinition.definition [ fhir:value "ViaIntermediary is a reference to an alternative point of contact for this organization" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
        fhir:Element.id [ fhir:value "PractitionerRole.extension:availabletime" ];
        fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "availabletime" ];
-       fhir:ElementDefinition.definition [ fhir:value "AvailableTime" ];
+       fhir:ElementDefinition.definition [ fhir:value "AvailableTime indicates when an organization is available for contact" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -1695,59 +1743,11 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
-       fhir:Element.id [ fhir:value "PractitionerRole.extension:viaintermediary" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "viaintermediary" ];
-       fhir:ElementDefinition.definition [ fhir:value "ViaIntermediary" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 4;
-       fhir:Element.id [ fhir:value "PractitionerRole.extension:network" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "network" ];
-       fhir:ElementDefinition.definition [ fhir:value "Network" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
-     ], [
        fhir:index 5;
        fhir:Element.id [ fhir:value "PractitionerRole.extension:newpatientprofile" ];
        fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "newpatientprofile" ];
-       fhir:ElementDefinition.definition [ fhir:value "New Patient Profile" ];
+       fhir:ElementDefinition.definition [ fhir:value "New Patient Profile is a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -1771,7 +1771,7 @@
        fhir:Element.id [ fhir:value "PractitionerRole.extension:newpatients" ];
        fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "newpatients" ];
-       fhir:ElementDefinition.definition [ fhir:value "New Patients" ];
+       fhir:ElementDefinition.definition [ fhir:value "New Patients indicates whether the practitioner is accepting new patients in their role" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -1795,7 +1795,7 @@
        fhir:Element.id [ fhir:value "PractitionerRole.extension:qualification" ];
        fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "qualification" ];
-       fhir:ElementDefinition.definition [ fhir:value "Qualification" ];
+       fhir:ElementDefinition.definition [ fhir:value "Qualification indicates whether the organization has any formal qualifications" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [

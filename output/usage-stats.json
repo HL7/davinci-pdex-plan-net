@@ -2,7 +2,22 @@
   "package": "hl7.fhir.us.davinci-pdex-plan-net",
   "version": "0.1.0",
   "fhirVersion": "4.0.0",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension",
+      "title": "plannet-Network",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension",
+      "title": "plannet-ViaIntermediary",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
   "profiles": {
     "Endpoint": [
       {
@@ -84,6 +99,15 @@
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension": [
+      "PractitionerRole"
+    ],
+    "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension": [
+      "Location",
+      "Organization",
+      "Practitioner",
+      "PractitionerRole"
+    ],
     "http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility": [
       "Location",
       "Practitioner"
@@ -98,20 +122,11 @@
       "Practitioner",
       "PractitionerRole"
     ],
-    "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary": [
-      "Location",
-      "Organization",
-      "Practitioner",
-      "PractitionerRole"
-    ],
     "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase": [
       "Endpoint"
     ],
     "http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference": [
       "Organization"
-    ],
-    "http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference": [
-      "PractitionerRole"
     ],
     "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile": [
       "Location",

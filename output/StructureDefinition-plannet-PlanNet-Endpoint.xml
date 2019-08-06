@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>PlanNet-Endpoint Profile</b></p>
-  <p>PlanNet-Endpoint</p>
+  <p>An endpoint describes the technical details of a location that can be connected to for the delivery/retrieval of information.</p>
   <p><b>Mapping Summary</b></p>
   <p><pre>plannet.PlanNet-Endpoint maps to Endpoint:
   UseCase maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase
@@ -19,7 +19,7 @@
   <name value="PlanNet_Endpoint"/>
   <title value="plannet-PlanNet-Endpoint"/>
   <status value="draft"/>
-  <date value="2019-08-02T00:00:00-04:00"/>
+  <date value="2019-08-06T00:00:00-04:00"/>
   <publisher value="HL7 Pharmacy WG"/>
   <contact>
     <telecom>
@@ -27,7 +27,7 @@
       <value value="http://www.hl7.org/Special/committees/medication/"/>
     </telecom>
   </contact>
-  <description value="PlanNet-Endpoint"/>
+  <description value="An endpoint describes the technical details of a location that can be connected to for the delivery/retrieval of information."/>
   <fhirVersion value="4.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -48,7 +48,7 @@
     <element id="Endpoint">
       <path value="Endpoint"/>
       <short value="plannet-PlanNet-Endpoint"/>
-      <definition value="PlanNet-Endpoint"/>
+      <definition value="An endpoint describes the technical details of a location that can be connected to for the delivery/retrieval of information."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -285,7 +285,7 @@
     <element id="Endpoint.extension:usecase">
       <path value="Endpoint.extension"/>
       <sliceName value="usecase"/>
-      <definition value="UseCase"/>
+      <definition value="UseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -838,7 +838,7 @@
     <element id="Endpoint">
       <path value="Endpoint"/>
       <short value="plannet-PlanNet-Endpoint"/>
-      <definition value="PlanNet-Endpoint"/>
+      <definition value="An endpoint describes the technical details of a location that can be connected to for the delivery/retrieval of information."/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
@@ -856,7 +856,7 @@
     <element id="Endpoint.extension:usecase">
       <path value="Endpoint.extension"/>
       <sliceName value="usecase"/>
-      <definition value="UseCase"/>
+      <definition value="UseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint"/>
       <min value="0"/>
       <max value="*"/>
       <base>

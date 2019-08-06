@@ -5,11 +5,11 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>PlanNet-Practitioner Profile</b></p>
-  <p>PlanNet-Practitioner</p>
+  <p>PlanNet-Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.</p>
   <p><b>Mapping Summary</b></p>
   <p><pre>plannet.PlanNet-Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:
   AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime
-  ViaIntermediary maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary
+  ViaIntermediary maps to extension
   GeoLocation maps to http://hl7.org/fhir/StructureDefinition/geolocation
   Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification
   Proficiency maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency
@@ -28,7 +28,7 @@
   <title value="plannet-PlanNet-Practitioner"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2019-08-02T00:00:00-04:00"/>
+  <date value="2019-08-06T00:00:00-04:00"/>
   <publisher value="HL7 Pharmacy WG"/>
   <contact>
     <telecom>
@@ -36,7 +36,7 @@
       <value value="http://www.hl7.org/Special/committees/medication/"/>
     </telecom>
   </contact>
-  <description value="PlanNet-Practitioner"/>
+  <description value="PlanNet-Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -74,7 +74,7 @@
     <element id="Practitioner">
       <path value="Practitioner"/>
       <short value="plannet-PlanNet-Practitioner"/>
-      <definition value="PlanNet-Practitioner"/>
+      <definition value="PlanNet-Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."/>
       <alias value="Provider"/>
       <min value="0"/>
       <max value="*"/>
@@ -318,10 +318,28 @@
         <map value="N/A"/>
       </mapping>
     </element>
+    <element id="Practitioner.extension:viaintermediary">
+      <path value="Practitioner.extension"/>
+      <sliceName value="viaintermediary"/>
+      <definition value="ViaIntermediary is a reference to an alternative point of contact for this organization"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
     <element id="Practitioner.extension:geolocation">
       <path value="Practitioner.extension"/>
       <sliceName value="geolocation"/>
-      <definition value="GeoLocation"/>
+      <definition value="GeoLocation indicates the absolute geographic location of an organization&#x2019;s address"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -339,7 +357,7 @@
     <element id="Practitioner.extension:accessibility">
       <path value="Practitioner.extension"/>
       <sliceName value="accessibility"/>
-      <definition value="Accessibilty"/>
+      <definition value="Accessibilty indicates accessibility options offered by the practitioner (e.g. cultural competence)"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -357,7 +375,7 @@
     <element id="Practitioner.extension:proficiency">
       <path value="Practitioner.extension"/>
       <sliceName value="proficiency"/>
-      <definition value="Proficiency"/>
+      <definition value="Proficiency indicates a practitioner&#x2019;s level of spoken proficiency with the language(s) specified in practitioner.communication"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -375,7 +393,7 @@
     <element id="Practitioner.extension:availabletime">
       <path value="Practitioner.extension"/>
       <sliceName value="availabletime"/>
-      <definition value="AvailableTime"/>
+      <definition value="AvailableTime indicates when an organization is available for contact"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -390,28 +408,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Practitioner.extension:viaintermediary">
-      <path value="Practitioner.extension"/>
-      <sliceName value="viaintermediary"/>
-      <definition value="ViaIntermediary"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="DomainResource.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
-      </type>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-    </element>
     <element id="Practitioner.extension:qualification">
       <path value="Practitioner.extension"/>
       <sliceName value="qualification"/>
-      <definition value="Qualification"/>
+      <definition value="Qualification indicates whether the organization has any formal qualifications"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -1787,7 +1787,7 @@
     <element id="Practitioner">
       <path value="Practitioner"/>
       <short value="plannet-PlanNet-Practitioner"/>
-      <definition value="PlanNet-Practitioner"/>
+      <definition value="PlanNet-Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -1803,10 +1803,28 @@
         <rules value="open"/>
       </slicing>
     </element>
+    <element id="Practitioner.extension:viaintermediary">
+      <path value="Practitioner.extension"/>
+      <sliceName value="viaintermediary"/>
+      <definition value="ViaIntermediary is a reference to an alternative point of contact for this organization"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
     <element id="Practitioner.extension:geolocation">
       <path value="Practitioner.extension"/>
       <sliceName value="geolocation"/>
-      <definition value="GeoLocation"/>
+      <definition value="GeoLocation indicates the absolute geographic location of an organization&#x2019;s address"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -1824,7 +1842,7 @@
     <element id="Practitioner.extension:accessibility">
       <path value="Practitioner.extension"/>
       <sliceName value="accessibility"/>
-      <definition value="Accessibilty"/>
+      <definition value="Accessibilty indicates accessibility options offered by the practitioner (e.g. cultural competence)"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -1842,7 +1860,7 @@
     <element id="Practitioner.extension:proficiency">
       <path value="Practitioner.extension"/>
       <sliceName value="proficiency"/>
-      <definition value="Proficiency"/>
+      <definition value="Proficiency indicates a practitioner&#x2019;s level of spoken proficiency with the language(s) specified in practitioner.communication"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -1860,7 +1878,7 @@
     <element id="Practitioner.extension:availabletime">
       <path value="Practitioner.extension"/>
       <sliceName value="availabletime"/>
-      <definition value="AvailableTime"/>
+      <definition value="AvailableTime indicates when an organization is available for contact"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1875,28 +1893,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Practitioner.extension:viaintermediary">
-      <path value="Practitioner.extension"/>
-      <sliceName value="viaintermediary"/>
-      <definition value="ViaIntermediary"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="DomainResource.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
-      </type>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-    </element>
     <element id="Practitioner.extension:qualification">
       <path value="Practitioner.extension"/>
       <sliceName value="qualification"/>
-      <definition value="Qualification"/>
+      <definition value="Qualification indicates whether the organization has any formal qualifications"/>
       <min value="0"/>
       <max value="1"/>
       <base>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="location-contains"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>http://hl7.org/fhir/uv/vhdir/SearchParameter/location-contains</b></p><p><b>name</b>: VhDir_sp_location_contains</p><p><b>status</b>: DRAFT</p><p><b>date</b>: Aug 19, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select locations that contain the specified co-ordinates</p><p><b>code</b>: contains</p><p><b>base</b>: Location</p><p><b>type</b>: SPECIAL</p><p><b>expression</b>: Location.extension('http://hl7.org/fhir/StructureDefinition/location-boundary-geojson')</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/SearchParameter/location-contains"/>
+  <version value="0.2.0"/>
+  <name value="VhDir_sp_location_contains"/>
+  <status value="draft"/>
+  <date value="2018-08-19T00:00:00+00:00"/>
+  <publisher value="HL7 Patient Administration Committee"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Select locations that contain the specified co-ordinates"/>
+  <code value="contains"/>
+  <base value="Location"/>
+  <type value="special"/>
+  <expression value="Location.extension(&#39;http://hl7.org/fhir/StructureDefinition/location-boundary-geojson&#39;)"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+</SearchParameter>

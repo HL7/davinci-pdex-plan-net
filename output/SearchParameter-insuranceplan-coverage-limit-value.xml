@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="insuranceplan-coverage-limit-value"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-limit-value</b></p><p><b>name</b>: VhDir_sp_insuranceplan_coverage_limit_value</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select health insurance products with covered benefits limited in the specified manner</p><p><b>code</b>: coverage-limit-value</p><p><b>base</b>: InsurancePlan</p><p><b>type</b>: QUANTITY</p><p><b>expression</b>: InsurancePlan.coverage.benefit.limit.value</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>comparator</b>: EQ, GT, LT, GE, LE, SA, EB</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-limit-value"/>
+  <version value="0.2.0"/>
+  <name value="VhDir_sp_insuranceplan_coverage_limit_value"/>
+  <status value="draft"/>
+  <date value="2018-05-23T00:00:00+00:00"/>
+  <publisher value="HL7 Patient Administration Committee"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Select health insurance products with covered benefits limited in the specified manner"/>
+  <code value="coverage-limit-value"/>
+  <base value="InsurancePlan"/>
+  <type value="quantity"/>
+  <expression value="InsurancePlan.coverage.benefit.limit.value"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <comparator value="eq"/>
+  <comparator value="gt"/>
+  <comparator value="lt"/>
+  <comparator value="ge"/>
+  <comparator value="le"/>
+  <comparator value="sa"/>
+  <comparator value="eb"/>
+</SearchParameter>

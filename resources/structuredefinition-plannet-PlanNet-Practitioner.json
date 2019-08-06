@@ -3,14 +3,14 @@
   "id": "plannet-PlanNet-Practitioner",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Practitioner Profile</b></p>\n  <p>PlanNet-Practitioner</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary\n  GeoLocation maps to http://hl7.org/fhir/StructureDefinition/geolocation\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  Proficiency maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  constrain name to 1..1\n  constrain name.family to 1..1\n  constrain name.given to 1..*\n  constrain photo to 0..1\n  constrain qualification.issuer to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Practitioner Profile</b></p>\n  <p>PlanNet-Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to extension\n  GeoLocation maps to http://hl7.org/fhir/StructureDefinition/geolocation\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  Proficiency maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  constrain name to 1..1\n  constrain name.family to 1..1\n  constrain name.given to 1..*\n  constrain photo to 0..1\n  constrain qualification.issuer to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Practitioner",
   "name": "PlanNet_Practitioner",
   "title": "plannet-PlanNet-Practitioner",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-02",
+  "date": "2019-08-06",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -22,7 +22,7 @@
       ]
     }
   ],
-  "description": "PlanNet-Practitioner",
+  "description": "PlanNet-Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.",
   "jurisdiction": [
     {
       "coding": [
@@ -68,7 +68,7 @@
         "id": "Practitioner",
         "path": "Practitioner",
         "short": "plannet-PlanNet-Practitioner",
-        "definition": "PlanNet-Practitioner",
+        "definition": "PlanNet-Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.",
         "alias": [
           "Provider"
         ],
@@ -364,9 +364,32 @@
         }
       },
       {
+        "id": "Practitioner.extension:viaintermediary",
+        "path": "Practitioner.extension",
+        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "viaintermediary"
+      },
+      {
         "id": "Practitioner.extension:geolocation",
         "path": "Practitioner.extension",
-        "definition": "GeoLocation",
+        "definition": "GeoLocation indicates the absolute geographic location of an organization’s address",
         "min": 0,
         "max": "1",
         "base": {
@@ -389,7 +412,7 @@
       {
         "id": "Practitioner.extension:accessibility",
         "path": "Practitioner.extension",
-        "definition": "Accessibilty",
+        "definition": "Accessibilty indicates accessibility options offered by the practitioner (e.g. cultural competence)",
         "min": 0,
         "max": "1",
         "base": {
@@ -412,7 +435,7 @@
       {
         "id": "Practitioner.extension:proficiency",
         "path": "Practitioner.extension",
-        "definition": "Proficiency",
+        "definition": "Proficiency indicates a practitioner’s level of spoken proficiency with the language(s) specified in practitioner.communication",
         "min": 0,
         "max": "1",
         "base": {
@@ -435,7 +458,7 @@
       {
         "id": "Practitioner.extension:availabletime",
         "path": "Practitioner.extension",
-        "definition": "AvailableTime",
+        "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
         "max": "*",
         "base": {
@@ -456,32 +479,9 @@
         "sliceName": "availabletime"
       },
       {
-        "id": "Practitioner.extension:viaintermediary",
-        "path": "Practitioner.extension",
-        "definition": "ViaIntermediary",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "viaintermediary"
-      },
-      {
         "id": "Practitioner.extension:qualification",
         "path": "Practitioner.extension",
-        "definition": "Qualification",
+        "definition": "Qualification indicates whether the organization has any formal qualifications",
         "min": 0,
         "max": "1",
         "base": {
@@ -2154,7 +2154,7 @@
         "id": "Practitioner",
         "path": "Practitioner",
         "short": "plannet-PlanNet-Practitioner",
-        "definition": "PlanNet-Practitioner",
+        "definition": "PlanNet-Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.",
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -2175,9 +2175,32 @@
         }
       },
       {
+        "id": "Practitioner.extension:viaintermediary",
+        "path": "Practitioner.extension",
+        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "viaintermediary"
+      },
+      {
         "id": "Practitioner.extension:geolocation",
         "path": "Practitioner.extension",
-        "definition": "GeoLocation",
+        "definition": "GeoLocation indicates the absolute geographic location of an organization’s address",
         "min": 0,
         "max": "1",
         "base": {
@@ -2200,7 +2223,7 @@
       {
         "id": "Practitioner.extension:accessibility",
         "path": "Practitioner.extension",
-        "definition": "Accessibilty",
+        "definition": "Accessibilty indicates accessibility options offered by the practitioner (e.g. cultural competence)",
         "min": 0,
         "max": "1",
         "base": {
@@ -2223,7 +2246,7 @@
       {
         "id": "Practitioner.extension:proficiency",
         "path": "Practitioner.extension",
-        "definition": "Proficiency",
+        "definition": "Proficiency indicates a practitioner’s level of spoken proficiency with the language(s) specified in practitioner.communication",
         "min": 0,
         "max": "1",
         "base": {
@@ -2246,7 +2269,7 @@
       {
         "id": "Practitioner.extension:availabletime",
         "path": "Practitioner.extension",
-        "definition": "AvailableTime",
+        "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
         "max": "*",
         "base": {
@@ -2267,32 +2290,9 @@
         "sliceName": "availabletime"
       },
       {
-        "id": "Practitioner.extension:viaintermediary",
-        "path": "Practitioner.extension",
-        "definition": "ViaIntermediary",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "viaintermediary"
-      },
-      {
         "id": "Practitioner.extension:qualification",
         "path": "Practitioner.extension",
-        "definition": "Qualification",
+        "definition": "Qualification indicates whether the organization has any formal qualifications",
         "min": 0,
         "max": "1",
         "base": {

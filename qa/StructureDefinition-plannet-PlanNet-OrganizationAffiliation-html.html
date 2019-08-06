@@ -1,0 +1,22 @@
+﻿<html>
+<head>
+  <title>StructureDefinition-plannet-PlanNet-OrganizationAffiliation-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <p><b>PlanNet-OrganizationAffiliation Profile</b></p>
+  <p>The PlanNet-OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information.</p>
+  <p><b>Mapping Summary</b></p>
+  <p><pre>plannet.PlanNet-OrganizationAffiliation maps to OrganizationAffiliation:
+  Organization maps to organization
+  ParticipatingOrganization maps to participatingOrganization
+  Network maps to network
+  Location maps to location
+  HealthcareService maps to healthcareService
+  constrain active to 1..1
+  constrain telecom.system to 1..1
+  constrain telecom.value to 1..1
+</pre></p>
+</div></body>
+</html>

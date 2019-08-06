@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="healthcareservice-service-category"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-service-category</b></p><p><b>name</b>: VhDir_sp_healthcareservice_category</p><p><b>derivedFrom</b>: <a href="http://hl7.org/fhir/SearchParameter/HealthcareService-service-category">http://hl7.org/fhir/SearchParameter/HealthcareService-service-category</a></p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select HealthcareServices providing the specified category of services</p><p><b>code</b>: service-category</p><p><b>base</b>: HealthcareService</p><p><b>type</b>: TOKEN</p><p><b>expression</b>: HealthcareService.category</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: TEXT</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-service-category"/>
+  <version value="0.2.0"/>
+  <name value="VhDir_sp_healthcareservice_category"/>
+  <derivedFrom value="http://hl7.org/fhir/SearchParameter/HealthcareService-service-category"/>
+  <status value="draft"/>
+  <date value="2018-05-23T00:00:00+00:00"/>
+  <publisher value="HL7 Patient Administration Committee"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Select HealthcareServices providing the specified category of services"/>
+  <code value="service-category"/>
+  <base value="HealthcareService"/>
+  <type value="token"/>
+  <expression value="HealthcareService.category"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <modifier value="text"/>
+</SearchParameter>

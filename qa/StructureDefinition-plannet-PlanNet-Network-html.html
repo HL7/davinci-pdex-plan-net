@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+  <title>StructureDefinition-plannet-PlanNet-Network-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <p><b>PlanNet-Network Profile</b></p>
+  <p>A PlanNet-Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
+
+In the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the PlanNet-practitionerRole and Plan-Net-organizationAffiliation resources, respectively.</p>
+  <p><b>Mapping Summary</b></p>
+  <p><pre>plannet.PlanNet-Network maps to Organization:
+  LocationReference maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference
+  PartOf maps to partOf
+  constrain contact.name to 1..1
+  constrain contact.name.family to 1..1
+  constrain contact.name.given to 1..*
+  constrain contact.telecom.system to 1..1
+  constrain contact.telecom.value to 1..1
+  constrain telecom to 0..0
+  constrain partOf to 1..1
+  constrain address.line to 0..4
+</pre></p>
+</div></body>
+</html>

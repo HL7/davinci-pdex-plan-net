@@ -3,14 +3,14 @@
   "id": "plannet-PlanNet-Endpoint",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Endpoint Profile</b></p>\n  <p>PlanNet-Endpoint</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Endpoint maps to Endpoint:\n  UseCase maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase\n  constrain contact.system to 1..1\n  constrain contact.value to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Endpoint Profile</b></p>\n  <p>An endpoint describes the technical details of a location that can be connected to for the delivery/retrieval of information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Endpoint maps to Endpoint:\n  UseCase maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase\n  constrain contact.system to 1..1\n  constrain contact.value to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Endpoint",
   "version": "0.1.0",
   "name": "PlanNet_Endpoint",
   "title": "plannet-PlanNet-Endpoint",
   "status": "draft",
-  "date": "2019-08-02T00:00:00-04:00",
+  "date": "2019-08-06T00:00:00-04:00",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -22,7 +22,7 @@
       ]
     }
   ],
-  "description": "PlanNet-Endpoint",
+  "description": "An endpoint describes the technical details of a location that can be connected to for the delivery/retrieval of information.",
   "fhirVersion": "4.0.0",
   "mapping": [
     {
@@ -47,7 +47,7 @@
         "id": "Endpoint",
         "path": "Endpoint",
         "short": "plannet-PlanNet-Endpoint",
-        "definition": "PlanNet-Endpoint",
+        "definition": "An endpoint describes the technical details of a location that can be connected to for the delivery/retrieval of information.",
         "min": 0,
         "max": "*",
         "base": {
@@ -334,7 +334,7 @@
         "id": "Endpoint.extension:usecase",
         "path": "Endpoint.extension",
         "sliceName": "usecase",
-        "definition": "UseCase",
+        "definition": "UseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint",
         "min": 0,
         "max": "*",
         "base": {
@@ -1018,7 +1018,7 @@
         "id": "Endpoint",
         "path": "Endpoint",
         "short": "plannet-PlanNet-Endpoint",
-        "definition": "PlanNet-Endpoint",
+        "definition": "An endpoint describes the technical details of a location that can be connected to for the delivery/retrieval of information.",
         "isModifier": false,
         "isSummary": false
       },
@@ -1041,7 +1041,7 @@
         "id": "Endpoint.extension:usecase",
         "path": "Endpoint.extension",
         "sliceName": "usecase",
-        "definition": "UseCase",
+        "definition": "UseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint",
         "min": 0,
         "max": "*",
         "base": {

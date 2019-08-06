@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "plannet-PlanNet-Network"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Network Profile</b></p>\n  <p>PlanNet-Network</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Network maps to Organization:\n  LocationReference maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference\n  PartOf maps to partOf\n  constrain contact.name to 1..1\n  constrain contact.name.family to 1..1\n  constrain contact.name.given to 1..*\n  constrain contact.telecom.system to 1..1\n  constrain contact.telecom.value to 1..1\n  constrain telecom to 0..0\n  constrain partOf to 1..1\n  constrain address.line to 0..4\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Network Profile</b></p>\n  <p>A PlanNet-Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the PlanNet-practitionerRole and Plan-Net-organizationAffiliation resources, respectively.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Network maps to Organization:\n  LocationReference maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference\n  PartOf maps to partOf\n  constrain contact.name to 1..1\n  constrain contact.name.family to 1..1\n  constrain contact.name.given to 1..*\n  constrain contact.telecom.system to 1..1\n  constrain contact.telecom.value to 1..1\n  constrain telecom to 0..0\n  constrain partOf to 1..1\n  constrain address.line to 0..4\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Network"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "PlanNet_Network"];
   fhir:StructureDefinition.title [ fhir:value "plannet-PlanNet-Network"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-08-02T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-08-06T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Pharmacy WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -27,7 +27,7 @@
        fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/medication/" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "PlanNet-Network"];
+  fhir:StructureDefinition.description [ fhir:value "A PlanNet-Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the PlanNet-practitionerRole and Plan-Net-organizationAffiliation resources, respectively."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
@@ -64,7 +64,7 @@
        fhir:Element.id [ fhir:value "Organization" ];
        fhir:ElementDefinition.path [ fhir:value "Organization" ];
        fhir:ElementDefinition.short [ fhir:value "plannet-PlanNet-Network" ];
-       fhir:ElementDefinition.definition [ fhir:value "PlanNet-Network" ];
+       fhir:ElementDefinition.definition [ fhir:value "A PlanNet-Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the PlanNet-practitionerRole and Plan-Net-organizationAffiliation resources, respectively." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -372,7 +372,7 @@
        fhir:Element.id [ fhir:value "Organization.extension:locationreference" ];
        fhir:ElementDefinition.path [ fhir:value "Organization.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "locationreference" ];
-       fhir:ElementDefinition.definition [ fhir:value "CoverageArea" ];
+       fhir:ElementDefinition.definition [ fhir:value "An extension referencing a Location resource defining the coverage area of a health insurance provider network" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -2135,7 +2135,7 @@
        fhir:Element.id [ fhir:value "Organization" ];
        fhir:ElementDefinition.path [ fhir:value "Organization" ];
        fhir:ElementDefinition.short [ fhir:value "plannet-PlanNet-Network" ];
-       fhir:ElementDefinition.definition [ fhir:value "PlanNet-Network" ];
+       fhir:ElementDefinition.definition [ fhir:value "A PlanNet-Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the PlanNet-practitionerRole and Plan-Net-organizationAffiliation resources, respectively." ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2157,7 +2157,7 @@
        fhir:Element.id [ fhir:value "Organization.extension:locationreference" ];
        fhir:ElementDefinition.path [ fhir:value "Organization.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "locationreference" ];
-       fhir:ElementDefinition.definition [ fhir:value "CoverageArea" ];
+       fhir:ElementDefinition.definition [ fhir:value "An extension referencing a Location resource defining the coverage area of a health insurance provider network" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [

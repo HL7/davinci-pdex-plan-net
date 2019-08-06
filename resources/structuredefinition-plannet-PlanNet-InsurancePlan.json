@@ -3,12 +3,12 @@
   "id": "plannet-PlanNet-InsurancePlan",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-InsurancePlan Profile</b></p>\n  <p>PlanNet-Insurance Plan</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-InsurancePlan maps to InsurancePlan:\n  OwnedBy maps to ownedBy\n  CoverageArea maps to coverageArea\n  AdministeredBy maps to administeredBy\n  constrain ownedBy to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-InsurancePlan Profile</b></p>\n  <p>A PlanNet-InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\n\nPlanNet-InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-InsurancePlan maps to InsurancePlan:\n  OwnedBy maps to ownedBy\n  CoverageArea maps to coverageArea\n  AdministeredBy maps to administeredBy\n  constrain ownedBy to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-InsurancePlan",
   "name": "PlanNet_InsurancePlan",
   "status": "draft",
-  "date": "2019-08-02",
+  "date": "2019-08-06",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "PlanNet-Insurance Plan",
+  "description": "A PlanNet-InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\n\nPlanNet-InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.",
   "fhirVersion": "4.0.0",
   "mapping": [
     {
@@ -45,7 +45,7 @@
         "id": "InsurancePlan",
         "path": "InsurancePlan",
         "short": "plannet-PlanNet-InsurancePlan",
-        "definition": "PlanNet-Insurance Plan",
+        "definition": "A PlanNet-InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\n\nPlanNet-InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.",
         "min": 0,
         "max": "*",
         "base": {
@@ -2376,7 +2376,7 @@
         "id": "InsurancePlan",
         "path": "InsurancePlan",
         "short": "plannet-PlanNet-InsurancePlan",
-        "definition": "PlanNet-Insurance Plan",
+        "definition": "A PlanNet-InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\n\nPlanNet-InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.",
         "isModifier": false,
         "isSummary": false
       },

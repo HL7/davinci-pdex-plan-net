@@ -5,12 +5,12 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>PlanNet-Organization Profile</b></p>
-  <p>PlanNet-Organization</p>
+  <p>An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.</p>
   <p><b>Mapping Summary</b></p>
   <p><pre>plannet.PlanNet-Organization maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization:
   Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification
   AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime
-  ViaIntermediary maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary
+  ViaIntermediary maps to extension
   GeoLocation maps to http://hl7.org/fhir/StructureDefinition/geolocation
   Description maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description
   constrain active to 1..1
@@ -30,7 +30,7 @@
   <title value="plannet-PlanNet-Organization"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2019-08-02T00:00:00-04:00"/>
+  <date value="2019-08-06T00:00:00-04:00"/>
   <publisher value="HL7 Pharmacy WG"/>
   <contact>
     <telecom>
@@ -38,7 +38,7 @@
       <value value="http://www.hl7.org/Special/committees/medication/"/>
     </telecom>
   </contact>
-  <description value="PlanNet-Organization"/>
+  <description value="An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -76,7 +76,7 @@
     <element id="Organization">
       <path value="Organization"/>
       <short value="plannet-PlanNet-Organization"/>
-      <definition value="PlanNet-Organization"/>
+      <definition value="An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -327,10 +327,28 @@
         <map value="N/A"/>
       </mapping>
     </element>
+    <element id="Organization.extension:viaintermediary">
+      <path value="Organization.extension"/>
+      <sliceName value="viaintermediary"/>
+      <definition value="ViaIntermediary is a reference to an alternative point of contact for this organization"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
     <element id="Organization.extension:geolocation">
       <path value="Organization.extension"/>
       <sliceName value="geolocation"/>
-      <definition value="GeoLocation"/>
+      <definition value="GeoLocation indicates the absolute geographic location of an organization&#x2019;s address"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -348,7 +366,7 @@
     <element id="Organization.extension:availabletime">
       <path value="Organization.extension"/>
       <sliceName value="availabletime"/>
-      <definition value="AvailableTime"/>
+      <definition value="AvailableTime indicates when an organization is available for contact"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -363,28 +381,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Organization.extension:viaintermediary">
-      <path value="Organization.extension"/>
-      <sliceName value="viaintermediary"/>
-      <definition value="ViaIntermediary"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="DomainResource.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
-      </type>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-    </element>
     <element id="Organization.extension:description">
       <path value="Organization.extension"/>
       <sliceName value="description"/>
-      <definition value="Description"/>
+      <definition value="Description is a  friendly description of the organization"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -402,7 +402,7 @@
     <element id="Organization.extension:qualification">
       <path value="Organization.extension"/>
       <sliceName value="qualification"/>
-      <definition value="Qualification"/>
+      <definition value="Qualification indicates whether the organization has any formal qualifications"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -2129,7 +2129,7 @@
     <element id="Organization">
       <path value="Organization"/>
       <short value="plannet-PlanNet-Organization"/>
-      <definition value="PlanNet-Organization"/>
+      <definition value="An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice."/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -2145,10 +2145,28 @@
         <rules value="open"/>
       </slicing>
     </element>
+    <element id="Organization.extension:viaintermediary">
+      <path value="Organization.extension"/>
+      <sliceName value="viaintermediary"/>
+      <definition value="ViaIntermediary is a reference to an alternative point of contact for this organization"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
     <element id="Organization.extension:geolocation">
       <path value="Organization.extension"/>
       <sliceName value="geolocation"/>
-      <definition value="GeoLocation"/>
+      <definition value="GeoLocation indicates the absolute geographic location of an organization&#x2019;s address"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -2166,7 +2184,7 @@
     <element id="Organization.extension:availabletime">
       <path value="Organization.extension"/>
       <sliceName value="availabletime"/>
-      <definition value="AvailableTime"/>
+      <definition value="AvailableTime indicates when an organization is available for contact"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -2181,28 +2199,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Organization.extension:viaintermediary">
-      <path value="Organization.extension"/>
-      <sliceName value="viaintermediary"/>
-      <definition value="ViaIntermediary"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="DomainResource.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary"/>
-      </type>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-    </element>
     <element id="Organization.extension:description">
       <path value="Organization.extension"/>
       <sliceName value="description"/>
-      <definition value="Description"/>
+      <definition value="Description is a  friendly description of the organization"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -2220,7 +2220,7 @@
     <element id="Organization.extension:qualification">
       <path value="Organization.extension"/>
       <sliceName value="qualification"/>
-      <definition value="Qualification"/>
+      <definition value="Qualification indicates whether the organization has any formal qualifications"/>
       <min value="0"/>
       <max value="*"/>
       <base>
