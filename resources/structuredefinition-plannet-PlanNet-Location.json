@@ -10,7 +10,7 @@
   "title": "plannet-PlanNet-Location",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-06",
+  "date": "2019-08-07",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -372,7 +372,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "viaintermediary"
+        "sliceName": "viaintermediary",
+        "mustSupport": true
       },
       {
         "id": "Location.extension:accessibility",
@@ -395,7 +396,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "accessibility"
+        "sliceName": "accessibility",
+        "mustSupport": true
       },
       {
         "id": "Location.extension:availabletime",
@@ -418,7 +420,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime"
+        "sliceName": "availabletime",
+        "mustSupport": true
       },
       {
         "id": "Location.extension:newpatientprofile",
@@ -441,7 +444,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "newpatientprofile"
+        "sliceName": "newpatientprofile",
+        "mustSupport": true
       },
       {
         "id": "Location.extension:newpatients",
@@ -464,7 +468,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "newpatients"
+        "sliceName": "newpatients",
+        "mustSupport": true
       },
       {
         "id": "Location.modifierExtension",
@@ -1999,7 +2004,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "viaintermediary"
+        "sliceName": "viaintermediary",
+        "mustSupport": true
       },
       {
         "id": "Location.extension:accessibility",
@@ -2022,7 +2028,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "accessibility"
+        "sliceName": "accessibility",
+        "mustSupport": true
       },
       {
         "id": "Location.extension:availabletime",
@@ -2045,7 +2052,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime"
+        "sliceName": "availabletime",
+        "mustSupport": true
       },
       {
         "id": "Location.extension:newpatientprofile",
@@ -2068,7 +2076,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "newpatientprofile"
+        "sliceName": "newpatientprofile",
+        "mustSupport": true
       },
       {
         "id": "Location.extension:newpatients",
@@ -2091,7 +2100,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "newpatients"
+        "sliceName": "newpatients",
+        "mustSupport": true
       }
     ]
   }

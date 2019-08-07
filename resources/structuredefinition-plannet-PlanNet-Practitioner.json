@@ -10,7 +10,7 @@
   "title": "plannet-PlanNet-Practitioner",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-06",
+  "date": "2019-08-07",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -384,7 +384,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "viaintermediary"
+        "sliceName": "viaintermediary",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.extension:geolocation",
@@ -407,7 +408,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "geolocation"
+        "sliceName": "geolocation",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.extension:accessibility",
@@ -430,7 +432,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "accessibility"
+        "sliceName": "accessibility",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.extension:proficiency",
@@ -453,7 +456,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "proficiency"
+        "sliceName": "proficiency",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.extension:availabletime",
@@ -476,7 +480,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime"
+        "sliceName": "availabletime",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.extension:qualification",
@@ -499,7 +504,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "qualification"
+        "sliceName": "qualification",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.modifierExtension",
@@ -2195,7 +2201,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "viaintermediary"
+        "sliceName": "viaintermediary",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.extension:geolocation",
@@ -2218,7 +2225,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "geolocation"
+        "sliceName": "geolocation",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.extension:accessibility",
@@ -2241,7 +2249,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "accessibility"
+        "sliceName": "accessibility",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.extension:proficiency",
@@ -2264,7 +2273,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "proficiency"
+        "sliceName": "proficiency",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.extension:availabletime",
@@ -2287,7 +2297,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime"
+        "sliceName": "availabletime",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.extension:qualification",
@@ -2310,7 +2321,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "qualification"
+        "sliceName": "qualification",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.name",

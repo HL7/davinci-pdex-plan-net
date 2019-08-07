@@ -3,12 +3,12 @@
   "id": "plannet-PlanNet-OrganizationAffiliation",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-OrganizationAffiliation Profile</b></p>\n  <p>The PlanNet-OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-OrganizationAffiliation maps to OrganizationAffiliation:\n  Organization maps to organization\n  ParticipatingOrganization maps to participatingOrganization\n  Network maps to network\n  Location maps to location\n  HealthcareService maps to healthcareService\n  constrain active to 1..1\n  constrain telecom.system to 1..1\n  constrain telecom.value to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-OrganizationAffiliation Profile</b></p>\n  <p>The PlanNet-OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-OrganizationAffiliation maps to OrganizationAffiliation:\n  PrimaryOrganization maps to organization\n  ParticipatingOrganization maps to participatingOrganization\n  Network maps to network\n  Location maps to location\n  HealthcareService maps to healthcareService\n  constrain active to 1..1\n  constrain telecom.system to 1..1\n  constrain telecom.value to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-OrganizationAffiliation",
   "name": "PlanNet_OrganizationAffiliation",
   "status": "draft",
-  "date": "2019-08-06",
+  "date": "2019-08-07",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -473,7 +473,8 @@
             "identity": "rim",
             "map": ".scoper"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "OrganizationAffiliation.participatingOrganization",
@@ -502,7 +503,8 @@
             "identity": "rim",
             "map": ".player"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "OrganizationAffiliation.network",
@@ -525,7 +527,8 @@
           }
         ],
         "isModifier": false,
-        "isSummary": true
+        "isSummary": true,
+        "mustSupport": true
       },
       {
         "id": "OrganizationAffiliation.code",
@@ -632,7 +635,8 @@
             "identity": "rim",
             "map": ".performance.ActDefinitionOrEvent.ServiceDeliveryLocation[@classCode = 'SDLOC']"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "OrganizationAffiliation.healthcareService",
@@ -661,7 +665,8 @@
             "identity": "rim",
             "map": ".player.QualifiedEntity[@classCode = 'QUAL'].code"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "OrganizationAffiliation.telecom",
@@ -1014,7 +1019,8 @@
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Organization"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "OrganizationAffiliation.participatingOrganization",
@@ -1026,7 +1032,8 @@
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Organization"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "OrganizationAffiliation.network",
@@ -1038,7 +1045,8 @@
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Network"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "OrganizationAffiliation.location",
@@ -1050,7 +1058,8 @@
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Location"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "OrganizationAffiliation.healthcareService",
@@ -1062,7 +1071,8 @@
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-HealthcareService"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "OrganizationAffiliation.telecom",
