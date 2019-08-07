@@ -3,14 +3,14 @@
   "id": "plannet-PlanNet-Organization",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Organization Profile</b></p>\n  <p>An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Organization maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization:\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to extension\n  GeoLocation maps to http://hl7.org/fhir/StructureDefinition/geolocation\n  Description maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description\n  constrain active to 1..1\n  constrain type to 1..*\n  constrain name to 1..1\n  constrain telecom.system to 1..1\n  constrain telecom.value to 1..1\n  constrain contact.name.family to 1..1\n  constrain contact.name.given to 1..*\n  constrain address.line to 0..4\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Organization Profile</b></p>\n  <p>An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Organization maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization:\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  AvailableTime maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to extension\n  GeoLocation maps to http://hl7.org/fhir/StructureDefinition/geolocation\n  Description maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description\n  PartOf maps to partOf\n  OrganizationEndpoint maps to endpoint\n  constrain type to 1..*\n  constrain name to 1..1\n  constrain telecom.system to 1..1\n  constrain telecom.value to 1..1\n  constrain contact.name.family to 1..1\n  constrain contact.name.given to 1..*\n  constrain address.line to 0..4\n  constrain identifier to 1..*\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Organization",
   "name": "PlanNet_Organization",
   "title": "plannet-PlanNet-Organization",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-06",
+  "date": "2019-08-07",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -389,7 +389,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "viaintermediary"
+        "sliceName": "viaintermediary",
+        "mustSupport": true
       },
       {
         "id": "Organization.extension:geolocation",
@@ -412,7 +413,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "geolocation"
+        "sliceName": "geolocation",
+        "mustSupport": true
       },
       {
         "id": "Organization.extension:availabletime",
@@ -435,7 +437,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime"
+        "sliceName": "availabletime",
+        "mustSupport": true
       },
       {
         "id": "Organization.extension:description",
@@ -458,7 +461,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "description"
+        "sliceName": "description",
+        "mustSupport": true
       },
       {
         "id": "Organization.extension:qualification",
@@ -481,7 +485,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "qualification"
+        "sliceName": "qualification",
+        "mustSupport": true
       },
       {
         "id": "Organization.modifierExtension",
@@ -1913,7 +1918,7 @@
             ],
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Organization"
             ]
           }
         ],
@@ -2543,7 +2548,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Endpoint"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Endpoint"
             ]
           }
         ],
@@ -2606,7 +2611,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "viaintermediary"
+        "sliceName": "viaintermediary",
+        "mustSupport": true
       },
       {
         "id": "Organization.extension:geolocation",
@@ -2629,7 +2635,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "geolocation"
+        "sliceName": "geolocation",
+        "mustSupport": true
       },
       {
         "id": "Organization.extension:availabletime",
@@ -2652,7 +2659,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime"
+        "sliceName": "availabletime",
+        "mustSupport": true
       },
       {
         "id": "Organization.extension:description",
@@ -2675,7 +2683,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "description"
+        "sliceName": "description",
+        "mustSupport": true
       },
       {
         "id": "Organization.extension:qualification",
@@ -2698,7 +2707,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "qualification"
+        "sliceName": "qualification",
+        "mustSupport": true
       },
       {
         "id": "Organization.type",
@@ -2723,6 +2733,24 @@
         "max": "1"
       },
       {
+        "id": "Organization.partOf",
+        "path": "Organization.partOf",
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
+            ],
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Organization"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Organization.contact",
         "path": "Organization.contact"
       },
@@ -2741,6 +2769,18 @@
         "path": "Organization.contact.name.given",
         "min": 1,
         "max": "*"
+      },
+      {
+        "id": "Organization.endpoint",
+        "path": "Organization.endpoint",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Endpoint"
+            ]
+          }
+        ]
       }
     ]
   }

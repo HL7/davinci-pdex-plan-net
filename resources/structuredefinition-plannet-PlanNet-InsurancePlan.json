@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-InsurancePlan",
   "name": "PlanNet_InsurancePlan",
   "status": "draft",
-  "date": "2019-08-06",
+  "date": "2019-08-07",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -577,7 +577,8 @@
           }
         ],
         "isModifier": false,
-        "isSummary": true
+        "isSummary": true,
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.administeredBy",
@@ -600,7 +601,8 @@
           }
         ],
         "isModifier": false,
-        "isSummary": true
+        "isSummary": true,
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.coverageArea",
@@ -623,7 +625,8 @@
           }
         ],
         "isModifier": false,
-        "isSummary": true
+        "isSummary": true,
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.contact",
@@ -2392,7 +2395,8 @@
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Organization"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.administeredBy",
@@ -2406,7 +2410,8 @@
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Organization"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.coverageArea",
@@ -2418,7 +2423,8 @@
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Location"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       }
     ]
   },

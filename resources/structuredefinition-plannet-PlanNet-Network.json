@@ -3,12 +3,12 @@
   "id": "plannet-PlanNet-Network",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Network Profile</b></p>\n  <p>A PlanNet-Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the PlanNet-practitionerRole and Plan-Net-organizationAffiliation resources, respectively.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Network maps to Organization:\n  LocationReference maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference\n  PartOf maps to partOf\n  constrain contact.name to 1..1\n  constrain contact.name.family to 1..1\n  constrain contact.name.given to 1..*\n  constrain contact.telecom.system to 1..1\n  constrain contact.telecom.value to 1..1\n  constrain telecom to 0..0\n  constrain partOf to 1..1\n  constrain address.line to 0..4\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PlanNet-Network Profile</b></p>\n  <p>A PlanNet-Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the PlanNet-practitionerRole and Plan-Net-organizationAffiliation resources, respectively.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PlanNet-Network maps to Organization:\n  LocationReference maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference\n  PartOf maps to partOf\n  NetworkEndpoint maps to endpoint\n  constrain contact.name to 1..1\n  constrain contact.name.family to 1..1\n  constrain contact.name.given to 1..*\n  constrain contact.telecom.system to 1..1\n  constrain contact.telecom.value to 1..1\n  constrain telecom to 0..0\n  constrain partOf to 1..1\n  constrain address.line to 0..4\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Network",
   "name": "PlanNet_Network",
   "status": "draft",
-  "date": "2019-08-06",
+  "date": "2019-08-07",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -374,7 +374,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "locationreference"
+        "sliceName": "locationreference",
+        "mustSupport": true
       },
       {
         "id": "Organization.modifierExtension",
@@ -1271,7 +1272,8 @@
             "identity": "servd",
             "map": "n/a"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.contact",
@@ -2149,7 +2151,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Endpoint"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Endpoint"
             ]
           }
         ],
@@ -2160,7 +2162,8 @@
             "identity": "rim",
             "map": "n/a"
           }
-        ]
+        ],
+        "mustSupport": true
       }
     ]
   },
@@ -2210,7 +2213,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "locationreference"
+        "sliceName": "locationreference",
+        "mustSupport": true
       },
       {
         "id": "Organization.telecom",
@@ -2246,7 +2250,8 @@
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Organization"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.contact",
@@ -2285,6 +2290,19 @@
         "path": "Organization.contact.telecom.value",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Organization.endpoint",
+        "path": "Organization.endpoint",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PlanNet-Endpoint"
+            ]
+          }
+        ],
+        "mustSupport": true
       }
     ]
   },

@@ -9,7 +9,8 @@ plannet.PlanNet-Organization maps to http://hl7.org/fhir/us/core/StructureDefini
   ViaIntermediary maps to extension
   GeoLocation maps to http://hl7.org/fhir/StructureDefinition/geolocation
   Description maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description
-  constrain active to 1..1
+  PartOf maps to partOf
+  OrganizationEndpoint maps to endpoint
   constrain type to 1..*
   constrain name to 1..1
   constrain telecom.system to 1..1
@@ -17,5 +18,6 @@ plannet.PlanNet-Organization maps to http://hl7.org/fhir/us/core/StructureDefini
   constrain contact.name.family to 1..1
   constrain contact.name.given to 1..*
   constrain address.line to 0..4
+  constrain identifier to 1..*
 
 </pre>

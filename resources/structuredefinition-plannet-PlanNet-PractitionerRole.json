@@ -10,7 +10,7 @@
   "title": "plannet-PlanNet-PractitionerRole",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-06",
+  "date": "2019-08-07",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -388,7 +388,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "network"
+        "sliceName": "network",
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.extension:viaintermediary",
@@ -411,7 +412,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "viaintermediary"
+        "sliceName": "viaintermediary",
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.extension:availabletime",
@@ -434,7 +436,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime"
+        "sliceName": "availabletime",
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.extension:newpatientprofile",
@@ -457,7 +460,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "newpatientprofile"
+        "sliceName": "newpatientprofile",
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.extension:newpatients",
@@ -480,7 +484,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "newpatients"
+        "sliceName": "newpatients",
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.extension:qualification",
@@ -503,7 +508,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "qualification"
+        "sliceName": "qualification",
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.modifierExtension",
@@ -1699,7 +1705,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "network"
+        "sliceName": "network",
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.extension:viaintermediary",
@@ -1722,7 +1729,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "viaintermediary"
+        "sliceName": "viaintermediary",
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.extension:availabletime",
@@ -1745,7 +1753,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime"
+        "sliceName": "availabletime",
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.extension:newpatientprofile",
@@ -1768,7 +1777,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "newpatientprofile"
+        "sliceName": "newpatientprofile",
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.extension:newpatients",
@@ -1791,7 +1801,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "newpatients"
+        "sliceName": "newpatients",
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.extension:qualification",
@@ -1814,7 +1825,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "qualification"
+        "sliceName": "qualification",
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.active",
