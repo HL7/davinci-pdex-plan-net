@@ -33,7 +33,8 @@
       "version": "current",
       "name": "VhDir",
       "location": "http://build.fhir.org/ig/HL7/VhDir/"
-      }      
+      }
+      
   ],
   "defaults": {
     "StructureDefinition": {
@@ -62,35 +63,79 @@
     "examples"
   ],
   "resources": {
-    "StructureDefinition/plannet-PlanNet-Endpoint": {
-      "base": "StructureDefinition-plannet-PlanNet-Endpoint.html"
+    "StructureDefinition/plannet-Endpoint": {
+      "base": "StructureDefinition-plannet-Endpoint.html"
     },
-    "StructureDefinition/plannet-PlanNet-HealthcareService": {
-      "base": "StructureDefinition-plannet-PlanNet-HealthcareService.html"
+    "StructureDefinition/plannet-HealthcareService": {
+      "base": "StructureDefinition-plannet-HealthcareService.html"
     },
-    "StructureDefinition/plannet-PlanNet-InsurancePlan": {
-      "base": "StructureDefinition-plannet-PlanNet-InsurancePlan.html"
+    "StructureDefinition/plannet-InsurancePlan": {
+      "base": "StructureDefinition-plannet-InsurancePlan.html"
     },
-    "StructureDefinition/plannet-PlanNet-Location": {
-      "base": "StructureDefinition-plannet-PlanNet-Location.html"
+    "StructureDefinition/plannet-Location": {
+      "base": "StructureDefinition-plannet-Location.html"
     },
-    "StructureDefinition/plannet-PlanNet-Network": {
-      "base": "StructureDefinition-plannet-PlanNet-Network.html"
+    "StructureDefinition/plannet-Network": {
+      "base": "StructureDefinition-plannet-Network.html"
     },
-    "StructureDefinition/plannet-PlanNet-Organization": {
-      "base": "StructureDefinition-plannet-PlanNet-Organization.html"
+    "StructureDefinition/plannet-Organization": {
+      "base": "StructureDefinition-plannet-Organization.html"
     },
-    "StructureDefinition/plannet-PlanNet-OrganizationAffiliation": {
-      "base": "StructureDefinition-plannet-PlanNet-OrganizationAffiliation.html"
+    "StructureDefinition/plannet-OrganizationAffiliation": {
+      "base": "StructureDefinition-plannet-OrganizationAffiliation.html"
     },
-    "StructureDefinition/plannet-PlanNet-Practitioner": {
-      "base": "StructureDefinition-plannet-PlanNet-Practitioner.html"
+    "StructureDefinition/plannet-Practitioner": {
+      "base": "StructureDefinition-plannet-Practitioner.html"
     },
-    "StructureDefinition/plannet-PlanNet-PractitionerRole": {
-      "base": "StructureDefinition-plannet-PlanNet-PractitionerRole.html"
+    "StructureDefinition/plannet-PractitionerRole": {
+      "base": "StructureDefinition-plannet-PractitionerRole.html"
     },
-    "StructureDefinition/plannet-Network-extension": {
-      "base": "StructureDefinition-plannet-Network-extension.html",
+    "StructureDefinition/plannet-AvailableTime-extension": {
+      "base": "StructureDefinition-plannet-AvailableTime-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-CAvailableTime-extension": {
+      "base": "StructureDefinition-plannet-CAvailableTime-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-CViaIntermediary-extension": {
+      "base": "StructureDefinition-plannet-CViaIntermediary-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-GeoLocation-extension": {
+      "base": "StructureDefinition-plannet-GeoLocation-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-IdentifierStatus-extension": {
+      "base": "StructureDefinition-plannet-IdentifierStatus-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-InsurancePlanEndpoint-extension": {
+      "base": "StructureDefinition-plannet-InsurancePlanEndpoint-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-InsurancePlanNetwork-extension": {
+      "base": "StructureDefinition-plannet-InsurancePlanNetwork-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-LocationReference-extension": {
+      "base": "StructureDefinition-plannet-LocationReference-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-PractitionerRoleNetwork-extension": {
+      "base": "StructureDefinition-plannet-PractitionerRoleNetwork-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-Proficiency-extension": {
+      "base": "StructureDefinition-plannet-Proficiency-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-TAvailableTime-extension": {
+      "base": "StructureDefinition-plannet-TAvailableTime-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-TViaIntermediary-extension": {
+      "base": "StructureDefinition-plannet-TViaIntermediary-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/plannet-ViaIntermediary-extension": {
