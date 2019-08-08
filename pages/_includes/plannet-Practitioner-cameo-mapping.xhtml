@@ -1,0 +1,20 @@
+
+<p> </p>
+<p><b>Mapping Source</b></p>
+<p>This structure represents the following mapping definition:</p>
+<pre>
+plannet.Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:
+  IdentifierStatus maps to identifier.extension
+  AvailableTime maps to telecom.extension
+  ViaIntermediary maps to telecom.extension
+  GeoLocation maps to address.extension
+  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification
+  Proficiency maps to communication.extension
+  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility
+  constrain name to 1..1
+  constrain name.family to 1..1
+  constrain name.given to 1..*
+  constrain photo to 0..1
+  constrain qualification.issuer to 1..1
+
+</pre>
