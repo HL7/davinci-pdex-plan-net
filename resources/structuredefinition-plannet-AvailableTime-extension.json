@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "plannet-GeoLocation-extension",
+  "id": "plannet-AvailableTime-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>GeoLocation Extension</b></p>\n  <p>GeoLocation indicates the absolute geographic location of an organization’s address</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>AvailableTime Extension</b></p>\n  <p>AvailableTime indicates when an organization is available for contact</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-GeoLocation-extension",
-  "name": "GeoLocation",
-  "title": "plannet-GeoLocation",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AvailableTime-extension",
+  "name": "AvailableTime",
+  "title": "plannet-AvailableTime",
   "status": "draft",
   "date": "2019-08-08",
   "publisher": "HL7 Pharmacy WG",
@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "description": "GeoLocation indicates the absolute geographic location of an organization’s address",
+  "description": "AvailableTime indicates when an organization is available for contact",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -39,8 +39,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "GeoLocation",
-        "definition": "GeoLocation indicates the absolute geographic location of an organization’s address",
+        "short": "AvailableTime",
+        "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
         "max": "*",
         "base": {
@@ -179,7 +179,7 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-GeoLocation-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AvailableTime-extension"
       },
       {
         "id": "Extension.valueCodeableConcept",
@@ -214,8 +214,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "GeoLocation",
-        "definition": "GeoLocation indicates the absolute geographic location of an organization’s address",
+        "short": "AvailableTime",
+        "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
         "max": "*"
       },
@@ -233,7 +233,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-GeoLocation-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AvailableTime-extension"
       },
       {
         "id": "Extension.valueCodeableConcept",

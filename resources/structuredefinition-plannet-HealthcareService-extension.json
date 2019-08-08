@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "plannet-GeoLocation-extension",
+  "id": "plannet-HealthcareService-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>GeoLocation Extension</b></p>\n  <p>GeoLocation indicates the absolute geographic location of an organization’s address</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>HealthcareService Extension</b></p>\n  <p>Healthcare services provided through the role.</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-GeoLocation-extension",
-  "name": "GeoLocation",
-  "title": "plannet-GeoLocation",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService-extension",
+  "name": "HealthcareService",
+  "title": "plannet-HealthcareService",
   "status": "draft",
   "date": "2019-08-08",
   "publisher": "HL7 Pharmacy WG",
@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "description": "GeoLocation indicates the absolute geographic location of an organization’s address",
+  "description": "Healthcare services provided through the role.",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -39,8 +39,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "GeoLocation",
-        "definition": "GeoLocation indicates the absolute geographic location of an organization’s address",
+        "short": "HealthcareService",
+        "definition": "Healthcare services provided through the role.",
         "min": 0,
         "max": "*",
         "base": {
@@ -129,8 +129,8 @@
           "extensions",
           "user content"
         ],
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "*",
         "base": {
           "path": "Element.extension",
           "min": 0,
@@ -149,6 +149,35 @@
             "map": "n/a"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:healthcareservice",
+        "path": "Extension.extension",
+        "definition": "Healthcare services provided through the role.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ],
+        "sliceName": "healthcareservice"
       },
       {
         "id": "Extension.url",
@@ -179,15 +208,15 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-GeoLocation-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService-extension"
       },
       {
-        "id": "Extension.valueCodeableConcept",
-        "path": "Extension.valueCodeableConcept",
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -195,7 +224,151 @@
         },
         "type": [
           {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
             "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "Contributor"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Dosage"
           }
         ],
         "isModifier": false,
@@ -214,16 +387,45 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "GeoLocation",
-        "definition": "GeoLocation indicates the absolute geographic location of an organization’s address",
+        "short": "HealthcareService",
+        "definition": "Healthcare services provided through the role.",
         "min": 0,
         "max": "*"
       },
       {
         "id": "Extension.extension",
         "path": "Extension.extension",
-        "min": 0,
-        "max": "0"
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:healthcareservice",
+        "path": "Extension.extension",
+        "definition": "Healthcare services provided through the role.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ],
+        "sliceName": "healthcareservice"
       },
       {
         "id": "Extension.url",
@@ -233,17 +435,13 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-GeoLocation-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService-extension"
       },
       {
-        "id": "Extension.valueCodeableConcept",
-        "path": "Extension.valueCodeableConcept",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 0,
+        "max": "0"
       }
     ]
   }
