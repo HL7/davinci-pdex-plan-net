@@ -48,72 +48,149 @@
     }],
     "resource" : [{
       "reference" : {
-        "reference" : "StructureDefinition/plannet-PlanNet-Endpoint"
+        "reference" : "StructureDefinition/plannet-Endpoint"
       },
-      "name" : "plannet-PlanNet-Endpoint",
+      "name" : "plannet-Endpoint",
       "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/plannet-PlanNet-HealthcareService"
+        "reference" : "StructureDefinition/plannet-HealthcareService"
       },
-      "name" : "plannet-PlanNet-HealthcareService",
+      "name" : "plannet-HealthcareService",
       "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/plannet-PlanNet-InsurancePlan"
+        "reference" : "StructureDefinition/plannet-InsurancePlan"
       },
-      "name" : "plannet-PlanNet-InsurancePlan",
+      "name" : "plannet-InsurancePlan",
       "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/plannet-PlanNet-Location"
+        "reference" : "StructureDefinition/plannet-Location"
       },
-      "name" : "plannet-PlanNet-Location",
+      "name" : "plannet-Location",
       "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/plannet-PlanNet-Network"
-      },
-      "name" : "plannet-PlanNet-Network",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-PlanNet-Organization"
-      },
-      "name" : "plannet-PlanNet-Organization",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-PlanNet-OrganizationAffiliation"
-      },
-      "name" : "plannet-PlanNet-OrganizationAffiliation",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-PlanNet-Practitioner"
-      },
-      "name" : "plannet-PlanNet-Practitioner",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-PlanNet-PractitionerRole"
-      },
-      "name" : "plannet-PlanNet-PractitionerRole",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-Network-extension"
+        "reference" : "StructureDefinition/plannet-Network"
       },
       "name" : "plannet-Network",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-Organization"
+      },
+      "name" : "plannet-Organization",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-OrganizationAffiliation"
+      },
+      "name" : "plannet-OrganizationAffiliation",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-Practitioner"
+      },
+      "name" : "plannet-Practitioner",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-PractitionerRole"
+      },
+      "name" : "plannet-PractitionerRole",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-AvailableTime-extension"
+      },
+      "name" : "plannet-AvailableTime",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-CAvailableTime-extension"
+      },
+      "name" : "plannet-CAvailableTime",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-CViaIntermediary-extension"
+      },
+      "name" : "plannet-CViaIntermediary",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-GeoLocation-extension"
+      },
+      "name" : "plannet-GeoLocation",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-IdentifierStatus-extension"
+      },
+      "name" : "plannet-IdentifierStatus",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-InsurancePlanEndpoint-extension"
+      },
+      "name" : "plannet-InsurancePlanEndpoint",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-InsurancePlanNetwork-extension"
+      },
+      "name" : "plannet-InsurancePlanNetwork",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-LocationReference-extension"
+      },
+      "name" : "plannet-LocationReference",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-PractitionerRoleNetwork-extension"
+      },
+      "name" : "plannet-PractitionerRoleNetwork",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-Proficiency-extension"
+      },
+      "name" : "plannet-Proficiency",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-TAvailableTime-extension"
+      },
+      "name" : "plannet-TAvailableTime",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-TViaIntermediary-extension"
+      },
+      "name" : "plannet-TViaIntermediary",
       "exampleBoolean" : false
     },
     {
@@ -1129,6 +1206,167 @@
         "reference" : "SearchParameter/verificationresult-validator-organization"
       },
       "name" : "VhDir_sp_verificationresult_validator_organization",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/womens-shelter"
+      },
+      "name" : "Example: womens-shelter",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Endpoint/direct321"
+      },
+      "name" : "Example: direct321",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "HealthcareService/ffcardiology"
+      },
+      "name" : "Example: ffcardiology",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "HealthcareService/hcs-ws"
+      },
+      "name" : "Example: hcs-ws",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "HealthcareService/independencerehab1"
+      },
+      "name" : "Example: independencerehab1",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "HealthcareService/independencerehab2"
+      },
+      "name" : "Example: independencerehab2",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "InsurancePlan/insuranceplan1"
+      },
+      "name" : "Example: insuranceplan1",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Location/loc-ffmh-hvi"
+      },
+      "name" : "Example: loc-ffmh-hvi",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Location/loc-ffmh"
+      },
+      "name" : "Example: loc-ffmh",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Location/loc-ws"
+      },
+      "name" : "Example: loc-ws",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Location/wash-dc-metro"
+      },
+      "name" : "Example: wash-dc-metro",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/foundingfathers"
+      },
+      "name" : "Example: foundingfathers",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/homeland"
+      },
+      "name" : "Example: homeland",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/independencerehab"
+      },
+      "name" : "Example: independencerehab",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/monumentHIE"
+      },
+      "name" : "Example: monumentHIE",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/mtvernon"
+      },
+      "name" : "Example: mtvernon",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/patriotdental"
+      },
+      "name" : "Example: patriotdental",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/patriotppo"
+      },
+      "name" : "Example: patriotppo",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "OrganizationAffiliation/orgrole1"
+      },
+      "name" : "Example: orgrole1",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "OrganizationAffiliation/orgrole2"
+      },
+      "name" : "Example: orgrole2",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/practitioner1"
+      },
+      "name" : "Example: practitioner1",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "PractitionerRole/practitionerrole1"
+      },
+      "name" : "Example: practitionerrole1",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "VerificationResult/example-license"
+      },
+      "name" : "Example: example-license",
       "exampleBoolean" : true
     },
     {

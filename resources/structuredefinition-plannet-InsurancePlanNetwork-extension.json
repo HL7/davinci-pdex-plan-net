@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "plannet-GeoLocation-extension",
+  "id": "plannet-InsurancePlanNetwork-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>GeoLocation Extension</b></p>\n  <p>GeoLocation indicates the absolute geographic location of an organization’s address</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>InsurancePlanNetwork Extension</b></p>\n  <p>Reference to the network included in the health insurance product.</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-GeoLocation-extension",
-  "name": "GeoLocation",
-  "title": "plannet-GeoLocation",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlanNetwork-extension",
+  "name": "InsurancePlanNetwork",
+  "title": "plannet-InsurancePlanNetwork",
   "status": "draft",
   "date": "2019-08-08",
   "publisher": "HL7 Pharmacy WG",
@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "description": "GeoLocation indicates the absolute geographic location of an organization’s address",
+  "description": "Reference to the network included in the health insurance product.",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -39,8 +39,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "GeoLocation",
-        "definition": "GeoLocation indicates the absolute geographic location of an organization’s address",
+        "short": "InsurancePlanNetwork",
+        "definition": "Reference to the network included in the health insurance product.",
         "min": 0,
         "max": "*",
         "base": {
@@ -179,11 +179,11 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-GeoLocation-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlanNetwork-extension"
       },
       {
-        "id": "Extension.valueCodeableConcept",
-        "path": "Extension.valueCodeableConcept",
+        "id": "Extension.valueReference",
+        "path": "Extension.valueReference",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 1,
@@ -195,7 +195,10 @@
         },
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
+            ]
           }
         ],
         "isModifier": false,
@@ -214,8 +217,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "GeoLocation",
-        "definition": "GeoLocation indicates the absolute geographic location of an organization’s address",
+        "short": "InsurancePlanNetwork",
+        "definition": "Reference to the network included in the health insurance product.",
         "min": 0,
         "max": "*"
       },
@@ -233,15 +236,18 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-GeoLocation-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlanNetwork-extension"
       },
       {
-        "id": "Extension.valueCodeableConcept",
-        "path": "Extension.valueCodeableConcept",
+        "id": "Extension.valueReference",
+        "path": "Extension.valueReference",
         "min": 1,
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
+            ]
           }
         ]
       }
