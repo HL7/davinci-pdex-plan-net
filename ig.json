@@ -33,8 +33,7 @@
       "version": "current",
       "name": "VhDir",
       "location": "http://build.fhir.org/ig/HL7/VhDir/"
-      }
-      
+      }      
   ],
   "defaults": {
     "StructureDefinition": {
@@ -54,7 +53,35 @@
       "template-format": "format.html",
       "template-base": "base.html"
     },
+    "Endpoint": {
+      "template-base": "ex.html",
+      "template-format": "ex.html"
+    },
+    "HealthcareService": {
+      "template-base": "ex.html",
+      "template-format": "ex.html"
+    },
+    "InsurancePlan": {
+      "template-base": "ex.html",
+      "template-format": "ex.html"
+    },
     "Location": {
+      "template-base": "ex.html",
+      "template-format": "ex.html"
+    },
+    "Organization": {
+      "template-base": "ex.html",
+      "template-format": "ex.html"
+    },
+    "OrganizationAffiliation": {
+      "template-base": "ex.html",
+      "template-format": "ex.html"
+    },
+    "Practitioner": {
+      "template-base": "ex.html",
+      "template-format": "ex.html"
+    },
+    "PractitionerRole": {
       "template-base": "ex.html",
       "template-format": "ex.html"
     }
@@ -110,14 +137,6 @@
       "base": "StructureDefinition-plannet-IdentifierStatus-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/plannet-InsurancePlanEndpoint-extension": {
-      "base": "StructureDefinition-plannet-InsurancePlanEndpoint-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/plannet-InsurancePlanNetwork-extension": {
-      "base": "StructureDefinition-plannet-InsurancePlanNetwork-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/plannet-LocationReference-extension": {
       "base": "StructureDefinition-plannet-LocationReference-extension.html",
       "template-base": "sd-extension.html"
@@ -142,59 +161,11 @@
       "base": "StructureDefinition-plannet-ViaIntermediary-extension.html",
       "template-base": "sd-extension.html"
     },
-    "SearchParameter/careteam-category": {
-      "base": "SearchParameter-careteam-category.html"
-    },
-    "SearchParameter/careteam-endpoint": {
-      "base": "SearchParameter-careteam-endpoint.html"
-    },
-    "SearchParameter/careteam-identifier-assigner": {
-      "base": "SearchParameter-careteam-identifier-assigner.html"
-    },
-    "SearchParameter/careteam-identifier": {
-      "base": "SearchParameter-careteam-identifier.html"
-    },
-    "SearchParameter/careteam-location": {
-      "base": "SearchParameter-careteam-location.html"
-    },
-    "SearchParameter/careteam-name": {
-      "base": "SearchParameter-careteam-name.html"
-    },
-    "SearchParameter/careteam-organization": {
-      "base": "SearchParameter-careteam-organization.html"
-    },
-    "SearchParameter/careteam-participant": {
-      "base": "SearchParameter-careteam-participant.html"
-    },
-    "SearchParameter/careteam-service": {
-      "base": "SearchParameter-careteam-service.html"
-    },
-    "SearchParameter/careteam-status": {
-      "base": "SearchParameter-careteam-status.html"
-    },
-    "SearchParameter/careteam-via-intermediary": {
-      "base": "SearchParameter-careteam-via-intermediary.html"
-    },
-    "SearchParameter/endpoint-connection-type": {
-      "base": "SearchParameter-endpoint-connection-type.html"
-    },
     "SearchParameter/endpoint-identifier-assigner": {
       "base": "SearchParameter-endpoint-identifier-assigner.html"
     },
-    "SearchParameter/endpoint-identifier": {
-      "base": "SearchParameter-endpoint-identifier.html"
-    },
     "SearchParameter/endpoint-mime-type": {
       "base": "SearchParameter-endpoint-mime-type.html"
-    },
-    "SearchParameter/endpoint-organization": {
-      "base": "SearchParameter-endpoint-organization.html"
-    },
-    "SearchParameter/endpoint-payload-type": {
-      "base": "SearchParameter-endpoint-payload-type.html"
-    },
-    "SearchParameter/endpoint-status": {
-      "base": "SearchParameter-endpoint-status.html"
     },
     "SearchParameter/endpoint-usecase-standard": {
       "base": "SearchParameter-endpoint-usecase-standard.html"
@@ -205,47 +176,17 @@
     "SearchParameter/endpoint-via-intermediary": {
       "base": "SearchParameter-endpoint-via-intermediary.html"
     },
-    "SearchParameter/healthcareservice-characteristic": {
-      "base": "SearchParameter-healthcareservice-characteristic.html"
-    },
-    "SearchParameter/healthcareservice-coverage-area": {
-      "base": "SearchParameter-healthcareservice-coverage-area.html"
-    },
     "SearchParameter/healthcareservice-eligibility": {
       "base": "SearchParameter-healthcareservice-eligibility.html"
     },
-    "SearchParameter/healthcareservice-endpoint": {
-      "base": "SearchParameter-healthcareservice-endpoint.html"
-    },
     "SearchParameter/healthcareservice-identifier-assigner": {
       "base": "SearchParameter-healthcareservice-identifier-assigner.html"
-    },
-    "SearchParameter/healthcareservice-identifier": {
-      "base": "SearchParameter-healthcareservice-identifier.html"
-    },
-    "SearchParameter/healthcareservice-location": {
-      "base": "SearchParameter-healthcareservice-location.html"
-    },
-    "SearchParameter/healthcareservice-name": {
-      "base": "SearchParameter-healthcareservice-name.html"
     },
     "SearchParameter/healthcareservice-new-patient-network": {
       "base": "SearchParameter-healthcareservice-new-patient-network.html"
     },
     "SearchParameter/healthcareservice-new-patient": {
       "base": "SearchParameter-healthcareservice-new-patient.html"
-    },
-    "SearchParameter/healthcareservice-organization": {
-      "base": "SearchParameter-healthcareservice-organization.html"
-    },
-    "SearchParameter/healthcareservice-service-category": {
-      "base": "SearchParameter-healthcareservice-service-category.html"
-    },
-    "SearchParameter/healthcareservice-service-type": {
-      "base": "SearchParameter-healthcareservice-service-type.html"
-    },
-    "SearchParameter/healthcareservice-specialty": {
-      "base": "SearchParameter-healthcareservice-specialty.html"
     },
     "SearchParameter/healthcareservice-via-intermediary": {
       "base": "SearchParameter-healthcareservice-via-intermediary.html"
@@ -256,29 +197,8 @@
     "SearchParameter/insuranceplan-coverage-area": {
       "base": "SearchParameter-insuranceplan-coverage-area.html"
     },
-    "SearchParameter/insuranceplan-coverage-benefit-type": {
-      "base": "SearchParameter-insuranceplan-coverage-benefit-type.html"
-    },
-    "SearchParameter/insuranceplan-coverage-limit-value": {
-      "base": "SearchParameter-insuranceplan-coverage-limit-value.html"
-    },
-    "SearchParameter/insuranceplan-coverage-network": {
-      "base": "SearchParameter-insuranceplan-coverage-network.html"
-    },
-    "SearchParameter/insuranceplan-coverage-type": {
-      "base": "SearchParameter-insuranceplan-coverage-type.html"
-    },
     "SearchParameter/insuranceplan-endpoint": {
       "base": "SearchParameter-insuranceplan-endpoint.html"
-    },
-    "SearchParameter/insuranceplan-general-cost-groupsize": {
-      "base": "SearchParameter-insuranceplan-general-cost-groupsize.html"
-    },
-    "SearchParameter/insuranceplan-general-cost-type": {
-      "base": "SearchParameter-insuranceplan-general-cost-type.html"
-    },
-    "SearchParameter/insuranceplan-general-cost-value": {
-      "base": "SearchParameter-insuranceplan-general-cost-value.html"
     },
     "SearchParameter/insuranceplan-identifier": {
       "base": "SearchParameter-insuranceplan-identifier.html"
@@ -300,27 +220,6 @@
     },
     "SearchParameter/insuranceplan-plan-network": {
       "base": "SearchParameter-insuranceplan-plan-network.html"
-    },
-    "SearchParameter/insuranceplan-plan-type": {
-      "base": "SearchParameter-insuranceplan-plan-type.html"
-    },
-    "SearchParameter/insuranceplan-specific-cost-benefit-type": {
-      "base": "SearchParameter-insuranceplan-specific-cost-benefit-type.html"
-    },
-    "SearchParameter/insuranceplan-specific-cost-category": {
-      "base": "SearchParameter-insuranceplan-specific-cost-category.html"
-    },
-    "SearchParameter/insuranceplan-specific-cost-cost-type": {
-      "base": "SearchParameter-insuranceplan-specific-cost-cost-type.html"
-    },
-    "SearchParameter/insuranceplan-specific-cost-value": {
-      "base": "SearchParameter-insuranceplan-specific-cost-value.html"
-    },
-    "SearchParameter/insuranceplan-status": {
-      "base": "SearchParameter-insuranceplan-status.html"
-    },
-    "SearchParameter/insuranceplan-type": {
-      "base": "SearchParameter-insuranceplan-type.html"
     },
     "SearchParameter/location-accessibility": {
       "base": "SearchParameter-location-accessibility.html"
@@ -573,6 +472,90 @@
     },
     "SearchParameter/verificationresult-validator-organization": {
       "base": "SearchParameter-verificationresult-validator-organization.html"
+    },
+    "Endpoint/direct321": {
+      "base": "Endpoint-direct321.html",
+      "source": "Endpoint-direct321.json"
+    },
+    "HealthcareService/ffcardiology": {
+      "base": "HealthcareService-ffcardiology.html",
+      "source": "HealthcareService-ffcardiology.json"
+    },
+    "HealthcareService/hcs-ws": {
+      "base": "HealthcareService-hcs-ws.html",
+      "source": "HealthcareService-hcs-ws.json"
+    },
+    "HealthcareService/independencerehab1": {
+      "base": "HealthcareService-independencerehab1.html",
+      "source": "HealthcareService-independencerehab1.json"
+    },
+    "HealthcareService/independencerehab2": {
+      "base": "HealthcareService-independencerehab2.html",
+      "source": "HealthcareService-independencerehab2.json"
+    },
+    "InsurancePlan/insuranceplan1": {
+      "base": "InsurancePlan-insuranceplan1.html",
+      "source": "InsurancePlan-insuranceplan1.json"
+    },
+    "Location/loc-ffmh-hvi": {
+      "base": "Location-loc-ffmh-hvi.html",
+      "source": "Location-loc-ffmh-hvi.json"
+    },
+    "Location/loc-ffmh": {
+      "base": "Location-loc-ffmh.html",
+      "source": "Location-loc-ffmh.json"
+    },
+    "Location/loc-ws": {
+      "base": "Location-loc-ws.html",
+      "source": "Location-loc-ws.json"
+    },
+    "Location/wash-dc-metro": {
+      "base": "Location-wash-dc-metro.html",
+      "source": "Location-wash-dc-metro.json"
+    },
+    "Organization/foundingfathers": {
+      "base": "Organization-foundingfathers.html",
+      "source": "Organization-foundingfathers.json"
+    },
+    "Organization/homeland": {
+      "base": "Organization-homeland.html",
+      "source": "Organization-homeland.json"
+    },
+    "Organization/independencerehab": {
+      "base": "Organization-independencerehab.html",
+      "source": "Organization-independencerehab.json"
+    },
+    "Organization/monumentHIE": {
+      "base": "Organization-monumentHIE.html",
+      "source": "Organization-monumentHIE.json"
+    },
+    "Organization/mtvernon": {
+      "base": "Organization-mtvernon.html",
+      "source": "Organization-mtvernon.json"
+    },
+    "Organization/patriotdental": {
+      "base": "Organization-patriotdental.html",
+      "source": "Organization-patriotdental.json"
+    },
+    "Organization/patriotppo": {
+      "base": "Organization-patriotppo.html",
+      "source": "Organization-patriotppo.json"
+    },
+    "OrganizationAffiliation/orgrole1": {
+      "base": "OrganizationAffiliation-orgrole1.html",
+      "source": "OrganizationAffiliation-orgrole1.json"
+    },
+    "OrganizationAffiliation/orgrole2": {
+      "base": "OrganizationAffiliation-orgrole2.html",
+      "source": "OrganizationAffiliation-orgrole2.json"
+    },
+    "Practitioner/practitioner1": {
+      "base": "Practitioner-practitioner1.html",
+      "source": "Practitioner-practitioner1.json"
+    },
+    "PractitionerRole/practitionerrole1": {
+      "base": "PractitionerRole-practitionerrole1.html",
+      "source": "PractitionerRole-practitionerrole1.json"
     },
     "Location/location1WSAddress": {
       "base": "Location-location1WSAddress.html",

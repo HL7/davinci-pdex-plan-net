@@ -3,7 +3,7 @@
   "id": "loc-ffmh-hvi",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
     ]
   },
   "text": {
@@ -23,47 +23,6 @@
         ],
         "text": "Founding Fathers Memorial Hospital offers a variety of services and programs for persons with disabilities"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/ehr",
-      "extension": [
-        {
-          "url": "developer",
-          "valueString": "Revolutionary Health"
-        },
-        {
-          "url": "product",
-          "valueString": "Revolutionary Professional EHR"
-        },
-        {
-          "url": "version",
-          "valueString": "10.4.3"
-        },
-        {
-          "url": "certificationEdition",
-          "valueCoding": {
-            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics",
-            "code": "2014",
-            "display": "ONC 2014 Certification"
-          }
-        },
-        {
-          "url": "patientAccess",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/ehrcharacteristics",
-                "code": "portal",
-                "display": "patient portal"
-              }
-            ]
-          }
-        },
-        {
-          "url": "certificationID",
-          "valueString": "04282014-1111-2"
-        }
-      ]
     }
   ],
   "identifier": [

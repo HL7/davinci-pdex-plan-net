@@ -215,27 +215,45 @@
 <p>Search Parameter</p>
 <p><strong>Endpoint</strong></p>
 <ul>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-endpoint-connection-type.html">connection-type</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-endpoint-organization.html">organization</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-endpoint-payload-type.html">payload-type</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-endpoint-usecase-standard.html">usecase-standard</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-endpoint-usecase-type.html">usecase-type</a></li>
+<li>inherited from http://hl7.org/fhir/endpoint.html#search 
+<ul>
+<li>connection-type/li>
+<li>organization</li>
+<li>payload-type</li>
+<li>name</li>
+<li>status</li>
+<li>identifier</li>
+</ul>
+</li>
+<li><a href="./SearchParameter-endpoint-identifier-assigner.html">identifier-assigner</a></li>
+<li><a href="./SearchParameter-endpoint-mime-type.html">mime-type</a></li>
+<li><a href="./SearchParameter-endpoint-usecase-standard.html">usecase-standard</a></li>
+<li><a href="./SearchParameter-endpoint-usecase-type.html">usecase-type</a></li>
+<li><a href="./SearchParameter-endpoint-via-intermediary.html">endpoint-via-intermediary</a></li>  
 </ul>
 <p><strong>HealthcareService</strong></p>
 <ul>
-<li>active http://hl7.org/fhir/SearchParameter/HealthcareService-active</li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-healthcareservice-service-category.html">service-category</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-healthcareservice-characteristic.html">characteristic</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-healthcareservice-coverage-area.html">coverage-area</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-healthcareservice-eligibility.html">eligibility</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-healthcareservice-endpoint.html">endpoint</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-healthcareservice-location.html">location</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-healthcareservice-name.html">name</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-healthcareservice-new-patient.html">new-patient</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-healthcareservice-new-patient-network.html">new-patient-network</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-healthcareservice-organization.html">organization</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-healthcareservice-specialty.html">specialty</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-healthcareservice-service-type.html">service-type</a></li>
+<li>inherited from http://hl7.org/fhir/healthcareservice.html#search 
+<ul>
+<li>active/li>
+<li>characteristic</li>
+<li>coverage-area</li>
+<li>endpoint</li>
+<li>identifier</li>
+<li>location</li>
+<li>name/li>
+<li>organization</li>
+<li>program</li>
+<li>service-category</li>
+<li>service-type</li>
+<li>speciality</li>
+</ul>
+</li>
+<li><a href="./SearchParameter-healthcareservice-new-patient.html">new-patient</a></li>
+<li><a href="./SearchParameter-healthcareservice-new-patient-network.html">new-patient-network</a></li>
+<li><a href="./SearchParameter-healthcareservice-eligibility.html">eligibility</a></li>
+<li><a href="./SearchParameter-healthcareservice-identifier-assigner.html">identifier-assigner</a></li>
+<li><a href="./SearchParameter-healthcareservice-via-intermediary.html">via-intermediary</a></li>
 </ul>
 <p><strong>Location</strong></p>
 <ul>
@@ -549,34 +567,34 @@
 <li>Provider Directory actors <em>SHALL</em> conform to <a href="http://hl7.org/fhir/STU3/security.html#http">FHIR Communications</a></li>
 </ul>
 <p>Examples</p>
-<p>Available for download <a href="http://build.fhir.org/ig/HL7/VhDir/downloads.html">here</a></p>
+<p>Available for download <a href="./downloads.html">here</a></p>
 <p><u>Notes: </u></p>
 <ul>
 <li><u>bring forward examples that are supportive of the scope of this guide and remove all references to items that have been deleted (e.g. restriction and validation)</u></li>
 <li><u>include example of pharmacy locations </u></li>
 </ul>
 <ul>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/Endpoint-direct321.html">Endpoint Direct321 </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/HealthcareService-ffcardiology.html">Healthcareservice Ffcardiology </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/HealthcareService-hcs-ws.html">Healthcareservice Hcs Ws </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/HealthcareService-independencerehab1.html">Healthcareservice Independencerehab1 </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/HealthcareService-independencerehab2.html">Healthcareservice Independencerehab2 </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/InsurancePlan-insuranceplan1.html">Insuranceplan Insuranceplan1 </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/Location-loc-ffmh-hvi.html">Location Loc Ffmh Hvi </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/Location-loc-ffmh.html">Location Loc Ffmh </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/Location-loc-ws.html">Location Loc Ws </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/Location-wash-dc-metro.html">Location Wash Dc Metro </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/Organization-foundingfathers.html">Organization Foundingfathers </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/Organization-homeland.html">Organization Homeland </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/Organization-independencerehab.html">Organization Independencerehab </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/Organization-monumentHIE.html">Organization Monumenthie </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/Organization-mtvernon.html">Organization Mtvernon </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/Organization-patriotdental.html">Organization Patriotdental </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/Organization-patriotppo.html">Organization Patriotppo </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/OrganizationAffiliation-orgrole1.html">Organizationaffiliation Orgrole1 </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/OrganizationAffiliation-orgrole2.html">Organizationaffiliation Orgrole2 </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/Practitioner-practitioner1.html">Practitioner Practitioner1 </a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/PractitionerRole-practitionerrole1.html">Practitionerrole Practitionerrole1 </a></li>
+<li><a href="./Endpoint-direct321.html">Endpoint Direct321 </a></li>
+<li><a href=".//HealthcareService-ffcardiology.html">Healthcareservice Ffcardiology </a></li>
+<li><a href="./HealthcareService-hcs-ws.html">Healthcareservice Hcs Ws </a></li>
+<li><a href=".//HealthcareService-independencerehab1.html">Healthcareservice Independencerehab1 </a></li>
+<li><a href=".//HealthcareService-independencerehab2.html">Healthcareservice Independencerehab2 </a></li>
+<li><a href="./InsurancePlan-insuranceplan1.html">Insuranceplan Insuranceplan1 </a></li>
+<li><a href="./VhDir/Location-loc-ffmh-hvi.html">Location Loc Ffmh Hvi </a></li>
+<li><a href="./Location-loc-ffmh.html">Location Loc Ffmh </a></li>
+<li><a href="./Location-loc-ws.html">Location Loc Ws </a></li>
+<li><a href="./Location-wash-dc-metro.html">Location Wash Dc Metro </a></li>
+<li><a href="./Organization-foundingfathers.html">Organization Foundingfathers </a></li>
+<li><a href="./Organization-homeland.html">Organization Homeland </a></li>
+<li><a href="./Organization-independencerehab.html">Organization Independencerehab </a></li>
+<li><a href="./Organization-monumentHIE.html">Organization Monumenthie </a></li>
+<li><a href="./Organization-mtvernon.html">Organization Mtvernon </a></li>
+<li><a href=".//Organization-patriotdental.html">Organization Patriotdental </a></li>
+<li><a href="./Organization-patriotppo.html">Organization Patriotppo </a></li>
+<li><a href="./OrganizationAffiliation-orgrole1.html">Organizationaffiliation Orgrole1 </a></li>
+<li><a href=".//OrganizationAffiliation-orgrole2.html">Organizationaffiliation Orgrole2 </a></li>
+<li><a href=".//VhDir/Practitioner-practitioner1.html">Practitioner Practitioner1 </a></li>
+<li><a href="./PractitionerRole-practitionerrole1.html">Practitionerrole Practitionerrole1 </a></li>
 </ul>
 
 <!-- ==============END CONTENT END CONTENT=================== -->

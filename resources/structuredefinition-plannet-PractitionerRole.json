@@ -3,14 +3,14 @@
   "id": "plannet-PractitionerRole",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PractitionerRole Profile</b></p>\n  <p>PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  PractitionerRoleNetwork maps to extension\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification\n  AvailableTime maps to telecom.extension\n  ViaIntermediary maps to telecom.extension\n  constrain active to 1..1\n  constrain code to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PractitionerRole Profile</b></p>\n  <p>PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  PractitionerRoleNetwork maps to extension\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification\n  AvailableTime maps to telecom.extension http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to telecom.extension\n  constrain active to 1..1\n  constrain code to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole",
   "name": "PractitionerRole",
   "title": "plannet-PractitionerRole",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-08",
+  "date": "2019-08-09",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {

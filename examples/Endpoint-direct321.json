@@ -3,7 +3,7 @@
   "id": "direct321",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-endpoint"
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"
     ]
   },
   "text": {
@@ -29,67 +29,6 @@
         {
           "url": "standard",
           "valueUri": "http://wiki.directproject.org/file/view/2011-03-09%20PDF%20-%20XDR%20and%20XDM%20for%20Direct%20Messaging%20Specification_FINAL.pdf"
-        }
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-rank",
-      "valuePositiveInt": 1
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate",
-      "extension": [
-        {
-          "url": "type",
-          "valueCoding": {
-            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
-            "code": "grp",
-            "display": "Group"
-          }
-        },
-        {
-          "url": "use",
-          "valueCoding": {
-            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
-            "code": "signing",
-            "display": "Signing"
-          }
-        },
-        {
-          "url": "use",
-          "valueCoding": {
-            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
-            "code": "encrypt",
-            "display": "Encryption"
-          }
-        },
-        {
-          "url": "certificateStandard",
-          "valueCoding": {
-            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
-            "code": "x.509v3",
-            "display": "x.509v3"
-          }
-        },
-        {
-          "url": "certificate",
-          "valueString": "VGhpcyBpcyB0aGUgZGlnaXRhbCBjZXJ0aWZpY2F0ZSBhc3NvY2lhdGVkIHdpdGggdGhlIEZvdW5kaW5nIEZhdGhlcnMgSGVhcnQgYW5kIFZhc2N1bGFyIEluc3RpdHV0ZeKAmXMgRGlyZWN0IGFkZHJlc3MNCg0KLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0NCk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQysrM3RvczN4cTVhSWFKLzZSREd6REZKK2YNCjJNWkxHdHEyZXM5T1NRdEpzYU9YNjd6VlI5QnpMZWgwa2pMZ3ZOMC85Q0NxNDdQS3dvQWV4b2R2MXVhanF3YWcNCnBHYlV0NkF5ZHEzeE9LMllhRnkzTDVMMXBHc2NySzJPMXJSd0ExYUpndXdRVjArM0xYNmVwOExBVitkZFVaS3cNCjB4MlRyUkRZUUJFZE52YkFVd0lEQVFBQg0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tDQo="
-        },
-        {
-          "url": "expirationDate",
-          "valueDate": "2019-04-07"
-        },
-        {
-          "url": "trustFramework",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/digitalcertificate",
-                "code": "direct",
-                "display": "DirectTrust"
-              }
-            ]
-          }
         }
       ]
     }

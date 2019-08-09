@@ -3,12 +3,12 @@
   "id": "plannet-InsurancePlan",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>InsurancePlan Profile</b></p>\n  <p>A InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\n\nInsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.InsurancePlan maps to InsurancePlan:\n  OwnedBy maps to ownedBy\n  CoverageArea maps to coverageArea\n  AdministeredBy maps to administeredBy\n  constrain ownedBy to 1..1\n  constrain plan to 0..0\n  constrain coverage to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>InsurancePlan Profile</b></p>\n  <p>A InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\n\nInsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.InsurancePlan maps to InsurancePlan:\n  OwnedBy maps to ownedBy\n  CoverageArea maps to coverageArea\n  AdministeredBy maps to administeredBy\n  InsurancePlanNetwork maps to network\n  InsurancePlanEndpoint maps to endpoint\n  constrain ownedBy to 1..1\n  constrain plan to 0..0\n  constrain coverage to 0..0\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan",
   "name": "InsurancePlan",
   "status": "draft",
-  "date": "2019-08-08",
+  "date": "2019-08-09",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -318,64 +318,7 @@
             "identity": "rim",
             "map": "N/A"
           }
-        ],
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "InsurancePlan.extension:insuranceplannetwork",
-        "path": "InsurancePlan.extension",
-        "definition": "Reference to the network included in the health insurance product.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlanNetwork-extension"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "insuranceplannetwork"
-      },
-      {
-        "id": "InsurancePlan.extension:insuranceplanendpoint",
-        "path": "InsurancePlan.extension",
-        "definition": "The technical endpoints providing access to services operated for the health insurance product.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlanEndpoint-extension"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "insuranceplanendpoint"
+        ]
       },
       {
         "id": "InsurancePlan.modifierExtension",
@@ -953,7 +896,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Endpoint"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"
             ]
           }
         ],
@@ -983,7 +926,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
             ]
           }
         ],
@@ -2441,67 +2384,6 @@
         "isSummary": false
       },
       {
-        "id": "InsurancePlan.extension",
-        "path": "InsurancePlan.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "InsurancePlan.extension:insuranceplannetwork",
-        "path": "InsurancePlan.extension",
-        "definition": "Reference to the network included in the health insurance product.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlanNetwork-extension"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "insuranceplannetwork"
-      },
-      {
-        "id": "InsurancePlan.extension:insuranceplanendpoint",
-        "path": "InsurancePlan.extension",
-        "definition": "The technical endpoints providing access to services operated for the health insurance product.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlanEndpoint-extension"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "insuranceplanendpoint"
-      },
-      {
         "id": "InsurancePlan.ownedBy",
         "path": "InsurancePlan.ownedBy",
         "min": 1,
@@ -2543,6 +2425,30 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.endpoint",
+        "path": "InsurancePlan.endpoint",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "InsurancePlan.network",
+        "path": "InsurancePlan.network",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
+            ]
+          }
+        ]
       },
       {
         "id": "InsurancePlan.coverage",
