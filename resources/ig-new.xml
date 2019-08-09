@@ -142,20 +142,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/plannet-InsurancePlanEndpoint-extension"/>
-      </reference>
-      <name value="plannet-InsurancePlanEndpoint"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/plannet-InsurancePlanNetwork-extension"/>
-      </reference>
-      <name value="plannet-InsurancePlanNetwork"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/plannet-LocationReference-extension"/>
       </reference>
       <name value="plannet-LocationReference"/>
@@ -198,422 +184,142 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/careteam-category"/>
-      </reference>
-      <name value="VhDir_sp_careteam_category"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/careteam-endpoint"/>
-      </reference>
-      <name value="VhDir_sp_careteam_endpoint"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/careteam-identifier-assigner"/>
-      </reference>
-      <name value="VhDir_sp_careteam_identifier_assigner"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/careteam-identifier"/>
-      </reference>
-      <name value="VhDir_sp_careteam_identifier"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/careteam-location"/>
-      </reference>
-      <name value="VhDir_sp_careteam_location"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/careteam-name"/>
-      </reference>
-      <name value="VhDir_sp_careteam_name"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/careteam-organization"/>
-      </reference>
-      <name value="VhDir_sp_careteam_organization"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/careteam-participant"/>
-      </reference>
-      <name value="VhDir_sp_careteam_member"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/careteam-service"/>
-      </reference>
-      <name value="VhDir_sp_careteam_service"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/careteam-status"/>
-      </reference>
-      <name value="VhDir_sp_careteam_status"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/careteam-via-intermediary"/>
-      </reference>
-      <name value="VhDir_sp_careteam_via_intermediary"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/endpoint-connection-type"/>
-      </reference>
-      <name value="VhDir_sp_endpoint_connection_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/endpoint-identifier-assigner"/>
       </reference>
-      <name value="VhDir_sp_endpoint_identifier_assigner"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/endpoint-identifier"/>
-      </reference>
-      <name value="VhDir_sp_endpoint_identifier"/>
+      <name value="Plannet_sp_endpoint_identifier_assigner"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/endpoint-mime-type"/>
       </reference>
-      <name value="VhDir_sp_endpoint_mime_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/endpoint-organization"/>
-      </reference>
-      <name value="VhDir_sp_endpoint_organization"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/endpoint-payload-type"/>
-      </reference>
-      <name value="VhDir_sp_endpoint_payload_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/endpoint-status"/>
-      </reference>
-      <name value="VhDir_sp_endpoint_status"/>
+      <name value="Plannet_sp_endpoint_mime_type"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/endpoint-usecase-standard"/>
       </reference>
-      <name value="VhDir_sp_endpoint_usecase_standard"/>
+      <name value="Plannet_sp_endpoint_usecase_standard"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/endpoint-usecase-type"/>
       </reference>
-      <name value="VhDir_sp_endpoint_usecase_type"/>
+      <name value="Plannet_sp_endpoint_usecase_type"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/endpoint-via-intermediary"/>
       </reference>
-      <name value="VhDir_sp_endpoint_via_intermediary"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-characteristic"/>
-      </reference>
-      <name value="VhDir_sp_healthcareservice_characteristic"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-coverage-area"/>
-      </reference>
-      <name value="VhDir_sp_healthcareservice_coverage_area"/>
+      <name value="Plannet_sp_endpoint_via_intermediary"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/healthcareservice-eligibility"/>
       </reference>
-      <name value="VhDir_sp_healthcareservice_eligibility"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-endpoint"/>
-      </reference>
-      <name value="VhDir_sp_healthcareservice_endpoint"/>
+      <name value="Plannet_sp_healthcareservice_eligibility"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/healthcareservice-identifier-assigner"/>
       </reference>
-      <name value="VhDir_sp_healthcareservice_identifier_assigner"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-identifier"/>
-      </reference>
-      <name value="VhDir_sp_healthcareservice_identifier"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-location"/>
-      </reference>
-      <name value="VhDir_sp_healthcareservice_location"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-name"/>
-      </reference>
-      <name value="VhDir_sp_healthcareservice_name"/>
+      <name value="Pannet_sp_healthcareservice_identifier_assigner"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/healthcareservice-new-patient-network"/>
       </reference>
-      <name value="VhDir_sp_healthcareservice_new_patient_network"/>
+      <name value="Plannet_sp_healthcareservice_new_patient_network"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/healthcareservice-new-patient"/>
       </reference>
-      <name value="VhDir_sp_healthcareservice_new_patient"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-organization"/>
-      </reference>
-      <name value="VhDir_sp_healthcareservice_organization"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-service-category"/>
-      </reference>
-      <name value="VhDir_sp_healthcareservice_category"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-service-type"/>
-      </reference>
-      <name value="VhDir_sp_healthcareservice_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-specialty"/>
-      </reference>
-      <name value="VhDir_sp_healthcareservice_specialty"/>
+      <name value="Plannet_sp_healthcareservice_new_patient"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/healthcareservice-via-intermediary"/>
       </reference>
-      <name value="VhDir_sp_healthcareservice_via_intermediary"/>
+      <name value="Plannet_sp_healthcareservice_via_intermediary"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/insuranceplan-administered-by"/>
       </reference>
-      <name value="VhDir_sp_insuranceplan_administered_by"/>
+      <name value="Plannet_sp_insuranceplan_administered_by"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/insuranceplan-coverage-area"/>
       </reference>
-      <name value="VhDir_sp_insuranceplan_coverage_area"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-coverage-benefit-type"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_coverage_benefit_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-coverage-limit-value"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_coverage_limit_value"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-coverage-network"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_coverage_network"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-coverage-type"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_coverage_type"/>
+      <name value="Plannet_sp_insuranceplan_coverage_area"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/insuranceplan-endpoint"/>
       </reference>
-      <name value="VhDir_sp_insuranceplan_endpoint"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-general-cost-groupsize"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_general_cost_groupsize"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-general-cost-type"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_general_cost_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-general-cost-value"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_general_cost_value"/>
+      <name value="Plan_sp_insuranceplan_endpoint"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/insuranceplan-identifier"/>
       </reference>
-      <name value="VhDir_sp_insuranceplan_identifier"/>
+      <name value="Plannet_sp_insuranceplan_identifier"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/insuranceplan-name"/>
       </reference>
-      <name value="VhDir_sp_insuranceplan_name"/>
+      <name value="Plannet_sp_insuranceplan_name"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/insuranceplan-network"/>
       </reference>
-      <name value="VhDir_sp_insuranceplan_network"/>
+      <name value="Plannet_sp_insuranceplan_network"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/insuranceplan-owned-by"/>
       </reference>
-      <name value="VhDir_sp_insuranceplan_owned_by"/>
+      <name value="Plannet_sp_insuranceplan_owned_by"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/insuranceplan-plan-coverage-area"/>
       </reference>
-      <name value="VhDir_sp_insuranceplan_plan_coverage_area"/>
+      <name value="Plannet_sp_insuranceplan_plan_coverage_area"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/insuranceplan-plan-identifier"/>
       </reference>
-      <name value="VhDir_sp_insuranceplan_plan_identifier"/>
+      <name value="Plannet_sp_insuranceplan_plan_identifier"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/insuranceplan-plan-network"/>
       </reference>
-      <name value="VhDir_sp_insuranceplan_plan_network"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-plan-type"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_plan_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-specific-cost-benefit-type"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_specific_cost_benefit_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-specific-cost-category"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_specific_cost_category"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-specific-cost-cost-type"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_specific_cost_cost_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-specific-cost-value"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_specific_cost_value"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-status"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_status"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-type"/>
-      </reference>
-      <name value="VhDir_sp_insuranceplan_type"/>
+      <name value="Plannet_sp_insuranceplan_plan_network"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1202,6 +908,153 @@
         <reference value="SearchParameter/verificationresult-validator-organization"/>
       </reference>
       <name value="VhDir_sp_verificationresult_validator_organization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Endpoint/direct321"/>
+      </reference>
+      <name value="Example: direct321"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="HealthcareService/ffcardiology"/>
+      </reference>
+      <name value="Example: ffcardiology"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="HealthcareService/hcs-ws"/>
+      </reference>
+      <name value="Example: hcs-ws"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="HealthcareService/independencerehab1"/>
+      </reference>
+      <name value="Example: independencerehab1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="HealthcareService/independencerehab2"/>
+      </reference>
+      <name value="Example: independencerehab2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="InsurancePlan/insuranceplan1"/>
+      </reference>
+      <name value="Example: insuranceplan1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Location/loc-ffmh-hvi"/>
+      </reference>
+      <name value="Example: loc-ffmh-hvi"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Location/loc-ffmh"/>
+      </reference>
+      <name value="Example: loc-ffmh"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Location/loc-ws"/>
+      </reference>
+      <name value="Example: loc-ws"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Location/wash-dc-metro"/>
+      </reference>
+      <name value="Example: wash-dc-metro"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/foundingfathers"/>
+      </reference>
+      <name value="Example: foundingfathers"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/homeland"/>
+      </reference>
+      <name value="Example: homeland"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/independencerehab"/>
+      </reference>
+      <name value="Example: independencerehab"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/monumentHIE"/>
+      </reference>
+      <name value="Example: monumentHIE"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/mtvernon"/>
+      </reference>
+      <name value="Example: mtvernon"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/patriotdental"/>
+      </reference>
+      <name value="Example: patriotdental"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/patriotppo"/>
+      </reference>
+      <name value="Example: patriotppo"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OrganizationAffiliation/orgrole1"/>
+      </reference>
+      <name value="Example: orgrole1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OrganizationAffiliation/orgrole2"/>
+      </reference>
+      <name value="Example: orgrole2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/practitioner1"/>
+      </reference>
+      <name value="Example: practitioner1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PractitionerRole/practitionerrole1"/>
+      </reference>
+      <name value="Example: practitionerrole1"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

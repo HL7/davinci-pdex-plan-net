@@ -3,84 +3,21 @@
   "id": "loc-ws",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location"
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
     ]
   },
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: loc-ws</p><p><b>meta</b>: </p><p><b>contained</b>: </p><p><b>status</b>: active</p><p><b>name</b>: The W Womens Shelter</p><p><b>telecom</b>: https://exmaple.org/The-W-shelter, ph: 555 administration</p><p><b>address</b>: 3300 Washtenaw Avenue, Suite 227 Ann Arbor MI 48104 USA </p></div>"
   },
-  "contained": [
+  "extension": [
     {
-      "resourceType": "Consent",
-      "id": "restrict",
-      "meta": {
-        "profile": [
-          "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-restriction"
-        ]
-      },
-      "status": "active",
-      "scope": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/consent",
-            "code": "protect",
-            "display": "Protect"
-          }
-        ],
-        "text": "Direct Referral use only"
-      },
-      "category": [
-        {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "57016-8",
-              "display": "Privacy policy acknowledgement Document"
-            }
-          ],
-          "text": "conditional release (per DUA)"
-        }
-      ],
-      "dateTime": "2017-12-18",
-      "policy": [
-        {
-          "uri": "http://example.org/federal/policy#womans-shelter"
-        }
-      ],
-      "provision": {
-        "type": "permit",
-        "actor": [
-          {
-            "role": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-                  "code": "IRCP",
-                  "display": "information recipient"
-                }
-              ]
-            },
-            "reference": {
-              "display": "Blue Team @ The W shelter (CareTeam)"
-            }
-          }
-        ],
-        "action": [
-          {
-            "text": "specific value"
-          }
-        ],
-        "securityLabel": [
-          {
-            "display": "womens-abuse-councellors"
-          }
-        ],
-        "purpose": [
-          {
-            "display": "Women's Shelter"
-          }
-        ]
+      "url": "http://hl7.org/fhir/StructureDefinition/location-boundary-geojson",
+      "valueAttachment": {
+        "contentType": "application/geo+json",
+        "data": "VGhlbWU6IA0KUmF3UGFyc2VkDQp7InR5cGUiOiJGZWF0dXJlQ29sbGVjdGlvbiIsInByb3BlcnRpZXMiOnsia2luZCI6InN0YXRlIiwic3RhdGUiOiJEQyJ9LCJmZWF0dXJlcyI6Ww0KeyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsia2luZCI6ImNvdW50eSIsIm5hbWUiOiJEaXN0cmljdCBvZiBDb2x1bWJpYSIsInN0YXRlIjoiREMifSwiZ2VvbWV0cnkiOnsidHlwZSI6Ik11bHRpUG9seWdvbiIsImNvb3JkaW5hdGVzIjpbW1tbLTc3LjAzNTMsMzguOTkzOV0sWy03Ny4wMDI0LDM4Ljk2NjVdLFstNzYuOTA5MywzOC44OTUzXSxbLTc3LjA0MDcsMzguNzkxMl0sWy03Ny4wNDYyLDM4Ljg0MDVdLFstNzcuMDQwNywzOC44NzM0XSxbLTc3LjExNzQsMzguOTMzNl1dXV19fQ0KXX0=",
+        "url": "https://github.com/OpenDataDE/State-zip-code-GeoJSON/raw/master/dc_district_of_columbia_zip_codes_geo.min.json",
+        "size": 549000
       }
     }
   ],
@@ -92,27 +29,11 @@
       "value": "https://exmaple.org/The-W-shelter"
     },
     {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction",
-          "valueReference": {
-            "reference": "#restrict"
-          }
-        }
-      ],
       "system": "phone",
       "value": "555 administration"
     }
   ],
   "address": {
-    "extension": [
-      {
-        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/usage-restriction",
-        "valueReference": {
-          "reference": "#restrict"
-        }
-      }
-    ],
     "line": [
       "3300 Washtenaw Avenue, Suite 227"
     ],

@@ -146,20 +146,6 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/plannet-InsurancePlanEndpoint-extension"
-      },
-      "name" : "plannet-InsurancePlanEndpoint",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-InsurancePlanNetwork-extension"
-      },
-      "name" : "plannet-InsurancePlanNetwork",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "StructureDefinition/plannet-LocationReference-extension"
       },
       "name" : "plannet-LocationReference",
@@ -202,422 +188,142 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/careteam-category"
-      },
-      "name" : "VhDir_sp_careteam_category",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/careteam-endpoint"
-      },
-      "name" : "VhDir_sp_careteam_endpoint",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/careteam-identifier-assigner"
-      },
-      "name" : "VhDir_sp_careteam_identifier_assigner",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/careteam-identifier"
-      },
-      "name" : "VhDir_sp_careteam_identifier",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/careteam-location"
-      },
-      "name" : "VhDir_sp_careteam_location",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/careteam-name"
-      },
-      "name" : "VhDir_sp_careteam_name",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/careteam-organization"
-      },
-      "name" : "VhDir_sp_careteam_organization",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/careteam-participant"
-      },
-      "name" : "VhDir_sp_careteam_member",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/careteam-service"
-      },
-      "name" : "VhDir_sp_careteam_service",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/careteam-status"
-      },
-      "name" : "VhDir_sp_careteam_status",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/careteam-via-intermediary"
-      },
-      "name" : "VhDir_sp_careteam_via_intermediary",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/endpoint-connection-type"
-      },
-      "name" : "VhDir_sp_endpoint_connection_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/endpoint-identifier-assigner"
       },
-      "name" : "VhDir_sp_endpoint_identifier_assigner",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/endpoint-identifier"
-      },
-      "name" : "VhDir_sp_endpoint_identifier",
+      "name" : "Plannet_sp_endpoint_identifier_assigner",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/endpoint-mime-type"
       },
-      "name" : "VhDir_sp_endpoint_mime_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/endpoint-organization"
-      },
-      "name" : "VhDir_sp_endpoint_organization",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/endpoint-payload-type"
-      },
-      "name" : "VhDir_sp_endpoint_payload_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/endpoint-status"
-      },
-      "name" : "VhDir_sp_endpoint_status",
+      "name" : "Plannet_sp_endpoint_mime_type",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/endpoint-usecase-standard"
       },
-      "name" : "VhDir_sp_endpoint_usecase_standard",
+      "name" : "Plannet_sp_endpoint_usecase_standard",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/endpoint-usecase-type"
       },
-      "name" : "VhDir_sp_endpoint_usecase_type",
+      "name" : "Plannet_sp_endpoint_usecase_type",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/endpoint-via-intermediary"
       },
-      "name" : "VhDir_sp_endpoint_via_intermediary",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/healthcareservice-characteristic"
-      },
-      "name" : "VhDir_sp_healthcareservice_characteristic",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/healthcareservice-coverage-area"
-      },
-      "name" : "VhDir_sp_healthcareservice_coverage_area",
+      "name" : "Plannet_sp_endpoint_via_intermediary",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/healthcareservice-eligibility"
       },
-      "name" : "VhDir_sp_healthcareservice_eligibility",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/healthcareservice-endpoint"
-      },
-      "name" : "VhDir_sp_healthcareservice_endpoint",
+      "name" : "Plannet_sp_healthcareservice_eligibility",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/healthcareservice-identifier-assigner"
       },
-      "name" : "VhDir_sp_healthcareservice_identifier_assigner",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/healthcareservice-identifier"
-      },
-      "name" : "VhDir_sp_healthcareservice_identifier",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/healthcareservice-location"
-      },
-      "name" : "VhDir_sp_healthcareservice_location",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/healthcareservice-name"
-      },
-      "name" : "VhDir_sp_healthcareservice_name",
+      "name" : "Pannet_sp_healthcareservice_identifier_assigner",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/healthcareservice-new-patient-network"
       },
-      "name" : "VhDir_sp_healthcareservice_new_patient_network",
+      "name" : "Plannet_sp_healthcareservice_new_patient_network",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/healthcareservice-new-patient"
       },
-      "name" : "VhDir_sp_healthcareservice_new_patient",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/healthcareservice-organization"
-      },
-      "name" : "VhDir_sp_healthcareservice_organization",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/healthcareservice-service-category"
-      },
-      "name" : "VhDir_sp_healthcareservice_category",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/healthcareservice-service-type"
-      },
-      "name" : "VhDir_sp_healthcareservice_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/healthcareservice-specialty"
-      },
-      "name" : "VhDir_sp_healthcareservice_specialty",
+      "name" : "Plannet_sp_healthcareservice_new_patient",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/healthcareservice-via-intermediary"
       },
-      "name" : "VhDir_sp_healthcareservice_via_intermediary",
+      "name" : "Plannet_sp_healthcareservice_via_intermediary",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/insuranceplan-administered-by"
       },
-      "name" : "VhDir_sp_insuranceplan_administered_by",
+      "name" : "Plannet_sp_insuranceplan_administered_by",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/insuranceplan-coverage-area"
       },
-      "name" : "VhDir_sp_insuranceplan_coverage_area",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-coverage-benefit-type"
-      },
-      "name" : "VhDir_sp_insuranceplan_coverage_benefit_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-coverage-limit-value"
-      },
-      "name" : "VhDir_sp_insuranceplan_coverage_limit_value",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-coverage-network"
-      },
-      "name" : "VhDir_sp_insuranceplan_coverage_network",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-coverage-type"
-      },
-      "name" : "VhDir_sp_insuranceplan_coverage_type",
+      "name" : "Plannet_sp_insuranceplan_coverage_area",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/insuranceplan-endpoint"
       },
-      "name" : "VhDir_sp_insuranceplan_endpoint",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-general-cost-groupsize"
-      },
-      "name" : "VhDir_sp_insuranceplan_general_cost_groupsize",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-general-cost-type"
-      },
-      "name" : "VhDir_sp_insuranceplan_general_cost_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-general-cost-value"
-      },
-      "name" : "VhDir_sp_insuranceplan_general_cost_value",
+      "name" : "Plan_sp_insuranceplan_endpoint",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/insuranceplan-identifier"
       },
-      "name" : "VhDir_sp_insuranceplan_identifier",
+      "name" : "Plannet_sp_insuranceplan_identifier",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/insuranceplan-name"
       },
-      "name" : "VhDir_sp_insuranceplan_name",
+      "name" : "Plannet_sp_insuranceplan_name",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/insuranceplan-network"
       },
-      "name" : "VhDir_sp_insuranceplan_network",
+      "name" : "Plannet_sp_insuranceplan_network",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/insuranceplan-owned-by"
       },
-      "name" : "VhDir_sp_insuranceplan_owned_by",
+      "name" : "Plannet_sp_insuranceplan_owned_by",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/insuranceplan-plan-coverage-area"
       },
-      "name" : "VhDir_sp_insuranceplan_plan_coverage_area",
+      "name" : "Plannet_sp_insuranceplan_plan_coverage_area",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/insuranceplan-plan-identifier"
       },
-      "name" : "VhDir_sp_insuranceplan_plan_identifier",
+      "name" : "Plannet_sp_insuranceplan_plan_identifier",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "SearchParameter/insuranceplan-plan-network"
       },
-      "name" : "VhDir_sp_insuranceplan_plan_network",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-plan-type"
-      },
-      "name" : "VhDir_sp_insuranceplan_plan_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-specific-cost-benefit-type"
-      },
-      "name" : "VhDir_sp_insuranceplan_specific_cost_benefit_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-specific-cost-category"
-      },
-      "name" : "VhDir_sp_insuranceplan_specific_cost_category",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-specific-cost-cost-type"
-      },
-      "name" : "VhDir_sp_insuranceplan_specific_cost_cost_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-specific-cost-value"
-      },
-      "name" : "VhDir_sp_insuranceplan_specific_cost_value",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-status"
-      },
-      "name" : "VhDir_sp_insuranceplan_status",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-type"
-      },
-      "name" : "VhDir_sp_insuranceplan_type",
+      "name" : "Plannet_sp_insuranceplan_plan_network",
       "exampleBoolean" : true
     },
     {
@@ -1206,6 +912,153 @@
         "reference" : "SearchParameter/verificationresult-validator-organization"
       },
       "name" : "VhDir_sp_verificationresult_validator_organization",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Endpoint/direct321"
+      },
+      "name" : "Example: direct321",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "HealthcareService/ffcardiology"
+      },
+      "name" : "Example: ffcardiology",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "HealthcareService/hcs-ws"
+      },
+      "name" : "Example: hcs-ws",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "HealthcareService/independencerehab1"
+      },
+      "name" : "Example: independencerehab1",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "HealthcareService/independencerehab2"
+      },
+      "name" : "Example: independencerehab2",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "InsurancePlan/insuranceplan1"
+      },
+      "name" : "Example: insuranceplan1",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Location/loc-ffmh-hvi"
+      },
+      "name" : "Example: loc-ffmh-hvi",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Location/loc-ffmh"
+      },
+      "name" : "Example: loc-ffmh",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Location/loc-ws"
+      },
+      "name" : "Example: loc-ws",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Location/wash-dc-metro"
+      },
+      "name" : "Example: wash-dc-metro",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/foundingfathers"
+      },
+      "name" : "Example: foundingfathers",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/homeland"
+      },
+      "name" : "Example: homeland",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/independencerehab"
+      },
+      "name" : "Example: independencerehab",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/monumentHIE"
+      },
+      "name" : "Example: monumentHIE",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/mtvernon"
+      },
+      "name" : "Example: mtvernon",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/patriotdental"
+      },
+      "name" : "Example: patriotdental",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/patriotppo"
+      },
+      "name" : "Example: patriotppo",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "OrganizationAffiliation/orgrole1"
+      },
+      "name" : "Example: orgrole1",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "OrganizationAffiliation/orgrole2"
+      },
+      "name" : "Example: orgrole2",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/practitioner1"
+      },
+      "name" : "Example: practitioner1",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "PractitionerRole/practitionerrole1"
+      },
+      "name" : "Example: practitionerrole1",
       "exampleBoolean" : true
     },
     {

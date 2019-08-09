@@ -397,7 +397,7 @@
         {
           "system": "urn:ietf:bcp:47",
           "code": "en-US",
-          "display": "English (United States)",
+          "display": "English (Region=United States)",
           "userSelected": true
         }
       ],

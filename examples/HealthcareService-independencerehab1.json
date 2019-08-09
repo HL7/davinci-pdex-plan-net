@@ -3,7 +3,7 @@
   "id": "independencerehab1",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice"
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
     ]
   },
   "text": {
