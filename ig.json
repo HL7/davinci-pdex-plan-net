@@ -443,36 +443,6 @@
     "SearchParameter/practitionerrole-via-intermediary": {
       "base": "SearchParameter-practitionerrole-via-intermediary.html"
     },
-    "SearchParameter/verificationresult-attestation-method": {
-      "base": "SearchParameter-verificationresult-attestation-method.html"
-    },
-    "SearchParameter/verificationresult-attestation-onbehalfof": {
-      "base": "SearchParameter-verificationresult-attestation-onbehalfof.html"
-    },
-    "SearchParameter/verificationresult-attestation-who": {
-      "base": "SearchParameter-verificationresult-attestation-who.html"
-    },
-    "SearchParameter/verificationresult-primarysource-date": {
-      "base": "SearchParameter-verificationresult-primarysource-date.html"
-    },
-    "SearchParameter/verificationresult-primarysource-type": {
-      "base": "SearchParameter-verificationresult-primarysource-type.html"
-    },
-    "SearchParameter/verificationresult-primarysource-who": {
-      "base": "SearchParameter-verificationresult-primarysource-who.html"
-    },
-    "SearchParameter/verificationresult-status-date": {
-      "base": "SearchParameter-verificationresult-status-date.html"
-    },
-    "SearchParameter/verificationresult-target": {
-      "base": "SearchParameter-verificationresult-target.html"
-    },
-    "SearchParameter/verificationresult-validation-status": {
-      "base": "SearchParameter-verificationresult-validation-status.html"
-    },
-    "SearchParameter/verificationresult-validator-organization": {
-      "base": "SearchParameter-verificationresult-validator-organization.html"
-    },
     "Endpoint/direct321": {
       "base": "Endpoint-direct321.html",
       "source": "Endpoint-direct321.json"
