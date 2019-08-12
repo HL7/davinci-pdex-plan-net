@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/skravitz/cimpl/plan-net-out/fhir/guide/resources"/>
+    <valueString value="/Users/skravitz/cimpl/plan-net-out2/fhir/guide/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/skravitz/cimpl/plan-net-out/fhir/guide/examples"/>
+    <valueString value="/Users/skravitz/cimpl/plan-net-out2/fhir/guide/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/skravitz/cimpl/plan-net-out/fhir/guide/pages"/>
+    <valueString value="/Users/skravitz/cimpl/plan-net-out2/fhir/guide/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
   <version value="0.1.0"/>
@@ -107,41 +107,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/plannet-AvailableTime-extension"/>
-      </reference>
-      <name value="plannet-AvailableTime"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/plannet-CAvailableTime-extension"/>
-      </reference>
-      <name value="plannet-CAvailableTime"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/plannet-CViaIntermediary-extension"/>
-      </reference>
-      <name value="plannet-CViaIntermediary"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/plannet-GeoLocation-extension"/>
-      </reference>
-      <name value="plannet-GeoLocation"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/plannet-IdentifierStatus-extension"/>
-      </reference>
-      <name value="plannet-IdentifierStatus"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/plannet-LocationReference-extension"/>
       </reference>
       <name value="plannet-LocationReference"/>
@@ -152,27 +117,6 @@
         <reference value="StructureDefinition/plannet-PractitionerRoleNetwork-extension"/>
       </reference>
       <name value="plannet-PractitionerRoleNetwork"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/plannet-Proficiency-extension"/>
-      </reference>
-      <name value="plannet-Proficiency"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/plannet-TAvailableTime-extension"/>
-      </reference>
-      <name value="plannet-TAvailableTime"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/plannet-TViaIntermediary-extension"/>
-      </reference>
-      <name value="plannet-TViaIntermediary"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
