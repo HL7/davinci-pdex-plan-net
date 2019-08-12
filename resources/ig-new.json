@@ -3,15 +3,15 @@
   "id" : "hl7.fhir.us.davinci-pdex-plan-net-0.1.0",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/skravitz/cimpl/plan-net-out/fhir/guide/resources"
+    "valueString" : "/Users/skravitz/cimpl/plan-net-out2/fhir/guide/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/skravitz/cimpl/plan-net-out/fhir/guide/examples"
+    "valueString" : "/Users/skravitz/cimpl/plan-net-out2/fhir/guide/examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/skravitz/cimpl/plan-net-out/fhir/guide/pages"
+    "valueString" : "/Users/skravitz/cimpl/plan-net-out2/fhir/guide/pages"
   }],
   "url" : "http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0",
   "version" : "0.1.0",
@@ -111,41 +111,6 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/plannet-AvailableTime-extension"
-      },
-      "name" : "plannet-AvailableTime",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-CAvailableTime-extension"
-      },
-      "name" : "plannet-CAvailableTime",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-CViaIntermediary-extension"
-      },
-      "name" : "plannet-CViaIntermediary",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-GeoLocation-extension"
-      },
-      "name" : "plannet-GeoLocation",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-IdentifierStatus-extension"
-      },
-      "name" : "plannet-IdentifierStatus",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "StructureDefinition/plannet-LocationReference-extension"
       },
       "name" : "plannet-LocationReference",
@@ -156,27 +121,6 @@
         "reference" : "StructureDefinition/plannet-PractitionerRoleNetwork-extension"
       },
       "name" : "plannet-PractitionerRoleNetwork",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-Proficiency-extension"
-      },
-      "name" : "plannet-Proficiency",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-TAvailableTime-extension"
-      },
-      "name" : "plannet-TAvailableTime",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-TViaIntermediary-extension"
-      },
-      "name" : "plannet-TViaIntermediary",
       "exampleBoolean" : false
     },
     {
