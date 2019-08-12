@@ -10,7 +10,7 @@
   "title": "plannet-Location",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-09",
+  "date": "2019-08-12",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -854,7 +854,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AvailableTime-extension"
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
             ]
           }
         ],
@@ -2341,7 +2341,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AvailableTime-extension"
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
             ]
           }
         ],

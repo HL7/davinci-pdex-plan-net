@@ -270,7 +270,7 @@
       <reference>
         <reference value="SearchParameter/insuranceplan-endpoint"/>
       </reference>
-      <name value="Plan_sp_insuranceplan_endpoint"/>
+      <name value="Plannet_sp_insuranceplan_endpoint"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -326,588 +326,518 @@
       <reference>
         <reference value="SearchParameter/location-accessibility"/>
       </reference>
-      <name value="VhDir_sp_location_accessibility"/>
+      <name value="Plannet_sp_location_accessibility"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/location-address"/>
       </reference>
-      <name value="VhDir_sp_location_address"/>
+      <name value="Plannet_sp_location_address"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/location-contains"/>
       </reference>
-      <name value="VhDir_sp_location_contains"/>
+      <name value="Plannet_sp_location_contains"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/location-endpoint"/>
       </reference>
-      <name value="VhDir_sp_location_endpoint"/>
+      <name value="Plannet_sp_location_endpoint"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/location-identifier-assigner"/>
       </reference>
-      <name value="VhDir_sp_location_identifier_assigner"/>
+      <name value="Plannet_sp_location_identifier_assigner"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/location-identifier"/>
       </reference>
-      <name value="VhDir_sp_location_identifier"/>
+      <name value="Plannet_sp_location_identifier"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/location-new-patient-network"/>
       </reference>
-      <name value="VhDir_sp_location_new_patient_network"/>
+      <name value="Plannet_sp_location_new_patient_network"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/location-new-patient"/>
       </reference>
-      <name value="VhDir_sp_location_new_patient"/>
+      <name value="Plannet_sp_location_new_patient"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/location-organization"/>
       </reference>
-      <name value="VhDir_sp_location_organization"/>
+      <name value="Plannet_sp_location_organization"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/location-partof"/>
       </reference>
-      <name value="VhDir_sp_location_partof"/>
+      <name value="Plannet_sp_location_partof"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/location-status"/>
       </reference>
-      <name value="VhDir_sp_location_status"/>
+      <name value="Plannet_sp_location_status"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/location-type"/>
       </reference>
-      <name value="VhDir_sp_location_type"/>
+      <name value="Plannet_sp_location_type"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/location-via-intermediary"/>
       </reference>
-      <name value="VhDir_sp_location_via_intermediary"/>
+      <name value="Plannet_sp_location_via_intermediary"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-address-city"/>
       </reference>
-      <name value="VhDir_sp_organization_address_city"/>
+      <name value="Plannet_sp_organization_address_city"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-address-country"/>
       </reference>
-      <name value="VhDir_sp_organization_address_country"/>
+      <name value="Plannet_sp_organization_address_country"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-address-postalcode"/>
       </reference>
-      <name value="VhDir_sp_organization_address_postalcode"/>
+      <name value="Plannet_sp_organization_address_postalcode"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-address-state"/>
       </reference>
-      <name value="VhDir_sp_organization_address_state"/>
+      <name value="Plannet_sp_organization_address_state"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-address"/>
       </reference>
-      <name value="VhDir_sp_organization_address"/>
+      <name value="Plannet_sp_organization_address"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-coverage-area"/>
       </reference>
-      <name value="VhDir_sp_network_coverage_area"/>
+      <name value="Plannet_sp_network_coverage_area"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-endpoint"/>
       </reference>
-      <name value="VhDir_sp_organization_endpoint"/>
+      <name value="Plannet_sp_organization_endpoint"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-identifier-assigner"/>
       </reference>
-      <name value="VhDir_sp_organization_identifier_assigner"/>
+      <name value="Plannet_sp_organization_identifier_assigner"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-identifier"/>
       </reference>
-      <name value="VhDir_sp_organization_identifier"/>
+      <name value="Plannet_sp_organization_identifier"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-name"/>
       </reference>
-      <name value="VhDir_sp_organization_name"/>
+      <name value="Plannet_sp_organization_name"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-partof"/>
       </reference>
-      <name value="VhDir_sp_organization_partof"/>
+      <name value="Plannet_sp_organization_partof"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-qualification-code"/>
       </reference>
-      <name value="VhDir_sp_organization_qualification_code"/>
+      <name value="Plannet_sp_organization_qualification_code"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-qualification-issuer"/>
       </reference>
-      <name value="VhDir_sp_organization_qualification_issuer"/>
+      <name value="Plannet_sp_organization_qualification_issuer"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-qualification-status"/>
       </reference>
-      <name value="VhDir_sp_organization_qualification_status"/>
+      <name value="Plannet_sp_organization_qualification_status"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-qualification-wherevalid-code"/>
       </reference>
-      <name value="VhDir_sp_organization_qualification_wherevalid_code"/>
+      <name value="Plannet_sp_organization_qualification_wherevalid_code"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-qualification-wherevalid-location"/>
       </reference>
-      <name value="VhDir_sp_organization_qualification_wherevalid_location"/>
+      <name value="Plannet_sp_organization_qualification_wherevalid_location"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-type"/>
       </reference>
-      <name value="VhDir_sp_organization_type"/>
+      <name value="Plannet_sp_organization_type"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organization-via-intermediary"/>
       </reference>
-      <name value="VhDir_sp_organization_via_intermediary"/>
+      <name value="Plannet_sp_organization_via_intermediary"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organizationaffiliation-endpoint"/>
       </reference>
-      <name value="VhDir_sp_organizationaffiliation_endpoint"/>
+      <name value="Plannet_sp_organizationaffiliation_endpoint"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organizationaffiliation-identifier-assigner"/>
       </reference>
-      <name value="VhDir_sp_organizationaffiliation_identifier_assigner"/>
+      <name value="Plannet_sp_organizationaffiliation_identifier_assigner"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organizationaffiliation-identifier"/>
       </reference>
-      <name value="VhDir_sp_organizationaffiliation_identifier"/>
+      <name value="Plannet_sp_organizationaffiliation_identifier"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organizationaffiliation-location"/>
       </reference>
-      <name value="VhDir_sp_organizationaffiliation_location"/>
+      <name value="Plannet_sp_organizationaffiliation_location"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organizationaffiliation-network"/>
       </reference>
-      <name value="VhDir_sp_organizationaffiliation_network"/>
+      <name value="Plannet_sp_organizationaffiliation_network"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organizationaffiliation-participating-organization"/>
       </reference>
-      <name value="VhDir_sp_organizationaffiliation_participating_organization"/>
+      <name value="Plannet_sp_organizationaffiliation_participating_organization"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organizationaffiliation-primary-organization"/>
       </reference>
-      <name value="VhDir_sp_organizationaffiliation_primary_organization"/>
+      <name value="Plannet_sp_organizationaffiliation_primary_organization"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organizationaffiliation-role"/>
       </reference>
-      <name value="VhDir_sp_organizationaffiliation_role"/>
+      <name value="Plannet_sp_organizationaffiliation_role"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organizationaffiliation-service"/>
       </reference>
-      <name value="VhDir_sp_organizationaffiliation_service"/>
+      <name value="Plannet_sp_organizationaffiliation_service"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organizationaffiliation-specialty"/>
       </reference>
-      <name value="VhDir_sp_organizationaffiliation_specialty"/>
+      <name value="Plannet_sp_organizationaffiliation_specialty"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/organizationaffiliation-via-intermediary"/>
       </reference>
-      <name value="VhDir_sp_organizationaffiliation_via_intermediary"/>
+      <name value="Plannet_sp_organizationaffiliation_via_intermediary"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-endpoint"/>
       </reference>
-      <name value="VhDir_sp_practitioner_endpoint"/>
+      <name value="Plannet_sp_practitioner_endpoint"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-family-name"/>
       </reference>
-      <name value="VhDir_sp_practitioner_family_name"/>
+      <name value="Plannet_sp_practitioner_family_name"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-given-name"/>
       </reference>
-      <name value="VhDir_sp_practitioner_given_name"/>
+      <name value="Plannet_sp_practitioner_given_name"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-identifier-assigner"/>
       </reference>
-      <name value="VhDir_sp_practitioner_identifier_assigner"/>
+      <name value="Plannet_sp_practitioner_identifier_assigner"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-identifier"/>
       </reference>
-      <name value="VhDir_sp_practitioner_identifier"/>
+      <name value="Plannet_sp_practitioner_identifier"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-name"/>
       </reference>
-      <name value="VhDir_sp_practitioner_name"/>
+      <name value="Plannet_sp_practitioner_name"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-phonetic"/>
       </reference>
-      <name value="VhDir_sp_practitioner_phonetic"/>
+      <name value="Plannet_sp_practitioner_phonetic"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-qualification-code"/>
       </reference>
-      <name value="VhDir_sp_practitioner_qualification_code"/>
+      <name value="Plannet_sp_practitioner_qualification_code"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-qualification-issuer"/>
       </reference>
-      <name value="VhDir_sp_practitioner_qualification_issuer"/>
+      <name value="Plannet_sp_practitioner_qualification_issuer"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-qualification-period"/>
       </reference>
-      <name value="VhDir_sp_practitioner_qualification_period"/>
+      <name value="Plannet_sp_practitioner_qualification_period"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-qualification-status"/>
       </reference>
-      <name value="VhDir_sp_practitioner_qualification_status"/>
+      <name value="Plannet_sp_practitioner_qualification_status"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-qualification-wherevalid-code"/>
       </reference>
-      <name value="VhDir_sp_practitioner_qualification_wherevalid_code"/>
+      <name value="Plannet_sp_practitioner_qualification_wherevalid_code"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-qualification-wherevalid-location"/>
       </reference>
-      <name value="VhDir_sp_practitioner_qualification_wherevalid_location"/>
+      <name value="Plannet_sp_practitioner_qualification_wherevalid_location"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitioner-via-intermediary"/>
       </reference>
-      <name value="VhDir_sp_practitioner_via_intermediary"/>
+      <name value="Plannet_sp_practitioner_via_intermediary"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-endpoint"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_endpoint"/>
+      <name value="Plannet_sp_practitionerrole_endpoint"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-identifier-assigner"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_identifier_assigner"/>
+      <name value="Plannet_sp_practitionerrole_identifier_assigner"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-identifier"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_identifier"/>
+      <name value="Plannet_sp_practitionerrole_identifier"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-location"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_location"/>
+      <name value="Plannet_sp_practitionerrole_location"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-network"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_network"/>
+      <name value="Plannet_sp_practitionerrole_network"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-new-patient-network"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_new_patient_network"/>
+      <name value="Plannet_sp_practitionerrole_new_patient_network"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-new-patient"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_new_patient"/>
+      <name value="Plannet_sp_practitionerrole_new_patient"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-organization"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_organization"/>
+      <name value="Plannet_sp_practitionerrole_organization"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-practitioner"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_practitioner"/>
+      <name value="Plannet_sp_practitionerrole_practitioner"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-qualification-code"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_qualification_code"/>
+      <name value="Plannet_sp_practitionerrole_qualification_code"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-qualification-issuer"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_qualification_issuer"/>
+      <name value="Plannet_sp_practitionerrole_qualification_issuer"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-qualification-status"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_qualification_status"/>
+      <name value="Plannet_sp_practitionerrole_qualification_status"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-qualification-wherevalid-code"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_qualification_wherevalid_code"/>
+      <name value="Plannet_sp_practitionerrole_qualification_wherevalid_code"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-qualification-wherevalid-location"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_qualification_wherevalid_location"/>
+      <name value="Plannet_sp_practitionerrole_qualification_wherevalid_location"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-role"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_role"/>
+      <name value="Plannet_sp_practitionerrole_role"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-service"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_service"/>
+      <name value="Plannet_sp_practitionerrole_service"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-specialty"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_specialty"/>
+      <name value="Plannet_sp_practitionerrole_specialty"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/practitionerrole-via-intermediary"/>
       </reference>
-      <name value="VhDir_sp_practitionerrole_via_intermediary"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-attestation-method"/>
-      </reference>
-      <name value="VhDir_sp_verificationresult_attestation_method"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-attestation-onbehalfof"/>
-      </reference>
-      <name value="VhDir_sp_verificationresult_attestation_onbehalfof"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-attestation-who"/>
-      </reference>
-      <name value="VhDir_sp_verificationresult_attestation_who"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-primarysource-date"/>
-      </reference>
-      <name value="VhDir_sp_verificationresult_primarysource_date"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-primarysource-type"/>
-      </reference>
-      <name value="VhDir_sp_verificationresult_primarysource_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-primarysource-who"/>
-      </reference>
-      <name value="VhDir_sp_verificationresult_primarysource_who"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-status-date"/>
-      </reference>
-      <name value="VhDir_sp_verificationresult_status_date"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-target"/>
-      </reference>
-      <name value="VhDir_sp_verificationresult_target"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-validation-status"/>
-      </reference>
-      <name value="VhDir_sp_verificationresult_validation_status"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-validator-organization"/>
-      </reference>
-      <name value="VhDir_sp_verificationresult_validator_organization"/>
+      <name value="Plannet_sp_practitionerrole_via_intermediary"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

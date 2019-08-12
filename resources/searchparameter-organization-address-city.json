@@ -3,11 +3,11 @@
   "id": "organization-address-city",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-city</b></p><p><b>name</b>: VhDir_sp_organization_address_city</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/Organization-address-city\">http://hl7.org/fhir/SearchParameter/Organization-address-city</a></p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select organizations with an address in the specified city</p><p><b>code</b>: address-city</p><p><b>base</b>: Organization</p><p><b>type</b>: STRING</p><p><b>expression</b>: Organization.address.city</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: EXACT</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-address-city</b></p><p><b>name</b>: Plannet_sp_organization_address_city</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/Organization-address-city\">http://hl7.org/fhir/SearchParameter/Organization-address-city</a></p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select organizations with an address in the specified city</p><p><b>code</b>: address-city</p><p><b>base</b>: Organization</p><p><b>type</b>: STRING</p><p><b>expression</b>: Organization.address.city</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: EXACT</p></div>"
   },
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-city",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-address-city",
   "version": "0.2.0",
-  "name": "VhDir_sp_organization_address_city",
+  "name": "Plannet_sp_organization_address_city",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-address-city",
   "status": "draft",
   "date": "2018-05-23T00:00:00+00:00",
