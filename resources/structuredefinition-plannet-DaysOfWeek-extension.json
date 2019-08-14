@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "plannet-ViaIntermediary-extension",
+  "id": "plannet-DaysOfWeek-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ViaIntermediary Extension</b></p>\n  <p>ViaIntermediary is a reference to an alternative point of contact for this organization</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>DaysOfWeek Extension</b></p>\n  <p>DaysofWeek</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension",
-  "name": "ViaIntermediary",
-  "title": "plannet-ViaIntermediary",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-DaysOfWeek-extension",
+  "name": "DaysOfWeek",
+  "title": "plannet-DaysOfWeek",
   "status": "draft",
   "date": "2019-08-13",
   "publisher": "HL7 Pharmacy WG",
@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "description": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+  "description": "DaysofWeek",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -39,8 +39,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "ViaIntermediary",
-        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "short": "DaysOfWeek",
+        "definition": "DaysofWeek",
         "min": 0,
         "max": "*",
         "base": {
@@ -179,11 +179,11 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-DaysOfWeek-extension"
       },
       {
-        "id": "Extension.valueReference",
-        "path": "Extension.valueReference",
+        "id": "Extension.valueCodeableConcept",
+        "path": "Extension.valueCodeableConcept",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 1,
@@ -195,13 +195,7 @@
         },
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole",
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization",
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation",
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
-            ]
+            "code": "CodeableConcept"
           }
         ],
         "isModifier": false,
@@ -220,8 +214,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "ViaIntermediary",
-        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "short": "DaysOfWeek",
+        "definition": "DaysofWeek",
         "min": 0,
         "max": "*"
       },
@@ -239,21 +233,15 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-DaysOfWeek-extension"
       },
       {
-        "id": "Extension.valueReference",
-        "path": "Extension.valueReference",
+        "id": "Extension.valueCodeableConcept",
+        "path": "Extension.valueCodeableConcept",
         "min": 1,
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole",
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization",
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation",
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
-            ]
+            "code": "CodeableConcept"
           }
         ]
       }

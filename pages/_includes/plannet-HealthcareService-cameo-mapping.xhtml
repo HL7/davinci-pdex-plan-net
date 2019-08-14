@@ -4,12 +4,48 @@
 <p>This structure represents the following mapping definition:</p>
 <pre>
 plannet.HealthcareService maps to HealthcareService:
-  ProvidedBy maps to providedBy
+  HealthcareServiceIdentifier.IdentifierStatus maps to identifier.extension
+  HealthcareServiceIdentifier.IdentifierUse maps to identifier.use
+  HealthcareServiceIdentifier.IdentifierSystem maps to identifier.system
+  HealthcareServiceIdentifier.IdentifierValue maps to identifier.value
+  HealthcareServiceIdentifier.IdentifierType maps to identifier.type
+  HealthcareServiceIdentifier.IdentifierPeriodStart maps to identifier.period.start
+  HealthcareServiceIdentifier.IdentifierPeriodEnd maps to identifier.period.end
+  HealthcareServiceIdentifier.IdentifierAssigner maps to identifier.assigner
+  HealthcareServiceProvidedBy maps to providedBy
   HealthcareServiceLocation maps to location
   NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients
-  AvailableTime maps to telecom.extension
-  HealthcareEndpoint maps to endpoint
-  Eligibility.Code maps to eligibility.code
-  Characteristic maps to characteristic
+  NAvailableTime maps to availableTime
+  NAvailableTime.DaysOfWeek maps to availableTime.daysOfWeek
+  NAvailableTime.AllDay maps to availableTime.allDay
+  NAvailableTime.AvailableStartTime maps to availableTime.availableStartTime
+  NAvailableTime.AvailableEndTime maps to availableTime.availableEndTime
+  TAvailableTime maps to telecom.extension
+  NotAvailable maps to notAvailable
+  NotAvailable.Description maps to notAvailable.description
+  NotAvailable.DuringPeriod maps to notAvailable.during
+  HealthcareServiceEndpoint maps to endpoint
+  HealthcareServiceEligibility maps to eligibility
+  HealthcareServiceEligibility.EligibilityCode maps to eligibility.code
+  HealthcareServiceEligibility.EligibilityID maps to eligibility.id
+  HealthcareServiceCharacteristic maps to characteristic
+  HealthcareServiceCommunication maps to communication
+  HealthcareServiceTelecom maps to telecom
+  HealthcareServiceActive maps to active
+  HealthcareServiceCategory maps to category
+  CoverageArea maps to coverageArea
+  HealthcareServiceType maps to type
+  HealthcareServiceSpecialty maps to specialty
+  HealthcareServiceName maps to name
+  Comment maps to comment
+  ExtraDetails maps to extraDetails
+  HealthcareServicePhoto maps to photo
+  CViaIntermediary maps to extension
+  HealthcareServiceProvisionCode maps to serviceProvisionCode
+  AppointmentRequired maps to appointmentRequired
+  ReferralMethod maps to referralMethod
+  Program maps to program
+  AvailabilityExceptions maps to availabilityExceptions
+  constrain eligibility.code to 0..1
 
 </pre>

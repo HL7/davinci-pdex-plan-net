@@ -10,7 +10,7 @@
   "title": "plannet-Practitioner",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-12",
+  "date": "2019-08-13",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -579,7 +579,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-IdentifierStatus-extension"
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"
             ]
           }
         ],
@@ -2042,7 +2042,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-GeoLocation-extension"
+              "http://http://hl7.org/fhir/StructureDefinition/geolocation"
             ]
           }
         ],
@@ -3025,7 +3025,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Proficiency-extension"
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency"
             ]
           }
         ],
@@ -3207,7 +3207,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-IdentifierStatus-extension"
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"
             ]
           }
         ],
@@ -3298,7 +3298,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-GeoLocation-extension"
+              "http://http://hl7.org/fhir/StructureDefinition/geolocation"
             ]
           }
         ],
@@ -3342,7 +3342,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Proficiency-extension"
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency"
             ]
           }
         ],
