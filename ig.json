@@ -117,7 +117,43 @@
     "StructureDefinition/plannet-PractitionerRole": {
       "base": "StructureDefinition-plannet-PractitionerRole.html"
     },
-   "StructureDefinition/plannet-LocationReference-extension": {
+    "StructureDefinition/plannet-AllDay-extension": {
+      "base": "StructureDefinition-plannet-AllDay-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-AvailableEndTime-extension": {
+      "base": "StructureDefinition-plannet-AvailableEndTime-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-AvailableStartTime-extension": {
+      "base": "StructureDefinition-plannet-AvailableStartTime-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-AvailableTime-extension": {
+      "base": "StructureDefinition-plannet-AvailableTime-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-CAvailableTime-extension": {
+      "base": "StructureDefinition-plannet-CAvailableTime-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-CViaIntermediary-extension": {
+      "base": "StructureDefinition-plannet-CViaIntermediary-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-DaysOfWeek-extension": {
+      "base": "StructureDefinition-plannet-DaysOfWeek-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-GeoLocation-extension": {
+      "base": "StructureDefinition-plannet-GeoLocation-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-IdentifierStatus-extension": {
+      "base": "StructureDefinition-plannet-IdentifierStatus-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-LocationReference-extension": {
       "base": "StructureDefinition-plannet-LocationReference-extension.html",
       "template-base": "sd-extension.html"
     },
@@ -125,7 +161,19 @@
       "base": "StructureDefinition-plannet-PractitionerRoleNetwork-extension.html",
       "template-base": "sd-extension.html"
     },
-        "StructureDefinition/plannet-ViaIntermediary-extension": {
+    "StructureDefinition/plannet-Proficiency-extension": {
+      "base": "StructureDefinition-plannet-Proficiency-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-TAvailableTime-extension": {
+      "base": "StructureDefinition-plannet-TAvailableTime-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-TViaIntermediary-extension": {
+      "base": "StructureDefinition-plannet-TViaIntermediary-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-ViaIntermediary-extension": {
       "base": "StructureDefinition-plannet-ViaIntermediary-extension.html",
       "template-base": "sd-extension.html"
     },

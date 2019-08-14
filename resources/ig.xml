@@ -82,7 +82,70 @@
           </reference>
           <name value="plannet-PractitionerRole" />
       </resource>
-          <resource>
+      <resource>
+          <exampleBoolean value="false" />
+          <reference>
+            <reference value="StructureDefinition/plannet-AllDay-extension" />
+          </reference>
+          <name value="plannet-AllDay" />
+      </resource>
+      <resource>
+          <exampleBoolean value="false" />
+          <reference>
+            <reference value="StructureDefinition/plannet-AvailableEndTime-extension" />
+          </reference>
+          <name value="plannet-AvailableEndTime" />
+      </resource>
+      <resource>
+          <exampleBoolean value="false" />
+          <reference>
+            <reference value="StructureDefinition/plannet-AvailableStartTime-extension" />
+          </reference>
+          <name value="plannet-AvailableStartTime" />
+      </resource>
+      <resource>
+          <exampleBoolean value="false" />
+          <reference>
+            <reference value="StructureDefinition/plannet-AvailableTime-extension" />
+          </reference>
+          <name value="plannet-AvailableTime" />
+      </resource>
+      <resource>
+          <exampleBoolean value="false" />
+          <reference>
+            <reference value="StructureDefinition/plannet-CAvailableTime-extension" />
+          </reference>
+          <name value="plannet-CAvailableTime" />
+      </resource>
+      <resource>
+          <exampleBoolean value="false" />
+          <reference>
+            <reference value="StructureDefinition/plannet-CViaIntermediary-extension" />
+          </reference>
+          <name value="plannet-CViaIntermediary" />
+      </resource>
+      <resource>
+          <exampleBoolean value="false" />
+          <reference>
+            <reference value="StructureDefinition/plannet-DaysOfWeek-extension" />
+          </reference>
+          <name value="plannet-DaysOfWeek" />
+      </resource>
+      <resource>
+          <exampleBoolean value="false" />
+          <reference>
+            <reference value="StructureDefinition/plannet-GeoLocation-extension" />
+          </reference>
+          <name value="plannet-GeoLocation" />
+      </resource>
+      <resource>
+          <exampleBoolean value="false" />
+          <reference>
+            <reference value="StructureDefinition/plannet-IdentifierStatus-extension" />
+          </reference>
+          <name value="plannet-IdentifierStatus" />
+      </resource>
+      <resource>
           <exampleBoolean value="false" />
           <reference>
             <reference value="StructureDefinition/plannet-LocationReference-extension" />
@@ -96,7 +159,28 @@
           </reference>
           <name value="plannet-PractitionerRoleNetwork" />
       </resource>
-            <resource>
+      <resource>
+          <exampleBoolean value="false" />
+          <reference>
+            <reference value="StructureDefinition/plannet-Proficiency-extension" />
+          </reference>
+          <name value="plannet-Proficiency" />
+      </resource>
+      <resource>
+          <exampleBoolean value="false" />
+          <reference>
+            <reference value="StructureDefinition/plannet-TAvailableTime-extension" />
+          </reference>
+          <name value="plannet-TAvailableTime" />
+      </resource>
+      <resource>
+          <exampleBoolean value="false" />
+          <reference>
+            <reference value="StructureDefinition/plannet-TViaIntermediary-extension" />
+          </reference>
+          <name value="plannet-TViaIntermediary" />
+      </resource>
+      <resource>
           <exampleBoolean value="false" />
           <reference>
             <reference value="StructureDefinition/plannet-ViaIntermediary-extension" />
