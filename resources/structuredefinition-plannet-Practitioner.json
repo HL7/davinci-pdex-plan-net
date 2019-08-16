@@ -3,7 +3,7 @@
   "id": "plannet-Practitioner",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Practitioner Profile</b></p>\n  <p>Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PN_Identifier.IdentifierStatus maps to identifier.extension\n  PractitionerName.HumanName maps to name\n  PractitionerActive maps to active\n  PractitionerCommunication maps to communication\n  Gender maps to gender\n  BirthDate maps to birthDate\n  Photo maps to photo\n  Address maps to address\n  PractitionerName.HumanName.Purpose maps to name.use\n  PractitionerName.HumanName.Name maps to name.text\n  PractitionerName.HumanName.FamilyName maps to name.family\n  PractitionerName.HumanName.GivenName maps to name.given\n  PractitionerName.HumanName.Prefix maps to name.prefix\n  PractitionerName.HumanName.Suffix maps to name.suffix\n  PractitionerName.HumanName.EffectiveTimePeriod maps to name.period\n  PractitionerTelecom maps to telecom\n  PractitionerTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  TAvailableTime maps to telecom.extension\n  TViaIntermediary maps to telecom.extension\n  GeoLocation maps to address.extension\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  Proficiency maps to communication.extension\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  constrain name.family to 1..1\n  constrain name.given to 1..*\n  constrain photo to 0..1\n  constrain qualification.issuer to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Practitioner Profile</b></p>\n  <p>Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PN_Identifier.IdentifierStatus maps to identifier.extension\n  PractitionerName.HumanName maps to name\n  PractitionerActive maps to active\n  PractitionerCommunication maps to communication\n  Gender maps to gender\n  BirthDate maps to birthDate\n  Photo maps to photo\n  Address maps to address\n  PractitionerName.HumanName.Purpose maps to name.use\n  PractitionerName.HumanName.Name maps to name.text\n  PractitionerName.HumanName.FamilyName maps to name.family\n  PractitionerName.HumanName.GivenName maps to name.given\n  PractitionerName.HumanName.Prefix maps to name.prefix\n  PractitionerName.HumanName.Suffix maps to name.suffix\n  PractitionerName.HumanName.EffectiveTimePeriod maps to name.period\n  PractitionerTelecom maps to telecom\n  PractitionerTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  TAvailableTime maps to telecom.extension\n  TViaIntermediary maps to telecom.extension\n  GeoLocation maps to address.extension\n  PractitionerQualification.Practitioner-Qualification-VHDIR maps to qualification.extension\n  PractitionerQualification maps to qualification\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierUse maps to qualification.identifier.use\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierSystem maps to qualification.identifier.system\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierValue maps to qualification.identifier.value\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierType maps to qualification.identifier.type\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierPeriod maps to qualification.identifier.period\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierAssigner maps to qualification.identifier.assigner\n  PractitionerQualification.QualificationID maps to qualification.id\n  PractitionerQualification.Code maps to qualification.code\n  PractitionerQualification.Period maps to qualification.period\n  PractitionerQualification.Issuer maps to qualification.issuer\n  Proficiency maps to communication.extension\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  constrain name.family to 1..1\n  constrain name.given to 1..*\n  constrain photo to 0..1\n  constrain qualification.issuer to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner",
   "name": "Practitioner",
@@ -385,30 +385,6 @@
         "isModifier": false,
         "isSummary": false,
         "sliceName": "accessibility",
-        "mustSupport": true
-      },
-      {
-        "id": "Practitioner.extension:qualification",
-        "path": "Practitioner.extension",
-        "definition": "Qualification indicates whether the organization has any formal qualifications",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "qualification",
         "mustSupport": true
       },
       {
@@ -2683,7 +2659,8 @@
             "identity": "servd",
             "map": "./Qualifications"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.qualification.id",
@@ -2743,7 +2720,42 @@
             "identity": "rim",
             "map": "n/a"
           }
-        ]
+        ],
+        "slicing": {
+          "id": "2",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Practitioner.qualification.extension:practitioner-qualification-vhdir",
+        "path": "Practitioner.qualification.extension",
+        "definition": "Status, whereValid, and history of a practitioner's qualification",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "practitioner-qualification-vhdir",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.qualification.modifierExtension",
@@ -2807,6 +2819,328 @@
         ]
       },
       {
+        "id": "Practitioner.qualification.identifier.id",
+        "path": "Practitioner.qualification.identifier.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.qualification.identifier.extension",
+        "path": "Practitioner.qualification.identifier.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.qualification.identifier.use",
+        "path": "Practitioner.qualification.identifier.use",
+        "short": "usual | official | temp | secondary | old (If known)",
+        "definition": "The purpose of this identifier.",
+        "comment": "Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.",
+        "requirements": "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.use",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isModifier": true,
+        "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one.",
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "IdentifierUse"
+            }
+          ],
+          "strength": "required",
+          "description": "Identifies the purpose for this identifier, if known .",
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.0"
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "N/A"
+          },
+          {
+            "identity": "rim",
+            "map": "Role.code or implied by context"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.type",
+        "path": "Practitioner.qualification.identifier.type",
+        "short": "Description of identifier",
+        "definition": "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.",
+        "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
+        "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.type",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "IdentifierType"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "extensible",
+          "description": "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-type"
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.5"
+          },
+          {
+            "identity": "rim",
+            "map": "Role.code or implied by context"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.system",
+        "path": "Practitioner.qualification.identifier.system",
+        "short": "The namespace for the identifier value",
+        "definition": "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
+        "comment": "Identifier.system is always case sensitive.",
+        "requirements": "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.system",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.4 / EI-2-4"
+          },
+          {
+            "identity": "rim",
+            "map": "II.root or Role.id.root"
+          },
+          {
+            "identity": "servd",
+            "map": "./IdentifierType"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.value",
+        "path": "Practitioner.qualification.identifier.value",
+        "short": "The value that is unique",
+        "definition": "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
+        "comment": "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.value",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueString": "123456"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.1 / EI.1"
+          },
+          {
+            "identity": "rim",
+            "map": "II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"
+          },
+          {
+            "identity": "servd",
+            "map": "./Value"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.period",
+        "path": "Practitioner.qualification.identifier.period",
+        "short": "Time period when id is/was valid for use",
+        "definition": "Time period during which identifier is/was valid for use.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.period",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.7 + CX.8"
+          },
+          {
+            "identity": "rim",
+            "map": "Role.effectiveTime or implied by context"
+          },
+          {
+            "identity": "servd",
+            "map": "./StartDate and ./EndDate"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.assigner",
+        "path": "Practitioner.qualification.identifier.assigner",
+        "short": "Organization that issued id (may be just text)",
+        "definition": "Organization that issued/manages the identifier.",
+        "comment": "The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.assigner",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.4 / (CX.4,CX.9,CX.10)"
+          },
+          {
+            "identity": "rim",
+            "map": "II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
+          },
+          {
+            "identity": "servd",
+            "map": "./IdentifierIssuingAuthority"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Practitioner.qualification.code",
         "path": "Practitioner.qualification.code",
         "short": "Coded representation of the qualification",
@@ -2845,7 +3179,8 @@
             "identity": "servd",
             "map": "./Qualifications.Value"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.qualification.period",
@@ -2876,7 +3211,8 @@
             "identity": "servd",
             "map": "./Qualifications.StartDate and ./Qualifications.EndDate"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.qualification.issuer",
@@ -2894,7 +3230,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
             ]
           }
         ],
@@ -2905,7 +3241,8 @@
             "identity": "rim",
             "map": ".playingEntity.playingRole[classCode=QUAL].scoper"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.communication",
@@ -3188,30 +3525,6 @@
         "mustSupport": true
       },
       {
-        "id": "Practitioner.extension:qualification",
-        "path": "Practitioner.extension",
-        "definition": "Qualification indicates whether the organization has any formal qualifications",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "qualification",
-        "mustSupport": true
-      },
-      {
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier"
       },
@@ -3436,13 +3749,114 @@
       },
       {
         "id": "Practitioner.qualification",
-        "path": "Practitioner.qualification"
+        "path": "Practitioner.qualification",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.extension",
+        "path": "Practitioner.qualification.extension",
+        "slicing": {
+          "id": "2",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Practitioner.qualification.extension:practitioner-qualification-vhdir",
+        "path": "Practitioner.qualification.extension",
+        "definition": "Status, whereValid, and history of a practitioner's qualification",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "practitioner-qualification-vhdir",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier",
+        "path": "Practitioner.qualification.identifier"
+      },
+      {
+        "id": "Practitioner.qualification.identifier.use",
+        "path": "Practitioner.qualification.identifier.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.type",
+        "path": "Practitioner.qualification.identifier.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.system",
+        "path": "Practitioner.qualification.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.value",
+        "path": "Practitioner.qualification.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.period",
+        "path": "Practitioner.qualification.identifier.period",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier.assigner",
+        "path": "Practitioner.qualification.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.code",
+        "path": "Practitioner.qualification.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.period",
+        "path": "Practitioner.qualification.period",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.qualification.issuer",
         "path": "Practitioner.qualification.issuer",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.communication",

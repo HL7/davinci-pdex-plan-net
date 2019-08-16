@@ -37,6 +37,11 @@
     <packageId value="hl7.fhir.uv.vhdir"/>
     <version value="current"/>
   </dependsOn>
+  <dependsOn id="VhDir">
+    <uri value="http://build.fhir.org/ig/HL7/VhDir/"/>
+    <packageId value="hl7.fhir.uv.vhdir"/>
+    <version value="current"/>
+  </dependsOn>
   <definition>
     <grouping>
       <name value="Profiles in this Implementation Guide"/>
@@ -131,13 +136,6 @@
         <reference value="StructureDefinition/plannet-PractitionerRoleNetwork-extension"/>
       </reference>
       <name value="plannet-PractitionerRoleNetwork"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/plannet-Qualification-extension"/>
-      </reference>
-      <name value="plannet-Qualification"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

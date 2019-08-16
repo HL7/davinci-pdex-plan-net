@@ -34,7 +34,18 @@ plannet.Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-
   TAvailableTime maps to telecom.extension
   TViaIntermediary maps to telecom.extension
   GeoLocation maps to address.extension
-  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification
+  PractitionerQualification.Practitioner-Qualification-VHDIR maps to qualification.extension
+  PractitionerQualification maps to qualification
+  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierUse maps to qualification.identifier.use
+  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierSystem maps to qualification.identifier.system
+  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierValue maps to qualification.identifier.value
+  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierType maps to qualification.identifier.type
+  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierPeriod maps to qualification.identifier.period
+  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierAssigner maps to qualification.identifier.assigner
+  PractitionerQualification.QualificationID maps to qualification.id
+  PractitionerQualification.Code maps to qualification.code
+  PractitionerQualification.Period maps to qualification.period
+  PractitionerQualification.Issuer maps to qualification.issuer
   Proficiency maps to communication.extension
   Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility
   constrain name.family to 1..1
