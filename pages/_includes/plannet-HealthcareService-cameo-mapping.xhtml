@@ -4,16 +4,15 @@
 <p>This structure represents the following mapping definition:</p>
 <pre>
 plannet.HealthcareService maps to HealthcareService:
-  HealthcareServiceIdentifier.IdentifierStatus maps to identifier.extension
-  HealthcareServiceIdentifier.IdentifierUse maps to identifier.use
-  HealthcareServiceIdentifier.IdentifierSystem maps to identifier.system
-  HealthcareServiceIdentifier.IdentifierValue maps to identifier.value
-  HealthcareServiceIdentifier.IdentifierType maps to identifier.type
-  HealthcareServiceIdentifier.IdentifierPeriodStart maps to identifier.period.start
-  HealthcareServiceIdentifier.IdentifierPeriodEnd maps to identifier.period.end
-  HealthcareServiceIdentifier.IdentifierAssigner maps to identifier.assigner
+  PN_Identifier.IdentifierUse maps to identifier.use
+  PN_Identifier.IdentifierSystem maps to identifier.system
+  PN_Identifier.IdentifierValue maps to identifier.value
+  PN_Identifier.IdentifierType maps to identifier.type
+  PN_Identifier.IdentifierPeriod maps to identifier.period
+  PN_Identifier.IdentifierAssigner maps to identifier.assigner
   HealthcareServiceProvidedBy maps to providedBy
   HealthcareServiceLocation maps to location
+  HealthcareServiceType maps to type
   NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients
   NAvailableTime maps to availableTime
   NAvailableTime.DaysOfWeek maps to availableTime.daysOfWeek
@@ -21,6 +20,7 @@ plannet.HealthcareService maps to HealthcareService:
   NAvailableTime.AvailableStartTime maps to availableTime.availableStartTime
   NAvailableTime.AvailableEndTime maps to availableTime.availableEndTime
   TAvailableTime maps to telecom.extension
+  TViaIntermediary maps to telecom.extension
   NotAvailable maps to notAvailable
   NotAvailable.Description maps to notAvailable.description
   NotAvailable.DuringPeriod maps to notAvailable.during
@@ -31,16 +31,19 @@ plannet.HealthcareService maps to HealthcareService:
   HealthcareServiceCharacteristic maps to characteristic
   HealthcareServiceCommunication maps to communication
   HealthcareServiceTelecom maps to telecom
+  HealthcareServiceTelecom.ContactPoint.Purpose maps to telecom.use
+  HealthcareServiceTelecom.ContactPoint.PriorityRank maps to telecom.rank
+  HealthcareServiceTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period
+  HealthcareServiceTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value
+  HealthcareServiceTelecom.ContactPoint.Type maps to telecom.system
   HealthcareServiceActive maps to active
   HealthcareServiceCategory maps to category
   CoverageArea maps to coverageArea
-  HealthcareServiceType maps to type
   HealthcareServiceSpecialty maps to specialty
   HealthcareServiceName maps to name
   Comment maps to comment
   ExtraDetails maps to extraDetails
   HealthcareServicePhoto maps to photo
-  CViaIntermediary maps to extension
   HealthcareServiceProvisionCode maps to serviceProvisionCode
   AppointmentRequired maps to appointmentRequired
   ReferralMethod maps to referralMethod

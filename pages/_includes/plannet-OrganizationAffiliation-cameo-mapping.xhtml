@@ -4,11 +4,28 @@
 <p>This structure represents the following mapping definition:</p>
 <pre>
 plannet.OrganizationAffiliation maps to OrganizationAffiliation:
+  PN_Identifier.IdentifierUse maps to identifier.use
+  PN_Identifier.IdentifierSystem maps to identifier.system
+  PN_Identifier.IdentifierValue maps to identifier.value
+  PN_Identifier.IdentifierType maps to identifier.type
+  PN_Identifier.IdentifierPeriod maps to identifier.period
+  PN_Identifier.IdentifierAssigner maps to identifier.assigner
   PrimaryOrganization maps to organization
   ParticipatingOrganization maps to participatingOrganization
   OrganizationAffiliationNetwork maps to network
   OrganizationAffiliationLocation maps to location
   OrganizationAffiliationHealthcareService maps to healthcareService
+  OrganizationAffiliationTelecom maps to telecom
+  OrganizationAffiliationTelecom.ContactPoint.Purpose maps to telecom.use
+  OrganizationAffiliationTelecom.ContactPoint.Type maps to telecom.system
+  OrganizationAffiliationTelecom.ContactPoint.PriorityRank maps to telecom.rank
+  OrganizationAffiliationTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period
+  OrganizationAffiliationTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value
+  OrganizationAffiliationActive maps to active
+  OrganizationAffiliationPeriod maps to period
+  OrganizationAffiliationSpecialty maps to specialty
+  OrganizationAffiliationEndpoint maps to endpoint
+  OrganizationAffiliationCode maps to code
   constrain active to 1..1
   constrain telecom.system to 1..1
   constrain telecom.value to 1..1

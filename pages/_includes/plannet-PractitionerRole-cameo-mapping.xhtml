@@ -7,10 +7,32 @@ plannet.PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition
   PractitionerRoleNetwork maps to extension
   NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients
   NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile
-  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification
-  AvailableTime maps to telecom.extension http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime
-  ViaIntermediary maps to telecom.extension
+  Qualification maps to extension
+  TAvailableTime maps to telecom.extension http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime
+  TViaIntermediary maps to telecom.extension
+  PN_Identifier.IdentifierUse maps to identifier.use
+  PN_Identifier.IdentifierSystem maps to identifier.system
+  PN_Identifier.IdentifierValue maps to identifier.value
+  PN_Identifier.IdentifierType maps to identifier.type
+  PN_Identifier.IdentifierPeriod maps to identifier.period
+  PN_Identifier.IdentifierAssigner maps to identifier.assigner
+  PractitionerRoleActive maps to active
+  PractitionerRoleSpecialty maps to specialty
+  PractitionerRoleCode maps to code
+  PractitionerRolePeriod maps to period
+  PractitionerRoleLocation maps to location
+  NAvailableTime maps to availableTime
+  NotAvailable maps to notAvailable
+  PractitionerRoleTelecom maps to telecom
+  PractitionerRoleTelecom.ContactPoint.Purpose maps to telecom.use
+  PractitionerRoleTelecom.ContactPoint.Type maps to telecom.system
+  PractitionerRoleTelecom.ContactPoint.PriorityRank maps to telecom.rank
+  PractitionerRoleTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period
+  PractitionerRoleTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value
+  Organization maps to organization
+  Network maps to extension
+  Practitioner maps to practitioner
+  PractitionerRoleHealthcareService maps to healthcareService
   constrain active to 1..1
-  constrain code to 1..1
 
 </pre>

@@ -3,14 +3,14 @@
   "id": "plannet-Practitioner",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Practitioner Profile</b></p>\n  <p>Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  IdentifierStatus maps to identifier.extension\n  AvailableTime maps to telecom.extension\n  ViaIntermediary maps to telecom.extension\n  GeoLocation maps to address.extension\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  Proficiency maps to communication.extension\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  constrain name to 1..1\n  constrain name.family to 1..1\n  constrain name.given to 1..*\n  constrain photo to 0..1\n  constrain qualification.issuer to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Practitioner Profile</b></p>\n  <p>Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PN_Identifier.IdentifierStatus maps to identifier.extension\n  PractitionerName.HumanName maps to name\n  PractitionerActive maps to active\n  PractitionerCommunication maps to communication\n  Gender maps to gender\n  BirthDate maps to birthDate\n  Photo maps to photo\n  Address maps to address\n  PractitionerName.HumanName.Purpose maps to name.use\n  PractitionerName.HumanName.Name maps to name.text\n  PractitionerName.HumanName.FamilyName maps to name.family\n  PractitionerName.HumanName.GivenName maps to name.given\n  PractitionerName.HumanName.Prefix maps to name.prefix\n  PractitionerName.HumanName.Suffix maps to name.suffix\n  PractitionerName.HumanName.EffectiveTimePeriod maps to name.period\n  PractitionerTelecom maps to telecom\n  PractitionerTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  TAvailableTime maps to telecom.extension\n  TViaIntermediary maps to telecom.extension\n  GeoLocation maps to address.extension\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  Proficiency maps to communication.extension\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  constrain name.family to 1..1\n  constrain name.given to 1..*\n  constrain photo to 0..1\n  constrain qualification.issuer to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner",
   "name": "Practitioner",
   "title": "plannet-Practitioner",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-13",
+  "date": "2019-08-16",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -392,7 +392,7 @@
         "path": "Practitioner.extension",
         "definition": "Qualification indicates whether the organization has any formal qualifications",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "DomainResource.extension",
           "min": 0,
@@ -585,7 +585,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "identifierstatus"
+        "sliceName": "identifierstatus",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier.use",
@@ -629,7 +630,8 @@
             "identity": "rim",
             "map": "Role.code or implied by context"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier.type",
@@ -676,7 +678,8 @@
             "identity": "rim",
             "map": "Role.code or implied by context"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier.system",
@@ -783,7 +786,8 @@
             "identity": "servd",
             "map": "./StartDate and ./EndDate"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier.assigner",
@@ -802,7 +806,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
             ]
           }
         ],
@@ -821,7 +825,8 @@
             "identity": "servd",
             "map": "./IdentifierIssuingAuthority"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier:npislice",
@@ -1177,7 +1182,7 @@
         "definition": "Whether this practitioner's record is in active use.",
         "comment": "If the practitioner is not in use by one organization, then it should mark the period on the PractitonerRole with an end date (even if they are active) as they may be active in another role.",
         "requirements": "Need to be able to mark a practitioner record as not to be used because it was created in error.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Practitioner.active",
@@ -1201,7 +1206,8 @@
             "identity": "rim",
             "map": "./statusCode"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.name",
@@ -1211,7 +1217,7 @@
         "comment": "The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.",
         "requirements": "The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.",
         "min": 1,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "Practitioner.name",
           "min": 0,
@@ -1356,7 +1362,8 @@
             "identity": "servd",
             "map": "./NamePurpose"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.name.text",
@@ -1388,7 +1395,8 @@
             "identity": "rim",
             "map": "./formatted"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.name.family",
@@ -1467,7 +1475,8 @@
             "identity": "servd",
             "map": "./GivenNames"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.name.prefix",
@@ -1502,7 +1511,8 @@
             "identity": "servd",
             "map": "./TitleCode"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.name.suffix",
@@ -1533,7 +1543,8 @@
             "identity": "rim",
             "map": "./part[partType = SFX]"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.name.period",
@@ -1568,7 +1579,8 @@
             "identity": "servd",
             "map": "./StartDate and ./EndDate"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.telecom",
@@ -1604,7 +1616,8 @@
             "identity": "servd",
             "map": "./ContactPoints"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.telecom.id",
@@ -1677,7 +1690,7 @@
         ]
       },
       {
-        "id": "Practitioner.telecom.extension:availabletime",
+        "id": "Practitioner.telecom.extension:tavailabletime",
         "path": "Practitioner.telecom.extension",
         "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
@@ -1697,11 +1710,11 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime",
+        "sliceName": "tavailabletime",
         "mustSupport": true
       },
       {
-        "id": "Practitioner.telecom.extension:viaintermediary",
+        "id": "Practitioner.telecom.extension:tviaintermediary",
         "path": "Practitioner.telecom.extension",
         "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
         "min": 0,
@@ -1715,13 +1728,13 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
             ]
           }
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "viaintermediary",
+        "sliceName": "tviaintermediary",
         "mustSupport": true
       },
       {
@@ -1770,7 +1783,8 @@
             "identity": "servd",
             "map": "./ContactPointType"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.telecom.value",
@@ -1806,7 +1820,8 @@
             "identity": "servd",
             "map": "./Value"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.telecom.use",
@@ -1854,7 +1869,8 @@
             "identity": "servd",
             "map": "./ContactPointPurpose"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.telecom.rank",
@@ -1885,7 +1901,8 @@
             "identity": "rim",
             "map": "n/a"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.telecom.period",
@@ -1919,7 +1936,8 @@
             "identity": "servd",
             "map": "./StartDate and ./EndDate"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.address",
@@ -1955,7 +1973,8 @@
             "identity": "servd",
             "map": "./Addresses"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.address.id",
@@ -2042,7 +2061,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://http://hl7.org/fhir/StructureDefinition/geolocation"
+              "http://hl7.org/fhir/StructureDefinition/geolocation"
             ]
           }
         ],
@@ -2551,7 +2570,8 @@
             "identity": "servd",
             "map": "./GenderCode"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.birthDate",
@@ -2586,7 +2606,8 @@
             "identity": "servd",
             "map": "(not represented in ServD)"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.photo",
@@ -2617,7 +2638,8 @@
             "identity": "servd",
             "map": "./ImageURI (only supports the URI reference)"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.qualification",
@@ -2938,7 +2960,8 @@
             "identity": "servd",
             "map": "./Languages.LanguageSpokenCode"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.communication.id",
@@ -3169,7 +3192,7 @@
         "path": "Practitioner.extension",
         "definition": "Qualification indicates whether the organization has any formal qualifications",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "DomainResource.extension",
           "min": 0,
@@ -3213,26 +3236,87 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "identifierstatus"
+        "sliceName": "identifierstatus",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.use",
+        "path": "Practitioner.identifier.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.type",
+        "path": "Practitioner.identifier.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.period",
+        "path": "Practitioner.identifier.period",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.assigner",
+        "path": "Practitioner.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.active",
+        "path": "Practitioner.active",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.name",
-        "path": "Practitioner.name",
-        "min": 1,
-        "max": "1"
+        "path": "Practitioner.name"
+      },
+      {
+        "id": "Practitioner.name.use",
+        "path": "Practitioner.name.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.text",
+        "path": "Practitioner.name.text",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.name.given",
         "path": "Practitioner.name.given",
         "min": 1,
-        "max": "*"
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.prefix",
+        "path": "Practitioner.name.prefix",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.suffix",
+        "path": "Practitioner.name.suffix",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.period",
+        "path": "Practitioner.name.period",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.telecom",
-        "path": "Practitioner.telecom"
+        "path": "Practitioner.telecom",
+        "mustSupport": true
       },
       {
-        "id": "Practitioner.telecom.extension:availabletime",
+        "id": "Practitioner.telecom.extension:tavailabletime",
         "path": "Practitioner.telecom.extension",
         "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
@@ -3252,11 +3336,11 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime",
+        "sliceName": "tavailabletime",
         "mustSupport": true
       },
       {
-        "id": "Practitioner.telecom.extension:viaintermediary",
+        "id": "Practitioner.telecom.extension:tviaintermediary",
         "path": "Practitioner.telecom.extension",
         "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
         "min": 0,
@@ -3270,18 +3354,44 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
             ]
           }
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "viaintermediary",
+        "sliceName": "tviaintermediary",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.system",
+        "path": "Practitioner.telecom.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.value",
+        "path": "Practitioner.telecom.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.use",
+        "path": "Practitioner.telecom.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.rank",
+        "path": "Practitioner.telecom.rank",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.period",
+        "path": "Practitioner.telecom.period",
         "mustSupport": true
       },
       {
         "id": "Practitioner.address",
-        "path": "Practitioner.address"
+        "path": "Practitioner.address",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.address.extension:geolocation",
@@ -3298,7 +3408,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://http://hl7.org/fhir/StructureDefinition/geolocation"
+              "http://hl7.org/fhir/StructureDefinition/geolocation"
             ]
           }
         ],
@@ -3308,10 +3418,21 @@
         "mustSupport": true
       },
       {
+        "id": "Practitioner.gender",
+        "path": "Practitioner.gender",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.birthDate",
+        "path": "Practitioner.birthDate",
+        "mustSupport": true
+      },
+      {
         "id": "Practitioner.photo",
         "path": "Practitioner.photo",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.qualification",
@@ -3325,7 +3446,8 @@
       },
       {
         "id": "Practitioner.communication",
-        "path": "Practitioner.communication"
+        "path": "Practitioner.communication",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.communication.extension:proficiency",

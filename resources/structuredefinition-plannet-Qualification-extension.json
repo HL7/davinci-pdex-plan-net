@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "plannet-GeoLocation-extension",
+  "id": "plannet-Qualification-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>GeoLocation Extension</b></p>\n  <p>GeoLocation indicates the absolute geographic location of an organization’s address</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Qualification Extension</b></p>\n  <p>Qualification indicates whether the organization has any formal qualifications</p>\n</div>"
   },
-  "url": "http://http://hl7.org/fhir/StructureDefinition/geolocation",
-  "name": "GeoLocation",
-  "title": "plannet-GeoLocation",
+  "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification",
+  "name": "Qualification",
+  "title": "plannet-Qualification",
   "status": "draft",
-  "date": "2019-08-13",
+  "date": "2019-08-16",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "description": "GeoLocation indicates the absolute geographic location of an organization’s address",
+  "description": "Qualification indicates whether the organization has any formal qualifications",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -39,8 +39,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "GeoLocation",
-        "definition": "GeoLocation indicates the absolute geographic location of an organization’s address",
+        "short": "Qualification",
+        "definition": "Qualification indicates whether the organization has any formal qualifications",
         "min": 0,
         "max": "*",
         "base": {
@@ -179,7 +179,7 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "http://http://hl7.org/fhir/StructureDefinition/geolocation"
+        "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
       },
       {
         "id": "Extension.valueCodeableConcept",
@@ -214,8 +214,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "GeoLocation",
-        "definition": "GeoLocation indicates the absolute geographic location of an organization’s address",
+        "short": "Qualification",
+        "definition": "Qualification indicates whether the organization has any formal qualifications",
         "min": 0,
         "max": "*"
       },
@@ -233,7 +233,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://http://hl7.org/fhir/StructureDefinition/geolocation"
+        "fixedUri": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
       },
       {
         "id": "Extension.valueCodeableConcept",

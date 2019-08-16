@@ -8,5 +8,27 @@ plannet.Endpoint maps to Endpoint:
   UseCase maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase
   constrain contact.system to 1..1
   constrain contact.value to 1..1
+  EndpointContact maps to contact
+  PN_Identifier.IdentifierUse maps to identifier.use
+  PN_Identifier.IdentifierSystem maps to identifier.system
+  PN_Identifier.IdentifierValue maps to identifier.value
+  PN_Identifier.IdentifierType maps to identifier.type
+  PN_Identifier.IdentifierPeriod maps to identifier.period
+  PN_Identifier.IdentifierAssigner maps to identifier.assigner
+  EndpointContact.ContactPoint.Purpose maps to contact.use
+  EndpointContact.ContactPoint.Type maps to contact.system
+  EndpointContact.ContactPoint.PriorityRank maps to contact.rank
+  EndpointContact.ContactPoint.EffectiveTimePeriod maps to contact.period
+  EndpointContact.ContactPoint.TelecomNumberOrAddress maps to contact.value
+  EndpointStatus maps to status
+  ConnectionType maps to connectionType
+  EndpointName maps to name
+  CAvailableTime maps to contact.extension
+  CViaIntermediary maps to contact.extension
+  Period maps to period
+  PayloadType maps to payloadType
+  PayloadMimeType maps to payloadMimeType
+  EndpointAddress maps to address
+  EndpointHeader maps to header
 
 </pre>
