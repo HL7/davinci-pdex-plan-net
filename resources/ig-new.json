@@ -111,65 +111,9 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/plannet-AllDay-extension"
-      },
-      "name" : "plannet-AllDay",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-AvailableEndTime-extension"
-      },
-      "name" : "plannet-AvailableEndTime",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-AvailableStartTime-extension"
-      },
-      "name" : "plannet-AvailableStartTime",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-AvailableTime-extension"
-      },
-      "name" : "plannet-AvailableTime",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-CAvailableTime-extension"
-      },
-      "name" : "plannet-CAvailableTime",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "StructureDefinition/plannet-CViaIntermediary-extension"
       },
       "name" : "plannet-CViaIntermediary",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-DaysOfWeek-extension"
-      },
-      "name" : "plannet-DaysOfWeek",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-GeoLocation-extension"
-      },
-      "name" : "plannet-GeoLocation",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-IdentifierStatus-extension"
-      },
-      "name" : "plannet-IdentifierStatus",
       "exampleBoolean" : false
     },
     {
@@ -181,6 +125,13 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/plannet-Network-extension"
+      },
+      "name" : "plannet-Network",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/plannet-PractitionerRoleNetwork-extension"
       },
       "name" : "plannet-PractitionerRoleNetwork",
@@ -188,30 +139,9 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/plannet-Proficiency-extension"
+        "reference" : "StructureDefinition/plannet-Qualification-extension"
       },
-      "name" : "plannet-Proficiency",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-TAvailableTime-extension"
-      },
-      "name" : "plannet-TAvailableTime",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-TViaIntermediary-extension"
-      },
-      "name" : "plannet-TViaIntermediary",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-ViaIntermediary-extension"
-      },
-      "name" : "plannet-ViaIntermediary",
+      "name" : "plannet-Qualification",
       "exampleBoolean" : false
     },
     {

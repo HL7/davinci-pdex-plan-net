@@ -3,14 +3,14 @@
   "id": "plannet-Location",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Location Profile</b></p>\n  <p>A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Location maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-location:\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  AvailableTime maps to telecom.extension\n  ViaIntermediary maps to telecom.extension\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Location Profile</b></p>\n  <p>A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Location maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-location:\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  TViaIntermediary maps to telecom.extension\n  TAvailableTime maps to telecom.extension\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  LocationStatus maps to status\n  LocationType maps to type\n  LocationName maps to name\n  LocationAlias maps to alias\n  LocationDescription maps to description\n  LocationTelecom maps to telecom\n  LocationTelecom.ContactPoint.Purpose maps to telecom.use\n  LocationTelecom.ContactPoint.Type maps to telecom.system\n  LocationTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  LocationTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  LocationTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  LocationAddress maps to address\n  LocationPhysicalType maps to physicalType\n  LocationPosition maps to position\n  LocationHoursOfOperation maps to hoursOfOperation\n  LocationHoursOfOperation.AvailableTime.DaysOfWeek maps to hoursOfOperation.daysOfWeek\n  LocationHoursOfOperation.AvailableTime.AllDay maps to hoursOfOperation.allDay\n  LocationHoursOfOperation.AvailableTime.AvailableStartTime maps to hoursOfOperation.openingTime\n  LocationHoursOfOperation.AvailableTime.AvailableEndTime maps to hoursOfOperation.closingTime\n  AvailabilityExceptions maps to availabilityExceptions\n  LocationEndpoint maps to endpoint\n  ManagingOrganization maps to managingOrganization\n  PartOfLocation maps to partOf\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location",
   "name": "Location",
   "title": "plannet-Location",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-13",
+  "date": "2019-08-16",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -488,11 +488,333 @@
         ]
       },
       {
+        "id": "Location.identifier.id",
+        "path": "Location.identifier.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Location.identifier.extension",
+        "path": "Location.identifier.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Location.identifier.use",
+        "path": "Location.identifier.use",
+        "short": "usual | official | temp | secondary | old (If known)",
+        "definition": "The purpose of this identifier.",
+        "comment": "Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.",
+        "requirements": "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.use",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isModifier": true,
+        "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one.",
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "IdentifierUse"
+            }
+          ],
+          "strength": "required",
+          "description": "Identifies the purpose for this identifier, if known .",
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.0"
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "N/A"
+          },
+          {
+            "identity": "rim",
+            "map": "Role.code or implied by context"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier.type",
+        "path": "Location.identifier.type",
+        "short": "Description of identifier",
+        "definition": "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.",
+        "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
+        "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.type",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "IdentifierType"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "extensible",
+          "description": "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-type"
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.5"
+          },
+          {
+            "identity": "rim",
+            "map": "Role.code or implied by context"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier.system",
+        "path": "Location.identifier.system",
+        "short": "The namespace for the identifier value",
+        "definition": "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
+        "comment": "Identifier.system is always case sensitive.",
+        "requirements": "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.system",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.4 / EI-2-4"
+          },
+          {
+            "identity": "rim",
+            "map": "II.root or Role.id.root"
+          },
+          {
+            "identity": "servd",
+            "map": "./IdentifierType"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier.value",
+        "path": "Location.identifier.value",
+        "short": "The value that is unique",
+        "definition": "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
+        "comment": "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.value",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueString": "123456"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.1 / EI.1"
+          },
+          {
+            "identity": "rim",
+            "map": "II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"
+          },
+          {
+            "identity": "servd",
+            "map": "./Value"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier.period",
+        "path": "Location.identifier.period",
+        "short": "Time period when id is/was valid for use",
+        "definition": "Time period during which identifier is/was valid for use.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.period",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.7 + CX.8"
+          },
+          {
+            "identity": "rim",
+            "map": "Role.effectiveTime or implied by context"
+          },
+          {
+            "identity": "servd",
+            "map": "./StartDate and ./EndDate"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier.assigner",
+        "path": "Location.identifier.assigner",
+        "short": "Organization that issued id (may be just text)",
+        "definition": "Organization that issued/manages the identifier.",
+        "comment": "The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.assigner",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.4 / (CX.4,CX.9,CX.10)"
+          },
+          {
+            "identity": "rim",
+            "map": "II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
+          },
+          {
+            "identity": "servd",
+            "map": "./IdentifierIssuingAuthority"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Location.status",
         "path": "Location.status",
         "short": "active | suspended | inactive",
         "definition": "The status property covers the general availability of the resource, not the current value which may be covered by the operationStatus, or by a schedule/slots if they are configured for the location.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Location.status",
@@ -629,7 +951,8 @@
             "identity": "rim",
             "map": ".name"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Location.description",
@@ -656,7 +979,8 @@
             "identity": "rim",
             "map": ".playingEntity[classCode=PLC determinerCode=INSTANCE].desc"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Location.mode",
@@ -740,7 +1064,8 @@
             "identity": "rim",
             "map": ".code"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Location.telecom",
@@ -840,7 +1165,31 @@
         ]
       },
       {
-        "id": "Location.telecom.extension:availabletime",
+        "id": "Location.telecom.extension:tviaintermediary",
+        "path": "Location.telecom.extension",
+        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "tviaintermediary",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.telecom.extension:tavailabletime",
         "path": "Location.telecom.extension",
         "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
@@ -860,31 +1209,7 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime",
-        "mustSupport": true
-      },
-      {
-        "id": "Location.telecom.extension:viaintermediary",
-        "path": "Location.telecom.extension",
-        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "viaintermediary",
+        "sliceName": "tavailabletime",
         "mustSupport": true
       },
       {
@@ -1641,7 +1966,8 @@
             "identity": "rim",
             "map": ".playingEntity [classCode=PLC].code"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Location.position",
@@ -1678,7 +2004,8 @@
             "identity": "rim",
             "map": ".playingEntity [classCode=PLC determinerCode=INSTANCE].positionText"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Location.position.id",
@@ -1870,7 +2197,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
             ]
           }
         ],
@@ -1907,7 +2234,7 @@
             ],
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Location"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
             ]
           }
         ],
@@ -1918,7 +2245,8 @@
             "identity": "rim",
             "map": ".inboundLink[typeCode=PART].source[classCode=SDLC]"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Location.hoursOfOperation",
@@ -1955,7 +2283,8 @@
             "identity": "rim",
             "map": ".effectiveTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Location.hoursOfOperation.id",
@@ -2190,7 +2519,8 @@
             "identity": "rim",
             "map": "n/a"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Location.endpoint",
@@ -2209,7 +2539,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Endpoint"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"
             ]
           }
         ],
@@ -2220,7 +2550,8 @@
             "identity": "rim",
             "map": "n/a"
           }
-        ]
+        ],
+        "mustSupport": true
       }
     ]
   },
@@ -2323,11 +2654,98 @@
         "mustSupport": true
       },
       {
+        "id": "Location.identifier",
+        "path": "Location.identifier"
+      },
+      {
+        "id": "Location.identifier.use",
+        "path": "Location.identifier.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier.type",
+        "path": "Location.identifier.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier.system",
+        "path": "Location.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier.value",
+        "path": "Location.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier.period",
+        "path": "Location.identifier.period",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier.assigner",
+        "path": "Location.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Location.status",
+        "path": "Location.status",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Location.alias",
+        "path": "Location.alias",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.description",
+        "path": "Location.description",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.type",
+        "path": "Location.type",
+        "mustSupport": true
+      },
+      {
         "id": "Location.telecom",
         "path": "Location.telecom"
       },
       {
-        "id": "Location.telecom.extension:availabletime",
+        "id": "Location.telecom.extension:tviaintermediary",
+        "path": "Location.telecom.extension",
+        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "tviaintermediary",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.telecom.extension:tavailabletime",
         "path": "Location.telecom.extension",
         "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
@@ -2347,31 +2765,71 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime",
+        "sliceName": "tavailabletime",
         "mustSupport": true
       },
       {
-        "id": "Location.telecom.extension:viaintermediary",
-        "path": "Location.telecom.extension",
-        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
+        "id": "Location.physicalType",
+        "path": "Location.physicalType",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.position",
+        "path": "Location.position",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.managingOrganization",
+        "path": "Location.managingOrganization",
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Location.partOf",
+        "path": "Location.partOf",
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
+            ],
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
             ]
           }
         ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "viaintermediary",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.hoursOfOperation",
+        "path": "Location.hoursOfOperation",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.availabilityExceptions",
+        "path": "Location.availabilityExceptions",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.endpoint",
+        "path": "Location.endpoint",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]

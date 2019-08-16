@@ -3,12 +3,12 @@
   "id": "plannet-InsurancePlan",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>InsurancePlan Profile</b></p>\n  <p>A InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\n\nInsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.InsurancePlan maps to InsurancePlan:\n  OwnedBy maps to ownedBy\n  CoverageArea maps to coverageArea\n  AdministeredBy maps to administeredBy\n  InsurancePlanNetwork maps to network\n  InsurancePlanEndpoint maps to endpoint\n  constrain ownedBy to 1..1\n  constrain plan to 0..0\n  constrain coverage to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>InsurancePlan Profile</b></p>\n  <p>A InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\n\nInsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.InsurancePlan maps to InsurancePlan:\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  InsurancePlanStatus maps to status\n  InsurancePlanType maps to type\n  InsurancePlanName maps to name\n  InsurancePlanAlias maps to alias\n  OwnedBy maps to ownedBy\n  Period maps to period\n  CoverageArea maps to coverageArea\n  AdministeredBy maps to administeredBy\n  InsurancePlanContact maps to contact\n  InsurancePlanContact.HumanName.Purpose maps to contact.name.use\n  InsurancePlanContact.HumanName.Name maps to contact.name.text\n  InsurancePlanContact.HumanName.FamilyName maps to contact.name.family\n  InsurancePlanContact.HumanName.GivenName maps to contact.name.given\n  InsurancePlanContact.HumanName.Prefix maps to contact.name.prefix\n  InsurancePlanContact.HumanName.Suffix maps to contact.name.suffix\n  InsurancePlanContact.HumanName.EffectiveTimePeriod maps to contact.name.period\n  InsurancePlanContact.ContactPoint.TelecomNumberOrAddress maps to contact.telecom.value\n  InsurancePlanContact.ContactPoint.Purpose maps to contact.telecom.use\n  InsurancePlanContact.ContactPoint.PriorityRank maps to contact.telecom.rank\n  InsurancePlanContact.ContactPoint.EffectiveTimePeriod maps to contact.telecom.period\n  InsurancePlanContact.ContactPoint.Type maps to contact.telecom.system\n  InsurancePlanNetwork maps to network\n  InsurancePlanEndpoint maps to endpoint\n  constrain ownedBy to 1..1\n  constrain plan to 0..0\n  constrain coverage to 0..0\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan",
   "name": "InsurancePlan",
   "status": "draft",
-  "date": "2019-08-13",
+  "date": "2019-08-16",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -387,12 +387,334 @@
         ]
       },
       {
+        "id": "InsurancePlan.identifier.id",
+        "path": "InsurancePlan.identifier.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "InsurancePlan.identifier.extension",
+        "path": "InsurancePlan.identifier.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "InsurancePlan.identifier.use",
+        "path": "InsurancePlan.identifier.use",
+        "short": "usual | official | temp | secondary | old (If known)",
+        "definition": "The purpose of this identifier.",
+        "comment": "Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.",
+        "requirements": "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.use",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isModifier": true,
+        "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one.",
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "IdentifierUse"
+            }
+          ],
+          "strength": "required",
+          "description": "Identifies the purpose for this identifier, if known .",
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.0"
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "N/A"
+          },
+          {
+            "identity": "rim",
+            "map": "Role.code or implied by context"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.identifier.type",
+        "path": "InsurancePlan.identifier.type",
+        "short": "Description of identifier",
+        "definition": "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.",
+        "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
+        "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.type",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "IdentifierType"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "extensible",
+          "description": "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-type"
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.5"
+          },
+          {
+            "identity": "rim",
+            "map": "Role.code or implied by context"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.identifier.system",
+        "path": "InsurancePlan.identifier.system",
+        "short": "The namespace for the identifier value",
+        "definition": "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
+        "comment": "Identifier.system is always case sensitive.",
+        "requirements": "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.system",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.4 / EI-2-4"
+          },
+          {
+            "identity": "rim",
+            "map": "II.root or Role.id.root"
+          },
+          {
+            "identity": "servd",
+            "map": "./IdentifierType"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.identifier.value",
+        "path": "InsurancePlan.identifier.value",
+        "short": "The value that is unique",
+        "definition": "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
+        "comment": "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.value",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueString": "123456"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.1 / EI.1"
+          },
+          {
+            "identity": "rim",
+            "map": "II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"
+          },
+          {
+            "identity": "servd",
+            "map": "./Value"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.identifier.period",
+        "path": "InsurancePlan.identifier.period",
+        "short": "Time period when id is/was valid for use",
+        "definition": "Time period during which identifier is/was valid for use.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.period",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.7 + CX.8"
+          },
+          {
+            "identity": "rim",
+            "map": "Role.effectiveTime or implied by context"
+          },
+          {
+            "identity": "servd",
+            "map": "./StartDate and ./EndDate"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.identifier.assigner",
+        "path": "InsurancePlan.identifier.assigner",
+        "short": "Organization that issued id (may be just text)",
+        "definition": "Organization that issued/manages the identifier.",
+        "comment": "The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.assigner",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.4 / (CX.4,CX.9,CX.10)"
+          },
+          {
+            "identity": "rim",
+            "map": "II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
+          },
+          {
+            "identity": "servd",
+            "map": "./IdentifierIssuingAuthority"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "InsurancePlan.status",
         "path": "InsurancePlan.status",
         "short": "draft | active | retired | unknown",
         "definition": "The current state of the health insurance product.",
         "requirements": "Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "InsurancePlan.status",
@@ -432,7 +754,8 @@
             "identity": "rim",
             "map": ".status"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.type",
@@ -440,7 +763,7 @@
         "short": "Kind of product",
         "definition": "The kind of health insurance product.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "base": {
           "path": "InsurancePlan.type",
           "min": 0,
@@ -473,7 +796,8 @@
             "identity": "rim",
             "map": ".code"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.name",
@@ -503,7 +827,8 @@
             "identity": "rim",
             "map": ".name"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.alias",
@@ -531,7 +856,8 @@
             "identity": "rim",
             "map": ".name"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.period",
@@ -664,7 +990,8 @@
             "identity": "rim",
             "map": ".contactParty"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.contact.id",
@@ -826,6 +1153,342 @@
         ]
       },
       {
+        "id": "InsurancePlan.contact.name.id",
+        "path": "InsurancePlan.contact.name.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "InsurancePlan.contact.name.extension",
+        "path": "InsurancePlan.contact.name.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "InsurancePlan.contact.name.use",
+        "path": "InsurancePlan.contact.name.use",
+        "short": "usual | official | temp | nickname | anonymous | old | maiden",
+        "definition": "Identifies the purpose for this name.",
+        "comment": "Applications can assume that a name is current unless it explicitly says that it is temporary or old.",
+        "requirements": "Allows the appropriate name for a particular context of use to be selected from among a set of names.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "HumanName.use",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isModifier": true,
+        "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old name etc.for a current/permanent one",
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "NameUse"
+            }
+          ],
+          "strength": "required",
+          "description": "The use of a human name.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/name-use|4.0.0"
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.7, but often indicated by which field contains the name"
+          },
+          {
+            "identity": "rim",
+            "map": "unique(./use)"
+          },
+          {
+            "identity": "servd",
+            "map": "./NamePurpose"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.name.text",
+        "path": "InsurancePlan.contact.name.text",
+        "short": "Text representation of the full name",
+        "definition": "Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.",
+        "comment": "Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn't found in a part.",
+        "requirements": "A renderable, unencoded form.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "HumanName.text",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "implied by XPN.11"
+          },
+          {
+            "identity": "rim",
+            "map": "./formatted"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.name.family",
+        "path": "InsurancePlan.contact.name.family",
+        "short": "Family name (often called 'Surname')",
+        "definition": "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.",
+        "comment": "Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).",
+        "alias": [
+          "surname"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "HumanName.family",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.1/FN.1"
+          },
+          {
+            "identity": "rim",
+            "map": "./part[partType = FAM]"
+          },
+          {
+            "identity": "servd",
+            "map": "./FamilyName"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.name.given",
+        "path": "InsurancePlan.contact.name.given",
+        "short": "Given names (not always 'first'). Includes middle names",
+        "definition": "Given name.",
+        "comment": "If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called \"first name\" since given names do not always come first.",
+        "alias": [
+          "first name",
+          "middle name"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "HumanName.given",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "orderMeaning": "Given Names appear in the correct order for presenting the name",
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.2 + XPN.3"
+          },
+          {
+            "identity": "rim",
+            "map": "./part[partType = GIV]"
+          },
+          {
+            "identity": "servd",
+            "map": "./GivenNames"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.name.prefix",
+        "path": "InsurancePlan.contact.name.prefix",
+        "short": "Parts that come before the name",
+        "definition": "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "HumanName.prefix",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "orderMeaning": "Prefixes appear in the correct order for presenting the name",
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.5"
+          },
+          {
+            "identity": "rim",
+            "map": "./part[partType = PFX]"
+          },
+          {
+            "identity": "servd",
+            "map": "./TitleCode"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.name.suffix",
+        "path": "InsurancePlan.contact.name.suffix",
+        "short": "Parts that come after the name",
+        "definition": "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "HumanName.suffix",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "orderMeaning": "Suffixes appear in the correct order for presenting the name",
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN/4"
+          },
+          {
+            "identity": "rim",
+            "map": "./part[partType = SFX]"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.name.period",
+        "path": "InsurancePlan.contact.name.period",
+        "short": "Time period when name was/is in use",
+        "definition": "Indicates the period of time when this name was valid for the named person.",
+        "requirements": "Allows names to be placed in historical context.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "HumanName.period",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.13 + XPN.14"
+          },
+          {
+            "identity": "rim",
+            "map": "./usablePeriod[type=\"IVL<TS>\"]"
+          },
+          {
+            "identity": "servd",
+            "map": "./StartDate and ./EndDate"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "InsurancePlan.contact.telecom",
         "path": "InsurancePlan.contact.telecom",
         "short": "Contact details (telephone, email, etc.)  for a contact",
@@ -851,6 +1514,278 @@
             "map": "./telecom"
           }
         ]
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.id",
+        "path": "InsurancePlan.contact.telecom.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.extension",
+        "path": "InsurancePlan.contact.telecom.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.system",
+        "path": "InsurancePlan.contact.telecom.system",
+        "short": "phone | fax | email | pager | url | sms | other",
+        "definition": "Telecommunications form for contact point - what communications system is required to make use of the contact.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ContactPoint.system",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "condition": [
+          "cpt-2"
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ContactPointSystem"
+            }
+          ],
+          "strength": "required",
+          "description": "Telecommunications form for contact point.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.0"
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.3"
+          },
+          {
+            "identity": "rim",
+            "map": "./scheme"
+          },
+          {
+            "identity": "servd",
+            "map": "./ContactPointType"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.value",
+        "path": "InsurancePlan.contact.telecom.value",
+        "short": "The actual contact point details",
+        "definition": "The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).",
+        "comment": "Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.",
+        "requirements": "Need to support legacy numbers that are not in a tightly controlled format.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ContactPoint.value",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.1 (or XTN.12)"
+          },
+          {
+            "identity": "rim",
+            "map": "./url"
+          },
+          {
+            "identity": "servd",
+            "map": "./Value"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.use",
+        "path": "InsurancePlan.contact.telecom.use",
+        "short": "home | work | temp | old | mobile - purpose of this contact point",
+        "definition": "Identifies the purpose for the contact point.",
+        "comment": "Applications can assume that a contact is current unless it explicitly says that it is temporary or old.",
+        "requirements": "Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ContactPoint.use",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isModifier": true,
+        "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old contact etc.for a current/permanent one",
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ContactPointUse"
+            }
+          ],
+          "strength": "required",
+          "description": "Use of contact point.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-use|4.0.0"
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.2 - but often indicated by field"
+          },
+          {
+            "identity": "rim",
+            "map": "unique(./use)"
+          },
+          {
+            "identity": "servd",
+            "map": "./ContactPointPurpose"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.rank",
+        "path": "InsurancePlan.contact.telecom.rank",
+        "short": "Specify preferred order of use (1 = highest)",
+        "definition": "Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.",
+        "comment": "Note that rank does not necessarily follow the order in which the contacts are represented in the instance.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ContactPoint.rank",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.period",
+        "path": "InsurancePlan.contact.telecom.period",
+        "short": "Time period when the contact point was/is in use",
+        "definition": "Time period when the contact point was/is in use.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ContactPoint.period",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "N/A"
+          },
+          {
+            "identity": "rim",
+            "map": "./usablePeriod[type=\"IVL<TS>\"]"
+          },
+          {
+            "identity": "servd",
+            "map": "./StartDate and ./EndDate"
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.contact.address",
@@ -907,7 +1842,8 @@
             "identity": "rim",
             "map": "n/a"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.network",
@@ -931,7 +1867,8 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.coverage",
@@ -2384,6 +3321,72 @@
         "isSummary": false
       },
       {
+        "id": "InsurancePlan.identifier",
+        "path": "InsurancePlan.identifier"
+      },
+      {
+        "id": "InsurancePlan.identifier.use",
+        "path": "InsurancePlan.identifier.use",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.identifier.type",
+        "path": "InsurancePlan.identifier.type",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.identifier.system",
+        "path": "InsurancePlan.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.identifier.value",
+        "path": "InsurancePlan.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.identifier.period",
+        "path": "InsurancePlan.identifier.period",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.identifier.assigner",
+        "path": "InsurancePlan.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.status",
+        "path": "InsurancePlan.status",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.type",
+        "path": "InsurancePlan.type",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.name",
+        "path": "InsurancePlan.name",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.alias",
+        "path": "InsurancePlan.alias",
+        "mustSupport": true
+      },
+      {
         "id": "InsurancePlan.ownedBy",
         "path": "InsurancePlan.ownedBy",
         "min": 1,
@@ -2427,6 +3430,79 @@
         "mustSupport": true
       },
       {
+        "id": "InsurancePlan.contact",
+        "path": "InsurancePlan.contact",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.name",
+        "path": "InsurancePlan.contact.name"
+      },
+      {
+        "id": "InsurancePlan.contact.name.use",
+        "path": "InsurancePlan.contact.name.use",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.name.text",
+        "path": "InsurancePlan.contact.name.text",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.name.family",
+        "path": "InsurancePlan.contact.name.family",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.name.given",
+        "path": "InsurancePlan.contact.name.given",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.name.prefix",
+        "path": "InsurancePlan.contact.name.prefix",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.name.suffix",
+        "path": "InsurancePlan.contact.name.suffix",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.name.period",
+        "path": "InsurancePlan.contact.name.period",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.telecom",
+        "path": "InsurancePlan.contact.telecom"
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.system",
+        "path": "InsurancePlan.contact.telecom.system",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.value",
+        "path": "InsurancePlan.contact.telecom.value",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.use",
+        "path": "InsurancePlan.contact.telecom.use",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.rank",
+        "path": "InsurancePlan.contact.telecom.rank",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.period",
+        "path": "InsurancePlan.contact.telecom.period",
+        "mustSupport": true
+      },
+      {
         "id": "InsurancePlan.endpoint",
         "path": "InsurancePlan.endpoint",
         "type": [
@@ -2436,7 +3512,8 @@
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.network",
@@ -2448,7 +3525,8 @@
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.coverage",

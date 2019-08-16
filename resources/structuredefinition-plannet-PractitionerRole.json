@@ -3,14 +3,14 @@
   "id": "plannet-PractitionerRole",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PractitionerRole Profile</b></p>\n  <p>PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  PractitionerRoleNetwork maps to extension\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification\n  AvailableTime maps to telecom.extension http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  ViaIntermediary maps to telecom.extension\n  constrain active to 1..1\n  constrain code to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PractitionerRole Profile</b></p>\n  <p>PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  PractitionerRoleNetwork maps to extension\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  Qualification maps to extension\n  TAvailableTime maps to telecom.extension http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  TViaIntermediary maps to telecom.extension\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PractitionerRoleActive maps to active\n  PractitionerRoleSpecialty maps to specialty\n  PractitionerRoleCode maps to code\n  PractitionerRolePeriod maps to period\n  PractitionerRoleLocation maps to location\n  NAvailableTime maps to availableTime\n  NotAvailable maps to notAvailable\n  PractitionerRoleTelecom maps to telecom\n  PractitionerRoleTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerRoleTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerRoleTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerRoleTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerRoleTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  Organization maps to organization\n  Network maps to extension\n  Practitioner maps to practitioner\n  PractitionerRoleHealthcareService maps to healthcareService\n  constrain active to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole",
   "name": "PractitionerRole",
   "title": "plannet-PractitionerRole",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-13",
+  "date": "2019-08-16",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -392,6 +392,53 @@
         "mustSupport": true
       },
       {
+        "id": "PractitionerRole.extension:qualification",
+        "path": "PractitionerRole.extension",
+        "definition": "Qualification indicates whether the organization has any formal qualifications",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "qualification",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.extension:network",
+        "path": "PractitionerRole.extension",
+        "definition": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "network"
+      },
+      {
         "id": "PractitionerRole.extension:newpatientprofile",
         "path": "PractitionerRole.extension",
         "definition": "New Patient Profile is a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)",
@@ -437,30 +484,6 @@
         "isModifier": false,
         "isSummary": false,
         "sliceName": "newpatients",
-        "mustSupport": true
-      },
-      {
-        "id": "PractitionerRole.extension:qualification",
-        "path": "PractitionerRole.extension",
-        "definition": "Qualification indicates whether the organization has any formal qualifications",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "qualification",
         "mustSupport": true
       },
       {
@@ -536,6 +559,328 @@
         ]
       },
       {
+        "id": "PractitionerRole.identifier.id",
+        "path": "PractitionerRole.identifier.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.identifier.extension",
+        "path": "PractitionerRole.identifier.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.identifier.use",
+        "path": "PractitionerRole.identifier.use",
+        "short": "usual | official | temp | secondary | old (If known)",
+        "definition": "The purpose of this identifier.",
+        "comment": "Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.",
+        "requirements": "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.use",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isModifier": true,
+        "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one.",
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "IdentifierUse"
+            }
+          ],
+          "strength": "required",
+          "description": "Identifies the purpose for this identifier, if known .",
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.0"
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "N/A"
+          },
+          {
+            "identity": "rim",
+            "map": "Role.code or implied by context"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.type",
+        "path": "PractitionerRole.identifier.type",
+        "short": "Description of identifier",
+        "definition": "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.",
+        "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
+        "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.type",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "IdentifierType"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "extensible",
+          "description": "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-type"
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.5"
+          },
+          {
+            "identity": "rim",
+            "map": "Role.code or implied by context"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.system",
+        "path": "PractitionerRole.identifier.system",
+        "short": "The namespace for the identifier value",
+        "definition": "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
+        "comment": "Identifier.system is always case sensitive.",
+        "requirements": "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.system",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.4 / EI-2-4"
+          },
+          {
+            "identity": "rim",
+            "map": "II.root or Role.id.root"
+          },
+          {
+            "identity": "servd",
+            "map": "./IdentifierType"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.value",
+        "path": "PractitionerRole.identifier.value",
+        "short": "The value that is unique",
+        "definition": "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
+        "comment": "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.value",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueString": "123456"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.1 / EI.1"
+          },
+          {
+            "identity": "rim",
+            "map": "II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"
+          },
+          {
+            "identity": "servd",
+            "map": "./Value"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.period",
+        "path": "PractitionerRole.identifier.period",
+        "short": "Time period when id is/was valid for use",
+        "definition": "Time period during which identifier is/was valid for use.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.period",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.7 + CX.8"
+          },
+          {
+            "identity": "rim",
+            "map": "Role.effectiveTime or implied by context"
+          },
+          {
+            "identity": "servd",
+            "map": "./StartDate and ./EndDate"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.assigner",
+        "path": "PractitionerRole.identifier.assigner",
+        "short": "Organization that issued id (may be just text)",
+        "definition": "Organization that issued/manages the identifier.",
+        "comment": "The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Identifier.assigner",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.4 / (CX.4,CX.9,CX.10)"
+          },
+          {
+            "identity": "rim",
+            "map": "II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
+          },
+          {
+            "identity": "servd",
+            "map": "./IdentifierIssuingAuthority"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "PractitionerRole.active",
         "path": "PractitionerRole.active",
         "short": "Whether this practitioner role record is in active use",
@@ -570,7 +915,8 @@
             "identity": "rim",
             "map": ".statusCode"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.period",
@@ -609,7 +955,8 @@
             "identity": "servd",
             "map": "(ServD maps Practitioners and Organizations via another entity, so this concept is not available)"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.practitioner",
@@ -627,7 +974,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"
             ]
           }
         ],
@@ -657,7 +1004,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
             ]
           }
         ],
@@ -769,7 +1116,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
             ]
           }
         ],
@@ -807,7 +1154,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/HealthcareService"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
             ]
           }
         ],
@@ -822,7 +1169,8 @@
             "identity": "rim",
             "map": ".player.QualifiedEntity[@classCode = 'QUAL'].code"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.telecom",
@@ -923,7 +1271,7 @@
         ]
       },
       {
-        "id": "PractitionerRole.telecom.extension:availabletime",
+        "id": "PractitionerRole.telecom.extension:tavailabletime",
         "path": "PractitionerRole.telecom.extension",
         "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
@@ -943,11 +1291,11 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime",
+        "sliceName": "tavailabletime",
         "mustSupport": true
       },
       {
-        "id": "PractitionerRole.telecom.extension:viaintermediary",
+        "id": "PractitionerRole.telecom.extension:tviaintermediary",
         "path": "PractitionerRole.telecom.extension",
         "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
         "min": 0,
@@ -961,13 +1309,13 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
             ]
           }
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "viaintermediary",
+        "sliceName": "tviaintermediary",
         "mustSupport": true
       },
       {
@@ -1204,7 +1552,8 @@
             "identity": "rim",
             "map": ".effectiveTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.availableTime.id",
@@ -1451,7 +1800,8 @@
             "identity": "rim",
             "map": ".effectiveTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.notAvailable.id",
@@ -1709,6 +2059,53 @@
         "mustSupport": true
       },
       {
+        "id": "PractitionerRole.extension:qualification",
+        "path": "PractitionerRole.extension",
+        "definition": "Qualification indicates whether the organization has any formal qualifications",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "qualification",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.extension:network",
+        "path": "PractitionerRole.extension",
+        "definition": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "network"
+      },
+      {
         "id": "PractitionerRole.extension:newpatientprofile",
         "path": "PractitionerRole.extension",
         "definition": "New Patient Profile is a description of the type of new patients a practitioner accepts in their role (e.g. pediatric only)",
@@ -1757,34 +2154,82 @@
         "mustSupport": true
       },
       {
-        "id": "PractitionerRole.extension:qualification",
-        "path": "PractitionerRole.extension",
-        "definition": "Qualification indicates whether the organization has any formal qualifications",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
+        "id": "PractitionerRole.identifier",
+        "path": "PractitionerRole.identifier"
+      },
+      {
+        "id": "PractitionerRole.identifier.use",
+        "path": "PractitionerRole.identifier.use",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.type",
+        "path": "PractitionerRole.identifier.type",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.system",
+        "path": "PractitionerRole.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.value",
+        "path": "PractitionerRole.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.period",
+        "path": "PractitionerRole.identifier.period",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier.assigner",
+        "path": "PractitionerRole.identifier.assigner",
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
             ]
           }
         ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "qualification",
         "mustSupport": true
       },
       {
         "id": "PractitionerRole.active",
         "path": "PractitionerRole.active",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.period",
+        "path": "PractitionerRole.period",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+            ]
+          }
+        ]
       },
       {
         "id": "PractitionerRole.code",
@@ -1793,11 +2238,36 @@
         "max": "1"
       },
       {
+        "id": "PractitionerRole.location",
+        "path": "PractitionerRole.location",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.healthcareService",
+        "path": "PractitionerRole.healthcareService",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "PractitionerRole.telecom",
         "path": "PractitionerRole.telecom"
       },
       {
-        "id": "PractitionerRole.telecom.extension:availabletime",
+        "id": "PractitionerRole.telecom.extension:tavailabletime",
         "path": "PractitionerRole.telecom.extension",
         "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
@@ -1817,11 +2287,11 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "availabletime",
+        "sliceName": "tavailabletime",
         "mustSupport": true
       },
       {
-        "id": "PractitionerRole.telecom.extension:viaintermediary",
+        "id": "PractitionerRole.telecom.extension:tviaintermediary",
         "path": "PractitionerRole.telecom.extension",
         "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
         "min": 0,
@@ -1835,13 +2305,23 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
             ]
           }
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "viaintermediary",
+        "sliceName": "tviaintermediary",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.availableTime",
+        "path": "PractitionerRole.availableTime",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.notAvailable",
+        "path": "PractitionerRole.notAvailable",
         "mustSupport": true
       }
     ]

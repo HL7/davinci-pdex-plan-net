@@ -4,9 +4,33 @@
 <p>This structure represents the following mapping definition:</p>
 <pre>
 plannet.InsurancePlan maps to InsurancePlan:
+  PN_Identifier.IdentifierUse maps to identifier.use
+  PN_Identifier.IdentifierSystem maps to identifier.system
+  PN_Identifier.IdentifierValue maps to identifier.value
+  PN_Identifier.IdentifierType maps to identifier.type
+  PN_Identifier.IdentifierPeriod maps to identifier.period
+  PN_Identifier.IdentifierAssigner maps to identifier.assigner
+  InsurancePlanStatus maps to status
+  InsurancePlanType maps to type
+  InsurancePlanName maps to name
+  InsurancePlanAlias maps to alias
   OwnedBy maps to ownedBy
+  Period maps to period
   CoverageArea maps to coverageArea
   AdministeredBy maps to administeredBy
+  InsurancePlanContact maps to contact
+  InsurancePlanContact.HumanName.Purpose maps to contact.name.use
+  InsurancePlanContact.HumanName.Name maps to contact.name.text
+  InsurancePlanContact.HumanName.FamilyName maps to contact.name.family
+  InsurancePlanContact.HumanName.GivenName maps to contact.name.given
+  InsurancePlanContact.HumanName.Prefix maps to contact.name.prefix
+  InsurancePlanContact.HumanName.Suffix maps to contact.name.suffix
+  InsurancePlanContact.HumanName.EffectiveTimePeriod maps to contact.name.period
+  InsurancePlanContact.ContactPoint.TelecomNumberOrAddress maps to contact.telecom.value
+  InsurancePlanContact.ContactPoint.Purpose maps to contact.telecom.use
+  InsurancePlanContact.ContactPoint.PriorityRank maps to contact.telecom.rank
+  InsurancePlanContact.ContactPoint.EffectiveTimePeriod maps to contact.telecom.period
+  InsurancePlanContact.ContactPoint.Type maps to contact.telecom.system
   InsurancePlanNetwork maps to network
   InsurancePlanEndpoint maps to endpoint
   constrain ownedBy to 1..1

@@ -11,14 +11,25 @@ plannet.Organization maps to http://hl7.org/fhir/us/core/StructureDefinition/us-
   CViaIntermediary maps to contact.telecom.extension
   Description maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description
   PartOf maps to partOf
+  GeoLocation maps to address.extension
+  Address maps to address
+  OrganizationAlias maps to alias
   OrganizationEndpoint maps to endpoint
-  constrain type to 1..*
-  constrain name to 1..1
-  constrain telecom.system to 1..1
-  constrain telecom.value to 1..1
-  constrain contact.name.family to 1..1
-  constrain contact.name.given to 1..*
-  constrain address.line to 0..4
-  constrain identifier to 1..*
+  PN_Identifier.IdentifierUse maps to identifier.use
+  PN_Identifier.IdentifierSystem maps to identifier.system
+  PN_Identifier.IdentifierValue maps to identifier.value
+  PN_Identifier.IdentifierType maps to identifier.type
+  PN_Identifier.IdentifierPeriod maps to identifier.period
+  PN_Identifier.IdentifierAssigner maps to identifier.assigner
+  PN_Identifier.IdentifierStatus maps to identifier.extension
+  OrganizationActive maps to active
+  OrganizationName maps to name
+  OrganizationTelecom maps to telecom
+  OrganizationContact maps to contact
+  OrganizationContact.HumanName maps to contact.name
+  OrganizationContact.HumanName.GivenName maps to contact.name.given
+  OrganizationContact.HumanName.FamilyName maps to contact.name.family
+  OrganizationTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value
+  OrganizationTelecom.ContactPoint.Type maps to telecom.system
 
 </pre>

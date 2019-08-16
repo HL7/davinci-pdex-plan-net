@@ -5,11 +5,11 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>CViaIntermediary Extension</b></p>\n  <p>ViaIntermediary is a reference to an alternative point of contact for this organization</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension",
   "name": "CViaIntermediary",
   "title": "plannet-CViaIntermediary",
   "status": "draft",
-  "date": "2019-08-13",
+  "date": "2019-08-16",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -179,7 +179,7 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
       },
       {
         "id": "Extension.valueReference",
@@ -239,7 +239,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
       },
       {
         "id": "Extension.valueReference",

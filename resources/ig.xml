@@ -1,9 +1,10 @@
+<?xml version="1.0"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-    <id value="hl7.fhir.us.davinci-pdex-plan-net-0.1.0" />
-    <url value="http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0" />
-    <name value="DaVinci_PDEX_Plan_Net" />
-    <title value="DaVinci PDEX Plan Net" />
-    <status value="draft" />
+    <id value="hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
+    <url value="http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
+    <name value="DaVinci_PDEX_Plan_Net"/>
+    <title value="DaVinci PDEX Plan Net"/>
+    <status value="draft"/>
     <publisher value="HL7 Pharmacy WG"/>
     <contact>
       <telecom>
@@ -20,990 +21,930 @@
             <description value="Profiles in this Implementation Guide"/>
         </grouping>
         <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-Endpoint" />
+            <reference value="StructureDefinition/plannet-Endpoint"/>
           </reference>
-          <name value="plannet-Endpoint" />
+          <name value="plannet-Endpoint"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-HealthcareService" />
+            <reference value="StructureDefinition/plannet-HealthcareService"/>
           </reference>
-          <name value="plannet-HealthcareService" />
+          <name value="plannet-HealthcareService"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-InsurancePlan" />
+            <reference value="StructureDefinition/plannet-InsurancePlan"/>
           </reference>
-          <name value="plannet-InsurancePlan" />
+          <name value="plannet-InsurancePlan"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-Location" />
+            <reference value="StructureDefinition/plannet-Location"/>
           </reference>
-          <name value="plannet-Location" />
+          <name value="plannet-Location"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-Network" />
+            <reference value="StructureDefinition/plannet-Network"/>
           </reference>
-          <name value="plannet-Network" />
+          <name value="plannet-Network"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-Organization" />
+            <reference value="StructureDefinition/plannet-Organization"/>
           </reference>
-          <name value="plannet-Organization" />
+          <name value="plannet-Organization"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-OrganizationAffiliation" />
+            <reference value="StructureDefinition/plannet-OrganizationAffiliation"/>
           </reference>
-          <name value="plannet-OrganizationAffiliation" />
+          <name value="plannet-OrganizationAffiliation"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-Practitioner" />
+            <reference value="StructureDefinition/plannet-Practitioner"/>
           </reference>
-          <name value="plannet-Practitioner" />
+          <name value="plannet-Practitioner"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-PractitionerRole" />
+            <reference value="StructureDefinition/plannet-PractitionerRole"/>
           </reference>
-          <name value="plannet-PractitionerRole" />
+          <name value="plannet-PractitionerRole"/>
       </resource>
+      
+      
+      
+      
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-AllDay-extension" />
+            <reference value="StructureDefinition/plannet-CViaIntermediary-extension"/>
           </reference>
-          <name value="plannet-AllDay" />
+          <name value="plannet-CViaIntermediary"/>
       </resource>
+      
+      
+      
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-AvailableEndTime-extension" />
+            <reference value="StructureDefinition/plannet-LocationReference-extension"/>
           </reference>
-          <name value="plannet-AvailableEndTime" />
+          <name value="plannet-LocationReference"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-AvailableStartTime-extension" />
+            <reference value="StructureDefinition/plannet-Network-extension"/>
           </reference>
-          <name value="plannet-AvailableStartTime" />
+          <name value="plannet-Network"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-AvailableTime-extension" />
+            <reference value="StructureDefinition/plannet-PractitionerRoleNetwork-extension"/>
           </reference>
-          <name value="plannet-AvailableTime" />
+          <name value="plannet-PractitionerRoleNetwork"/>
       </resource>
+      
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-CAvailableTime-extension" />
+            <reference value="StructureDefinition/plannet-Qualification-extension"/>
           </reference>
-          <name value="plannet-CAvailableTime" />
+          <name value="plannet-Qualification"/>
       </resource>
+      
+      
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="StructureDefinition/plannet-CViaIntermediary-extension" />
+            <reference value="SearchParameter/endpoint-identifier-assigner"/>
           </reference>
-          <name value="plannet-CViaIntermediary" />
+          <name value="Plannet_sp_endpoint_identifier_assigner"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="StructureDefinition/plannet-DaysOfWeek-extension" />
+            <reference value="SearchParameter/endpoint-mime-type"/>
           </reference>
-          <name value="plannet-DaysOfWeek" />
+          <name value="Plannet_sp_endpoint_mime_type"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="StructureDefinition/plannet-GeoLocation-extension" />
+            <reference value="SearchParameter/endpoint-usecase-standard"/>
           </reference>
-          <name value="plannet-GeoLocation" />
+          <name value="Plannet_sp_endpoint_usecase_standard"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="StructureDefinition/plannet-IdentifierStatus-extension" />
+            <reference value="SearchParameter/endpoint-usecase-type"/>
           </reference>
-          <name value="plannet-IdentifierStatus" />
+          <name value="Plannet_sp_endpoint_usecase_type"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="StructureDefinition/plannet-LocationReference-extension" />
+            <reference value="SearchParameter/endpoint-via-intermediary"/>
           </reference>
-          <name value="plannet-LocationReference" />
+          <name value="Plannet_sp_endpoint_via_intermediary"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="StructureDefinition/plannet-PractitionerRoleNetwork-extension" />
+            <reference value="SearchParameter/healthcareservice-eligibility"/>
           </reference>
-          <name value="plannet-PractitionerRoleNetwork" />
+          <name value="Plannet_sp_healthcareservice_eligibility"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="StructureDefinition/plannet-Proficiency-extension" />
+            <reference value="SearchParameter/healthcareservice-identifier-assigner"/>
           </reference>
-          <name value="plannet-Proficiency" />
+          <name value="Pannet_sp_healthcareservice_identifier_assigner"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="StructureDefinition/plannet-TAvailableTime-extension" />
+            <reference value="SearchParameter/healthcareservice-new-patient-network"/>
           </reference>
-          <name value="plannet-TAvailableTime" />
+          <name value="Plannet_sp_healthcareservice_new_patient_network"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="StructureDefinition/plannet-TViaIntermediary-extension" />
+            <reference value="SearchParameter/healthcareservice-new-patient"/>
           </reference>
-          <name value="plannet-TViaIntermediary" />
+          <name value="Plannet_sp_healthcareservice_new_patient"/>
       </resource>
       <resource>
-          <exampleBoolean value="false" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="StructureDefinition/plannet-ViaIntermediary-extension" />
+            <reference value="SearchParameter/healthcareservice-via-intermediary"/>
           </reference>
-          <name value="plannet-ViaIntermediary" />
+          <name value="Plannet_sp_healthcareservice_via_intermediary"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/endpoint-identifier-assigner" />
+            <reference value="SearchParameter/insuranceplan-administered-by"/>
           </reference>
-          <name value="Plannet_sp_endpoint_identifier_assigner" />
+          <name value="Plannet_sp_insuranceplan_administered_by"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/endpoint-mime-type" />
+            <reference value="SearchParameter/insuranceplan-coverage-area"/>
           </reference>
-          <name value="Plannet_sp_endpoint_mime_type" />
+          <name value="Plannet_sp_insuranceplan_coverage_area"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/endpoint-usecase-standard" />
+            <reference value="SearchParameter/insuranceplan-endpoint"/>
           </reference>
-          <name value="Plannet_sp_endpoint_usecase_standard" />
+          <name value="Plannet_sp_insuranceplan_endpoint"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/endpoint-usecase-type" />
+            <reference value="SearchParameter/insuranceplan-identifier"/>
           </reference>
-          <name value="Plannet_sp_endpoint_usecase_type" />
+          <name value="Plannet_sp_insuranceplan_identifier"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/endpoint-via-intermediary" />
+            <reference value="SearchParameter/insuranceplan-name"/>
           </reference>
-          <name value="Plannet_sp_endpoint_via_intermediary" />
+          <name value="Plannet_sp_insuranceplan_name"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/healthcareservice-eligibility" />
+            <reference value="SearchParameter/insuranceplan-network"/>
           </reference>
-          <name value="Plannet_sp_healthcareservice_eligibility" />
+          <name value="Plannet_sp_insuranceplan_network"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/healthcareservice-identifier-assigner" />
+            <reference value="SearchParameter/insuranceplan-owned-by"/>
           </reference>
-          <name value="Pannet_sp_healthcareservice_identifier_assigner" />
+          <name value="Plannet_sp_insuranceplan_owned_by"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/healthcareservice-new-patient-network" />
+            <reference value="SearchParameter/insuranceplan-plan-coverage-area"/>
           </reference>
-          <name value="Plannet_sp_healthcareservice_new_patient_network" />
+          <name value="Plannet_sp_insuranceplan_plan_coverage_area"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/healthcareservice-new-patient" />
+            <reference value="SearchParameter/insuranceplan-plan-identifier"/>
           </reference>
-          <name value="Plannet_sp_healthcareservice_new_patient" />
+          <name value="Plannet_sp_insuranceplan_plan_identifier"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/healthcareservice-via-intermediary" />
+            <reference value="SearchParameter/insuranceplan-plan-network"/>
           </reference>
-          <name value="Plannet_sp_healthcareservice_via_intermediary" />
+          <name value="Plannet_sp_insuranceplan_plan_network"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/insuranceplan-administered-by" />
+            <reference value="SearchParameter/location-accessibility"/>
           </reference>
-          <name value="Plannet_sp_insuranceplan_administered_by" />
+          <name value="Plannet_sp_location_accessibility"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/insuranceplan-coverage-area" />
+            <reference value="SearchParameter/location-address"/>
           </reference>
-          <name value="Plannet_sp_insuranceplan_coverage_area" />
+          <name value="Plannet_sp_location_address"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/insuranceplan-endpoint" />
+            <reference value="SearchParameter/location-contains"/>
           </reference>
-          <name value="Plannet_sp_insuranceplan_endpoint" />
+          <name value="Plannet_sp_location_contains"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/insuranceplan-identifier" />
+            <reference value="SearchParameter/location-endpoint"/>
           </reference>
-          <name value="Plannet_sp_insuranceplan_identifier" />
+          <name value="Plannet_sp_location_endpoint"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/insuranceplan-name" />
+            <reference value="SearchParameter/location-identifier-assigner"/>
           </reference>
-          <name value="Plannet_sp_insuranceplan_name" />
+          <name value="Plannet_sp_location_identifier_assigner"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/insuranceplan-network" />
+            <reference value="SearchParameter/location-identifier"/>
           </reference>
-          <name value="Plannet_sp_insuranceplan_network" />
+          <name value="Plannet_sp_location_identifier"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/insuranceplan-owned-by" />
+            <reference value="SearchParameter/location-new-patient-network"/>
           </reference>
-          <name value="Plannet_sp_insuranceplan_owned_by" />
+          <name value="Plannet_sp_location_new_patient_network"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/insuranceplan-plan-coverage-area" />
+            <reference value="SearchParameter/location-new-patient"/>
           </reference>
-          <name value="Plannet_sp_insuranceplan_plan_coverage_area" />
+          <name value="Plannet_sp_location_new_patient"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/insuranceplan-plan-identifier" />
+            <reference value="SearchParameter/location-organization"/>
           </reference>
-          <name value="Plannet_sp_insuranceplan_plan_identifier" />
+          <name value="Plannet_sp_location_organization"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/insuranceplan-plan-network" />
+            <reference value="SearchParameter/location-partof"/>
           </reference>
-          <name value="Plannet_sp_insuranceplan_plan_network" />
+          <name value="Plannet_sp_location_partof"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/location-accessibility" />
+            <reference value="SearchParameter/location-status"/>
           </reference>
-          <name value="Plannet_sp_location_accessibility" />
+          <name value="Plannet_sp_location_status"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/location-address" />
+            <reference value="SearchParameter/location-type"/>
           </reference>
-          <name value="Plannet_sp_location_address" />
+          <name value="Plannet_sp_location_type"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/location-contains" />
+            <reference value="SearchParameter/location-via-intermediary"/>
           </reference>
-          <name value="Plannet_sp_location_contains" />
+          <name value="Plannet_sp_location_via_intermediary"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/location-endpoint" />
+            <reference value="SearchParameter/organization-address-city"/>
           </reference>
-          <name value="Plannet_sp_location_endpoint" />
+          <name value="Plannet_sp_organization_address_city"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/location-identifier-assigner" />
+            <reference value="SearchParameter/organization-address-country"/>
           </reference>
-          <name value="Plannet_sp_location_identifier_assigner" />
+          <name value="Plannet_sp_organization_address_country"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/location-identifier" />
+            <reference value="SearchParameter/organization-address-postalcode"/>
           </reference>
-          <name value="Plannet_sp_location_identifier" />
+          <name value="Plannet_sp_organization_address_postalcode"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/location-new-patient-network" />
+            <reference value="SearchParameter/organization-address-state"/>
           </reference>
-          <name value="Plannet_sp_location_new_patient_network" />
+          <name value="Plannet_sp_organization_address_state"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/location-new-patient" />
+            <reference value="SearchParameter/organization-address"/>
           </reference>
-          <name value="Plannet_sp_location_new_patient" />
+          <name value="Plannet_sp_organization_address"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/location-organization" />
+            <reference value="SearchParameter/organization-coverage-area"/>
           </reference>
-          <name value="Plannet_sp_location_organization" />
+          <name value="Plannet_sp_network_coverage_area"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/location-partof" />
+            <reference value="SearchParameter/organization-endpoint"/>
           </reference>
-          <name value="Plannet_sp_location_partof" />
+          <name value="Plannet_sp_organization_endpoint"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/location-status" />
+            <reference value="SearchParameter/organization-identifier-assigner"/>
           </reference>
-          <name value="Plannet_sp_location_status" />
+          <name value="Plannet_sp_organization_identifier_assigner"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/location-type" />
+            <reference value="SearchParameter/organization-identifier"/>
           </reference>
-          <name value="Plannet_sp_location_type" />
+          <name value="Plannet_sp_organization_identifier"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/location-via-intermediary" />
+            <reference value="SearchParameter/organization-name"/>
           </reference>
-          <name value="Plannet_sp_location_via_intermediary" />
+          <name value="Plannet_sp_organization_name"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-address-city" />
+            <reference value="SearchParameter/organization-partof"/>
           </reference>
-          <name value="Plannet_sp_organization_address_city" />
+          <name value="Plannet_sp_organization_partof"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-address-country" />
+            <reference value="SearchParameter/organization-qualification-code"/>
           </reference>
-          <name value="Plannet_sp_organization_address_country" />
+          <name value="Plannet_sp_organization_qualification_code"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-address-postalcode" />
+            <reference value="SearchParameter/organization-qualification-issuer"/>
           </reference>
-          <name value="Plannet_sp_organization_address_postalcode" />
+          <name value="Plannet_sp_organization_qualification_issuer"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-address-state" />
+            <reference value="SearchParameter/organization-qualification-status"/>
           </reference>
-          <name value="Plannet_sp_organization_address_state" />
+          <name value="Plannet_sp_organization_qualification_status"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-address" />
+            <reference value="SearchParameter/organization-qualification-wherevalid-code"/>
           </reference>
-          <name value="Plannet_sp_organization_address" />
+          <name value="Plannet_sp_organization_qualification_wherevalid_code"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-coverage-area" />
+            <reference value="SearchParameter/organization-qualification-wherevalid-location"/>
           </reference>
-          <name value="Plannet_sp_network_coverage_area" />
+          <name value="Plannet_sp_organization_qualification_wherevalid_location"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-endpoint" />
+            <reference value="SearchParameter/organization-type"/>
           </reference>
-          <name value="Plannet_sp_organization_endpoint" />
+          <name value="Plannet_sp_organization_type"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-identifier-assigner" />
+            <reference value="SearchParameter/organization-via-intermediary"/>
           </reference>
-          <name value="Plannet_sp_organization_identifier_assigner" />
+          <name value="Plannet_sp_organization_via_intermediary"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-identifier" />
+            <reference value="SearchParameter/organizationaffiliation-endpoint"/>
           </reference>
-          <name value="Plannet_sp_organization_identifier" />
+          <name value="Plannet_sp_organizationaffiliation_endpoint"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-name" />
+            <reference value="SearchParameter/organizationaffiliation-identifier-assigner"/>
           </reference>
-          <name value="Plannet_sp_organization_name" />
+          <name value="Plannet_sp_organizationaffiliation_identifier_assigner"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-partof" />
+            <reference value="SearchParameter/organizationaffiliation-identifier"/>
           </reference>
-          <name value="Plannet_sp_organization_partof" />
+          <name value="Plannet_sp_organizationaffiliation_identifier"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-qualification-code" />
+            <reference value="SearchParameter/organizationaffiliation-location"/>
           </reference>
-          <name value="Plannet_sp_organization_qualification_code" />
+          <name value="Plannet_sp_organizationaffiliation_location"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-qualification-issuer" />
+            <reference value="SearchParameter/organizationaffiliation-network"/>
           </reference>
-          <name value="Plannet_sp_organization_qualification_issuer" />
+          <name value="Plannet_sp_organizationaffiliation_network"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-qualification-status" />
+            <reference value="SearchParameter/organizationaffiliation-participating-organization"/>
           </reference>
-          <name value="Plannet_sp_organization_qualification_status" />
+          <name value="Plannet_sp_organizationaffiliation_participating_organization"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-qualification-wherevalid-code" />
+            <reference value="SearchParameter/organizationaffiliation-primary-organization"/>
           </reference>
-          <name value="Plannet_sp_organization_qualification_wherevalid_code" />
+          <name value="Plannet_sp_organizationaffiliation_primary_organization"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-qualification-wherevalid-location" />
+            <reference value="SearchParameter/organizationaffiliation-role"/>
           </reference>
-          <name value="Plannet_sp_organization_qualification_wherevalid_location" />
+          <name value="Plannet_sp_organizationaffiliation_role"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-type" />
+            <reference value="SearchParameter/organizationaffiliation-service"/>
           </reference>
-          <name value="Plannet_sp_organization_type" />
+          <name value="Plannet_sp_organizationaffiliation_service"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organization-via-intermediary" />
+            <reference value="SearchParameter/organizationaffiliation-specialty"/>
           </reference>
-          <name value="Plannet_sp_organization_via_intermediary" />
+          <name value="Plannet_sp_organizationaffiliation_specialty"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organizationaffiliation-endpoint" />
+            <reference value="SearchParameter/organizationaffiliation-via-intermediary"/>
           </reference>
-          <name value="Plannet_sp_organizationaffiliation_endpoint" />
+          <name value="Plannet_sp_organizationaffiliation_via_intermediary"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organizationaffiliation-identifier-assigner" />
+            <reference value="SearchParameter/practitioner-endpoint"/>
           </reference>
-          <name value="Plannet_sp_organizationaffiliation_identifier_assigner" />
+          <name value="Plannet_sp_practitioner_endpoint"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organizationaffiliation-identifier" />
+            <reference value="SearchParameter/practitioner-family-name"/>
           </reference>
-          <name value="Plannet_sp_organizationaffiliation_identifier" />
+          <name value="Plannet_sp_practitioner_family_name"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organizationaffiliation-location" />
+            <reference value="SearchParameter/practitioner-given-name"/>
           </reference>
-          <name value="Plannet_sp_organizationaffiliation_location" />
+          <name value="Plannet_sp_practitioner_given_name"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organizationaffiliation-network" />
+            <reference value="SearchParameter/practitioner-identifier-assigner"/>
           </reference>
-          <name value="Plannet_sp_organizationaffiliation_network" />
+          <name value="Plannet_sp_practitioner_identifier_assigner"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organizationaffiliation-participating-organization" />
+            <reference value="SearchParameter/practitioner-identifier"/>
           </reference>
-          <name value="Plannet_sp_organizationaffiliation_participating_organization" />
+          <name value="Plannet_sp_practitioner_identifier"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organizationaffiliation-primary-organization" />
+            <reference value="SearchParameter/practitioner-name"/>
           </reference>
-          <name value="Plannet_sp_organizationaffiliation_primary_organization" />
+          <name value="Plannet_sp_practitioner_name"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organizationaffiliation-role" />
+            <reference value="SearchParameter/practitioner-phonetic"/>
           </reference>
-          <name value="Plannet_sp_organizationaffiliation_role" />
+          <name value="Plannet_sp_practitioner_phonetic"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organizationaffiliation-service" />
+            <reference value="SearchParameter/practitioner-qualification-code"/>
           </reference>
-          <name value="Plannet_sp_organizationaffiliation_service" />
+          <name value="Plannet_sp_practitioner_qualification_code"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organizationaffiliation-specialty" />
+            <reference value="SearchParameter/practitioner-qualification-issuer"/>
           </reference>
-          <name value="Plannet_sp_organizationaffiliation_specialty" />
+          <name value="Plannet_sp_practitioner_qualification_issuer"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/organizationaffiliation-via-intermediary" />
+            <reference value="SearchParameter/practitioner-qualification-period"/>
           </reference>
-          <name value="Plannet_sp_organizationaffiliation_via_intermediary" />
+          <name value="Plannet_sp_practitioner_qualification_period"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-endpoint" />
+            <reference value="SearchParameter/practitioner-qualification-status"/>
           </reference>
-          <name value="Plannet_sp_practitioner_endpoint" />
+          <name value="Plannet_sp_practitioner_qualification_status"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-family-name" />
+            <reference value="SearchParameter/practitioner-qualification-wherevalid-code"/>
           </reference>
-          <name value="Plannet_sp_practitioner_family_name" />
+          <name value="Plannet_sp_practitioner_qualification_wherevalid_code"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-given-name" />
+            <reference value="SearchParameter/practitioner-qualification-wherevalid-location"/>
           </reference>
-          <name value="Plannet_sp_practitioner_given_name" />
+          <name value="Plannet_sp_practitioner_qualification_wherevalid_location"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-identifier-assigner" />
+            <reference value="SearchParameter/practitioner-via-intermediary"/>
           </reference>
-          <name value="Plannet_sp_practitioner_identifier_assigner" />
+          <name value="Plannet_sp_practitioner_via_intermediary"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-identifier" />
+            <reference value="SearchParameter/practitionerrole-endpoint"/>
           </reference>
-          <name value="Plannet_sp_practitioner_identifier" />
+          <name value="Plannet_sp_practitionerrole_endpoint"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-name" />
+            <reference value="SearchParameter/practitionerrole-identifier-assigner"/>
           </reference>
-          <name value="Plannet_sp_practitioner_name" />
+          <name value="Plannet_sp_practitionerrole_identifier_assigner"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-phonetic" />
+            <reference value="SearchParameter/practitionerrole-identifier"/>
           </reference>
-          <name value="Plannet_sp_practitioner_phonetic" />
+          <name value="Plannet_sp_practitionerrole_identifier"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-qualification-code" />
+            <reference value="SearchParameter/practitionerrole-location"/>
           </reference>
-          <name value="Plannet_sp_practitioner_qualification_code" />
+          <name value="Plannet_sp_practitionerrole_location"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-qualification-issuer" />
+            <reference value="SearchParameter/practitionerrole-network"/>
           </reference>
-          <name value="Plannet_sp_practitioner_qualification_issuer" />
+          <name value="Plannet_sp_practitionerrole_network"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-qualification-period" />
+            <reference value="SearchParameter/practitionerrole-new-patient-network"/>
           </reference>
-          <name value="Plannet_sp_practitioner_qualification_period" />
+          <name value="Plannet_sp_practitionerrole_new_patient_network"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-qualification-status" />
+            <reference value="SearchParameter/practitionerrole-new-patient"/>
           </reference>
-          <name value="Plannet_sp_practitioner_qualification_status" />
+          <name value="Plannet_sp_practitionerrole_new_patient"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-qualification-wherevalid-code" />
+            <reference value="SearchParameter/practitionerrole-organization"/>
           </reference>
-          <name value="Plannet_sp_practitioner_qualification_wherevalid_code" />
+          <name value="Plannet_sp_practitionerrole_organization"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-qualification-wherevalid-location" />
+            <reference value="SearchParameter/practitionerrole-practitioner"/>
           </reference>
-          <name value="Plannet_sp_practitioner_qualification_wherevalid_location" />
+          <name value="Plannet_sp_practitionerrole_practitioner"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitioner-via-intermediary" />
+            <reference value="SearchParameter/practitionerrole-qualification-code"/>
           </reference>
-          <name value="Plannet_sp_practitioner_via_intermediary" />
+          <name value="Plannet_sp_practitionerrole_qualification_code"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-endpoint" />
+            <reference value="SearchParameter/practitionerrole-qualification-issuer"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_endpoint" />
+          <name value="Plannet_sp_practitionerrole_qualification_issuer"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-identifier-assigner" />
+            <reference value="SearchParameter/practitionerrole-qualification-status"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_identifier_assigner" />
+          <name value="Plannet_sp_practitionerrole_qualification_status"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-identifier" />
+            <reference value="SearchParameter/practitionerrole-qualification-wherevalid-code"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_identifier" />
+          <name value="Plannet_sp_practitionerrole_qualification_wherevalid_code"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-location" />
+            <reference value="SearchParameter/practitionerrole-qualification-wherevalid-location"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_location" />
+          <name value="Plannet_sp_practitionerrole_qualification_wherevalid_location"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-network" />
+            <reference value="SearchParameter/practitionerrole-role"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_network" />
+          <name value="Plannet_sp_practitionerrole_role"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-new-patient-network" />
+            <reference value="SearchParameter/practitionerrole-service"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_new_patient_network" />
+          <name value="Plannet_sp_practitionerrole_service"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-new-patient" />
+            <reference value="SearchParameter/practitionerrole-specialty"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_new_patient" />
+          <name value="Plannet_sp_practitionerrole_specialty"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-organization" />
+            <reference value="SearchParameter/practitionerrole-via-intermediary"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_organization" />
+          <name value="Plannet_sp_practitionerrole_via_intermediary"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-practitioner" />
+            <reference value="Endpoint/direct321"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_practitioner" />
+          <name value="Example: direct321"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-qualification-code" />
+            <reference value="HealthcareService/ffcardiology"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_qualification_code" />
+          <name value="Example: ffcardiology"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-qualification-issuer" />
+            <reference value="HealthcareService/hcs-ws"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_qualification_issuer" />
+          <name value="Example: hcs-ws"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-qualification-status" />
+            <reference value="HealthcareService/independencerehab1"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_qualification_status" />
+          <name value="Example: independencerehab1"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-qualification-wherevalid-code" />
+            <reference value="HealthcareService/independencerehab2"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_qualification_wherevalid_code" />
+          <name value="Example: independencerehab2"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-qualification-wherevalid-location" />
+            <reference value="InsurancePlan/insuranceplan1"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_qualification_wherevalid_location" />
+          <name value="Example: insuranceplan1"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-role" />
+            <reference value="Location/loc-ffmh-hvi"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_role" />
+          <name value="Example: loc-ffmh-hvi"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-service" />
+            <reference value="Location/loc-ffmh"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_service" />
+          <name value="Example: loc-ffmh"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-specialty" />
+            <reference value="Location/loc-ws"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_specialty" />
+          <name value="Example: loc-ws"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/practitionerrole-via-intermediary" />
+            <reference value="Location/wash-dc-metro"/>
           </reference>
-          <name value="Plannet_sp_practitionerrole_via_intermediary" />
+          <name value="Example: wash-dc-metro"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="Endpoint/direct321" />
+            <reference value="Organization/foundingfathers"/>
           </reference>
-          <name value="Example: direct321" />
+          <name value="Example: foundingfathers"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="HealthcareService/ffcardiology" />
+            <reference value="Organization/homeland"/>
           </reference>
-          <name value="Example: ffcardiology" />
+          <name value="Example: homeland"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="HealthcareService/hcs-ws" />
+            <reference value="Organization/independencerehab"/>
           </reference>
-          <name value="Example: hcs-ws" />
+          <name value="Example: independencerehab"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="HealthcareService/independencerehab1" />
+            <reference value="Organization/monumentHIE"/>
           </reference>
-          <name value="Example: independencerehab1" />
+          <name value="Example: monumentHIE"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="HealthcareService/independencerehab2" />
+            <reference value="Organization/mtvernon"/>
           </reference>
-          <name value="Example: independencerehab2" />
+          <name value="Example: mtvernon"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="InsurancePlan/insuranceplan1" />
+            <reference value="Organization/patriotdental"/>
           </reference>
-          <name value="Example: insuranceplan1" />
+          <name value="Example: patriotdental"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="Location/loc-ffmh-hvi" />
+            <reference value="Organization/patriotppo"/>
           </reference>
-          <name value="Example: loc-ffmh-hvi" />
+          <name value="Example: patriotppo"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="Location/loc-ffmh" />
+            <reference value="OrganizationAffiliation/orgrole1"/>
           </reference>
-          <name value="Example: loc-ffmh" />
+          <name value="Example: orgrole1"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="Location/loc-ws" />
+            <reference value="OrganizationAffiliation/orgrole2"/>
           </reference>
-          <name value="Example: loc-ws" />
+          <name value="Example: orgrole2"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="Location/wash-dc-metro" />
+            <reference value="Practitioner/practitioner1"/>
           </reference>
-          <name value="Example: wash-dc-metro" />
+          <name value="Example: practitioner1"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="Organization/foundingfathers" />
+            <reference value="PractitionerRole/practitionerrole1"/>
           </reference>
-          <name value="Example: foundingfathers" />
+          <name value="Example: practitionerrole1"/>
       </resource>
       <resource>
-          <exampleBoolean value="true" />
+          <exampleBoolean value="true"/>
           <reference>
-            <reference value="Organization/homeland" />
+            <reference value="Location/location1WSAddress"/>
           </reference>
-          <name value="Example: homeland" />
-      </resource>
-      <resource>
-          <exampleBoolean value="true" />
-          <reference>
-            <reference value="Organization/independencerehab" />
-          </reference>
-          <name value="Example: independencerehab" />
-      </resource>
-      <resource>
-          <exampleBoolean value="true" />
-          <reference>
-            <reference value="Organization/monumentHIE" />
-          </reference>
-          <name value="Example: monumentHIE" />
-      </resource>
-      <resource>
-          <exampleBoolean value="true" />
-          <reference>
-            <reference value="Organization/mtvernon" />
-          </reference>
-          <name value="Example: mtvernon" />
-      </resource>
-      <resource>
-          <exampleBoolean value="true" />
-          <reference>
-            <reference value="Organization/patriotdental" />
-          </reference>
-          <name value="Example: patriotdental" />
-      </resource>
-      <resource>
-          <exampleBoolean value="true" />
-          <reference>
-            <reference value="Organization/patriotppo" />
-          </reference>
-          <name value="Example: patriotppo" />
-      </resource>
-      <resource>
-          <exampleBoolean value="true" />
-          <reference>
-            <reference value="OrganizationAffiliation/orgrole1" />
-          </reference>
-          <name value="Example: orgrole1" />
-      </resource>
-      <resource>
-          <exampleBoolean value="true" />
-          <reference>
-            <reference value="OrganizationAffiliation/orgrole2" />
-          </reference>
-          <name value="Example: orgrole2" />
-      </resource>
-      <resource>
-          <exampleBoolean value="true" />
-          <reference>
-            <reference value="Practitioner/practitioner1" />
-          </reference>
-          <name value="Example: practitioner1" />
-      </resource>
-      <resource>
-          <exampleBoolean value="true" />
-          <reference>
-            <reference value="PractitionerRole/practitionerrole1" />
-          </reference>
-          <name value="Example: practitionerrole1" />
-      </resource>
-      <resource>
-          <exampleBoolean value="true" />
-          <reference>
-            <reference value="Location/location1WSAddress" />
-          </reference>
-          <name value="Example: location1WSAddress" />
+          <name value="Example: location1WSAddress"/>
       </resource>
       
         <page>
-            <nameUrl value="index.html" />
-            <title value="DaVinci PDEX Plan Net" />
-            <generation value="html" />
+            <nameUrl value="index.html"/>
+            <title value="DaVinci PDEX Plan Net"/>
+            <generation value="html"/>
         </page>
     </definition>
 </ImplementationGuide>
