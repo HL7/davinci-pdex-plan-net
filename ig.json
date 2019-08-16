@@ -33,6 +33,12 @@
       "version": "current",
       "name": "VhDir",
       "location": "http://build.fhir.org/ig/HL7/VhDir/"
+    },
+    {
+      "package": "hl7.fhir.uv.vhdir",
+      "version": "current",
+      "name": "VhDir",
+      "location": "http://build.fhir.org/ig/HL7/VhDir/"
     }
   ],
   "defaults": {
@@ -131,10 +137,6 @@
     },
     "StructureDefinition/plannet-PractitionerRoleNetwork-extension": {
       "base": "StructureDefinition-plannet-PractitionerRoleNetwork-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/plannet-Qualification-extension": {
-      "base": "StructureDefinition-plannet-Qualification-extension.html",
       "template-base": "sd-extension.html"
     },
     "SearchParameter/endpoint-identifier-assigner": {

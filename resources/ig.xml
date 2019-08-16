@@ -119,13 +119,7 @@
           <name value="plannet-PractitionerRoleNetwork"/>
       </resource>
       
-      <resource>
-          <exampleBoolean value="false"/>
-          <reference>
-            <reference value="StructureDefinition/plannet-Qualification-extension"/>
-          </reference>
-          <name value="plannet-Qualification"/>
-      </resource>
+      
       
       
       <resource>

@@ -3,7 +3,7 @@
   "id": "plannet-PractitionerRole",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PractitionerRole Profile</b></p>\n  <p>PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  PractitionerRoleNetwork maps to extension\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  Qualification maps to extension\n  TAvailableTime maps to telecom.extension http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  TViaIntermediary maps to telecom.extension\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PractitionerRoleActive maps to active\n  PractitionerRoleSpecialty maps to specialty\n  PractitionerRoleCode maps to code\n  PractitionerRolePeriod maps to period\n  PractitionerRoleLocation maps to location\n  NAvailableTime maps to availableTime\n  NotAvailable maps to notAvailable\n  PractitionerRoleTelecom maps to telecom\n  PractitionerRoleTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerRoleTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerRoleTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerRoleTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerRoleTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  Organization maps to organization\n  Network maps to extension\n  Practitioner maps to practitioner\n  PractitionerRoleHealthcareService maps to healthcareService\n  constrain active to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PractitionerRole Profile</b></p>\n  <p>PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  PractitionerRoleNetwork maps to extension\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  TAvailableTime maps to telecom.extension http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  TViaIntermediary maps to telecom.extension\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PractitionerRoleQualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  PractitionerRoleActive maps to active\n  PractitionerRoleSpecialty maps to specialty\n  PractitionerRoleCode maps to code\n  PractitionerRolePeriod maps to period\n  PractitionerRoleLocation maps to location\n  NAvailableTime maps to availableTime\n  NotAvailable maps to notAvailable\n  PractitionerRoleTelecom maps to telecom\n  PractitionerRoleTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerRoleTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerRoleTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerRoleTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerRoleTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  Organization maps to organization\n  Network maps to extension\n  Practitioner maps to practitioner\n  PractitionerRoleHealthcareService maps to healthcareService\n  constrain active to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole",
   "name": "PractitionerRole",
@@ -392,30 +392,6 @@
         "mustSupport": true
       },
       {
-        "id": "PractitionerRole.extension:qualification",
-        "path": "PractitionerRole.extension",
-        "definition": "Qualification indicates whether the organization has any formal qualifications",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "qualification",
-        "mustSupport": true
-      },
-      {
         "id": "PractitionerRole.extension:network",
         "path": "PractitionerRole.extension",
         "definition": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.",
@@ -484,6 +460,30 @@
         "isModifier": false,
         "isSummary": false,
         "sliceName": "newpatients",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.extension:practitionerrolequalification",
+        "path": "PractitionerRole.extension",
+        "definition": "Practitioner's qualifications unique to this role",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "practitionerrolequalification",
         "mustSupport": true
       },
       {
@@ -2059,30 +2059,6 @@
         "mustSupport": true
       },
       {
-        "id": "PractitionerRole.extension:qualification",
-        "path": "PractitionerRole.extension",
-        "definition": "Qualification indicates whether the organization has any formal qualifications",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "qualification",
-        "mustSupport": true
-      },
-      {
         "id": "PractitionerRole.extension:network",
         "path": "PractitionerRole.extension",
         "definition": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.",
@@ -2151,6 +2127,30 @@
         "isModifier": false,
         "isSummary": false,
         "sliceName": "newpatients",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.extension:practitionerrolequalification",
+        "path": "PractitionerRole.extension",
+        "definition": "Practitioner's qualifications unique to this role",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "practitionerrolequalification",
         "mustSupport": true
       },
       {
