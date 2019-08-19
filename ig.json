@@ -33,12 +33,6 @@
       "version": "current",
       "name": "VhDir",
       "location": "http://build.fhir.org/ig/HL7/VhDir/"
-    },
-    {
-      "package": "hl7.fhir.uv.vhdir",
-      "version": "current",
-      "name": "VhDir",
-      "location": "http://build.fhir.org/ig/HL7/VhDir/"
     }
   ],
   "defaults": {

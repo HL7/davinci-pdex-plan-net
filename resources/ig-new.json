@@ -3,15 +3,15 @@
   "id" : "hl7.fhir.us.davinci-pdex-plan-net-0.1.0",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/skravitz/cimpl/plan-net-out5/fhir/guide/resources"
+    "valueString" : "/Users/skravitz/cimpl/plan-net-out6/fhir/guide/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/skravitz/cimpl/plan-net-out5/fhir/guide/examples"
+    "valueString" : "/Users/skravitz/cimpl/plan-net-out6/fhir/guide/examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/skravitz/cimpl/plan-net-out5/fhir/guide/pages"
+    "valueString" : "/Users/skravitz/cimpl/plan-net-out6/fhir/guide/pages"
   }],
   "url" : "http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0",
   "version" : "0.1.0",
@@ -34,12 +34,6 @@
     "uri" : "http://hl7.org/fhir/us/core",
     "packageId" : "hl7.fhir.us.core",
     "version" : "3.0.0"
-  },
-  {
-    "id" : "VhDir",
-    "uri" : "http://build.fhir.org/ig/HL7/VhDir/",
-    "packageId" : "hl7.fhir.uv.vhdir",
-    "version" : "current"
   },
   {
     "id" : "VhDir",

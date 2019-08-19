@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network",
   "name": "Network",
   "status": "draft",
-  "date": "2019-08-16",
+  "date": "2019-08-19",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {

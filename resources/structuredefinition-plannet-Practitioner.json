@@ -3,14 +3,14 @@
   "id": "plannet-Practitioner",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Practitioner Profile</b></p>\n  <p>Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PN_Identifier.IdentifierStatus maps to identifier.extension\n  PractitionerName.HumanName maps to name\n  PractitionerActive maps to active\n  PractitionerCommunication maps to communication\n  Gender maps to gender\n  BirthDate maps to birthDate\n  Photo maps to photo\n  Address maps to address\n  PractitionerName.HumanName.Purpose maps to name.use\n  PractitionerName.HumanName.Name maps to name.text\n  PractitionerName.HumanName.FamilyName maps to name.family\n  PractitionerName.HumanName.GivenName maps to name.given\n  PractitionerName.HumanName.Prefix maps to name.prefix\n  PractitionerName.HumanName.Suffix maps to name.suffix\n  PractitionerName.HumanName.EffectiveTimePeriod maps to name.period\n  PractitionerTelecom maps to telecom\n  PractitionerTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  TAvailableTime maps to telecom.extension\n  TViaIntermediary maps to telecom.extension\n  GeoLocation maps to address.extension\n  PractitionerQualification.Practitioner-Qualification-VHDIR maps to qualification.extension\n  PractitionerQualification maps to qualification\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierUse maps to qualification.identifier.use\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierSystem maps to qualification.identifier.system\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierValue maps to qualification.identifier.value\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierType maps to qualification.identifier.type\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierPeriod maps to qualification.identifier.period\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierAssigner maps to qualification.identifier.assigner\n  PractitionerQualification.QualificationID maps to qualification.id\n  PractitionerQualification.Code maps to qualification.code\n  PractitionerQualification.Period maps to qualification.period\n  PractitionerQualification.Issuer maps to qualification.issuer\n  Proficiency maps to communication.extension\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  constrain name.family to 1..1\n  constrain name.given to 1..*\n  constrain photo to 0..1\n  constrain qualification.issuer to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Practitioner Profile</b></p>\n  <p>Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PN_Identifier.IdentifierStatus maps to identifier.extension\n  PractitionerName.HumanName maps to name\n  PractitionerActive maps to active\n  PractitionerCommunication maps to communication\n  Gender maps to gender\n  BirthDate maps to birthDate\n  Photo maps to photo\n  Address maps to address\n  Address.Purpose maps to address.use\n  Address.Type maps to address.type\n  Address.DisplayText maps to address.text\n  Address.AddressLine maps to address.line\n  Address.City maps to address.city\n  Address.State maps to address.state\n  Address.PostalCode maps to address.postalCode\n  Address.Country maps to address.country\n  Address.EffectiveTimePeriod maps to address.period\n  PractitionerName.HumanName.Purpose maps to name.use\n  PractitionerName.HumanName.Name maps to name.text\n  PractitionerName.HumanName.FamilyName maps to name.family\n  PractitionerName.HumanName.GivenName maps to name.given\n  PractitionerName.HumanName.Prefix maps to name.prefix\n  PractitionerName.HumanName.Suffix maps to name.suffix\n  PractitionerName.HumanName.EffectiveTimePeriod maps to name.period\n  PractitionerTelecom maps to telecom\n  PractitionerTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  TAvailableTime maps to telecom.extension\n  TViaIntermediary maps to telecom.extension\n  GeoLocation maps to address.extension\n  PractitionerQualification.Practitioner-Qualification-VHDIR maps to qualification.extension\n  PractitionerQualification maps to qualification\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierUse maps to qualification.identifier.use\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierSystem maps to qualification.identifier.system\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierValue maps to qualification.identifier.value\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierType maps to qualification.identifier.type\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierPeriod maps to qualification.identifier.period\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierAssigner maps to qualification.identifier.assigner\n  PractitionerQualification.QualificationID maps to qualification.id\n  PractitionerQualification.Code maps to qualification.code\n  PractitionerQualification.Period maps to qualification.period\n  PractitionerQualification.Issuer maps to qualification.issuer\n  Proficiency maps to communication.extension\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  constrain name.family to 1..1\n  constrain name.given to 1..*\n  constrain photo to 0..1\n  constrain qualification.issuer to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner",
   "name": "Practitioner",
   "title": "plannet-Practitioner",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-16",
+  "date": "2019-08-19",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -2098,7 +2098,8 @@
             "identity": "servd",
             "map": "./AddressPurpose"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.address.type",
@@ -2150,7 +2151,8 @@
             "identity": "vcard",
             "map": "address type parameter"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.address.text",
@@ -2192,7 +2194,8 @@
             "identity": "vcard",
             "map": "address label parameter"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.address.line",
@@ -2237,7 +2240,8 @@
             "identity": "servd",
             "map": "./StreetAddress (newline delimitted)"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.address.city",
@@ -2284,7 +2288,8 @@
             "identity": "servd",
             "map": "./Jurisdiction"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.address.district",
@@ -2366,7 +2371,8 @@
             "identity": "servd",
             "map": "./Region"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.address.postalCode",
@@ -2413,7 +2419,8 @@
             "identity": "servd",
             "map": "./PostalIdentificationCode"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.address.country",
@@ -2452,7 +2459,8 @@
             "identity": "servd",
             "map": "./Country"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.address.period",
@@ -2496,7 +2504,8 @@
             "identity": "servd",
             "map": "./StartDate and ./EndDate"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.gender",
@@ -3728,6 +3737,51 @@
         "isModifier": false,
         "isSummary": false,
         "sliceName": "geolocation",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.use",
+        "path": "Practitioner.address.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.type",
+        "path": "Practitioner.address.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.text",
+        "path": "Practitioner.address.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.line",
+        "path": "Practitioner.address.line",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.city",
+        "path": "Practitioner.address.city",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.state",
+        "path": "Practitioner.address.state",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.postalCode",
+        "path": "Practitioner.address.postalCode",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.country",
+        "path": "Practitioner.address.country",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.period",
+        "path": "Practitioner.address.period",
         "mustSupport": true
       },
       {
