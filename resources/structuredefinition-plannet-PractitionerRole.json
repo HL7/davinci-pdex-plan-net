@@ -3,7 +3,7 @@
   "id": "plannet-PractitionerRole",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PractitionerRole Profile</b></p>\n  <p>PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  PractitionerRoleNetwork maps to extension\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  TAvailableTime maps to telecom.extension http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  TViaIntermediary maps to telecom.extension\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PractitionerRoleQualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  PractitionerRoleActive maps to active\n  PractitionerRoleSpecialty maps to specialty\n  PractitionerRoleCode maps to code\n  PractitionerRolePeriod maps to period\n  PractitionerRoleLocation maps to location\n  NAvailableTime maps to availableTime\n  NotAvailable maps to notAvailable\n  PractitionerRoleTelecom maps to telecom\n  PractitionerRoleTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerRoleTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerRoleTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerRoleTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerRoleTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  Organization maps to organization\n  Network maps to extension\n  Practitioner maps to practitioner\n  PractitionerRoleHealthcareService maps to healthcareService\n  constrain active to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PractitionerRole Profile</b></p>\n  <p>PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  PractitionerRoleNetwork maps to extension\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  TAvailableTime maps to telecom.extension http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  TViaIntermediary maps to telecom.extension\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PractitionerRoleQualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  PractitionerRoleActive maps to active\n  PractitionerRoleSpecialty maps to specialty\n  PractitionerRoleCode maps to code\n  PractitionerRolePeriod maps to period\n  PractitionerRoleLocation maps to location\n  NAvailableTime maps to availableTime\n  NAvailableTime.AllDay maps to availableTime.allDay\n  NAvailableTime.DaysOfWeek maps to availableTime.daysOfWeek\n  NAvailableTime.AvailableStartTime maps to availableTime.availableStartTime\n  NAvailableTime.AvailableEndTime maps to availableTime.availableEndTime\n  NotAvailable maps to notAvailable\n  NotAvailable.Description maps to notAvailable.description\n  NotAvailable.DuringPeriod maps to notAvailable.during\n  PractitionerRoleTelecom maps to telecom\n  PractitionerRoleTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerRoleTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerRoleTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerRoleTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerRoleTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  Organization maps to organization\n  Network maps to extension\n  Practitioner maps to practitioner\n  PractitionerRoleHealthcareService maps to healthcareService\n  constrain active to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole",
   "name": "PractitionerRole",
@@ -1684,7 +1684,8 @@
             "identity": "rim",
             "map": ".effectiveTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.availableTime.allDay",
@@ -1710,7 +1711,8 @@
             "identity": "rim",
             "map": ".effectiveTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.availableTime.availableStartTime",
@@ -1737,7 +1739,8 @@
             "identity": "rim",
             "map": ".effectiveTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.availableTime.availableEndTime",
@@ -1764,7 +1767,8 @@
             "identity": "rim",
             "map": ".effectiveTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.notAvailable",
@@ -1921,7 +1925,8 @@
             "identity": "rim",
             "map": "n/a"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.notAvailable.during",
@@ -1947,7 +1952,8 @@
             "identity": "rim",
             "map": ".effectiveTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.availabilityExceptions",
@@ -2320,8 +2326,38 @@
         "mustSupport": true
       },
       {
+        "id": "PractitionerRole.availableTime.daysOfWeek",
+        "path": "PractitionerRole.availableTime.daysOfWeek",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.availableTime.allDay",
+        "path": "PractitionerRole.availableTime.allDay",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.availableTime.availableStartTime",
+        "path": "PractitionerRole.availableTime.availableStartTime",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.availableTime.availableEndTime",
+        "path": "PractitionerRole.availableTime.availableEndTime",
+        "mustSupport": true
+      },
+      {
         "id": "PractitionerRole.notAvailable",
         "path": "PractitionerRole.notAvailable",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.notAvailable.description",
+        "path": "PractitionerRole.notAvailable.description",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.notAvailable.during",
+        "path": "PractitionerRole.notAvailable.during",
         "mustSupport": true
       }
     ]
