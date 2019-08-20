@@ -17,13 +17,6 @@
         {
           "url": "acceptingPatients",
           "valueBoolean": true
-        },
-        {
-          "url": "network",
-          "valueReference": {
-            "reference": "Organization/patriotppo",
-            "display": "Patriot Preferred Provider Network"
-          }
         }
       ]
     }

@@ -62,6 +62,8 @@
 <p>This implementation guide was written for a US audience. We expect different jurisdictions considering implementing a provider directory will design their implementations in accordance with jurisdictional requirements, such as national profiles/IGs. In the United States, for example, we align with the R4 version of the US Core IG.
 
 </p>
+<h2 id="healthcare-directory-vs-provider-directory">Healthcare Directory vs Provider Directory</h2> 
+<p></p>
 <h2 id="Model">The Payer Directory Data Model</h2>
 <p>To determine which resources to profile, extensions to create, etc. we reviewed a number of use cases. 
     The following are relevant to this implementation guide:</p>
@@ -107,7 +109,7 @@
 <img src="HealthcareService.png" alt = "HealthcareService" width="30%" height="30%"/>
 <h3 id="endpoint">Endpoint</h3>
 <h3 id="location">Location</h3>
-<h3 id="organization">Network</h3>
+<h3 id="network">Network</h3>
 <p><strong>Figure 6: Network </strong></p>
 <img src="Network.png" alt="Network" width="30%" height="30%"/>
 
@@ -561,36 +563,8 @@
 <li>Provider Directory actors <em>SHALL</em> use the <a href="http://hl7.org/fhir/STU3/auditevent.html">AuditEvent</a> resource to capture audit logs of the various transactions. Provider Directory actors <em>SHOULD</em> capture as many AuditEvent resource data elements as appropriate based on requirements of FHIR <a href="http://hl7.org/fhir/STU3/security.html#audit">Audit Logging</a> and local policies.</li>
 <li>Provider Directory actors <em>SHALL</em> conform to <a href="http://hl7.org/fhir/STU3/security.html#http">FHIR Communications</a></li>
 </ul>
-<p>Examples</p>
-<p>Available for download <a href="./downloads.html">here</a></p>
-<p><u>Notes: </u></p>
-<ul>
-<li><u>bring forward examples that are supportive of the scope of this guide and remove all references to items that have been deleted (e.g. restriction and validation)</u></li>
-<li><u>include example of pharmacy locations </u></li>
-</ul>
-<ul>
-<li><a href="./Endpoint-direct321.html">Endpoint Direct321 </a></li>
-<li><a href=".//HealthcareService-ffcardiology.html">Healthcareservice Ffcardiology </a></li>
-<li><a href="./HealthcareService-hcs-ws.html">Healthcareservice Hcs Ws </a></li>
-<li><a href=".//HealthcareService-independencerehab1.html">Healthcareservice Independencerehab1 </a></li>
-<li><a href=".//HealthcareService-independencerehab2.html">Healthcareservice Independencerehab2 </a></li>
-<li><a href="./InsurancePlan-insuranceplan1.html">Insuranceplan Insuranceplan1 </a></li>
-<li><a href="./VhDir/Location-loc-ffmh-hvi.html">Location Loc Ffmh Hvi </a></li>
-<li><a href="./Location-loc-ffmh.html">Location Loc Ffmh </a></li>
-<li><a href="./Location-loc-ws.html">Location Loc Ws </a></li>
-<li><a href="./Location-wash-dc-metro.html">Location Wash Dc Metro </a></li>
-<li><a href="./Organization-foundingfathers.html">Organization Foundingfathers </a></li>
-<li><a href="./Organization-homeland.html">Organization Homeland </a></li>
-<li><a href="./Organization-independencerehab.html">Organization Independencerehab </a></li>
-<li><a href="./Organization-monumentHIE.html">Organization Monumenthie </a></li>
-<li><a href="./Organization-mtvernon.html">Organization Mtvernon </a></li>
-<li><a href=".//Organization-patriotdental.html">Organization Patriotdental </a></li>
-<li><a href="./Organization-patriotppo.html">Organization Patriotppo </a></li>
-<li><a href="./OrganizationAffiliation-orgrole1.html">Organizationaffiliation Orgrole1 </a></li>
-<li><a href=".//OrganizationAffiliation-orgrole2.html">Organizationaffiliation Orgrole2 </a></li>
-<li><a href=".//VhDir/Practitioner-practitioner1.html">Practitioner Practitioner1 </a></li>
-<li><a href="./PractitionerRole-practitionerrole1.html">Practitionerrole Practitionerrole1 </a></li>
-</ul>
+
+
 
 <!-- ==============END CONTENT END CONTENT=================== -->
 
