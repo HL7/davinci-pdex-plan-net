@@ -3,14 +3,14 @@
   "id": "plannet-Organization",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Organization Profile</b></p>\n  <p>An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Organization maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization:\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification\n  TAvailableTime maps to telecom.extension\n  CAvailableTime maps to contact.telecom.extension\n  TViaIntermediary maps to telecom.extension\n  CViaIntermediary maps to contact.telecom.extension\n  Description maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description\n  PartOf maps to partOf\n  GeoLocation maps to address.extension\n  Address maps to address\n  Address.Purpose maps to address.use\n  Address.Type maps to address.type\n  Address.DisplayText maps to address.text\n  Address.AddressLine maps to address.line\n  Address.City maps to address.city\n  Address.State maps to address.state\n  Address.PostalCode maps to address.postalCode\n  Address.Country maps to address.country\n  Address.EffectiveTimePeriod maps to address.period\n  OrganizationAlias maps to alias\n  OrganizationEndpoint maps to endpoint\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PN_Identifier.IdentifierStatus maps to identifier.extension\n  OrganizationActive maps to active\n  OrganizationName maps to name\n  OrganizationTelecom maps to telecom\n  OrganizationContact maps to contact\n  OrganizationContact.HumanName maps to contact.name\n  OrganizationContact.HumanName.GivenName maps to contact.name.given\n  OrganizationContact.HumanName.FamilyName maps to contact.name.family\n  OrganizationTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  OrganizationTelecom.ContactPoint.Type maps to telecom.system\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Organization Profile</b></p>\n  <p>An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Organization maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization:\n  Qualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification\n  TAvailableTime maps to telecom.extension\n  CAvailableTime maps to contact.telecom.extension\n  TViaIntermediary maps to telecom.extension\n  CViaIntermediary maps to contact.telecom.extension\n  Description maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description\n  PartOf maps to partOf\n  GeoLocation maps to address.extension\n  Address maps to address\n  Address.Purpose maps to address.use\n  Address.Type maps to address.type\n  Address.DisplayText maps to address.text\n  Address.AddressLine maps to address.line\n  Address.City maps to address.city\n  Address.State maps to address.state\n  Address.PostalCode maps to address.postalCode\n  Address.Country maps to address.country\n  Address.EffectiveTimePeriod maps to address.period\n  OrganizationAlias maps to alias\n  OrganizationEndpoint maps to endpoint\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PN_Identifier.IdentifierStatus maps to identifier.extension\n  OrganizationActive maps to active\n  OrganizationName maps to name\n  OrganizationTelecom maps to telecom\n  OrganizationTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  OrganizationTelecom.ContactPoint.Type maps to telecom.system\n  OrganizationTelecom.ContactPoint.Purpose maps to telecom.use\n  OrganizationTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  OrganizationTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  OrganizationContact maps to contact\n  OrganizationContact.HumanName maps to contact.name\n  OrganizationContact.HumanName.GivenName maps to contact.name.given\n  OrganizationContact.HumanName.FamilyName maps to contact.name.family\n  OrganizationContact.ContactPoint.TelecomNumberOrAddress maps to contact.telecom.value\n  OrganizationContact.ContactPoint.Type maps to contact.telecom.system\n  OrganizationContact.ContactPoint.Purpose maps to contact.telecom.use\n  OrganizationContact.ContactPoint.PriorityRank maps to contact.telecom.rank\n  OrganizationContact.ContactPoint.EffectiveTimePeriod maps to contact.telecom.period\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization",
   "name": "Organization",
   "title": "plannet-Organization",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-19",
+  "date": "2019-08-20",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -2324,7 +2324,8 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "cviaintermediary"
+        "sliceName": "cviaintermediary",
+        "mustSupport": true
       },
       {
         "id": "Organization.contact.telecom.system",
@@ -2372,7 +2373,8 @@
             "identity": "servd",
             "map": "./ContactPointType"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.contact.telecom.value",
@@ -2408,7 +2410,8 @@
             "identity": "servd",
             "map": "./Value"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.contact.telecom.use",
@@ -2456,7 +2459,8 @@
             "identity": "servd",
             "map": "./ContactPointPurpose"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.contact.telecom.rank",
@@ -2487,7 +2491,8 @@
             "identity": "rim",
             "map": "n/a"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.contact.telecom.period",
@@ -2521,7 +2526,8 @@
             "identity": "servd",
             "map": "./StartDate and ./EndDate"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.contact.address",
@@ -2914,7 +2920,33 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "cviaintermediary"
+        "sliceName": "cviaintermediary",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact.telecom.system",
+        "path": "Organization.contact.telecom.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact.telecom.value",
+        "path": "Organization.contact.telecom.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact.telecom.use",
+        "path": "Organization.contact.telecom.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact.telecom.rank",
+        "path": "Organization.contact.telecom.rank",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact.telecom.period",
+        "path": "Organization.contact.telecom.period",
+        "mustSupport": true
       },
       {
         "id": "Organization.endpoint",

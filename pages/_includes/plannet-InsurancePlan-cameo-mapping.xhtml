@@ -19,6 +19,8 @@ plannet.InsurancePlan maps to InsurancePlan:
   CoverageArea maps to coverageArea
   AdministeredBy maps to administeredBy
   InsurancePlanContact maps to contact
+  InsurancePlanContact.ContactPurpose maps to contact.purpose
+  InsurancePlanContact.HumanName maps to contact.name
   InsurancePlanContact.HumanName.Purpose maps to contact.name.use
   InsurancePlanContact.HumanName.Name maps to contact.name.text
   InsurancePlanContact.HumanName.FamilyName maps to contact.name.family
@@ -26,11 +28,14 @@ plannet.InsurancePlan maps to InsurancePlan:
   InsurancePlanContact.HumanName.Prefix maps to contact.name.prefix
   InsurancePlanContact.HumanName.Suffix maps to contact.name.suffix
   InsurancePlanContact.HumanName.EffectiveTimePeriod maps to contact.name.period
+  InsurancePlanContact.ContactPoint maps to contact.telecom
   InsurancePlanContact.ContactPoint.TelecomNumberOrAddress maps to contact.telecom.value
   InsurancePlanContact.ContactPoint.Purpose maps to contact.telecom.use
   InsurancePlanContact.ContactPoint.PriorityRank maps to contact.telecom.rank
   InsurancePlanContact.ContactPoint.EffectiveTimePeriod maps to contact.telecom.period
   InsurancePlanContact.ContactPoint.Type maps to contact.telecom.system
+  TAvailableTime maps to contact.telecom.extension
+  TViaIntermediary maps to contact.telecom.extension
   InsurancePlanNetwork maps to network
   InsurancePlanEndpoint maps to endpoint
   constrain ownedBy to 1..1
