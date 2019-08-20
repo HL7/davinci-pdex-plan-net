@@ -10,13 +10,13 @@
   "title": "plannet-LocationReference",
   "status": "draft",
   "date": "2019-08-20",
-  "publisher": "HL7 Pharmacy WG",
+  "publisher": "HL7 Financial Management WG",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://www.hl7.org/Special/committees/medication/"
+          "value": "http://www.hl7.org/Special/committees/fm/index.cfm"
         }
       ]
     }

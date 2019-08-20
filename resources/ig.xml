@@ -5,11 +5,11 @@
     <name value="DaVinci_PDEX_Plan_Net"/>
     <title value="DaVinci PDEX Plan Net"/>
     <status value="draft"/>
-    <publisher value="HL7 Pharmacy WG"/>
+    <publisher value="HL7 Financial Management WG"/>
     <contact>
       <telecom>
         <system value="url"/>
-        <value value="http://www.hl7.org/Special/committees/medication/"/>
+        <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
       </telecom>
     </contact>
 
