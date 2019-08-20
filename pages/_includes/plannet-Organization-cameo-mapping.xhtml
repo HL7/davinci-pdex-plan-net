@@ -34,11 +34,19 @@ plannet.Organization maps to http://hl7.org/fhir/us/core/StructureDefinition/us-
   OrganizationActive maps to active
   OrganizationName maps to name
   OrganizationTelecom maps to telecom
+  OrganizationTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value
+  OrganizationTelecom.ContactPoint.Type maps to telecom.system
+  OrganizationTelecom.ContactPoint.Purpose maps to telecom.use
+  OrganizationTelecom.ContactPoint.PriorityRank maps to telecom.rank
+  OrganizationTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period
   OrganizationContact maps to contact
   OrganizationContact.HumanName maps to contact.name
   OrganizationContact.HumanName.GivenName maps to contact.name.given
   OrganizationContact.HumanName.FamilyName maps to contact.name.family
-  OrganizationTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value
-  OrganizationTelecom.ContactPoint.Type maps to telecom.system
+  OrganizationContact.ContactPoint.TelecomNumberOrAddress maps to contact.telecom.value
+  OrganizationContact.ContactPoint.Type maps to contact.telecom.system
+  OrganizationContact.ContactPoint.Purpose maps to contact.telecom.use
+  OrganizationContact.ContactPoint.PriorityRank maps to contact.telecom.rank
+  OrganizationContact.ContactPoint.EffectiveTimePeriod maps to contact.telecom.period
 
 </pre>

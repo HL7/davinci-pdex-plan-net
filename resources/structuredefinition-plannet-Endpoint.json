@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint",
   "name": "Endpoint",
   "status": "draft",
-  "date": "2019-08-19",
+  "date": "2019-08-20",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -695,7 +695,8 @@
             "identity": "servd",
             "map": "./StartDate and ./EndDate"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Endpoint.identifier.assigner",
@@ -733,7 +734,8 @@
             "identity": "servd",
             "map": "./IdentifierIssuingAuthority"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Endpoint.status",
@@ -1467,6 +1469,11 @@
         "mustSupport": true
       },
       {
+        "id": "Endpoint.identifier.period",
+        "path": "Endpoint.identifier.period",
+        "mustSupport": true
+      },
+      {
         "id": "Endpoint.identifier.assigner",
         "path": "Endpoint.identifier.assigner",
         "type": [
@@ -1476,7 +1483,8 @@
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Endpoint.status",

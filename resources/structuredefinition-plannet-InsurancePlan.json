@@ -3,12 +3,12 @@
   "id": "plannet-InsurancePlan",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>InsurancePlan Profile</b></p>\n  <p>A InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\n\nInsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.InsurancePlan maps to InsurancePlan:\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  InsurancePlanStatus maps to status\n  InsurancePlanType maps to type\n  InsurancePlanName maps to name\n  InsurancePlanAlias maps to alias\n  OwnedBy maps to ownedBy\n  Period maps to period\n  CoverageArea maps to coverageArea\n  AdministeredBy maps to administeredBy\n  InsurancePlanContact maps to contact\n  InsurancePlanContact.HumanName.Purpose maps to contact.name.use\n  InsurancePlanContact.HumanName.Name maps to contact.name.text\n  InsurancePlanContact.HumanName.FamilyName maps to contact.name.family\n  InsurancePlanContact.HumanName.GivenName maps to contact.name.given\n  InsurancePlanContact.HumanName.Prefix maps to contact.name.prefix\n  InsurancePlanContact.HumanName.Suffix maps to contact.name.suffix\n  InsurancePlanContact.HumanName.EffectiveTimePeriod maps to contact.name.period\n  InsurancePlanContact.ContactPoint.TelecomNumberOrAddress maps to contact.telecom.value\n  InsurancePlanContact.ContactPoint.Purpose maps to contact.telecom.use\n  InsurancePlanContact.ContactPoint.PriorityRank maps to contact.telecom.rank\n  InsurancePlanContact.ContactPoint.EffectiveTimePeriod maps to contact.telecom.period\n  InsurancePlanContact.ContactPoint.Type maps to contact.telecom.system\n  InsurancePlanNetwork maps to network\n  InsurancePlanEndpoint maps to endpoint\n  constrain ownedBy to 1..1\n  constrain plan to 0..0\n  constrain coverage to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>InsurancePlan Profile</b></p>\n  <p>A InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\n\nInsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.InsurancePlan maps to InsurancePlan:\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  InsurancePlanStatus maps to status\n  InsurancePlanType maps to type\n  InsurancePlanName maps to name\n  InsurancePlanAlias maps to alias\n  OwnedBy maps to ownedBy\n  Period maps to period\n  CoverageArea maps to coverageArea\n  AdministeredBy maps to administeredBy\n  InsurancePlanContact maps to contact\n  InsurancePlanContact.ContactPurpose maps to contact.purpose\n  InsurancePlanContact.HumanName maps to contact.name\n  InsurancePlanContact.HumanName.Purpose maps to contact.name.use\n  InsurancePlanContact.HumanName.Name maps to contact.name.text\n  InsurancePlanContact.HumanName.FamilyName maps to contact.name.family\n  InsurancePlanContact.HumanName.GivenName maps to contact.name.given\n  InsurancePlanContact.HumanName.Prefix maps to contact.name.prefix\n  InsurancePlanContact.HumanName.Suffix maps to contact.name.suffix\n  InsurancePlanContact.HumanName.EffectiveTimePeriod maps to contact.name.period\n  InsurancePlanContact.ContactPoint maps to contact.telecom\n  InsurancePlanContact.ContactPoint.TelecomNumberOrAddress maps to contact.telecom.value\n  InsurancePlanContact.ContactPoint.Purpose maps to contact.telecom.use\n  InsurancePlanContact.ContactPoint.PriorityRank maps to contact.telecom.rank\n  InsurancePlanContact.ContactPoint.EffectiveTimePeriod maps to contact.telecom.period\n  InsurancePlanContact.ContactPoint.Type maps to contact.telecom.system\n  TAvailableTime maps to contact.telecom.extension\n  TViaIntermediary maps to contact.telecom.extension\n  InsurancePlanNetwork maps to network\n  InsurancePlanEndpoint maps to endpoint\n  constrain ownedBy to 1..1\n  constrain plan to 0..0\n  constrain coverage to 0..0\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan",
   "name": "InsurancePlan",
   "status": "draft",
-  "date": "2019-08-19",
+  "date": "2019-08-20",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -1123,7 +1123,8 @@
             "identity": "rim",
             "map": "./type"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.contact.name",
@@ -1150,7 +1151,8 @@
             "identity": "rim",
             "map": "./name"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.contact.name.id",
@@ -1513,7 +1515,8 @@
             "identity": "rim",
             "map": "./telecom"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.contact.telecom.id",
@@ -1584,6 +1587,54 @@
             "map": "n/a"
           }
         ]
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.extension:tavailabletime",
+        "path": "InsurancePlan.contact.telecom.extension",
+        "definition": "AvailableTime indicates when an organization is available for contact",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "tavailabletime",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.extension:tviaintermediary",
+        "path": "InsurancePlan.contact.telecom.extension",
+        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "tviaintermediary",
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.contact.telecom.system",
@@ -3435,8 +3486,14 @@
         "mustSupport": true
       },
       {
+        "id": "InsurancePlan.contact.purpose",
+        "path": "InsurancePlan.contact.purpose",
+        "mustSupport": true
+      },
+      {
         "id": "InsurancePlan.contact.name",
-        "path": "InsurancePlan.contact.name"
+        "path": "InsurancePlan.contact.name",
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.contact.name.use",
@@ -3475,7 +3532,56 @@
       },
       {
         "id": "InsurancePlan.contact.telecom",
-        "path": "InsurancePlan.contact.telecom"
+        "path": "InsurancePlan.contact.telecom",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.extension:tavailabletime",
+        "path": "InsurancePlan.contact.telecom.extension",
+        "definition": "AvailableTime indicates when an organization is available for contact",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "tavailabletime",
+        "mustSupport": true
+      },
+      {
+        "id": "InsurancePlan.contact.telecom.extension:tviaintermediary",
+        "path": "InsurancePlan.contact.telecom.extension",
+        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "tviaintermediary",
+        "mustSupport": true
       },
       {
         "id": "InsurancePlan.contact.telecom.system",

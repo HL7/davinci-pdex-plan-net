@@ -3,14 +3,14 @@
   "id": "plannet-Location",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Location Profile</b></p>\n  <p>A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Location maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-location:\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  TViaIntermediary maps to telecom.extension\n  TAvailableTime maps to telecom.extension\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  LocationStatus maps to status\n  LocationType maps to type\n  LocationName maps to name\n  LocationAlias maps to alias\n  LocationDescription maps to description\n  LocationTelecom maps to telecom\n  LocationTelecom.ContactPoint.Purpose maps to telecom.use\n  LocationTelecom.ContactPoint.Type maps to telecom.system\n  LocationTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  LocationTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  LocationTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  LocationAddress maps to address\n  LocationPhysicalType maps to physicalType\n  LocationPosition maps to position\n  LocationHoursOfOperation maps to hoursOfOperation\n  LocationHoursOfOperation.AvailableTime.DaysOfWeek maps to hoursOfOperation.daysOfWeek\n  LocationHoursOfOperation.AvailableTime.AllDay maps to hoursOfOperation.allDay\n  LocationHoursOfOperation.AvailableTime.AvailableStartTime maps to hoursOfOperation.openingTime\n  LocationHoursOfOperation.AvailableTime.AvailableEndTime maps to hoursOfOperation.closingTime\n  AvailabilityExceptions maps to availabilityExceptions\n  LocationEndpoint maps to endpoint\n  ManagingOrganization maps to managingOrganization\n  PartOfLocation maps to partOf\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Location Profile</b></p>\n  <p>A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Location maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-location:\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  TViaIntermediary maps to telecom.extension\n  TAvailableTime maps to telecom.extension\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  LocationStatus maps to status\n  LocationType maps to type\n  LocationName maps to name\n  LocationAlias maps to alias\n  LocationDescription maps to description\n  LocationTelecom maps to telecom\n  LocationTelecom.ContactPoint.Purpose maps to telecom.use\n  LocationTelecom.ContactPoint.Type maps to telecom.system\n  LocationTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  LocationTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  LocationTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  LocationAddress maps to address\n  LocationPhysicalType maps to physicalType\n  LocationPosition maps to position\n  LocationHoursOfOperation.AvailableTime maps to hoursOfOperation\n  LocationHoursOfOperation.AvailableTime.DaysOfWeek maps to hoursOfOperation.daysOfWeek\n  LocationHoursOfOperation.AvailableTime.AllDay maps to hoursOfOperation.allDay\n  LocationHoursOfOperation.AvailableTime.AvailableStartTime maps to hoursOfOperation.openingTime\n  LocationHoursOfOperation.AvailableTime.AvailableEndTime maps to hoursOfOperation.closingTime\n  AvailabilityExceptions maps to availabilityExceptions\n  LocationEndpoint maps to endpoint\n  ManagingOrganization maps to managingOrganization\n  PartOfLocation maps to partOf\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location",
   "name": "Location",
   "title": "plannet-Location",
   "status": "active",
   "experimental": false,
-  "date": "2019-08-19",
+  "date": "2019-08-20",
   "publisher": "HL7 Pharmacy WG",
   "contact": [
     {
@@ -2415,7 +2415,8 @@
             "identity": "rim",
             "map": ".effectiveTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Location.hoursOfOperation.allDay",
@@ -2441,7 +2442,8 @@
             "identity": "rim",
             "map": ".effectiveTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Location.hoursOfOperation.openingTime",
@@ -2467,7 +2469,8 @@
             "identity": "rim",
             "map": ".effectiveTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Location.hoursOfOperation.closingTime",
@@ -2493,7 +2496,8 @@
             "identity": "rim",
             "map": ".effectiveTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Location.availabilityExceptions",
@@ -2812,6 +2816,26 @@
       {
         "id": "Location.hoursOfOperation",
         "path": "Location.hoursOfOperation",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.hoursOfOperation.daysOfWeek",
+        "path": "Location.hoursOfOperation.daysOfWeek",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.hoursOfOperation.allDay",
+        "path": "Location.hoursOfOperation.allDay",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.hoursOfOperation.openingTime",
+        "path": "Location.hoursOfOperation.openingTime",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.hoursOfOperation.closingTime",
+        "path": "Location.hoursOfOperation.closingTime",
         "mustSupport": true
       },
       {
