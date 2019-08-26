@@ -1,3 +1,26 @@
+---
+# jekyll header
+---
+{% include header.html %}
+
+<!-- ============BreadCrumb=============== -->
+
+<div id="segment-breadcrumb" class="segmnt">
+  <!-- segment-breadcrumb -->
+  <div class="container">
+    <!-- container -->
+    <ul class="breadcrumb">
+      <li title="Home"><a href="index.html"><b>Home</b></a></li>
+    </ul>
+  </div>
+  <!-- /container -->
+</div>
+<!-- /segment-breadcrumb -->
+
+{% include container-start.html %}
+
+<!-- ============CONTENT CONTENT=============== -->
+
 <h1 id="PlanNet-Directory">Payer Directory Implementation Guide</h1>
 <h2 id="Introduction">Introduction</h2>
 <p>The Payer Directory Implementation Guide (Provider Directory IG) is based on <a href="http://build.fhir.org/">FHIR R4.0</a>. It was developed in cooperation with the Da Vinci Project and the the <a href="http://www.healthit.gov/newsroom/about-onc">Office of the National Coordinator for Health Information Technology (ONC)</a> with guidance from HL7 International, the Patient Administration Workgroup, and the HL7 US Realm Steering Committee.</p>
@@ -302,3 +325,9 @@ The location of the services could be virtual, as with telemedicine services.
 <li>Provider Directory actors <em>SHALL</em> conform to <a href="http://hl7.org/fhir/STU3/security.html#http">FHIR Communications</a></li>
 </ul>
 
+
+
+<!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+{% include footer.html %}
