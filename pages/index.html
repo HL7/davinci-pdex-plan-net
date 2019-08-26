@@ -1,85 +1,60 @@
----
-# jekyll header
----
-{% include header.html %}
-
-<!-- ============BreadCrumb=============== -->
-
-<div id="segment-breadcrumb" class="segmnt">
-  <!-- segment-breadcrumb -->
-  <div class="container">
-    <!-- container -->
-    <ul class="breadcrumb">
-      <li title="Home"><a href="index.html"><b>Home</b></a></li>
-    </ul>
-  </div>
-  <!-- /container -->
-</div>
-<!-- /segment-breadcrumb -->
-
-{% include container-start.html %}
-
-<!-- ============CONTENT CONTENT=============== -->
-
 <h1 id="PlanNet-Directory">Payer Directory Implementation Guide</h1>
 <h2 id="Introduction">Introduction</h2>
 <p>The Payer Directory Implementation Guide (Provider Directory IG) is based on <a href="http://build.fhir.org/">FHIR R4.0</a>. It was developed in cooperation with the Da Vinci Project and the the <a href="http://www.healthit.gov/newsroom/about-onc">Office of the National Coordinator for Health Information Technology (ONC)</a> with guidance from HL7 International, the Patient Administration Workgroup, and the HL7 US Realm Steering Committee.</p>
 <p>It describes the architectural considerations for a payer to share their provider directory. We have strived to make this guide as broadly applicable as possible. However, every implementation may not use all of the content in this guide. It serves as a &ldquo;standard&rdquo; for the exchange of provider data, while describing additional data elements and capabilities that support more robust implementations.</p>
-<p>For more information on the history of Payer Directory see the <a href="http://build.fhir.org/ig/HL7/VhDir/change-notes.html">Payer Directory change notes</a>.</p>
-<h2 id="Conformance">Payer Directory Conformance Requirements</h2>
-<p><b> need PlanNet Cap Statement independent of VhDIR,right</b></p>
-<p>The <a href="http://build.fhir.org/ig/HL7/VhDir/capstatements.html">Capability Statements Section</a> outlines conformance requirements for Payer Directory Servers and Client applications, identifying the specific profiles, RESTful operations and search parameters that need to be supported.</p>
-<p>Note: The individual Payer Directory profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the Payer Directory actors.</p>
-<p>Primary Authors: Dan Chaput, Alex Kontur, Brian Postlethwaite, Bob Dieterle/b></p> 
-<h1 id="Contents">Contents</h1>
-<ul>
-<li><a href="#Background">Background</a></li>
-<li><a href="#healthcare-directory-vs-provider-directory">Healthcare Directory vs. Provider Directory</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/general-guidance.html#oncfha-healthcare-directory-effort">ONC/FHA Healthcare Directory Effort</a></li>
-<li><a href="#Relation">Relation to US Core and other IGs</a></li>
-<li><a href="#Model">The Payer Directory Data Model</a></li>
-<li><a href="#overview">Overview of Payer Directory - Resource Relationships</a>
-<ul>
-<li><a href="#practitioner">Practitioner</a></li>
-<li><a href="#practitioner-role">Practitioner Role</a></li>
-<li><a href="#organization-affiliation">Organization Affiliation</a></li>
-<li><a href="#insurance-plan"> Insurance Plan</a></li>
-<li><a href="#endpoint">Endpoint</a></li>
-<li><a href="#location"> Location</a></li>
-<li><a href="#healthcare-service">HealthcareService</a></li>
-<li><a href="#network"> Network</a></li></ul>
-</li>
-</ul>
+
+
+<a href="Scope.png">VhDir and Plan-net Implementation Guide Scopes</a>
+<img src="Scope.png" alt="Scope" />
+<p><b>Primary Authors</b>: Dan Chaput, Alex Kontur, Brian Postlethwaite, Bob Dieterle</p> 
+<h2 id="Relation">Relation to US Core and other IGs</h2>
+<p>This implementation guide was written for a US audience and profiles resources from the R4 version of the US Core IG, where available (Practitioner, PractitionerRole, Organization and Location), and otherwise from R4 (OrganizationAffiliation, HealthCareService, Endpoint).   Alignment with VhDir is maintained by using extensions from VhDir where possible.
+</p>
+
 <h2 id="Background">Background</h2>
 <p>Provider directories play a critical role in enabling identification of individual providers and provider organizations, as well as characteristics about them. Provider directories support a variety of use cases, including:</p>
-<ul>
-<li>Provider selection</li>
-<li>Health plan enrollment</li>
-<li>Healthcare planning</li>
-<li>Electronic endpoint discovery</li>
-</ul>
-<h2 id="Relation">Relation to US Core and other IGs</h2>
-<p>This implementation guide was written for a US audience. We expect different jurisdictions considering implementing a provider directory will design their implementations in accordance with jurisdictional requirements, such as national profiles/IGs. In the United States, for example, we align with the R4 version of the US Core IG.
 
-</p>
-<h2 id="healthcare-directory-vs-provider-directory">Healthcare Directory vs Provider Directory</h2> 
-<p></p>
-<h2 id="Model">The Payer Directory Data Model</h2>
-<p>To determine which resources to profile, extensions to create, etc. we reviewed a number of use cases. 
-    The following are relevant to this implementation guide:</p>
 <ul>
+
+<li>Patient/Payer focused
+<ul>
+<li>Find provider accessibility information (specialty, office hours, languages spoken, taking patients) - enables individuals and consumers to find contact and other accessibility information for individual healthcare providers and/or healthcare organizations</li>
+<li>Relationship between provider and insurance plan (insurance accepted) or plan and provider (network) - enables individual healthcare providers, organizations, and payers to discover the relationships between providers, organizations, and payers, as well as additional details about the relationships and entities involved</li>
+</ul>
 <li>Basic Information Exchange
 <ul>
 <li>Enable electronic exchange (e.g. discovery of electronic endpoints such as IHE/EHR endpoints, FHIR server URLs, Direct addresses) - enables the electronic exchange of health information by supporting the ability to discover electronic service information including electronic endpoints or electronic addresses</li>
 <li>Find an individual and/or organization (even if no electronic endpoint is available) - enables users to find contact and other identifying information about healthcare organizations and individual healthcare providers</li>
 </ul>
 </li>
-<li>Patient/Payer focused
-<ul>
-<li>Find provider accessibility information (specialty, office hours, languages spoken, taking patients) - enables individuals and consumers to find contact and other accessibility information for individual healthcare providers and/or healthcare organizations</li>
-<li>Relationship between provider and insurance plan (insurance accepted) or plan and provider (network) - enables individual healthcare providers, organizations, and payers to discover the relationships between providers, organizations, and payers, as well as additional details about the relationships and entities involved</li>
-</ul>
 </li>
+</ul>
+<h2 id="usecase">UseCases</h2>
+<ul>
+<li>Find Information about a Specific Practitioner</li>
+<ul>
+<li>Lookup by Name</li>
+<li>Lookup by NPI</li>
+<p>
+NPI = 1237551547      GET https://davinci-plan-net-ri.logicahealth.org/fhir/Practitioner?identifier=1237551547
+<p>
+https://davinci-plan-net-ri.logicahealth.org/fhir/PractitionerRole?practitioner.identifier=1235733566
+    </p>
+</p>
+<li>What Insurance PLans does a Practitioner Accept</li>
+</ul>
+<li>Find a Practitioner based on Properties</li>
+<ul>
+<li>Find a Specialist who accepts my insurance and is affiliated with my local hospital</li>
+<li>Find a SPecialist who has office hours on Wednesdays</li>
+<li>Find a practitioner near me who accepts my insurance and is accepting new patients</li>
+<li>Find a female practitioner near me who speaks spanish</li>
+</ul>
+<li>Healthcare Services</li>
+<ul>
+<li>Who provides opthamology services in my area</li>
+<li>What locations provide speciality services for my local hospital network</li>
+</ul>
 </ul>
 <h2 id="overview">Overview of Payer Directory - Resource Relationships</h2>
 <p>Note: the following diagrams provide a high-level view of the relationships between resources used in this IG. 
@@ -100,269 +75,32 @@
 <img src="OrganizationAffiliation.png" alt="Organization Affiliation"  width="30%" height="30%"/>
 <p>&nbsp;</p>
 <h3 id="insurance-plan">InsurancePlan</h3>
-<p>A network is a group of practitioners and organizations that provide healthcare services for individuals enrolled in a health insurance product/plan (typically on behalf of a payer).</p>
+<p>
+InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.
+</p>
 <p><strong>Figure 4: InsurancePlan </strong></p>
 <img src="InsurancePlan.png" alt="Insurance Plan" width="30%" height="30%"/>
 <p>&nbsp;</p>
 <h3 id="healthcare-service">Healthcare Service </h3>
+<p>
+The HealthcareService resource is used to describe a single healthcare service or category of services that are provided by an organization at a location.
+The location of the services could be virtual, as with telemedicine services.
+</p>
 <p><strong>Figure 5: Healthcare Service </strong></p>
 <img src="HealthcareService.png" alt = "HealthcareService" width="30%" height="30%"/>
 <h3 id="endpoint">Endpoint</h3>
+<p>
+    An endpoint describes the technical details of a location that can be connected to for the delivery/retrieval of information. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner.
+</p>
 <h3 id="location">Location</h3>
+<p>
+ A Location includes both incidental locations (a place which is used for healthcare without prior designation or authorization) and dedicated, formally appointed locations. Locations may be private, public, mobile or fixed and scale from small freezers to full hospital buildings or parking garages.   
+</p>
 <h3 id="network">Network</h3>
+<p>A network is a group of practitioners and organizations that provide healthcare services for individuals enrolled in a health insurance product/plan (typically on behalf of a payer).</p>
 <p><strong>Figure 6: Network </strong></p>
 <img src="Network.png" alt="Network" width="30%" height="30%"/>
 
-<h1>Technical Guidance for Provider Directory Implementations</h1>
-<h2></h2>Contents</strong></h2>
-<ul>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/technical-guidance.html#validated-healthcare-directory-concept-diagram">Provider Directory Diagram</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/technical-guidance.html#exchange">Exchange</a></li>
-</ul>
-<p>Provider Directory Concept Diagram</p>
-<p>This diagram depicts the high-level conceptual design of a central source of Payer&rsquo;s provider directory data.</p>
-<p><strong>Figure 1: Provider Directory Diagram</strong></p>
-<p>Exchange</p>
-<p>The primary focus of this implementation guide is a RESTful API for obtaining data from a Payer Directory. The exchange API only supports a one-directional flow of information from a Payer Directory into local environments (i.e. HTTP GETs).</p>
-<p>Any Payer Directory IG conformant implementation:</p>
-<ul>
-<li>SHALL support profiles: Organization, Practitioner, Location, PractitionerRole, Endpoint,</li>
-<li>SHOULD support profiles: HealthcareService, CareTeam, Network, InsurancePlan, OrganizationAffilliation</li>
-</ul>
-<p>In profiles, the &ldquo;Must Support&rdquo; flag indicates if data exists for the specific property, then it must be represented as defined in the Provider Directory IG. If the element is not available from a system, this is not required, and may be omitted.</p>
-<p>Conceptually, this guide was written to describe the flow of information from a Payer&rsquo;s provider directory to third party application.</p>
-<p>Provider directories may contain a large amount of data that will not be relevant to all use cases or third party application needs. Therefore, the exchange API defines a number of search parameters to enable users to express the scope of a subset of data they care to access. For example, implementations are required to support searches for Organizations based on address, name/alias, and relationship to a parent organization. In general, parameters for selecting resources based on a business identifier, status, type, or relationship (i.e. reference) are required for all implementations. Most parameters may be used in combination with other parameters and support more &ldquo;advanced&rdquo; capabilities like modifiers and chains.</p>
-<p>The Provider Directory API currently supports one method for accessing directory data, a real-time RESTful Get. However, applications may need other capabilities to support different business needs. For instance, applications may need access to large amounts of Provider Directory data in a single session to either initially seed or refresh their local data repositories. Depending on the scope of data an application is trying to access, a real-time pull may not be the most effective method for acquiring large data sets. The FHIR specification provides support for <a href="http://build.fhir.org/async.html">asynchronous interactions</a>, which may be necessary for implementers to facilitate processing of large amounts of data.</p>
-<p>Bulk Data and Subscriptions</p>
-<p>Background</p>
-<p>Bulk data is a recent addition to the FHIR related specifications and has many uses. Primarily its for out of band data extraction for distribution.</p>
-<p>There are several basic parts to FHIR&rsquo;s bulk data extract</p>
-<ul>
-<li>The scope of data selection</li>
-<li>The format of the bulk data extract (nd-json) *</li>
-<li>The async operation request and status tracking (as these processes may take significant processing time) *</li>
-<li>Retrieval of the completed export</li>
-<li>Closing/cleanup of the completed export *</li>
-</ul>
-<p><em>(The items marked with * can be considered quite mature, and unlikely to change from this point)</em></p>
-<p>The bulk data had been balloted and was still being reconciled and at the time of publication of this guide, the current development version can be found here:</p>
-<p><a href="http://hl7.org/fhir/us/bulkdata/2019May/index.html">http://hl7.org/fhir/us/bulkdata/2019May/index.html</a></p>
-<p>The community discussions and questions around this draft specification are here:</p>
-<p><a href="https://chat.fhir.org/#narrow/stream/179250-bulk-data">https://chat.fhir.org/#narrow/stream/179250-bulk-data</a></p>
-<p>Healthcare Directory Bulk Data Specifics</p>
-<p>The scope of the data selection</p>
-<p>For the directory bulk data extraction, to request an entire copy of all content in the directory, the scope selection can be defined at the top level, and just specifying that we would like to retrieve all content for the specified resource types from the base of the FHIR server.</p>
-<p>GET [base]/$export?_type=Organization,Location,Practitioner,PractitionerRole,HealthcareService, ...</p>
-<p>A healthcare directory may curate such an extract on a nightly process, and just return this without needing to scan the live system, and the value returned in the&nbsp;transactionTime in the result should contain the timestamp at which this was generated (including timezone information), and that may be used in a subsequent call to retrieve changes since this point in time.</p>
-<p>Once a system has a complete set of data, it is usually more efficient to ask for changes since a point in time, in which case the request should use the value above (transactionTime) to update the local directory.</p>
-<p>GET [base]/$export?_type=Organization,Location,Practitioner, ... &amp;_since=[transactionTime]</p>
-<p>This behaves just the same as the initial request, with the exception of the content.</p>
-<p>We would expect that this is more likely to return the current information, rather than from a pre-generated snapshot, as the transactionTime could be anything.</p>
-<p>Format of the bulk data extract</p>
-<p>The bulk extract format is always an nd-json file (new-line delimited json), and each file can only contain 1 resource type in it, but can be spread across multiple files, with either a size limit or count limit imposed by the extracting system, not the requestor.</p>
-<p>The list of these files will be returned in the Complete status output, as described in the standard Bulk Data documentation.</p>
-<p>Starting the extract</p>
-<p>There are 2 options for starting the extract, one that is a single operation specifying all the content, and the other to be for a specific type only.</p>
-<p>Here we will only document the use of the global export, as an initial request.</p>
-<p>The initial request:</p>
-<pre><code>
-    GET [base]/$export?_type=Organization,Location,Practitioner,PractitionerRole,HealthcareService
-</code></pre>
-<p>with headers:</p>
-<p>Accept: application/fhir+json&lt;/code&gt; Authentication: Bearer [bearer token]&lt;/code&gt; Prefer: respond-async&lt;/code&gt;</p>
-<p>This will return either:</p>
-<ul>
-<li>HTTP status code of 4XX or 5XX with an OperationOutcome resource body if the request fails,</li>
-<li>HTTP status code of 202 Accepted when successful, with a Content-Location header with an absolute URI for subsequent status requests, and optionally an OperationOutcome in the resource body if desired</li>
-</ul>
-<p>Example Content-Location:&nbsp;<a href="http://example.org/status-tracking/request-123">http://example.org/status-tracking/request-123</a> (note that this is not necessarily a FHIR endpoint, and isn&rsquo;t a true FHIR resource)</p>
-<p>Tracking the status of the extract</p>
-<p>After a bulk data request has been started, the client MAY poll the URI provided in the Content-Location header.</p>
-<pre><code>
-    GET http://example.org/status-tracking/request-123
-</code></pre>
-<p>This will return:</p>
-<ul>
-<li>HTTP status code of 202 Accepted when still in progress (and no body returned)</li>
-<li>HTTP status code of 5XX when a fatal error occurs, and an OperationOutcome in json format for the body with the detail of the error <em>(Note this is a fatal error in processing, not some error encountered while processing files - a complete extract can contain errors)</em></li>
-<li>HTTP status code of 200 OK when the processing is complete, and the result is a json object as noted in the specification (and an example included below)</li>
-</ul>
-<p>Refer to the build data specification for details of the completion event:</p>
-<p><a href="https://github.com/smart-on-fhir/fhir-bulk-data-docs/blob/master/export.md#response---complete-status">https://github.com/smart-on-fhir/fhir-bulk-data-docs/blob/master/export.md#response&mdash;complete-status</a></p>
-<p>{ "transactionTime": "[instant]", "request": "[base]/$export?_type=Organization,Location,Practitioner,PractitionerRole,HealthcareService", "requiresAccessToken": true, "output": [ { "type": "Practitioner", "url": "http://serverpath2/practitioner_file_1.ndjson", "count": 10000 }, { "type": "Practitioner", "url": "http://serverpath2/practitioner_file_2.ndjson", "count": 3017 }, { "type": "Location", "url": "http://serverpath2/location_file_1.ndjson", "count": 4182 } ], // Note that this deletions property is a proposal, not part of the bulk data spec. "deletions": [ { "type": "PractitionerRole", "url": "http://serverpath2/practitionerrole_deletions_1.ndjson", // the bundle will include the total number of deletions in the file "count": 23 // this is the number of bundles in the file, not the number of resources deleted } ], "error": [ { "type": "OperationOutcome", "url": "http://serverpath2/err_file_1.ndjson", "count": 439 } ] }</p>
-<p>Retrieving the complete extract</p>
-<p>Once the tracking of the extract returns a 200 OK completed status, the body of the result will include the list of prepared files that you can download.</p>
-<p>Then each of these URLs can be downloaded by a simple get, ensuring to pass the Bearer token if the result indicates requiresAccessToken = true</p>
-<p>While downloading, also recommend including the header Accept-Encoding: gzip to compress the content as it comes down.</p>
-<pre><code>
-    GET http://serverpath2/location_file_1.ndjson
-</code></pre>
-<p>Finishing the extract</p>
-<p>This is the simplest part of the process, and that is just calling DELETE on the status tracking URL.</p>
-<p>DELETE http://example.org/status-tracking/request-123</p>
-<p>This then tells the server that we are all finished with the data, and it can be deleted/cleaned up. The server may also include some time based limits where it may only keep it for a set period of time before it automatically cleans it up.</p>
-<p>Resource Profiles and Extensions</p>
-
-<p>ConceptMaps defined as part of the Payer Directory Implementation Guide</p>
-<ul>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/ConceptMap-qualification-status.html">Provider Directory Qualification Status Value Set &ndash; Status Code Mapping</a></li>
-</ul>
-<h2>Operations and Search Parameters</h2>
-<p>The following search parameters have been defined for the Payer Directory Implementation Guide. For more information on the <a href="http://hl7.org/fhir/2018Jan/search.html">FHIR RESTful search api</a> and the standard <a href="http://hl7.org/fhir/2018Jan/searchparameter-registry.html">Search Param Registry</a> see the FHIR specification.</p>
-<p>Search Parameter</p>
-<p><strong>Endpoint</strong></p>
-<ul>
-<li>inherited from http://hl7.org/fhir/endpoint.html#search 
-<ul>
-<li>connection-type/li>
-<li>organization</li>
-<li>payload-type</li>
-<li>name</li>
-<li>status</li>
-<li>identifier</li>
-</ul>
-</li>
-<li><a href="./SearchParameter-endpoint-identifier-assigner.html">identifier-assigner</a></li>
-<li><a href="./SearchParameter-endpoint-mime-type.html">mime-type</a></li>
-<li><a href="./SearchParameter-endpoint-usecase-standard.html">usecase-standard</a></li>
-<li><a href="./SearchParameter-endpoint-usecase-type.html">usecase-type</a></li>
-<li><a href="./SearchParameter-endpoint-via-intermediary.html">endpoint-via-intermediary</a></li>  
-</ul>
-<p><strong>HealthcareService</strong></p>
-<ul>
-<li>inherited from http://hl7.org/fhir/healthcareservice.html#search 
-<ul>
-<li>active/li>
-<li>characteristic</li>
-<li>coverage-area</li>
-<li>endpoint</li>
-<li>identifier</li>
-<li>location</li>
-<li>name/li>
-<li>organization</li>
-<li>program</li>
-<li>service-category</li>
-<li>service-type</li>
-<li>speciality</li>
-</ul>
-</li>
-<li><a href="./SearchParameter-healthcareservice-new-patient.html">new-patient</a></li>
-<li><a href="./SearchParameter-healthcareservice-new-patient-network.html">new-patient-network</a></li>
-<li><a href="./SearchParameter-healthcareservice-eligibility.html">eligibility</a></li>
-<li><a href="./SearchParameter-healthcareservice-identifier-assigner.html">identifier-assigner</a></li>
-<li><a href="./SearchParameter-healthcareservice-via-intermediary.html">via-intermediary</a></li>
-</ul>
-<p><strong>Location</strong></p>
-<ul>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-location-accessibility.html">accessibility</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-location-address.html">address</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-location-endpoint.html">endpoint</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-location-new-patient.html">new-patient</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-location-new-patient-network.html">new-patient-network</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-location-organization.html">organization</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-location-partof.html">partof</a></li>
-<li><a href="http://hl7.org/fhir/location.html#positional">near</a> http://hl7.org/fhir/SearchParameter/Location-near</li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-location-contains.html">contains</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-location-status.html">status</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-location-type.html">type</a></li>
-</ul>
-<p><strong>Organization</strong></p>
-<ul>
-<li>active http://hl7.org/fhir/SearchParameter/Organization-active</li>
-<li>address-use http://hl7.org/fhir/SearchParameter/Organization-address-use</li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-address.html">address</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-address-city.html">address-city</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-address-country.html">address-country</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-address-postalcode.html">address-postalcode</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-address-state.html">address-state</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-endpoint.html">endpoint</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-name.html">name</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-partof.html">partof</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-qualification-code.html">qualification-code</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-qualification-issuer.html">qualification-issuer</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-qualification-status.html">qualification-status</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-qualification-wherevalid-code.html">qualification-wherevalid-code</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-qualification-wherevalid-location.html">qualification-wherevalid-location</a></li>
-</ul>
-<p><strong>Network</strong></p>
-<ul>
-<li>active http://hl7.org/fhir/SearchParameter/Organization-active</li>
-<li>address-use http://hl7.org/fhir/SearchParameter/Organization-address-use</li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-coverage-area.html">coverage-area</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-address.html">address</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-address-city.html">address-city</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-address-country.html">address-country</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-address-postalcode.html">address-postalcode</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-address-state.html">address-state</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-endpoint.html">endpoint</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-name.html">name</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organization-partof.html">partof</a></li>
-</ul>
-<p><strong>OrganizationAffiliation</strong></p>
-<ul>
-<li>active http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-active</li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organizationaffiliation-endpoint.html">endpoint</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organizationaffiliation-location.html">location</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organizationaffiliation-network.html">network</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organizationaffiliation-participating-organization.html">participating-organization</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organizationaffiliation-primary-organization.html">primary-organization</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organizationaffiliation-role.html">role</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organizationaffiliation-service.html">service</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-organizationaffiliation-specialty.html">specialty</a></li>
-</ul>
-<p><strong>Practitioner</strong></p>
-<ul>
-<li>active http://hl7.org/fhir/SearchParameter/Practitioner-active</li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitioner-endpoint.html">endpoint</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitioner-name.html">name</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitioner-family-name.html">family</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitioner-given-name.html">given</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitioner-phonetic.html">phonetic</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitioner-via-intermediary.html">via-intermediary</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitioner-qualification-code.html">qualification-code</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitioner-qualification-issuer.html">qualification-issuer</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitioner-qualification-period.html">qualification-period</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitioner-qualification-status.html">qualification-status</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitioner-qualification-wherevalid-code.html">qualification-wherevalid-code</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitioner-qualification-wherevalid-location.html">qualification-wherevalid-location</a></li>
-</ul>
-<p><strong>PractitionerRole</strong></p>
-<ul>
-<li>active http://hl7.org/fhir/SearchParameter/PractitionerRole-active</li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-endpoint.html">endpoint</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-location.html">location</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-network.html">network</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-new-patient.html">new-patient</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-new-patient-network.html">new-patient-network</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-organization.html">organization</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-practitioner.html">practitioner</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-role.html">role</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-service.html">service</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-specialty.html">specialty</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-qualification-code.html">qualification-code</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-qualification-issuer.html">qualification-issuer</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-qualification-status.html">qualification-status</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-qualification-wherevalid-code.html">qualification-wherevalid-code</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-practitionerrole-qualification-wherevalid-location.html">qualification-wherevalid-location</a></li>
-</ul>
-<p><strong>InsurancePlan</strong></p>
-<ul>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-coverage-area.html">coverage-area</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-administered-by.html">administered-by</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-coverage-benefit-type.html">coverage-benefit-type</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-coverage-limit-value.html">coverage-limit-value</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-coverage-network.html">coverage-network</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-coverage-type.html">coverage-type</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-identifier.html">identifier</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-network.html">network</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-type.html">type</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-name.html">name</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-owned-by.html">owned-by</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-plan-coverage-area.html">plan-coverage-area</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-plan-identifier.html">plan-identifier</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-plan-network.html">plan-network</a></li>
-<li><a href="http://build.fhir.org/ig/HL7/VhDir/SearchParameter-insuranceplan-plan-type.html">plan-type</a></li>
-</ul>
 <h1>Provider Directory Server</h1>
 <p>This Capability Statement defines the expected capabilities of a Payer directory FHIR server conforming to the Payer Directory Implementation Guide.</p>
 <table width="152">
@@ -564,9 +302,3 @@
 <li>Provider Directory actors <em>SHALL</em> conform to <a href="http://hl7.org/fhir/STU3/security.html#http">FHIR Communications</a></li>
 </ul>
 
-
-
-<!-- ==============END CONTENT END CONTENT=================== -->
-
-{% include container-end.html %}
-{% include footer.html %}
