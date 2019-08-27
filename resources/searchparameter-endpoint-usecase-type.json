@@ -3,12 +3,12 @@
   "id": "endpoint-usecase-type",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-usecase-type</b></p><p><b>name</b>: Plannet_sp_endpoint_usecase_type</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select endpoints that support the type of services indicated by the specified code</p><p><b>code</b>: usecase-type</p><p><b>base</b>: Endpoint</p><p><b>type</b>: TOKEN</p><p><b>expression</b>: Endpoint.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase').extension('type')</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: TEXT</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: endpoint-usecase-type</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-usecase-type\">http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-usecase-type</a></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: Plannet_sp_endpoint_usecase_type</p><p><b>status</b>: active</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select endpoints that support the type of services indicated by the specified code</p><p><b>code</b>: usecase-type</p><p><b>base</b>: Endpoint</p><p><b>type</b>: token</p><p><b>expression</b>: Endpoint.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase').extension('type')</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: text</p></div>"
   },
-  "version": "0.2.0",
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-usecase-type",
+  "version": "0.2.0",
   "name": "Plannet_sp_endpoint_usecase_type",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23T00:00:00+00:00",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

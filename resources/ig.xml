@@ -125,6 +125,13 @@
       <resource>
           <exampleBoolean value="true"/>
           <reference>
+            <reference value="SearchParameter/endpoint-connection-type"/>
+          </reference>
+          <name value="Plannet_sp_endpoint_connection_type"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
             <reference value="SearchParameter/endpoint-identifier-assigner"/>
           </reference>
           <name value="Plannet_sp_endpoint_identifier_assigner"/>
@@ -132,9 +139,37 @@
       <resource>
           <exampleBoolean value="true"/>
           <reference>
+            <reference value="SearchParameter/endpoint-identifier"/>
+          </reference>
+          <name value="Plannet_sp_endpoint_identifier"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
             <reference value="SearchParameter/endpoint-mime-type"/>
           </reference>
           <name value="Plannet_sp_endpoint_mime_type"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/endpoint-organization"/>
+          </reference>
+          <name value="Plannet_sp_endpoint_organization"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/endpoint-payload-type"/>
+          </reference>
+          <name value="Plannet_sp_endpoint_payload_type"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/endpoint-status"/>
+          </reference>
+          <name value="Plannet_sp_endpoint_status"/>
       </resource>
       <resource>
           <exampleBoolean value="true"/>
@@ -160,6 +195,20 @@
       <resource>
           <exampleBoolean value="true"/>
           <reference>
+            <reference value="SearchParameter/healthcareservice-characteristic"/>
+          </reference>
+          <name value="Plannet_sp_healthcareservice_characteristic"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/healthcareservice-coverage-area"/>
+          </reference>
+          <name value="Plannet_sp_healthcareservice_coverage_area"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
             <reference value="SearchParameter/healthcareservice-eligibility"/>
           </reference>
           <name value="Plannet_sp_healthcareservice_eligibility"/>
@@ -167,9 +216,37 @@
       <resource>
           <exampleBoolean value="true"/>
           <reference>
+            <reference value="SearchParameter/healthcareservice-endpoint"/>
+          </reference>
+          <name value="Plannet_sp_healthcareservice_endpoint"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
             <reference value="SearchParameter/healthcareservice-identifier-assigner"/>
           </reference>
-          <name value="Pannet_sp_healthcareservice_identifier_assigner"/>
+          <name value="Plannet_sp_healthcareservice_identifier_assigner"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/healthcareservice-identifier"/>
+          </reference>
+          <name value="Plannet_sp_healthcareservice_identifier"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/healthcareservice-location"/>
+          </reference>
+          <name value="Plannet_sp_healthcareservice_location"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/healthcareservice-name"/>
+          </reference>
+          <name value="Plannet_sp_healthcareservice_name"/>
       </resource>
       <resource>
           <exampleBoolean value="true"/>
@@ -184,6 +261,34 @@
             <reference value="SearchParameter/healthcareservice-new-patient"/>
           </reference>
           <name value="Plannet_sp_healthcareservice_new_patient"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/healthcareservice-organization"/>
+          </reference>
+          <name value="Plannet_sp_healthcareservice_organization"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/healthcareservice-service-category"/>
+          </reference>
+          <name value="Plannet_sp_healthcareservice_category"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/healthcareservice-service-type"/>
+          </reference>
+          <name value="Plannet_sp_healthcareservice_type"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/healthcareservice-specialty"/>
+          </reference>
+          <name value="Plannet_sp_healthcareservice_specialty"/>
       </resource>
       <resource>
           <exampleBoolean value="true"/>
@@ -209,9 +314,58 @@
       <resource>
           <exampleBoolean value="true"/>
           <reference>
+            <reference value="SearchParameter/insuranceplan-coverage-benefit-type"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_coverage_benefit_type"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/insuranceplan-coverage-limit-value"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_coverage_limit_value"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/insuranceplan-coverage-network"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_coverage_network"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/insuranceplan-coverage-type"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_coverage_type"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
             <reference value="SearchParameter/insuranceplan-endpoint"/>
           </reference>
           <name value="Plannet_sp_insuranceplan_endpoint"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/insuranceplan-general-cost-groupsize"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_general_cost_groupsize"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/insuranceplan-general-cost-type"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_general_cost_type"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/insuranceplan-general-cost-value"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_general_cost_value"/>
       </resource>
       <resource>
           <exampleBoolean value="true"/>
@@ -261,6 +415,55 @@
             <reference value="SearchParameter/insuranceplan-plan-network"/>
           </reference>
           <name value="Plannet_sp_insuranceplan_plan_network"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/insuranceplan-plan-type"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_plan_type"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/insuranceplan-specific-cost-benefit-type"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_specific_cost_benefit_type"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/insuranceplan-specific-cost-category"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_specific_cost_category"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/insuranceplan-specific-cost-cost-type"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_specific_cost_cost_type"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/insuranceplan-specific-cost-value"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_specific_cost_value"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/insuranceplan-status"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_status"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/insuranceplan-type"/>
+          </reference>
+          <name value="Plannet_sp_insuranceplan_type"/>
       </resource>
       <resource>
           <exampleBoolean value="true"/>
@@ -783,9 +986,72 @@
       <resource>
           <exampleBoolean value="true"/>
           <reference>
-            <reference value="Endpoint/direct321"/>
+            <reference value="SearchParameter/verificationresult-attestation-method"/>
           </reference>
-          <name value="Example: direct321"/>
+          <name value="Plannet_sp_verificationresult_attestation_method"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/verificationresult-attestation-onbehalfof"/>
+          </reference>
+          <name value="Plannet_sp_verificationresult_attestation_onbehalfof"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/verificationresult-attestation-who"/>
+          </reference>
+          <name value="Plannet_sp_verificationresult_attestation_who"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/verificationresult-primarysource-date"/>
+          </reference>
+          <name value="Plannet_sp_verificationresult_primarysource_date"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/verificationresult-primarysource-type"/>
+          </reference>
+          <name value="Plannet_sp_verificationresult_primarysource_type"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/verificationresult-primarysource-who"/>
+          </reference>
+          <name value="Plannet_sp_verificationresult_primarysource_who"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/verificationresult-status-date"/>
+          </reference>
+          <name value="Plannet_sp_verificationresult_status_date"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/verificationresult-target"/>
+          </reference>
+          <name value="Plannet_sp_verificationresult_target"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/verificationresult-validation-status"/>
+          </reference>
+          <name value="Plannet_sp_verificationresult_validation_status"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/verificationresult-validator-organization"/>
+          </reference>
+          <name value="Plannet_sp_verificationresult_validator_organization"/>
       </resource>
       <resource>
           <exampleBoolean value="true"/>
@@ -800,27 +1066,6 @@
             <reference value="HealthcareService/hcs-ws"/>
           </reference>
           <name value="Example: hcs-ws"/>
-      </resource>
-      <resource>
-          <exampleBoolean value="true"/>
-          <reference>
-            <reference value="HealthcareService/independencerehab1"/>
-          </reference>
-          <name value="Example: independencerehab1"/>
-      </resource>
-      <resource>
-          <exampleBoolean value="true"/>
-          <reference>
-            <reference value="HealthcareService/independencerehab2"/>
-          </reference>
-          <name value="Example: independencerehab2"/>
-      </resource>
-      <resource>
-          <exampleBoolean value="true"/>
-          <reference>
-            <reference value="InsurancePlan/insuranceplan1"/>
-          </reference>
-          <name value="Example: insuranceplan1"/>
       </resource>
       <resource>
           <exampleBoolean value="true"/>
@@ -898,34 +1143,6 @@
             <reference value="Organization/patriotppo"/>
           </reference>
           <name value="Example: patriotppo"/>
-      </resource>
-      <resource>
-          <exampleBoolean value="true"/>
-          <reference>
-            <reference value="OrganizationAffiliation/orgrole1"/>
-          </reference>
-          <name value="Example: orgrole1"/>
-      </resource>
-      <resource>
-          <exampleBoolean value="true"/>
-          <reference>
-            <reference value="OrganizationAffiliation/orgrole2"/>
-          </reference>
-          <name value="Example: orgrole2"/>
-      </resource>
-      <resource>
-          <exampleBoolean value="true"/>
-          <reference>
-            <reference value="Practitioner/practitioner1"/>
-          </reference>
-          <name value="Example: practitioner1"/>
-      </resource>
-      <resource>
-          <exampleBoolean value="true"/>
-          <reference>
-            <reference value="PractitionerRole/practitionerrole1"/>
-          </reference>
-          <name value="Example: practitionerrole1"/>
       </resource>
       <resource>
           <exampleBoolean value="true"/>
