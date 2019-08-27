@@ -3,12 +3,12 @@
   "id": "practitioner-qualification-period",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-period</b></p><p><b>name</b>: Plannet_sp_practitioner_qualification_period</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select Practitioners that have a qualification relevant to the date provided</p><p><b>code</b>: qualification-period</p><p><b>base</b>: Practitioner</p><p><b>type</b>: DATE</p><p><b>expression</b>: Practitioner.qualification.period</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: EXACT, CONTAINS</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: practitioner-qualification-period</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-period\">http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-period</a></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: Plannet_sp_practitioner_qualification_period</p><p><b>status</b>: active</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select Practitioners that have a qualification relevant to the date provided</p><p><b>code</b>: qualification-period</p><p><b>base</b>: Practitioner</p><p><b>type</b>: date</p><p><b>expression</b>: Practitioner.qualification.period</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: exact, contains</p></div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification-period",
   "version": "0.2.0",
   "name": "Plannet_sp_practitioner_qualification_period",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23T00:00:00+00:00",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

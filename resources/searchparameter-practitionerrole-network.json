@@ -3,12 +3,12 @@
   "id": "practitionerrole-network",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-network</b></p><p><b>name</b>: Plannet_sp_practitionerrole_network</p><p><b>status</b>: DRAFT</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select roles where the practitioner is a member of the specified health insurance provider network</p><p><b>code</b>: network</p><p><b>base</b>: PractitionerRole</p><p><b>type</b>: REFERENCE</p><p><b>expression</b>: PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference')</p><p><b>target</b>: Organization</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>chain</b>: identifier, name, partof</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: practitionerrole-network</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-network\">http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-network</a></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: Plannet_sp_practitionerrole_network</p><p><b>status</b>: active</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select roles where the practitioner is a member of the specified health insurance provider network</p><p><b>code</b>: network</p><p><b>base</b>: PractitionerRole</p><p><b>type</b>: reference</p><p><b>expression</b>: PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference')</p><p><b>target</b>: Organization</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>chain</b>: identifier, name, partof</p></div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-network",
   "version": "0.2.0",
   "name": "Plannet_sp_practitionerrole_network",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23T00:00:00+00:00",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

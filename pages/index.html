@@ -23,9 +23,18 @@
 
 <h1 id="PlanNet-Directory">Payer Directory Implementation Guide</h1>
 <h2 id="Introduction">Introduction</h2>
-<p>The Payer Directory Implementation Guide (Provider Directory IG) is based on <a href="http://build.fhir.org/">FHIR R4.0</a>. It was developed in cooperation with the Da Vinci Project and the the <a href="http://www.healthit.gov/newsroom/about-onc">Office of the National Coordinator for Health Information Technology (ONC)</a> with guidance from HL7 International, the Patient Administration Workgroup, and the HL7 US Realm Steering Committee.</p>
-<p>It describes the architectural considerations for a payer to share their provider directory. We have strived to make this guide as broadly applicable as possible. However, every implementation may not use all of the content in this guide. It serves as a &ldquo;standard&rdquo; for the exchange of provider data, while describing additional data elements and capabilities that support more robust implementations.</p>
-
+<p><p>The Payer Directory Implementation Guide is based the <a href="http://build.fhir.org/ig/HL7/VhDir/index.html"> 
+    Validated Healthcare Directory Implementation Guide (VHDir)</a>, 
+    an international standard. The VHDir authors developed the IG to support a conceptual, centralized, national source of healthcare 
+    data that would be used across multiple use cases. The “end users” of VHDir are local workflow implementations, as explained below. 
+    The Payer Directory Implementation Guide implements a subset of the VHDir IG, limiting the profiles to the Payer 
+    Use Cases (local workflow environments) it supports. Additionally, it constrains value sets to those required for US implementation.
+</p>
+<p>
+VHDir has not yet been profiled for US Implementation, nor been deployed. 
+The use of VhDir as the conceptual base for the Payer Directory Implementation Guide, including reuse by reference of a number of the extensions defined there, is intended to protect implementors of the Payer Directory IG from rework/remapping when the VHDir concept reaches implementation, and becomes a source of data for the Payer Directory.
+        
+</p>
 
 <a href="Scope.png">VhDir and Plan-net Implementation Guide Scopes</a>
 <img src="Scope.png" alt="Scope" />
