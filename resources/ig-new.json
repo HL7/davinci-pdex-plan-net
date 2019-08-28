@@ -1070,6 +1070,13 @@
     },
     {
       "reference" : {
+        "reference" : "Endpoint/direct321"
+      },
+      "name" : "Example: direct321",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "HealthcareService/ffcardiology"
       },
       "name" : "Example: ffcardiology",
@@ -1080,6 +1087,27 @@
         "reference" : "HealthcareService/hcs-ws"
       },
       "name" : "Example: hcs-ws",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "HealthcareService/independencerehab1"
+      },
+      "name" : "Example: independencerehab1",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "HealthcareService/independencerehab2"
+      },
+      "name" : "Example: independencerehab2",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "InsurancePlan/insuranceplan1"
+      },
+      "name" : "Example: insuranceplan1",
       "exampleBoolean" : true
     },
     {
@@ -1157,6 +1185,34 @@
         "reference" : "Organization/patriotppo"
       },
       "name" : "Example: patriotppo",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "OrganizationAffiliation/orgrole1"
+      },
+      "name" : "Example: orgrole1",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "OrganizationAffiliation/orgrole2"
+      },
+      "name" : "Example: orgrole2",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/practitioner1"
+      },
+      "name" : "Example: practitioner1",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "PractitionerRole/practitionerrole1"
+      },
+      "name" : "Example: practitionerrole1",
       "exampleBoolean" : true
     },
     {
