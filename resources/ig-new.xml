@@ -681,6 +681,27 @@
     </resource>
     <resource>
       <reference>
+        <reference value="SearchParameter/plannet-available-days"/>
+      </reference>
+      <name value="Plannet_sp_available_days"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/plannet-available-endtime"/>
+      </reference>
+      <name value="Plannet_sp_available_endtime"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/plannet-available-starttime"/>
+      </reference>
+      <name value="Plannet_sp_available_startime"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="SearchParameter/organization-type"/>
       </reference>
       <name value="Plannet_sp_organization_type"/>
