@@ -1066,6 +1066,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Endpoint/direct321"/>
+      </reference>
+      <name value="Example: direct321"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="HealthcareService/ffcardiology"/>
       </reference>
       <name value="Example: ffcardiology"/>
@@ -1076,6 +1083,27 @@
         <reference value="HealthcareService/hcs-ws"/>
       </reference>
       <name value="Example: hcs-ws"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="HealthcareService/independencerehab1"/>
+      </reference>
+      <name value="Example: independencerehab1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="HealthcareService/independencerehab2"/>
+      </reference>
+      <name value="Example: independencerehab2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="InsurancePlan/insuranceplan1"/>
+      </reference>
+      <name value="Example: insuranceplan1"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1153,6 +1181,34 @@
         <reference value="Organization/patriotppo"/>
       </reference>
       <name value="Example: patriotppo"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OrganizationAffiliation/orgrole1"/>
+      </reference>
+      <name value="Example: orgrole1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OrganizationAffiliation/orgrole2"/>
+      </reference>
+      <name value="Example: orgrole2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/practitioner1"/>
+      </reference>
+      <name value="Example: practitioner1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PractitionerRole/practitionerrole1"/>
+      </reference>
+      <name value="Example: practitionerrole1"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
