@@ -685,6 +685,27 @@
     },
     {
       "reference" : {
+        "reference" : "SearchParameter/plannet-available-days"
+      },
+      "name" : "Plannet_sp_available_days",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "SearchParameter/plannet-available-endtime"
+      },
+      "name" : "Plannet_sp_available_endtime",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "SearchParameter/plannet-available-starttime"
+      },
+      "name" : "Plannet_sp_available_startime",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "SearchParameter/organization-type"
       },
       "name" : "Plannet_sp_organization_type",

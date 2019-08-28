@@ -367,6 +367,15 @@
     "SearchParameter/organization-qualification-wherevalid-location": {
       "base": "SearchParameter-organization-qualification-wherevalid-location.html"
     },
+    "SearchParameter/plannet-available-days": {
+      "base": "SearchParameter-plannet-available-days.html"
+    },
+    "SearchParameter/plannet-available-endtime": {
+      "base": "SearchParameter-plannet-available-endtime.html"
+    },
+    "SearchParameter/plannet-available-starttime": {
+      "base": "SearchParameter-plannet-available-starttime.html"
+    },
     "SearchParameter/organization-type": {
       "base": "SearchParameter-organization-type.html"
     },
