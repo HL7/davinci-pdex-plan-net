@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/skravitz/cimpl/plan-net-out6/fhir/guide/resources"/>
+    <valueString value="/Users/skravitz/cimpl/plan-net-out7/fhir/guide/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/skravitz/cimpl/plan-net-out6/fhir/guide/examples"/>
+    <valueString value="/Users/skravitz/cimpl/plan-net-out7/fhir/guide/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/skravitz/cimpl/plan-net-out6/fhir/guide/pages"/>
+    <valueString value="/Users/skravitz/cimpl/plan-net-out7/fhir/guide/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
   <version value="0.1.0"/>
@@ -124,13 +124,6 @@
         <reference value="StructureDefinition/plannet-Network-extension"/>
       </reference>
       <name value="plannet-Network"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/plannet-PractitionerRoleNetwork-extension"/>
-      </reference>
-      <name value="plannet-PractitionerRoleNetwork"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

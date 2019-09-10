@@ -111,13 +111,6 @@
           </reference>
           <name value="plannet-Network"/>
       </resource>
-      <resource>
-          <exampleBoolean value="false"/>
-          <reference>
-            <reference value="StructureDefinition/plannet-PractitionerRoleNetwork-extension"/>
-          </reference>
-          <name value="plannet-PractitionerRoleNetwork"/>
-      </resource>
       
       
       

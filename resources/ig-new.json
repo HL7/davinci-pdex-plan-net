@@ -3,15 +3,15 @@
   "id" : "hl7.fhir.us.davinci-pdex-plan-net-0.1.0",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/skravitz/cimpl/plan-net-out6/fhir/guide/resources"
+    "valueString" : "/Users/skravitz/cimpl/plan-net-out7/fhir/guide/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/skravitz/cimpl/plan-net-out6/fhir/guide/examples"
+    "valueString" : "/Users/skravitz/cimpl/plan-net-out7/fhir/guide/examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/skravitz/cimpl/plan-net-out6/fhir/guide/pages"
+    "valueString" : "/Users/skravitz/cimpl/plan-net-out7/fhir/guide/pages"
   }],
   "url" : "http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0",
   "version" : "0.1.0",
@@ -128,13 +128,6 @@
         "reference" : "StructureDefinition/plannet-Network-extension"
       },
       "name" : "plannet-Network",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/plannet-PractitionerRoleNetwork-extension"
-      },
-      "name" : "plannet-PractitionerRoleNetwork",
       "exampleBoolean" : false
     },
     {
