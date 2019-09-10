@@ -27,7 +27,7 @@
     "PractitionerRole"
   ],
   "type": "reference",
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/network-reference')",
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension')",
   "target": [
     "Organization"
   ],

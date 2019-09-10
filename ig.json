@@ -129,10 +129,6 @@
       "base": "StructureDefinition-plannet-Network-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/plannet-PractitionerRoleNetwork-extension": {
-      "base": "StructureDefinition-plannet-PractitionerRoleNetwork-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "SearchParameter/endpoint-connection-type": {
       "base": "SearchParameter-endpoint-connection-type.html"
     },
