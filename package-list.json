@@ -12,13 +12,12 @@
     },
     {
       "version": "0.1.0",
-      "date": "2019-06-18",
+      "date": "2019-09-18",
       "desc": "Davinci pdex Plan Net - STU Ballot",
-      "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net/Jan2010",
+      "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net/Feb2020",
       "status": "draft",
       "sequence": "STU 1",
       "fhir-version": "4.0.0",
-      "current": true
     }
   ]
 }
