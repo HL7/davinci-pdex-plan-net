@@ -8,20 +8,20 @@
   },
   "extension": [
     {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-NewPatients-extension",
       "extension": [
         {
-          "url": "acceptingPatients",
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AcceptingPatients-extension",
           "valueBoolean": true
         },
         {
-          "url": "network",
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension",
           "valueReference": {
             "reference": "Organization/patriotppo",
             "display": "Patriot Preferred Provider Network"
           }
         }
-      ],
-      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients"
+      ]
     }
   ],
   "text": {

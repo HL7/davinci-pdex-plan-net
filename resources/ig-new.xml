@@ -107,6 +107,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/plannet-AcceptingPatients-extension"/>
+      </reference>
+      <name value="plannet-AcceptingPatients"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/plannet-CViaIntermediary-extension"/>
       </reference>
       <name value="plannet-CViaIntermediary"/>
@@ -124,6 +131,13 @@
         <reference value="StructureDefinition/plannet-Network-extension"/>
       </reference>
       <name value="plannet-Network"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/plannet-NewPatients-extension"/>
+      </reference>
+      <name value="plannet-NewPatients"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

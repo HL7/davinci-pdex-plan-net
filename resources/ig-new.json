@@ -111,6 +111,13 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/plannet-AcceptingPatients-extension"
+      },
+      "name" : "plannet-AcceptingPatients",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/plannet-CViaIntermediary-extension"
       },
       "name" : "plannet-CViaIntermediary",
@@ -128,6 +135,13 @@
         "reference" : "StructureDefinition/plannet-Network-extension"
       },
       "name" : "plannet-Network",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/plannet-NewPatients-extension"
+      },
+      "name" : "plannet-NewPatients",
       "exampleBoolean" : false
     },
     {

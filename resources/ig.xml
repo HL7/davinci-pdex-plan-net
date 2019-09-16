@@ -83,6 +83,13 @@
           </reference>
           <name value="plannet-PractitionerRole"/>
       </resource>
+      <resource>
+          <exampleBoolean value="false"/>
+          <reference>
+            <reference value="StructureDefinition/plannet-AcceptingPatients-extension"/>
+          </reference>
+          <name value="plannet-AcceptingPatients"/>
+      </resource>
       
       
       
@@ -110,6 +117,13 @@
             <reference value="StructureDefinition/plannet-Network-extension"/>
           </reference>
           <name value="plannet-Network"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="false"/>
+          <reference>
+            <reference value="StructureDefinition/plannet-NewPatients-extension"/>
+          </reference>
+          <name value="plannet-NewPatients"/>
       </resource>
       
       

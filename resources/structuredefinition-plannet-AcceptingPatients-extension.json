@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "plannet-Network-extension",
+  "id": "plannet-AcceptingPatients-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Network Extension</b></p>\n  <p>A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>AcceptingPatients Extension</b></p>\n  <p></p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension",
-  "name": "Network",
-  "title": "plannet-Network",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AcceptingPatients-extension",
+  "name": "AcceptingPatients",
+  "title": "plannet-AcceptingPatients",
   "status": "draft",
   "date": "2019-09-16",
   "publisher": "HL7 Financial Management WG",
@@ -21,7 +21,6 @@
       ]
     }
   ],
-  "description": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -39,8 +38,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Network",
-        "definition": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.",
+        "short": "AcceptingPatients",
+        "definition": "AcceptingPatients",
         "min": 0,
         "max": "*",
         "base": {
@@ -179,11 +178,11 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AcceptingPatients-extension"
       },
       {
-        "id": "Extension.valueReference",
-        "path": "Extension.valueReference",
+        "id": "Extension.valueBoolean",
+        "path": "Extension.valueBoolean",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 1,
@@ -195,10 +194,7 @@
         },
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
-            ]
+            "code": "boolean"
           }
         ],
         "isModifier": false,
@@ -217,8 +213,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Network",
-        "definition": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.",
+        "short": "AcceptingPatients",
+        "definition": "AcceptingPatients",
         "min": 0,
         "max": "*"
       },
@@ -236,18 +232,15 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AcceptingPatients-extension"
       },
       {
-        "id": "Extension.valueReference",
-        "path": "Extension.valueReference",
+        "id": "Extension.valueBoolean",
+        "path": "Extension.valueBoolean",
         "min": 1,
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
-            ]
+            "code": "boolean"
           }
         ]
       }
