@@ -117,6 +117,10 @@
     "StructureDefinition/plannet-PractitionerRole": {
       "base": "StructureDefinition-plannet-PractitionerRole.html"
     },
+    "StructureDefinition/plannet-AcceptingPatients-extension": {
+      "base": "StructureDefinition-plannet-AcceptingPatients-extension.html",
+      "template-base": "sd-extension.html"
+    },
     "StructureDefinition/plannet-CViaIntermediary-extension": {
       "base": "StructureDefinition-plannet-CViaIntermediary-extension.html",
       "template-base": "sd-extension.html"
@@ -127,6 +131,10 @@
     },
     "StructureDefinition/plannet-Network-extension": {
       "base": "StructureDefinition-plannet-Network-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-NewPatients-extension": {
+      "base": "StructureDefinition-plannet-NewPatients-extension.html",
       "template-base": "sd-extension.html"
     },
     "SearchParameter/endpoint-connection-type": {

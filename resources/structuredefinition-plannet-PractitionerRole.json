@@ -3,14 +3,14 @@
   "id": "plannet-PractitionerRole",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PractitionerRole Profile</b></p>\n  <p>PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  NewPatients maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  TAvailableTime maps to telecom.extension http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  TViaIntermediary maps to telecom.extension\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PractitionerRoleQualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  PractitionerRoleActive maps to active\n  PractitionerRoleSpecialty maps to specialty\n  PractitionerRoleCode maps to code\n  PractitionerRolePeriod maps to period\n  PractitionerRoleLocation maps to location\n  NAvailableTime maps to availableTime\n  NAvailableTime.AllDay maps to availableTime.allDay\n  NAvailableTime.DaysOfWeek maps to availableTime.daysOfWeek\n  NAvailableTime.AvailableStartTime maps to availableTime.availableStartTime\n  NAvailableTime.AvailableEndTime maps to availableTime.availableEndTime\n  NotAvailable maps to notAvailable\n  NotAvailable.Description maps to notAvailable.description\n  NotAvailable.DuringPeriod maps to notAvailable.during\n  PractitionerRoleTelecom maps to telecom\n  PractitionerRoleTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerRoleTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerRoleTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerRoleTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerRoleTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  Organization maps to organization\n  Network maps to extension\n  Practitioner maps to practitioner\n  PractitionerRoleHealthcareService maps to healthcareService\n  constrain active to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>PractitionerRole Profile</b></p>\n  <p>PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.PractitionerRole maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole:\n  NewPatients maps to extension\n  NewPatientProfile maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile\n  TAvailableTime maps to telecom.extension http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime\n  TViaIntermediary maps to telecom.extension\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PractitionerRoleQualification maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification\n  PractitionerRoleActive maps to active\n  PractitionerRoleSpecialty maps to specialty\n  PractitionerRoleCode maps to code\n  PractitionerRolePeriod maps to period\n  PractitionerRoleLocation maps to location\n  NAvailableTime maps to availableTime\n  NAvailableTime.AllDay maps to availableTime.allDay\n  NAvailableTime.DaysOfWeek maps to availableTime.daysOfWeek\n  NAvailableTime.AvailableStartTime maps to availableTime.availableStartTime\n  NAvailableTime.AvailableEndTime maps to availableTime.availableEndTime\n  NotAvailable maps to notAvailable\n  NotAvailable.Description maps to notAvailable.description\n  NotAvailable.DuringPeriod maps to notAvailable.during\n  PractitionerRoleTelecom maps to telecom\n  PractitionerRoleTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerRoleTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerRoleTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerRoleTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerRoleTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  Organization maps to organization\n  Network maps to extension\n  Practitioner maps to practitioner\n  PractitionerRoleHealthcareService maps to healthcareService\n  constrain active to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole",
   "name": "PractitionerRole",
   "title": "plannet-PractitionerRole",
   "status": "active",
   "experimental": false,
-  "date": "2019-09-10",
+  "date": "2019-09-16",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {
@@ -368,6 +368,30 @@
         }
       },
       {
+        "id": "PractitionerRole.extension:newpatients",
+        "path": "PractitionerRole.extension",
+        "definition": "New Patients indicates whether the practitioner is accepting new patients in their role",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-NewPatients-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "newpatients",
+        "mustSupport": true
+      },
+      {
         "id": "PractitionerRole.extension:network",
         "path": "PractitionerRole.extension",
         "definition": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.",
@@ -413,30 +437,6 @@
         "isModifier": false,
         "isSummary": false,
         "sliceName": "newpatientprofile",
-        "mustSupport": true
-      },
-      {
-        "id": "PractitionerRole.extension:newpatients",
-        "path": "PractitionerRole.extension",
-        "definition": "New Patients indicates whether the practitioner is accepting new patients in their role",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "newpatients",
         "mustSupport": true
       },
       {
@@ -2018,6 +2018,30 @@
         }
       },
       {
+        "id": "PractitionerRole.extension:newpatients",
+        "path": "PractitionerRole.extension",
+        "definition": "New Patients indicates whether the practitioner is accepting new patients in their role",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-NewPatients-extension"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "newpatients",
+        "mustSupport": true
+      },
+      {
         "id": "PractitionerRole.extension:network",
         "path": "PractitionerRole.extension",
         "definition": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.",
@@ -2063,30 +2087,6 @@
         "isModifier": false,
         "isSummary": false,
         "sliceName": "newpatientprofile",
-        "mustSupport": true
-      },
-      {
-        "id": "PractitionerRole.extension:newpatients",
-        "path": "PractitionerRole.extension",
-        "definition": "New Patients indicates whether the practitioner is accepting new patients in their role",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "newpatients",
         "mustSupport": true
       },
       {

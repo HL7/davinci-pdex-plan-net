@@ -12,10 +12,10 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients",
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-NewPatients-extension",
       "extension": [
         {
-          "url": "acceptingPatients",
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AcceptingPatients-extension",
           "valueBoolean": true
         }
       ]
