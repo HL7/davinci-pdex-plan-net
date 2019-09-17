@@ -1168,6 +1168,13 @@
     },
     {
       "reference" : {
+        "reference" : "Organization/patriotppo"
+      },
+      "name" : "Example: patriotppo",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "Organization/foundingfathers"
       },
       "name" : "Example: foundingfathers",
@@ -1206,13 +1213,6 @@
         "reference" : "Organization/patriotdental"
       },
       "name" : "Example: patriotdental",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Organization/patriotppo"
-      },
-      "name" : "Example: patriotppo",
       "exampleBoolean" : true
     },
     {

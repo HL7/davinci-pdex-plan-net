@@ -97,7 +97,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary",
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension",
           "valueReference": {
             "reference": "Location/loc-ffmh-hvi",
             "display": "Founding Fathers Memorial Hospital, Heart and Vascular Institute"
