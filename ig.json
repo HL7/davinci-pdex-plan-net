@@ -585,6 +585,10 @@
       "base": "Location-wash-dc-metro.html",
       "source": "Location-wash-dc-metro.json"
     },
+    "Organization/patriotppo": {
+      "base": "Organization-patriotppo.html",
+      "source": "Network-patriotppo.json"
+    },
     "Organization/foundingfathers": {
       "base": "Organization-foundingfathers.html",
       "source": "Organization-foundingfathers.json"
@@ -608,10 +612,6 @@
     "Organization/patriotdental": {
       "base": "Organization-patriotdental.html",
       "source": "Organization-patriotdental.json"
-    },
-    "Organization/patriotppo": {
-      "base": "Organization-patriotppo.html",
-      "source": "Organization-patriotppo.json"
     },
     "OrganizationAffiliation/orgrole1": {
       "base": "OrganizationAffiliation-orgrole1.html",

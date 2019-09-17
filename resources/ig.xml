@@ -1154,6 +1154,13 @@
       <resource>
           <exampleBoolean value="true"/>
           <reference>
+            <reference value="Organization/patriotppo"/>
+          </reference>
+          <name value="Example: patriotppo"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
             <reference value="Organization/foundingfathers"/>
           </reference>
           <name value="Example: foundingfathers"/>
@@ -1192,13 +1199,6 @@
             <reference value="Organization/patriotdental"/>
           </reference>
           <name value="Example: patriotdental"/>
-      </resource>
-      <resource>
-          <exampleBoolean value="true"/>
-          <reference>
-            <reference value="Organization/patriotppo"/>
-          </reference>
-          <name value="Example: patriotppo"/>
       </resource>
       <resource>
           <exampleBoolean value="true"/>
