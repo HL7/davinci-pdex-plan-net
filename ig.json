@@ -137,6 +137,9 @@
       "base": "StructureDefinition-plannet-NewPatients-extension.html",
       "template-base": "sd-extension.html"
     },
+    "SearchParameter/plannet-available-days": {
+      "base": "SearchParameter-plannet-available-days.html"
+    },
     "SearchParameter/endpoint-connection-type": {
       "base": "SearchParameter-endpoint-connection-type.html"
     },
@@ -371,8 +374,8 @@
     "SearchParameter/organization-qualification-wherevalid-location": {
       "base": "SearchParameter-organization-qualification-wherevalid-location.html"
     },
-    "SearchParameter/plannet-available-days": {
-      "base": "SearchParameter-plannet-available-days.html"
+    "SearchParameter/plannet-telecom-available-days": {
+      "base": "SearchParameter-plannet-telecom-available-days.html"
     },
     "SearchParameter/plannet-available-endtime": {
       "base": "SearchParameter-plannet-available-endtime.html"
@@ -514,36 +517,6 @@
     },
     "SearchParameter/practitionerrole-via-intermediary": {
       "base": "SearchParameter-practitionerrole-via-intermediary.html"
-    },
-    "SearchParameter/verificationresult-attestation-method": {
-      "base": "SearchParameter-verificationresult-attestation-method.html"
-    },
-    "SearchParameter/verificationresult-attestation-onbehalfof": {
-      "base": "SearchParameter-verificationresult-attestation-onbehalfof.html"
-    },
-    "SearchParameter/verificationresult-attestation-who": {
-      "base": "SearchParameter-verificationresult-attestation-who.html"
-    },
-    "SearchParameter/verificationresult-primarysource-date": {
-      "base": "SearchParameter-verificationresult-primarysource-date.html"
-    },
-    "SearchParameter/verificationresult-primarysource-type": {
-      "base": "SearchParameter-verificationresult-primarysource-type.html"
-    },
-    "SearchParameter/verificationresult-primarysource-who": {
-      "base": "SearchParameter-verificationresult-primarysource-who.html"
-    },
-    "SearchParameter/verificationresult-status-date": {
-      "base": "SearchParameter-verificationresult-status-date.html"
-    },
-    "SearchParameter/verificationresult-target": {
-      "base": "SearchParameter-verificationresult-target.html"
-    },
-    "SearchParameter/verificationresult-validation-status": {
-      "base": "SearchParameter-verificationresult-validation-status.html"
-    },
-    "SearchParameter/verificationresult-validator-organization": {
-      "base": "SearchParameter-verificationresult-validator-organization.html"
     },
     "Endpoint/direct321": {
       "base": "Endpoint-direct321.html",

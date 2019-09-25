@@ -146,6 +146,13 @@
     },
     {
       "reference" : {
+        "reference" : "SearchParameter/plannet-available-days"
+      },
+      "name" : "Plannet_sp_available_days",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "SearchParameter/endpoint-connection-type"
       },
       "name" : "Plannet_sp_endpoint_connection_type",
@@ -692,7 +699,7 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/plannet-available-days"
+        "reference" : "SearchParameter/plannet-telecom-available-days"
       },
       "name" : "Plannet_sp_available_days",
       "exampleBoolean" : true
@@ -1024,76 +1031,6 @@
         "reference" : "SearchParameter/practitionerrole-via-intermediary"
       },
       "name" : "Plannet_sp_practitionerrole_via_intermediary",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/verificationresult-attestation-method"
-      },
-      "name" : "Plannet_sp_verificationresult_attestation_method",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/verificationresult-attestation-onbehalfof"
-      },
-      "name" : "Plannet_sp_verificationresult_attestation_onbehalfof",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/verificationresult-attestation-who"
-      },
-      "name" : "Plannet_sp_verificationresult_attestation_who",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/verificationresult-primarysource-date"
-      },
-      "name" : "Plannet_sp_verificationresult_primarysource_date",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/verificationresult-primarysource-type"
-      },
-      "name" : "Plannet_sp_verificationresult_primarysource_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/verificationresult-primarysource-who"
-      },
-      "name" : "Plannet_sp_verificationresult_primarysource_who",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/verificationresult-status-date"
-      },
-      "name" : "Plannet_sp_verificationresult_status_date",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/verificationresult-target"
-      },
-      "name" : "Plannet_sp_verificationresult_target",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/verificationresult-validation-status"
-      },
-      "name" : "Plannet_sp_verificationresult_validation_status",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/verificationresult-validator-organization"
-      },
-      "name" : "Plannet_sp_verificationresult_validator_organization",
       "exampleBoolean" : true
     },
     {
