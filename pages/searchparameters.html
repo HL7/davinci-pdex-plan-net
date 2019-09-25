@@ -43,6 +43,11 @@
   </thead>
   <tbody>
     <tr>
+              <td><a href="SearchParameter-plannet-available-days.html">available-days</a></td>
+              <td>HealthcareService, PractitionerRole, Location</td>
+              <td>token</td>
+              <td>{% capture md_text %}Days available{% endcapture %}{{ md_text | markdownify }}</td>
+            </tr><tr>
               <td><a href="SearchParameter-endpoint-connection-type.html">connection-type</a></td>
               <td>Endpoint</td>
               <td>token</td>
@@ -433,8 +438,8 @@
               <td>reference</td>
               <td>{% capture md_text %}Select Organizations with a qualification that is valid at the specified location{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
-              <td><a href="SearchParameter-plannet-available-days.html">available-days</a></td>
-              <td>Organization, HealthcareService, InsurancePlan, Practitioner, PractitionerRole</td>
+              <td><a href="SearchParameter-plannet-telecom-available-days.html">telecom-available-days</a></td>
+              <td>PractitionerRole, Endpoint, InsurancePlan, Location, Organization, Practitioner</td>
               <td>token</td>
               <td>{% capture md_text %}Days available{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
@@ -672,56 +677,6 @@
               <td>PractitionerRole</td>
               <td>reference</td>
               <td>{% capture md_text %}Select PractitionerRoles with contact information available through the specified intermediary{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-verificationresult-attestation-method.html">attestation-method</a></td>
-              <td>VerificationResult</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select validation information for data that was attested to using the specified method{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-verificationresult-attestation-onbehalfof.html">attestation-onbehalfof</a></td>
-              <td>VerificationResult</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select validation information for data that was attested to on behalf of the specified source{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-verificationresult-attestation-who.html">attestation-who</a></td>
-              <td>VerificationResult</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select validation information for data that was attested to by the specified source{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-verificationresult-primarysource-date.html">primarysource-date</a></td>
-              <td>VerificationResult</td>
-              <td>date</td>
-              <td>{% capture md_text %}Select validation information for data that was validated against a primary source on the specified date{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-verificationresult-primarysource-type.html">primarysource-type</a></td>
-              <td>VerificationResult</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select validation information for data that was validated against the specified type of primary source organization{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-verificationresult-primarysource-who.html">primarysource-who</a></td>
-              <td>VerificationResult</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select validation information for data that was validated against the specified primary source{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-verificationresult-status-date.html">status-date</a></td>
-              <td>VerificationResult</td>
-              <td>date</td>
-              <td>{% capture md_text %}Select validation information with a validation status that occurred at the specified date/time{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-verificationresult-target.html">target</a></td>
-              <td>VerificationResult</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select validation information for the specified resource{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-verificationresult-validation-status.html">validation-status</a></td>
-              <td>VerificationResult</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select validation information with the specified status{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-verificationresult-validator-organization.html">validator-organization</a></td>
-              <td>VerificationResult</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select validation information for data that was validated by the specified organization{% endcapture %}{{ md_text | markdownify }}</td>
             </tr>
   </tbody>
 </table>

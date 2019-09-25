@@ -142,6 +142,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="SearchParameter/plannet-available-days"/>
+      </reference>
+      <name value="Plannet_sp_available_days"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="SearchParameter/endpoint-connection-type"/>
       </reference>
       <name value="Plannet_sp_endpoint_connection_type"/>
@@ -688,7 +695,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/plannet-available-days"/>
+        <reference value="SearchParameter/plannet-telecom-available-days"/>
       </reference>
       <name value="Plannet_sp_available_days"/>
       <exampleBoolean value="true"/>
@@ -1020,76 +1027,6 @@
         <reference value="SearchParameter/practitionerrole-via-intermediary"/>
       </reference>
       <name value="Plannet_sp_practitionerrole_via_intermediary"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-attestation-method"/>
-      </reference>
-      <name value="Plannet_sp_verificationresult_attestation_method"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-attestation-onbehalfof"/>
-      </reference>
-      <name value="Plannet_sp_verificationresult_attestation_onbehalfof"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-attestation-who"/>
-      </reference>
-      <name value="Plannet_sp_verificationresult_attestation_who"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-primarysource-date"/>
-      </reference>
-      <name value="Plannet_sp_verificationresult_primarysource_date"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-primarysource-type"/>
-      </reference>
-      <name value="Plannet_sp_verificationresult_primarysource_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-primarysource-who"/>
-      </reference>
-      <name value="Plannet_sp_verificationresult_primarysource_who"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-status-date"/>
-      </reference>
-      <name value="Plannet_sp_verificationresult_status_date"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-target"/>
-      </reference>
-      <name value="Plannet_sp_verificationresult_target"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-validation-status"/>
-      </reference>
-      <name value="Plannet_sp_verificationresult_validation_status"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/verificationresult-validator-organization"/>
-      </reference>
-      <name value="Plannet_sp_verificationresult_validator_organization"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
