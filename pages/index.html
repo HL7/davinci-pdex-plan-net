@@ -29,8 +29,7 @@
 <li><a href="#background">Background</a></li>
 <li><a href="#use-cases">Use Cases</a></li>
 <li><a href="#overview">Overview of Payer Directory - Resource Relationships</a></li>
-<li><a href="#privacy-considerations">Privacy Considerations</a></li>
-<li><a href="#server">Server Issues</a></li>
+<li><a href="#authors">Authors</a></li>
 </ul>
 
 <h2 id="introduction">Introduction</h2>
@@ -48,7 +47,6 @@ The use of VhDir as the conceptual base for the Payer Directory Implementation G
 
 <a href="Scope.png">VhDir and Plan-net Implementation Guide Scopes</a>
 <img src="Scope.png" alt="Scope" />
-<p><b>Primary Authors</b>: Dan Chaput, Alex Kontur, Brian Postlethwaite, Bob Dieterle</p> 
 <h2 id="Relation">Relation to US Core and other IGs</h2>
 <p>This implementation guide was written for a US audience and profiles resources from the R4 version of the US Core IG, where available (Practitioner, PractitionerRole, Organization and Location), and otherwise from R4 (OrganizationAffiliation, HealthCareService, Endpoint).   Alignment with VhDir is maintained by using extensions from VhDir where possible.
 </p>
@@ -159,207 +157,34 @@ A conformant plan-net service SHALL NOT require a directory mobile application t
 <p>
 A directory mobile application SHALL NOT send consumer identifiable information when querying a formulary service. </p>
 
-<h1 id="server">Provider Directory Server</h1>
-<p>This Capability Statement defines the expected capabilities of a Payer directory FHIR server conforming to the Payer Directory Implementation Guide.</p>
-<table width="152">
-<tbody>
-<tr>
-<td>
-<p>Mode</p>
-</td>
-<td>
-<p>SERVER</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Description</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Transaction</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>System History</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>System Search</p>
-</td>
-<td>
-<p>y</p>
-</td>
-</tr>
-</tbody>
-</table>
-<table width="567">
-<tbody>
-<tr>
-<td width="126">
-<p><strong>Resource Type</strong></p>
-</td>
-<td width="297">
-<p><strong>Profile</strong></p>
-</td>
-<td>
-<p><strong>Read</strong></p>
-</td>
-<td>
-<p><strong>V-Read</strong></p>
-</td>
-<td width="51">
-<p><strong>Search</strong></p>
-</td>
-</tr>
-<tr>
-<td width="126">
-<p>Practitioner</p>
-</td>
-<td width="297">
-<p><a href="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner</a></p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td width="51">
-<p>y</p>
-</td>
-</tr>
-<tr>
-<td width="126">
-<p>PractitionerRole</p>
-</td>
-<td width="297">
-<p><a href="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitionerrole</a></p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td width="51">
-<p>y</p>
-</td>
-</tr>
-<tr>
-<td width="126">
-<p>Organization</p>
-</td>
-<td width="297">
-<p>y</p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td>
-<p>y</p>
-</td>
-</tr>
-<tr>
-<td width="126">
-<p>OrganizationAffiliation</p>
-</td>
-<td width="297">
-<p><a href="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-organizationaffiliation</a></p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td width="51">
-<p>y</p>
-</td>
-</tr>
-<tr>
-<td width="126">
-<p>HealthcareService</p>
-</td>
-<td width="297">
-<p><a href="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-healthcareservice</a></p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td width="51">
-<p>y</p>
-</td>
-</tr>
-<tr>
-<td width="126">
-<p>Location</p>
-</td>
-<td width="297">
-<p><a href="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-location</a></p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td width="51">
-<p>y</p>
-</td>
-</tr>
-<tr>
-<td width="126">
-<p>Endpoint</p>
-</td>
-<td width="297">
-<p>y</p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td>
-<p>y</p>
-</td>
-</tr>
-<tr>
-<td width="126">
-<p>InsurancePlan</p>
-</td>
-<td width="297">
-<p><a href="http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-insuranceplan">http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-insuranceplan</a></p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td>
-<p>y</p>
-</td>
-<td width="51">
-<p>y</p>
-</td>
-</tr>
-</tbody>
-</table>
-<h2 id="general-security-considerations">General Security Considerations</h2>
-<p>The following are the Provider Directory security considerations that implementers should follow:</p>
-<ul>
-<li>All implementers of FHIR servers and clients should pay attention to <a href="http://hl7.org/fhir/security.html">FHIR Security</a></li>
-</ul>
-<p>The following are security conformance requirements for Provider Directory actors:</p>
-<ul>
-<li>Provider Directory actors <em>SHALL</em> use the <a href="http://docs.smarthealthit.org/authorization/backend-services/">SMART Backend Services Authorization Guide</a> to collect the necessary requestor information appropriate for making the Provider Directory data request.</li>
-<li>Provider Directory actors <em>SHALL</em> reference a single time source to establish a common time base for security auditing across the system.</li>
-<li>Provider Directory actors <em>SHALL</em> use the <a href="http://hl7.org/fhir/STU3/auditevent.html">AuditEvent</a> resource to capture audit logs of the various transactions. Provider Directory actors <em>SHOULD</em> capture as many AuditEvent resource data elements as appropriate based on requirements of FHIR <a href="http://hl7.org/fhir/STU3/security.html#audit">Audit Logging</a> and local policies.</li>
-<li>Provider Directory actors <em>SHALL</em> conform to <a href="http://hl7.org/fhir/STU3/security.html#http">FHIR Communications</a></li>
-</ul>
+<h1 id="authors">Authors</h1>
 
+  <table>
+      <thead>
+      <tr>
+      <th>Name</th>
+      <th>Email</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td>Dan Chaput</td>
+      <td><a href="mailto:daniel.chaput@hhs.gov">daniel.chaput@hhs.gov</a></td>
+      </tr>
+      <tr>
+      <td>Alex Kontur</td>
+      <td><a href="mailto:alex.kontur@hhs.gov">alex.kontur@hhs.gov</a></td>
+      </tr>
+      <tr>
+      <td>Brian Postlethwaite</td>
+     <td><a href="mailto:brian.postlethwaite@health.telstra.com">brian.postlethwaite@health.telstra.com</a></td>
+     </tr>
+      <tr>
+    <td>Bob Dieterle</td>
+     <td><a href="mailto:rdieterle@enablecare.us">rdieterle@enablecare.us</a></td>
+      </tr> 
+    </tbody>
+  </table>
 
 
 <!-- ==============END CONTENT END CONTENT=================== -->
