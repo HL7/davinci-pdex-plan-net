@@ -140,6 +140,12 @@
     "SearchParameter/plannet-available-days": {
       "base": "SearchParameter-plannet-available-days.html"
     },
+    "SearchParameter/plannet-available-end-time": {
+      "base": "SearchParameter-plannet-available-end-time.html"
+    },
+    "SearchParameter/plannet-available-start-time": {
+      "base": "SearchParameter-plannet-available-start-time.html"
+    },
     "SearchParameter/endpoint-connection-type": {
       "base": "SearchParameter-endpoint-connection-type.html"
     },
@@ -377,11 +383,11 @@
     "SearchParameter/plannet-telecom-available-days": {
       "base": "SearchParameter-plannet-telecom-available-days.html"
     },
-    "SearchParameter/plannet-available-endtime": {
-      "base": "SearchParameter-plannet-available-endtime.html"
+    "SearchParameter/plannet-telecom-available-endtime": {
+      "base": "SearchParameter-plannet-telecom-available-endtime.html"
     },
-    "SearchParameter/plannet-available-starttime": {
-      "base": "SearchParameter-plannet-available-starttime.html"
+    "SearchParameter/plannet-telecom-available-starttime": {
+      "base": "SearchParameter-plannet-telecom-available-starttime.html"
     },
     "SearchParameter/organization-type": {
       "base": "SearchParameter-organization-type.html"

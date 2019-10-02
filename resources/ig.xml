@@ -139,6 +139,20 @@
       <resource>
           <exampleBoolean value="true"/>
           <reference>
+            <reference value="SearchParameter/plannet-available-end-time"/>
+          </reference>
+          <name value="Plannet_sp_available_end_time"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="SearchParameter/plannet-available-start-time"/>
+          </reference>
+          <name value="Plannet_sp_available_days"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
             <reference value="SearchParameter/endpoint-connection-type"/>
           </reference>
           <name value="Plannet_sp_endpoint_connection_type"/>
@@ -692,16 +706,16 @@
       <resource>
           <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/plannet-available-endtime"/>
+            <reference value="SearchParameter/plannet-telecom-available-endtime"/>
           </reference>
-          <name value="Plannet_sp_available_endtime"/>
+          <name value="Plannet_sp_telecom_available_endtime"/>
       </resource>
       <resource>
           <exampleBoolean value="true"/>
           <reference>
-            <reference value="SearchParameter/plannet-available-starttime"/>
+            <reference value="SearchParameter/plannet-telecom-available-starttime"/>
           </reference>
-          <name value="Plannet_sp_available_startime"/>
+          <name value="Plannet_sp_telecom_available_startime"/>
       </resource>
       <resource>
           <exampleBoolean value="true"/>
