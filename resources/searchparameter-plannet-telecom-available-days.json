@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p></div>"
   },
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/plannet-telecom- available-days",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/plannet-telecom-available-days",
   "version": "0.2.0",
   "name": "Plannet_sp_available_days",
   "status": "active",
