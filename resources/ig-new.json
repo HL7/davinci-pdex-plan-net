@@ -153,6 +153,20 @@
     },
     {
       "reference" : {
+        "reference" : "SearchParameter/plannet-available-end-time"
+      },
+      "name" : "Plannet_sp_available_end_time",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "SearchParameter/plannet-available-start-time"
+      },
+      "name" : "Plannet_sp_available_days",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "SearchParameter/endpoint-connection-type"
       },
       "name" : "Plannet_sp_endpoint_connection_type",
@@ -706,16 +720,16 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/plannet-available-endtime"
+        "reference" : "SearchParameter/plannet-telecom-available-endtime"
       },
-      "name" : "Plannet_sp_available_endtime",
+      "name" : "Plannet_sp_telecom_available_endtime",
       "exampleBoolean" : true
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/plannet-available-starttime"
+        "reference" : "SearchParameter/plannet-telecom-available-starttime"
       },
-      "name" : "Plannet_sp_available_startime",
+      "name" : "Plannet_sp_telecom_available_startime",
       "exampleBoolean" : true
     },
     {
