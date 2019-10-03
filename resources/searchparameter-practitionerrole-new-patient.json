@@ -1,10 +1,6 @@
 {
   "resourceType": "SearchParameter",
   "id": "practitionerrole-new-patient",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: practitionerrole-new-patient</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-new-patient\">http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-new-patient</a></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: Plannet_sp_practitionerrole_new_patient</p><p><b>status</b>: active</p><p><b>date</b>: May 23, 2018, 12:00:00 AM</p><p><b>publisher</b>: HL7 Patient Administration Committee</p><p><b>contact</b>: </p><p><b>description</b>: Select PractitionerRoles that are/are not accepting new patients</p><p><b>code</b>: new-patient</p><p><b>base</b>: PractitionerRole</p><p><b>type</b>: token</p><p><b>expression</b>: PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')</p><p><b>multipleAnd</b>: true</p></div>"
-  },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-new-patient",
   "version": "0.2.0",
   "name": "Plannet_sp_practitionerrole_new_patient",
