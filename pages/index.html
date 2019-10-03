@@ -46,7 +46,7 @@ The use of VhDir as the conceptual base for the Payer Directory Implementation G
 </p>
 
 <a href="Scope.png">VhDir and Plan-net Implementation Guide Scopes</a>
-<img src="Scope.png" alt="Scope" />
+<img style="width:100%;height:auto;" src="Scope.png" alt="Scope" />
 <h2 id="Relation">Relation to US Core and other IGs</h2>
 <p>This implementation guide was written for a US audience and profiles resources from the R4 version of the US Core IG, where available (Practitioner, PractitionerRole, Organization and Location), and otherwise from R4 (OrganizationAffiliation, HealthCareService, Endpoint).   Alignment with VhDir is maintained by using extensions from VhDir where possible.
 </p>
@@ -113,22 +113,22 @@ https://davinci-plan-net-ri.logicahealth.org/fhir/PractitionerRole?practitioner.
 <h3 id="practitioner-role">Practitioner Role</h3>
 <p>PractionerRole describes the relationship between a practitioner and an organization. A practitioner provides services to the organization at a location. Practitioners also participate in healthcare provider insurance networks through their role at an organization.</p>
 <p><strong>Figure 1: Practitioner and PractionerRole </strong></p>
-<img src="PractitionerRole.png" alt = "Practitioner and PractitionerRole" width="30%" height="30%" />
+<img src="PractitionerRole.png" alt = "Practitioner and PractitionerRole" style="width:30%;height:auto;float:none;align:middle;"  />
 <p>&nbsp;</p>
 <p>&nbsp;</p><h3 id="organization">Organization</h3>
 <p><strong>Figure 2: Organization </strong></p>
-<img src="Organization.png" alt="Organization" width="30%" height="30%" />
+<img src="Organization.png" alt="Organization" style="width:23%;height:auto;float:none;align:middle;" />
 <p>&nbsp;</p><h3 id="organization-affiliation">Organization Affiliation</h3>
 <p>Similar to PractitionerRole, OrganizationAffiliation describes relationships between organizations. For example: 1) the relationship between an organization and an association it is a member of (e.g. hospitals in a hospital association), 2) an organization that provides services to another organization, such as an organization contracted to provide mental health care for another organization as part of a healthcare provider insurance network, and 3) distinct organizations forming a partnership to provide services (e.g. a cancer center).</p>
 <p><strong>Figure 3: OrganizationAffiliation </strong></p>
-<img src="OrganizationAffiliation.png" alt="Organization Affiliation"  width="30%" height="30%"/>
+<img src="OrganizationAffiliation.png" alt="Organization Affiliation"  style="width:70%;height:auto;float:none;align:middle;"/>
 <p>&nbsp;</p>
 <h3 id="insurance-plan">InsurancePlan</h3>
 <p>
 InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.
 </p>
 <p><strong>Figure 4: InsurancePlan </strong></p>
-<img src="InsurancePlan.png" alt="Insurance Plan" width="30%" height="30%"/>
+<img src="InsurancePlan.png" alt="Insurance Plan" style="width:50%;height:auto;float:none;align:middle;"/>
 <p>&nbsp;</p>
 <h3 id="healthcare-service">Healthcare Service </h3>
 <p>
@@ -136,7 +136,7 @@ The HealthcareService resource is used to describe a single healthcare service o
 The location of the services could be virtual, as with telemedicine services.
 </p>
 <p><strong>Figure 5: Healthcare Service </strong></p>
-<img src="HealthcareService.png" alt = "HealthcareService" width="30%" height="30%"/>
+<img src="HealthcareService.png" alt = "HealthcareService" style="width:40%;height:auto;float:none;align:middle;"/>
 <h3 id="endpoint">Endpoint</h3>
 <p>
     An endpoint describes the technical details of a location that can be connected to for the delivery/retrieval of information. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner.
@@ -148,7 +148,7 @@ The location of the services could be virtual, as with telemedicine services.
 <h3 id="network">Network</h3>
 <p>A network is a group of practitioners and organizations that provide healthcare services for individuals enrolled in a health insurance product/plan (typically on behalf of a payer).</p>
 <p><strong>Figure 6: Network </strong></p>
-<img src="Network.png" alt="Network" width="30%" height="30%"/>
+<img src="Network.png" alt="Network" style="width:40%;height:auto;float:none;align:middle;"/>
 <h2 id="privacy-considerations">Privacy Considerations</h2>
 <p>
 Access to the plan-net service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that was queried.</p>

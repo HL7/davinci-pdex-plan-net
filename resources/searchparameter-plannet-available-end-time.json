@@ -1,10 +1,6 @@
 {
   "resourceType": "SearchParameter",
   "id": "plannet-available-end-time",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p></div>"
-  },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/plannet-available-end_time",
   "version": "0.2.0",
   "name": "Plannet_sp_available_end_time",
