@@ -1634,7 +1634,7 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "required",
+          "strength": "example",
           "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/healthcareservice-eligibility"
         },
         "mapping": [
@@ -1733,7 +1733,7 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "required",
+          "strength": "example",
           "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/healthcareservice-characteristic"
         },
         "mapping": [
@@ -2618,7 +2618,7 @@
         "id": "HealthcareService.eligibility.code",
         "path": "HealthcareService.eligibility.code",
         "binding": {
-          "strength": "required",
+          "strength": "example",
           "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/healthcareservice-eligibility"
         },
         "mustSupport": true
@@ -2637,7 +2637,7 @@
         "id": "HealthcareService.characteristic",
         "path": "HealthcareService.characteristic",
         "binding": {
-          "strength": "required",
+          "strength": "example",
           "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/healthcareservice-characteristic"
         },
         "mustSupport": true
