@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "plannet-available-end-time",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/plannet-available-end_time",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/plannet-available-end-time",
   "version": "0.2.0",
   "name": "Plannet_sp_available_end_time",
   "status": "active",

@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network",
   "name": "Network",
   "status": "draft",
-  "date": "2019-10-03",
+  "date": "2019-10-08",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {
@@ -356,7 +356,7 @@
       {
         "id": "Organization.extension:locationreference",
         "path": "Organization.extension",
-        "definition": "An extension referencing a Location resource defining the coverage area of a health insurance provider network",
+        "definition": "A reference to  a Location resource (plannet-Location) defining the coverage area of a health insurance provider network",
         "min": 0,
         "max": "*",
         "base": {
@@ -2535,7 +2535,7 @@
       {
         "id": "Organization.extension:locationreference",
         "path": "Organization.extension",
-        "definition": "An extension referencing a Location resource defining the coverage area of a health insurance provider network",
+        "definition": "A reference to  a Location resource (plannet-Location) defining the coverage area of a health insurance provider network",
         "min": 0,
         "max": "*",
         "base": {

@@ -125,16 +125,20 @@
       "base": "StructureDefinition-plannet-CViaIntermediary-extension.html",
       "template-base": "sd-extension.html"
     },
+    "StructureDefinition/plannet-FromNetwork-extension": {
+      "base": "StructureDefinition-plannet-FromNetwork-extension.html",
+      "template-base": "sd-extension.html"
+    },
     "StructureDefinition/plannet-LocationReference-extension": {
       "base": "StructureDefinition-plannet-LocationReference-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/plannet-Network-extension": {
-      "base": "StructureDefinition-plannet-Network-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/plannet-NewPatients-extension": {
       "base": "StructureDefinition-plannet-NewPatients-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-ParticipatingNetwork-extension": {
+      "base": "StructureDefinition-plannet-ParticipatingNetwork-extension.html",
       "template-base": "sd-extension.html"
     },
     "SearchParameter/plannet-available-days": {
