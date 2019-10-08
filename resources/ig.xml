@@ -102,6 +102,13 @@
           <name value="plannet-CViaIntermediary"/>
       </resource>
       
+      <resource>
+          <exampleBoolean value="false"/>
+          <reference>
+            <reference value="StructureDefinition/plannet-FromNetwork-extension"/>
+          </reference>
+          <name value="plannet-FromNetwork"/>
+      </resource>
       
       
       <resource>
@@ -114,16 +121,16 @@
       <resource>
           <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-Network-extension"/>
+            <reference value="StructureDefinition/plannet-NewPatients-extension"/>
           </reference>
-          <name value="plannet-Network"/>
+          <name value="plannet-NewPatients"/>
       </resource>
       <resource>
           <exampleBoolean value="false"/>
           <reference>
-            <reference value="StructureDefinition/plannet-NewPatients-extension"/>
+            <reference value="StructureDefinition/plannet-ParticipatingNetwork-extension"/>
           </reference>
-          <name value="plannet-NewPatients"/>
+          <name value="plannet-ParticipatingNetwork"/>
       </resource>
       
       

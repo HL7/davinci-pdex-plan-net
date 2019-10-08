@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint",
   "name": "Endpoint",
   "status": "draft",
-  "date": "2019-10-03",
+  "date": "2019-10-08",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {
@@ -1008,7 +1008,7 @@
       {
         "id": "Endpoint.contact.extension:cviaintermediary",
         "path": "Endpoint.contact.extension",
-        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "definition": "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization",
         "min": 0,
         "max": "1",
         "base": {
@@ -1547,7 +1547,7 @@
       {
         "id": "Endpoint.contact.extension:cviaintermediary",
         "path": "Endpoint.contact.extension",
-        "definition": "ViaIntermediary is a reference to an alternative point of contact for this organization",
+        "definition": "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization",
         "min": 0,
         "max": "1",
         "base": {

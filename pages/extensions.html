@@ -37,25 +37,27 @@
   <tbody>
     <tr>
           <td><a href="StructureDefinition-plannet-AcceptingPatients-extension.html">AcceptingPatients</a></td>
-          <td></td>
+          <td>{% capture md_text %}Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the AcceptingPatients extension.{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
         <tr>
           <td><a href="StructureDefinition-plannet-CViaIntermediary-extension.html">CViaIntermediary</a></td>
-          <td>{% capture md_text %}ViaIntermediary is a reference to an alternative point of contact for this organization{% endcapture %}{{ md_text | markdownify }}</td>
+          <td>{% capture md_text %}A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization{% endcapture %}{{ md_text | markdownify }}</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-plannet-FromNetwork-extension.html">FromNetwork</a></td>
+          <td>{% capture md_text %}A reference to a healthcare provider insurance network (plannet-Network) for which the entity is/isn’t accepting new patients. This is a component of the AcceptingPatients extension.{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
         <tr>
           <td><a href="StructureDefinition-plannet-LocationReference-extension.html">LocationReference</a></td>
-          <td>{% capture md_text %}An extension referencing a Location resource defining the coverage area of a health insurance provider network{% endcapture %}{{ md_text | markdownify }}</td>
-        </tr>
-        <tr>
-          <td><a href="StructureDefinition-plannet-Network-extension.html">Network</a></td>
-          <td>{% capture md_text %}A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
-
-In the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.{% endcapture %}{{ md_text | markdownify }}</td>
+          <td>{% capture md_text %}A reference to  a Location resource (plannet-Location) defining the coverage area of a health insurance provider network{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
         <tr>
           <td><a href="StructureDefinition-plannet-NewPatients-extension.html">NewPatients</a></td>
           <td>{% capture md_text %}New Patients indicates whether the practitioner is accepting new patients in their role{% endcapture %}{{ md_text | markdownify }}</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-plannet-ParticipatingNetwork-extension.html">ParticipatingNetwork</a></td>
+          <td>{% capture md_text %}A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
         
   </tbody>

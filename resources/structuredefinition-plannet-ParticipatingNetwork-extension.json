@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "plannet-LocationReference-extension",
+  "id": "plannet-ParticipatingNetwork-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>LocationReference Extension</b></p>\n  <p>A reference to  a Location resource (plannet-Location) defining the coverage area of a health insurance provider network</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ParticipatingNetwork Extension</b></p>\n  <p>A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-LocationReference-extension",
-  "name": "LocationReference",
-  "title": "plannet-LocationReference",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ParticipatingNetwork-extension",
+  "name": "ParticipatingNetwork",
+  "title": "plannet-ParticipatingNetwork",
   "status": "draft",
   "date": "2019-10-08",
   "publisher": "HL7 Financial Management WG",
@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "description": "A reference to  a Location resource (plannet-Location) defining the coverage area of a health insurance provider network",
+  "description": "A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -39,8 +39,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "LocationReference",
-        "definition": "A reference to  a Location resource (plannet-Location) defining the coverage area of a health insurance provider network",
+        "short": "ParticipatingNetwork",
+        "definition": "A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role",
         "min": 0,
         "max": "*",
         "base": {
@@ -179,7 +179,7 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-LocationReference-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ParticipatingNetwork-extension"
       },
       {
         "id": "Extension.valueReference",
@@ -197,7 +197,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
             ]
           }
         ],
@@ -217,8 +217,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "LocationReference",
-        "definition": "A reference to  a Location resource (plannet-Location) defining the coverage area of a health insurance provider network",
+        "short": "ParticipatingNetwork",
+        "definition": "A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role",
         "min": 0,
         "max": "*"
       },
@@ -236,7 +236,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-LocationReference-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ParticipatingNetwork-extension"
       },
       {
         "id": "Extension.valueReference",
@@ -246,7 +246,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
             ]
           }
         ]

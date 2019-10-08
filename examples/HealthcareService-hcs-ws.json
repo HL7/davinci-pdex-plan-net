@@ -15,7 +15,7 @@
           "valueBoolean": true
         },
         {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-extension",
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-FromNetwork-extension",
           "valueReference": {
             "reference": "Organization/patriotppo",
             "display": "Patriot Preferred Provider Network"

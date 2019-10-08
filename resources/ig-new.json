@@ -125,6 +125,13 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/plannet-FromNetwork-extension"
+      },
+      "name" : "plannet-FromNetwork",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/plannet-LocationReference-extension"
       },
       "name" : "plannet-LocationReference",
@@ -132,16 +139,16 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/plannet-Network-extension"
+        "reference" : "StructureDefinition/plannet-NewPatients-extension"
       },
-      "name" : "plannet-Network",
+      "name" : "plannet-NewPatients",
       "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/plannet-NewPatients-extension"
+        "reference" : "StructureDefinition/plannet-ParticipatingNetwork-extension"
       },
-      "name" : "plannet-NewPatients",
+      "name" : "plannet-ParticipatingNetwork",
       "exampleBoolean" : false
     },
     {
