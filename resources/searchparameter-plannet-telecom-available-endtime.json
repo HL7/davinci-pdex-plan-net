@@ -18,7 +18,7 @@
     }
   ],
   "description": "endtime",
-  "code": "telecom-available-endtime",
+  "code": "telecom-available-end-time",
   "base": [
     "PractitionerRole",
     "Endpoint",

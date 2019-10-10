@@ -3,13 +3,13 @@
   "id": "plannet-AcceptingPatients-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>AcceptingPatients Extension</b></p>\n  <p>Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the AcceptingPatients extension.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>AcceptingPatients Extension</b></p>\n  <p>Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the NewPatients extension.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AcceptingPatients-extension",
   "name": "AcceptingPatients",
   "title": "plannet-AcceptingPatients",
   "status": "draft",
-  "date": "2019-10-08",
+  "date": "2019-10-10",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {
@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "description": "Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the AcceptingPatients extension.",
+  "description": "Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the NewPatients extension.",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -40,7 +40,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "AcceptingPatients",
-        "definition": "Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the AcceptingPatients extension.",
+        "definition": "Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the NewPatients extension.",
         "min": 0,
         "max": "*",
         "base": {
@@ -215,7 +215,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "AcceptingPatients",
-        "definition": "Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the AcceptingPatients extension.",
+        "definition": "Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the NewPatients extension.",
         "min": 0,
         "max": "*"
       },
