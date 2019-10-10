@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint",
   "name": "Endpoint",
   "status": "draft",
-  "date": "2019-10-08",
+  "date": "2019-10-10",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {

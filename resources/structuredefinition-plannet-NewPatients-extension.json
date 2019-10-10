@@ -9,7 +9,7 @@
   "name": "NewPatients",
   "title": "plannet-NewPatients",
   "status": "draft",
-  "date": "2019-10-08",
+  "date": "2019-10-10",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {
@@ -153,7 +153,7 @@
       {
         "id": "Extension.extension:acceptingpatients",
         "path": "Extension.extension",
-        "definition": "Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the AcceptingPatients extension.",
+        "definition": "Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the NewPatients extension.",
         "min": 1,
         "max": "1",
         "base": {
@@ -182,7 +182,7 @@
       {
         "id": "Extension.extension:fromnetwork",
         "path": "Extension.extension",
-        "definition": "A reference to a healthcare provider insurance network (plannet-Network) for which the entity is/isn’t accepting new patients. This is a component of the AcceptingPatients extension.",
+        "definition": "A reference to a healthcare provider insurance network (plannet-Network) for which the entity is/isn’t accepting new patients. This is a component of the NewPatients extension.",
         "min": 0,
         "max": "1",
         "base": {
@@ -430,7 +430,7 @@
       {
         "id": "Extension.extension:acceptingpatients",
         "path": "Extension.extension",
-        "definition": "Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the AcceptingPatients extension.",
+        "definition": "Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the NewPatients extension.",
         "min": 1,
         "max": "1",
         "base": {
@@ -459,7 +459,7 @@
       {
         "id": "Extension.extension:fromnetwork",
         "path": "Extension.extension",
-        "definition": "A reference to a healthcare provider insurance network (plannet-Network) for which the entity is/isn’t accepting new patients. This is a component of the AcceptingPatients extension.",
+        "definition": "A reference to a healthcare provider insurance network (plannet-Network) for which the entity is/isn’t accepting new patients. This is a component of the NewPatients extension.",
         "min": 0,
         "max": "1",
         "base": {
