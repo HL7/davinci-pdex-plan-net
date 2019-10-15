@@ -36,16 +36,16 @@
 <p><p>The Payer Directory Implementation Guide is based the <a href="http://build.fhir.org/ig/HL7/VhDir/index.html"> Validated Healthcare Directory Implementation Guide (VHDir)</a>, 
     an international standard. The VHDir authors developed the IG to support a conceptual, centralized, national source of healthcare data that would be used across multiple use cases. The use of VhDir as the conceptual base for the Payer Directory Implementation Guide, including reuse by reference of a number of the extensions defined there, is intended to protect implementors of the Payer Directory IG from rework/remapping when the VHDir concept reaches implementation, and becomes a source of data for the Payer Directory. The API is based on the HL7 Validated Healthcare Directory IG. The primary changes are to: 1) remove the validation and restriction resources, 2) use US Core for R4 as the base profile, 3) eliminate some of the extensions that are not necessary for this use case, and 4) reduce additional constraints (e.g. search criteria, cardinality, and MustSupport) where appropriate.
    </p>
+<img style="width:80%;height:auto;" src="Bob1.png" alt="Scope" />
 <p>
     The diagram below depicts the scope of this implementation guide (IG). The IG defines the API that exposes a payer’s provider network (including pharmacy locations where appropriate) for access by a consumer or provider application. This is a query only API (GET) and does not support PUT or POST.   
 </p>
+<img style="width:60%;height:auto;" src="Bob3.png" alt="Local" />
 
-<img style="width:100%;height:auto;" src="Bob1.png" alt="Scope" />
 <h2 id="Relation">Relation to US Core and other IGs</h2>
 <p>This implementation guide was written for a US audience and profiles resources from the R4 version of the US Core IG, where available (Practitioner, PractitionerRole, Organization and Location), and otherwise from R4 (OrganizationAffiliation, HealthCareService, Endpoint).   Alignment with VhDir is maintained by using extensions from VhDir where possible.
 </p>
-<img style="width:100%;height:auto;" src="Bob2.png" alt="NPRM" />
-<img style="width:100%;height:auto;" src="Bob3.png" alt="Local" />
+
  <h2 id="disclaimers-assumptions">Disclaimers and Assumptions</h2>
 <p>
 <ul>
