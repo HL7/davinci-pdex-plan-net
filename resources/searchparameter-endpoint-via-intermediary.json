@@ -23,7 +23,7 @@
     "Endpoint"
   ],
   "type": "reference",
-  "expression": "Endpoint.contact.extension('http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension')",
+  "expression": "Endpoint.contact.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension')",
   "target": [
     "PractitionerRole",
     "Organization",

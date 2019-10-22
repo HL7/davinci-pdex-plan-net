@@ -23,7 +23,7 @@
     "Endpoint"
   ],
   "type": "token",
-  "expression": "Endpoint.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase').extension('type')",
+  "expression": "Endpoint.extension.where(url='http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase').extension.where(url='type')",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

@@ -1,0 +1,100 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "plannet-practitionerrole-1237955865",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-10-18T12:21:51.548+00:00",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ParticipatingNetwork-extension",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID050000",
+        "display": "Green Circle of Connecticut HMO"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
+      "value": "dc13e0af78faa0"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1237955865",
+    "display": "Samuel Thiel"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1239177926",
+    "display": "EASTER SEALS CAPITAL REGION & EASTERN CONNECTICUT, INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207W00000X",
+          "display": "Allopathic &amp; Osteopathic Physicians/Ophthalmology"
+        }
+      ],
+      "text": "Allopathic &amp; Osteopathic Physicians/Ophthalmology"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207W00000X",
+          "display": "Allopathic &amp; Osteopathic Physicians/Ophthalmology"
+        }
+      ],
+      "text": "Allopathic &amp; Osteopathic Physicians/Ophthalmology"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1239177926",
+      "display": "EASTER SEALS CAPITAL REGION & EASTERN CONNECTICUT, INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "140.425.4011 x517",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(492) 660-7094",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ]
+}

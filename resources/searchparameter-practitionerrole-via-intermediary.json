@@ -23,7 +23,7 @@
     "PractitionerRole"
   ],
   "type": "reference",
-  "expression": "PractitionerRole.telecom.extension('http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension')",
+  "expression": "PractitionerRole.telecom.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension')",
   "target": [
     "PractitionerRole",
     "Organization",

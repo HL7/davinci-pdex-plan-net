@@ -23,7 +23,7 @@
     "Organization"
   ],
   "type": "token",
-  "expression": "Organization.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('whereValid')",
+  "expression": "Organization.extension.where(url='http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension.where(url='whereValid')",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
