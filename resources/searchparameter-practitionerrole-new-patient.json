@@ -23,6 +23,6 @@
     "PractitionerRole"
   ],
   "type": "token",
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
+  "expression": "PractitionerRole.extension.where(url='http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension.where(url='acceptingPatients')",
   "multipleAnd": true
 }

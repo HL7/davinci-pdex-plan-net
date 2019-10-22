@@ -23,7 +23,7 @@
     "PractitionerRole"
   ],
   "type": "token",
-  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('status')",
+  "expression": "PractitionerRole.extension.where(url='http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension.where(url='status')",
   "multipleOr": true,
   "multipleAnd": true
 }

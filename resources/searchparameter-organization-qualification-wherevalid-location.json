@@ -23,7 +23,7 @@
     "Organization"
   ],
   "type": "reference",
-  "expression": "Organization.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('whereValid').as(Reference)",
+  "expression": "Organization.extension.where(url='http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension.where(url='whereValid').as(Reference)",
   "target": [
     "Location"
   ],

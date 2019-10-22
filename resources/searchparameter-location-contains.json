@@ -23,7 +23,7 @@
     "Location"
   ],
   "type": "special",
-  "expression": "Location.extension('http://hl7.org/fhir/StructureDefinition/location-boundary-geojson')",
+  "expression": "Location.extension.where(url='http://hl7.org/fhir/StructureDefinition/location-boundary-geojson')",
   "multipleOr": true,
   "multipleAnd": true
 }
