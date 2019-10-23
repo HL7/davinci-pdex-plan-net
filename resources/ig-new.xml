@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/skravitz/cimpl/plan-net-out7/fhir/guide/resources"/>
+    <valueString value="/Users/skravitz/cimpl/plan-net-out8/fhir/guide/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/skravitz/cimpl/plan-net-out7/fhir/guide/examples"/>
+    <valueString value="/Users/skravitz/cimpl/plan-net-out8/fhir/guide/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/skravitz/cimpl/plan-net-out7/fhir/guide/pages"/>
+    <valueString value="/Users/skravitz/cimpl/plan-net-out8/fhir/guide/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
   <version value="0.1.0"/>
@@ -33,7 +33,7 @@
     <version value="3.0.0"/>
   </dependsOn>
   <dependsOn id="VhDir">
-    <uri value="http://build.fhir.org/ig/HL7/VhDir/"/>
+    <uri value="http://hl7.org/fhir/uv/vhdir/2018Sep"/>
     <packageId value="hl7.fhir.uv.vhdir"/>
     <version value="current"/>
   </dependsOn>
