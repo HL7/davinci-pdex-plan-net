@@ -1634,8 +1634,14 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ServiceEligibility"
+            }
+          ],
           "strength": "example",
-          "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/healthcareservice-eligibility"
+          "description": "Coded values underwhich a specific service is made available."
         },
         "mapping": [
           {
@@ -1733,8 +1739,14 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ServiceCharacteristic"
+            }
+          ],
           "strength": "example",
-          "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/healthcareservice-characteristic"
+          "description": "A custom attribute that could be provided at a service (e.g. Wheelchair accessibiliy)."
         },
         "mapping": [
           {
@@ -2617,10 +2629,6 @@
       {
         "id": "HealthcareService.eligibility.code",
         "path": "HealthcareService.eligibility.code",
-        "binding": {
-          "strength": "example",
-          "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/healthcareservice-eligibility"
-        },
         "mustSupport": true
       },
       {
@@ -2636,10 +2644,6 @@
       {
         "id": "HealthcareService.characteristic",
         "path": "HealthcareService.characteristic",
-        "binding": {
-          "strength": "example",
-          "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/healthcareservice-characteristic"
-        },
         "mustSupport": true
       },
       {

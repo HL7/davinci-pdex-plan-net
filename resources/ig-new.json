@@ -37,7 +37,7 @@
   },
   {
     "id" : "VhDir",
-    "uri" : "http://hl7.org/fhir/uv/vhdir/2018Sep",
+    "uri" : "https://build.fhir.org/ig/HL7/VhDir",
     "packageId" : "hl7.fhir.uv.vhdir",
     "version" : "current"
   }],
