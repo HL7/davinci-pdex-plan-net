@@ -3,15 +3,15 @@
   "id" : "hl7.fhir.us.davinci-pdex-plan-net-0.1.0",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/skravitz/cimpl/plan-net-out8/fhir/guide/resources"
+    "valueString" : "/Users/skravitz/cimpl/plannet-out10/fhir/guide/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/skravitz/cimpl/plan-net-out8/fhir/guide/examples"
+    "valueString" : "/Users/skravitz/cimpl/plannet-out10/fhir/guide/examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/skravitz/cimpl/plan-net-out8/fhir/guide/pages"
+    "valueString" : "/Users/skravitz/cimpl/plannet-out10/fhir/guide/pages"
   }],
   "url" : "http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0",
   "version" : "0.1.0",
@@ -27,8 +27,8 @@
   }],
   "packageId" : "hl7.fhir.us.davinci-pdex-plan-net",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["4.0.0",
-  "4.0.0"],
+  "fhirVersion" : ["4.0.1",
+  "4.0.1"],
   "dependsOn" : [{
     "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core",
@@ -1206,6 +1206,83 @@
         "reference" : "Location/location1WSAddress"
       },
       "name" : "Example: location1WSAddress",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "HealthcareService/nutrition-healthcareservice-1238863986"
+      },
+      "name" : "Example: nutrition-healthcareservice-1238863986",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "InsurancePlan/plannet-insuranceplan-HPID400000"
+      },
+      "name" : "Example: plannet-insuranceplan-HPID400000",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Location/plannet-location-1230085657"
+      },
+      "name" : "Example: plannet-location-1230085657",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Location/plannet-location-1230188327"
+      },
+      "name" : "Example: plannet-location-1230188327",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Location/plannet-location-PCY-0002302"
+      },
+      "name" : "Example: plannet-location-PCY-0002302",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Endpoint/plannet-organization-1230085657-direct"
+      },
+      "name" : "Example: plannet-organization-1230085657-direct",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/plannet-organization-1239774646"
+      },
+      "name" : "Example: plannet-organization-1239774646",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/plannet-organization-3bd599c434bb5590c0c598fc3"
+      },
+      "name" : "Example: plannet-organization-3bd599c434bb5590c0c598fc3",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "OrganizationAffiliation/plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82"
+      },
+      "name" : "Example: plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/plannet-practitioner-1232506780"
+      },
+      "name" : "Example: plannet-practitioner-1232506780",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "PractitionerRole/plannet-practitionerrole-1236743399"
+      },
+      "name" : "Example: plannet-practitionerrole-1236743399",
       "exampleBoolean" : true
     }],
     "page" : {

@@ -659,6 +659,50 @@
     "Location/location1WSAddress": {
       "base": "Location-location1WSAddress.html",
       "source": "location1WSAddress.json"
+    },
+    "HealthcareService/nutrition-healthcareservice-1238863986": {
+      "base": "HealthcareService-nutrition-healthcareservice-1238863986.html",
+      "source": "nutrition-healthcareservice-1238863986.json"
+    },
+    "InsurancePlan/plannet-insuranceplan-HPID400000": {
+      "base": "InsurancePlan-plannet-insuranceplan-HPID400000.html",
+      "source": "plannet-insuranceplan-HPID400000.json"
+    },
+    "Location/plannet-location-1230085657": {
+      "base": "Location-plannet-location-1230085657.html",
+      "source": "plannet-location-1230085657.json"
+    },
+    "Location/plannet-location-1230188327": {
+      "base": "Location-plannet-location-1230188327.html",
+      "source": "plannet-location-1230188327.json"
+    },
+    "Location/plannet-location-PCY-0002302": {
+      "base": "Location-plannet-location-PCY-0002302.html",
+      "source": "plannet-location-PCY-0002302.json"
+    },
+    "Endpoint/plannet-organization-1230085657-direct": {
+      "base": "Endpoint-plannet-organization-1230085657-direct.html",
+      "source": "plannet-organization-1230085657-direct.json"
+    },
+    "Organization/plannet-organization-1239774646": {
+      "base": "Organization-plannet-organization-1239774646.html",
+      "source": "plannet-organization-1239774646.json"
+    },
+    "Organization/plannet-organization-3bd599c434bb5590c0c598fc3": {
+      "base": "Organization-plannet-organization-3bd599c434bb5590c0c598fc3.html",
+      "source": "plannet-organization-3bd599c434bb5590c0c598fc3.json"
+    },
+    "OrganizationAffiliation/plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82": {
+      "base": "OrganizationAffiliation-plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82.html",
+      "source": "plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82.json"
+    },
+    "Practitioner/plannet-practitioner-1232506780": {
+      "base": "Practitioner-plannet-practitioner-1232506780.html",
+      "source": "plannet-practitioner-1232506780.json"
+    },
+    "PractitionerRole/plannet-practitionerrole-1236743399": {
+      "base": "PractitionerRole-plannet-practitionerrole-1236743399.html",
+      "source": "plannet-practitionerrole-1236743399.json"
     }
   },
   "special-urls": [],

@@ -32,7 +32,7 @@
           {
             "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
             "code": "NPI",
-            "display": "Provider number",
+            "display": "National provider identifier",
             "userSelected": true
           }
         ],
