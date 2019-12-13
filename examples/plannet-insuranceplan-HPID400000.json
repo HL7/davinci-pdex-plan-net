@@ -1,0 +1,53 @@
+{
+  "id": "plannet-insuranceplan-HPID400000",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "text": "HIOS product ID"
+      },
+      "system": "http://www.cms.gov/CCIIO",
+      "value": "HPID400000",
+      "assigner": {
+        "display": "Centers for Medicare and Medicaid Services"
+      }
+    }
+  ],
+  "status": "active",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics",
+          "code": "silver",
+          "display": "Silver"
+        }
+      ],
+      "text": "Silver"
+    }
+  ],
+  "name": "Green Circle of ConnecticutSilver HMO Plan",
+  "alias": [
+    "GC CT SILVER HMO"
+  ],
+  "ownedBy": {
+    "reference": "Organization/plannet-organization-1230220000",
+    "display": "Green Circle"
+  },
+  "administeredBy": {
+    "reference": "Organization/plannet-organization-1230220000",
+    "display": "Green Circle"
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID050000",
+      "display": "Green Circle of Connecticut HMO"
+    }
+  ],
+  "resourceType": "InsurancePlan"
+}
