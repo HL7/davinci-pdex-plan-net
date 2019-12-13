@@ -14,7 +14,7 @@
     </contact>
 
     <packageId value="hl7.fhir.us.davinci-pdex-plan-net"/>
-    <fhirVersion value="4.0.0"/>
+    <fhirVersion value="4.0.1"/>
     <definition>
         <grouping>
             <name value="Profiles in this Implementation Guide"/>
@@ -1192,6 +1192,83 @@
             <reference value="Location/location1WSAddress"/>
           </reference>
           <name value="Example: location1WSAddress"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="HealthcareService/nutrition-healthcareservice-1238863986"/>
+          </reference>
+          <name value="Example: nutrition-healthcareservice-1238863986"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="InsurancePlan/plannet-insuranceplan-HPID400000"/>
+          </reference>
+          <name value="Example: plannet-insuranceplan-HPID400000"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="Location/plannet-location-1230085657"/>
+          </reference>
+          <name value="Example: plannet-location-1230085657"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="Location/plannet-location-1230188327"/>
+          </reference>
+          <name value="Example: plannet-location-1230188327"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="Location/plannet-location-PCY-0002302"/>
+          </reference>
+          <name value="Example: plannet-location-PCY-0002302"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="Endpoint/plannet-organization-1230085657-direct"/>
+          </reference>
+          <name value="Example: plannet-organization-1230085657-direct"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="Organization/plannet-organization-1239774646"/>
+          </reference>
+          <name value="Example: plannet-organization-1239774646"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="Organization/plannet-organization-3bd599c434bb5590c0c598fc3"/>
+          </reference>
+          <name value="Example: plannet-organization-3bd599c434bb5590c0c598fc3"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="OrganizationAffiliation/plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82"/>
+          </reference>
+          <name value="Example: plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="Practitioner/plannet-practitioner-1232506780"/>
+          </reference>
+          <name value="Example: plannet-practitioner-1232506780"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
+            <reference value="PractitionerRole/plannet-practitionerrole-1236743399"/>
+          </reference>
+          <name value="Example: plannet-practitionerrole-1236743399"/>
       </resource>
       
         <page>

@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/skravitz/cimpl/plan-net-out8/fhir/guide/resources"/>
+    <valueString value="/Users/skravitz/cimpl/plannet-out10/fhir/guide/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/skravitz/cimpl/plan-net-out8/fhir/guide/examples"/>
+    <valueString value="/Users/skravitz/cimpl/plannet-out10/fhir/guide/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/skravitz/cimpl/plan-net-out8/fhir/guide/pages"/>
+    <valueString value="/Users/skravitz/cimpl/plannet-out10/fhir/guide/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
   <version value="0.1.0"/>
@@ -25,8 +25,8 @@
   </contact>
   <packageId value="hl7.fhir.us.davinci-pdex-plan-net"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="4.0.0"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
+  <fhirVersion value="4.0.1"/>
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core"/>
     <packageId value="hl7.fhir.us.core"/>
@@ -1202,6 +1202,83 @@
         <reference value="Location/location1WSAddress"/>
       </reference>
       <name value="Example: location1WSAddress"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="HealthcareService/nutrition-healthcareservice-1238863986"/>
+      </reference>
+      <name value="Example: nutrition-healthcareservice-1238863986"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="InsurancePlan/plannet-insuranceplan-HPID400000"/>
+      </reference>
+      <name value="Example: plannet-insuranceplan-HPID400000"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Location/plannet-location-1230085657"/>
+      </reference>
+      <name value="Example: plannet-location-1230085657"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Location/plannet-location-1230188327"/>
+      </reference>
+      <name value="Example: plannet-location-1230188327"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Location/plannet-location-PCY-0002302"/>
+      </reference>
+      <name value="Example: plannet-location-PCY-0002302"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Endpoint/plannet-organization-1230085657-direct"/>
+      </reference>
+      <name value="Example: plannet-organization-1230085657-direct"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/plannet-organization-1239774646"/>
+      </reference>
+      <name value="Example: plannet-organization-1239774646"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/plannet-organization-3bd599c434bb5590c0c598fc3"/>
+      </reference>
+      <name value="Example: plannet-organization-3bd599c434bb5590c0c598fc3"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OrganizationAffiliation/plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82"/>
+      </reference>
+      <name value="Example: plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/plannet-practitioner-1232506780"/>
+      </reference>
+      <name value="Example: plannet-practitioner-1232506780"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PractitionerRole/plannet-practitionerrole-1236743399"/>
+      </reference>
+      <name value="Example: plannet-practitionerrole-1236743399"/>
       <exampleBoolean value="true"/>
     </resource>
     <page>
