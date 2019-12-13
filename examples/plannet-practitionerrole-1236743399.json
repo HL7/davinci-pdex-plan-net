@@ -1,0 +1,105 @@
+{
+  "id": "plannet-practitionerrole-1236743399",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ParticipatingNetwork-extension",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID030000",
+        "display": "Massachusetts Persona Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ParticipatingNetwork-extension",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://eye-associates-pc.com",
+      "value": "01abd604ca8fc5"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1236743399",
+    "display": "Michel Bechtelar"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1230789741",
+    "display": "EYE ASSOCIATES PC"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208800000X",
+          "display": "Urology"
+        }
+      ],
+      "text": "Urology"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208800000X",
+          "display": "Urology"
+        }
+      ],
+      "text": "Urology"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1230789741",
+      "display": "EYE ASSOCIATES PC"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-101-859-6360 x282",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "573.510.6906 x9428",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}
