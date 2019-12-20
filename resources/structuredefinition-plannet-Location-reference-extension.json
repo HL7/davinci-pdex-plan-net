@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "plannet-FromNetwork-extension",
+  "id": "plannet-Location-reference-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>FromNetwork Extension</b></p>\n  <p>A reference to a healthcare provider insurance network (plannet-Network) for which the entity is/isn’t accepting new patients. This is a component of the NewPatients extension.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Location-reference Extension</b></p>\n  <p>A reference to  a Location resource (plannet-Location) defining the coverage area of a health insurance provider network</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-FromNetwork-extension",
-  "name": "FromNetwork",
-  "title": "plannet-FromNetwork",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location-reference-extension",
+  "name": "Location_reference",
+  "title": "Location -reference",
   "status": "draft",
-  "date": "2019-12-13",
+  "date": "2019-12-20",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {
@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "description": "A reference to a healthcare provider insurance network (plannet-Network) for which the entity is/isn’t accepting new patients. This is a component of the NewPatients extension.",
+  "description": "A reference to  a Location resource (plannet-Location) defining the coverage area of a health insurance provider network",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -39,8 +39,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "FromNetwork",
-        "definition": "A reference to a healthcare provider insurance network (plannet-Network) for which the entity is/isn’t accepting new patients. This is a component of the NewPatients extension.",
+        "short": "Location-reference",
+        "definition": "A reference to  a Location resource (plannet-Location) defining the coverage area of a health insurance provider network",
         "min": 0,
         "max": "*",
         "base": {
@@ -179,7 +179,7 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-FromNetwork-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location-reference-extension"
       },
       {
         "id": "Extension.valueReference",
@@ -197,7 +197,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
             ]
           }
         ],
@@ -217,8 +217,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "FromNetwork",
-        "definition": "A reference to a healthcare provider insurance network (plannet-Network) for which the entity is/isn’t accepting new patients. This is a component of the NewPatients extension.",
+        "short": "Location-reference",
+        "definition": "A reference to  a Location resource (plannet-Location) defining the coverage area of a health insurance provider network",
         "min": 0,
         "max": "*"
       },
@@ -236,7 +236,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-FromNetwork-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location-reference-extension"
       },
       {
         "id": "Extension.valueReference",
@@ -246,7 +246,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
             ]
           }
         ]

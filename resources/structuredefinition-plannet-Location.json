@@ -7,10 +7,10 @@
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location",
   "name": "Location",
-  "title": "plannet-Location",
+  "title": "Location",
   "status": "active",
   "experimental": false,
-  "date": "2019-12-13",
+  "date": "2019-12-20",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {
@@ -62,7 +62,7 @@
       {
         "id": "Location",
         "path": "Location",
-        "short": "plannet-Location",
+        "short": "Location",
         "definition": "A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.",
         "min": 0,
         "max": "*",
@@ -504,7 +504,13 @@
         },
         "type": [
           {
-            "code": "string"
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
           }
         ],
         "isModifier": false,
@@ -548,6 +554,24 @@
             "code": "Extension"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -576,6 +600,16 @@
             "code": "code"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": true,
         "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one.",
         "isSummary": true,
@@ -588,7 +622,7 @@
           ],
           "strength": "required",
           "description": "Identifies the purpose for this identifier, if known .",
-          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.0"
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
         },
         "mapping": [
           {
@@ -619,6 +653,16 @@
         "type": [
           {
             "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -675,6 +719,16 @@
             "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -717,6 +771,16 @@
             "valueString": "123456"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -750,6 +814,16 @@
         "type": [
           {
             "code": "Period"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -789,6 +863,16 @@
             "targetProfile": [
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
             ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -1111,7 +1195,13 @@
         },
         "type": [
           {
-            "code": "string"
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
           }
         ],
         "isModifier": false,
@@ -1155,6 +1245,24 @@
             "code": "Extension"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -1165,7 +1273,7 @@
         ]
       },
       {
-        "id": "Location.telecom.extension:tviaintermediary",
+        "id": "Location.telecom.extension:viaintermediary",
         "path": "Location.telecom.extension",
         "definition": "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization",
         "min": 0,
@@ -1179,17 +1287,35 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
             ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "tviaintermediary",
+        "sliceName": "viaintermediary",
         "mustSupport": true
       },
       {
-        "id": "Location.telecom.extension:tavailabletime",
+        "id": "Location.telecom.extension:contactpointavailabletime",
         "path": "Location.telecom.extension",
         "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
@@ -1207,9 +1333,27 @@
             ]
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "tavailabletime",
+        "sliceName": "contactpointavailabletime",
         "mustSupport": true
       },
       {
@@ -1232,6 +1376,16 @@
         "condition": [
           "cpt-2"
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": false,
         "isSummary": true,
         "binding": {
@@ -1243,7 +1397,7 @@
           ],
           "strength": "required",
           "description": "Telecommunications form for contact point.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.0"
+          "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1"
         },
         "mapping": [
           {
@@ -1277,6 +1431,16 @@
         "type": [
           {
             "code": "string"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -1315,6 +1479,16 @@
             "code": "code"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": true,
         "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old contact etc.for a current/permanent one",
         "isSummary": true,
@@ -1327,7 +1501,7 @@
           ],
           "strength": "required",
           "description": "Use of contact point.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-use|4.0.0"
+          "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1"
         },
         "mapping": [
           {
@@ -1362,6 +1536,16 @@
             "code": "positiveInt"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -1390,6 +1574,16 @@
         "type": [
           {
             "code": "Period"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -2564,7 +2758,7 @@
       {
         "id": "Location",
         "path": "Location",
-        "short": "plannet-Location",
+        "short": "Location",
         "definition": "A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.",
         "mustSupport": false,
         "isModifier": false,
@@ -2737,7 +2931,7 @@
         "path": "Location.telecom"
       },
       {
-        "id": "Location.telecom.extension:tviaintermediary",
+        "id": "Location.telecom.extension:viaintermediary",
         "path": "Location.telecom.extension",
         "definition": "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization",
         "min": 0,
@@ -2751,17 +2945,35 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
             ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "tviaintermediary",
+        "sliceName": "viaintermediary",
         "mustSupport": true
       },
       {
-        "id": "Location.telecom.extension:tavailabletime",
+        "id": "Location.telecom.extension:contactpointavailabletime",
         "path": "Location.telecom.extension",
         "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
@@ -2779,9 +2991,27 @@
             ]
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "tavailabletime",
+        "sliceName": "contactpointavailabletime",
         "mustSupport": true
       },
       {

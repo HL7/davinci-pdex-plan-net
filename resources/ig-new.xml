@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/skravitz/cimpl/plannet-out10/fhir/guide/resources"/>
+    <valueString value="/Users/skravitz/cimpl/plannet-out-11/fhir/guide/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/skravitz/cimpl/plannet-out10/fhir/guide/examples"/>
+    <valueString value="/Users/skravitz/cimpl/plannet-out-11/fhir/guide/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/skravitz/cimpl/plannet-out10/fhir/guide/pages"/>
+    <valueString value="/Users/skravitz/cimpl/plannet-out-11/fhir/guide/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net-0.1.0"/>
   <version value="0.1.0"/>
@@ -25,7 +25,7 @@
   </contact>
   <packageId value="hl7.fhir.us.davinci-pdex-plan-net"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="4.0.1"/>
+  <fhirVersion value="4.0.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core"/>
@@ -46,105 +46,91 @@
       <reference>
         <reference value="StructureDefinition/plannet-Endpoint"/>
       </reference>
-      <name value="plannet-Endpoint"/>
+      <name value="Endpoint"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/plannet-HealthcareService"/>
       </reference>
-      <name value="plannet-HealthcareService"/>
+      <name value="Healthcare Service"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/plannet-InsurancePlan"/>
       </reference>
-      <name value="plannet-InsurancePlan"/>
+      <name value="Insurance Plan"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/plannet-Location"/>
       </reference>
-      <name value="plannet-Location"/>
+      <name value="Location"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/plannet-Network"/>
       </reference>
-      <name value="plannet-Network"/>
+      <name value="Network"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/plannet-Organization"/>
       </reference>
-      <name value="plannet-Organization"/>
+      <name value="Organization"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/plannet-OrganizationAffiliation"/>
       </reference>
-      <name value="plannet-OrganizationAffiliation"/>
+      <name value="Organization Affiliation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/plannet-Practitioner"/>
       </reference>
-      <name value="plannet-Practitioner"/>
+      <name value="Practitioner"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/plannet-PractitionerRole"/>
       </reference>
-      <name value="plannet-PractitionerRole"/>
+      <name value="Practitioner Role"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/plannet-AcceptingPatients-extension"/>
+        <reference value="StructureDefinition/plannet-Location-reference-extension"/>
       </reference>
-      <name value="plannet-AcceptingPatients"/>
+      <name value="Location -reference"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/plannet-CViaIntermediary-extension"/>
+        <reference value="StructureDefinition/plannet-Network-reference-extension"/>
       </reference>
-      <name value="plannet-CViaIntermediary"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/plannet-FromNetwork-extension"/>
-      </reference>
-      <name value="plannet-FromNetwork"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/plannet-LocationReference-extension"/>
-      </reference>
-      <name value="plannet-LocationReference"/>
+      <name value="Network -reference"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/plannet-NewPatients-extension"/>
       </reference>
-      <name value="plannet-NewPatients"/>
+      <name value="New Patients"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/plannet-ParticipatingNetwork-extension"/>
+        <reference value="StructureDefinition/plannet-ViaIntermediary-extension"/>
       </reference>
-      <name value="plannet-ParticipatingNetwork"/>
+      <name value="Via Intermediary"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1258,13 +1244,6 @@
         <reference value="Organization/plannet-organization-3bd599c434bb5590c0c598fc3"/>
       </reference>
       <name value="Example: plannet-organization-3bd599c434bb5590c0c598fc3"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="OrganizationAffiliation/plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82"/>
-      </reference>
-      <name value="Example: plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

@@ -23,7 +23,7 @@
     "HealthcareService"
   ],
   "type": "reference",
-  "expression": "HealthcareService.telecom.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension')",
+  "expression": "HealthcareService.telecom.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension')",
   "target": [
     "PractitionerRole",
     "Organization",

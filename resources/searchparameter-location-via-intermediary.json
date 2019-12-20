@@ -23,7 +23,7 @@
     "Location"
   ],
   "type": "reference",
-  "expression": "Location.telecom.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension')",
+  "expression": "Location.telecom.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension')",
   "target": [
     "PractitionerRole",
     "Organization",
