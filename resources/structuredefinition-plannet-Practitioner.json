@@ -3,14 +3,14 @@
   "id": "plannet-Practitioner",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Practitioner Profile</b></p>\n  <p>Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PractitionerName.HumanName maps to name\n  PractitionerActive maps to active\n  PractitionerCommunication maps to communication\n  Gender maps to gender\n  BirthDate maps to birthDate\n  Photo maps to photo\n  Address maps to address\n  Address.Purpose maps to address.use\n  Address.Type maps to address.type\n  Address.DisplayText maps to address.text\n  Address.AddressLine maps to address.line\n  Address.City maps to address.city\n  Address.State maps to address.state\n  Address.PostalCode maps to address.postalCode\n  Address.Country maps to address.country\n  Address.EffectiveTimePeriod maps to address.period\n  PractitionerName.HumanName.Purpose maps to name.use\n  PractitionerName.HumanName.Name maps to name.text\n  PractitionerName.HumanName.FamilyName maps to name.family\n  PractitionerName.HumanName.GivenName maps to name.given\n  PractitionerName.HumanName.Prefix maps to name.prefix\n  PractitionerName.HumanName.Suffix maps to name.suffix\n  PractitionerName.HumanName.EffectiveTimePeriod maps to name.period\n  PractitionerTelecom maps to telecom\n  PractitionerTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  TAvailableTime maps to telecom.extension\n  TViaIntermediary maps to telecom.extension\n  GeoLocation maps to address.extension\n  PractitionerQualification.Practitioner-Qualification-VHDIR maps to qualification.extension\n  PractitionerQualification maps to qualification\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierUse maps to qualification.identifier.use\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierSystem maps to qualification.identifier.system\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierValue maps to qualification.identifier.value\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierType maps to qualification.identifier.type\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierPeriod maps to qualification.identifier.period\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierAssigner maps to qualification.identifier.assigner\n  PractitionerQualification.QualificationID maps to qualification.id\n  PractitionerQualification.Code maps to qualification.code\n  PractitionerQualification.Period maps to qualification.period\n  PractitionerQualification.Issuer maps to qualification.issuer\n  Proficiency maps to communication.extension\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  constrain name.family to 1..1\n  constrain name.given to 1..*\n  constrain photo to 0..1\n  constrain qualification.issuer to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Practitioner Profile</b></p>\n  <p>Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PractitionerName.HumanName maps to name\n  PractitionerActive maps to active\n  PractitionerCommunication maps to communication\n  Gender maps to gender\n  BirthDate maps to birthDate\n  Photo maps to photo\n  Address maps to address\n  Address.Purpose maps to address.use\n  Address.Type maps to address.type\n  Address.DisplayText maps to address.text\n  Address.AddressLine maps to address.line\n  Address.City maps to address.city\n  Address.State maps to address.state\n  Address.PostalCode maps to address.postalCode\n  Address.Country maps to address.country\n  Address.EffectiveTimePeriod maps to address.period\n  PractitionerName.HumanName.Purpose maps to name.use\n  PractitionerName.HumanName.Name maps to name.text\n  PractitionerName.HumanName.FamilyName maps to name.family\n  PractitionerName.HumanName.GivenName maps to name.given\n  PractitionerName.HumanName.Prefix maps to name.prefix\n  PractitionerName.HumanName.Suffix maps to name.suffix\n  PractitionerName.HumanName.EffectiveTimePeriod maps to name.period\n  PractitionerTelecom maps to telecom\n  PractitionerTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  TAvailableTime maps to telecom.extension\n  TViaIntermediary maps to telecom.extension\n  GeoLocation maps to address.extension\n  PractitionerQualification.Practitioner-Qualification-VHDIR maps to qualification.extension\n  PractitionerQualification maps to qualification\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierUse maps to qualification.identifier.use\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierSystem maps to qualification.identifier.system\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierValue maps to qualification.identifier.value\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierType maps to qualification.identifier.type\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierPeriod maps to qualification.identifier.period\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierAssigner maps to qualification.identifier.assigner\n  PractitionerQualification.QualificationID maps to qualification.id\n  PractitionerQualification.Code maps to qualification.code\n  PractitionerQualification.Period maps to qualification.period\n  PractitionerQualification.Issuer maps to qualification.issuer\n  Communication-Proficiency maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  constrain name.family to 1..1\n  constrain name.given to 1..*\n  constrain photo to 0..1\n  constrain qualification.issuer to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner",
   "name": "Practitioner",
-  "title": "plannet-Practitioner",
+  "title": "Practitioner",
   "status": "active",
   "experimental": false,
-  "date": "2019-12-13",
+  "date": "2019-12-20",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {
@@ -67,7 +67,7 @@
       {
         "id": "Practitioner",
         "path": "Practitioner",
-        "short": "plannet-Practitioner",
+        "short": "Practitioner",
         "definition": "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.",
         "alias": [
           "Provider"
@@ -385,6 +385,30 @@
         "isModifier": false,
         "isSummary": false,
         "sliceName": "accessibility",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.extension:communication-proficiency",
+        "path": "Practitioner.extension",
+        "definition": "Communications Proficiency indicates a practitioner’s level of spoken proficiency with the language(s) specified in practitioner.communication",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "communication-proficiency",
         "mustSupport": true
       },
       {
@@ -1588,7 +1612,13 @@
         },
         "type": [
           {
-            "code": "string"
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
           }
         ],
         "isModifier": false,
@@ -1632,6 +1662,24 @@
             "code": "Extension"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -1642,7 +1690,7 @@
         ]
       },
       {
-        "id": "Practitioner.telecom.extension:tavailabletime",
+        "id": "Practitioner.telecom.extension:contactpointavailabletime",
         "path": "Practitioner.telecom.extension",
         "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
@@ -1660,13 +1708,31 @@
             ]
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "tavailabletime",
+        "sliceName": "contactpointavailabletime",
         "mustSupport": true
       },
       {
-        "id": "Practitioner.telecom.extension:tviaintermediary",
+        "id": "Practitioner.telecom.extension:viaintermediary",
         "path": "Practitioner.telecom.extension",
         "definition": "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization",
         "min": 0,
@@ -1680,13 +1746,31 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
             ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "tviaintermediary",
+        "sliceName": "viaintermediary",
         "mustSupport": true
       },
       {
@@ -1709,6 +1793,16 @@
         "condition": [
           "cpt-2"
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": false,
         "isSummary": true,
         "binding": {
@@ -1720,7 +1814,7 @@
           ],
           "strength": "required",
           "description": "Telecommunications form for contact point.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.0"
+          "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1"
         },
         "mapping": [
           {
@@ -1755,6 +1849,16 @@
         "type": [
           {
             "code": "string"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -1794,6 +1898,16 @@
             "code": "code"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": true,
         "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old contact etc.for a current/permanent one",
         "isSummary": true,
@@ -1806,7 +1920,7 @@
           ],
           "strength": "required",
           "description": "Use of contact point.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-use|4.0.0"
+          "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1"
         },
         "mapping": [
           {
@@ -1842,6 +1956,16 @@
             "code": "positiveInt"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -1871,6 +1995,16 @@
         "type": [
           {
             "code": "Period"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -1945,7 +2079,13 @@
         },
         "type": [
           {
-            "code": "string"
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
           }
         ],
         "isModifier": false,
@@ -1989,6 +2129,24 @@
             "code": "Extension"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -2015,6 +2173,24 @@
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/geolocation"
             ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
         "isModifier": false,
@@ -2047,6 +2223,16 @@
             "valueCode": "home"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": true,
         "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old address etc.for a current/permanent one",
         "isSummary": true,
@@ -2059,7 +2245,7 @@
           ],
           "strength": "required",
           "description": "The use of an address.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/address-use|4.0.0"
+          "valueSet": "http://hl7.org/fhir/ValueSet/address-use|4.0.1"
         },
         "mapping": [
           {
@@ -2101,6 +2287,16 @@
             "valueCode": "both"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": false,
         "isSummary": true,
         "binding": {
@@ -2112,7 +2308,7 @@
           ],
           "strength": "required",
           "description": "The type of an address (physical / postal).",
-          "valueSet": "http://hl7.org/fhir/ValueSet/address-type|4.0.0"
+          "valueSet": "http://hl7.org/fhir/ValueSet/address-type|4.0.1"
         },
         "mapping": [
           {
@@ -2155,6 +2351,16 @@
             "valueString": "137 Nowhere Street, Erewhon 9132"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -2195,6 +2401,16 @@
           {
             "label": "General",
             "valueString": "137 Nowhere Street"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -2243,6 +2459,16 @@
           {
             "label": "General",
             "valueString": "Erewhon"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -2294,6 +2520,16 @@
             "valueString": "Madison"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -2326,6 +2562,16 @@
         "type": [
           {
             "code": "string"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -2376,6 +2622,16 @@
             "valueString": "9132"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -2414,6 +2670,16 @@
         "type": [
           {
             "code": "string"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -2463,6 +2729,16 @@
               "start": "2010-03-23",
               "end": "2010-07-01"
             }
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -2719,7 +2995,7 @@
         }
       },
       {
-        "id": "Practitioner.qualification.extension:practitioner-qualification-vhdir",
+        "id": "Practitioner.qualification.extension:practitionerqualification",
         "path": "Practitioner.qualification.extension",
         "definition": "Status, whereValid, and history of a practitioner's qualification",
         "min": 0,
@@ -2739,7 +3015,7 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "practitioner-qualification-vhdir",
+        "sliceName": "practitionerqualification",
         "mustSupport": true
       },
       {
@@ -2820,7 +3096,13 @@
         },
         "type": [
           {
-            "code": "string"
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
           }
         ],
         "isModifier": false,
@@ -2864,6 +3146,24 @@
             "code": "Extension"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -2892,6 +3192,16 @@
             "code": "code"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": true,
         "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one.",
         "isSummary": true,
@@ -2904,7 +3214,7 @@
           ],
           "strength": "required",
           "description": "Identifies the purpose for this identifier, if known .",
-          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.0"
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
         },
         "mapping": [
           {
@@ -2935,6 +3245,16 @@
         "type": [
           {
             "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -2991,6 +3311,16 @@
             "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -3033,6 +3363,16 @@
             "valueString": "123456"
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -3066,6 +3406,16 @@
         "type": [
           {
             "code": "Period"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -3105,6 +3455,16 @@
             "targetProfile": [
               "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
             ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
         "isModifier": false,
@@ -3284,178 +3644,6 @@
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "Practitioner.communication.id",
-        "path": "Practitioner.communication.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "Unique id for inter-element referencing",
-        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "Practitioner.communication.extension",
-        "path": "Practitioner.communication.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "Practitioner.communication.extension:proficiency",
-        "path": "Practitioner.communication.extension",
-        "definition": "Proficiency indicates a practitioner’s level of spoken proficiency with the language(s) specified in practitioner.communication",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "proficiency",
-        "mustSupport": true
-      },
-      {
-        "id": "Practitioner.communication.coding",
-        "path": "Practitioner.communication.coding",
-        "short": "Code defined by a terminology system",
-        "definition": "A reference to a code defined by a terminology system.",
-        "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
-        "requirements": "Allows for alternative encodings within a code system, and translations to other code systems.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "CodeableConcept.coding",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1-8, C*E.10-22"
-          },
-          {
-            "identity": "rim",
-            "map": "union(., ./translation)"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
-          }
-        ]
-      },
-      {
-        "id": "Practitioner.communication.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "Practitioner.communication.text",
-        "short": "Plain text representation of the concept",
-        "definition": "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.",
-        "comment": "Very often the text is the same as a displayName of one of the codings.",
-        "requirements": "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "CodeableConcept.text",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.9. But note many systems use C*E.2 for this"
-          },
-          {
-            "identity": "rim",
-            "map": "./originalText[mediaType/code=\"text/plain\"]/data"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText"
-          }
-        ]
       }
     ]
   },
@@ -3464,7 +3652,7 @@
       {
         "id": "Practitioner",
         "path": "Practitioner",
-        "short": "plannet-Practitioner",
+        "short": "Practitioner",
         "definition": "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.",
         "mustSupport": false,
         "isModifier": false,
@@ -3507,6 +3695,30 @@
         "isModifier": false,
         "isSummary": false,
         "sliceName": "accessibility",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.extension:communication-proficiency",
+        "path": "Practitioner.extension",
+        "definition": "Communications Proficiency indicates a practitioner’s level of spoken proficiency with the language(s) specified in practitioner.communication",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "communication-proficiency",
         "mustSupport": true
       },
       {
@@ -3590,7 +3802,7 @@
         "mustSupport": true
       },
       {
-        "id": "Practitioner.telecom.extension:tavailabletime",
+        "id": "Practitioner.telecom.extension:contactpointavailabletime",
         "path": "Practitioner.telecom.extension",
         "definition": "AvailableTime indicates when an organization is available for contact",
         "min": 0,
@@ -3608,13 +3820,31 @@
             ]
           }
         ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "tavailabletime",
+        "sliceName": "contactpointavailabletime",
         "mustSupport": true
       },
       {
-        "id": "Practitioner.telecom.extension:tviaintermediary",
+        "id": "Practitioner.telecom.extension:viaintermediary",
         "path": "Practitioner.telecom.extension",
         "definition": "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization",
         "min": 0,
@@ -3628,13 +3858,31 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension"
             ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "tviaintermediary",
+        "sliceName": "viaintermediary",
         "mustSupport": true
       },
       {
@@ -3684,6 +3932,24 @@
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/geolocation"
             ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
         "isModifier": false,
@@ -3774,7 +4040,7 @@
         }
       },
       {
-        "id": "Practitioner.qualification.extension:practitioner-qualification-vhdir",
+        "id": "Practitioner.qualification.extension:practitionerqualification",
         "path": "Practitioner.qualification.extension",
         "definition": "Status, whereValid, and history of a practitioner's qualification",
         "min": 0,
@@ -3794,7 +4060,7 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "practitioner-qualification-vhdir",
+        "sliceName": "practitionerqualification",
         "mustSupport": true
       },
       {
@@ -3867,30 +4133,6 @@
       {
         "id": "Practitioner.communication",
         "path": "Practitioner.communication",
-        "mustSupport": true
-      },
-      {
-        "id": "Practitioner.communication.extension:proficiency",
-        "path": "Practitioner.communication.extension",
-        "definition": "Proficiency indicates a practitioner’s level of spoken proficiency with the language(s) specified in practitioner.communication",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency"
-            ]
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "sliceName": "proficiency",
         "mustSupport": true
       }
     ]

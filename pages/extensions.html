@@ -35,29 +35,21 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-          <td><a href="StructureDefinition-plannet-AcceptingPatients-extension.html">AcceptingPatients</a></td>
-          <td>{% capture md_text %}Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the NewPatients extension.{% endcapture %}{{ md_text | markdownify }}</td>
-        </tr>
         <tr>
-          <td><a href="StructureDefinition-plannet-CViaIntermediary-extension.html">CViaIntermediary</a></td>
-          <td>{% capture md_text %}A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization{% endcapture %}{{ md_text | markdownify }}</td>
-        </tr>
-        <tr>
-          <td><a href="StructureDefinition-plannet-FromNetwork-extension.html">FromNetwork</a></td>
-          <td>{% capture md_text %}A reference to a healthcare provider insurance network (plannet-Network) for which the entity is/isn’t accepting new patients. This is a component of the NewPatients extension.{% endcapture %}{{ md_text | markdownify }}</td>
-        </tr>
-        <tr>
-          <td><a href="StructureDefinition-plannet-LocationReference-extension.html">LocationReference</a></td>
+          <td><a href="StructureDefinition-plannet-Location-reference-extension.html">Location -reference</a></td>
           <td>{% capture md_text %}A reference to  a Location resource (plannet-Location) defining the coverage area of a health insurance provider network{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
         <tr>
-          <td><a href="StructureDefinition-plannet-NewPatients-extension.html">NewPatients</a></td>
+          <td><a href="StructureDefinition-plannet-Network-reference-extension.html">Network -reference</a></td>
+          <td>{% capture md_text %}A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role{% endcapture %}{{ md_text | markdownify }}</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-plannet-NewPatients-extension.html">New Patients</a></td>
           <td>{% capture md_text %}New Patients indicates whether the practitioner is accepting new patients in their role{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
         <tr>
-          <td><a href="StructureDefinition-plannet-ParticipatingNetwork-extension.html">ParticipatingNetwork</a></td>
-          <td>{% capture md_text %}A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role{% endcapture %}{{ md_text | markdownify }}</td>
+          <td><a href="StructureDefinition-plannet-ViaIntermediary-extension.html">Via Intermediary</a></td>
+          <td>{% capture md_text %}A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
         
   </tbody>

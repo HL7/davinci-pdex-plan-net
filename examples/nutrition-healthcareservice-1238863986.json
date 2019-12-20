@@ -60,10 +60,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "163WN1003X",
-          "display": "Nutrition Support"
+          "display": "Registered Nurse/Nutrition Support"
         }
       ],
-      "text": "Nutrition Support"
+      "text": "Registered Nurse/Nutrition Support"
     }
   ],
   "location": [
@@ -73,16 +73,16 @@
     }
   ],
   "name": "CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN",
-  "comment": "Nutrition Support",
+  "comment": "Registered Nurse/Nutrition Support",
   "telecom": [
     {
       "system": "phone",
-      "value": "572-867-7790 x180",
+      "value": "1-283-206-1683 x239",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "291.893.3498",
+      "value": "1-370-854-7181 x5017",
       "use": "work"
     }
   ],

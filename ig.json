@@ -117,36 +117,8 @@
     "StructureDefinition/plannet-PractitionerRole": {
       "base": "StructureDefinition-plannet-PractitionerRole.html"
     },
-    "StructureDefinition/plannet-AcceptingPatients-extension": {
-      "base": "StructureDefinition-plannet-AcceptingPatients-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/plannet-AllDay-extension": {
-      "base": "StructureDefinition-plannet-AllDay-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/plannet-AvailableEndTime-extension": {
-      "base": "StructureDefinition-plannet-AvailableEndTime-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/plannet-AvailableStartTime-extension": {
-      "base": "StructureDefinition-plannet-AvailableStartTime-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/plannet-CAvailableTime-extension": {
       "base": "StructureDefinition-plannet-CAvailableTime-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/plannet-CViaIntermediary-extension": {
-      "base": "StructureDefinition-plannet-CViaIntermediary-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/plannet-DaysOfWeek-extension": {
-      "base": "StructureDefinition-plannet-DaysOfWeek-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/plannet-FromNetwork-extension": {
-      "base": "StructureDefinition-plannet-FromNetwork-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/plannet-GeoLocation-extension": {
@@ -157,24 +129,20 @@
       "base": "StructureDefinition-plannet-IdentifierStatus-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/plannet-LocationReference-extension": {
-      "base": "StructureDefinition-plannet-LocationReference-extension.html",
+    "StructureDefinition/plannet-Location-reference-extension": {
+      "base": "StructureDefinition-plannet-Location-reference-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-Network-reference-extension": {
+      "base": "StructureDefinition-plannet-Network-reference-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/plannet-NewPatients-extension": {
       "base": "StructureDefinition-plannet-NewPatients-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/plannet-ParticipatingNetwork-extension": {
-      "base": "StructureDefinition-plannet-ParticipatingNetwork-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/plannet-Practitioner-Qualification-VHDIR-extension": {
       "base": "StructureDefinition-plannet-Practitioner-Qualification-VHDIR-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/plannet-Proficiency-extension": {
-      "base": "StructureDefinition-plannet-Proficiency-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/plannet-TAvailableTime-extension": {
@@ -183,6 +151,10 @@
     },
     "StructureDefinition/plannet-TViaIntermediary-extension": {
       "base": "StructureDefinition-plannet-TViaIntermediary-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/plannet-ViaIntermediary-extension": {
+      "base": "StructureDefinition-plannet-ViaIntermediary-extension.html",
       "template-base": "sd-extension.html"
     },
     "SearchParameter/plannet-available-days": {
@@ -690,11 +662,7 @@
     },
     "Organization/plannet-organization-3bd599c434bb5590c0c598fc3": {
       "base": "Organization-plannet-organization-3bd599c434bb5590c0c598fc3.html",
-      "source": "plannet-organization-3bd599c434bb5590c0c598fc3.json"
-    },
-    "OrganizationAffiliation/plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82": {
-      "base": "OrganizationAffiliation-plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82.html",
-      "source": "plannet-organizationaffiliation-ed52543cb9e56cb2375b2bb82.json"
+      "source": "plannet-organization-3b3.json"
     },
     "Practitioner/plannet-practitioner-1232506780": {
       "base": "Practitioner-plannet-practitioner-1232506780.html",

@@ -85,7 +85,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-CViaIntermediary-extension",
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ViaIntermediary-extension",
           "valueReference": {
             "reference": "Location/loc-ffmh",
             "display": "Founding Fathers Memorial Hospital"
