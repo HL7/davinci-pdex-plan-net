@@ -21,21 +21,23 @@
 
 <!-- ============CONTENT CONTENT=============== -->
 
-<h1 id="PlanNet-Directory">Payer Directory Implementation Guide</h1>
+<h1 id="PlanNet-Directory">PDEX Payer Network Implementation Guide</h1>
 <h2 id="table-of-contents">Table Of Contents</h2>
 <ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#disclaimers-assumptions">Disclaimers and Assumptions</a></li>
 <li><a href="#background">Background</a></li>
 <li><a href="#use-cases">Use Cases</a></li>
-<li><a href="#overview">Overview of Payer Directory - Resource Relationships</a></li>
+<li><a href="#overview">Overview of PDEX Payer Network - Resource Relationships</a></li>
 <li><a href="#credits">Credits</a></li>
 <li><a href="#authors">Authors</a></li>
 </ul>
 
 <h2 id="introduction">Introduction</h2>
-<p><p>The Payer Directory Implementation Guide is based the <a href="http://hl7.org/fhir/uv/vhdir/2018Sep/index.html"> Validated Healthcare Directory Implementation Guide (VHDir)</a>, 
-    an international standard. The VHDir authors developed the IG to support a conceptual, centralized, national source of healthcare data that would be used across multiple use cases. The use of VhDir as the conceptual base for the Payer Directory Implementation Guide, including reuse by reference of a number of the extensions defined there, is intended to protect implementors of the Payer Directory IG from rework/remapping when the VHDir concept reaches implementation, and becomes a source of data for the Payer Directory. The API is based on the HL7 Validated Healthcare Directory IG. The primary changes are to: 1) remove the validation and restriction resources, 2) use US Core for R4 as the base profile, 3) eliminate some of the extensions that are not necessary for this use case, and 4) reduce additional constraints (e.g. search criteria, cardinality, and MustSupport) where appropriate.
+<p>
+This implementation guide defines a FHIR interface to a health insurers insurance plans, their associated networks, and the organizationa and providers that participate in these networks.   Publication of this data through a standard FHIR-based API will enable third parties to develop applications through which consumers and providers canquery the contents of a payers network to identify providers that can address their health care needs.
+<p>The PDEX Payer Network (or Plan-Net) Implementation Guide is based the <a href="http://hl7.org/fhir/uv/vhdir/2018Sep/index.html"> Validated Healthcare Directory Implementation Guide (VHDir)</a>, 
+    an international standard. The VHDir authors developed the IG to support a conceptual, centralized, national source of healthcare data that would be used across multiple use cases. The use of VhDir as the conceptual base for the PDEX Payer Network Implementation Guide, including reuse by reference of a number of the extensions defined there, is intended to protect implementors of the Plan-Net IG from rework/remapping when the VHDir concept reaches implementation, and becomes a source of data for the PDEX Payer Network. The API is based on the HL7 Validated Healthcare Directory IG. The primary changes are to: 1) remove the validation and restriction resources, 2) use US Core for R4 as the base profile, 3) eliminate some of the extensions that are not necessary for this use case, and 4) reduce additional constraints (e.g. search criteria, cardinality, and MustSupport) where appropriate.
    </p>
 <img style="width:80%;height:auto;align:middle;" src="Bob1.png" alt="Scope" align="middle" />
 <p>
@@ -50,9 +52,9 @@
  <h2 id="disclaimers-assumptions">Disclaimers and Assumptions</h2>
 <p>
 <ul>
- <li><b>Plan-Net is based conceptually on VhDir</b>:  The Plan-net implementation guide is based conceptually on the VhDir implementation guide, which is still a work in progress.  Plan-net will need to track changes to VhDir to fulfill its goal of minimizing rework.
+ <li><b>PDEX Payer Network is based conceptually on VhDir</b>:  The PDEX Payer Network implementation guide is based conceptually on the VhDir implementation guide, which is still a work in progress.  Plan-net will need to track changes to VhDir to fulfill its goal of minimizing rework.
 <li><b>The Plan-Net directory endpoint is known to the client</b>:
-    This IG assumes that the directory endpoint is known to the client.  There is an overarching system architecture issue that is critical to resolve -- how does the client discover the FHIR endpoint of interest.   For the purposes of this IG, we consider that problem out of scope.
+    This implementation guide assumes that the directory endpoint is known to the client.  There is an overarching system architecture issue that is critical to resolve -- how does the client discover the FHIR endpoint of interest.   For the purposes of this IG, we consider that problem out of scope.
 </li>
 </ul>
 
