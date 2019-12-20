@@ -36,8 +36,10 @@
 <h2 id="introduction">Introduction</h2>
 <p>
 This implementation guide defines a FHIR interface to a health insurers insurance plans, their associated networks, and the organizationa and providers that participate in these networks.   Publication of this data through a standard FHIR-based API will enable third parties to develop applications through which consumers and providers canquery the contents of a payers network to identify providers that can address their health care needs.
-<p>The PDEX Payer Network (or Plan-Net) Implementation Guide is based the <a href="http://hl7.org/fhir/uv/vhdir/2018Sep/index.html"> Validated Healthcare Directory Implementation Guide (VHDir)</a>, 
-    an international standard. The VHDir authors developed the IG to support a conceptual, centralized, national source of healthcare data that would be used across multiple use cases. The use of VhDir as the conceptual base for the PDEX Payer Network Implementation Guide, including reuse by reference of a number of the extensions defined there, is intended to protect implementors of the Plan-Net IG from rework/remapping when the VHDir concept reaches implementation, and becomes a source of data for the PDEX Payer Network. The API is based on the HL7 Validated Healthcare Directory IG. The primary changes are to: 1) remove the validation and restriction resources, 2) use US Core for R4 as the base profile, 3) eliminate some of the extensions that are not necessary for this use case, and 4) reduce additional constraints (e.g. search criteria, cardinality, and MustSupport) where appropriate.
+ALthough there are multiple types and sources of providers directories, including provider organizations (i.e., a hospital listing all its physicians), government (i.e., listing of providers in Medicare), payers (i.e., a health plan's provider network), and third-party entities (such as vendors that maintain provider directories), the focus of this implementation guide in on Payer Provider Directories.
+<p>
+    The PDEX Payer Network (or Plan-Net) Implementation Guide is based on the <a href="http://hl7.org/fhir/uv/vhdir/2018Sep/index.html"> Validated Healthcare Directory Implementation Guide (VHDir)</a>, 
+    an international standard. The VHDir authors developed the IG to support a conceptual, centralized, national source of healthcare data that would be used across multiple use cases. The use of VhDir as the conceptual base for the PDEX Payer Network Implementation Guide, including reuse by reference of a number of the extensions defined there, is intended to protect implementers of the Plan-Net IG from rework/remapping when the VHDir concept reaches implementation, and becomes a source of data for the PDEX Payer Network.  The primary changes from the VHDir IG are to: 1) remove the validation and restriction resources, 2) use US Core for R4 as the base suite of profiles, 3) eliminate some of the extensions that are not necessary for this use case, and 4) reduce additional constraints (e.g. search criteria, cardinality, and MustSupport) where appropriate.
    </p>
 <img style="width:80%;height:auto;align:middle;" src="Bob1.png" alt="Scope" align="middle" />
 <p>
@@ -76,7 +78,7 @@ This implementation guide defines a FHIR interface to a health insurers insuranc
 </li>
 </li>
 </ul>
-<h2 id="use-cases">Use Cases</h2>
+<h2 id="use-cases">Use Case Examples</h2>
 <ul>
 <li>Find Information about a Specific Practitioner</li>
 <ul>
@@ -95,12 +97,12 @@ https://davinci-plan-net-ri.logicahealth.org/fhir/PractitionerRole?practitioner.
 <li>Find a specialist who accepts my insurance and is affiliated with my local hospital</li>
 <li>Find a specialist who has office hours on Wednesdays</li>
 <li>Find a practitioner near me who accepts my insurance and is accepting new patients</li>
-<li>Find a female practitioner near me who speaks spanish</li>
+<li>Find a female practitioner near me who speaks Spanish</li>
 </ul>
 <li>Healthcare Services</li>
 <ul>
-<li>Who provides opthamology services in my area</li>
-<li>What locations provide speciality services for my local hospital network</li>
+<li>Who provides opthalmology services in my area</li>
+<li>What locations provide specialty services for my local hospital network</li>
 </ul>
 </ul>
 <h2 id="overview">Overview of Payer Directory - Resource Relationships</h2>
@@ -109,11 +111,21 @@ https://davinci-plan-net-ri.logicahealth.org/fhir/PractitionerRole?practitioner.
 <h3 id="practitioner">Practitioner</h3>
 <p>A practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.</p>
 <h3 id="practitioner-role">Practitioner Role</h3>
-<p>PractionerRole describes the relationship between a practitioner and an organization. A practitioner provides services to the organization at a location. Practitioners also participate in healthcare provider insurance networks through their role at an organization.</p>
+<p>
+PractitionerRole describes the role a practitioner plays at an organization, including the services they provide, the location(s) where they work, and their availability, electronic endpoints, and other relevant information.
+</p>
 <p><strong>Figure 1: Practitioner and PractionerRole </strong></p>
 <img src="PractitionerRole.png" alt = "Practitioner and PractitionerRole" style="width:30%;height:auto;float:none;align:middle;"  />
 <p>&nbsp;</p>
 <p>&nbsp;</p><h3 id="organization">Organization</h3>
+<p>
+An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.
+The Organization resource often exists as a hierarchy of organization resources, using the part-of property to provide the association of the child to its parent organization.
+This organizational hierarchy helps communicate the conceptual structure, whereas the Location resource provides the physical representation of the hierarchy.
+The linkage between Organization and Location is from each point in the location hierarchy to the appropriate level in the Organization hierarchy. These links don't all have to be to the top level Organization.
+<p>
+In the Plan-Net context, organizations can represent payers, pharmacy companies, and various types of provider organizations.</p>
+</p>
 <p><strong>Figure 2: Organization </strong></p>
 <img src="Organization.png" alt="Organization" style="width:23%;height:auto;float:none;align:middle;" />
 <p>&nbsp;</p><h3 id="organization-affiliation">Organization Affiliation</h3>
@@ -141,7 +153,7 @@ The location of the services could be virtual, as with telemedicine services.
 </p>
 <h3 id="location">Location</h3>
 <p>
- A Location includes both incidental locations (a place which is used for healthcare without prior designation or authorization) and dedicated, formally appointed locations. Locations may be private, public, mobile or fixed and scale from small freezers to full hospital buildings or parking garages.   
+A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.
 </p>
 <h3 id="network">Network</h3>
 <p>A network is a group of practitioners and organizations that provide healthcare services for individuals enrolled in a health insurance product/plan (typically on behalf of a payer).</p>
@@ -149,7 +161,7 @@ The location of the services could be virtual, as with telemedicine services.
 <img src="Network.png" alt="Network" style="width:40%;height:auto;float:none;align:middle;"/>
 <h2 id="privacy-considerations">Privacy Considerations</h2>
 <p>
-Access to the plan-net service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that was queried.</p>
+Access to the plan-net service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that were queried.</p>
 <p>
 A conformant plan-net service SHALL NOT require a directory mobile application to send consumer identifying information in order to query content.</p>
 <p>
