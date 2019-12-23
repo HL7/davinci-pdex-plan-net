@@ -12,7 +12,7 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-LocationReference-extension",
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location-reference-extension",
       "valueReference": {
         "reference": "Location/wash-dc-metro",
         "display": "Washington, DC metro area"
@@ -50,9 +50,9 @@
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type",
-          "code": "ppo",
-          "display": "PPO"
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "pay",
+          "display": "Payer"
         }
       ]
     }

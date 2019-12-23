@@ -1,5 +1,5 @@
 {
-  "id": "plannet-organization-1239774646",
+  "id": "plannet-organization-1230085657",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
@@ -20,7 +20,7 @@
         "text": "NPI"
       },
       "system": "http://hl7.org/fhir/sid/us-npi",
-      "value": "1239774646",
+      "value": "1230085657",
       "assigner": {
         "display": "Centers for Medicare and Medicaid Services"
       }
@@ -39,16 +39,16 @@
       "text": "Healthcare Provider"
     }
   ],
-  "name": "GREATER LAWRENCE FAMILY HEALTH CENTER, INC.",
+  "name": "BAYSIDE ENDOSCOPY, LLC",
   "telecom": [
     {
       "system": "phone",
-      "value": "270.615.4229",
+      "value": "735-380-1096 x267",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "157-116-9370 x637",
+      "value": "1-265-938-5709 x280",
       "use": "work"
     }
   ],
@@ -59,11 +59,11 @@
           "extension": [
             {
               "url": "latitude",
-              "valueDecimal": 42.712082
+              "valueDecimal": 41.809006
             },
             {
               "url": "longitude",
-              "valueDecimal": -71.15223
+              "valueDecimal": -71.41177
             }
           ],
           "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
@@ -71,13 +71,13 @@
       ],
       "use": "work",
       "type": "both",
-      "text": "34 HAVERHILL ST, LAWRENCE, MA 018412884",
+      "text": "33 STANIFORD ST, PROVIDENCE, RI 029053105",
       "line": [
-        "34 HAVERHILL ST"
+        "33 STANIFORD ST"
       ],
-      "city": "LAWRENCE",
-      "state": "MA",
-      "postalCode": "018412884",
+      "city": "PROVIDENCE",
+      "state": "RI",
+      "postalCode": "029053105",
       "country": "USA"
     }
   ],
@@ -94,10 +94,10 @@
       },
       "name": {
         "use": "official",
-        "text": "Ressie Will",
-        "family": "Will",
+        "text": "Shane Goyette",
+        "family": "Goyette",
         "given": [
-          "Ressie"
+          "Shane"
         ]
       },
       "telecom": [
@@ -138,20 +138,20 @@
             }
           ],
           "system": "phone",
-          "value": "270.615.4229",
+          "value": "735-380-1096 x267",
           "use": "work"
         }
       ],
       "address": {
         "use": "work",
         "type": "both",
-        "text": "34 HAVERHILL ST, LAWRENCE, MA 018412884",
+        "text": "33 STANIFORD ST, PROVIDENCE, RI 029053105",
         "line": [
-          "34 HAVERHILL ST"
+          "33 STANIFORD ST"
         ],
-        "city": "LAWRENCE",
-        "state": "MA",
-        "postalCode": "018412884",
+        "city": "PROVIDENCE",
+        "state": "RI",
+        "postalCode": "029053105",
         "country": "USA"
       }
     }

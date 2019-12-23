@@ -22,7 +22,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AcceptingPatients-extension",
+          "url": "acceptingPatients",
           "valueBoolean": false
         }
       ],
@@ -61,7 +61,7 @@
         }
       ],
       "system": "phone",
-      "value": "1-322-332-0749 x539",
+      "value": "743.125.4429 x2376",
       "use": "work"
     },
     {
@@ -77,7 +77,7 @@
         }
       ],
       "system": "fax",
-      "value": "1-287-382-3549 x257",
+      "value": "779-475-4330 x580",
       "use": "work"
     }
   ],

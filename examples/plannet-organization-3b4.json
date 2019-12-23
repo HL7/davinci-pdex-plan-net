@@ -1,5 +1,5 @@
 {
-  "id": "plannet-organization-1239774646",
+  "id": "plannet-organization-3b4358447f58795888ada0a39",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
@@ -8,22 +8,8 @@
   "identifier": [
     {
       "use": "official",
-      "type": {
-        "coding": [
-          {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "NPI",
-            "display": "Provider number",
-            "userSelected": true
-          }
-        ],
-        "text": "NPI"
-      },
-      "system": "http://hl7.org/fhir/sid/us-npi",
-      "value": "1239774646",
-      "assigner": {
-        "display": "Centers for Medicare and Medicaid Services"
-      }
+      "system": "http://i.made/this/up",
+      "value": "524968"
     }
   ],
   "active": true,
@@ -32,23 +18,23 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/organization-type",
-          "code": "prov",
-          "display": "Healthcare Provider"
+          "code": "other",
+          "display": "Other"
         }
       ],
-      "text": "Healthcare Provider"
+      "text": "Other"
     }
   ],
-  "name": "GREATER LAWRENCE FAMILY HEALTH CENTER, INC.",
+  "name": "OXFORD",
   "telecom": [
     {
       "system": "phone",
-      "value": "270.615.4229",
+      "value": "1-403-175-9221 x396",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "157-116-9370 x637",
+      "value": "715-555-1198 x39741",
       "use": "work"
     }
   ],
@@ -59,11 +45,11 @@
           "extension": [
             {
               "url": "latitude",
-              "valueDecimal": 42.712082
+              "valueDecimal": 41.54454
             },
             {
               "url": "longitude",
-              "valueDecimal": -71.15223
+              "valueDecimal": -73.209002
             }
           ],
           "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
@@ -71,13 +57,8 @@
       ],
       "use": "work",
       "type": "both",
-      "text": "34 HAVERHILL ST, LAWRENCE, MA 018412884",
-      "line": [
-        "34 HAVERHILL ST"
-      ],
-      "city": "LAWRENCE",
-      "state": "MA",
-      "postalCode": "018412884",
+      "text": ",  00000",
+      "postalCode": "00000",
       "country": "USA"
     }
   ],
@@ -94,10 +75,10 @@
       },
       "name": {
         "use": "official",
-        "text": "Ressie Will",
-        "family": "Will",
+        "text": "Chanda Glover",
+        "family": "Glover",
         "given": [
-          "Ressie"
+          "Chanda"
         ]
       },
       "telecom": [
@@ -138,20 +119,15 @@
             }
           ],
           "system": "phone",
-          "value": "270.615.4229",
+          "value": "1-403-175-9221 x396",
           "use": "work"
         }
       ],
       "address": {
         "use": "work",
         "type": "both",
-        "text": "34 HAVERHILL ST, LAWRENCE, MA 018412884",
-        "line": [
-          "34 HAVERHILL ST"
-        ],
-        "city": "LAWRENCE",
-        "state": "MA",
-        "postalCode": "018412884",
+        "text": ",  00000",
+        "postalCode": "00000",
         "country": "USA"
       }
     }

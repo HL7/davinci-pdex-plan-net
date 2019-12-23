@@ -31,9 +31,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hagenes",
+      "family": "Schneider",
       "given": [
-        "Charisse"
+        "Lenora",
+        "Lucila"
       ],
       "prefix": [
         "Dr."
@@ -46,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "555.481.2628",
+      "value": "760-016-9012 x925",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(798) 455-5502",
+      "value": "(254) 222-2047 x42329",
       "use": "work"
     }
   ],
@@ -141,13 +142,15 @@
         "coding": [
           {
             "system": "http://nucc.org/provider-taxonomy",
-            "code": "1223G0001X"
+            "code": "1223G0001X",
+            "display": "General Practice"
           }
-        ]
+        ],
+        "text": "General Practice"
       },
       "period": {
-        "start": "2019-07-15",
-        "end": "2022-07-15"
+        "start": "2017-04-04",
+        "end": "2020-04-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
