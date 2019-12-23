@@ -36,11 +36,12 @@
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/payercharacteristics",
-          "code": "bronze",
-          "display": "Bronze"
+          "system": "http://terminology.hl7.org/CodeSystem/insurance-plan-type",
+          "code": "medical",
+          "display": "Medical"
         }
-      ]
+      ],
+      "text": "Medical"
     }
   ],
   "name": "Patriot PPO Standard",

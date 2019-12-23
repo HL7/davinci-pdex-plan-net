@@ -12,7 +12,7 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ParticipatingNetwork-extension",
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-reference-extension",
       "valueReference": {
         "reference": "Organization/patriotppo",
         "display": "Patriot Preferred Provider Network"
@@ -22,11 +22,11 @@
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-NewPatients-extension",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AcceptingPatients-extension",
+          "url": "acceptingPatients",
           "valueBoolean": true
         },
         {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-FromNetwork-extension",
+          "url": "fromNetwork",
           "valueReference": {
             "reference": "Organization/patriotppo",
             "display": "Patriot Preferred Provider Network"
