@@ -54,7 +54,8 @@
           "code": "pay",
           "display": "Payer"
         }
-      ]
+      ],
+      "text": "Preferred Provider Organization (PPO)"
     }
   ],
   "name": "Patriot Preferred Provider Network",
