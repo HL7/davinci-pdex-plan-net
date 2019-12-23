@@ -15,7 +15,7 @@
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-NewPatients-extension",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-AcceptingPatients-extension",
+          "url": "acceptingPatients",
           "valueBoolean": true
         }
       ]
