@@ -7,17 +7,17 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ParticipatingNetwork-extension",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-ParticipatingNetwork-extension",
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-reference-extension",
       "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network-reference-extension",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -35,13 +35,13 @@
         "text": "Hospital ID"
       },
       "system": "https://eye-associates-pc.com",
-      "value": "01abd604ca8fc5"
+      "value": "206272de83ed12"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236743399",
-    "display": "Michel Bechtelar"
+    "display": "Wiley Kiehn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230789741",
@@ -80,12 +80,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-101-859-6360 x282",
+      "value": "407.611.2585 x223",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "573.510.6906 x9428",
+      "value": "303-063-8898 x72161",
       "use": "work"
     }
   ],

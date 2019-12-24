@@ -1231,9 +1231,23 @@
     },
     {
       "reference" : {
+        "reference" : "Organization/plannet-network-HPID040000"
+      },
+      "name" : "Example: plannet-network-HPID040000",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "Endpoint/plannet-organization-1230085657-direct"
       },
       "name" : "Example: plannet-organization-1230085657-direct",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/plannet-organization-1230085657"
+      },
+      "name" : "Example: plannet-organization-1230085657",
       "exampleBoolean" : true
     },
     {
@@ -1245,9 +1259,9 @@
     },
     {
       "reference" : {
-        "reference" : "Organization/plannet-organization-3bd599c434bb5590c0c598fc3"
+        "reference" : "Organization/plannet-organization-3b4358447f58795888ada0a39"
       },
-      "name" : "Example: plannet-organization-3bd599c434bb5590c0c598fc3",
+      "name" : "Example: plannet-organization-3b4358447f58795888ada0a39",
       "exampleBoolean" : true
     },
     {
@@ -1255,6 +1269,13 @@
         "reference" : "Practitioner/plannet-practitioner-1232506780"
       },
       "name" : "Example: plannet-practitioner-1232506780",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "PractitionerRole/plannet-practitionerrole-1232506780"
+      },
+      "name" : "Example: plannet-practitionerrole-1232506780",
       "exampleBoolean" : true
     },
     {

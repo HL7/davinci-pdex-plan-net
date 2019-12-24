@@ -1227,9 +1227,23 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Organization/plannet-network-HPID040000"/>
+      </reference>
+      <name value="Example: plannet-network-HPID040000"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Endpoint/plannet-organization-1230085657-direct"/>
       </reference>
       <name value="Example: plannet-organization-1230085657-direct"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/plannet-organization-1230085657"/>
+      </reference>
+      <name value="Example: plannet-organization-1230085657"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1241,9 +1255,9 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Organization/plannet-organization-3bd599c434bb5590c0c598fc3"/>
+        <reference value="Organization/plannet-organization-3b4358447f58795888ada0a39"/>
       </reference>
-      <name value="Example: plannet-organization-3bd599c434bb5590c0c598fc3"/>
+      <name value="Example: plannet-organization-3b4358447f58795888ada0a39"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1251,6 +1265,13 @@
         <reference value="Practitioner/plannet-practitioner-1232506780"/>
       </reference>
       <name value="Example: plannet-practitioner-1232506780"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PractitionerRole/plannet-practitionerrole-1232506780"/>
+      </reference>
+      <name value="Example: plannet-practitionerrole-1232506780"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
