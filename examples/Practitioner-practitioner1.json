@@ -115,7 +115,7 @@
     }
   ],
   "gender": "male",
-  "birthDate": "1932-02-22",
+  "birthDate": "1962-02-22",
   "qualification": [
     {
       "extension": [
@@ -170,8 +170,8 @@
           "system": "https://doh.dc.gov/bomed",
           "value": "MD12345",
           "period": {
-            "start": "1959-07-15",
-            "end": "1961-07-15"
+            "start": "1985-07-15",
+            "end": "2020-07-15"
           },
           "assigner": {
             "display": "DC Board of Medicine"
@@ -191,8 +191,8 @@
         "text": "MD"
       },
       "period": {
-        "start": "1959-07-15",
-        "end": "1961-07-15"
+        "start": "1985-07-15",
+        "end": "2020-07-15"
       },
       "issuer": {
         "display": "DC Board of Medicine"
@@ -225,8 +225,8 @@
                 {
                   "url": "period",
                   "valuePeriod": {
-                    "start": "1961-07-20",
-                    "end": "1971-07-20"
+                    "start": "1985-07-15",
+                    "end": "2020-07-15"
                   }
                 }
               ]
@@ -261,8 +261,8 @@
         "text": "Certification in Internal Medicine"
       },
       "period": {
-        "start": "1971-07-20",
-        "end": "1981-07-20"
+        "start": "1985-07-15",
+        "end": "2020-07-15"
       },
       "issuer": {
         "display": "American Board of Internal Medicine"
@@ -312,8 +312,8 @@
         "text": "Certification in Cardiovascular Disease"
       },
       "period": {
-        "start": "1965-07-10",
-        "end": "1975-07-10"
+        "start": "1985-07-15",
+        "end": "2020-07-15"
       },
       "issuer": {
         "display": "American Board of Internal Medicine"
