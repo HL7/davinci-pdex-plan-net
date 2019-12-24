@@ -23,6 +23,6 @@
     "HealthcareService"
   ],
   "type": "token",
-  "expression": "HealthcareService.extension.where(url='http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension.where(url='acceptingPatients')",
+  "expression": "HealthcareService.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-NewPatients-extension').extension.where(url='acceptingPatients')",
   "multipleAnd": true
 }

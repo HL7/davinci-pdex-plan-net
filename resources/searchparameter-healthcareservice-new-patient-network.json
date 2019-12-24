@@ -23,7 +23,7 @@
     "HealthcareService"
   ],
   "type": "reference",
-  "expression": "HealthcareService.extension.where(url='http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension.where(url='network')",
+  "expression": "HealthcareService.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-NewPatients-extension').extension.where(url='network')",
   "target": [
     "Organization"
   ],
