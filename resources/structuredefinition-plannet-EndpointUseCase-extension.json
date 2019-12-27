@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "plannet-NewPatients-extension",
+  "id": "plannet-EndpointUseCase-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>NewPatients Extension</b></p>\n  <p>New Patients indicates whether the practitioner is accepting new patients in their role</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>EndpointUseCase Extension</b></p>\n  <p>EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-NewPatients-extension",
-  "name": "NewPatients",
-  "title": "New Patients",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-EndpointUseCase-extension",
+  "name": "EndpointUseCase",
+  "title": "Endpoint Use Case",
   "status": "draft",
   "date": "2019-12-27",
   "publisher": "HL7 Financial Management WG",
@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "description": "New Patients indicates whether the practitioner is accepting new patients in their role",
+  "description": "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -39,8 +39,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "NewPatients",
-        "definition": "New Patients indicates whether the practitioner is accepting new patients in their role",
+        "short": "EndpointUseCase",
+        "definition": "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint",
         "min": 0,
         "max": "*",
         "base": {
@@ -151,9 +151,9 @@
         ]
       },
       {
-        "id": "Extension.extension:acceptingPatients",
+        "id": "Extension.extension:usecaseType",
         "path": "Extension.extension",
-        "definition": "Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the NewPatients extension.",
+        "definition": "an indication of the type of services supported by the endpoint",
         "min": 1,
         "max": "1",
         "base": {
@@ -174,10 +174,10 @@
             "map": "n/a"
           }
         ],
-        "sliceName": "acceptingPatients"
+        "sliceName": "usecaseType"
       },
       {
-        "id": "Extension.extension:acceptingPatients.id",
+        "id": "Extension.extension:usecaseType.id",
         "path": "Extension.extension.id",
         "representation": [
           "xmlAttr"
@@ -206,7 +206,7 @@
         ]
       },
       {
-        "id": "Extension.extension:acceptingPatients.extension",
+        "id": "Extension.extension:usecaseType.extension",
         "path": "Extension.extension.extension",
         "slicing": {
           "discriminator": [
@@ -247,7 +247,7 @@
         ]
       },
       {
-        "id": "Extension.extension:acceptingPatients.url",
+        "id": "Extension.extension:usecaseType.url",
         "path": "Extension.extension.url",
         "representation": [
           "xmlAttr"
@@ -275,11 +275,11 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "acceptingPatients"
+        "fixedUri": "usecaseType"
       },
       {
-        "id": "Extension.extension:acceptingPatients.valueBoolean",
-        "path": "Extension.extension.valueBoolean",
+        "id": "Extension.extension:usecaseType.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 1,
@@ -291,7 +291,7 @@
         },
         "type": [
           {
-            "code": "boolean"
+            "code": "CodeableConcept"
           }
         ],
         "isModifier": false,
@@ -301,12 +301,16 @@
             "identity": "rim",
             "map": "N/A"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-usecasetype"
+        }
       },
       {
-        "id": "Extension.extension:fromNetwork",
+        "id": "Extension.extension:usecaseStandard",
         "path": "Extension.extension",
-        "definition": "A reference to a healthcare provider insurance network (plannet-Network) for which the entity is/isn’t accepting new patients. This is a component of the NewPatients extension.",
+        "definition": "a URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)",
         "min": 0,
         "max": "1",
         "base": {
@@ -327,10 +331,10 @@
             "map": "n/a"
           }
         ],
-        "sliceName": "fromNetwork"
+        "sliceName": "usecaseStandard"
       },
       {
-        "id": "Extension.extension:fromNetwork.id",
+        "id": "Extension.extension:usecaseStandard.id",
         "path": "Extension.extension.id",
         "representation": [
           "xmlAttr"
@@ -359,7 +363,7 @@
         ]
       },
       {
-        "id": "Extension.extension:fromNetwork.extension",
+        "id": "Extension.extension:usecaseStandard.extension",
         "path": "Extension.extension.extension",
         "slicing": {
           "discriminator": [
@@ -400,7 +404,7 @@
         ]
       },
       {
-        "id": "Extension.extension:fromNetwork.url",
+        "id": "Extension.extension:usecaseStandard.url",
         "path": "Extension.extension.url",
         "representation": [
           "xmlAttr"
@@ -428,11 +432,11 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "fromNetwork"
+        "fixedUri": "usecaseStandard"
       },
       {
-        "id": "Extension.extension:fromNetwork.valueReference",
-        "path": "Extension.extension.valueReference",
+        "id": "Extension.extension:usecaseStandard.valueUri",
+        "path": "Extension.extension.valueUri",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 1,
@@ -444,10 +448,7 @@
         },
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
-            ]
+            "code": "uri"
           }
         ],
         "isModifier": false,
@@ -488,7 +489,7 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-NewPatients-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-EndpointUseCase-extension"
       },
       {
         "id": "Extension.value[x]",
@@ -667,8 +668,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "NewPatients",
-        "definition": "New Patients indicates whether the practitioner is accepting new patients in their role",
+        "short": "EndpointUseCase",
+        "definition": "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint",
         "min": 0,
         "max": "*"
       },
@@ -679,9 +680,9 @@
         "max": "*"
       },
       {
-        "id": "Extension.extension:acceptingPatients",
+        "id": "Extension.extension:usecaseType",
         "path": "Extension.extension",
-        "definition": "Boolean flag indicating whether the practitioner is accepting new patients.  This is a component of the NewPatients extension.",
+        "definition": "an indication of the type of services supported by the endpoint",
         "min": 1,
         "max": "1",
         "base": {
@@ -702,38 +703,42 @@
             "map": "n/a"
           }
         ],
-        "sliceName": "acceptingPatients"
+        "sliceName": "usecaseType"
       },
       {
-        "id": "Extension.extension:acceptingPatients.extension",
+        "id": "Extension.extension:usecaseType.extension",
         "path": "Extension.extension.extension",
         "min": 0,
         "max": "0"
       },
       {
-        "id": "Extension.extension:acceptingPatients.url",
+        "id": "Extension.extension:usecaseType.url",
         "path": "Extension.extension.url",
         "type": [
           {
             "code": "uri"
           }
         ],
-        "fixedUri": "acceptingPatients"
+        "fixedUri": "usecaseType"
       },
       {
-        "id": "Extension.extension:acceptingPatients.valueBoolean",
-        "path": "Extension.extension.valueBoolean",
+        "id": "Extension.extension:usecaseType.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
         "min": 1,
         "type": [
           {
-            "code": "boolean"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-usecasetype"
+        }
       },
       {
-        "id": "Extension.extension:fromNetwork",
+        "id": "Extension.extension:usecaseStandard",
         "path": "Extension.extension",
-        "definition": "A reference to a healthcare provider insurance network (plannet-Network) for which the entity is/isn’t accepting new patients. This is a component of the NewPatients extension.",
+        "definition": "a URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)",
         "min": 0,
         "max": "1",
         "base": {
@@ -754,34 +759,31 @@
             "map": "n/a"
           }
         ],
-        "sliceName": "fromNetwork"
+        "sliceName": "usecaseStandard"
       },
       {
-        "id": "Extension.extension:fromNetwork.extension",
+        "id": "Extension.extension:usecaseStandard.extension",
         "path": "Extension.extension.extension",
         "min": 0,
         "max": "0"
       },
       {
-        "id": "Extension.extension:fromNetwork.url",
+        "id": "Extension.extension:usecaseStandard.url",
         "path": "Extension.extension.url",
         "type": [
           {
             "code": "uri"
           }
         ],
-        "fixedUri": "fromNetwork"
+        "fixedUri": "usecaseStandard"
       },
       {
-        "id": "Extension.extension:fromNetwork.valueReference",
-        "path": "Extension.extension.valueReference",
+        "id": "Extension.extension:usecaseStandard.valueUri",
+        "path": "Extension.extension.valueUri",
         "min": 1,
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
-            ]
+            "code": "uri"
           }
         ]
       },
@@ -793,7 +795,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-NewPatients-extension"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-EndpointUseCase-extension"
       },
       {
         "id": "Extension.value[x]",

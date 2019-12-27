@@ -107,6 +107,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/plannet-EndpointUseCase-extension"/>
+      </reference>
+      <name value="Endpoint Use Case"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/plannet-Location-reference-extension"/>
       </reference>
       <name value="Location -reference"/>

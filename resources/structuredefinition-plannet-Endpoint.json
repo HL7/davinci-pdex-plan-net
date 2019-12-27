@@ -3,12 +3,12 @@
   "id": "plannet-Endpoint",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Endpoint Profile</b></p>\n  <p>The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Endpoint maps to Endpoint:\n  ManagingOrganization maps to managingOrganization\n  UseCase maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase\n  constrain contact.system to 1..1\n  constrain contact.value to 1..1\n  EndpointContact maps to contact\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  EndpointContact.ContactPoint.Purpose maps to contact.use\n  EndpointContact.ContactPoint.Type maps to contact.system\n  EndpointContact.ContactPoint.PriorityRank maps to contact.rank\n  EndpointContact.ContactPoint.EffectiveTimePeriod maps to contact.period\n  EndpointContact.ContactPoint.TelecomNumberOrAddress maps to contact.value\n  EndpointStatus maps to status\n  ConnectionType maps to connectionType\n  EndpointName maps to name\n  CAvailableTime maps to contact.extension\n  ViaIntermediary maps to contact.extension\n  Period maps to period\n  PayloadType maps to payloadType\n  PayloadMimeType maps to payloadMimeType\n  EndpointAddress maps to address\n  EndpointHeader maps to header\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Endpoint Profile</b></p>\n  <p>The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Endpoint maps to Endpoint:\n  ManagingOrganization maps to managingOrganization\n  EndpointUseCase maps to extension\n  constrain contact.system to 1..1\n  constrain contact.value to 1..1\n  EndpointContact maps to contact\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  EndpointContact.ContactPoint.Purpose maps to contact.use\n  EndpointContact.ContactPoint.Type maps to contact.system\n  EndpointContact.ContactPoint.PriorityRank maps to contact.rank\n  EndpointContact.ContactPoint.EffectiveTimePeriod maps to contact.period\n  EndpointContact.ContactPoint.TelecomNumberOrAddress maps to contact.value\n  EndpointStatus maps to status\n  ConnectionType maps to connectionType\n  EndpointName maps to name\n  CAvailableTime maps to contact.extension\n  ViaIntermediary maps to contact.extension\n  Period maps to period\n  PayloadType maps to payloadType\n  PayloadMimeType maps to payloadMimeType\n  EndpointAddress maps to address\n  EndpointHeader maps to header\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint",
   "name": "Endpoint",
   "status": "draft",
-  "date": "2019-12-24",
+  "date": "2019-12-27",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {
@@ -393,9 +393,9 @@
         }
       },
       {
-        "id": "Endpoint.extension:usecase",
+        "id": "Endpoint.extension:endpointusecase",
         "path": "Endpoint.extension",
-        "definition": "UseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint",
+        "definition": "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint",
         "min": 0,
         "max": "*",
         "base": {
@@ -407,7 +407,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-EndpointUseCase-extension"
             ]
           }
         ],
@@ -431,7 +431,7 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "usecase",
+        "sliceName": "endpointusecase",
         "mustSupport": true
       },
       {
@@ -1825,9 +1825,9 @@
         }
       },
       {
-        "id": "Endpoint.extension:usecase",
+        "id": "Endpoint.extension:endpointusecase",
         "path": "Endpoint.extension",
-        "definition": "UseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint",
+        "definition": "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint",
         "min": 0,
         "max": "*",
         "base": {
@@ -1839,7 +1839,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase"
+              "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-EndpointUseCase-extension"
             ]
           }
         ],
@@ -1863,7 +1863,7 @@
         ],
         "isModifier": false,
         "isSummary": false,
-        "sliceName": "usecase",
+        "sliceName": "endpointusecase",
         "mustSupport": true
       },
       {
