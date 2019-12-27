@@ -84,6 +84,13 @@
           <name value="Practitioner Role"/>
       </resource>
       
+      <resource>
+          <exampleBoolean value="false"/>
+          <reference>
+            <reference value="StructureDefinition/plannet-EndpointUseCase-extension"/>
+          </reference>
+          <name value="Endpoint Use Case"/>
+      </resource>
       
       
       <resource>

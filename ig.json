@@ -121,6 +121,10 @@
       "base": "StructureDefinition-plannet-CAvailableTime-extension.html",
       "template-base": "sd-extension.html"
     },
+    "StructureDefinition/plannet-EndpointUseCase-extension": {
+      "base": "StructureDefinition-plannet-EndpointUseCase-extension.html",
+      "template-base": "sd-extension.html"
+    },
     "StructureDefinition/plannet-GeoLocation-extension": {
       "base": "StructureDefinition-plannet-GeoLocation-extension.html",
       "template-base": "sd-extension.html"

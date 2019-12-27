@@ -111,6 +111,13 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/plannet-EndpointUseCase-extension"
+      },
+      "name" : "Endpoint Use Case",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/plannet-Location-reference-extension"
       },
       "name" : "Location -reference",
