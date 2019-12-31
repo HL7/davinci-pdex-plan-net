@@ -146,6 +146,13 @@
     },
     {
       "reference" : {
+        "reference" : "CapabilityStatement/plannet-server"
+      },
+      "name" : "PDEX Payer Network Server Capability Statement",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "SearchParameter/plannet-available-days"
       },
       "name" : "Plannet_sp_available_days",
