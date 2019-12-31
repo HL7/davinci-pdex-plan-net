@@ -127,6 +127,13 @@
       <resource>
           <exampleBoolean value="true"/>
           <reference>
+            <reference value="CapabilityStatement/plannet-server"/>
+          </reference>
+          <name value="PDEX Payer Network Server Capability Statement"/>
+      </resource>
+      <resource>
+          <exampleBoolean value="true"/>
+          <reference>
             <reference value="SearchParameter/plannet-available-days"/>
           </reference>
           <name value="Plannet_sp_available_days"/>

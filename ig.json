@@ -161,6 +161,9 @@
       "base": "StructureDefinition-plannet-ViaIntermediary-extension.html",
       "template-base": "sd-extension.html"
     },
+    "CapabilityStatement/plannet-server": {
+      "base": "CapabilityStatement-plannet-server.html"
+    },
     "SearchParameter/plannet-available-days": {
       "base": "SearchParameter-plannet-available-days.html"
     },
