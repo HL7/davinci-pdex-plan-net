@@ -88,11 +88,6 @@
               <td>token</td>
               <td>{% capture md_text %}Select Endpoints that support the specified type of content{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
-              <td><a href="SearchParameter-endpoint-status.html">status</a></td>
-              <td>Endpoint</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select Endpoints with the specified status{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
               <td><a href="SearchParameter-endpoint-usecase-standard.html">usecase-standard</a></td>
               <td>Endpoint</td>
               <td>uri</td>
@@ -103,11 +98,6 @@
               <td>token</td>
               <td>{% capture md_text %}Select endpoints that support the type of services indicated by the specified code{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
-              <td><a href="SearchParameter-endpoint-via-intermediary.html">via-intermediary</a></td>
-              <td>Endpoint</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select Endpoints with contact information available through the specified intermediary{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
               <td><a href="SearchParameter-healthcareservice-characteristic.html">characteristic</a></td>
               <td>HealthcareService</td>
               <td>token</td>
@@ -117,11 +107,6 @@
               <td>HealthcareService</td>
               <td>reference</td>
               <td>{% capture md_text %}Select services available in a region described by the specified location{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-healthcareservice-eligibility.html">eligibility</a></td>
-              <td>HealthcareService</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select services with the specified eligibility requirements{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
               <td><a href="SearchParameter-healthcareservice-endpoint.html">endpoint</a></td>
               <td>HealthcareService</td>
@@ -178,11 +163,6 @@
               <td>token</td>
               <td>{% capture md_text %}Select services associated with the specified specialty{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
-              <td><a href="SearchParameter-healthcareservice-via-intermediary.html">via-intermediary</a></td>
-              <td>HealthcareService</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select HealthcareServices with contact information available through the specified intermediary{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
               <td><a href="SearchParameter-insuranceplan-administered-by.html">administered-by</a></td>
               <td>InsurancePlan</td>
               <td>reference</td>
@@ -198,11 +178,6 @@
               <td>token</td>
               <td>{% capture md_text %}Select health insurance products offering covered benefits of the specified type{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
-              <td><a href="SearchParameter-insuranceplan-coverage-limit-value.html">coverage-limit-value</a></td>
-              <td>InsurancePlan</td>
-              <td>quantity</td>
-              <td>{% capture md_text %}Select health insurance products with covered benefits limited in the specified manner{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
               <td><a href="SearchParameter-insuranceplan-coverage-network.html">coverage-network</a></td>
               <td>InsurancePlan</td>
               <td>reference</td>
@@ -212,26 +187,6 @@
               <td>InsurancePlan</td>
               <td>token</td>
               <td>{% capture md_text %}Select products offering the specified type of coverage{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-insuranceplan-endpoint.html">endpoint</a></td>
-              <td>InsurancePlan</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select health insurance products/plans with the specified endpoint{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-insuranceplan-general-cost-groupsize.html">general-cost-groupsize</a></td>
-              <td>InsurancePlan</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select plans with costs for the specified group size{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-insuranceplan-general-cost-type.html">general-cost-type</a></td>
-              <td>InsurancePlan</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select plans with the specified type of cost{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-insuranceplan-general-cost-value.html">general-cost-value</a></td>
-              <td>InsurancePlan</td>
-              <td>quantity</td>
-              <td>{% capture md_text %}Select plans which include the specified cost{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
               <td><a href="SearchParameter-insuranceplan-identifier.html">identifier</a></td>
               <td>InsurancePlan</td>
@@ -273,31 +228,6 @@
               <td>token</td>
               <td>{% capture md_text %}Select plans of the specified type{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
-              <td><a href="SearchParameter-insuranceplan-specific-cost-benefit-type.html">specific-cost-benefit-type</a></td>
-              <td>InsurancePlan</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select plans which include costs for the specified type of benefit{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-insuranceplan-specific-cost-category.html">specific-cost-category</a></td>
-              <td>InsurancePlan</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select plans which include costs for the specified category of coverage{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-insuranceplan-specific-cost-cost-type.html">specific-cost-cost-type</a></td>
-              <td>InsurancePlan</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select plans which include the specified type of cost{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-insuranceplan-specific-cost-value.html">specific-cost-value</a></td>
-              <td>InsurancePlan</td>
-              <td>quantity</td>
-              <td>{% capture md_text %}Select plans which include the specified cost{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-insuranceplan-status.html">status</a></td>
-              <td>InsurancePlan</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select health insurance products/plans with the specified status{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
               <td><a href="SearchParameter-insuranceplan-type.html">type</a></td>
               <td>InsurancePlan</td>
               <td>token</td>
@@ -317,11 +247,6 @@
               <td>Location</td>
               <td>special</td>
               <td>{% capture md_text %}Select locations that contain the specified co-ordinates{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-location-endpoint.html">endpoint</a></td>
-              <td>Location</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select Locations with the specified endpoint{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
               <td><a href="SearchParameter-location-identifier-assigner.html">identifier-assigner</a></td>
               <td>Location</td>
@@ -353,20 +278,10 @@
               <td>reference</td>
               <td>{% capture md_text %}Select Locations that are part of the specified location{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
-              <td><a href="SearchParameter-location-status.html">status</a></td>
-              <td>Location</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select Locations with the specified status{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
               <td><a href="SearchParameter-location-type.html">type</a></td>
               <td>Location</td>
               <td>token</td>
               <td>{% capture md_text %}Select Locations of the specified type{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-location-via-intermediary.html">via-intermediary</a></td>
-              <td>Location</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select Locations with contact information available through the specified intermediary{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
               <td><a href="SearchParameter-organization-address-city.html">address-city</a></td>
               <td>Organization</td>
@@ -433,11 +348,6 @@
               <td>reference</td>
               <td>{% capture md_text %}Select Organizations with a qualification issued by the specified organization{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
-              <td><a href="SearchParameter-organization-qualification-status.html">qualification-status</a></td>
-              <td>Organization</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select Organizations with a qualification status matching the specified code{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
               <td><a href="SearchParameter-organization-qualification-wherevalid-code.html">qualification-wherevalid-code</a></td>
               <td>Organization</td>
               <td>token</td>
@@ -448,35 +358,10 @@
               <td>reference</td>
               <td>{% capture md_text %}Select Organizations with a qualification that is valid at the specified location{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
-              <td><a href="SearchParameter-plannet-telecom-available-days.html">telecom-available-days</a></td>
-              <td>PractitionerRole, Endpoint, InsurancePlan, Location, Organization, Practitioner</td>
-              <td>token</td>
-              <td>{% capture md_text %}Days available{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-plannet-telecom-available-endtime.html">telecom-available-end-time</a></td>
-              <td>PractitionerRole, Endpoint, InsurancePlan, Location, Organization, Practitioner</td>
-              <td>token</td>
-              <td>{% capture md_text %}endtime{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-plannet-telecom-available-starttime.html">telecom-available-start-time</a></td>
-              <td>PractitionerRole, Endpoint, InsurancePlan, Location, Organization, Practitioner</td>
-              <td>token</td>
-              <td>{% capture md_text %}Starttime{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
               <td><a href="SearchParameter-organization-type.html">type</a></td>
               <td>Organization</td>
               <td>token</td>
               <td>{% capture md_text %}Select Organizations of the specified type{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-organization-via-intermediary.html">via-intermediary</a></td>
-              <td>Organization</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select Organizations with contact information available through the specified intermediary{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-organizationaffiliation-endpoint.html">endpoint</a></td>
-              <td>OrganizationAffiliation</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select OrganizationAffiliations with the specified endpoint{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
               <td><a href="SearchParameter-organizationaffiliation-identifier-assigner.html">identifier-assigner</a></td>
               <td>OrganizationAffiliation</td>
@@ -523,16 +408,6 @@
               <td>token</td>
               <td>{% capture md_text %}Select OrganizationAffiliations associated with the specified specialty{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
-              <td><a href="SearchParameter-organizationaffiliation-via-intermediary.html">via-intermediary</a></td>
-              <td>OrganizationAffiliation</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select OrganizationAffiliations with contact information available through the specified intermediary{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-practitioner-endpoint.html">endpoint</a></td>
-              <td>Practitioner</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select Practitioners with the specified endpoint{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
               <td><a href="SearchParameter-practitioner-family-name.html">family</a></td>
               <td>Practitioner</td>
               <td>string</td>
@@ -573,16 +448,6 @@
               <td>reference</td>
               <td>{% capture md_text %}Select Practitioners with a qualification issued by the specified organization{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
-              <td><a href="SearchParameter-practitioner-qualification-period.html">qualification-period</a></td>
-              <td>Practitioner</td>
-              <td>date</td>
-              <td>{% capture md_text %}Select Practitioners that have a qualification relevant to the date provided{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-practitioner-qualification-status.html">qualification-status</a></td>
-              <td>Practitioner</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select Practitioners with a qualification status matching the specified code{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
               <td><a href="SearchParameter-practitioner-qualification-wherevalid-code.html">qualification-wherevalid-code</a></td>
               <td>Practitioner</td>
               <td>token</td>
@@ -592,11 +457,6 @@
               <td>Practitioner</td>
               <td>reference</td>
               <td>{% capture md_text %}Select Practitioners with a qualification that is valid at the specified location{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-practitioner-via-intermediary.html">via-intermediary</a></td>
-              <td>Practitioner</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select Practitioners with contact information available through the specified intermediary{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
               <td><a href="SearchParameter-practitionerrole-endpoint.html">endpoint</a></td>
               <td>PractitionerRole</td>
@@ -653,11 +513,6 @@
               <td>reference</td>
               <td>{% capture md_text %}Select PractitionerRoles with a qualification issued by the specified organization{% endcapture %}{{ md_text | markdownify }}</td>
             </tr><tr>
-              <td><a href="SearchParameter-practitionerrole-qualification-status.html">qualification-status</a></td>
-              <td>PractitionerRole</td>
-              <td>token</td>
-              <td>{% capture md_text %}Select PractitionerRoles with a qualification status matching the specified code{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
               <td><a href="SearchParameter-practitionerrole-qualification-wherevalid-code.html">qualification-wherevalid-code</a></td>
               <td>PractitionerRole</td>
               <td>token</td>
@@ -682,11 +537,6 @@
               <td>PractitionerRole</td>
               <td>token</td>
               <td>{% capture md_text %}Select PractitionerRoles associated with the specified specialty{% endcapture %}{{ md_text | markdownify }}</td>
-            </tr><tr>
-              <td><a href="SearchParameter-practitionerrole-via-intermediary.html">via-intermediary</a></td>
-              <td>PractitionerRole</td>
-              <td>reference</td>
-              <td>{% capture md_text %}Select PractitionerRoles with contact information available through the specified intermediary{% endcapture %}{{ md_text | markdownify }}</td>
             </tr>
   </tbody>
 </table>

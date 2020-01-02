@@ -191,26 +191,17 @@
     "SearchParameter/endpoint-payload-type": {
       "base": "SearchParameter-endpoint-payload-type.html"
     },
-    "SearchParameter/endpoint-status": {
-      "base": "SearchParameter-endpoint-status.html"
-    },
     "SearchParameter/endpoint-usecase-standard": {
       "base": "SearchParameter-endpoint-usecase-standard.html"
     },
     "SearchParameter/endpoint-usecase-type": {
       "base": "SearchParameter-endpoint-usecase-type.html"
     },
-    "SearchParameter/endpoint-via-intermediary": {
-      "base": "SearchParameter-endpoint-via-intermediary.html"
-    },
     "SearchParameter/healthcareservice-characteristic": {
       "base": "SearchParameter-healthcareservice-characteristic.html"
     },
     "SearchParameter/healthcareservice-coverage-area": {
       "base": "SearchParameter-healthcareservice-coverage-area.html"
-    },
-    "SearchParameter/healthcareservice-eligibility": {
-      "base": "SearchParameter-healthcareservice-eligibility.html"
     },
     "SearchParameter/healthcareservice-endpoint": {
       "base": "SearchParameter-healthcareservice-endpoint.html"
@@ -245,9 +236,6 @@
     "SearchParameter/healthcareservice-specialty": {
       "base": "SearchParameter-healthcareservice-specialty.html"
     },
-    "SearchParameter/healthcareservice-via-intermediary": {
-      "base": "SearchParameter-healthcareservice-via-intermediary.html"
-    },
     "SearchParameter/insuranceplan-administered-by": {
       "base": "SearchParameter-insuranceplan-administered-by.html"
     },
@@ -257,26 +245,11 @@
     "SearchParameter/insuranceplan-coverage-benefit-type": {
       "base": "SearchParameter-insuranceplan-coverage-benefit-type.html"
     },
-    "SearchParameter/insuranceplan-coverage-limit-value": {
-      "base": "SearchParameter-insuranceplan-coverage-limit-value.html"
-    },
     "SearchParameter/insuranceplan-coverage-network": {
       "base": "SearchParameter-insuranceplan-coverage-network.html"
     },
     "SearchParameter/insuranceplan-coverage-type": {
       "base": "SearchParameter-insuranceplan-coverage-type.html"
-    },
-    "SearchParameter/insuranceplan-endpoint": {
-      "base": "SearchParameter-insuranceplan-endpoint.html"
-    },
-    "SearchParameter/insuranceplan-general-cost-groupsize": {
-      "base": "SearchParameter-insuranceplan-general-cost-groupsize.html"
-    },
-    "SearchParameter/insuranceplan-general-cost-type": {
-      "base": "SearchParameter-insuranceplan-general-cost-type.html"
-    },
-    "SearchParameter/insuranceplan-general-cost-value": {
-      "base": "SearchParameter-insuranceplan-general-cost-value.html"
     },
     "SearchParameter/insuranceplan-identifier": {
       "base": "SearchParameter-insuranceplan-identifier.html"
@@ -302,21 +275,6 @@
     "SearchParameter/insuranceplan-plan-type": {
       "base": "SearchParameter-insuranceplan-plan-type.html"
     },
-    "SearchParameter/insuranceplan-specific-cost-benefit-type": {
-      "base": "SearchParameter-insuranceplan-specific-cost-benefit-type.html"
-    },
-    "SearchParameter/insuranceplan-specific-cost-category": {
-      "base": "SearchParameter-insuranceplan-specific-cost-category.html"
-    },
-    "SearchParameter/insuranceplan-specific-cost-cost-type": {
-      "base": "SearchParameter-insuranceplan-specific-cost-cost-type.html"
-    },
-    "SearchParameter/insuranceplan-specific-cost-value": {
-      "base": "SearchParameter-insuranceplan-specific-cost-value.html"
-    },
-    "SearchParameter/insuranceplan-status": {
-      "base": "SearchParameter-insuranceplan-status.html"
-    },
     "SearchParameter/insuranceplan-type": {
       "base": "SearchParameter-insuranceplan-type.html"
     },
@@ -328,9 +286,6 @@
     },
     "SearchParameter/location-contains": {
       "base": "SearchParameter-location-contains.html"
-    },
-    "SearchParameter/location-endpoint": {
-      "base": "SearchParameter-location-endpoint.html"
     },
     "SearchParameter/location-identifier-assigner": {
       "base": "SearchParameter-location-identifier-assigner.html"
@@ -350,14 +305,8 @@
     "SearchParameter/location-partof": {
       "base": "SearchParameter-location-partof.html"
     },
-    "SearchParameter/location-status": {
-      "base": "SearchParameter-location-status.html"
-    },
     "SearchParameter/location-type": {
       "base": "SearchParameter-location-type.html"
-    },
-    "SearchParameter/location-via-intermediary": {
-      "base": "SearchParameter-location-via-intermediary.html"
     },
     "SearchParameter/organization-address-city": {
       "base": "SearchParameter-organization-address-city.html"
@@ -398,32 +347,14 @@
     "SearchParameter/organization-qualification-issuer": {
       "base": "SearchParameter-organization-qualification-issuer.html"
     },
-    "SearchParameter/organization-qualification-status": {
-      "base": "SearchParameter-organization-qualification-status.html"
-    },
     "SearchParameter/organization-qualification-wherevalid-code": {
       "base": "SearchParameter-organization-qualification-wherevalid-code.html"
     },
     "SearchParameter/organization-qualification-wherevalid-location": {
       "base": "SearchParameter-organization-qualification-wherevalid-location.html"
     },
-    "SearchParameter/plannet-telecom-available-days": {
-      "base": "SearchParameter-plannet-telecom-available-days.html"
-    },
-    "SearchParameter/plannet-telecom-available-endtime": {
-      "base": "SearchParameter-plannet-telecom-available-endtime.html"
-    },
-    "SearchParameter/plannet-telecom-available-starttime": {
-      "base": "SearchParameter-plannet-telecom-available-starttime.html"
-    },
     "SearchParameter/organization-type": {
       "base": "SearchParameter-organization-type.html"
-    },
-    "SearchParameter/organization-via-intermediary": {
-      "base": "SearchParameter-organization-via-intermediary.html"
-    },
-    "SearchParameter/organizationaffiliation-endpoint": {
-      "base": "SearchParameter-organizationaffiliation-endpoint.html"
     },
     "SearchParameter/organizationaffiliation-identifier-assigner": {
       "base": "SearchParameter-organizationaffiliation-identifier-assigner.html"
@@ -452,12 +383,6 @@
     "SearchParameter/organizationaffiliation-specialty": {
       "base": "SearchParameter-organizationaffiliation-specialty.html"
     },
-    "SearchParameter/organizationaffiliation-via-intermediary": {
-      "base": "SearchParameter-organizationaffiliation-via-intermediary.html"
-    },
-    "SearchParameter/practitioner-endpoint": {
-      "base": "SearchParameter-practitioner-endpoint.html"
-    },
     "SearchParameter/practitioner-family-name": {
       "base": "SearchParameter-practitioner-family-name.html"
     },
@@ -482,20 +407,11 @@
     "SearchParameter/practitioner-qualification-issuer": {
       "base": "SearchParameter-practitioner-qualification-issuer.html"
     },
-    "SearchParameter/practitioner-qualification-period": {
-      "base": "SearchParameter-practitioner-qualification-period.html"
-    },
-    "SearchParameter/practitioner-qualification-status": {
-      "base": "SearchParameter-practitioner-qualification-status.html"
-    },
     "SearchParameter/practitioner-qualification-wherevalid-code": {
       "base": "SearchParameter-practitioner-qualification-wherevalid-code.html"
     },
     "SearchParameter/practitioner-qualification-wherevalid-location": {
       "base": "SearchParameter-practitioner-qualification-wherevalid-location.html"
-    },
-    "SearchParameter/practitioner-via-intermediary": {
-      "base": "SearchParameter-practitioner-via-intermediary.html"
     },
     "SearchParameter/practitionerrole-endpoint": {
       "base": "SearchParameter-practitionerrole-endpoint.html"
@@ -530,9 +446,6 @@
     "SearchParameter/practitionerrole-qualification-issuer": {
       "base": "SearchParameter-practitionerrole-qualification-issuer.html"
     },
-    "SearchParameter/practitionerrole-qualification-status": {
-      "base": "SearchParameter-practitionerrole-qualification-status.html"
-    },
     "SearchParameter/practitionerrole-qualification-wherevalid-code": {
       "base": "SearchParameter-practitionerrole-qualification-wherevalid-code.html"
     },
@@ -547,9 +460,6 @@
     },
     "SearchParameter/practitionerrole-specialty": {
       "base": "SearchParameter-practitionerrole-specialty.html"
-    },
-    "SearchParameter/practitionerrole-via-intermediary": {
-      "base": "SearchParameter-practitionerrole-via-intermediary.html"
     },
     "Endpoint/direct321": {
       "base": "Endpoint-direct321.html",
