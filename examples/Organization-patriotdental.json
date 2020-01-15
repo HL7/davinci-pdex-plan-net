@@ -30,6 +30,12 @@
   },
   "identifier": [
     {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+          "valueCode": "active"
+        }
+      ],
       "use": "official",
       "type": {
         "coding": [

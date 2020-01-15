@@ -3,14 +3,14 @@
   "id": "plannet-Practitioner",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Practitioner Profile</b></p>\n  <p>Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PractitionerName.HumanName maps to name\n  PractitionerActive maps to active\n  PractitionerCommunication maps to communication\n  Gender maps to gender\n  BirthDate maps to birthDate\n  Photo maps to photo\n  Address maps to address\n  Address.Purpose maps to address.use\n  Address.Type maps to address.type\n  Address.DisplayText maps to address.text\n  Address.AddressLine maps to address.line\n  Address.City maps to address.city\n  Address.State maps to address.state\n  Address.PostalCode maps to address.postalCode\n  Address.Country maps to address.country\n  Address.EffectiveTimePeriod maps to address.period\n  PractitionerName.HumanName.Purpose maps to name.use\n  PractitionerName.HumanName.Name maps to name.text\n  PractitionerName.HumanName.FamilyName maps to name.family\n  PractitionerName.HumanName.GivenName maps to name.given\n  PractitionerName.HumanName.Prefix maps to name.prefix\n  PractitionerName.HumanName.Suffix maps to name.suffix\n  PractitionerName.HumanName.EffectiveTimePeriod maps to name.period\n  PractitionerTelecom maps to telecom\n  PractitionerTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  TAvailableTime maps to telecom.extension\n  TViaIntermediary maps to telecom.extension\n  GeoLocation maps to address.extension\n  PractitionerQualification.Practitioner-Qualification-VHDIR maps to qualification.extension\n  PractitionerQualification maps to qualification\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierUse maps to qualification.identifier.use\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierSystem maps to qualification.identifier.system\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierValue maps to qualification.identifier.value\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierType maps to qualification.identifier.type\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierPeriod maps to qualification.identifier.period\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierAssigner maps to qualification.identifier.assigner\n  PractitionerQualification.QualificationID maps to qualification.id\n  PractitionerQualification.Code maps to qualification.code\n  PractitionerQualification.Period maps to qualification.period\n  PractitionerQualification.Issuer maps to qualification.issuer\n  Communication-Proficiency maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  constrain name.family to 1..1\n  constrain name.given to 1..*\n  constrain photo to 0..1\n  constrain qualification.issuer to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Practitioner Profile</b></p>\n  <p>Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Practitioner maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  PN_Identifier maps to identifier\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PN_Identifier.IdentifierStatus maps to identifier.extension\n  PractitionerName.HumanName maps to name\n  PractitionerActive maps to active\n  PractitionerCommunication maps to communication\n  Gender maps to gender\n  BirthDate maps to birthDate\n  Photo maps to photo\n  Address maps to address\n  Address.Purpose maps to address.use\n  Address.Type maps to address.type\n  Address.DisplayText maps to address.text\n  Address.AddressLine maps to address.line\n  Address.City maps to address.city\n  Address.State maps to address.state\n  Address.PostalCode maps to address.postalCode\n  Address.Country maps to address.country\n  Address.EffectiveTimePeriod maps to address.period\n  PractitionerName.HumanName.Purpose maps to name.use\n  PractitionerName.HumanName.Name maps to name.text\n  PractitionerName.HumanName.FamilyName maps to name.family\n  PractitionerName.HumanName.GivenName maps to name.given\n  PractitionerName.HumanName.Prefix maps to name.prefix\n  PractitionerName.HumanName.Suffix maps to name.suffix\n  PractitionerName.HumanName.EffectiveTimePeriod maps to name.period\n  PractitionerTelecom maps to telecom\n  PractitionerTelecom.ContactPoint.Purpose maps to telecom.use\n  PractitionerTelecom.ContactPoint.Type maps to telecom.system\n  PractitionerTelecom.ContactPoint.PriorityRank maps to telecom.rank\n  PractitionerTelecom.ContactPoint.EffectiveTimePeriod maps to telecom.period\n  PractitionerTelecom.ContactPoint.TelecomNumberOrAddress maps to telecom.value\n  TAvailableTime maps to telecom.extension\n  TViaIntermediary maps to telecom.extension\n  GeoLocation maps to address.extension\n  PractitionerQualification.Practitioner-Qualification-VHDIR maps to qualification.extension\n  PractitionerQualification maps to qualification\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierUse maps to qualification.identifier.use\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierSystem maps to qualification.identifier.system\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierValue maps to qualification.identifier.value\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierType maps to qualification.identifier.type\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierPeriod maps to qualification.identifier.period\n  PractitionerQualification.QualificationIdentifier.PN_Identifier.IdentifierAssigner maps to qualification.identifier.assigner\n  PractitionerQualification.QualificationID maps to qualification.id\n  PractitionerQualification.Code maps to qualification.code\n  PractitionerQualification.Period maps to qualification.period\n  PractitionerQualification.Issuer maps to qualification.issuer\n  Communication-Proficiency maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency\n  Accessibility maps to http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility\n  constrain name.family to 1..1\n  constrain name.given to 1..*\n  constrain photo to 0..1\n  constrain qualification.issuer to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner",
   "name": "Practitioner",
   "title": "Practitioner",
   "status": "active",
   "experimental": false,
-  "date": "2020-01-02",
+  "date": "2020-01-15",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {
@@ -521,7 +521,8 @@
             "identity": "rim",
             "map": "n/a"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier.extension",
@@ -543,7 +544,7 @@
           "extensions",
           "user content"
         ],
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Element.extension",
@@ -563,6 +564,30 @@
             "map": "n/a"
           }
         ]
+      },
+      {
+        "id": "Practitioner.identifier.extension:identifierstatus",
+        "path": "Practitioner.identifier.extension",
+        "definition": "An extension indicating the status of an identifier. Appropriate codes include: active, inactive, issued in error, revoked, pending, or unknown",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "identifierstatus",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier.use",
@@ -3724,6 +3749,41 @@
       {
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier"
+      },
+      {
+        "id": "Practitioner.identifier.id",
+        "path": "Practitioner.identifier.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.extension",
+        "path": "Practitioner.identifier.extension",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Practitioner.identifier.extension:identifierstatus",
+        "path": "Practitioner.identifier.extension",
+        "definition": "An extension indicating the status of an identifier. Appropriate codes include: active, inactive, issued in error, revoked, pending, or unknown",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "identifierstatus",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier.use",

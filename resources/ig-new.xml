@@ -212,13 +212,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/endpoint-status"/>
-      </reference>
-      <name value="Plannet_sp_endpoint_status"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/endpoint-usecase-standard"/>
       </reference>
       <name value="Plannet_sp_endpoint_usecase_standard"/>
@@ -233,13 +226,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/endpoint-via-intermediary"/>
-      </reference>
-      <name value="Plannet_sp_endpoint_via_intermediary"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/healthcareservice-characteristic"/>
       </reference>
       <name value="Plannet_sp_healthcareservice_characteristic"/>
@@ -250,13 +236,6 @@
         <reference value="SearchParameter/healthcareservice-coverage-area"/>
       </reference>
       <name value="Plannet_sp_healthcareservice_coverage_area"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-eligibility"/>
-      </reference>
-      <name value="Plannet_sp_healthcareservice_eligibility"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -338,13 +317,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/healthcareservice-via-intermediary"/>
-      </reference>
-      <name value="Plannet_sp_healthcareservice_via_intermediary"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/insuranceplan-administered-by"/>
       </reference>
       <name value="Plannet_sp_insuranceplan_administered_by"/>
@@ -366,13 +338,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/insuranceplan-coverage-limit-value"/>
-      </reference>
-      <name value="Plannet_sp_insuranceplan_coverage_limit_value"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/insuranceplan-coverage-network"/>
       </reference>
       <name value="Plannet_sp_insuranceplan_coverage_network"/>
@@ -383,34 +348,6 @@
         <reference value="SearchParameter/insuranceplan-coverage-type"/>
       </reference>
       <name value="Plannet_sp_insuranceplan_coverage_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-endpoint"/>
-      </reference>
-      <name value="Plannet_sp_insuranceplan_endpoint"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-general-cost-groupsize"/>
-      </reference>
-      <name value="Plannet_sp_insuranceplan_general_cost_groupsize"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-general-cost-type"/>
-      </reference>
-      <name value="Plannet_sp_insuranceplan_general_cost_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-general-cost-value"/>
-      </reference>
-      <name value="Plannet_sp_insuranceplan_general_cost_value"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -471,41 +408,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/insuranceplan-specific-cost-benefit-type"/>
-      </reference>
-      <name value="Plannet_sp_insuranceplan_specific_cost_benefit_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-specific-cost-category"/>
-      </reference>
-      <name value="Plannet_sp_insuranceplan_specific_cost_category"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-specific-cost-cost-type"/>
-      </reference>
-      <name value="Plannet_sp_insuranceplan_specific_cost_cost_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-specific-cost-value"/>
-      </reference>
-      <name value="Plannet_sp_insuranceplan_specific_cost_value"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-status"/>
-      </reference>
-      <name value="Plannet_sp_insuranceplan_status"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/insuranceplan-type"/>
       </reference>
       <name value="Plannet_sp_insuranceplan_type"/>
@@ -530,13 +432,6 @@
         <reference value="SearchParameter/location-contains"/>
       </reference>
       <name value="Plannet_sp_location_contains"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/location-endpoint"/>
-      </reference>
-      <name value="Plannet_sp_location_endpoint"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -583,23 +478,9 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/location-status"/>
-      </reference>
-      <name value="Plannet_sp_location_status"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/location-type"/>
       </reference>
       <name value="Plannet_sp_location_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/location-via-intermediary"/>
-      </reference>
-      <name value="Plannet_sp_location_via_intermediary"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -695,13 +576,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/organization-qualification-status"/>
-      </reference>
-      <name value="Plannet_sp_organization_qualification_status"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/organization-qualification-wherevalid-code"/>
       </reference>
       <name value="Plannet_sp_organization_qualification_wherevalid_code"/>
@@ -716,44 +590,9 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/plannet-telecom-available-days"/>
-      </reference>
-      <name value="Plannet_sp_available_days"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/plannet-telecom-available-endtime"/>
-      </reference>
-      <name value="Plannet_sp_telecom_available_endtime"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/plannet-telecom-available-starttime"/>
-      </reference>
-      <name value="Plannet_sp_telecom_available_startime"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/organization-type"/>
       </reference>
       <name value="Plannet_sp_organization_type"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/organization-via-intermediary"/>
-      </reference>
-      <name value="Plannet_sp_organization_via_intermediary"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/organizationaffiliation-endpoint"/>
-      </reference>
-      <name value="Plannet_sp_organizationaffiliation_endpoint"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -821,20 +660,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/organizationaffiliation-via-intermediary"/>
-      </reference>
-      <name value="Plannet_sp_organizationaffiliation_via_intermediary"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/practitioner-endpoint"/>
-      </reference>
-      <name value="Plannet_sp_practitioner_endpoint"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/practitioner-family-name"/>
       </reference>
       <name value="Plannet_sp_practitioner_family_name"/>
@@ -891,20 +716,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/practitioner-qualification-period"/>
-      </reference>
-      <name value="Plannet_sp_practitioner_qualification_period"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/practitioner-qualification-status"/>
-      </reference>
-      <name value="Plannet_sp_practitioner_qualification_status"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/practitioner-qualification-wherevalid-code"/>
       </reference>
       <name value="Plannet_sp_practitioner_qualification_wherevalid_code"/>
@@ -915,13 +726,6 @@
         <reference value="SearchParameter/practitioner-qualification-wherevalid-location"/>
       </reference>
       <name value="Plannet_sp_practitioner_qualification_wherevalid_location"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/practitioner-via-intermediary"/>
-      </reference>
-      <name value="Plannet_sp_practitioner_via_intermediary"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1003,13 +807,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="SearchParameter/practitionerrole-qualification-status"/>
-      </reference>
-      <name value="Plannet_sp_practitionerrole_qualification_status"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="SearchParameter/practitionerrole-qualification-wherevalid-code"/>
       </reference>
       <name value="Plannet_sp_practitionerrole_qualification_wherevalid_code"/>
@@ -1041,13 +838,6 @@
         <reference value="SearchParameter/practitionerrole-specialty"/>
       </reference>
       <name value="Plannet_sp_practitionerrole_specialty"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="SearchParameter/practitionerrole-via-intermediary"/>
-      </reference>
-      <name value="Plannet_sp_practitionerrole_via_intermediary"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

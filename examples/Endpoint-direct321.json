@@ -15,7 +15,7 @@
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-EndpointUseCase-extension",
       "extension": [
         {
-          "url": "usecaseType",
+          "url": "type",
           "valueCodeableConcept": {
             "coding": [
               {
@@ -27,7 +27,7 @@
           }
         },
         {
-          "url": "usecaseStandard",
+          "url": "standard",
           "valueUri": "http://wiki.directproject.org/file/view/2011-03-09%20PDF%20-%20XDR%20and%20XDM%20for%20Direct%20Messaging%20Specification_FINAL.pdf"
         }
       ]

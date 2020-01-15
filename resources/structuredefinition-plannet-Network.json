@@ -3,12 +3,12 @@
   "id": "plannet-Network",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Network Profile</b></p>\n  <p>A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.\n\n\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.nae.text</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Network maps to Organization:\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  NetworkActive maps to active\n  NetworkType maps to type\n  NetworkAddress maps to address\n  NetworkName maps to name\n  NetworkAlias maps to alias\n  Location-reference maps to extension\n  PartOf maps to partOf\n  NetworkEndpoint maps to endpoint\n  NetworkContact maps to contact\n  NetworkContact.HumanName.Purpose maps to contact.name.use\n  NetworkContact.HumanName.Name maps to contact.name.text\n  NetworkContact.HumanName.FamilyName maps to contact.name.family\n  NetworkContact.HumanName.GivenName maps to contact.name.given\n  NetworkContact.HumanName.Prefix maps to contact.name.prefix\n  NetworkContact.HumanName.Suffix maps to contact.name.suffix\n  NetworkContact.HumanName.EffectiveTimePeriod maps to contact.name.period\n  NetworkContact.ContactPoint.TelecomNumberOrAddress maps to contact.telecom.value\n  NetworkContact.ContactPoint.Purpose maps to contact.telecom.use\n  NetworkContact.ContactPoint.PriorityRank maps to contact.telecom.rank\n  NetworkContact.ContactPoint.EffectiveTimePeriod maps to contact.telecom.period\n  NetworkContact.ContactPoint.Type maps to contact.telecom.system\n  constrain contact.name to 1..1\n  constrain contact.name.family to 1..1\n  constrain contact.name.given to 1..*\n  constrain contact.telecom.system to 1..1\n  constrain contact.telecom.value to 1..1\n  constrain telecom to 0..0\n  constrain partOf to 1..1\n  constrain address.line to 0..4\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Network Profile</b></p>\n  <p>A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\n\nIn the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.\n\n\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.nae.text</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Network maps to Organization:\n  PN_Identifier maps to identifier\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PN_Identifier.IdentifierStatus maps to identifier.extension\n  NetworkActive maps to active\n  NetworkType maps to type\n  NetworkAddress maps to address\n  NetworkName maps to name\n  NetworkAlias maps to alias\n  Location-reference maps to extension\n  PartOf maps to partOf\n  NetworkEndpoint maps to endpoint\n  NetworkContact maps to contact\n  NetworkContact.HumanName.Purpose maps to contact.name.use\n  NetworkContact.HumanName.Name maps to contact.name.text\n  NetworkContact.HumanName.FamilyName maps to contact.name.family\n  NetworkContact.HumanName.GivenName maps to contact.name.given\n  NetworkContact.HumanName.Prefix maps to contact.name.prefix\n  NetworkContact.HumanName.Suffix maps to contact.name.suffix\n  NetworkContact.HumanName.EffectiveTimePeriod maps to contact.name.period\n  NetworkContact.ContactPoint.TelecomNumberOrAddress maps to contact.telecom.value\n  NetworkContact.ContactPoint.Purpose maps to contact.telecom.use\n  NetworkContact.ContactPoint.PriorityRank maps to contact.telecom.rank\n  NetworkContact.ContactPoint.EffectiveTimePeriod maps to contact.telecom.period\n  NetworkContact.ContactPoint.Type maps to contact.telecom.system\n  constrain contact.name to 1..1\n  constrain contact.name.family to 1..1\n  constrain contact.name.given to 1..*\n  constrain contact.telecom.system to 1..1\n  constrain contact.telecom.value to 1..1\n  constrain telecom to 0..0\n  constrain partOf to 1..1\n  constrain address.line to 0..4\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network",
   "name": "Network",
   "status": "draft",
-  "date": "2020-01-02",
+  "date": "2020-01-15",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {
@@ -560,7 +560,8 @@
             "identity": "servd",
             "map": "./Identifiers"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.identifier.id",
@@ -595,7 +596,8 @@
             "identity": "rim",
             "map": "n/a"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.identifier.extension",
@@ -655,6 +657,48 @@
             "map": "n/a"
           }
         ]
+      },
+      {
+        "id": "Organization.identifier.extension:identifierstatus",
+        "path": "Organization.identifier.extension",
+        "definition": "An extension indicating the status of an identifier. Appropriate codes include: active, inactive, issued in error, revoked, pending, or unknown",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "identifierstatus",
+        "mustSupport": true
       },
       {
         "id": "Organization.identifier.use",
@@ -3772,7 +3816,55 @@
       },
       {
         "id": "Organization.identifier",
-        "path": "Organization.identifier"
+        "path": "Organization.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.identifier.id",
+        "path": "Organization.identifier.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.identifier.extension:identifierstatus",
+        "path": "Organization.identifier.extension",
+        "definition": "An extension indicating the status of an identifier. Appropriate codes include: active, inactive, issued in error, revoked, pending, or unknown",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "identifierstatus",
+        "mustSupport": true
       },
       {
         "id": "Organization.identifier.use",

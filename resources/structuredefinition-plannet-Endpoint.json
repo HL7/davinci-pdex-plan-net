@@ -3,12 +3,12 @@
   "id": "plannet-Endpoint",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Endpoint Profile</b></p>\n  <p>The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Endpoint maps to Endpoint:\n  ManagingOrganization maps to managingOrganization\n  EndpointUseCase maps to extension\n  constrain contact.system to 1..1\n  constrain contact.value to 1..1\n  EndpointContact maps to contact\n  PN_Identifier.IdentifierUse maps to identifier.use\n  PN_Identifier.IdentifierSystem maps to identifier.system\n  PN_Identifier.IdentifierValue maps to identifier.value\n  PN_Identifier.IdentifierType maps to identifier.type\n  PN_Identifier.IdentifierPeriod maps to identifier.period\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  EndpointContact.ContactPoint.Purpose maps to contact.use\n  EndpointContact.ContactPoint.Type maps to contact.system\n  EndpointContact.ContactPoint.PriorityRank maps to contact.rank\n  EndpointContact.ContactPoint.EffectiveTimePeriod maps to contact.period\n  EndpointContact.ContactPoint.TelecomNumberOrAddress maps to contact.value\n  EndpointStatus maps to status\n  ConnectionType maps to connectionType\n  EndpointName maps to name\n  CAvailableTime maps to contact.extension\n  ViaIntermediary maps to contact.extension\n  Period maps to period\n  PayloadType maps to payloadType\n  PayloadMimeType maps to payloadMimeType\n  EndpointAddress maps to address\n  EndpointHeader maps to header\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Endpoint Profile</b></p>\n  <p>The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>plannet.Endpoint maps to Endpoint:\n  ManagingOrganization maps to managingOrganization\n  EndpointUseCase maps to extension\n  constrain contact.system to 1..1\n  constrain contact.value to 1..1\n  EndpointContact maps to contact\n  PN_Identifier maps to identifier\n  PN_Identifier.IdentifierAssigner maps to identifier.assigner\n  PN_Identifier.IdentifierStatus maps to identifier.extension\n  EndpointContact.ContactPoint.Purpose maps to contact.use\n  EndpointContact.ContactPoint.Type maps to contact.system\n  EndpointContact.ContactPoint.PriorityRank maps to contact.rank\n  EndpointContact.ContactPoint.EffectiveTimePeriod maps to contact.period\n  EndpointContact.ContactPoint.TelecomNumberOrAddress maps to contact.value\n  EndpointStatus maps to status\n  ConnectionType maps to connectionType\n  EndpointName maps to name\n  CAvailableTime maps to contact.extension\n  ViaIntermediary maps to contact.extension\n  Period maps to period\n  PayloadType maps to payloadType\n  PayloadMimeType maps to payloadMimeType\n  EndpointAddress maps to address\n  EndpointHeader maps to header\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint",
   "name": "Endpoint",
   "status": "draft",
-  "date": "2020-01-02",
+  "date": "2020-01-15",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {
@@ -435,6 +435,331 @@
         "mustSupport": true
       },
       {
+        "id": "Endpoint.extension:endpointusecase.id",
+        "path": "Endpoint.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Endpoint.extension:endpointusecase.extension",
+        "path": "Endpoint.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Endpoint.extension:endpointusecase.extension:type",
+        "path": "Endpoint.extension.extension",
+        "definition": "an indication of the type of services supported by the endpoint",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ],
+        "sliceName": "type",
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.extension:endpointusecase.extension:standard",
+        "path": "Endpoint.extension.extension",
+        "definition": "a URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ],
+        "sliceName": "standard",
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.extension:endpointusecase.url",
+        "path": "Endpoint.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-EndpointUseCase-extension"
+      },
+      {
+        "id": "Endpoint.extension:endpointusecase.value[x]",
+        "path": "Endpoint.extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "Contributor"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Dosage"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
         "id": "Endpoint.modifierExtension",
         "path": "Endpoint.modifierExtension",
         "short": "Extensions that cannot be ignored",
@@ -523,7 +848,8 @@
             "identity": "rim",
             "map": "n/a"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Endpoint.identifier.id",
@@ -558,7 +884,8 @@
             "identity": "rim",
             "map": "n/a"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Endpoint.identifier.extension",
@@ -618,6 +945,47 @@
             "map": "n/a"
           }
         ]
+      },
+      {
+        "id": "Endpoint.identifier.extension:identifierstatus",
+        "path": "Endpoint.identifier.extension",
+        "definition": "An extension indicating the status of an identifier. Appropriate codes include: active, inactive, issued in error, revoked, pending, or unknown",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "identifierstatus"
       },
       {
         "id": "Endpoint.identifier.use",
@@ -1867,8 +2235,65 @@
         "mustSupport": true
       },
       {
+        "id": "Endpoint.extension:endpointusecase.extension:type",
+        "path": "Endpoint.extension.extension",
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.extension:endpointusecase.extension:standard",
+        "path": "Endpoint.extension.extension",
+        "mustSupport": true
+      },
+      {
         "id": "Endpoint.identifier",
-        "path": "Endpoint.identifier"
+        "path": "Endpoint.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.identifier.id",
+        "path": "Endpoint.identifier.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.identifier.extension:identifierstatus",
+        "path": "Endpoint.identifier.extension",
+        "definition": "An extension indicating the status of an identifier. Appropriate codes include: active, inactive, issued in error, revoked, pending, or unknown",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "sliceName": "identifierstatus"
       },
       {
         "id": "Endpoint.identifier.use",

@@ -216,13 +216,6 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/endpoint-status"
-      },
-      "name" : "Plannet_sp_endpoint_status",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/endpoint-usecase-standard"
       },
       "name" : "Plannet_sp_endpoint_usecase_standard",
@@ -237,13 +230,6 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/endpoint-via-intermediary"
-      },
-      "name" : "Plannet_sp_endpoint_via_intermediary",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/healthcareservice-characteristic"
       },
       "name" : "Plannet_sp_healthcareservice_characteristic",
@@ -254,13 +240,6 @@
         "reference" : "SearchParameter/healthcareservice-coverage-area"
       },
       "name" : "Plannet_sp_healthcareservice_coverage_area",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/healthcareservice-eligibility"
-      },
-      "name" : "Plannet_sp_healthcareservice_eligibility",
       "exampleBoolean" : true
     },
     {
@@ -342,13 +321,6 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/healthcareservice-via-intermediary"
-      },
-      "name" : "Plannet_sp_healthcareservice_via_intermediary",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/insuranceplan-administered-by"
       },
       "name" : "Plannet_sp_insuranceplan_administered_by",
@@ -370,13 +342,6 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/insuranceplan-coverage-limit-value"
-      },
-      "name" : "Plannet_sp_insuranceplan_coverage_limit_value",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/insuranceplan-coverage-network"
       },
       "name" : "Plannet_sp_insuranceplan_coverage_network",
@@ -387,34 +352,6 @@
         "reference" : "SearchParameter/insuranceplan-coverage-type"
       },
       "name" : "Plannet_sp_insuranceplan_coverage_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-endpoint"
-      },
-      "name" : "Plannet_sp_insuranceplan_endpoint",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-general-cost-groupsize"
-      },
-      "name" : "Plannet_sp_insuranceplan_general_cost_groupsize",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-general-cost-type"
-      },
-      "name" : "Plannet_sp_insuranceplan_general_cost_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-general-cost-value"
-      },
-      "name" : "Plannet_sp_insuranceplan_general_cost_value",
       "exampleBoolean" : true
     },
     {
@@ -475,41 +412,6 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/insuranceplan-specific-cost-benefit-type"
-      },
-      "name" : "Plannet_sp_insuranceplan_specific_cost_benefit_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-specific-cost-category"
-      },
-      "name" : "Plannet_sp_insuranceplan_specific_cost_category",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-specific-cost-cost-type"
-      },
-      "name" : "Plannet_sp_insuranceplan_specific_cost_cost_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-specific-cost-value"
-      },
-      "name" : "Plannet_sp_insuranceplan_specific_cost_value",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/insuranceplan-status"
-      },
-      "name" : "Plannet_sp_insuranceplan_status",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/insuranceplan-type"
       },
       "name" : "Plannet_sp_insuranceplan_type",
@@ -534,13 +436,6 @@
         "reference" : "SearchParameter/location-contains"
       },
       "name" : "Plannet_sp_location_contains",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/location-endpoint"
-      },
-      "name" : "Plannet_sp_location_endpoint",
       "exampleBoolean" : true
     },
     {
@@ -587,23 +482,9 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/location-status"
-      },
-      "name" : "Plannet_sp_location_status",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/location-type"
       },
       "name" : "Plannet_sp_location_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/location-via-intermediary"
-      },
-      "name" : "Plannet_sp_location_via_intermediary",
       "exampleBoolean" : true
     },
     {
@@ -699,13 +580,6 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/organization-qualification-status"
-      },
-      "name" : "Plannet_sp_organization_qualification_status",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/organization-qualification-wherevalid-code"
       },
       "name" : "Plannet_sp_organization_qualification_wherevalid_code",
@@ -720,44 +594,9 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/plannet-telecom-available-days"
-      },
-      "name" : "Plannet_sp_available_days",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/plannet-telecom-available-endtime"
-      },
-      "name" : "Plannet_sp_telecom_available_endtime",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/plannet-telecom-available-starttime"
-      },
-      "name" : "Plannet_sp_telecom_available_startime",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/organization-type"
       },
       "name" : "Plannet_sp_organization_type",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/organization-via-intermediary"
-      },
-      "name" : "Plannet_sp_organization_via_intermediary",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/organizationaffiliation-endpoint"
-      },
-      "name" : "Plannet_sp_organizationaffiliation_endpoint",
       "exampleBoolean" : true
     },
     {
@@ -825,20 +664,6 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/organizationaffiliation-via-intermediary"
-      },
-      "name" : "Plannet_sp_organizationaffiliation_via_intermediary",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/practitioner-endpoint"
-      },
-      "name" : "Plannet_sp_practitioner_endpoint",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/practitioner-family-name"
       },
       "name" : "Plannet_sp_practitioner_family_name",
@@ -895,20 +720,6 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/practitioner-qualification-period"
-      },
-      "name" : "Plannet_sp_practitioner_qualification_period",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/practitioner-qualification-status"
-      },
-      "name" : "Plannet_sp_practitioner_qualification_status",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/practitioner-qualification-wherevalid-code"
       },
       "name" : "Plannet_sp_practitioner_qualification_wherevalid_code",
@@ -919,13 +730,6 @@
         "reference" : "SearchParameter/practitioner-qualification-wherevalid-location"
       },
       "name" : "Plannet_sp_practitioner_qualification_wherevalid_location",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/practitioner-via-intermediary"
-      },
-      "name" : "Plannet_sp_practitioner_via_intermediary",
       "exampleBoolean" : true
     },
     {
@@ -1007,13 +811,6 @@
     },
     {
       "reference" : {
-        "reference" : "SearchParameter/practitionerrole-qualification-status"
-      },
-      "name" : "Plannet_sp_practitionerrole_qualification_status",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "SearchParameter/practitionerrole-qualification-wherevalid-code"
       },
       "name" : "Plannet_sp_practitionerrole_qualification_wherevalid_code",
@@ -1045,13 +842,6 @@
         "reference" : "SearchParameter/practitionerrole-specialty"
       },
       "name" : "Plannet_sp_practitionerrole_specialty",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "SearchParameter/practitionerrole-via-intermediary"
-      },
-      "name" : "Plannet_sp_practitionerrole_via_intermediary",
       "exampleBoolean" : true
     },
     {
