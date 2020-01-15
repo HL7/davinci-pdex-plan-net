@@ -9,7 +9,7 @@
   "name": "EndpointUseCase",
   "title": "Endpoint Use Case",
   "status": "draft",
-  "date": "2020-01-02",
+  "date": "2020-01-15",
   "publisher": "HL7 Financial Management WG",
   "contact": [
     {
@@ -151,7 +151,7 @@
         ]
       },
       {
-        "id": "Extension.extension:usecaseType",
+        "id": "Extension.extension:type",
         "path": "Extension.extension",
         "definition": "an indication of the type of services supported by the endpoint",
         "min": 1,
@@ -174,10 +174,10 @@
             "map": "n/a"
           }
         ],
-        "sliceName": "usecaseType"
+        "sliceName": "type"
       },
       {
-        "id": "Extension.extension:usecaseType.id",
+        "id": "Extension.extension:type.id",
         "path": "Extension.extension.id",
         "representation": [
           "xmlAttr"
@@ -206,7 +206,7 @@
         ]
       },
       {
-        "id": "Extension.extension:usecaseType.extension",
+        "id": "Extension.extension:type.extension",
         "path": "Extension.extension.extension",
         "slicing": {
           "discriminator": [
@@ -247,7 +247,7 @@
         ]
       },
       {
-        "id": "Extension.extension:usecaseType.url",
+        "id": "Extension.extension:type.url",
         "path": "Extension.extension.url",
         "representation": [
           "xmlAttr"
@@ -275,10 +275,10 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "usecaseType"
+        "fixedUri": "type"
       },
       {
-        "id": "Extension.extension:usecaseType.valueCodeableConcept",
+        "id": "Extension.extension:type.valueCodeableConcept",
         "path": "Extension.extension.valueCodeableConcept",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -308,7 +308,7 @@
         }
       },
       {
-        "id": "Extension.extension:usecaseStandard",
+        "id": "Extension.extension:standard",
         "path": "Extension.extension",
         "definition": "a URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)",
         "min": 0,
@@ -331,10 +331,10 @@
             "map": "n/a"
           }
         ],
-        "sliceName": "usecaseStandard"
+        "sliceName": "standard"
       },
       {
-        "id": "Extension.extension:usecaseStandard.id",
+        "id": "Extension.extension:standard.id",
         "path": "Extension.extension.id",
         "representation": [
           "xmlAttr"
@@ -363,7 +363,7 @@
         ]
       },
       {
-        "id": "Extension.extension:usecaseStandard.extension",
+        "id": "Extension.extension:standard.extension",
         "path": "Extension.extension.extension",
         "slicing": {
           "discriminator": [
@@ -404,7 +404,7 @@
         ]
       },
       {
-        "id": "Extension.extension:usecaseStandard.url",
+        "id": "Extension.extension:standard.url",
         "path": "Extension.extension.url",
         "representation": [
           "xmlAttr"
@@ -432,10 +432,10 @@
             "map": "N/A"
           }
         ],
-        "fixedUri": "usecaseStandard"
+        "fixedUri": "standard"
       },
       {
-        "id": "Extension.extension:usecaseStandard.valueUri",
+        "id": "Extension.extension:standard.valueUri",
         "path": "Extension.extension.valueUri",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -680,7 +680,7 @@
         "max": "*"
       },
       {
-        "id": "Extension.extension:usecaseType",
+        "id": "Extension.extension:type",
         "path": "Extension.extension",
         "definition": "an indication of the type of services supported by the endpoint",
         "min": 1,
@@ -703,26 +703,26 @@
             "map": "n/a"
           }
         ],
-        "sliceName": "usecaseType"
+        "sliceName": "type"
       },
       {
-        "id": "Extension.extension:usecaseType.extension",
+        "id": "Extension.extension:type.extension",
         "path": "Extension.extension.extension",
         "min": 0,
         "max": "0"
       },
       {
-        "id": "Extension.extension:usecaseType.url",
+        "id": "Extension.extension:type.url",
         "path": "Extension.extension.url",
         "type": [
           {
             "code": "uri"
           }
         ],
-        "fixedUri": "usecaseType"
+        "fixedUri": "type"
       },
       {
-        "id": "Extension.extension:usecaseType.valueCodeableConcept",
+        "id": "Extension.extension:type.valueCodeableConcept",
         "path": "Extension.extension.valueCodeableConcept",
         "min": 1,
         "type": [
@@ -736,7 +736,7 @@
         }
       },
       {
-        "id": "Extension.extension:usecaseStandard",
+        "id": "Extension.extension:standard",
         "path": "Extension.extension",
         "definition": "a URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)",
         "min": 0,
@@ -759,26 +759,26 @@
             "map": "n/a"
           }
         ],
-        "sliceName": "usecaseStandard"
+        "sliceName": "standard"
       },
       {
-        "id": "Extension.extension:usecaseStandard.extension",
+        "id": "Extension.extension:standard.extension",
         "path": "Extension.extension.extension",
         "min": 0,
         "max": "0"
       },
       {
-        "id": "Extension.extension:usecaseStandard.url",
+        "id": "Extension.extension:standard.url",
         "path": "Extension.extension.url",
         "type": [
           {
             "code": "uri"
           }
         ],
-        "fixedUri": "usecaseStandard"
+        "fixedUri": "standard"
       },
       {
-        "id": "Extension.extension:usecaseStandard.valueUri",
+        "id": "Extension.extension:standard.valueUri",
         "path": "Extension.extension.valueUri",
         "min": 1,
         "type": [

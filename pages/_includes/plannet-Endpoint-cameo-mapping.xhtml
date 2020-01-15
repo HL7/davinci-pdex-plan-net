@@ -9,12 +9,9 @@ plannet.Endpoint maps to Endpoint:
   constrain contact.system to 1..1
   constrain contact.value to 1..1
   EndpointContact maps to contact
-  PN_Identifier.IdentifierUse maps to identifier.use
-  PN_Identifier.IdentifierSystem maps to identifier.system
-  PN_Identifier.IdentifierValue maps to identifier.value
-  PN_Identifier.IdentifierType maps to identifier.type
-  PN_Identifier.IdentifierPeriod maps to identifier.period
+  PN_Identifier maps to identifier
   PN_Identifier.IdentifierAssigner maps to identifier.assigner
+  PN_Identifier.IdentifierStatus maps to identifier.extension
   EndpointContact.ContactPoint.Purpose maps to contact.use
   EndpointContact.ContactPoint.Type maps to contact.system
   EndpointContact.ContactPoint.PriorityRank maps to contact.rank
