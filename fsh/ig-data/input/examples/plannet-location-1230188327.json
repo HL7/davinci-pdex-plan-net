@@ -1,0 +1,126 @@
+{
+  "id": "plannet-location-1230188327",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
+            "code": "handiaccess",
+            "display": "handicap accessible"
+          }
+        ],
+        "text": "Offers a variety of services and programs for persons with disabilities"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "acceptingPatients",
+          "valueBoolean": false
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile",
+      "valueString": "This location accepts all types of patients"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://soundview-orthopaedic-assoc-llp.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-1230188327",
+        "display": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"
+      },
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+          "valueCode": "active"
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "name": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP",
+  "description": "Main campus of SOUNDVIEW ORTHOPAEDIC ASSOC. LLP",
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "743.125.4429 x2376",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "779-475-4330 x580",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "101 AIRPORT RD, WESTERLY, RI 028913432",
+    "line": [
+      "101 AIRPORT RD"
+    ],
+    "city": "WESTERLY",
+    "state": "RI",
+    "postalCode": "028913432",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -71.81142,
+    "latitude": 41.349716
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-1230188327",
+    "display": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

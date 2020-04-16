@@ -1,0 +1,126 @@
+{
+  "id": "plannet-location-1230085657",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
+            "code": "handiaccess",
+            "display": "handicap accessible"
+          }
+        ],
+        "text": "Offers a variety of services and programs for persons with disabilities"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "acceptingPatients",
+          "valueBoolean": false
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile",
+      "valueString": "This location accepts all types of patients"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://bayside-endoscopy-llc.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-1230085657",
+        "display": "BAYSIDE ENDOSCOPY, LLC"
+      },
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+          "valueCode": "active"
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "name": "BAYSIDE ENDOSCOPY, LLC",
+  "description": "Main campus of BAYSIDE ENDOSCOPY, LLC",
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "735-380-1096 x267",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "1-265-938-5709 x280",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "33 STANIFORD ST, PROVIDENCE, RI 029053105",
+    "line": [
+      "33 STANIFORD ST"
+    ],
+    "city": "PROVIDENCE",
+    "state": "RI",
+    "postalCode": "029053105",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -71.41177,
+    "latitude": 41.809006
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-1230085657",
+    "display": "BAYSIDE ENDOSCOPY, LLC"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}
