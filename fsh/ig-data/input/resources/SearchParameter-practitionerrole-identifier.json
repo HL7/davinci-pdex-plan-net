@@ -1,0 +1,34 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitionerrole-identifier",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-identifier",
+  "version": "0.2.0",
+  "name": "Plannet_sp_practitionerrole_identifier",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-identifier",
+  "status": "active",
+  "date": "2018-05-23T00:00:00+00:00",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select PractitionerRoles with the specified identifier",
+  "code": "identifier",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "token",
+  "expression": "PractitionerRole.identifier",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text",
+    "ofType"
+  ]
+}

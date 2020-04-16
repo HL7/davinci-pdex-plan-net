@@ -1,0 +1,34 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitioner-name",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-name",
+  "version": "0.2.0",
+  "name": "Plannet_sp_practitioner_name",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Practitioner-name",
+  "status": "active",
+  "date": "2018-05-23T00:00:00+00:00",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)",
+  "code": "name",
+  "base": [
+    "Practitioner"
+  ],
+  "type": "string",
+  "expression": "Practitioner.name",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "exact",
+    "contains"
+  ]
+}

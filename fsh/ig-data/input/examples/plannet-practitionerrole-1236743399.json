@@ -1,0 +1,111 @@
+{
+  "id": "plannet-practitionerrole-1236743399",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://eye-associates-pc.com",
+      "value": "206272de83ed12",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+          "valueCode": "active"
+        }
+      ]
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1236743399",
+    "display": "Wiley Kiehn"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1230789741",
+    "display": "EYE ASSOCIATES PC"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208800000X",
+          "display": "Urology"
+        }
+      ],
+      "text": "Urology"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208800000X",
+          "display": "Urology"
+        }
+      ],
+      "text": "Urology"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1230789741",
+      "display": "EYE ASSOCIATES PC"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "407.611.2585 x223",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "303-063-8898 x72161",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

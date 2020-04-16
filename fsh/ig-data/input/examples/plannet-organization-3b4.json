@@ -1,0 +1,142 @@
+{
+  "id": "plannet-organization-3b4358447f58795888ada0a39",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://i.made/this/up",
+      "value": "524968",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+          "valueCode": "active"
+        }
+      ]
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "other",
+          "display": "Other"
+        }
+      ],
+      "text": "Other"
+    }
+  ],
+  "name": "OXFORD",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-403-175-9221 x396",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "715-555-1198 x39741",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 41.54454
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -73.209002
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": ",  00000",
+      "postalCode": "00000",
+      "country": "USA"
+    }
+  ],
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+            "code": "ADMIN",
+            "display": "Administrative"
+          }
+        ]
+      },
+      "name": {
+        "use": "official",
+        "text": "Chanda Glover",
+        "family": "Glover",
+        "given": [
+          "Chanda"
+        ]
+      },
+      "telecom": [
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "mon"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "tue"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "wed"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "thu"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "fri"
+                },
+                {
+                  "url": "availableStartTime",
+                  "valueTime": "07:00:00"
+                },
+                {
+                  "url": "availableEndTime",
+                  "valueTime": "18:00:00"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+            }
+          ],
+          "system": "phone",
+          "value": "1-403-175-9221 x396",
+          "use": "work"
+        }
+      ],
+      "address": {
+        "use": "work",
+        "type": "both",
+        "text": ",  00000",
+        "postalCode": "00000",
+        "country": "USA"
+      }
+    }
+  ],
+  "resourceType": "Organization"
+}

@@ -1,0 +1,34 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "plannet-available-end-time",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/plannet-available-end-time",
+  "version": "0.2.0",
+  "name": "Plannet_sp_available_end_time",
+  "status": "active",
+  "date": "2018-05-23T00:00:00+00:00",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Available end time",
+  "code": "available-end-time",
+  "base": [
+    "HealthcareService",
+    "PractitionerRole",
+    "Location"
+  ],
+  "type": "token",
+  "expression": "PractitionerRole.availableTime.availableEndTime | HealthcareService.availableTime.availableEndTime |  Location.hoursOfOperation.availableEndTime",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}
