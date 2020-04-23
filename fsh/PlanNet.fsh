@@ -533,13 +533,14 @@ Description: "EndpointUseCase is an enumeration of the specific use cases (servi
 Extension: PractitionerQualification
 Id: practitioner-qualification
 Title: "Practitioner Qualification"
-Description: "An extension to add status and whereValie elements to a practitioner’s qualifications."
+Description: "An extension to add status and whereValid elements to a practitioner’s qualifications."
 * value[x] 0..0
 * extension contains
    status 1..1 MS and
    whereValid 0..1 MS 
 * extension[status] ^short = "Status"
 * extension[status].value[x] only  code 
+* extension[status].value[x] 1..1
 * extension[status].valueCode from $CredentialStatus (example)
 * extension[status].valueCode = $CredentialStatus#active (exactly)
 * extension[whereValid] ^short = "Where the qualification is valid"
@@ -558,15 +559,21 @@ Description: "An extension to add qualifications for an organization (e.g. accre
    period 0..1 MS and 
    whereValid 0..* MS
 * extension[identifier].value[x] only Identifier 
+* extension[identifier].value[x] 1..1
 * extension[code].value[x] only CodeableConcept
+* extension[code].value[x] 1..1
 * extension[code].valueCodeableConcept from $V2table0360v27 (example)
+* extension[issuer].value[x] 1..1
 * extension[issuer].value[x] only Reference(PlannetOrganization)
+* extension[status].value[x] 1..1
 * extension[status].value[x] only  code 
 * extension[status].valueCode from $CredentialStatus (example)
 * extension[status].valueCode = $CredentialStatus#active (exactly)
 * extension[period].value[x] only Period 
+* extension[period].value[x] 1..1
 * extension[whereValid].value[x] only CodeableConcept or Reference(PlannetLocation)
 * extension[whereValid].valueCodeableConcept from $USPSState (required)
+* extension[whereValid].value[x] 1..1
 
 Extension: Accessibility
 Id: accessibility
