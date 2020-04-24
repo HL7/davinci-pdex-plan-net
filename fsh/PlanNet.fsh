@@ -475,7 +475,7 @@ group of people or a facility, nor does it take into account that not all practi
 
 Invariant:  practitioner-or-organization-or-healthcareservice-or-location 
 Description: "If PlannetPractitionerRole.practitioner is absent  ( PlannetPractitionerRole.organization, PlannetPractitionerRole.healthcareservice, PlannetPractitionerRole.location) must be present"
-Expression: "practitioner.exists() or (organization.exists() or healthcareservice.exists() or location.exists()"
+Expression: "practitioner.exists() or (organization.exists() or healthcareservice.exists() or location.exists())"
 Severity:   #error
 XPath:      "f:practitioner or (f:organization or f:healthcareservice or f:location) "
 
