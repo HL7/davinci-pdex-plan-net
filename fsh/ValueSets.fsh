@@ -18,6 +18,26 @@ CodeSystem:  OrgTypeCS
 * #PrvGrp "Provider Group" "A healthcare provider group"
 * #Payer "Payer" "A healthcare payer."
  
+ CodeSystem: HealthcareServiceCategoryCS
+ Title: "Healthcare Service Category"
+ Description: "Codesystem for descripting the broad category of service being performed or delivered by a health care service"
+* #Hospital "Hospital" "A health care institution providing patient treatment with specialized medical and nursing staff and medical equipment"
+* #Provider "Medical Provider"  "A person (e.g. Physician) who provides health care services"
+* #Urgent "Urgent Care" "Medical care provided for illnesses or injuries which require prompt attention but are typically not of such seriousness as to require the services of an emergency room."
+* #Lab "Laboratory" "A laboratory where clinical pathology tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease."
+* #Emerg "Emergency care" " Provides life-saving measures in life-threatening situations (e.g., an Emergency Room(ER))"
+* #Behav "Behavioral Health" "Provides treatments to help people with mental illnesses or substance use disorders. "
+* #Dental "Dental" "Providing Dentistry services"
+* #Vision "Vision" "Providing Vision Services"
+* #Home "Home Health" "Provides skilled nursing care, as well as otherskilled care services, like physical and occupational therapy, speech-language therapy, and medical social services in your home."
+* #DME "DME/Medical Supplies" "Provides equipment such as wheelchairs (manual and electric), hospital beds, traction equipment, canes, crutches, walkers, kidney machines, ventilators, oxygen, monitors, pressure mattresses, 
+lifts, nebulizers, bili blankets and bili lights.  Provides consumable home health care supplies such as (e.g. diabetic supplies)"
+* #Outpatient "Clinic or Outpatient Facility" "A facility that provides medical treatment that does not require admission to the hospital"
+* #Group "Medical Group" "A group of medical providers  (e.g. Physicians) that provides health care services"
+* #Pharmacy "Pharmacy" "A store where medicinal drugs are dispensed and sold."
+* #Transport "Transporation" "Provides transporation services (e.g., Ambulance or Ambulette)"
+* #Other "Other" "Other"
+
 
 
 ValueSet: EndpointConnectionTypeVS
@@ -100,3 +120,8 @@ Description:  "Insurance Plan Type"
 * $PaymentTypology#524 "Indemnity Insurance-Dental"
 * $PaymentTypology#9999 "Qualified Health Plan -- NOT IN LIST"
 
+
+ValueSet: HealthcareServiceCategoryVS
+Title: "Healthcare Service Category"
+Description: "Valueset for descripting the broad category of service being performed or delivered by a health care service"
+* codes from system HealthcareServiceCategoryCS

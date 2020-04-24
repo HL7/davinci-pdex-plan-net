@@ -61,6 +61,7 @@ Description:    "The HealthCareService  resource typically describes services of
 * providedBy only Reference(PlannetOrganization)
 * providedBy MS
 * category MS
+* category from HealthcareServiceCategoryVS (extensible)
 * type MS
 * specialty MS
 // * specialty from $NUCCProviderTaxonomy (required) -- NOT agreed to
