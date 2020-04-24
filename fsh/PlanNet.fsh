@@ -372,29 +372,12 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * name.prefix MS
 * name.suffix MS
 * name.period MS
-* address MS
-* address.extension contains $GeolocationExtension named geolocation 0..* MS
-* address.use MS
-* address.type MS
-* address.text MS
-* address.line MS 
-* address.city MS
-* address.state MS
-* address.postalCode MS
-* address.country MS
-* address.period MS
-* telecom MS
+* address.extension contains $GeolocationExtension named geolocation 0..* 
 * telecom.extension contains
-    $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
-    ViaIntermediary named via-intermediary 0..* MS
+    $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..*  and
+    ViaIntermediary named via-intermediary 0..* 
 * telecom.extension[via-intermediary] ^short = "Via Intermediary"
-* telecom.system MS
-* telecom.value MS
-* telecom.rank MS
-* telecom.use MS
-* telecom.period MS
 * gender MS
-* birthDate MS 
 * photo MS
 * qualification MS
 * qualification.extension contains 
