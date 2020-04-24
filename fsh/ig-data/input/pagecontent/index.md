@@ -83,21 +83,33 @@ Authors
     <th>Name</th>
     <th>Email</th>
   </tr>
+
+ <tr>
+  <td>Troy Bergstrand</td>
+  <td>Troy.Bergstrand@bcidaho.com</td>
+  </tr>
   <tr>
-  <td>Dan Chaput </td>
-  <td>daniel.chaput@hhs.gov</td>
+  <td>Laurie Burckhardt</td>
+  <td>Laurie.Burckhardt@wpsic.com</td>
   </tr>
-    <tr>
-  <td>Alex Kontur  </td>
-  <td>alex.kontur@hhs.gov</td>
-  </tr>
-    <tr>
-  <td>Brian Postlethwaite </td>
-  <td>brian.postlethwaite@health.telstra.com</td>
-  </tr>
-    <tr>
-  <td>Bob Dieterle </td>
+   </tr>
+   <td>Bob Dieterle </td>
   <td>rdieterle@enablecare.us</td>
+  </tr>    <tr>
+  <td>Gail Kocher</td>
+  <td>Gail.Kocher@bcbsa.com</td>
   </tr>
-</table>
+      <tr>
+  <td>Saul A. Kravitz</td>
+  <td>saul@mitre.org</td>
+  </tr>
+    <tr>
+  <td>Robert McClure MD </td>
+  <td>rmcclure@mdpartners.com</td>
+  </tr>
+<tr>
+  <td>Mary Kay McDaniel </td>
+  <td>MaryKay.McDaniel@cognosante.com</td>
+  </tr>
+  </table>
 {: rules="groups"}
