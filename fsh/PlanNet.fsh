@@ -313,6 +313,7 @@ Parent:         OrganizationAffiliation
 Id:             plannet-OrganizationAffiliation
 Title:          "Plan-net OrganizationAffiliation"
 Description:    "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."
+* obeys organization-or-participatingOrganization 
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -421,7 +422,7 @@ Description:    "PractionerRole describes details about a provider, which can be
 Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.   Plannet-PractitionerRole could not be based on USCore because USCore-PractitionerRole Profile 
 requires an associated practitioner and an associated organization which does not take into account that not all providers are people, i.e. the provider could be a 
 group of people or a facility, nor does it take into account that not all practitioners are affiliated with an organization, i.e. they have a solo practice."
-* obeys PractitionerRole-practitioner-or-organization
+* obeys practitioner-or-organization-or-healthcareservice-or-location 
 * extension contains
    NewPatients named newpatients 0..* MS and
    $NewPatientProfileExtension named newpatientprofile 0..* MS and
@@ -472,11 +473,19 @@ group of people or a facility, nor does it take into account that not all practi
 * endpoint 0..* MS
 
 
-Invariant:  PractitionerRole-practitioner-or-organization 
-Description: "PlannetPractitionerRole.practitioner or PlannetPractitionerRole.organization or both SHALL be present"
-Expression: "practitioner.exists() or organization.exists()"
+Invariant:  practitioner-or-organization-or-healthcareservice-or-location 
+Description: "If PlannetPractitionerRole.practitioner is absent  ( PlannetPractitionerRole.organization, PlannetPractitionerRole.healthcareservice, PlannetPractitionerRole.location) must be present"
+Expression: "practitioner.exists() or (organization.exists() or healthcareservice.exists() or location.exists()"
 Severity:   #error
-XPath:      "f:practitioner or f:organization"
+XPath:      "f:practitioner or (f:organization or f:healthcareservice or f:location) "
+
+
+Invariant:  organization-or-participatingOrganization 
+Description: "PlannetOrganizationAffiliation.organization or  PlannetOrganizationAffiliation.participatingOrganization"
+Expression: "organization.exists() or participatingOrganization.exists()"
+Severity:   #error
+XPath:      "f:organization or f:participatingOrganization "
+
 
 Extension: ViaIntermediary
 Id: via-intermediary
