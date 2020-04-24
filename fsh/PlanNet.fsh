@@ -526,6 +526,7 @@ Description: "EndpointUseCase is an enumeration of the specific use cases (servi
    Standard 0..1 MS 
 * extension[Type] ^short = "An indication of the type of services supported by the endpoint"
 * extension[Type].value[x] only  CodeableConcept 
+* extension[Type].value[x] 1..1
 * extension[Type].valueCodeableConcept from EndpointUsecaseVS (extensible)
 * extension[Standard] ^short = "A URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)"
 * extension[Standard].value[x] only uri 
@@ -546,6 +547,7 @@ Description: "An extension to add status and whereValid elements to a practition
 * extension[whereValid] ^short = "Where the qualification is valid"
 * extension[whereValid].value[x] only CodeableConcept or Reference(PlannetLocation)
 * extension[whereValid].valueCodeableConcept from $USPSState (required)
+* extension[whereValid].value[x] 1..1
 
 Extension: Qualification
 Id: qualification
