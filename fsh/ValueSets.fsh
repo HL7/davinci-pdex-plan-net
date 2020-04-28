@@ -38,7 +38,10 @@ lifts, nebulizers, bili blankets and bili lights.  Provides consumable home heal
 * #Transport "Transporation" "Provides transporation services (e.g., Ambulance or Ambulette)"
 * #Other "Other" "Other"
 
-
+ValueSet: SpecialtyAndDegreeLicenseCertificate
+Title: "Specialties, Degrees, Licenses, and Certificates"
+* codes from valueset $NUCCProviderTaxonomy 
+* codes from valueset $V2table0360v27CS
 
 ValueSet: EndpointConnectionTypeVS
 Title: "Endpoint Connection Types"
@@ -125,3 +128,61 @@ ValueSet: HealthcareServiceCategoryVS
 Title: "Healthcare Service Category"
 Description: "Valueset for descripting the broad category of service being performed or delivered by a health care service"
 * codes from system HealthcareServiceCategoryCS
+
+CodeSystem:  OrgTypeCS
+  Title: "Organization Type."
+  Description:  "Codesystem for types of organizations found in provider directories."
+* #Prov "Provider" "A healthcare provider."
+* #PrvGrp "Provider Group" "A healthcare provider group"
+* #Payer "Payer" "A healthcare payer."
+ 
+ CodeSystem: IndividualPractitionerRoleCS
+ Title: "Individual Practitioner Roles"
+ Description: "Individual Practitioner Roles"
+* #Physicians "Allopathic & Osteopathic Physicians" "Allopathic & Osteopathic Physicians"
+* #BehavSocial "Behavioral Health & Social Service Providers"  "Behavioral Health & Social Service Providers"
+* #Chiropractic "Chiropractic Providers" "Chiropractic Providers"
+* #Dental "Dental Provider" "Dental Provider."
+* #Dietary "Dietary & Nutritional Service Providers" "Dietary & Nutritional Service Providers"
+* #Emergency "Emergency Medical Service Providers" "Emergency Medical Service Providers"
+* #Vision "Eye and Vision Services Providers" "Eye and Vision Services Providers"
+* #Group "Multi-Specialty Group" "Multi-Specialty Group"
+* #Nursing "Nursing Service Providers" "Nursing Service Providers"
+* #NursingRelated "Nursing Service Related Providers" "Nursing Service Related Providers"
+* #Other "Other Service Providers" "Other Service Providers"
+* #PAAPN "Physician Assistants & Advanced Practice Nursing Providers" "Physician Assistants & Advanced Practice Nursing Providers."
+* #Podiatry "Podiatric Medicine & Surgery Service Providers" "Podiatric Medicine & Surgery Service Providers"
+* #Respiratory "Respiratory, Developmental, Rehabilitative and Restorative Service Providers" "Respiratory, Developmental, Rehabilitative and Restorative Service Providers"
+* #Speech "Speech, Language and Hearing Service Providers" "Speech, Language and Hearing Service Providers"
+* #Technical "Technologists, Technicians & Other Technical Service Providers" "Technologists, Technicians & Other Technical Service Providers"
+
+
+CodeSystem: NonIndividualPractitionerRoleCS
+ Title: "Non-Individual Practitioner Roles"
+ Description: "Non-Individual Practitioner Roles"
+* #Agency "Agencies" "Agencies"
+* #Ambulatory "Ambulatory Health Care Facilities"
+* #HospitalUnit "Hospital Units" "Hospital Units"
+* #Hospital "Hospital" "Hospital"
+* #Lab "Laboratories" "Laboratories"
+* #ManagedCareOrg "Managed Care Organizations" "Managed Care Organizations"
+* #NursingCustodial "Nursing & Custodial Care Facilities" "Nursing & Custodial Care Facilities"
+* #OtherServices "Other Service Providers" "Other Service Providers"
+* #Residential "Residential Treatment Facilities" "Residential Treatment Facilities"
+* #Respite "Respite Care Facility" "Respite Care Facility"
+* #Supplier "Suppliers" "Suppliers"
+* #Transport "Transportation Services" "Transportation Services"
+
+ValueSet: PractitionerRolesVS
+Title: "PractitionerRoles"
+* codes from system IndividualPractitionerRoleCS 
+* codes from system NonIndividualPractitionerRoleCS
+
+ValueSet: IndividualPractitionerRolesVS
+Title: "Individual PractitionerRoles"
+* codes from system IndividualPractitionerRoleCS 
+
+ValueSet: NonIndividualPractitionerRolesVS
+Title: "Non-Individual PractitionerRoles"
+* codes from system NonIndividualPractitionerRoleCS
+
