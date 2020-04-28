@@ -429,10 +429,10 @@ group of people or a facility, nor does it take into account that not all practi
 * organization only Reference(PlannetOrganization)         // 1..1 from USCore
 * practitioner 0..1  MS   // 1..1 from USCore
 * organization 0..1   MS  // 1..1 from USCore
-* code  from  $us-core-provider-role-vs (required) 
-* code 1..1  MS
-* specialty from $NUCCProviderTaxonomy (required)
-* specialty 0..1 MS
+* code  from   PractitionerRolesVS (required) 
+* code 1..1  MS  
+* specialty from SpecialtyAndDegreeLicenseCertificateVS (required)
+* specialty 0..1  MS
 * location only Reference(PlannetLocation)
 * location MS
 * healthcareService only Reference(PlannetHealthcareService)
@@ -456,6 +456,13 @@ group of people or a facility, nor does it take into account that not all practi
 * notAvailable.during MS
 * endpoint only Reference(PlannetEndpoint) 
 * endpoint 0..* MS
+
+Invariant:  code-vs-specialty 
+Description: "Constrains Specialties depending on Role code"
+Expression: "specialty.empty() or (code.isMemberOf(IndividualPractitionerRolesVS) and specialty.isMemberOf(IndividualAndGroupSpecialtiesVS)) or 
+              (code.isMemberOf(NonIndividualPractitionerRolesVS) and specialty.isMemberOf(NonIndividualAndGroupSpecialtiesVS))"
+Severity:   #error
+XPath:      "f:organization or f:participatingOrganization "
 
 
 Invariant:  practitioner-or-organization-or-healthcareservice-or-location 
