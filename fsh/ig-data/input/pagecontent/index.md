@@ -92,14 +92,15 @@ Authors
   <td>Laurie Burckhardt</td>
   <td>Laurie.Burckhardt@wpsic.com</td>
   </tr>
-   </tr>
+   <tr>
    <td>Bob Dieterle </td>
   <td>rdieterle@enablecare.us</td>
-  </tr>    <tr>
+  </tr>    
+  <tr>
   <td>Gail Kocher</td>
   <td>Gail.Kocher@bcbsa.com</td>
   </tr>
-      <tr>
+  <tr>
   <td>Saul A. Kravitz</td>
   <td>saul@mitre.org</td>
   </tr>

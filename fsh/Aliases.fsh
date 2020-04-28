@@ -34,6 +34,7 @@ Alias:  $V3ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
 Alias:  $PaymentTypology =  urn:oid:2.16.840.1.113883.3.221.5  
 Alias:  $NUCCProviderTaxonomy = http://hl7.org/fhir/ValueSet/provider-taxonomy
 Alias:  $V2table0360v27   = http://terminology.hl7.org/ValueSet/v2-2.7-0360
+Alias:  $V2table0360v27CS = http://terminology.hl7.org/CodeSystem/v2-0360|2.7 
 Alias: $LanguageProficiency = http://hl7.org/fhir/uv/vhdir/ValueSet/languageproficiency
 
 

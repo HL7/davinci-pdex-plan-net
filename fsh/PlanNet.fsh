@@ -391,7 +391,8 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * qualification.identifier.period MS
 * qualification.identifier.assigner MS
 * qualification.code MS
-* qualification.code from $V2table0360v27 (extensible)    // used to be (example)
+//* qualification.code from $V2table0360v27 (extensible)    // used to be (example) -- TENTATIVE
+* qualification.code from $NUCCProviderTaxonomy (required)   
 * qualification.period MS
 * qualification.issuer MS
 * communication MS
@@ -557,7 +558,8 @@ Description: "An extension to add qualifications for an organization (e.g. accre
 * extension[identifier].value[x] 1..1
 * extension[code].value[x] only CodeableConcept
 * extension[code].value[x] 1..1
-* extension[code].valueCodeableConcept from $V2table0360v27 (example)
+// * extension[code].valueCodeableConcept from $V2table0360v27 (example)   -- TENTATIVE
+* extension[code].valueCodeableConcept from $NUCCProviderTaxonomy (required)
 * extension[issuer].value[x] 1..1
 * extension[issuer].value[x] only Reference(PlannetOrganization)
 * extension[status].value[x] 1..1
