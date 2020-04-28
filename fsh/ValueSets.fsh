@@ -38,7 +38,7 @@ lifts, nebulizers, bili blankets and bili lights.  Provides consumable home heal
 * #Transport "Transporation" "Provides transporation services (e.g., Ambulance or Ambulette)"
 * #Other "Other" "Other"
 
-ValueSet: SpecialtyAndDegreeLicenseCertificate
+ValueSet: SpecialtyAndDegreeLicenseCertificateVS
 Title: "Specialties, Degrees, Licenses, and Certificates"
 * codes from valueset $NUCCProviderTaxonomy 
 * codes from valueset $V2table0360v27CS
