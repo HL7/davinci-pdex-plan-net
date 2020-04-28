@@ -407,8 +407,7 @@ Description:    "PractionerRole describes details about a provider, which can be
 Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.   Plannet-PractitionerRole could not be based on USCore because USCore-PractitionerRole Profile 
 requires an associated practitioner and an associated organization which does not take into account that not all providers are people, i.e. the provider could be a 
 group of people or a facility, nor does it take into account that not all practitioners are affiliated with an organization, i.e. they have a solo practice."
-* obeys practitioner-or-organization-or-healthcareservice-or-location 
-* obeys code-vs-specialty 
+* obeys practitioner-or-organization-or-healthcareservice-or-location, code-vs-specialty 
 * extension contains
    NewPatients named newpatients 0..* MS and
    $NewPatientProfileExtension named newpatientprofile 0..* MS and
