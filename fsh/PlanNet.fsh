@@ -407,7 +407,7 @@ Description:    "PractionerRole describes details about a provider, which can be
 Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.   Plannet-PractitionerRole could not be based on USCore because USCore-PractitionerRole Profile 
 requires an associated practitioner and an associated organization which does not take into account that not all providers are people, i.e. the provider could be a 
 group of people or a facility, nor does it take into account that not all practitioners are affiliated with an organization, i.e. they have a solo practice."
-* obeys practitioner-or-organization-or-healthcareservice-or-location, code-vs-specialty 
+* obeys practitioner-or-organization-or-healthcareservice-or-location and code-vs-specialty 
 * extension contains
    NewPatients named newpatients 0..* MS and
    $NewPatientProfileExtension named newpatientprofile 0..* MS and
@@ -459,8 +459,8 @@ group of people or a facility, nor does it take into account that not all practi
 
 Invariant:  code-vs-specialty 
 Description: "Constrains Specialties depending on Role code"
-Expression: "specialty.empty() or (code.isMemberOf(IndividualPractitionerRolesVS) and specialty.isMemberOf(IndividualAndGroupSpecialtiesVS)) or 
-              (code.isMemberOf(NonIndividualPractitionerRolesVS) and specialty.isMemberOf(NonIndividualAndGroupSpecialtiesVS))"
+Expression: "specialty.empty() or (code.memberOf(IndividualPractitionerRolesVS) and specialty.memberOf(IndividualAndGroupSpecialtiesVS)) or 
+              (code.memberOf(NonIndividualPractitionerRolesVS) and specialty.memberOf(NonIndividualAndGroupSpecialtiesVS))"
 Severity:   #error
 XPath:      "f:organization or f:participatingOrganization "
 
