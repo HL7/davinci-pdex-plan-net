@@ -121,7 +121,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * status 1..1 MS
 * status = $PublicationStatus#active  (exactly) 
 * type 0..1 MS 
-* type from PlanTypeVS (extensible)
+* type from InsuranceProductTypeVS (extensible)
 * name MS
 * alias MS
 * ownedBy 1..1 MS
@@ -150,6 +150,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * contact.telecom.period MS
 * endpoint only Reference(PlannetEndpoint)
 * network only Reference(PlannetNetwork)
+* plan.type from InsurancePlanTypeVS (extensible)
 
 
 Profile:        PlannetLocation
@@ -407,7 +408,7 @@ Description:    "PractionerRole describes details about a provider, which can be
 Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.   Plannet-PractitionerRole could not be based on USCore because USCore-PractitionerRole Profile 
 requires an associated practitioner and an associated organization which does not take into account that not all providers are people, i.e. the provider could be a 
 group of people or a facility, nor does it take into account that not all practitioners are affiliated with an organization, i.e. they have a solo practice."
-* obeys practitioner-or-organization-or-healthcareservice-or-location and code-vs-specialty 
+* obeys practitioner-or-organization-or-healthcareservice-or-location 
 * extension contains
    NewPatients named newpatients 0..* MS and
    $NewPatientProfileExtension named newpatientprofile 0..* MS and
@@ -429,9 +430,7 @@ group of people or a facility, nor does it take into account that not all practi
 * organization only Reference(PlannetOrganization)         // 1..1 from USCore
 * practitioner 0..1  MS   // 1..1 from USCore
 * organization 0..1   MS  // 1..1 from USCore
-* code  from   PractitionerRolesVS (required) 
 * code 1..1  MS  
-* specialty from SpecialtyAndDegreeLicenseCertificateVS (required)
 * specialty 0..1  MS
 * location only Reference(PlannetLocation)
 * location MS
@@ -456,13 +455,6 @@ group of people or a facility, nor does it take into account that not all practi
 * notAvailable.during MS
 * endpoint only Reference(PlannetEndpoint) 
 * endpoint 0..* MS
-
-Invariant:  code-vs-specialty 
-Description: "Constrains Specialties depending on Role code"
-Expression: "specialty.empty() or (code.memberOf(IndividualPractitionerRolesVS) and specialty.memberOf(IndividualAndGroupSpecialtiesVS)) or 
-              (code.memberOf(NonIndividualPractitionerRolesVS) and specialty.memberOf(NonIndividualAndGroupSpecialtiesVS))"
-Severity:   #error
-XPath:      "f:organization or f:participatingOrganization "
 
 
 Invariant:  practitioner-or-organization-or-healthcareservice-or-location 
