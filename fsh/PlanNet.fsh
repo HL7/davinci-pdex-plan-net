@@ -64,7 +64,7 @@ Description:    "The HealthCareService  resource typically describes services of
 * category from HealthcareServiceCategoryVS (extensible)
 * type MS
 * specialty MS
-// * specialty from $NUCCProviderTaxonomy (required) -- NOT agreed to
+* specialty from $NUCCProviderTaxonomy (required)
 * location only Reference(PlannetLocation)
 * location MS
 * name MS
@@ -120,7 +120,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * identifier.assigner MS
 * status 1..1 MS
 * status = $PublicationStatus#active  (exactly) 
-* type 0..1 MS 
+* type 1..1 MS 
 * type from InsuranceProductTypeVS (extensible)
 * name MS
 * alias MS
@@ -392,8 +392,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * qualification.identifier.period MS
 * qualification.identifier.assigner MS
 * qualification.code MS
-//* qualification.code from $V2table0360v27 (extensible)    // used to be (example) -- TENTATIVE
-* qualification.code from $NUCCProviderTaxonomy (required)   
+* qualification.code from IndividualSpecialtyAndDegreeLicenseCertificateVS (required)
 * qualification.period MS
 * qualification.issuer MS
 * communication MS
@@ -432,6 +431,7 @@ group of people or a facility, nor does it take into account that not all practi
 * organization 0..1   MS  // 1..1 from USCore
 * code 1..1  MS  
 * specialty 0..1  MS
+* specialty from IndividualAndGroupSpecialtiesVS (required)
 * location only Reference(PlannetLocation)
 * location MS
 * healthcareService only Reference(PlannetHealthcareService)

@@ -26,7 +26,7 @@ CodeSystem:  OrgTypeCS
 * #Urgent "Urgent Care" "Provides medical care  for illnesses or injuries which require prompt attention but are typically not of such seriousness as to require the services of an emergency room."
 * #Laboratory "Laboratory" "A laboratory where clinical pathology tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease."
 * #Emergency "Emergency care" " Provides life-saving measures in life-threatening situations (e.g., an Emergency Room(ER))"
-* #Behavavioral "Behavioral Health" "Provides treatments to help people with mental illnesses or substance use disorders. "
+* #Behavioral "Behavioral Health" "Provides treatments to help people with mental illnesses or substance use disorders. "
 * #Dental "Dental" "Provides Dentistry services"
 * #Vision "Vision" "Provides Vision Services"
 * #Home "Home Health" "Provides skilled nursing care, as well as otherskilled care services, like physical and occupational therapy, speech-language therapy, and medical social services in your home."
@@ -42,6 +42,11 @@ ValueSet: SpecialtyAndDegreeLicenseCertificateVS
 Title: "Specialties, Degrees, Licenses, and Certificates"
 * codes from valueset $NUCCProviderTaxonomy 
 * codes from valueset $V2table0360v27CS
+
+ValueSet: IndividualSpecialtyAndDegreeLicenseCertificateVS
+Title: "Individual Specialties, Degrees, Licenses, and Certificates"
+* codes from valueset IndividualAndGroupSpecialtiesVS
+* codes from system $V2table0360v27CS
 
 ValueSet: EndpointConnectionTypeVS
 Title: "Endpoint Connection Types"

@@ -24,10 +24,26 @@
         <td><a href="CodeSystem-EndpointPayloadTypeCS.html">Endpoint Payload Types</a></td>
         <td>{% capture md_text %}Endpoint Payload Types.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
-         <tr>
+      <tr>
+        <td><a href="CodeSystem-HealthcareServiceCategoryCS.html">HealthcareService Categories</a></td>
+        <td>{% capture md_text %}HealthcareService Categories.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+        <tr>
+        <td><a href="CodeSystem-InsuranceProductTypeCS.html">Insurance Product Type</a></td>
+        <td>{% capture md_text %}Insurance Product Type.{% endcapture %}{{ md_text | markdownify }}</td>
+        </tr>
+       <tr>
+        <td><a href="CodeSystem-InsurancePlanTypeCS.html">Insurance Plan Type</a></td>
+        <td>{% capture md_text %}Insurance Plan Type.{% endcapture %}{{ md_text | markdownify }}</td>
+        </tr>
+        <tr>
         <td><a href="CodeSystem-OrgTypeCS.html">Organization Type</a></td>
         <td>{% capture md_text %}Organization Type.{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
+
+        InsurancePlanTypeCS
+        InsuranceProductTypeCS
+
   </tbody>
 </table>
 
@@ -60,8 +76,29 @@ Where possible, value sets from the VhDIR Implementation Guide are used by refer
         <td>{% capture md_text %}Endpoint Usecases.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
        <tr>
-        <td><a href="ValueSet-PlanTypeVS.html">Insurance Plan Type</a></td>
+        <td><a href="ValueSet-HealthcareServiceCategoryVS.html">HealthcareServiceCategoryVS</a></td>
+        <td>{% capture md_text %}HealthcareServiceCategoryVS.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>        
+      <tr>
+        <td><a href="ValueSet-IndividualSpecialtyAndDegreeLicenseCertificateVS.html">Individual Specialty And Degree License Certificate</a></td>
+        <td>{% capture md_text %}Individual Specialty And Degree License Certificate {% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+         <tr>
+        <td><a href="ValueSet-IndividualAndGroupSpecialtiesVS.html">IndividualAndGroupSpecialtiesVS</a></td>
+        <td>{% capture md_text %}IndividualAndGroupSpecialtiesVS {% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+    <tr>
+        <td><a href="ValueSet-NonIndividualSpecialtiesVS.html">NonIndividualSpecialtiesVS</a></td>
+        <td>{% capture md_text %}NonIndividualSpecialtiesVS {% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+ 
+   <tr>
+        <td><a href="ValueSet-InsurancePlanTypeVS.html">Insurance Plan Type</a></td>
         <td>{% capture md_text %}Insurance Plan Type {% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+          <tr>
+        <td><a href="ValueSet-InsuranceProductTypeVS.html">Insurance Product Type</a></td>
+        <td>{% capture md_text %}Insurance Product Type {% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
     <tr>
         <td><a href="ValueSet-OrgTypeVS.html">Organization Type</a></td>
