@@ -393,8 +393,6 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * qualification.identifier.assigner MS
 * qualification.code MS
 * qualification.code from IndividualSpecialtyAndDegreeLicenseCertificateVS (required)
-//* qualification.code from $V2table0360v27 (extensible)    // used to be (example) -- TENTATIVE
-* qualification.code from $NUCCProviderTaxonomy (required)   
 * qualification.period MS
 * qualification.issuer MS
 * communication MS
