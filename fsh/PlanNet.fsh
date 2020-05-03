@@ -535,8 +535,8 @@ Description: "An extension to add status and whereValid elements to a practition
 * extension[status] ^short = "Status"
 * extension[status].value[x] only  code 
 * extension[status].value[x] 1..1
-* extension[status].valueCode from $CredentialStatus (example)
-* extension[status].valueCode = $CredentialStatus#active (exactly)
+* extension[status].valueCode from $QualificationStatus (example)
+* extension[status].valueCode = $QualificationStatus#active (exactly)
 * extension[whereValid] ^short = "Where the qualification is valid"
 * extension[whereValid].value[x] only CodeableConcept or Reference(PlannetLocation)
 * extension[whereValid].valueCodeableConcept from $USPSState (required)
@@ -563,8 +563,8 @@ Description: "An extension to add qualifications for an organization (e.g. accre
 * extension[issuer].value[x] only Reference(PlannetOrganization)
 * extension[status].value[x] 1..1
 * extension[status].value[x] only  code 
-* extension[status].valueCode from $CredentialStatus (example)
-* extension[status].valueCode = $CredentialStatus#active (exactly)
+* extension[status].valueCode from $QualificationStatus (example)
+* extension[status].valueCode = $QualificationStatus#active (exactly)
 * extension[period].value[x] only Period 
 * extension[period].value[x] 1..1
 * extension[whereValid].value[x] only CodeableConcept or Reference(PlannetLocation)
