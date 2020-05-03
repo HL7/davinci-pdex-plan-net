@@ -18,7 +18,7 @@ Alias: $GeolocationExtension = http://hl7.org/fhir/StructureDefinition/geolocati
 Alias: $PractitionerQualificationExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification
 Alias: $QualificationExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification
 Alias: $AccessibilityVS = http://hl7.org/fhir/uv/vhdir/ValueSet/accessibility
-Alias: $CredentialStatus = http://hl7.org/fhir/uv/vhdir/CodeSystem/credentialstatus 
+Alias: $CredentialStatus = http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus
 
 // Other Aliases
 Alias:   $OrgType = http://terminology.hl7.org/CodeSystem/organization-type
