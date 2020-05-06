@@ -47,7 +47,7 @@ Id:             plannet-HealthcareService
 Title:          "Plan-net HealthcareService"
 Description:    "The HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
 * extension contains
-    NewPatients named newpatients 1..1 MS
+    NewPatients named newpatients 0..* MS
 * extension[newpatients] ^short = "New Patients"
 * identifier.id MS
 * identifier.use MS
@@ -64,7 +64,7 @@ Description:    "The HealthCareService  resource typically describes services of
 * category from HealthcareServiceCategoryVS (extensible)
 * type MS
 * specialty MS
-* specialty from $NUCCProviderTaxonomy (required)
+* specialty from IndividualAndGroupSpecialtiesVS (required)
 * location only Reference(PlannetLocation)
 * location MS
 * name MS
@@ -316,6 +316,8 @@ Id:             plannet-OrganizationAffiliation
 Title:          "Plan-net OrganizationAffiliation"
 Description:    "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."
 * obeys organization-or-participatingOrganization 
+* extension contains
+   Qualification named qualification 0..* MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
