@@ -8,17 +8,17 @@ Alias:   $us-core-provider-specialty-vs = http://hl7.org/fhir/us/core/ValueSet/u
 
 //VhDir Aliases
 Alias: $SCT = http://snomed.info/sct
-Alias: $ContactPointAvailableTimeExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime
-Alias: $IdentifierStatusExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status
-Alias: $AccessibilityExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility
-Alias: $NewPatientProfileExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile
-Alias: $OrgDescriptionExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description
-Alias: $CommunicationProficiencyExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency
 Alias: $GeolocationExtension = http://hl7.org/fhir/StructureDefinition/geolocation
-Alias: $PractitionerQualificationExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification
-Alias: $QualificationExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification
-Alias: $AccessibilityVS = http://hl7.org/fhir/uv/vhdir/ValueSet/accessibility
-Alias: $QualificationStatus = http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus
+//Alias: $ContactPointAvailableTimeExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime
+//Alias: $IdentifierStatusExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status
+//Alias: $AccessibilityExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility
+//Alias: $NewPatientProfileExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile
+//Alias: $OrgDescriptionExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/org-description
+//Alias: $CommunicationProficiencyExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency
+//Alias: $PractitionerQualificationExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification
+//Alias: $QualificationExtension = http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification
+//Alias: $AccessibilityVS = http://hl7.org/fhir/uv/vhdir/ValueSet/accessibility
+//Alias: $QualificationStatus = http://hl7.org/fhir/uv/vhdir/ValueSet/valueset-qualificationstatus
 
 // Other Aliases
 Alias:   $OrgType = http://terminology.hl7.org/CodeSystem/organization-type
@@ -27,7 +27,8 @@ Alias:   $PublicationStatus = http://hl7.org/fhir/ValueSet/publication-status
 Alias:   $USPSState = http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state
 Alias:   $ConnectionTypeCS = http://terminology.hl7.org/CodeSystem/endpoint-connection-type
 Alias:   $MinValueSet = http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet
-
+Alias:   $DaysOfWeekVS  = http://hl7.org/fhir/ValueSet/days-of-week
+Alias: $AccessibilityVS = http://hl7.org/fhir/uv/vhdir/ValueSet/accessibility
 
 // CodeSystem and ValueSet Aliases
 Alias:  $V3ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
@@ -35,7 +36,11 @@ Alias:  $PaymentTypology =  urn:oid:2.16.840.1.113883.3.221.5
 Alias:  $NUCCProviderTaxonomy = http://hl7.org/fhir/ValueSet/provider-taxonomy
 Alias:  $V2table0360v27   = http://terminology.hl7.org/ValueSet/v2-2.7-0360
 Alias:  $V2table0360v27CS = http://terminology.hl7.org/CodeSystem/v2-0360|2.7 
-Alias: $LanguageProficiency = http://hl7.org/fhir/uv/vhdir/ValueSet/languageproficiency
+
+
+// Plan-Net defined CS that mimic VHDir CodeSystems
+Alias: $LanguageProficiency = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS
+Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/QualificationStatusCS
 
 
 

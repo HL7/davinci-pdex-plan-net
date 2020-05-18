@@ -41,9 +41,6 @@
         <td>{% capture md_text %}Organization Type.{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
 
-        InsurancePlanTypeCS
-        InsuranceProductTypeCS
-
   </tbody>
 </table>
 
@@ -87,12 +84,7 @@ Where possible, value sets from the VhDIR Implementation Guide are used by refer
         <td><a href="ValueSet-IndividualAndGroupSpecialtiesVS.html">IndividualAndGroupSpecialtiesVS</a></td>
         <td>{% capture md_text %}IndividualAndGroupSpecialtiesVS {% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
-    <tr>
-        <td><a href="ValueSet-NonIndividualSpecialtiesVS.html">NonIndividualSpecialtiesVS</a></td>
-        <td>{% capture md_text %}NonIndividualSpecialtiesVS {% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
- 
-   <tr>
+         <tr>
         <td><a href="ValueSet-InsurancePlanTypeVS.html">Insurance Plan Type</a></td>
         <td>{% capture md_text %}Insurance Plan Type {% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -100,36 +92,26 @@ Where possible, value sets from the VhDIR Implementation Guide are used by refer
         <td><a href="ValueSet-InsuranceProductTypeVS.html">Insurance Product Type</a></td>
         <td>{% capture md_text %}Insurance Product Type {% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
+          <tr>
+        <td><a href="ValueSet-LanguageProficiencyVS.html">Language Proficiency</a></td>
+        <td>{% capture md_text %}Language Proficiency {% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-MinEndpointConnectionTypeVS.html">Minimum Endpoint ConnectionTypes</a></td>
+        <td>{% capture md_text %}Minimum Endpoint ConnectionTypes.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+    <tr>
+        <td><a href="ValueSet-NonIndividualSpecialtiesVS.html">NonIndividualSpecialtiesVS</a></td>
+        <td>{% capture md_text %}NonIndividualSpecialtiesVS {% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
     <tr>
         <td><a href="ValueSet-OrgTypeVS.html">Organization Type</a></td>
         <td>{% capture md_text %}Organization Type.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
-  </tbody>
-</table>
-
-
-<h3>VhDir value sets used in this Implementation Guide</h3>
-<p>These value sets are referenced directly by Plan-Net resources.   Additional external value sets are referenced by extensions.</p>
-<table border="1" class="valuesets external">
-  <thead>
-    <tr>
-      <td>
-        <b>Name</b>
-      </td>
-      <td>
-        <b>Definition</b>
-      </td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-        <td><a href="http://hl7.org/fhir/uv/vhdir/2018Sep/ValueSet-valueset-qualificationstatus.html">Credential Status</a></td>
-        <td>{% capture md_text %}VhDir Credential Status (physical / postal).{% endcapture %}{{ md_text | markdownify }}</td>
+          <tr>
+        <td><a href="ValueSet-QualificationStatusVS.html">QualificationStatus</a></td>
+        <td>{% capture md_text %}Qualification Status {% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
-      <tr>
-        <td><a href="http://hl7.org/fhir/uv/vhdir/2018Sep/ValueSet-valueset-accessibility.html">VHDir Accessibility</a></td>
-        <td>{% capture md_text %}VhDir Accessibility.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>    
   </tbody>
 </table>
 
