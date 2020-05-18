@@ -26,7 +26,7 @@ Description:    "The technical details of an endpoint that can be used for elect
 * managingOrganization MS
 * contact MS
 *  contact.extension contains
-       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
 * contact.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.value MS
@@ -73,7 +73,7 @@ Description:    "The HealthCareService  resource typically describes services of
 * photo MS
 * telecom MS
 * telecom.extension contains
-       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
 * telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system MS
@@ -141,7 +141,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * contact.name.period MS
 * contact.telecom MS
 * contact.telecom.extension contains
-       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
 * contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.telecom.value MS
@@ -162,7 +162,7 @@ Description:    "A Location is the physical place where healthcare services are 
 * extension contains
     NewPatients named newpatients 0..* MS and
     Accessibility named accessibility 0..* MS and 
-    $NewPatientProfileExtension named newpatientprofile 0..* MS
+    NewPatientProfile named newpatientprofile 0..* MS
 * extension[newpatients] ^short = "New Patients"
 * identifier.id MS
 * identifier.use MS
@@ -178,7 +178,7 @@ Description:    "A Location is the physical place where healthcare services are 
 * type MS
 * telecom MS
 * telecom.extension contains
-       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
 * telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system MS
@@ -243,7 +243,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * contact.name.period MS
 * contact.telecom MS
 * contact.telecom.extension contains
-       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
 * contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.telecom.value 1..1 MS
@@ -263,7 +263,7 @@ Description:    "An organization is a formal or informal grouping of people or o
 Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"
 * extension contains
    Qualification named qualification 0..* MS and
-   $OrgDescriptionExtension named org-description 0..1 MS
+   OrgDescription named org-description 0..1 MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -291,7 +291,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * contact MS
 * contact.telecom MS
 * contact.telecom.extension contains
-       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
 * contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.telecom.value MS
@@ -299,7 +299,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * contact.telecom.use MS
 * telecom MS
 * telecom.extension contains
-       $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
 * telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system MS
@@ -378,7 +378,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * name.period MS
 * address.extension contains $GeolocationExtension named geolocation 0..* 
 * telecom.extension contains
-    $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..*  and
+    ContactPointAvailableTime named contactpoint-availabletime 0..*  and
     ViaIntermediary named via-intermediary 0..* 
 * telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * gender MS
@@ -412,7 +412,7 @@ group of people or a facility, nor does it take into account that not all practi
 * obeys practitioner-or-organization-or-healthcareservice-or-location 
 * extension contains
    NewPatients named newpatients 0..* MS and
-   $NewPatientProfileExtension named newpatientprofile 0..* MS and
+   NewPatientProfile named newpatientprofile 0..* MS and
    NetworkReference named network-reference 0..* MS and
    Qualification named qualification 0..* MS
 * extension[newpatients] ^short = "New Patients"
@@ -439,7 +439,7 @@ group of people or a facility, nor does it take into account that not all practi
 * healthcareService only Reference(PlannetHealthcareService)
 * telecom MS
 * telecom.extension contains
-    $ContactPointAvailableTimeExtension named contactpoint-availabletime 0..* MS and
+    ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
     ViaIntermediary named via-intermediary 0..* MS
 * telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system 1..1 MS
@@ -472,127 +472,3 @@ Expression: "organization.exists() or participatingOrganization.exists()"
 Severity:   #error
 XPath:      "f:organization or f:participatingOrganization "
 
-
-Extension: ViaIntermediary
-Id: via-intermediary
-Title: "Via Intermediary"
-Description: "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization"
-* value[x] only Reference
-* valueReference MS
-* valueReference only Reference(PlannetOrganization | PlannetPractitionerRole | PlannetOrganizationAffiliation | PlannetLocation) 
-
-
-Extension: LocationReference
-Id: location-reference
-Title: "Location Reference"
-Description: "A reference to a Location resource (plannet-Location) defining the coverage area of a health insurance provider network"
-* value[x] only Reference
-* valueReference MS
-* valueReference only Reference(PlannetLocation) 
-
-Extension: NetworkReference
-Id: network-reference
-Title: "Network Reference"
-Description: "A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role"
-* value[x] only Reference
-* valueReference MS
-* valueReference only Reference(PlannetNetwork) 
-
-Extension: NewPatients
-Id: newpatients
-Title: "New Patients"
-Description: "New Patients indicates whether new patients are being accepted in general, or from a specific network.   
-              This extension is included in the PractitionerRole, HealthcareService, and Location profiles.  
-              This provides needed flexibility for specifying whether a provider accepts new patients by location and network."
-* value[x] 0..0
-* extension contains
-   acceptingPatients  1..1 MS and
-   fromNetwork 0..1 MS 
-* extension[acceptingPatients].value[x] only boolean
-* extension[fromNetwork].value[x] only Reference(PlannetNetwork)
-
-Extension: EndpointUsecase
-Id: endpoint-usecase
-Title: "Endpoint Usecase"
-Description: "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint"
-* value[x] 0..0
-* extension contains
-   Type 1..1 MS and
-   Standard 0..1 MS 
-* extension[Type] ^short = "An indication of the type of services supported by the endpoint"
-* extension[Type].value[x] only  CodeableConcept 
-* extension[Type].value[x] 1..1
-* extension[Type].valueCodeableConcept from EndpointUsecaseVS (extensible)
-* extension[Standard] ^short = "A URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)"
-* extension[Standard].value[x] only uri 
-
-Extension: PractitionerQualification
-Id: practitioner-qualification
-Title: "Practitioner Qualification"
-Description: "An extension to add status and whereValid elements to a practitioner’s qualifications."
-* value[x] 0..0
-* extension contains
-   status 1..1 MS and
-   whereValid 0..1 MS 
-* extension[status] ^short = "Status"
-* extension[status].value[x] only  code 
-* extension[status].value[x] 1..1
-* extension[status].valueCode from $QualificationStatus (example)
-* extension[status].valueCode = $QualificationStatus#active (exactly)
-* extension[whereValid] ^short = "Where the qualification is valid"
-* extension[whereValid].value[x] only CodeableConcept or Reference(PlannetLocation)
-* extension[whereValid].valueCodeableConcept from $USPSState (required)
-* extension[whereValid].value[x] 1..1
-
-Extension: Qualification
-Id: qualification
-Title: "Qualification"
-Description: "An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances)."
-* extension contains
-   identifier 0..* MS and 
-   code 1..1 MS and
-   issuer 1..1 MS and
-   status 1..1 MS and
-   period 0..1 MS and 
-   whereValid 0..* MS
-* extension[identifier].value[x] only Identifier 
-* extension[identifier].value[x] 1..1
-* extension[code].value[x] only CodeableConcept
-* extension[code].value[x] 1..1
-// * extension[code].valueCodeableConcept from $V2table0360v27 (example)   -- TENTATIVE
-* extension[code].valueCodeableConcept from $NUCCProviderTaxonomy (required)
-* extension[issuer].value[x] 1..1
-* extension[issuer].value[x] only Reference(PlannetOrganization)
-* extension[status].value[x] 1..1
-* extension[status].value[x] only  code 
-* extension[status].valueCode from $QualificationStatus (example)
-* extension[status].valueCode = $QualificationStatus#active (exactly)
-* extension[period].value[x] only Period 
-* extension[period].value[x] 1..1
-* extension[whereValid].value[x] only CodeableConcept or Reference(PlannetLocation)
-* extension[whereValid].valueCodeableConcept from $USPSState (required)
-* extension[whereValid].value[x] 1..1
-
-Extension: Accessibility
-Id: accessibility
-Title: "Accessibility"
-Description: "An extension to describe accessibility options offered by a practitioner or at a location."
-* value[x] 1..1 
-* value[x] only CodeableConcept 
-* valueCodeableConcept from $AccessibilityVS (extensible)
-
-
-Extension: CommunicationProficiency
-Id: communication-proficiency
-Title: "Communication Proficiency"
-Description: "An extension to express a practitioner’s spoken proficiency with the language indicated in practitioner.communication."
-* value[x] 1..1 
-* value[x] only CodeableConcept 
-* valueCodeableConcept from $LanguageProficiency (required)   // was example
-
-//Extension: ConnectionTypeMinValue
-//Parent:  $MinValueSet
-//Id: connection-type-min-value
-//Title: "Minimum Value for ConnectType"
-//* value[x] only canonical 
-//* valueCanonical = MinEndpointConnectionTypeVS
