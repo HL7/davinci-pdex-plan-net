@@ -28,13 +28,7 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "31abd99a297c7a",
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
-          "valueCode": "active"
-        }
-      ]
+      "value": "31abd99a297c7a"
     }
   ],
   "active": true,

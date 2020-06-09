@@ -6,17 +6,13 @@
         "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
       ]
     },
-    "text": {
-      "status": "generated",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: loc-ffmh-hvi</p><p><b>meta</b>: </p><p><b>identifier</b>: main campus (SECONDARY)</p><p><b>status</b>: active</p><p><b>name</b>: Founding Fathers Memorial Hospital Heart and Vascular Institute</p><p><b>description</b>: Heart and Vascular Institute Specialty Wing</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-RoleCode code 'HOSP' = 'Hospital', given as 'Hospital'})</span></p><p><b>telecom</b>: ph: 202-101-0123(WORK)</p><p><b>address</b>: 330 C Street SW, Washington, DC 20201, USA(WORK)</p><p><b>physicalType</b>: Site <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/location-physical-type code 'si' = 'Site', given as 'Site'})</span></p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>38.8859395</td><td>-77.016469</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-foundingfathers.html\">Founding Fathers Memorial Hospital. Generated Summary: id: foundingfathers; NPI = 1345678910 (OFFICIAL); active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Hospital</span>; name: Founding Fathers Memorial Hospital; alias: DC Memorial Hospital; ph: 202-101-0123</a></p><p><b>partOf</b>: <a href=\"Location-loc-ffmh.html\">Founding Fathers Memorial Hospital. Generated Summary: id: loc-ffmh; main campus (SECONDARY); status: active; name: Founding Fathers Memorial Hospital; description: Main campus of Founding Fathers Memorial Hospital; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span>; ph: 202-101-0123(WORK); <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type si}\">Site</span>; availabilityExceptions: visiting hours from 6:00 am - 10:00 pm</a></p><h3>HoursOfOperations</h3><table class=\"grid\"><tr><td>-</td><td><b>DaysOfWeek</b></td></tr><tr><td>*</td><td>mon</td></tr></table><p><b>availabilityExceptions</b>: visiting hours from 6:00 am - 10:00 pm</p></div>"
-    },
     "extension": [
       {
-        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility",
+        "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/accessibility",
         "valueCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
+              "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/AccessibilityVS",
               "code": "handiaccess",
               "display": "handicap accessible"
             }
@@ -27,13 +23,7 @@
     ],
     "identifier": [
       {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
-            "valueCode": "active"
-          }
-        ],
-        "use": "secondary",
+         "use": "secondary",
         "system": "http://example.org/www.foundingfathersmemorial.com",
         "value": "main campus",
         "assigner": {
@@ -61,7 +51,7 @@
       {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime",
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime",
             "extension": [
               {
                 "url": "allDay",

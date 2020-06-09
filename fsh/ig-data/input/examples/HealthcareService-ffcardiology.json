@@ -6,10 +6,6 @@
         "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
       ]
     },
-    "text": {
-      "status": "generated",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ffcardiology</p><p><b>meta</b>: </p><p><b>identifier</b>: Business ID = service001 (SECONDARY)</p><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization-foundingfathers.html\">Founding Fathers Memorial Hospital. Generated Summary: id: foundingfathers; NPI = 1345678910 (OFFICIAL); active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Hospital</span>; name: Founding Fathers Memorial Hospital; alias: DC Memorial Hospital; ph: 202-101-0123</a></p><p><b>category</b>: Hospital <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/service-category code '35' = 'Hospital', given as 'Hospital'})</span></p><p><b>type</b>: Cardiology <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/service-type code '165' = 'Cardiology', given as 'Cardiology'})</span></p><p><b>specialty</b>: Cardiology <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '394579002' = 'Cardiology (qualifier value)', given as 'Cardiology'})</span></p><p><b>location</b>: <a href=\"Location-loc-ffmh-hvi.html\">Founding Fathers Memorial Hospital, Heart and Vascular Institute. Generated Summary: id: loc-ffmh-hvi; main campus (SECONDARY); status: active; name: Founding Fathers Memorial Hospital Heart and Vascular Institute; description: Heart and Vascular Institute Specialty Wing; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span>; ph: 202-101-0123(WORK); <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type si}\">Site</span>; availabilityExceptions: visiting hours from 6:00 am - 10:00 pm</a></p><p><b>name</b>: Founding Fathers Memorial Hospital Heart and Vascular Services</p><p><b>comment</b>: Cardiac surgery, heart failure, cardiac electrophysiology, vascular surgery, and cardiovascular research</p><p><b>telecom</b>: fax: 555 12345</p><p><b>serviceProvisionCode</b>: Fees apply <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/service-provision-conditions code 'cost' = 'Fees apply', given as 'Fees apply'})</span></p><p><b>referralMethod</b>: phone <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/service-referral-method code 'phone' = 'Phone', given as 'phone'})</span>, Fax <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/service-referral-method code 'fax' = 'Fax', given as 'Fax'})</span></p><p><b>appointmentRequired</b>: true</p><h3>AvailableTimes</h3><table class=\"grid\"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td><td><b>AvailableStartTime</b></td><td><b>AvailableEndTime</b></td></tr><tr><td>*</td><td>mon</td><td>false</td><td/><td/></tr></table><p><b>availabilityExceptions</b>: No interventional cardiac procedures are scheduled on Wednesdays</p><p><b>endpoint</b>: <a href=\"Endpoint-direct321.html\">Direct address for the Founding Fathers Heart and Vascular Institute. Generated Summary: id: direct321; status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/endpoint-connection-type direct-project}\">Direct Project</span>; name: Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address; ph: 202-101-0123(WORK); period: Nov 19, 2014, 12:00:00 AM --&gt; (ongoing); <span title=\"Codes: {urn:oid:1.3.6.1.4.1.19376.1.2.3 urn:ihe:pcc:xphr:2007}\">HL7 CCD Document</span>; payloadMimeType: application/hl7-v3+xml; address: mailto:heart@direct.ffhospital.com</a></p></div>"
-    },
     "extension": [
       {
         "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients",
@@ -23,12 +19,6 @@
     ],
     "identifier": [
       {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
-            "valueCode": "active"
-          }
-        ],
         "use": "secondary",
         "type": {
           "coding": [

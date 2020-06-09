@@ -6,11 +6,7 @@
         "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
       ]
     },
-    "text": {
-      "status": "generated",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: independencerehab1</p><p><b>meta</b>: </p><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization-independencerehab.html\">Independence Rehabilitation Services, Inc.. Generated Summary: id: independencerehab; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Rehabilitation services provider</span>; name: Independence Rehabilitation Services, Inc.</a></p><p><b>category</b>: Specialist Medical <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/service-category code '27' = 'Specialist Medical', given as 'Specialist Medical'})</span></p><p><b>type</b>: Rehabilitation <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/service-type code '576' = 'Rehabilitation', given as 'Rehabilitation'})</span></p><p><b>specialty</b>: Rehabilitation <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '394602003' = 'Rehabilitation - specialty (qualifier value)', given as 'Rehabilitation'})</span></p><p><b>location</b>: <a href=\"Location-loc-ffmh.html\">Founding Fathers Memorial Hospital. Generated Summary: id: loc-ffmh; main campus (SECONDARY); status: active; name: Founding Fathers Memorial Hospital; description: Main campus of Founding Fathers Memorial Hospital; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span>; ph: 202-101-0123(WORK); <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type si}\">Site</span>; availabilityExceptions: visiting hours from 6:00 am - 10:00 pm</a></p><p><b>name</b>: Independence Rehab - Inpatient rehabilitation services</p><p><b>comment</b>: Provides inpatient medical and vocational rehabilitation services to improve independence and employability of clients</p><p><b>referralMethod</b>: phone <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/service-referral-method code 'phone' = 'Phone', given as 'phone'})</span></p><p><b>appointmentRequired</b>: true</p></div>"
-    },
-    "extension": [
+      "extension": [
       {
         "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients",
         "extension": [

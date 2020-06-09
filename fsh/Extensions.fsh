@@ -55,10 +55,12 @@ Description: "EndpointUseCase is an enumeration of the specific use cases (servi
    Standard 0..1 MS 
 * extension[Type] ^short = "An indication of the type of services supported by the endpoint"
 * extension[Type].value[x] only  CodeableConcept 
-* extension[Type].value[x] 1..1
-* extension[Type].valueCodeableConcept from EndpointUsecaseVS (extensible)
+* extension[Type].value[x]  1..1
+* extension[Type].value[x] from EndpointUsecaseVS (extensible)
 * extension[Standard] ^short = "A URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)"
 * extension[Standard].value[x] only uri 
+* extension[Standard].value[x] 1..1
+
 
 Extension: PractitionerQualification
 Id: practitioner-qualification
@@ -93,8 +95,7 @@ Description: "An extension to add qualifications for an organization (e.g. accre
 * extension[identifier].value[x] 1..1
 * extension[code].value[x] only CodeableConcept
 * extension[code].value[x] 1..1
-// * extension[code].valueCodeableConcept from $V2table0360v27 (example)   -- TENTATIVE
-* extension[code].valueCodeableConcept from $NUCCProviderTaxonomy (required)
+* extension[code].valueCodeableConcept from SpecialtyAndDegreeLicenseCertificateVS (required)
 * extension[issuer].value[x] 1..1
 * extension[issuer].value[x] only Reference(PlannetOrganization)
 * extension[status].value[x] 1..1
@@ -107,13 +108,14 @@ Description: "An extension to add qualifications for an organization (e.g. accre
 * extension[whereValid].valueCodeableConcept from $USPSState (required)
 * extension[whereValid].value[x] 1..1
 
+
 Extension: Accessibility
 Id: accessibility
 Title: "Accessibility"
 Description: "An extension to describe accessibility options offered by a practitioner or at a location."
 * value[x] 1..1 
 * value[x] only CodeableConcept 
-* valueCodeableConcept from $AccessibilityVS (extensible)
+* valueCodeableConcept from AccessibilityVS (extensible)
 
 
 Extension: CommunicationProficiency

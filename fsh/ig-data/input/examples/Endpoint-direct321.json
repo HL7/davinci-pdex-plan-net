@@ -6,10 +6,6 @@
         "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"
       ]
     },
-    "text": {
-      "status": "generated",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: direct321</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>connectionType</b>: Direct Project (Details: http://terminology.hl7.org/CodeSystem/endpoint-connection-type code direct-project = 'Direct Project', stated as 'Direct Project')</p><p><b>name</b>: Founding Fathers Memorial Hospital Heart and Vascular Institute Direct address</p><p><b>managingOrganization</b>: <a href=\"Organization-foundingfathers.html\">Founding Fathers Memorial Hospital. Generated Summary: id: foundingfathers; NPI = 1345678910 (OFFICIAL); active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Hospital</span>; name: Founding Fathers Memorial Hospital; alias: DC Memorial Hospital; ph: 202-101-0123</a></p><p><b>contact</b>: ph: 202-101-0123(WORK)</p><p><b>period</b>: Nov 19, 2014, 12:00:00 AM --&gt; (ongoing)</p><p><b>payloadType</b>: HL7 CCD Document <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:1.3.6.1.4.1.19376.1.2.3 code 'urn:ihe:pcc:xphr:2007' = 'urn:ihe:pcc:xphr:2007', given as 'HL7 CCD Document'})</span></p><p><b>payloadMimeType</b>: application/hl7-v3+xml</p><p><b>address</b>: <a href=\"mailto:heart@direct.ffhospital.com\">heart@direct.ffhospital.com</a></p></div>"
-    },
     "extension": [
       {
         "url":  "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/endpoint-usecase",
@@ -19,7 +15,7 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase",
+                  "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/usecase",
                   "code": "treatment",
                   "display": "treatment"
                 }

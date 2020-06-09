@@ -25,7 +25,7 @@
     "Location"
   ],
   "type": "token",
-  "expression": "PractitionerRole.availableTime.availableStartTime | HealthcareService.availableTime.availableStartTime |  Location.hoursOfOperation.availableStartTime",
+  "expression": "PractitionerRole.availableTime.availableStartTime | HealthcareService.availableTime.availableStartTime |  Location.hoursOfOperation.openingTime", 
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

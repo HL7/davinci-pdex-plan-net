@@ -35,13 +35,7 @@
         "text": "Hospital ID"
       },
       "system": "https://eye-associates-pc.com",
-      "value": "206272de83ed12",
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
-          "valueCode": "active"
-        }
-      ]
+      "value": "206272de83ed12"
     }
   ],
   "active": true,

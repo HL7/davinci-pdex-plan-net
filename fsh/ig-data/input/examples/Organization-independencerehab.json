@@ -6,11 +6,7 @@
           "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
         ]
       },
-    "text": {
-      "status": "generated",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: independencerehab</p><p><b>meta</b>: </p><p><b>active</b>: true</p><p><b>type</b>: Rehabilitation services provider <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})</span></p><p><b>name</b>: Independence Rehabilitation Services, Inc.</p></div>"
-    },
-    "active": true,
+     "active": true,
     "type": [
       {
         "coding": [
@@ -79,7 +75,7 @@
                 "valueTime": "18:00:00"
               }
             ],
-            "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
           }
         ],
         "system": "phone",

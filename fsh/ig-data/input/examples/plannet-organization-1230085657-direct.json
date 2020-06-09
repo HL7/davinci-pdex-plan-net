@@ -13,7 +13,7 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase",
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/usecase",
                 "code": "treatment",
                 "display": "treatment"
               }
@@ -25,7 +25,7 @@
           "valueUri": "http://wiki.directproject.org/File:2011-03-09_PDF_-_XDR_and_XDM_for_Direct_Messaging_Specification_FINAL.pdf"
         }
       ],
-      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase"
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/endpoint-usecase"
     }
   ],
   "status": "active",

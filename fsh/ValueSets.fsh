@@ -1,4 +1,22 @@
 
+CodeSystem: AccessibilityCS
+Title: "Accessibility"
+Description: "Codes for documenting general categories of accommodations available."
+
+* #cultcomp	"Cultural competence"	"Provides services that meet the social, cultural, and linguistic needs of persons."
+* #handiaccess	"handicap accessible"	"Provides access to persons with disabilities."
+* #adacomp	"ADA compliant"	"Provides access which complies with the Americans with Disabilities Act and/or amendments."
+* #pubtrans	"public transit options"	"Provides access using public transportation modes."
+* #anssrvc	"answering service"	"Provides capability to communicate when intended recipient is not immediately available."
+* #cognitive	"cognitive"	"Provides services for cognitively impaired persons."
+* #mobility	"mobility"	"Provides services for mobility impaired persons."
+
+ValueSet: AccessibilityVS
+Title: "Accessibility"
+Description: "Codes for documenting general categories of accommodations available. "
+* codes from system AccessibilityCS
+
+
 CodeSystem:  EndpointConnectionTypeCS
   Title: "Endpoint Connection Types (additional)"
   Description:  "Extension codes for http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
@@ -21,31 +39,42 @@ CodeSystem:  OrgTypeCS
  CodeSystem: HealthcareServiceCategoryCS
  Title: "Healthcare Service Category"
  Description: "Codesystem for descripting the broad category of service being performed or delivered by a health care service"
-* #Hospital "Hospital" "A facility and the associated services that provide episodic, that can be multi-day, specialized acute care requiring medical and nursing staff and medical equipment."
-* #Provider "Medical Provider"  "A person who provides care services that are intended to impact mental or phsical health."
-* #Urgent "Urgent Care" "Unscheduled health care service provided for point-in-time evaluation and/or treatment a non-life-threatening medical condition."
-* #Laboratory "Laboratory" "Provision of clinical pathology tests on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease.."
-* #Emergency "Emergency care" " Health care service provided within a designated Emergency Department facility, for point-in-time evaluation and/or treatment any medical condition such that a prudent layperson possessing an average knowledge of medicine and health, believes that immediate unscheduled medical care is required."
-* #Behavioral "Behavioral Health" "Provides treatments to help people with mental illnesses or substance use disorders. "
+* #Behavioral "Behavioral Health" "Services related to the promotion of mental health, resilience and wellbeing; the treatment of mental and substance use disorders; and the support of those who experience and/or are in recovery from these conditions, along with their families and communities."
 * #Dental "Dental" "Services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the mouth."
-* #Vision "Vision" "Services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes."
-* #Home "Home Health" "Provides skilled nursing care, as well as otherskilled care services, like physical and occupational therapy, speech-language therapy, and medical social services in your home."
-* #DME "DME/Medical Supplies" "Provides equipment such as wheelchairs (manual and electric), hospital beds, traction equipment, canes, crutches, walkers, kidney machines, ventilators, oxygen, monitors, pressure mattresses, 
-lifts, nebulizers, bili blankets and bili lights.  Provides consumable home health care supplies such as (e.g. diabetic supplies)"
-* #Outpatient "Clinic or Outpatient Facility" "A facility that provides medical treatment that does not require admission to the hospital"
-* #Group "Medical Group" "A collection of medical providers that provides health care services under a common organization structure."
-* #Pharmacy "Pharmacy" "Dispenses and sells medicinal drugs."
-* #Transport "Transporation" "Conveyance services to or from a medical facility (e.g., Ambulance or Ambulette)"
+* #DME "DME/Medical Supplies" "Health care consumables or equipments supplied to patients"
+* #Emergency "Emergency care" "Health care services rendered within a designated emergency care facility, for point-in-time evaluation and/or treatment any medical condition such that a prudent layperson possessing an average knowledge of medicine and health, believes that immediate unscheduled medical care is required."
+* #Group "Medical Group" "Health care services rendered by a group of people, e.g. a group of Physicians."
+* #Home "Home Health"	"Health care services delivered to patients within their residence rather than a clinical setting; usually provided by nurses, home health aides, and other professionals on a regularly scheduled visit."
+* #Hospital "Hospital" "Health care services rendered within a hospital or other inpatient setting providng patient treatment with specialzed medical and nursing staff and medical equipment."
+* #Laboratory "Laboratory" "Pathology and laboratory testing on clinical specimenst to obtain informaion about the health of a paeint to aid in diagnosis, treatment and prevention of disease."
 * #Other "Other" "Other"
+* #Outpatient "Clinic or Outpatient Facility" "Health care services rendered in an outpatient facility, e.g. medical procedures, surgeries, etc."
+* #Provider "Medical Provider"  "Health care services rendered by a person, e.g. Physician."
+* #Pharmacy "Pharmacy" "Services related to the storage, compounding, dispensing and sale of drugs."
+* #Transport "Transporation" "Services which transport patients to or from a medical facility, e.g., ambulance. "
+* #Urgent "Urgent Care" "Unscheduled health care services which provide for point-in-time evaluation or treatment of a non-life-threatening medical condition."
+* #Vision "Vision" "Services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes."
+
+ValueSet: SpecialtiesVS
+Title: "Specialties"
+Description:  "Specialties value set based on National Uniform Claim Committee (NUCC) Provider Taxonomy Code Set."
+* codes from valueset IndividualAndGroupSpecialtiesVS
+* codes from valueset NonIndividualSpecialtiesVS
 
 ValueSet: SpecialtyAndDegreeLicenseCertificateVS
 Title: "Specialties, Degrees, Licenses, and Certificates"
-* codes from valueset $NUCCProviderTaxonomy 
+Description:  "Specialties and Degree License and Certificates"
+* codes from valueset SpecialtiesVS 
 * codes from valueset $V2table0360v27CS
 
 ValueSet: IndividualSpecialtyAndDegreeLicenseCertificateVS
 Title: "Individual Specialties, Degrees, Licenses, and Certificates"
 * codes from valueset IndividualAndGroupSpecialtiesVS
+* codes from system $V2table0360v27CS
+
+ValueSet: NonIndividualSpecialtyAndDegreeLicenseCertificateVS
+Title: "Non-Individual Specialties, Degrees, Licenses, and Certificates"
+* codes from valueset NonIndividualSpecialtiesVS
 * codes from system $V2table0360v27CS
 
 ValueSet: EndpointConnectionTypeVS
@@ -98,28 +127,28 @@ Description:  "Provider Directory Organization Type."
 CodeSystem: InsuranceProductTypeCS
 Title: "Insurance Product Type"
 Description:  "Insurance Product Type"
-* #CommercialPPO "Commercial PPO"  "Health insurance provided and administered by a non-governmental entity through a Preferred Provider Organization (PPO)"
-* #CommercialHDHP "Commercial HDHP" "Health insurance provided and administered by a non-governmental entity through a High Deductible Health Plan (HDHP)"
-* #CommercialPOS "Commercial POS" "Health insurance provided and administered by a non-governmental entity through a Point-of-Service (POS) Plan"
-* #CommercialHMO "Commercial HMO" "Health insurance provided and administered by a non-governmental entity through a Health Maintenance Organization (HMO)"
-* #CommercialEPO "Commercial EPO" "Health insurance provided and administered by a non-governmental entity through a Exclusive Provider Organization(EPO)"
-* #Medicaid "Medicaid" "Health insurance provided to eligible adults and children under the Federal Medicaid program"
-* #MedicaidHMO "Medicaid HMO" "Health insurance provided to eligible adults and children under the Federal Medicaid program through a Health Maintenance Organization (HMO)"
-* #MedicareAdvantage "Medicare Advantage" "Health insurance offered by a private company that contracts with Medicare to provide all Medicare Part A and Part B benefits."
+* #CommercialPPO "Commercial PPO"  "Health insurance provided through a Preferred Provider Organization (PPO)"
+* #CommercialHDHP "Commercial HDHP" "Health insurance provided through a High Deductible Health Plan (HDHP)"
+* #CommercialPOS "Commercial POS" "Health insurance provided through a Point-of-Service (POS) Plan	"
+* #CommercialHMO "Commercial HMO" "Health insurance provided through a Health Maintenance Organization (HMO)"
+* #CommercialEPO "Commercial EPO" "Health insurance provided through a Exclusive Provider Organization(EPO)"
+* #Medicaid "Medicaid" "Health insurance provided to eligible adults and children under the Federal Medicaid program	"
+* #MedicaidHMO "Medicaid HMO" "Health insurance provided to eligible adults and children under the Federal Medicaid program through a Health Maintenance Organization (HMO)	"
+* #MedicareAdvantage "Medicare Advantage" "Health insurance provided by a private company that contracts with Medicare to provide all Medicare Part A and Part B benefits."
 * #MedicareAdvantageHMO "Medicare Advantage HMO" "Health insurance offered by a private company that contracts with Medicare to provide all Medicare Part A and Part B benefits through a Health Maintenance Organization (HMO)"
 * #MedicareA "Medicare Part A" "Health insurance provided under the Federal Medicare program covering inpatient hospital stays, care in a skilled nursing facility, hospice care, and some home health care."
 * #MedicareB "Medicare Part B" "Health insurance provided under the Federal Medicare program covering certain doctors' services, outpatient care, medical supplies, and preventive services."
 * #MedicareD "Medicare Part D" "Health insurance provided under the Federal Medicare program covering prescription drugs."
-* #MedicareAB "Medicare A/B" "Health insurance provided under the Federal Medicare program covering inpatient hospital stays, care in a skilled nursing facility, hospice care, some home health care, certain doctors' services, outpatient care, medical supplies, and preventive services."
-* #QHP "Qualified Health Plan" "An insurance plan that is certified by the Health Insurance Marketplace, provides essential health benefits (EHBs), follows established limits on cost sharing, and meets other requirements outlined within the application process."
-* #IHS "Indian Health Service" "The Federal Health Program for United States American Indians and Alaska Natives"
-* #FEP "Federal Employee Program" "Health insurance provided and administered by a non-governmental entity to employees of the Federal government"
-* #TRICARE "TRICARE" "Health insurance provided and administred by a non-governmental entity for uniformed service members, retirees, and their families"
-* #VA "Veterans Affairs Plan"  "The Federal Health Program for eligible veterans of United States uniformed services"
-* #Dental "Dental Plan" "A plan covering services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the mouth."
-* #DentalHMO "Dental HMO" "A plan covering services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the mouth provided through a Health Maintenance Organization (HMO)."
-* #Vision "Vision Plan" "A plan covering services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes."
-* #VisionHMO "Vision HMO" "A plan covering services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes provided through a Health Maintenance Organization (HMO)."
+* #MedicareAB "Medicare A/B" "Health insurance provided under the Federal Medicare program covering inpatient hospital stays, care in a skilled nursing facility, hospice care, some home health care, certain doctors' services, outpatient care, medical supplies, and preventive services.."
+* #QHP "Qualified Health Plan" "Health insurance provided through and certified by the Health Insurance Marketplace that provides essential health benefits (EHBs), follows established limits on cost sharing, and meets other requirements outlined within the application process."
+* #IHS "Indian Health Service" "Health care program provided to United States American Indians and Alaska Natives."
+* #FEP "Federal Employee Program" "Health insurance provided to employees of the Federal government."
+* #TRICARE "TRICARE" "Health care program provided to uniformed service members, retirees, and their families around the world."
+* #VA "Veterans Affairs Plan"  "Health care program provided to eligible veterans."
+* #Dental "Dental Plan" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity."
+* #DentalHMO "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity provided through a Health Maintenance Organization (HMO)."
+* #Vision "Vision Plan" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes."
+* #VisionHMO "Vision HMO" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes provided through a Health Maintenance Organization (HMO)."
 
 ValueSet: InsuranceProductTypeVS
 Title: "Insurance Product Type"
@@ -129,19 +158,17 @@ Description: "Valueset for InsurancePlan product types. Any set of plans that sh
 CodeSystem: InsurancePlanTypeCS
 Title: "Insurance Plan Type"
 Description:  "Insurance Plan Type"
-* #Platinum "Platinum" "A standardized type of health insurance that pays, on average, roughly 90% of members' health care expenses. The members pay the other 10% of their health care expenses in the form of copayments, coinsurance, and deductibles."
-* #Gold "Gold" "A standardized type of health insurance that pays, on average, roughly 80% of members' health care expenses. The members pay the other 20% of their health care expenses in the form of copayments, coinsurance, and deductibles."
-* #Silver "Silver" "A standardized type of health insurance that pays, on average, roughly 70% of members' health care expenses. The members pay the other 30% of their health care expenses in the form of copayments, coinsurance, and deductibles."
-* #Bronze "Bronze" "A standardized type of health insurance that pays, on average, roughly 60% of members' health care expenses. The members pay the other 40% of their health care expenses in the form of copayments, coinsurance, and deductibles."
-* #LowDeductible "Low Deductible" "A plan that requires the insured to pay out of pocket a larger proportion of incurred health care costs than a traditional insurance plan in order to have a lower monthly premium."
-* #HighDeductible "High Deductible" "A plan that requires the insured to pay out of pocket a smaller proportion of incurred health care costs than a traditional insurance plan which in turn requires a higher monthly premium."
-* #Catastrophic "Catastrophic" "A plan typically available to individuals under the age of 30 at the start of the plan (calendar) year that generally has a low monthly premium and only covers a limited amount of benefits. "
+* #Platinum "Platinum-QHP" "Plan with highest monthly premium and lowest costs when you need care	A Qualified Health Plan with the highest monthly premiums and smallest out-of-pocket costs for the member in comparison to other metal-category plans"
+* #Gold "Gold-QHP" "Plan with high monthly premium and low costs when you need care	A Qualified Health Plan with the higher monthly premiums and smaller out-of-pocket costs for the member in comparison to other metal-category plans"
+* #Silver "Silver-QHP" "Plan with moderate monthly premium and moderate costs when you need care	A Qualified Health Plan with the lower monthly premiums and larger out-of-pocket costs for the member in comparison to other metal-category plans"
+* #Bronze "Bronze-QHP" "Plan with lowest monthly premium and highest costs when you need care	A Qualified Health Plan with the lowest monthly premiums and largest out-of-pocket costs for the member in comparison to other metal-category plans"
+* #LowDeductible "Low Deductible" "A plan that requires the insured to pay out of pocket a smaller proportion of incurred health care costs."
+* #HighDeductible "High Deductible" "A plan that requires the insured to pay out of pocket a larger proportion of incurred health care costs than a traditional insurance plan."
 
 ValueSet: InsurancePlanTypeVS
 Title: "Insurance Plan Type"
 Description: "Valueset for InsurancePlan  plan types.  Plans within a prouduct share coverage but differ in cost-sharing."
 * codes from system InsurancePlanTypeCS
-
 
 ValueSet: HealthcareServiceCategoryVS
 Title: "Healthcare Service Category"

@@ -12,23 +12,7 @@
       "status": "generated",
       "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: practitioner1</p><p><b>meta</b>: </p><p><b>identifier</b>: NPI = 1234567893 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: George Washington(OFFICIAL)</p><p><b>telecom</b>: ph: 202-123-4567(MOBILE), george.washington@whitehouse.gov(HOME)</p><p><b>address</b>: 1600 Pennsylvania Ave NW, Washington, DC 20006, USA(HOME)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: Feb 22, 1932</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Medical License number = MD12345 (OFFICIAL)</p><p><b>code</b>: MD <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v2-0360|2.7 code 'MD' = 'Doctor of Medicine', given as 'Doctor of Medicine'})</span></p><p><b>period</b>: Jul 15, 1959, 12:00:00 AM --&gt; Jul 15, 1961, 12:00:00 AM</p><p><b>issuer</b>: DC Board of Medicine</p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: 123456</p><p><b>code</b>: Certification in Internal Medicine <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v2-0360|2.7 code 'MD' = 'Doctor of Medicine', given as 'Doctor of Medicine'})</span></p><p><b>period</b>: Jul 20, 1971, 12:00:00 AM --&gt; Jul 20, 1981, 12:00:00 AM</p><p><b>issuer</b>: American Board of Internal Medicine</p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: 123456</p><p><b>code</b>: Certification in Cardiovascular Disease <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v2-0360|2.7 code 'MD' = 'Doctor of Medicine', given as 'Doctor of Medicine'})</span></p><p><b>period</b>: Jul 10, 1965, 12:00:00 AM --&gt; Jul 10, 1975, 12:00:00 AM</p><p><b>issuer</b>: American Board of Internal Medicine</p></blockquote><p><b>communication</b>: English <span style=\"background: LightGoldenRodYellow\">(Details : {urn:ietf:bcp:47 code 'en-US' = 'English (Region=United States)', given as 'English (United States)'})</span></p></div>"
     },
-    "extension": [
-      {
-        "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility",
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
-              "code": "cultcomp",
-              "display": "Cultural competence",
-              "userSelected": true
-            }
-          ],
-          "text": "Coordinates care with tribal healers of the Piscataway People"
-        }
-      }
-    ],
-    "identifier": [
+      "identifier": [
       {
         "use": "official",
         "type": {
@@ -115,7 +99,7 @@
       {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification",
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification",
             "extension": [
               {
                 "url": "status",
@@ -144,12 +128,6 @@
         ],
         "identifier": [
           {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
-                "valueCode": "active"
-              }
-            ],
             "use": "official",
             "type": {
               "coding": [
@@ -194,49 +172,8 @@
         }
       },
       {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification",
-            "extension": [
-              {
-                "url": "status",
-                "valueCoding": {
-                  "system": "http://hl7.org/fhir/resource-status",
-                  "code": "active",
-                  "display": "active"
-                }
-              },
-              {
-                "url": "history",
-                "extension": [
-                  {
-                    "url": "status",
-                    "valueCoding": {
-                      "code": "active",
-                      "display": "active",
-                      "userSelected": true
-                    }
-                  },
-                  {
-                    "url": "period",
-                    "valuePeriod": {
-                      "start": "1985-07-15",
-                      "end": "2020-07-15"
-                           }
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "identifier": [
           {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
-                "valueCode": "active"
-              }
-            ],
             "system": "http://www.abim.org/",
             "value": "123456",
             "assigner": {
@@ -266,7 +203,7 @@
       {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification",
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification",
             "extension": [
               {
                 "url": "status",
@@ -281,12 +218,6 @@
         ],
         "identifier": [
           {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
-                "valueCode": "active"
-              }
-            ],
             "system": "http://www.abim.org/",
             "value": "123456",
             "assigner": {
@@ -319,7 +250,7 @@
       {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency",
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
             "valueCodeableConcept": {
               "coding": [
                 {

@@ -1,0 +1,79 @@
+ {
+      "resourceType": "HealthcareService",
+      "id": "cvs-pharmacy",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-12-17T13:22:59.477+00:00",
+        "profile": [
+          "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
+        ]
+      },
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients",
+          "extension": [
+            {
+              "url": "acceptingPatients",
+              "valueBoolean": true
+            }
+          ]
+        }
+      ],
+      "active": true,
+      "providedBy": {
+        "reference": "Organization/plannet-organization-CVS",
+        "display": "CVS"
+      },
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/HealthcareServiceCategoryVS",
+              "code": "pharmacy",
+              "display": "Pharmacy"
+            }
+          ],
+          "text": "Pharmacy"
+        }
+      ],
+      "location": [
+        {
+          "reference": "Location/cvswindsorct",
+          "display": "CVS PHARMACY #1166 - Windsor, CT"
+        }
+      ],
+      "network": [
+          {
+            "reference": "Organization/plannet-network-HPID040000",
+            "display":  "Acme of Connecticut Preferred Provider Network"
+          }
+      ],
+      "name": "CVS Pharmacy",
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "(459) 330-8430",
+          "use": "work"
+        },
+        {
+          "system": "fax",
+          "value": "1-583-985-6540",
+          "use": "work"
+        }
+      ],
+         "appointmentRequired": false,
+      "availableTime": [
+        {
+          "daysOfWeek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "allDay": false,
+          "availableStartTime": "08:00:00",
+          "availableEndTime": "18:00:00"
+        }
+      ]
+    }
