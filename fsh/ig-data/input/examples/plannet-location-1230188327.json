@@ -7,11 +7,11 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/accessibility",
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/accessibility",
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/accessibility",
+            "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/accessibility",
             "code": "handiaccess",
             "display": "handicap accessible"
           }
@@ -29,7 +29,7 @@
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
     },
     {
-      "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatientprofile",
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatientprofile",
       "valueString": "This location accepts all types of patients"
     }
   ],
@@ -44,7 +44,7 @@
       },
       "extension": [
         {
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/identifier-status",
           "valueCode": "active"
         }
       ]
@@ -63,7 +63,7 @@
               "valueBoolean": true
             }
           ],
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
         }
       ],
       "system": "phone",
@@ -79,7 +79,7 @@
               "valueBoolean": true
             }
           ],
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
         }
       ],
       "system": "fax",

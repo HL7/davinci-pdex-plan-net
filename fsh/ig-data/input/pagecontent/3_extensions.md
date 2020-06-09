@@ -3,7 +3,6 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 
 <h3>Extensions defined as part of this Implementation Guide.  </h3>
-Where possible, extensions from the VhDIR Implementation Guide are used by reference.
 
 <table border="1" class="extensions local">
   <thead>

@@ -24,13 +24,7 @@
       "value": "HPID400000",
       "assigner": {
         "display": "Centers for Medicare and Medicaid Services"
-      },
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
-          "valueCode": "active"
-        }
-      ]
+      }
     }
   ],
   "status": "active",

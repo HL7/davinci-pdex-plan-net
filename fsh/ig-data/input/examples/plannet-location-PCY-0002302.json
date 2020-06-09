@@ -13,13 +13,7 @@
       "assigner": {
         "reference": "Organization/plannet-organization-72e977cb09c1ce74879379507",
         "display": "BRASSCITY"
-      },
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
-          "valueCode": "active"
-        }
-      ]
+      }
     }
   ],
   "status": "active",
@@ -46,7 +40,7 @@
               "valueBoolean": true
             }
           ],
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
         }
       ],
       "system": "phone",
@@ -62,7 +56,7 @@
               "valueBoolean": true
             }
           ],
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
         }
       ],
       "system": "fax",

@@ -134,7 +134,7 @@
                   "valueTime": "18:00:00"
                 }
               ],
-              "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+              "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
             }
           ],
           "system": "phone",

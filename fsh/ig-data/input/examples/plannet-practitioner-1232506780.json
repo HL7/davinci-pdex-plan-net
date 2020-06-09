@@ -115,7 +115,7 @@
               }
             }
           ],
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification"
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
         }
       ],
       "identifier": [
@@ -161,11 +161,11 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/communication-proficiency",
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/uv/vhdir/CodeSystem/languageproficiency",
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/languageproficiency",
                 "code": "50",
                 "display": "Functional native proficiency"
               }

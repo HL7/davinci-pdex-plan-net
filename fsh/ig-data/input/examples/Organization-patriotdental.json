@@ -4,7 +4,6 @@
           "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
         ]
       },  
-    "text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patriotdental</p><p><b>meta</b>: </p><p><b>active</b>: true</p><p><b>type</b>: Health System <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'pay' = 'Payer', given as 'Payer'})</span></p><p><b>name</b>: Patriot Dental Provider Network</p><p><b>partOf</b>: <a href=\"Organization-homeland.html\">Homeland Health Insurance. Generated Summary: id: homeland; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type ins}\">Health System</span>; name: Homeland Health Insurance</a></p></div>"},"active":true,"type":[{"coding":[{"system":"http://terminology.hl7.org/CodeSystem/organization-type","code":"pay","display":"Payer"}],"text":"Health System"}],"name":"Patriot Dental Provider Network","partOf":{"reference":"Organization/homeland","display":"Homeland Health Insurance"},
     "identifier": [
       {
       "use": "official",
@@ -60,7 +59,7 @@
                 "valueTime": "18:00:00"
               }
             ],
-            "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
           }
         ],
         "system": "phone",

@@ -31,13 +31,7 @@
       },
       "system": "http://cambridge-health-alliance-elder-service-plan",
       "value": "1238863986-nutrition",
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
-          "valueCode": "active"
-        }
-      ],
-      "assigner": {
+        "assigner": {
         "reference": "Organization/plannet-organization-1238863986",
         "display": "CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN"
       }

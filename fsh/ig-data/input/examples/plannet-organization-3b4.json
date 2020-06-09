@@ -9,13 +9,7 @@
     {
       "use": "official",
       "system": "http://i.made/this/up",
-      "value": "524968",
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
-          "valueCode": "active"
-        }
-      ]
+      "value": "524968"
     }
   ],
   "active": true,
@@ -121,7 +115,7 @@
                   "valueTime": "18:00:00"
                 }
               ],
-              "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime"
+              "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
             }
           ],
           "system": "phone",

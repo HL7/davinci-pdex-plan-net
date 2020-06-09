@@ -6,11 +6,7 @@
         "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
       ]
     },
-    "text": {
-      "status": "generated",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patriotppo</p><p><b>meta</b>: </p><p><b>identifier</b>: Healthcare.gov Network ID = DCN001 (SECONDARY)</p><p><b>active</b>: true</p><p><b>type</b>: PPO <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/uv/vhdir/CodeSystem/network-type code 'ppo' = 'PPO', given as 'PPO'})</span></p><p><b>name</b>: Patriot Preferred Provider Network</p><p><b>alias</b>: Patriot PPO</p><p><b>address</b>: 101 Independence Ave SE, Washington, DC 20540(WORK)</p><p><b>partOf</b>: <a href=\"Organization-homeland.html\">Homeland Health Insurance. Generated Summary: id: homeland; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type ins}\">Health System</span>; name: Homeland Health Insurance</a></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Purpose</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td>Administrative <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/contactentity-type code 'ADMIN' = 'Administrative', given as 'Administrative'})</span></td><td>James Madison</td><td>ph: 202-010-1234(WORK)</td><td>101 Independence Ave SE, Washington, DC 20540(WORK)</td></tr></table><p><b>endpoint</b>: homelandinsurance.org/services/network</p></div>"
-    },
-    "extension": [
+      "extension": [
       {
         "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/location-reference",
         "valueReference": {
@@ -21,13 +17,7 @@
     ],
     "identifier": [
       {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/identifier-status",
-            "valueCode": "active"
-          }
-        ],
-        "use": "secondary",
+           "use": "secondary",
         "type": {
           "coding": [
             {
@@ -103,7 +93,7 @@
           {
             "extension": [
               {
-                "url": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-availabletime",
+                "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime",
                 "extension": [
                   {
                     "url": "daysOfWeek",

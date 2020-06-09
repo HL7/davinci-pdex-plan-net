@@ -6,11 +6,7 @@
         "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
       ]
     },
-    "text": {
-      "status": "generated",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: wash-dc-metro</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>name</b>: Washington, DC metro area</p><p><b>physicalType</b>: Area <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/location-physical-type code 'area' = 'Area', given as 'Area'})</span></p></div>"
-    },
-       "status": "active",
+          "status": "active",
     "name": "Washington, DC metro area",
     "physicalType": {
       "coding": [
