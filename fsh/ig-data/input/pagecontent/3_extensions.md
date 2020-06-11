@@ -20,15 +20,15 @@
           <td><a href="StructureDefinition-accessibility.html">Accessibility</a></td>
           <td>{% capture md_text %}An extension to describe accessibility options offered by a practitioner or at a location.{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
-        <tr>
-           <td><a href="StructureDefinition-contactpoint-availabletime.html">Contactpoint Available Time</a></td>
-          <td>{% capture md_text %}An extension representing the times a contact point is available{% endcapture %}{{ md_text | markdownify }}</td>
-        </tr>
           <tr>
            <td><a href="StructureDefinition-communication-proficiency.html">Communication Proficiency</a></td>
           <td>{% capture md_text %}An extension to express a practitioner’s spoken proficiency with the language indicated in practitioner.communication {% endcapture %}{{ md_text | markdownify }}</td>
         </tr> 
-       <tr>
+          <tr>
+           <td><a href="StructureDefinition-contactpoint-availabletime.html">Contactpoint Available Time</a></td>
+          <td>{% capture md_text %}An extension representing the times a contact point is available{% endcapture %}{{ md_text | markdownify }}</td>
+        </tr>
+     <tr>
           <td><a href="StructureDefinition-endpoint-usecase.html">Endpoint Use Case</a></td>
           <td>{% capture md_text %}An enumeration of the specific use cases (service descriptions) supported by the endpoint{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
@@ -44,11 +44,7 @@
           <td><a href="StructureDefinition-newpatients.html">New Patients</a></td>
           <td>{% capture md_text %}New Patients indicates whether the practitioner is accepting new patients in their role{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
-        <tr>
-          <td><a href="StructureDefinition-newpatientsprofile.html">New Patients Profile</a></td>
-          <td>{% capture md_text %}New Patients Profile  provides information about the types of new patients a practitioner (through a role) or location accepts.  For example, a pediatric provider may only accept children up to a certain age.{% endcapture %}{{ md_text | markdownify }}</td>
-        </tr>
-        <tr>
+             <tr>
           <td><a href="StructureDefinition-org-description.html">Organization Description</a></td>
           <td>{% capture md_text %}An extension to provide a human-readable description of an organization{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>

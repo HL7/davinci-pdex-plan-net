@@ -21,7 +21,7 @@ Description:    "The technical details of an endpoint that can be used for elect
 * connectionType MS 
 * connectionType from EndpointConnectionTypeVS (extensible)
 * connectionType ^binding.extension[0].url = $MinValueSet
-* connectionType ^binding.extension[0].valueCanonical = "http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/MinEndpointConnectionTypeVS" // MinEndpointConnectionTypeVS
+* connectionType ^binding.extension[0].valueCanonical = $MinEndpointConnectionTypeVS  // MinEndpointConnectionTypeVS
 * name MS
 * managingOrganization only Reference(PlannetOrganization)
 * managingOrganization MS
@@ -454,7 +454,7 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * practitioner 0..1  MS   // 1..1 from USCore
 * organization 0..1   MS  // 1..1 from USCore
 * code 1..1  MS  
-* specialty 0..1  MS
+* specialty  MS
 * specialty from IndividualAndGroupSpecialtiesVS (required)
 * location only Reference(PlannetLocation)
 * location MS

@@ -1,3 +1,52 @@
+Extension: Accessibility
+Id: accessibility
+Title: "Accessibility"
+Description: "An extension to describe accessibility options offered by a practitioner or at a location."
+* value[x] 1..1 
+* value[x] only CodeableConcept 
+* value[x] from AccessibilityVS (extensible)
+
+
+Extension: CommunicationProficiency
+Id: communication-proficiency
+Title: "Communication Proficiency"
+Description: "An extension to express a practitioner’s spoken proficiency with the language indicated in practitioner.communication."
+* value[x] 1..1 
+* value[x] only CodeableConcept 
+* valueCodeableConcept from LanguageProficiencyVS (required)   // was example
+
+Extension: ContactPointAvailableTime
+Id: contactpoint-availabletime
+Title: "Contactpoint Availabletime"
+Description: "An extension representing the times a contact point is available"
+* value[x] 0..0
+* extension contains
+   daysOfWeek 0..* MS and 
+   allDay 0..1 MS and
+   availableStartTime 0..1 MS and
+   availableEndTime 0..1 MS
+* extension[daysOfWeek].value[x] only code 
+* extension[daysOfWeek].valueCode from $DaysOfWeekVS
+* extension[allDay].value[x] only boolean 
+* extension[availableStartTime].value[x] only time 
+* extension[availableEndTime].value[x] only time  
+
+Extension: EndpointUsecase
+Id: endpoint-usecase
+Title: "Endpoint Usecase"
+Description: "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint"
+* value[x] 0..0
+* extension contains
+   Type 1..1 MS and
+   Standard 0..1 MS 
+* extension[Type] ^short = "An indication of the type of services supported by the endpoint"
+* extension[Type].value[x] only  CodeableConcept 
+* extension[Type].value[x]  1..1
+* extension[Type].value[x] from EndpointUsecaseVS (extensible)
+* extension[Standard] ^short = "A URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)"
+* extension[Standard].value[x] only uri 
+* extension[Standard].value[x] 1..1
+
 
 Extension: LocationReference
 Id: location-reference
@@ -45,22 +94,6 @@ Description: "An extension to provide a human-readable description of an organiz
 * value[x] only string 
 
 
-Extension: EndpointUsecase
-Id: endpoint-usecase
-Title: "Endpoint Usecase"
-Description: "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint"
-* value[x] 0..0
-* extension contains
-   Type 1..1 MS and
-   Standard 0..1 MS 
-* extension[Type] ^short = "An indication of the type of services supported by the endpoint"
-* extension[Type].value[x] only  CodeableConcept 
-* extension[Type].value[x]  1..1
-* extension[Type].value[x] from EndpointUsecaseVS (extensible)
-* extension[Standard] ^short = "A URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)"
-* extension[Standard].value[x] only uri 
-* extension[Standard].value[x] 1..1
-
 
 Extension: PractitionerQualification
 Id: practitioner-qualification
@@ -95,7 +128,7 @@ Description: "An extension to add qualifications for an organization (e.g. accre
 * extension[identifier].value[x] 1..1
 * extension[code].value[x] only CodeableConcept
 * extension[code].value[x] 1..1
-* extension[code].valueCodeableConcept from SpecialtyAndDegreeLicenseCertificateVS (required)
+* extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (required)
 * extension[issuer].value[x] 1..1
 * extension[issuer].value[x] only Reference(PlannetOrganization)
 * extension[status].value[x] 1..1
@@ -105,49 +138,8 @@ Description: "An extension to add qualifications for an organization (e.g. accre
 * extension[period].value[x] only Period 
 * extension[period].value[x] 1..1
 * extension[whereValid].value[x] only CodeableConcept or Reference(PlannetLocation)
-* extension[whereValid].valueCodeableConcept from $USPSState (required)
+* extension[whereValid].value[x] from $USPSState (required)
 * extension[whereValid].value[x] 1..1
-
-
-Extension: Accessibility
-Id: accessibility
-Title: "Accessibility"
-Description: "An extension to describe accessibility options offered by a practitioner or at a location."
-* value[x] 1..1 
-* value[x] only CodeableConcept 
-* valueCodeableConcept from AccessibilityVS (extensible)
-
-
-Extension: CommunicationProficiency
-Id: communication-proficiency
-Title: "Communication Proficiency"
-Description: "An extension to express a practitioner’s spoken proficiency with the language indicated in practitioner.communication."
-* value[x] 1..1 
-* value[x] only CodeableConcept 
-* valueCodeableConcept from LanguageProficiencyVS (required)   // was example
-
-//Extension: ConnectionTypeMinValue
-//Parent:  $MinValueSet
-//Id: connection-type-min-value
-//Title: "Minimum Value for ConnectType"
-//* value[x] only canonical 
-//* valueCanonical = MinEndpointConnectionTypeVS
-
-Extension: ContactPointAvailableTime
-Id: contactpoint-availabletime
-Title: "Contactpoint Availabletime"
-Description: "An extension representing the times a contact point is available"
-* value[x] 0..0
-* extension contains
-   daysOfWeek 0..* MS and 
-   allDay 0..1 MS and
-   availableStartTime 0..1 MS and
-   availableEndTime 0..1 MS
-* extension[daysOfWeek].value[x] only code 
-* extension[daysOfWeek].valueCode from $DaysOfWeekVS
-* extension[allDay].value[x] only boolean 
-* extension[availableStartTime].value[x] only time 
-* extension[availableEndTime].value[x] only time  
 
 Extension: ViaIntermediary
 Id: via-intermediary
@@ -155,5 +147,5 @@ Title: "Via Intermediary"
 Description: "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization"
 * value[x] only Reference
 * valueReference MS
-* valueReference only Reference(PlannetOrganization | PlannetPractitionerRole | PlannetOrganizationAffiliation | PlannetLocation) 
+* value[x] only Reference(PlannetOrganization | PlannetPractitionerRole | PlannetOrganizationAffiliation | PlannetLocation) 
 
