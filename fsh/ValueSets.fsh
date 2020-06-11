@@ -94,7 +94,7 @@ Description:  "Minimum Endpoint Connection Types"
 
 ValueSet: EndpointUsecaseVS
 Title: "Endpoint Usecases"
-Description:  "Endpoint Usecases."
+Description:  "Codes for documenting business use case by a general grouping by business area."
 * $V3ActReason#TREAT  "treatment"
 * $V3ActReason#HPAYMT "healthcare payment"
 * $V3ActReason#COC "coordination of care"
@@ -146,7 +146,7 @@ Description:  "Insurance Product Type"
 * #TRICARE "TRICARE" "Health care program provided to uniformed service members, retirees, and their families around the world."
 * #VA "Veterans Affairs Plan"  "Health care program provided to eligible veterans."
 * #Dental "Dental Plan" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity."
-* #DentalHMO "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity provided through a Health Maintenance Organization (HMO)."
+* #DentalHMO "Dental HMO" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity provided through a Health Maintenance Organization (HMO)."
 * #Vision "Vision Plan" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes."
 * #VisionHMO "Vision HMO" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes provided through a Health Maintenance Organization (HMO)."
 
@@ -157,7 +157,7 @@ Description: "Valueset for InsurancePlan product types. Any set of plans that sh
 
 CodeSystem: InsurancePlanTypeCS
 Title: "Insurance Plan Type"
-Description:  "Insurance Plan Type"
+Description:  "Codes for InsurancePlan  plan types.  Plans within a prouduct share coverage but differ in cost-sharing"
 * #Platinum "Platinum-QHP" "Plan with highest monthly premium and lowest costs when you need care	A Qualified Health Plan with the highest monthly premiums and smallest out-of-pocket costs for the member in comparison to other metal-category plans"
 * #Gold "Gold-QHP" "Plan with high monthly premium and low costs when you need care	A Qualified Health Plan with the higher monthly premiums and smaller out-of-pocket costs for the member in comparison to other metal-category plans"
 * #Silver "Silver-QHP" "Plan with moderate monthly premium and moderate costs when you need care	A Qualified Health Plan with the lower monthly premiums and larger out-of-pocket costs for the member in comparison to other metal-category plans"
@@ -182,6 +182,7 @@ CodeSystem:  OrgTypeCS
 * #PrvGrp "Provider Group" "A healthcare provider group"
 * #Payer "Payer" "A healthcare payer."
  
+/*
  CodeSystem: IndividualPractitionerRoleCS
  Title: "Individual Practitioner Roles"
  Description: "Individual Practitioner Roles"
@@ -224,6 +225,7 @@ Title: "PractitionerRoles"
 * codes from system IndividualPractitionerRoleCS 
 * codes from system NonIndividualPractitionerRoleCS
 
+
 ValueSet: IndividualPractitionerRolesVS
 Title: "Individual PractitionerRoles"
 * codes from system IndividualPractitionerRoleCS 
@@ -231,6 +233,7 @@ Title: "Individual PractitionerRoles"
 ValueSet: NonIndividualPractitionerRolesVS
 Title: "Non-Individual PractitionerRoles"
 * codes from system NonIndividualPractitionerRoleCS
+*/
 
 CodeSystem: QualificationStatusCS
 Title: "Qualification Status"
@@ -251,15 +254,15 @@ CodeSystem:  LanguageProficiencyCS
 Title: "Language Proficiency"
 Description: "Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."
 * #00	"No proficiency"	"Unable to function in the spoken language."
-* #06	"Memorized proficiency"	"Able to satisfy immediate needs using rehearsed utterances. Shows little real autonomy of expression, flexibility or spontaneity."
+//* #06	"Memorized proficiency"	"Able to satisfy immediate needs using rehearsed utterances. Shows little real autonomy of expression, flexibility or spontaneity."
 * #10	"Elementary proficiency"	"Able to satisfy minimum courtesy requirements and maintain very simple face-to-face conversations on familiar topics. A native speaker must often use slowed speech, repetition, paraphrase, or a combination of these to be understood by this individual."
-* #16	"Elementary proficiency, plus"	"Can initiate and maintain predictable face-to-face conversations and satisfy limited social demands."
+//* #16	"Elementary proficiency, plus"	"Can initiate and maintain predictable face-to-face conversations and satisfy limited social demands."
 * #20	"Limited working proficiency"	"Able to satisfy routine social demands and limited work requirements."
-* #26	"Limited working proficiency, plus"	"Able to satisfy most work requirements with language usage that is often, but not always, acceptable and effective."
+//* #26	"Limited working proficiency, plus"	"Able to satisfy most work requirements with language usage that is often, but not always, acceptable and effective."
 * #30	"General professional proficiency"	"Able to speak the language with sufficient structural accuracy and vocabulary to participate effectively in most formal and informal conversations in practical, social and professional topics."
-* #36	"General professional proficiency, plus"	"Is often able to use the language to satisfy professional needs in a wide range of sophisticated and demanding tasks."
+//* #36	"General professional proficiency, plus"	"Is often able to use the language to satisfy professional needs in a wide range of sophisticated and demanding tasks."
 * #40	"Advanced professional proficiency"	"Able to use the language fluently and accurately on all levels normally pertinent to professional needs."
-* #46	"Advanced professional proficiency, plus"	"Speaking proficiency is regularly superior in all respects, usually equivalent to that of a well educated, highly articulate native speaker."
+//* #46	"Advanced professional proficiency, plus"	"Speaking proficiency is regularly superior in all respects, usually equivalent to that of a well educated, highly articulate native speaker."
 * #50	"Functional native proficiency"	"Speaking proficiency is functionally equivalent to that of a highly articulate well-educated native speaker and reflects the cultural standards of the country where the language is natively spoken."
 
 ValueSet: LanguageProficiencyVS
