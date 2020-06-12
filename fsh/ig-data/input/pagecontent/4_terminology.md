@@ -70,7 +70,7 @@
       </tr>
     <tr>
         <td><a href="ValueSet-NonIndividualSpecialtiesVS.html">NonIndividualSpecialtiesVS</a></td>
-        <td>{% capture md_text %}Non-Individual Specialties value set based on National Uniform Claim Committee (NUCC) Provider Taxonomy Code Set. {% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}Non-Individual Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set. {% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
     <tr>
         <td><a href="ValueSet-OrgTypeVS.html">Organization Type</a></td>
@@ -82,7 +82,7 @@
       </tr>
         <tr>
         <td><a href="ValueSet-SpecialtiesVS.html">Specialties</a></td>
-        <td>{% capture md_text %} Specialties value set based on National Uniform Claim Committee (NUCC) Provider Taxonomy Code Set. {% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %} Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set. {% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
               <tr>
         <td><a href="ValueSet-ValueSet: SpecialtyAndDegreeLicenseCertificateVS.html">Specialties, Degrees, Licenses, and Certificates"</a></td>
