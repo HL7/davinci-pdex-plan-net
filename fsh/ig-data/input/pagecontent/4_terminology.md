@@ -16,9 +16,17 @@
     </tr>
   </thead>
   <tbody> 
-        <tr>
+       <tr>
+        <td><a href="ValueSet-AcceptingPatientsVS.html">Accepting Patients Codes</a></td>
+        <td>{% capture md_text %}Accepting Patients Codes.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+       <tr>
         <td><a href="ValueSet-AccessibilityVS.html">Accessibility Categories</a></td>
         <td>{% capture md_text %}This code system contains codes for documenting the attributes of accessibility.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+        <tr>
+        <td><a href="ValueSet-DeliveryMethodVS.html">Delivery Methods</a></td>
+        <td>{% capture md_text %}Codes for documenting delivery methods.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="ValueSet-EndpointConnectionTypeVS.html">Endpoint ConnectionTypes</a></td>
@@ -97,10 +105,20 @@
     </tr>
   </thead>
   <tbody> 
-         <tr>
+       <tr>
+        <td><a href="ValueSet-AcceptingPatientsCS.html">Accepting Patients Codes</a></td>
+        <td>{% capture md_text %}Accepting Patients Codes.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+        <tr>
         <td><a href="CodeSystem-AccessibilityCS.html">Accessibility Categories</a></td>
         <td>{% capture md_text %}Codes for documenting general categories of accommodations available.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
+        <tr>
+        <td><a href="ValueSet-DeliveryMethodCS.html">Delivery Methods</a></td>
+        <td>{% capture md_text %}Codes for documenting delivery methods.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+
         <tr>
         <td><a href="CodeSystem-EndpointConnectionTypeCS.html">Endpoint Connection Types (additional)</a></td>
         <td>{% capture md_text %}"Extension codes for http://terminology.hl7.org/CodeSystem/endpoint-connection-type needed for the provider directory"{% endcapture %}{{ md_text | markdownify }}</td>

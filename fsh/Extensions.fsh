@@ -31,6 +31,17 @@ Description: "An extension representing the times a contact point is available"
 * extension[availableStartTime].value[x] only time 
 * extension[availableEndTime].value[x] only time  
 
+Extension: DeliveryMethod
+Id: delivery-method
+Title: "Delivery Method"
+Description: "An extension describing the service delivery method"
+* value[x] 0..0
+* extension contains
+   type 1..1 
+* extension[type].value[x] only CodeableConcept 
+* extension[type].value[x] from DeliveryMethodVS
+* extension[type].value[x] 1..1
+
 Extension: EndpointUsecase
 Id: endpoint-usecase
 Title: "Endpoint Usecase"
@@ -73,18 +84,12 @@ Description: "New Patients indicates whether new patients are being accepted in 
 * value[x] 0..0
 * extension contains
    acceptingPatients  1..1 MS and
-   fromNetwork 0..1 MS 
-* extension[acceptingPatients].value[x] only boolean
+   fromNetwork 0..1 MS  and
+   characteristics 0..1 MS 
+* extension[acceptingPatients].value[x] only CodeableConcept
+* extension[acceptingPatients].value[x] from AcceptingPatientsVS (required)
 * extension[fromNetwork].value[x] only Reference(PlannetNetwork)
-
-Extension: NewPatientProfile
-Id: newpatientprofile
-Title: "New Patients Profile"
-Description: "An extension to provide information about the types of new patients a practitioner (through a role) or location accepts.
-
-            For example, a pediatric provider may only accept children up to a certain age."
-* value[x] 1..1 MS
-* value[x] only string 
+* extension[characteristics].value[x] only string
 
 Extension: OrgDescription
 Id: org-description

@@ -1,0 +1,1607 @@
+{
+    "id": "davinci-pdex-plan-net",
+    "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2 id=\"title\">Davinci Pdex Plan Net CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.0</li><li>Supported formats: xml, json</li><li>Published: 2020-06-10</li><li>Published by: HL7 International - Infrastructure and Messaging Work Group</li></ul><p><p>This Section describes the expected capabilities of the Plan-Net Server actor which is responsible for providing responses to the queries submitted by the Plan-Net Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Plan-Net Servers are defined. Systems implementing this capability statement should meet the [CMS FInal Rule requirement for provider directory access].  Plan-Net  Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p></p><h3 id=\"behavior\">FHIR RESTful Capabilities</h3><p>The Plan-Net  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:\n<ul><li>(Status 400): invalid parameter</li><li>(Status 401/4xx): unauthorized request</li><li>(Status 403): insufficient scope</li><li>(Status 404): unknown resource</li><li>(Status 410): deleted resource.</li></ul>\n</li><li>Support json source formats for all Plan-Net interactions.</li></ol><p>The Plan-Net  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all Plan-Net  interactions.</li><li>Identify the Plan-Net  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li></ol><p id=\"security\"><strong>Security:</strong></p><ol><li>See the <a href=\"security.html\">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><p><strong>Summary of System Wide Interactions</strong></p><li><strong>MAY</strong> support the\t<code>transaction</code> interaction.</li><li><strong>MAY</strong> support the\t<code>batch</code> interaction.</li><li><strong>MAY</strong> support the\t<code>search-system</code> interaction.</li><li><strong>MAY</strong> support the\t<code>history-system</code> interaction.</li><h3 class=\"no_toc\" id=\"resource--details\">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class=\"grid\"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href=\"#endpoint\">Endpoint</a></td><td><a href=\"StructureDefinition-plannet-Endpoint.html\">Plan-Net Endpoint</a></td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tmanagingOrganization\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\tEndpoint:managingOrganization\n\t\t\t\t\t\t</td><td>\n              \n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#healthcareservice\">HealthcareService</a></td><td><a href=\"StructureDefinition-plannet-HealthcareService.html\">Plan-Net HealthcareService</a></td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tlocation, coverageArea, providedBy, name, category, type, specialty\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\tHealthcareService:location,  HealthcareService:coverageArea,  HealthcareService:endpoint\n\t\t\t\t\t\t</td><td>\n              \n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#insuranceplan\">InsurancePlan</a></td><td><a href=\"StructureDefinition-plannet-InsurancePlan.html\">Plan-Net InsurancePlan</a></td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tadministeredBy, ownedBy, network, coverage.benefit.type, coverage.type, name, plan.identifier, plan.type\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\tInsurancePlan:administeredBy,  InsurancePlan:ownedBy,  insurancePlan:coverageArea,  InsurancePlan:plan.network,  InsurancePlan:plan.coverageArea,  InsurancePlan.endpoint\n\t\t\t\t\t\t</td><td>\n              insurancePlan:plan.network\n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#location\">Location</a></td><td><a href=\"StructureDefinition-plannet-Location.html\">Plan-Net Location</a></td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tpartOf, managingOrganization, address, near\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\tLocation:endpoint,  Location:managingOrganization,  Location.partOf\n\t\t\t\t\t\t</td><td>\n              Location:managingOrganization,  Location.partOf\n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#organization\">Organization</a></td><td><a href=\"StructureDefinition-plannet-Network.html\">Plan-Net Network</a>, \n\n\t\t\t\t\t\t<a href=\"StructureDefinition-plannet-Organization.html\">Plan-Net Organization</a></td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tpart of, part of, address-city, address-country, address, name, type\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\tOrganization.partof,  Organization.endpoint\n\t\t\t\t\t\t</td><td>\n              Organization:part of\n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#organization\">Organization</a></td><td><a href=\"StructureDefinition-plannet-Network.html\">Plan-Net Network</a>, \n\n\t\t\t\t\t\t<a href=\"StructureDefinition-plannet-Organization.html\">Plan-Net Organization</a></td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tpart of, part of, address-city, address-country, address, name, type\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n              \n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#organizationaffiliation\">OrganizationAffiliation</a></td><td><a href=\"StructureDefinition-plannet-OrganizationAffiliation.html\">Plan-Net OrganizationAffiliation</a></td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tprimaryOrganization, participatingOrganization, location, healthcareService, network , code, specialty\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\tOrganizationAffiliation:primaryOrganization,  OrganizationAffiliation:participatingOrganization,  OrganizationAffiliation.location,  OrganizationAffiliation:healthcareService,  OrganizationAffiliation:endpoint\n\t\t\t\t\t\t</td><td>\n              OrganizationAffiliation:primaryOrganization,  OrganizationAffiliation:participatingOrganization,  OrganizationAffiliation.location,  OrganizationAffiliation:healthcareService\n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#practitioner\">Practitioner</a></td><td><a href=\"StructureDefinition-plannet-Practitioner.html\">Plan-Net Practitioner</a></td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tname\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\tPractitioner:endpoint\n\t\t\t\t\t\t</td><td>\n              \n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#practitionerrole\">PractitionerRole</a></td><td><a href=\"StructureDefinition-plannet-PractitionerRole.html\">Plan-Net PractitionerRole</a></td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tpractitioner, organization, location, healthcareService, network , role, specialty\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\tPractitionerRole:practitioner,  PractitionerRole:organization,  PractitionerRole:location,  PractitionerRole:network,  PractitionerRole:healthcareservice,  PractitionerRole:network,  PractitionerRole:endpoint\n\t\t\t\t\t\t</td><td>\n              PractitionerRole:practitioner,  PractitionerRole:organization,  PractitionerRole:location,  PractitionerRole:network,  PractitionerRole:healthcareservice,  PractitionerRole:network\n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr></tbody></table><br></br><h4 class=\"no_toc\" id=\"endpoint\">Endpoint</h4><p>Conformance Expectation:\t<strong>SHALL</strong></p><p>Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"StructureDefinition-plannet-Endpoint.html\">Plan-Net Endpoint</a>\n\t\t\t\t\n\t\t\t\t</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>search-type</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>read</code>.</li><li><strong>SHOULD</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>vread</code>.</li><li><strong>MAY</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>create</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-instance</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-type</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of returning a Endpoint resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/Endpoint/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><li>\n\t\t\t\t\tA Server <strong>SHOULD</strong> be capable of supporting the following _includes:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\n\t\t\t\t\t\tEndpoint:managingOrganization - <code class=\"highlighter-rouge\">GET [base]/Endpoint?[parameter=value]&amp;_include=Endpoint:managingOrganization</code><br></br>\n\t\t\t\t\t\n\t\t\t\t</li><br></br><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href=\"\">managingOrganization</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Endpoint?managingOrganization=[managingOrganization]</code></td></tr></tbody></table><hr></hr><h4 class=\"no_toc\" id=\"healthcareservice\">HealthcareService</h4><p>Conformance Expectation:\t<strong>SHALL</strong></p><p>Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"StructureDefinition-plannet-HealthcareService.html\">Plan-Net HealthcareService</a>\n\t\t\t\t\n\t\t\t\t</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>search-type</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>read</code>.</li><li><strong>SHOULD</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>vread</code>.</li><li><strong>MAY</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>create</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>update</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>patch</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>delete</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-instance</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-type</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of returning a HealthcareService resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/HealthcareService/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><li>\n\t\t\t\t\tA Server <strong>SHOULD</strong> be capable of supporting the following _includes:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\n\t\t\t\t\t\tHealthcareService:location - <code class=\"highlighter-rouge\">GET [base]/HealthcareService?[parameter=value]&amp;_include=HealthcareService:location</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t HealthcareService:coverageArea - <code class=\"highlighter-rouge\">GET [base]/HealthcareService?[parameter=value]&amp;_include= HealthcareService:coverageArea</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t HealthcareService:endpoint - <code class=\"highlighter-rouge\">GET [base]/HealthcareService?[parameter=value]&amp;_include= HealthcareService:endpoint</code><br></br>\n\t\t\t\t\t\n\t\t\t\t</li><br></br><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href=\"\">location</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/HealthcareService?location=[location]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">coverageArea</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/HealthcareService?coverageArea=[coverageArea]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">providedBy</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/HealthcareService?providedBy=[providedBy]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">name</a></td><td>\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/HealthcareService?name=[name]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">category</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/HealthcareService?category=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">type</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/HealthcareService?type=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">specialty</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/HealthcareService?specialty=[system]|[code]</code></td></tr></tbody></table><hr></hr><h4 class=\"no_toc\" id=\"insuranceplan\">InsurancePlan</h4><p>Conformance Expectation:\t<strong>SHALL</strong></p><p>Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"StructureDefinition-plannet-InsurancePlan.html\">Plan-Net InsurancePlan</a>\n\t\t\t\t\n\t\t\t\t</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>search-type</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>read</code>.</li><li><strong>SHOULD</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>vread</code>.</li><li><strong>MAY</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>create</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>update</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>patch</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>delete</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-instance</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-type</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of returning a InsurancePlan resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/InsurancePlan/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><li>\n\t\t\t\t\tA Server <strong>SHOULD</strong> be capable of supporting the following _includes:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\n\t\t\t\t\t\tInsurancePlan:administeredBy - <code class=\"highlighter-rouge\">GET [base]/InsurancePlan?[parameter=value]&amp;_include=InsurancePlan:administeredBy</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t InsurancePlan:ownedBy - <code class=\"highlighter-rouge\">GET [base]/InsurancePlan?[parameter=value]&amp;_include= InsurancePlan:ownedBy</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t insurancePlan:coverageArea - <code class=\"highlighter-rouge\">GET [base]/InsurancePlan?[parameter=value]&amp;_include= insurancePlan:coverageArea</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t InsurancePlan:plan.network - <code class=\"highlighter-rouge\">GET [base]/InsurancePlan?[parameter=value]&amp;_include= InsurancePlan:plan.network</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t InsurancePlan:plan.coverageArea - <code class=\"highlighter-rouge\">GET [base]/InsurancePlan?[parameter=value]&amp;_include= InsurancePlan:plan.coverageArea</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t InsurancePlan.endpoint - <code class=\"highlighter-rouge\">GET [base]/InsurancePlan?[parameter=value]&amp;_include= InsurancePlan.endpoint</code><br></br>\n\t\t\t\t\t\n\t\t\t\t</li><br></br><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of supporting the following _revincludes:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\n\t\t\t\t\t\tinsurancePlan:plan.network - <code class=\"highlighter-rouge\">GET [base]/InsurancePlan?[parameter=value]&amp;_revinclude=insurancePlan:plan.network</code><br></br>\n\t\t\t\t\t\n\t\t\t\t</li><br></br></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href=\"\">administeredBy</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/InsurancePlan?administeredBy=[administeredBy]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">ownedBy</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/InsurancePlan?ownedBy=[ownedBy]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">network</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/InsurancePlan?network=[network]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">coverage.benefit.type</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/InsurancePlan?coverage.benefit.type=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">coverage.type</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/InsurancePlan?coverage.type=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">name</a></td><td>\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/InsurancePlan?name=[name]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">plan.identifier</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/InsurancePlan?plan.identifier=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">plan.type</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/InsurancePlan?plan.type=[system]|[code]</code></td></tr></tbody></table><hr></hr><h4 class=\"no_toc\" id=\"location\">Location</h4><p>Conformance Expectation:\t<strong>SHALL</strong></p><p>Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"StructureDefinition-plannet-Location.html\">Plan-Net Location</a>\n\t\t\t\t\n\t\t\t\t</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>search-type</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>read</code>.</li><li><strong>SHOULD</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>vread</code>.</li><li><strong>MAY</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>create</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>update</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>patch</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>delete</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-instance</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-type</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of returning a Location resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/Location/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><li>\n\t\t\t\t\tA Server <strong>SHOULD</strong> be capable of supporting the following _includes:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\n\t\t\t\t\t\tLocation:endpoint - <code class=\"highlighter-rouge\">GET [base]/Location?[parameter=value]&amp;_include=Location:endpoint</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t Location:managingOrganization - <code class=\"highlighter-rouge\">GET [base]/Location?[parameter=value]&amp;_include= Location:managingOrganization</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t Location.partOf - <code class=\"highlighter-rouge\">GET [base]/Location?[parameter=value]&amp;_include= Location.partOf</code><br></br>\n\t\t\t\t\t\n\t\t\t\t</li><br></br><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of supporting the following _revincludes:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\n\t\t\t\t\t\tLocation:managingOrganization - <code class=\"highlighter-rouge\">GET [base]/Location?[parameter=value]&amp;_revinclude=Location:managingOrganization</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t Location.partOf - <code class=\"highlighter-rouge\">GET [base]/Location?[parameter=value]&amp;_revinclude= Location.partOf</code><br></br>\n\t\t\t\t\t\n\t\t\t\t</li><br></br></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href=\"\">partOf</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Location?partOf=[partOf]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">managingOrganization</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Location?managingOrganization=[managingOrganization]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">address</a></td><td>\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Location?address=[address]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">near</a></td><td>\n\t\t\t\t\t\t\tspecial\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Location?near=[near]</code></td></tr></tbody></table><hr></hr><h4 class=\"no_toc\" id=\"organization\">Organization</h4><p>Conformance Expectation:\t<strong>SHALL</strong></p><p>Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"StructureDefinition-plannet-Network.html\">Plan-Net Network</a>, \n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"StructureDefinition-plannet-Organization.html\">Plan-Net Organization</a>\n\t\t\t\t\n\t\t\t\t</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>search-type</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>read</code>.</li><li><strong>SHOULD</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>vread</code>.</li><li><strong>MAY</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>create</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>update</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>patch</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>delete</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-instance</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-type</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of returning a Organization resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/Organization/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><li>\n\t\t\t\t\tA Server <strong>SHOULD</strong> be capable of supporting the following _includes:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\n\t\t\t\t\t\tOrganization.partof - <code class=\"highlighter-rouge\">GET [base]/Organization?[parameter=value]&amp;_include=Organization.partof</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t Organization.endpoint - <code class=\"highlighter-rouge\">GET [base]/Organization?[parameter=value]&amp;_include= Organization.endpoint</code><br></br>\n\t\t\t\t\t\n\t\t\t\t</li><br></br><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of supporting the following _revincludes:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\n\t\t\t\t\t\tOrganization:part of - <code class=\"highlighter-rouge\">GET [base]/Organization?[parameter=value]&amp;_revinclude=Organization:part of</code><br></br>\n\t\t\t\t\t\n\t\t\t\t</li><br></br></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href=\"\">part of</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?part of=[part of]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">part of</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?part of=[part of]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">address-city</a></td><td>\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?address-city=[address-city]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">address-country</a></td><td>\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?address-country=[address-country]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">address</a></td><td>\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?address=[address]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">name</a></td><td>\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?name=[name]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">type</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?type=[system]|[code]</code></td></tr></tbody></table><hr></hr><h4 class=\"no_toc\" id=\"organization\">Organization</h4><p>Conformance Expectation:\t<strong>SHALL</strong></p><p>Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"StructureDefinition-plannet-Network.html\">Plan-Net Network</a>, \n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"StructureDefinition-plannet-Organization.html\">Plan-Net Organization</a>\n\t\t\t\t\n\t\t\t\t</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>search-type</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>read</code>.</li><li><strong>SHOULD</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>vread</code>.</li><li><strong>MAY</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>create</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>update</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>patch</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>delete</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-instance</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-type</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of returning a Organization resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/Organization/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href=\"\">part of</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?part of=[part of]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">part of</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?part of=[part of]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">address-city</a></td><td>\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?address-city=[address-city]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">address-country</a></td><td>\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?address-country=[address-country]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">address</a></td><td>\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?address=[address]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">name</a></td><td>\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?name=[name]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">type</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Organization?type=[system]|[code]</code></td></tr></tbody></table><hr></hr><h4 class=\"no_toc\" id=\"organizationaffiliation\">OrganizationAffiliation</h4><p>Conformance Expectation:\t<strong>SHALL</strong></p><p>Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"StructureDefinition-plannet-OrganizationAffiliation.html\">Plan-Net OrganizationAffiliation</a>\n\t\t\t\t\n\t\t\t\t</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>search-type</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>read</code>.</li><li><strong>SHOULD</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>vread</code>.</li><li><strong>MAY</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>create</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>update</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>patch</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>delete</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-instance</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-type</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of returning a OrganizationAffiliation resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><li>\n\t\t\t\t\tA Server <strong>SHOULD</strong> be capable of supporting the following _includes:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\n\t\t\t\t\t\tOrganizationAffiliation:primaryOrganization - <code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_include=OrganizationAffiliation:primaryOrganization</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t OrganizationAffiliation:participatingOrganization - <code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_include= OrganizationAffiliation:participatingOrganization</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t OrganizationAffiliation.location - <code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_include= OrganizationAffiliation.location</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t OrganizationAffiliation:healthcareService - <code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_include= OrganizationAffiliation:healthcareService</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t OrganizationAffiliation:endpoint - <code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_include= OrganizationAffiliation:endpoint</code><br></br>\n\t\t\t\t\t\n\t\t\t\t</li><br></br><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of supporting the following _revincludes:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\n\t\t\t\t\t\tOrganizationAffiliation:primaryOrganization - <code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_revinclude=OrganizationAffiliation:primaryOrganization</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t OrganizationAffiliation:participatingOrganization - <code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_revinclude= OrganizationAffiliation:participatingOrganization</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t OrganizationAffiliation.location - <code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_revinclude= OrganizationAffiliation.location</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t OrganizationAffiliation:healthcareService - <code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_revinclude= OrganizationAffiliation:healthcareService</code><br></br>\n\t\t\t\t\t\n\t\t\t\t</li><br></br></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href=\"\">primaryOrganization</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?primaryOrganization=[primaryOrganization]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">participatingOrganization</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?participatingOrganization=[participatingOrganization]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">location</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?location=[location]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">healthcareService</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?healthcareService=[healthcareService]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">network </a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?network =[network ]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">code</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?code=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">specialty</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/OrganizationAffiliation?specialty=[system]|[code]</code></td></tr></tbody></table><hr></hr><h4 class=\"no_toc\" id=\"practitioner\">Practitioner</h4><p>Conformance Expectation:\t<strong>SHALL</strong></p><p>Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"StructureDefinition-plannet-Practitioner.html\">Plan-Net Practitioner</a>\n\t\t\t\t\n\t\t\t\t</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>search-type</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>read</code>.</li><li><strong>SHOULD</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>vread</code>.</li><li><strong>MAY</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>create</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>update</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>patch</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>delete</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-instance</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-type</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of returning a Practitioner resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/Practitioner/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><li>\n\t\t\t\t\tA Server <strong>SHOULD</strong> be capable of supporting the following _includes:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\n\t\t\t\t\t\tPractitioner:endpoint - <code class=\"highlighter-rouge\">GET [base]/Practitioner?[parameter=value]&amp;_include=Practitioner:endpoint</code><br></br>\n\t\t\t\t\t\n\t\t\t\t</li><br></br><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href=\"\">name</a></td><td>\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Practitioner?name=[name]</code></td></tr></tbody></table><hr></hr><h4 class=\"no_toc\" id=\"practitionerrole\">PractitionerRole</h4><p>Conformance Expectation:\t<strong>SHALL</strong></p><p>Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"StructureDefinition-plannet-PractitionerRole.html\">Plan-Net PractitionerRole</a>\n\t\t\t\t\n\t\t\t\t</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>search-type</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>read</code>.</li><li><strong>SHOULD</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>vread</code>.</li><li><strong>MAY</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>create</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>update</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>patch</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>delete</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-instance</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>history-type</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of returning a PractitionerRole resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/PractitionerRole/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><li>\n\t\t\t\t\tA Server <strong>SHOULD</strong> be capable of supporting the following _includes:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\n\t\t\t\t\t\tPractitionerRole:practitioner - <code class=\"highlighter-rouge\">GET [base]/PractitionerRole?[parameter=value]&amp;_include=PractitionerRole:practitioner</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t PractitionerRole:organization - <code class=\"highlighter-rouge\">GET [base]/PractitionerRole?[parameter=value]&amp;_include= PractitionerRole:organization</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t PractitionerRole:location - <code class=\"highlighter-rouge\">GET [base]/PractitionerRole?[parameter=value]&amp;_include= PractitionerRole:location</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t PractitionerRole:network - <code class=\"highlighter-rouge\">GET [base]/PractitionerRole?[parameter=value]&amp;_include= PractitionerRole:network</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t PractitionerRole:healthcareservice - <code class=\"highlighter-rouge\">GET [base]/PractitionerRole?[parameter=value]&amp;_include= PractitionerRole:healthcareservice</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t PractitionerRole:network - <code class=\"highlighter-rouge\">GET [base]/PractitionerRole?[parameter=value]&amp;_include= PractitionerRole:network</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t PractitionerRole:endpoint - <code class=\"highlighter-rouge\">GET [base]/PractitionerRole?[parameter=value]&amp;_include= PractitionerRole:endpoint</code><br></br>\n\t\t\t\t\t\n\t\t\t\t</li><br></br><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --><li>\n\t\t\t\t\tA Server <strong>SHALL</strong> be capable of supporting the following _revincludes:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\n\t\t\t\t\t\tPractitionerRole:practitioner - <code class=\"highlighter-rouge\">GET [base]/PractitionerRole?[parameter=value]&amp;_revinclude=PractitionerRole:practitioner</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t PractitionerRole:organization - <code class=\"highlighter-rouge\">GET [base]/PractitionerRole?[parameter=value]&amp;_revinclude= PractitionerRole:organization</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t PractitionerRole:location - <code class=\"highlighter-rouge\">GET [base]/PractitionerRole?[parameter=value]&amp;_revinclude= PractitionerRole:location</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t PractitionerRole:network - <code class=\"highlighter-rouge\">GET [base]/PractitionerRole?[parameter=value]&amp;_revinclude= PractitionerRole:network</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t PractitionerRole:healthcareservice - <code class=\"highlighter-rouge\">GET [base]/PractitionerRole?[parameter=value]&amp;_revinclude= PractitionerRole:healthcareservice</code><br></br>\n\t\t\t\t\t\n\t\t\t\t\t\t PractitionerRole:network - <code class=\"highlighter-rouge\">GET [base]/PractitionerRole?[parameter=value]&amp;_revinclude= PractitionerRole:network</code><br></br>\n\t\t\t\t\t\n\t\t\t\t</li><br></br></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href=\"\">practitioner</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/PractitionerRole?practitioner=[practitioner]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">organization</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/PractitionerRole?organization=[organization]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">location</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/PractitionerRole?location=[location]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">healthcareService</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/PractitionerRole?healthcareService=[healthcareService]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">network </a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/PractitionerRole?network =[network ]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">role</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/PractitionerRole?role=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"\">specialty</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/PractitionerRole?specialty=[system]|[code]</code></td></tr></tbody></table><hr></hr><br></br></div>",
+        "status": "generated"
+    },
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://www.hl7.org/Special/committees/inm/index.cfm"
+                }
+            ]
+        }
+    ],
+    "date": "2020-06-10",
+    "description": "This Section describes the expected capabilities of the Plan-Net Server actor which is responsible for providing responses to the queries submitted by the Plan-Net Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Plan-Net Servers are defined. Systems implementing this capability statement should meet the [CMS FInal Rule requirement for provider directory access].  Plan-Net  Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
+    "experimental": false,
+    "fhirVersion": "4.0.0",
+    "format": [
+        "xml",
+        "json"
+    ],
+    "implementationGuide": [
+        "http://hl7.org/fhir/us/davinci-pdex-plan-net"
+    ],
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "code": "US",
+                    "system": "urn:iso:std:iso:3166"
+                }
+            ]
+        }
+    ],
+    "kind": "requirements",
+    "name": "DavinciPdexPlanNetCapabilityStatement",
+    "patchFormat": [
+        "application/json-patch+json"
+    ],
+    "publisher": "HL7 International - Infrastructure and Messaging Work Group",
+    "rest": [
+        {
+            "documentation": "The Plan-Net  Server **SHALL**:\n\n1. Support all profiles defined in this Implementation Guide..\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n1. Support json source formats for all Plan-Net interactions.\n\nThe Plan-Net  Server **SHOULD**:\n\n1. Support xml source formats for all Plan-Net  interactions.\n1. Identify the Plan-Net  profiles supported as part of the FHIR `meta.profile` attribute for each instance.",
+            "interaction": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "MAY"
+                        }
+                    ],
+                    "code": "transaction"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "MAY"
+                        }
+                    ],
+                    "code": "batch"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "MAY"
+                        }
+                    ],
+                    "code": "search-system"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "MAY"
+                        }
+                    ],
+                    "code": "history-system"
+                }
+            ],
+            "mode": "server",
+            "resource": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHALL"
+                        }
+                    ],
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD NOT"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD NOT"
+                                }
+                            ],
+                            "code": "patch"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD NOT"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "searchInclude": [
+                        "Endpoint:managingOrganization"
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-endpoint-managingOrganization",
+                            "name": "managingOrganization",
+                            "type": "reference"
+                        }
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"
+                    ],
+                    "type": "Endpoint"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHALL"
+                        }
+                    ],
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "searchInclude": [
+                        "HealthcareService:location",
+                        " HealthcareService:coverageArea",
+                        " HealthcareService:endpoint"
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-healthcareservice-location",
+                            "name": "location",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-healthcareservice-coverageArea",
+                            "name": "coverageArea",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-healthcareservice-providedBy",
+                            "name": "providedBy",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-healthcareservice-name",
+                            "name": "name",
+                            "type": "string"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-healthcareservice-category",
+                            "name": "category",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-healthcareservice-type",
+                            "name": "type",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-healthcareservice-specialty",
+                            "name": "specialty",
+                            "type": "token"
+                        }
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
+                    ],
+                    "type": "HealthcareService"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHALL"
+                        }
+                    ],
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "searchInclude": [
+                        "InsurancePlan:administeredBy",
+                        " InsurancePlan:ownedBy",
+                        " insurancePlan:coverageArea",
+                        " InsurancePlan:plan.network",
+                        " InsurancePlan:plan.coverageArea",
+                        " InsurancePlan.endpoint"
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-insuranceplan-administeredBy",
+                            "name": "administeredBy",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-insuranceplan-ownedBy",
+                            "name": "ownedBy",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-insuranceplan-network",
+                            "name": "network",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-insuranceplan-coverage.benefit.type",
+                            "name": "coverage.benefit.type",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-insuranceplan-coverage.type",
+                            "name": "coverage.type",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-insuranceplan-name",
+                            "name": "name",
+                            "type": "string"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-insuranceplan-plan.identifier",
+                            "name": "plan.identifier",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-insuranceplan-plan.type",
+                            "name": "plan.type",
+                            "type": "token"
+                        }
+                    ],
+                    "searchRevInclude": [
+                        "insurancePlan:plan.network"
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan"
+                    ],
+                    "type": "InsurancePlan"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHALL"
+                        }
+                    ],
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "searchInclude": [
+                        "Location:endpoint",
+                        " Location:managingOrganization",
+                        " Location.partOf"
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-location-partOf",
+                            "name": "partOf",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-location-managingOrganization",
+                            "name": "managingOrganization",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-location-address",
+                            "name": "address",
+                            "type": "string"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-location-near",
+                            "name": "near",
+                            "type": "special"
+                        }
+                    ],
+                    "searchRevInclude": [
+                        "Location:managingOrganization",
+                        " Location.partOf"
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+                    ],
+                    "type": "Location"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHALL"
+                        }
+                    ],
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "searchInclude": [
+                        "Organization.partof",
+                        " Organization.endpoint"
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-part of",
+                            "name": "part of",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-part of",
+                            "name": "part of",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-address-city",
+                            "name": "address-city",
+                            "type": "string"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-address-country",
+                            "name": "address-country",
+                            "type": "string"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-address",
+                            "name": "address",
+                            "type": "string"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-name",
+                            "name": "name",
+                            "type": "string"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-type",
+                            "name": "type",
+                            "type": "token"
+                        }
+                    ],
+                    "searchRevInclude": [
+                        "Organization:part of"
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network",
+                        "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+                    ],
+                    "type": "Organization"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHALL"
+                        }
+                    ],
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-part of",
+                            "name": "part of",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-part of",
+                            "name": "part of",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-address-city",
+                            "name": "address-city",
+                            "type": "string"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-address-country",
+                            "name": "address-country",
+                            "type": "string"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-address",
+                            "name": "address",
+                            "type": "string"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-name",
+                            "name": "name",
+                            "type": "string"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organization-type",
+                            "name": "type",
+                            "type": "token"
+                        }
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network",
+                        "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+                    ],
+                    "type": "Organization"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHALL"
+                        }
+                    ],
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "searchInclude": [
+                        "OrganizationAffiliation:primaryOrganization",
+                        " OrganizationAffiliation:participatingOrganization",
+                        " OrganizationAffiliation.location",
+                        " OrganizationAffiliation:healthcareService",
+                        " OrganizationAffiliation:endpoint"
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organizationaffiliation-primaryOrganization",
+                            "name": "primaryOrganization",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organizationaffiliation-participatingOrganization",
+                            "name": "participatingOrganization",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organizationaffiliation-location",
+                            "name": "location",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organizationaffiliation-healthcareService",
+                            "name": "healthcareService",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organizationaffiliation-network ",
+                            "name": "network ",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organizationaffiliation-code",
+                            "name": "code",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-organizationaffiliation-specialty",
+                            "name": "specialty",
+                            "type": "token"
+                        }
+                    ],
+                    "searchRevInclude": [
+                        "OrganizationAffiliation:primaryOrganization",
+                        " OrganizationAffiliation:participatingOrganization",
+                        " OrganizationAffiliation.location",
+                        " OrganizationAffiliation:healthcareService"
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+                    ],
+                    "type": "OrganizationAffiliation"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHALL"
+                        }
+                    ],
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "searchInclude": [
+                        "Practitioner:endpoint"
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-practitioner-name",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"
+                    ],
+                    "type": "Practitioner"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHALL"
+                        }
+                    ],
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "searchInclude": [
+                        "PractitionerRole:practitioner",
+                        " PractitionerRole:organization",
+                        " PractitionerRole:location",
+                        " PractitionerRole:network",
+                        " PractitionerRole:healthcareservice",
+                        " PractitionerRole:network",
+                        " PractitionerRole:endpoint"
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-practitionerrole-practitioner",
+                            "name": "practitioner",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-practitionerrole-organization",
+                            "name": "organization",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-practitionerrole-location",
+                            "name": "location",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-practitionerrole-healthcareService",
+                            "name": "healthcareService",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-practitionerrole-network ",
+                            "name": "network ",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-practitionerrole-role",
+                            "name": "role",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/davinci-practitionerrole-specialty",
+                            "name": "specialty",
+                            "type": "token"
+                        }
+                    ],
+                    "searchRevInclude": [
+                        "PractitionerRole:practitioner",
+                        " PractitionerRole:organization",
+                        " PractitionerRole:location",
+                        " PractitionerRole:network",
+                        " PractitionerRole:healthcareservice",
+                        " PractitionerRole:network"
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+                    ],
+                    "type": "PractitionerRole"
+                }
+            ],
+            "security": {
+                "description": "1. See the [General Security Considerations](security.html) section for requirements and recommendations.\n1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."
+            }
+        }
+    ],
+    "status": "active",
+    "title": "Davinci Pdex Plan Net CapabilityStatement",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CapabilityStatement/davinci-pdex-plan-net",
+    "version": "1.0.0",
+    "resourceType": "CapabilityStatement"
+}
