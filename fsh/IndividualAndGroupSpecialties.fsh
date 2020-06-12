@@ -1,6 +1,6 @@
 ValueSet: IndividualAndGroupSpecialtiesVS
 Title: "Individual and Group Specialties"
-Description:  "Individual and Group Specialties from NUCC Provider Taxonomy."
+Description:  "Individual and Group Specialties from National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."
 * $NUCCProviderTaxonomy#202C00000X "Independent Medical Examiner"
 * $NUCCProviderTaxonomy#202K00000X "Phlebology"
 * $NUCCProviderTaxonomy#204C00000X "Sports Medicine (Neuromusculoskeletal Medicine)"

@@ -1,6 +1,6 @@
 ValueSet: NonIndividualSpecialtiesVS
 Title: "Non-Individual Specialties"
-Description:  "Non-Individual Specialties from NUCC Provider Taxonomy."
+Description:  "Non-Individual Specialties from National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."
 * $NUCCProviderTaxonomy#251300000X "Local Education Agency (LEA)"
 * $NUCCProviderTaxonomy#251B00000X "Case Management Agency"
 * $NUCCProviderTaxonomy#251C00000X "Developmentally Disabled Services Day Training Agency"
