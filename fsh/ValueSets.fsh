@@ -1,4 +1,17 @@
 
+CodeSystem: AcceptingPatientsCS
+Title: "Accepting Patients Codes"
+Description: "Codes for acceptance of new patients"
+* #no	"Not Accepting" "Not accepting patients"
+* #yes	"Accepting" "Accepting patients"
+* #existing	"Accepting existing patients" "Accepting existing patients"
+* #existingplusfamily	"Accepting existing patients and their families" "Accepting existing patients and members of their families"
+
+ValueSet: AcceptingPatientsVS
+Title: "Accepting Patients Codes"
+Description: "Codes for acceptance of new patients"
+* codes from system AcceptingPatientsCS
+
 CodeSystem: AccessibilityCS
 Title: "Accessibility"
 Description: "Codes for documenting general categories of accommodations available."
@@ -16,6 +29,16 @@ Title: "Accessibility"
 Description: "Codes for documenting general categories of accommodations available. "
 * codes from system AccessibilityCS
 
+CodeSystem: DeliveryMethodCS
+Title: "Delivery Methods"
+Description: "Codes for documenting healthcare service delivery methods."
+* #virtual	"Virtual" "Delivery not requiring provider and patient to be physically co-located, such as tele-medicine"
+* #physical	"Physical" "Traditional delivery requiring provider and patient to be physically co-located."
+
+ValueSet: DeliveryMethodVS
+Title: "Delivery Methods"
+Description: "Codes for documenting delivery methods. "
+* codes from system DeliveryMethodCS
 
 CodeSystem:  EndpointConnectionTypeCS
   Title: "Endpoint Connection Types (additional)"

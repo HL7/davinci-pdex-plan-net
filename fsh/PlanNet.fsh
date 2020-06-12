@@ -49,8 +49,10 @@ Title:          "Plan-net HealthcareService"
 Description:    "The HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
 * meta.lastUpdated 1..1
 * extension contains
-    NewPatients named newpatients 0..* MS
+    NewPatients named newpatients 0..* MS and
+    DeliveryMethod named deliverymethod 1..* MS 
 * extension[newpatients] ^short = "New Patients"
+* extension[deliverymethod] ^short = "Delivery Method"
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -170,9 +172,11 @@ Description:    "A Location is the physical place where healthcare services are 
 * meta.lastUpdated 1..1
 * extension contains
     NewPatients named newpatients 0..* MS and
-    Accessibility named accessibility 0..* MS and 
-    NewPatientProfile named newpatientprofile 0..* MS
+    Accessibility named accessibility 0..* MS and
+    $R4GeoJSONExtension named region 0..1 MS
 * extension[newpatients] ^short = "New Patients"
+* extension[accessibility] ^short = "Accessibility"
+* extension[region] ^short = "Associated Region (GeoJSON)"
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -432,7 +436,6 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * obeys practitioner-or-organization-or-healthcareservice-or-location 
 * extension contains
    NewPatients named newpatients 0..* MS and
-   NewPatientProfile named newpatientprofile 0..* MS and
    NetworkReference named network-reference 0..* MS and
    Qualification named qualification 0..* 
 * extension[qualification].extension[code].valueCodeableConcept from IndividualSpecialtyAndDegreeLicenseCertificateVS (required)

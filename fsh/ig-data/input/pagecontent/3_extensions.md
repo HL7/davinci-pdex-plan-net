@@ -28,6 +28,10 @@
            <td><a href="StructureDefinition-contactpoint-availabletime.html">Contactpoint Available Time</a></td>
           <td>{% capture md_text %}An extension representing the times a contact point is available{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
+          <tr>
+          <td><a href="StructureDefinition-delivery-method.html">Delivery Method</a></td>
+          <td>{% capture md_text %}Health Care service delivery method{% endcapture %}{{ md_text | markdownify }}</td>
+        </tr>
      <tr>
           <td><a href="StructureDefinition-endpoint-usecase.html">Endpoint Use Case</a></td>
           <td>{% capture md_text %}An enumeration of the specific use cases (service descriptions) supported by the endpoint{% endcapture %}{{ md_text | markdownify }}</td>

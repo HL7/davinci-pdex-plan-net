@@ -20,6 +20,7 @@ Alias:   $ConnectionTypeCS = http://terminology.hl7.org/CodeSystem/endpoint-conn
 Alias:   $MinValueSet = http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet
 Alias:   $DaysOfWeekVS  = http://hl7.org/fhir/ValueSet/days-of-week
 Alias:   $OrganizationRoleVS  = http://hl7.org/fhir/ValueSet/organization-role
+Alias:   $R4GeoJSONExtension = http://hl7.org/fhir/StructureDefinition/location-boundary-geojson
 
 // CodeSystem and ValueSet Aliases
 Alias:  $V3ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
