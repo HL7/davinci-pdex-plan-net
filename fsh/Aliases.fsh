@@ -25,7 +25,7 @@ Alias:   $R4GeoJSONExtension = http://hl7.org/fhir/StructureDefinition/location-
 // CodeSystem and ValueSet Aliases
 Alias:  $V3ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
 //Alias:  $PaymentTypology =  urn:oid:2.16.840.1.113883.3.221.5  
-Alias:  $NUCCProviderTaxonomy = http://hl7.org/fhir/ValueSet/provider-taxonomy
+Alias:  $NUCCProviderTaxonomy = http://www.nucc.org/taxonomy
 Alias:  $V2table0360v27CS = http://terminology.hl7.org/CodeSystem/v2-0360|2.7 
 
 

@@ -80,7 +80,7 @@ CodeSystem:  OrgTypeCS
 
 ValueSet: SpecialtiesVS
 Title: "Specialties"
-Description:  "Specialties value set based on National Uniform Claim Committee (NUCC) Provider Taxonomy Code Set."
+Description:  "Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set”."
 * codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from valueset NonIndividualSpecialtiesVS
 

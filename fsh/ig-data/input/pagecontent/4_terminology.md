@@ -50,7 +50,7 @@
       </tr>
          <tr>
         <td><a href="ValueSet-IndividualAndGroupSpecialtiesVS.html">IndividualAndGroupSpecialtiesVS</a></td>
-        <td>{% capture md_text %}-Individual Specialties value set based on National Uniform Claim Committee (NUCC) Provider Taxonomy Code Set. {% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}-Individual Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set”. {% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
          <tr>
         <td><a href="ValueSet-InsurancePlanTypeVS.html">Insurance Plan Type</a></td>
