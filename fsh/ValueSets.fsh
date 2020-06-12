@@ -51,13 +51,6 @@ CodeSystem:  EndpointPayloadTypeCS
   Title: "Endpoint Payload Types"
   Description:  "Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"
 * #NA "Not Applicable" "Not Applicable"
-
-CodeSystem:  OrgTypeCS
-  Title: "Organization Type."
-  Description:  "Codesystem for types of organizations found in provider directories."
-* #Prov "Provider" "A healthcare provider."
-* #PrvGrp "Provider Group" "A healthcare provider group"
-* #Payer "Payer" "A healthcare payer."
  
  CodeSystem: HealthcareServiceCategoryCS
  Title: "Healthcare Service Category"
