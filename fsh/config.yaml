@@ -1,0 +1,64 @@
+# ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
+# │  ACTION REQUIRED: REVIEW AND EDIT THIS FILE TO ENSURE IT ACCURATELY REFLECTS YOUR PROJECT!     │
+# │                                                                                                │
+# │  This file was generated from your existing project files and will be used for SUSHI           │
+# │  configuration from now on. You may delete your package.json as it is no longer needed.        │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+# ╭───────────────────ImplementationGuide-hl7.fhir.us.davinci-pdex-plan-net.json───────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7.fhir.us.davinci-pdex-plan-net
+canonical: http://hl7.org/fhir/us/davinci-pdex-plan-net
+version: 0.1.0
+name: DaVinciPDEXPlanNet
+title: DaVinci PDEX Plan Net
+status: active
+publisher:
+  name: HL7 Financial Management Working Group
+  url: http://www.hl7.org/Special/committees/fm/index.cfm
+  email: fm@lists.HL7.org
+description: Davinci PDEX Plan Net -- FSH version
+license: CC0-1.0
+fhirVersion: 4.0.1
+dependencies:
+  hl7.fhir.us.core: 3.1.0
+parameters:
+  show-inherited-invariants: false
+copyrightYear: 2020+
+releaseLabel: STU1
+
+# ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
+# │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+history:
+  current: http://build.fhir.org/ig/example/example-ig
+  0.0.1:
+    fhirversion: 4.0.1
+    date: 2099-01-01
+    desc: Initial STU ballot (Mmm yyyy Ballot)
+    path: http://example.org/fhir/STU1
+    status: ballot
+    sequence: STU 1
+    current: true
+
+# ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
+# │  To control the ig.ini using this config, uncomment and set the "template" property.           │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# template: hl7.davinci.template#current
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# menu:
+#   Home: index.html
+#   Implementation: implementation.html
+#   Profiles: profiles.html
+#   Extensions: extensions.html
+#   Terminology: terminology.html
+#   Examples: examples.html
+#   Downloads: downloads.html
+#   Search Parameters: searchParameters.html
+#   History: http://www.hl7.org/fhir/us/davinci-pdex-plan-net/history.cfml
