@@ -355,7 +355,7 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * network MS 
 * network only Reference (PlannetNetwork)
 * code MS
-* code from $OrganizationRoleVS  (extensible)
+* code from OrganizationAffiliationRoleVS  (extensible)
 * specialty MS
 * specialty from SpecialtiesVS (required)
 * location MS 
@@ -456,7 +456,8 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * organization only Reference(PlannetOrganization)         // 1..1 from USCore
 * practitioner 0..1  MS   // 1..1 from USCore
 * organization 0..1   MS  // 1..1 from USCore
-* code 1..1  MS  
+* code MS  
+* code from PractitionerRoleVS
 * specialty  MS
 * specialty from IndividualAndGroupSpecialtiesVS (required)
 * location only Reference(PlannetLocation)

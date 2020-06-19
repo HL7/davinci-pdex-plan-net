@@ -40,6 +40,20 @@ Title: "Delivery Methods"
 Description: "Codes for documenting delivery methods. "
 * codes from system DeliveryMethodCS
 
+CodeSystem: VirtualModalitiesCS
+Title: "Virtual Modalities"
+Description: "Codes for virtual service delivery modalities ."
+* #phone	"phone" "Voice Telephone"
+* #video	"video chat" "Video Chat"
+* #tdd	"TDD" "Telecommunications Device for the Deaf"
+* #sms	"SMS" "SMS Text Messaging"
+* #app  "App" "Mobile Application"
+
+ValueSet: VirtualModalitiesVS
+Title: "Virtual Modalities"
+Description: "Codes for virtual service delivery modalities ."
+* codes from system VirtualModalitiesCS
+
 CodeSystem:  EndpointConnectionTypeCS
   Title: "Endpoint Connection Types (additional)"
   Description:  "Extension codes for http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
@@ -73,7 +87,7 @@ CodeSystem:  EndpointPayloadTypeCS
 
 ValueSet: SpecialtiesVS
 Title: "Specialties"
-Description:  "Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set”."
+Description:  "Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."
 * codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from valueset NonIndividualSpecialtiesVS
 
@@ -81,17 +95,17 @@ ValueSet: SpecialtyAndDegreeLicenseCertificateVS
 Title: "Specialties, Degrees, Licenses, and Certificates"
 Description:  "Specialties and Degree License and Certificates"
 * codes from valueset SpecialtiesVS 
-* codes from valueset $V2table0360v27CS
+* codes from valueset $V2table0360VS
 
 ValueSet: IndividualSpecialtyAndDegreeLicenseCertificateVS
 Title: "Individual Specialties, Degrees, Licenses, and Certificates"
 * codes from valueset IndividualAndGroupSpecialtiesVS
-* codes from system $V2table0360v27CS
+* codes from valueset $V2table0360VS
 
 ValueSet: NonIndividualSpecialtyAndDegreeLicenseCertificateVS
 Title: "Non-Individual Specialties, Degrees, Licenses, and Certificates"
 * codes from valueset NonIndividualSpecialtiesVS
-* codes from system $V2table0360v27CS
+* codes from valueset $V2table0360VS
 
 ValueSet: EndpointConnectionTypeVS
 Title: "Endpoint Connection Types"
@@ -285,3 +299,64 @@ ValueSet: LanguageProficiencyVS
 Title: "Language Proficiency"
 Description: "Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."
 * codes from system LanguageProficiencyCS
+
+
+CodeSystem: ProviderRoleCS
+Title: "Provider Role Codes"
+Description: "Codes for Provider Roles.   TEMPORARY:  two letter codes are Payer roles from Gail, 3 letter codes starting with F are functional roles from Mary Kay"
+// These are Payer Roles from Gail
+* #AP "Advanced Practice Nursing Providers" "Advanced Practice Nursing Providers"
+* #AT "Athletic Trainer" "Athletic Trainer"
+* #AU "Audiologist" "Audiologist"
+* #BH "Behavioral Health & Social Service Providers" "Behavioral Health & Social Service Providers"
+* #BA "Board Certified Behavior Analyst" "Board Certified Behavior Analyst"
+* #NW "Certified Nurse Midwife" "Certified Nurse Midwife"
+* #NP "Certified Registered Nurse Practitioner" "Certified Registered Nurse Practitioner"
+* #CH "Chiropractor" "Chiropractor"
+* #CS "Christian Science Practitioner" "Christian Science Practitioner"
+* #CO "Counselor" "Counselor"
+* #DP "Dental Provider" "Dental Provider"
+* #DE "Dentist" "Dentist"
+* #DR "Developmental, Rehabilitative and Restorative Service Providers" "Developmental, Rehabilitative and Restorative Service Providers"
+* #DN "Dietary and Nutritional Service Provider" "Dietary and Nutritional Service Provider"
+* #OM "Doctor of Oriental Medicine" "Doctor of Oriental Medicine"
+* #EM "Emergency Medical Service Provider" "Emergency Medical Service Provider"
+* #HO "Homeopath" "Homeopath"
+* #PN "Licensed Practical Nurse" "Licensed Practical Nurse"
+* #MT "Marriage/Family Therapist" "Marriage/Family Therapist"
+* #MA "Massage Therapist" "Massage Therapist"
+* #NH "Naprapath" "Naprapath"
+* #NA "Naturopath" "Naturopath"
+* #NU "Nursing Service Related Providers" "Nursing Service Related Providers"
+* #OT "Occupational Therapist" "Occupational Therapist"
+* #OP "Optician" "Optician"
+* #OO "Optometrist" "Optometrist"
+* #OS "Other Service Provider" "Other Service Provider"
+* #RX "Pharmacy Service Providers" "Pharmacy Service Providers"
+* #PT "Physical Therapist" "Physical Therapist"
+* #PH "Physician" "Physician"
+* #PA "Physician Assistant" "Physician Assistant"
+* #PO "Podiatrist" "Podiatrist"
+* #PY "Psychologist" "Psychologist"
+* #RN "Registered Nurse" "Registered Nurse"
+* #RT "Respiratory Therapist" "Respiratory Therapist"
+* #SW "Social Worker" "Social Worker"
+* #SP "Speech Language Pathologist" "Speech Language Pathologist"
+* #SH "Speech, Language and Hearing Service Providers" "Speech, Language and Hearing Service Providers"
+* #TE "Technologists, Technicians and Other Technical Service Providers" "Technologists, Technicians and Other Technical Service Providers"
+// These are Functional Roles from Mary Kay
+* #FAD "Admitting"  "Admitting"
+* #FAS "Assistant Surgeon" "Assistant Surgeon"
+* #FAT "Attending" "Attending"
+* #FOP "Operating" "Operating"
+* #FOR  "Ordering" "Ordering"
+* #FOT "Other Physician" "Other Physician"
+* #FPC "Primary Care Physician" "Primary Care Physician"
+* #FPE "Performing"
+* #FRF "Referring" "Referring"
+
+ValueSet: PractitionerRoleVS
+Title: "ValueSet for PractitionerRole.code "
+Description: "ValueSet for PractitionerRole.code "
+* codes from system ProviderRoleCS
+* codes from system $HL7PractitionerRoleCS
