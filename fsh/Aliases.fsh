@@ -21,12 +21,14 @@ Alias:   $MinValueSet = http://hl7.org/fhir/StructureDefinition/elementdefinitio
 Alias:   $DaysOfWeekVS  = http://hl7.org/fhir/ValueSet/days-of-week
 Alias:   $OrganizationRoleVS  = http://hl7.org/fhir/ValueSet/organization-role
 Alias:   $R4GeoJSONExtension = http://hl7.org/fhir/StructureDefinition/location-boundary-geojson
+Alias:   $HL7PractitionerRoleCS = http://terminology.hl7.org/CodeSystem/practitioner-role
+Alias:   $HL7OrganizationRoleCS = http://hl7.org/fhir/organization-role
 
 // CodeSystem and ValueSet Aliases
 Alias:  $V3ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
 //Alias:  $PaymentTypology =  urn:oid:2.16.840.1.113883.3.221.5  
 Alias:  $NUCCProviderTaxonomy = http://www.nucc.org/taxonomy
-Alias:  $V2table0360v27CS = http://terminology.hl7.org/CodeSystem/v2-0360|2.7 
+Alias:  $V2table0360VS = http://terminology.hl7.org/ValueSet/v2-0360 
 
 
 // Plan-Net defined CS that mimic VHDir CodeSystems

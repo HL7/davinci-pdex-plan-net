@@ -37,10 +37,17 @@ Title: "Delivery Method"
 Description: "An extension describing the service delivery method"
 * value[x] 0..0
 * extension contains
-   type 1..1 
+   type 1..1 and
+   virtualModalities 0..* MS 
 * extension[type].value[x] only CodeableConcept 
 * extension[type].value[x] from DeliveryMethodVS
+* extension[type] ^short = "From Network"
 * extension[type].value[x] 1..1
+* extension[virtualModalities].value[x] only CodeableConcept 
+* extension[virtualModalities].value[x] from VirtualModalitiesVS
+* extension[virtualModalities].value[x] 1..1
+* extension[virtualModalities] ^short = "Modalities of Virtual Delivery"
+
 
 Extension: EndpointUsecase
 Id: endpoint-usecase
@@ -81,15 +88,30 @@ Title: "New Patients"
 Description: "New Patients indicates whether new patients are being accepted in general, or from a specific network.   
               This extension is included in the PractitionerRole, HealthcareService, and Location profiles.  
               This provides needed flexibility for specifying whether a provider accepts new patients by location and network."
+* obeys new-patients-characteristics
 * value[x] 0..0
 * extension contains
    acceptingPatients  1..1 MS and
    fromNetwork 0..1 MS  and
-   characteristics 0..1 MS 
+   characteristics 0..* MS 
 * extension[acceptingPatients].value[x] only CodeableConcept
+* extension[acceptingPatients] ^short = "Accepting Patients"
+* extension[acceptingPatients].value[x] 1..1
 * extension[acceptingPatients].value[x] from AcceptingPatientsVS (required)
 * extension[fromNetwork].value[x] only Reference(PlannetNetwork)
+* extension[fromNetwork].value[x] 1..1
+* extension[fromNetwork] ^short = "From Network"
 * extension[characteristics].value[x] only string
+* extension[characteristics].value[x] 1..1
+* extension[characteristics] ^short = "Characteristics of accepted patients"
+
+
+
+Invariant:  new-patients-characteristics 
+Description: "If no new patients are accepted, no characteristics are allowed"
+Expression: "extension('acceptingPatients').valueCodeableConcept.coding.exists(code = 'no') implies extension('characteristics').empty()"
+Severity:   #error
+
 
 Extension: OrgDescription
 Id: org-description

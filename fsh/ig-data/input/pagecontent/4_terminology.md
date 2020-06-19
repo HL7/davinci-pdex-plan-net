@@ -85,10 +85,13 @@
         <td>{% capture md_text %} Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set. {% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
               <tr>
-        <td><a href="ValueSet-ValueSet: SpecialtyAndDegreeLicenseCertificateVS.html">Specialties, Degrees, Licenses, and Certificates"</a></td>
+        <td><a href="ValueSet-SpecialtyAndDegreeLicenseCertificateVS.html">Specialties, Degrees, Licenses, and Certificates"</a></td>
         <td>{% capture md_text %} "Specialties, Degrees, Licenses, and Certificates" {% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
-
+      <tr>
+        <td><a href="CodeSystem-VirtualModalitiesVS.html">Virtua lModalities Codes</a></td>
+        <td>{% capture md_text %}Codes for virtual service delivery modalities.{% endcapture %}{{ md_text | markdownify }}</td>
+        </tr>
   </tbody>
 </table>
 <h3>Code Systems defined as part of this Implementation Guide.  </h3>
@@ -106,7 +109,7 @@
   </thead>
   <tbody> 
        <tr>
-        <td><a href="ValueSet-AcceptingPatientsCS.html">Accepting Patients Codes</a></td>
+        <td><a href="CodeSystem-AcceptingPatientsCS.html">Accepting Patients Codes</a></td>
         <td>{% capture md_text %}Accepting Patients Codes.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
         <tr>
@@ -114,11 +117,10 @@
         <td>{% capture md_text %}Codes for documenting general categories of accommodations available.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
         <tr>
-        <td><a href="ValueSet-DeliveryMethodCS.html">Delivery Methods</a></td>
+        <td><a href="CodeSystem-DeliveryMethodCS.html">Delivery Methods</a></td>
         <td>{% capture md_text %}Codes for documenting delivery methods.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-
         <tr>
         <td><a href="CodeSystem-EndpointConnectionTypeCS.html">Endpoint Connection Types (additional)</a></td>
         <td>{% capture md_text %}"Extension codes for http://terminology.hl7.org/CodeSystem/endpoint-connection-type needed for the provider directory"{% endcapture %}{{ md_text | markdownify }}</td>
@@ -151,6 +153,11 @@
         <td><a href="CodeSystem-QualificationStatusCS.html">Qualification Status Types</a></td>
         <td>{% capture md_text %}Codes for documenting the status of a qualification.{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
+        <tr>
+        <td><a href="CodeSystem-VirtualModalitiesCS.html">Virtua lModalities Codes</a></td>
+        <td>{% capture md_text %}Codes for virtual service delivery modalities.{% endcapture %}{{ md_text | markdownify }}</td>
+        </tr>
+
   </tbody>
 </table>
 
