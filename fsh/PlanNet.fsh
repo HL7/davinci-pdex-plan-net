@@ -67,6 +67,7 @@ Description:    "The HealthCareService  resource typically describes services of
 * category 1..1 MS
 * category from HealthcareServiceCategoryVS (extensible)
 * type MS
+* type from HealthcareServiceTypeVS (extensible)
 * specialty MS
 * specialty from SpecialtiesVS (required)
 * location only Reference(PlannetLocation)

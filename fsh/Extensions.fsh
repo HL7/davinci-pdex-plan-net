@@ -34,17 +34,17 @@ Description: "An extension representing the times a contact point is available"
 Extension: DeliveryMethod
 Id: delivery-method
 Title: "Delivery Method"
-Description: "An extension describing the service delivery method"
+Description: "An extension describing the service delivery method.   If service delivery is virtual, one or more delivery modalities should be specified."
 * value[x] 0..0
 * extension contains
    type 1..1 and
    virtualModalities 0..* MS 
 * extension[type].value[x] only CodeableConcept 
-* extension[type].value[x] from DeliveryMethodVS
-* extension[type] ^short = "From Network"
+* extension[type].value[x] from DeliveryMethodVS (required)
+* extension[type] ^short = "Physical or Virtual Service Delivery"
 * extension[type].value[x] 1..1
 * extension[virtualModalities].value[x] only CodeableConcept 
-* extension[virtualModalities].value[x] from VirtualModalitiesVS
+* extension[virtualModalities].value[x] from VirtualModalitiesVS (extensible)
 * extension[virtualModalities].value[x] 1..1
 * extension[virtualModalities] ^short = "Modalities of Virtual Delivery"
 
