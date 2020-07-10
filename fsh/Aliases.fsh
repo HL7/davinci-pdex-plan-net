@@ -26,6 +26,7 @@ Alias:   $HL7OrganizationRoleCS = http://hl7.org/fhir/organization-role
 
 // CodeSystem and ValueSet Aliases
 Alias:  $V3ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
+Alias: $V3RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 //Alias:  $PaymentTypology =  urn:oid:2.16.840.1.113883.3.221.5  
 Alias:  $NUCCProviderTaxonomy = http://www.nucc.org/provider-taxonomy
 Alias:  $V2table0360VS = http://terminology.hl7.org/ValueSet/v2-0360 
