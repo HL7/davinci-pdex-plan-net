@@ -23,6 +23,7 @@ Alias:   $OrganizationRoleVS  = http://hl7.org/fhir/ValueSet/organization-role
 Alias:   $R4GeoJSONExtension = http://hl7.org/fhir/StructureDefinition/location-boundary-geojson
 Alias:   $HL7PractitionerRoleCS = http://terminology.hl7.org/CodeSystem/practitioner-role
 Alias:   $HL7OrganizationRoleCS = http://hl7.org/fhir/organization-role
+Alias:   $ServiceTypeCS = http://terminology.hl7.org/CodeSystem/service-type 
 
 // CodeSystem and ValueSet Aliases
 Alias:  $V3ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason

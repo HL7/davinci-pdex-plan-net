@@ -45,7 +45,7 @@
 <td>Valueset for descripting the broad category of service being performed or delivered by a health care service</td>
 </tr>
 <tr>
-<td><a href="ValueSet-HealthcareServiceTypeVS.html">PLACEHOLDER: Healthcare Service Type</a></td>
+<td><a href="ValueSet-HealthcareServiceTypeVS.html">Healthcare Service Type</a></td>
 <td>HealthcareService Type</td>
 </tr>
 <tr>
@@ -148,10 +148,6 @@
 <tr>
 <td><a href="CodeSystem-HealthcareServiceCategoryCS.html">Healthcare Service Category</a></td>
 <td>Codesystem for descripting the broad category of service being performed or delivered by a health care service</td>
-</tr>
-<tr>
-<td><a href="CodeSystem-HealthcareServiceTypeCS.html">PLACEHOLDER: Healthcare Service Type</a></td>
-<td>HealthcareService Type</td>
 </tr>
 <tr>
 <td><a href="CodeSystem-InsurancePlanTypeCS.html">Insurance Plan Type</a></td>

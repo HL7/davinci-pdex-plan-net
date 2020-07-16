@@ -3,6 +3,7 @@ CodeSystem: OrganizationAffiliationRoleCS
 Title: "Organization Affiliation Role"
 Description: "Codes For Organization Affiliation Role"
 * #behavioral	"Outpatient Behavioral Health Provider" "Provider of services related to the promotion of mental health, resilience and wellbeing; the treatment of mental and substance use disorders; and the support of those who experience and/or are in recovery from these conditions, along with their families and communities."
+* #BT "Belongs to" "Has a relationship of participation with"    // Added 7/15/2020	
 * #dme	"DME/Medical Supplier"	"Supplier of health care consumables or equipments supplied to patients."
 * #group	"Medical Group"	"A group of people, e.g. a group of Physicians, who render health care services. "
 * #home	"Home Health Provider"	"Provider of health care services delivered to patients within their residence rather than a clinical setting; usually provided by nurses, home health aides, and other professionals on a regularly scheduled visit."
@@ -18,7 +19,7 @@ Description: "Codes For Organization Affiliation Role"
 * #residential "Residential Treatment Facility" "Residential Treatment Facility"
 * #respite "Respite Care Facility" "Respite Care Facility"
 * #retail	"Retail Health Center"	"Retail Health Center"
-* #memberof "Member of"    "Member of"		
+
 
 ValueSet: OrganizationAffiliationRoleVS
 Title: "OrganizationAffiliation Roles"
