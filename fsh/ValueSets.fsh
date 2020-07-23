@@ -30,17 +30,17 @@ ValueSet: SpecialtyAndDegreeLicenseCertificateVS
 Title: "Specialties, Degrees, Licenses, and Certificates"
 Description:  "Specialties and Degree License and Certificates"
 * codes from valueset SpecialtiesVS 
-* codes from valueset $V2table0360VS
+* codes from valueset $V2table0360CS
 
 ValueSet: IndividualSpecialtyAndDegreeLicenseCertificateVS
 Title: "Individual Specialties, Degrees, Licenses, and Certificates"
 * codes from valueset IndividualAndGroupSpecialtiesVS
-* codes from valueset $V2table0360VS
+* codes from valueset $V2table0360CS
 
 ValueSet: NonIndividualSpecialtyAndDegreeLicenseCertificateVS
 Title: "Non-Individual Specialties, Degrees, Licenses, and Certificates"
 * codes from valueset NonIndividualSpecialtiesVS
-* codes from valueset $V2table0360VS
+* codes from valueset $V2table0360CS
 
 ValueSet: EndpointConnectionTypeVS
 Title: "Endpoint Connection Types"

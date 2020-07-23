@@ -1,42 +1,87 @@
-Instance: PharmacyOrganizationA
-InstanceOf: PlannetOrganization
-Description: "Organization that Provides Pharmacy Services"
+Instance: PractitionerA
+InstanceOf: PlannetPractitioner
+Description: "Practitioner Dr Joe Smith"
 Usage: #example
-* id = "1"
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* name = "PharmOrgA"
+* identifier[NPI].value = "NPI323"
+* identifier[NPI].system = $NPICS
+* name.text = "Joe Smith, MD"
+* name.family = "Smith"
+* name.given[0] = "Joe"
+* qualification[0].code = $V2table0360CS#MD
+* qualification[0].issuer.display = "State of Illinois"
+* qualification[0].code.text = "MD"
+* qualification[0].extension[practitioner-qualification].extension[status].valueCode = #active 
+* qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = #IL 
+* qualification[1].code = $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
+* qualification[1].issuer.display = "American Board of Internal Medicine"
+* qualification[1].code.text = "Board Certified Internal Medicine"
+* qualification[1].extension[practitioner-qualification].extension[status].valueCode = #active 
+* qualification[1].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = #IL 
+* qualification[2].code = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease"
+* qualification[2].issuer.display = "American Board of Internal Medicine"
+* qualification[2].code.text = "Board Certified Cardiovascular Disease"
+* qualification[2].extension[practitioner-qualification].extension[status].valueCode = #active 
+* qualification[2].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = #IL 
 
-Instance: OrganizationB
-InstanceOf: PlannetOrganization
-Description: "Organization that Manages 2 of PharmacyOrganizationA's pharmacies"
+
+
+
+
+Instance: PractitionerARole1
+InstanceOf: PlannetPractitionerRole
+Description: "Dr Smith moonlighting as ER Doc at Rockville Hospital"
 Usage: #example
-* id = "2"
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* name = "OrgB"
+* code = #Physician
+// specialty = internal medicine
+// available M-F
 
-Instance: PharmacyAHealthCareService
+Instance: PractitionerARole2
+InstanceOf: PlannetPractitionerRole
+Description: "Dr Smith Internal Medicine at Rockville Clinic"
+Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* language = #en-US
+* active = true
+* code = #EmergencyMedicine
+// specialty = internal medicine
+// Available:  Sat/Sun
+* healthcareService = Reference(HealthCareServiceOutpatientClinic)
+
+Instance: HealthCareServiceOutpatientClinic
 InstanceOf: PlannetHealthcareService
-Description: "Service provided by PharmacyOrganization A"
+Description: "Rockville Clinic Outpatient Internal Medicine Service"
 Usage: #example
-* id = "1"
 * meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthCareService"
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#Pharmacy 
-* specialty = $NUCCProviderTaxonomy#3336C0003X
-* providedBy = Reference(PharmacyOrganizationA)
-* location[0] = Reference(PharmacyLocation1)
-* location[1] = Reference(PharmacyLocation2)
-* location[3] = Reference(PharmacyLocation3)
-* location[4] = Reference(PharmacyLocation4)
+* category = HealthcareServiceCategoryCS#Outpatient
+* specialty = $NUCCProviderTaxonomy#3336C0003X   // Fix to Internal Medicine
+* providedBy = Reference(OrganizationInternalMedicineLLC)
+* location[0] = Reference(RockvilleClinicLocation)
+
+Instance: HealthCareServiceEmergency
+InstanceOf: PlannetHealthcareService
+Description: "Rockville Hospital ER"
+Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthCareService"
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* language = #en-US
+* active = true
+* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* category = HealthcareServiceCategoryCS#Emergency 
+* providedBy = Reference(OrganizationRockvilleHospital)
+* location[0] = Reference(RockvilleHospitalLocation)
 
 Instance: PharmacyOrganizationAffiliation1
 InstanceOf: PlannetOrganizationAffiliation

@@ -6,9 +6,9 @@ Id:             plannet-Endpoint
 Title:          "Plan-net Endpoint"
 Description:    "The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information."
 * meta.lastUpdated 1..1
-* identifier.extension contains 
+* extension contains 
     EndpointUsecase named endpoint-usecase 0..*
-* identifier.extension[endpoint-usecase] ^short = "Endpoint Usecase"
+* extension[endpoint-usecase] ^short = "Endpoint Usecase"
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -159,6 +159,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * network only Reference(PlannetNetwork)
 * plan ^short = "Cost sharing details for the plan"
 * plan.type from InsurancePlanTypeVS (extensible)
+* plan.type MS 
 * plan.type ^short = "Categorization of the cost sharing for the plan"
 * plan.coverageArea only Reference(PlannetLocation)
 * plan.network only Reference(PlannetNetwork)
