@@ -2,7 +2,7 @@ Instance: PharmacyOrganizationA
 InstanceOf: PlannetOrganization
 Description: "Organization that Provides Pharmacy Services"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+* meta.profile = Canonical(PlannetOrganization) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -12,7 +12,7 @@ Instance: OrganizationB
 InstanceOf: PlannetOrganization
 Description: "Organization that Manages 2 of PharmacyOrganizationA's pharmacies"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+* meta.profile =  Canonical(PlannetOrganization) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -22,7 +22,7 @@ Instance: PharmacyAHealthCareService
 InstanceOf: PlannetHealthcareService
 Description: "Service provided by PharmacyOrganization A"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthCareService"
+* meta.profile =  Canonical(PlannetHealthcareService) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -40,7 +40,7 @@ Instance: PharmacyOrganizationAffiliation1
 InstanceOf: PlannetOrganizationAffiliation
 Description: "Organization Affiliation for PharmacyOrganizationA"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+* meta.profile =  Canonical(PlannetOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -54,7 +54,7 @@ Instance: PharmacyOrganizationAffiliation2
 InstanceOf: PlannetOrganizationAffiliation
 Description: "Organization Affiliation for PharmacyOrganizationA"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+* meta.profile = Canonical(PlannetOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -68,7 +68,7 @@ Instance: CompoundingPharmacyHealthCareService
 InstanceOf: PlannetHealthcareService
 Description: "Compound Pharmacy Service provided by PharmacyOrganization A"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthCareService"
+* meta.profile = Canonical(PlannetHealthcareService) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -84,7 +84,7 @@ Instance: AcmeCTPreferredProviderNetwork
 InstanceOf: PlannetNetwork
 Description: "Acme of CT Preferred Provider Network"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
+* meta.profile = Canonical(PlannetNetwork) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -94,7 +94,7 @@ Instance: PharmacyLocation1
 InstanceOf: PlannetLocation
 Description: "Location of Pharmacy1 in PharmacyOrganizationA's network"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+* meta.profile = Canonical(PlannetLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -104,7 +104,7 @@ Instance: PharmacyLocation2
 InstanceOf: PlannetLocation
 Description: "Location of Pharmacy1 in PharmacyOrganizationA's network"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+* meta.profile = Canonical(PlannetLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -115,7 +115,7 @@ Instance: PharmacyLocation3
 InstanceOf: PlannetLocation
 Description: "Location of Pharmacy1 in PharmacyOrganizationA's network"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+* meta.profile = Canonical(PlannetLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -126,7 +126,7 @@ Instance: PharmacyLocation4
 InstanceOf: PlannetLocation
 Description: "Location of Pharmacy1 in PharmacyOrganizationA's network"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+* meta.profile = Canonical(PlannetLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -137,7 +137,7 @@ Instance: PayerOrganizationA
 InstanceOf: PlannetOrganization
 Description: "Payer Organization"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+* meta.profile = Canonical(PlannetOrganization) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true

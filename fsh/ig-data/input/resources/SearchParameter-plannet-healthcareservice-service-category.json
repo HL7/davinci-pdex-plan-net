@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "healthcareservice-service-category",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-service-category",
+  "id": "plannet-healthcareservice-service-category",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/plannet-healthcareservice-service-category",
   "version": "0.2.0",
   "name": "Plannet_sp_healthcareservice_category",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-service-category",

@@ -174,5 +174,5 @@ Title: "Via Intermediary"
 Description: "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization"
 * value[x] only Reference
 * valueReference MS
-* value[x] only Reference(PlannetOrganization | PlannetPractitionerRole | PlannetOrganizationAffiliation | PlannetLocation) 
+* value[x] only Reference(PlannetOrganization or PlannetPractitionerRole or PlannetOrganizationAffiliation or PlannetLocation) 
 
