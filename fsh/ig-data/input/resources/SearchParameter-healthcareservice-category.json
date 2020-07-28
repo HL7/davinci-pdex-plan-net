@@ -1,10 +1,10 @@
 {
   "resourceType": "SearchParameter",
-  "id": "healthcareservice-identifier",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-identifier",
+  "id": "healthcareservice-service-category",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-service-category",
   "version": "0.2.0",
-  "name": "Plannet_sp_healthcareservice_identifier",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-identifier",
+  "name": "Plannet_sp_healthcareservice_category",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-service-category",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",
   "publisher": "HL7 Patient Administration Committee",
@@ -18,17 +18,16 @@
       ]
     }
   ],
-  "description": "Select HealthcareServices with the specified identifier",
-  "code": "identifier",
+  "description": "Select HealthcareServices providing the specified category of services",
+  "code": "service-category",
   "base": [
     "HealthcareService"
   ],
   "type": "token",
-  "expression": "HealthcareService.identifier",
+  "expression": "HealthcareService.category",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
-    "text",
-    "ofType"
+    "text"
   ]
 }
