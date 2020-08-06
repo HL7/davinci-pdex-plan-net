@@ -31,6 +31,7 @@ Description: "Codes for virtual service delivery modalities ."
 * #tdd	"TDD" "Telecommunications Device for the Deaf"
 * #sms	"SMS" "SMS Text Messaging"
 * #app  "App" "Mobile Application"
+* #web  "Website" "Website accessed through browser"
 
 CodeSystem:  EndpointConnectionTypeCS
   Title: "Endpoint Connection Types (additional)"

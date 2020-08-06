@@ -70,7 +70,7 @@ Usage: #example
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = #existing
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTPreferredProviderNetwork)
-* category = HealthcareServiceCategoryCS#Pharmacy 
+* category = HealthcareServiceCategoryCS#Pharmacy  "Pharmacy"
 * specialty = $NUCCProviderTaxonomy#3336C0003X
 * providedBy = Reference(PharmacyOrganizationA)
 * location[0] = Reference(PharmacyLocation1)
@@ -119,11 +119,36 @@ Usage: #example
 * active = true
 * name = "Compounding Pharmacy by OrgA"
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#Pharmacy 
-* specialty = $NUCCProviderTaxonomy#3336C0003X
+* category = HealthcareServiceCategoryCS#Pharmacy "Pharmacy"
+* specialty = $NUCCProviderTaxonomy#3336C0003X "Compounding Pharmacy"
+* specialty.text = "Compounding Pharmacy"
 * providedBy = Reference(PharmacyOrganizationA)
 * location[0] = Reference(PharmacyLocation1)
+* telecom.extension[via-intermediary].valueReference = Reference(Location1)
 
+Instance: MailOrderPharmacyHealthCareService
+InstanceOf: PlannetHealthcareService
+Description: "Mail Order Pharmacy Service provided by PharmacyOrganization A"
+Usage: #example
+* meta.profile = Canonical(PlannetHealthcareService) 
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* language = #en-US
+* active = true
+* name = "Mail Order Pharmacy by OrgA"
+* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#virtual
+* extension[deliverymethod].extension[virtualModalities][0].valueCodeableConcept = #web
+* extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = #app 
+* extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = #tdd 
+* extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  #phone 
+* category = HealthcareServiceCategoryCS#Pharmacy "Pharmacy"
+* specialty = $NUCCProviderTaxonomy#3336M0002X "Mail Order Pharmacy"
+* providedBy = Reference(PharmacyOrganizationA)
+* telecom[0].system = #phone
+* telecom[0].value = "(111)-222-3333"
+* telecom[0].rank = 2
+* telecom[1].system = #url
+* telecom[1].value = "https://mailorderrx.com"
+* telecom[1].rank = 1
 
 Instance: AcmeCTPreferredProviderNetwork
 InstanceOf: PlannetNetwork
