@@ -7,7 +7,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "PharmOrgA"
-* type = OrgTypeCS#prvgrp
+* type = OrgTypeCS#prvgrp "Provider"
 * identifier[NPI].system = $NPICS
 * identifier[NPI].value = "NPI-ORGA"
 * telecom[0].system = #phone
@@ -37,7 +37,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "OrgB"
-* type = OrgTypeCS#bus
+* type = OrgTypeCS#bus "Non-Healthcare business"
 * name = "Big Box Retailer"
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
@@ -71,7 +71,7 @@ Usage: #example
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = #existing
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTPreferredProviderNetwork)
 * category = HealthcareServiceCategoryCS#Pharmacy  "Pharmacy"
-* specialty = $NUCCProviderTaxonomy#3336C0003X
+* specialty = $NUCCProviderTaxonomy#3336C0003X "Retail Pharmacy"
 * providedBy = Reference(PharmacyOrganizationA)
 * location[0] = Reference(PharmacyLocation1)
 * location[1] = Reference(PharmacyLocation2)
@@ -159,7 +159,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * partOf = Reference(PayerOrganizationA)
-* type = OrgTypeCS#payer 
+* type = OrgTypeCS#payer "Payer"
 * name = "ACME CT Preferred Provider Network"
 * contact.telecom.extension[via-intermediary].valueReference = Reference(PayerOrganizationA)
 * contact.name.family = "Kawasaki"
@@ -224,7 +224,7 @@ Usage: #example
 * language = #en-US
 * status = #active 
 * name = "OrgA CT Location 2"
-* type = $V3RoleCode#OUTPHARM
+* type = $V3RoleCode#OUTPHARM "Retail Pharmacy"
 * managingOrganization = Reference(OrganizationB)
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = #existing
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTPreferredProviderNetwork)
@@ -274,7 +274,7 @@ Usage: #example
 * language = #en-US
 * status = #active 
 * name = "OrgA MA Location 1"
-* type = $V3RoleCode#OUTPHARM
+* type = $V3RoleCode#OUTPHARM "Retail Pharmacy"
 * managingOrganization = Reference(OrganizationB)
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = #existing
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTPreferredProviderNetwork)
@@ -321,7 +321,7 @@ Usage: #example
 * language = #en-US
 * status = #active 
 * name = "OrgA MA Location 2"
-* type = $V3RoleCode#OUTPHARM
+* type = $V3RoleCode#OUTPHARM "Retail Pharmacy"
 * managingOrganization = Reference(OrganizationB)
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = #existing
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTPreferredProviderNetwork)
@@ -368,7 +368,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "Acme of CT"
-* type = #payer 
+* type = #payer "Payer"
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
