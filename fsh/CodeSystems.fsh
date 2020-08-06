@@ -100,11 +100,13 @@ Description:  "Codes for InsurancePlan  plan types.  Plans within a prouduct sha
 * #HighDeductible "High Deductible" "A plan that requires the insured to pay out of pocket a larger proportion of incurred health care costs than a traditional insurance plan."
 
 CodeSystem:  OrgTypeCS
-  Title: "Organization Type."
+  Title: "Organization Type"
   Description:  "Codesystem for types of organizations found in provider directories."
-* #Prov "Provider" "A healthcare provider."
-* #PrvGrp "Provider Group" "A healthcare provider group"
-* #Payer "Payer" "A healthcare payer."
+* #fac "Facility" "A physical healthcare facility."
+* #prvgrp "Provider Group" "A healthcare provider entity"
+* #payer "Payer" "A healthcare payer."
+* #atyprv "Atypical Provider" "Providers that do not provide healthcare"
+* #bus "Non-Healthcare Business" "An organization that does not meet the definitions of a Healthcare or Atypical Provider, and is not a payer or healthcare facility"
 
 
 CodeSystem: QualificationStatusCS
@@ -128,7 +130,7 @@ Description: "Codes for Provider Roles."
 * #au "Audiologist" "Audiologist"
 * #bh "Behavioral Health & Social Service Providers" "Behavioral Health & Social Service Providers"
 * #ba "Board Certified Behavior Analyst" "Board Certified Behavior Analyst"
-* #bt "Belongs to" "Has a relationship of participation with"    // Added 7/15/2020
+* #bt "Member Of" "Has a relationship of participation with.  This does NOT represent a member of an insurance plan, but other types of membership such as membership of physician in the AMA"    // Added 7/15/2020
 * #cnw "Certified Nurse Midwife" "Certified Nurse Midwife"
 * #crnp "Certified Registered Nurse Practitioner" "Certified Registered Nurse Practitioner"
 * #ch "Chiropractor" "Chiropractor"

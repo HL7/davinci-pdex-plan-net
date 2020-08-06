@@ -241,7 +241,8 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * active 1..1 MS
 * active = true (exactly)
 * type MS
-* type = $OrgType#pay 
+* type from OrgTypeVS
+* type = OrgTypeCS#payer 
 * name MS
 * alias MS
 * telecom 0..0
@@ -262,8 +263,8 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
        ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
 * contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
-* contact.telecom.value 1..1 MS
-* contact.telecom.system 1..1 MS
+* contact.telecom.value  MS
+* contact.telecom.system  MS
 * contact.telecom.use MS
 * contact.telecom.period MS
 * endpoint only Reference(PlannetEndpoint)
@@ -281,7 +282,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * extension contains
    Qualification named qualification 0..*  and
    OrgDescription named org-description 0..1 
-* extension[qualification].extension[code].valueCodeableConcept from SpecialtyAndDegreeLicenseCertificateVS (required)
+* extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (required)
 * extension[qualification] ^short = "Qualification"
 * extension[org-description] ^short = "Organization Description"
 * identifier.id MS
@@ -339,7 +340,7 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * obeys organization-or-participatingOrganization 
 * extension contains
    Qualification named qualification 0..* 
-* extension[qualification].extension[code].valueCodeableConcept from SpecialtyAndDegreeLicenseCertificateVS (required)
+* extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (required)
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -440,7 +441,7 @@ be a relationship to an organization. Practitioner participation in healthcare p
    NewPatients named newpatients 0..* MS and
    NetworkReference named network-reference 0..* MS and
    Qualification named qualification 0..* 
-* extension[qualification].extension[code].valueCodeableConcept from IndividualSpecialtyAndDegreeLicenseCertificateVS (required)
+* extension[qualification].extension[code].value[x] from IndividualSpecialtyAndDegreeLicenseCertificateVS (required)
 * extension[newpatients] ^short = "New Patients"
 * extension[network-reference] ^short = "NetworkReference"
 * extension[qualification] ^short = "Qualification"

@@ -85,6 +85,7 @@ Usage: #example
 * providedBy = Reference(OrganizationRockvilleHospital)
 * location[0] = Reference(RockvilleHospitalLocation)
 
+/*
 Instance: PharmacyOrganizationAffiliation1
 InstanceOf: PlannetOrganizationAffiliation
 Description: "Organization Affiliation for PharmacyOrganizationA"
@@ -110,6 +111,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * partOf = Reference(PayerOrganizationA)
+* type = #payer 
 
 Instance: PharmacyLocation1
 InstanceOf: PlannetLocation
@@ -164,3 +166,4 @@ Usage: #example
 * active = true
 * name = "PayerA"
 * type = $V3RoleCode#OUTPHARM
+*/

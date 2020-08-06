@@ -34,11 +34,13 @@ Description:  "Specialties and Degree License and Certificates"
 
 ValueSet: IndividualSpecialtyAndDegreeLicenseCertificateVS
 Title: "Individual Specialties, Degrees, Licenses, and Certificates"
+Description: "Individual Specialties, Degrees, Licenses, and Certificates"
 * codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from valueset $V2table0360CS
 
 ValueSet: NonIndividualSpecialtyAndDegreeLicenseCertificateVS
 Title: "Non-Individual Specialties, Degrees, Licenses, and Certificates"
+Description: "Non-Individual Specialties, Degrees, Licenses, and Certificates"
 * codes from valueset NonIndividualSpecialtiesVS
 * codes from valueset $V2table0360CS
 
@@ -81,12 +83,11 @@ Description:  "Endpoint Payload Types are constrained to NA (Not Applicable) as 
 ValueSet: OrgTypeVS
 Title: "Organization Type"
 Description:  "Provider Directory Organization Type."
-*  OrgTypeCS#Prov "Provider"
-*  OrgTypeCS#PrvGrp "Provider Group"
-*  OrgTypeCS#Payer "Payer" 
+*  OrgTypeCS#fac "Facility"
+*  OrgTypeCS#prvgrp "Provider Group"
+*  OrgTypeCS#payer "Payer" 
+*  OrgTypeCS#atyprov "Atypical Provider"
 
-
-  
 
 ValueSet: InsuranceProductTypeVS
 Title: "Insurance Product Type"
