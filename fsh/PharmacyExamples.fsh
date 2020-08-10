@@ -75,8 +75,8 @@ Usage: #example
 * providedBy = Reference(PharmacyOrganizationA)
 * location[0] = Reference(PharmacyLocation1)
 * location[1] = Reference(PharmacyLocation2)
-* location[3] = Reference(PharmacyLocation3)
-* location[4] = Reference(PharmacyLocation4)
+* location[2] = Reference(PharmacyLocation3)
+* location[3] = Reference(PharmacyLocation4)
 * telecom.extension[via-intermediary].valueReference = Reference(PharmacyOrganizationA)
 
 
@@ -124,7 +124,7 @@ Usage: #example
 * specialty.text = "Compounding Pharmacy"
 * providedBy = Reference(PharmacyOrganizationA)
 * location[0] = Reference(PharmacyLocation1)
-* telecom.extension[via-intermediary].valueReference = Reference(Location1)
+* telecom.extension[via-intermediary].valueReference = Reference(PharmacyLocation1)
 
 Instance: MailOrderPharmacyHealthCareService
 InstanceOf: PlannetHealthcareService

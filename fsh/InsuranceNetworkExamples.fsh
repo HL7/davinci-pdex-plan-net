@@ -1,7 +1,7 @@
 
 
 
-Instance: AcmeCTStandardNetwork
+Instance: AcmeOfCTStandardNetwork
 InstanceOf: PlannetNetwork
 Description: "Acme of CT Standard Network"
 Usage: #example
@@ -17,7 +17,7 @@ Usage: #example
 * contact.name.given = "Jane"
 
 
-Instance: AcmeCTPremiumNetwork
+Instance: AcmeOfCTPremiumNetwork
 InstanceOf: PlannetNetwork
 Description: "Acme of CT Premium Premium Network"
 Usage: #example
@@ -70,8 +70,8 @@ Usage: #example
 * name = "Acme of CT QHP Gold"
 * type = #QHP "QHP"
 * plan.type = #GOLD "Gold"
-* ownedBy = Reference (AcmeOfCTOrganization)
-* administeredBy = Reference (AcmeOfCTOrganization)     // 1..1
+* ownedBy = Reference (AcmeOrganization)
+* administeredBy = Reference (AcmeOrganization)     // 1..1
 * network[0] = Reference(AcmeOfCTStandardNetwork)
 * network[1] = Reference(AcmeOfCTPremiumNetwork)
 * coverageArea = Reference(StateOfCTLocation)
@@ -88,8 +88,8 @@ Usage: #example
 * name = "Acme of CT QHP Bronze"
 * type = #QHP "QHP"
 * plan.type = #Bronze "Bronze"
-* ownedBy = Reference (AcmeOfCTOrganization)
-* administeredBy = Reference (AcmeOfCTOrganization)     // 1..1
+* ownedBy = Reference (AcmeOrganization)
+* administeredBy = Reference (AcmeOrganization)     // 1..1
 * network[0] = Reference(AcmeOfCTStandardNetwork)
 * coverageArea = Reference(StateOfCTLocation)
 * endpoint = Reference(AcmeOfCTPortalEndpoint)
