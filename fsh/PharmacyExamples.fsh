@@ -68,8 +68,8 @@ Usage: #example
 * active = true
 * name = "Pharmacy by PharmOrgA"
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = #existing
-* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTPreferredProviderNetwork)
+* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
+* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTStandardNetwork)
 * category = HealthcareServiceCategoryCS#Pharmacy  "Pharmacy"
 * specialty = $NUCCProviderTaxonomy#3336C0003X "Retail Pharmacy"
 * providedBy = Reference(PharmacyOrganizationA)
@@ -88,7 +88,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* network = Reference(AcmeCTPreferredProviderNetwork)
+* network = Reference(AcmeCTStandardNetwork)
 * participatingOrganization = Reference (PharmacyOrganizationA)
 * healthcareService = Reference(PharmacyAHealthCareService)
 * location[0] = Reference(PharmacyLocation1)
@@ -103,7 +103,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* network = Reference(AcmeCTPreferredProviderNetwork)
+* network = Reference(AcmeCTStandardNetwork)
 * participatingOrganization = Reference (PharmacyOrganizationA)
 * healthcareService = Reference(CompoundingPharmacyHealthCareService)
 * location[0] = Reference(PharmacyLocation1)
@@ -150,20 +150,7 @@ Usage: #example
 * telecom[1].value = "https://mailorderrx.com"
 * telecom[1].rank = 1
 
-Instance: AcmeCTPreferredProviderNetwork
-InstanceOf: PlannetNetwork
-Description: "Acme of CT Preferred Provider Network"
-Usage: #example
-* meta.profile = Canonical(PlannetNetwork) 
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
-* language = #en-US
-* active = true
-* partOf = Reference(PayerOrganizationA)
-* type = OrgTypeCS#payer "Payer"
-* name = "ACME CT Preferred Provider Network"
-* contact.telecom.extension[via-intermediary].valueReference = Reference(PayerOrganizationA)
-* contact.name.family = "Kawasaki"
-* contact.name.given = "Jane"
+
 
 Instance: PharmacyLocation1
 InstanceOf: PlannetLocation
@@ -176,8 +163,8 @@ Usage: #example
 * name = "OrgA CT Location 1"
 * type = $V3RoleCode#OUTPHARM
 * managingOrganization = Reference(OrganizationB)
-* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = #existing
-* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTPreferredProviderNetwork)
+* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = #AcceptingPatientsCS#existing
+* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTStandardNetwork)
 * extension[accessibility][1].valueCodeableConcept = #pubtrans
 * extension[accessibility][0].valueCodeableConcept = #adacomp
 * telecom[0].system = #phone
@@ -226,8 +213,8 @@ Usage: #example
 * name = "OrgA CT Location 2"
 * type = $V3RoleCode#OUTPHARM "Retail Pharmacy"
 * managingOrganization = Reference(OrganizationB)
-* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = #existing
-* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTPreferredProviderNetwork)
+* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
+* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTStandardNetwork)
 * extension[accessibility][0].valueCodeableConcept = #adacomp
 * extension[accessibility][1].valueCodeableConcept = #pubtrans
 * extension[accessibility][0].valueCodeableConcept = #adacomp
@@ -276,8 +263,8 @@ Usage: #example
 * name = "OrgA MA Location 1"
 * type = $V3RoleCode#OUTPHARM "Retail Pharmacy"
 * managingOrganization = Reference(OrganizationB)
-* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = #existing
-* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTPreferredProviderNetwork)
+* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
+* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTStandardNetwork)
 * extension[accessibility][0].valueCodeableConcept = #adacomp
 * extension[accessibility][1].valueCodeableConcept = #pubtrans
 * telecom[0].system = #phone
@@ -323,8 +310,8 @@ Usage: #example
 * name = "OrgA MA Location 2"
 * type = $V3RoleCode#OUTPHARM "Retail Pharmacy"
 * managingOrganization = Reference(OrganizationB)
-* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = #existing
-* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTPreferredProviderNetwork)
+* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
+* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTStandardNetwork)
 * extension[accessibility][0].valueCodeableConcept = #adacomp
 * telecom[0].system = #phone
 * telecom[0].value = "(222)-333-4444"
@@ -358,31 +345,3 @@ Usage: #example
 * hoursOfOperation[1].openingTime = 08:00:00
 * hoursOfOperation[1].closingTime = 17:00:00
 
-
-Instance: PayerOrganizationA
-InstanceOf: PlannetOrganization
-Description: "Payer Organization"
-Usage: #example
-* meta.profile = Canonical(PlannetOrganization) 
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
-* language = #en-US
-* active = true
-* name = "Acme of CT"
-* type = #payer "Payer"
-* telecom[0].system = #phone
-* telecom[0].value = "(111)-222-3333"
-* telecom[0].rank = 2
-* telecom[0].extension[contactpoint-availabletime][0].extension[daysOfWeek][0].valueCode = #mon 
-* telecom[0].extension[contactpoint-availabletime][0].extension[daysOfWeek][1].valueCode  = #tue
-* telecom[0].extension[contactpoint-availabletime][0].extension[daysOfWeek][2].valueCode  = #wed
-* telecom[0].extension[contactpoint-availabletime][0].extension[daysOfWeek][3].valueCode  = #thu
-* telecom[0].extension[contactpoint-availabletime][0].extension[daysOfWeek][4].valueCode  = #fri 
-* telecom[0].extension[contactpoint-availabletime][0].extension[availableStartTime].valueTime = 08:00:00
-* telecom[0].extension[contactpoint-availabletime][0].extension[availableEndTime].valueTime = 17:00:00
-* telecom[1].system = #url
-* telecom[1].value = "https://www.acmeofct.com"
-* telecom[1].rank = 1
-* address.line[0] = "456 Main Street"
-* address.city = "Norwalk"
-* address.state = "CT"
-* address.postalCode = "00014-1234"

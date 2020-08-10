@@ -79,6 +79,7 @@ Id: network-reference
 Title: "Network Reference"
 Description: "A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role"
 * value[x] only Reference
+* value[x] 1..1
 * valueReference MS
 * valueReference only Reference(PlannetNetwork) 
 

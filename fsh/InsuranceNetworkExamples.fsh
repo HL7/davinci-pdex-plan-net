@@ -77,6 +77,23 @@ Usage: #example
 * coverageArea = Reference(StateOfCTLocation)
 * endpoint = Reference(AcmeOfCTPortalEndpoint)
 
+
+Instance: AcmeQHPBronze
+InstanceOf: PlannetInsurancePlan
+Description: "Acme of CT QHP Bronze Plan"
+Usage: #example
+* meta.profile = Canonical(PlannetInsurancePlan) 
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* language = #en-US
+* name = "Acme of CT QHP Bronze"
+* type = #QHP "QHP"
+* plan.type = #Bronze "Bronze"
+* ownedBy = Reference (AcmeOfCTOrganization)
+* administeredBy = Reference (AcmeOfCTOrganization)     // 1..1
+* network[0] = Reference(AcmeOfCTStandardNetwork)
+* coverageArea = Reference(StateOfCTLocation)
+* endpoint = Reference(AcmeOfCTPortalEndpoint)
+
 Instance: StateOfCTLocation
 InstanceOf: PlannetLocation
 Description: "State of CT Area"
