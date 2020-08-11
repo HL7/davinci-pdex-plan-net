@@ -70,9 +70,10 @@ Extension: LocationReference
 Id: location-reference
 Title: "Location Reference"
 Description: "A reference to a Location resource (plannet-Location) defining the coverage area of a health insurance provider network"
-* value[x] only Reference
-* valueReference MS
-* valueReference only Reference(PlannetLocation) 
+* value[x] only Reference (PlannetLocation)
+* value[x] 1..1 MS 
+//* valueReference MS
+//* valueReference only Reference(PlannetLocation) 
 
 Extension: NetworkReference
 Id: network-reference
