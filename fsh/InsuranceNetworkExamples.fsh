@@ -12,7 +12,7 @@ Usage: #example
 * partOf = Reference(AcmeOrganization)
 * type = OrgTypeCS#payer "Payer"
 * name = "ACME CT Preferred Provider Network"
-* contact.telecom.extension[via-intermediary].valueReference = Reference(PayerOrganizationA)
+* contact.telecom.extension[via-intermediary].valueReference = Reference(AcmeOrganization)
 * contact.name.family = "Kawasaki"
 * contact.name.given = "Jane"
 
@@ -28,7 +28,7 @@ Usage: #example
 * partOf = Reference(AcmeOrganization)
 * type = OrgTypeCS#payer "Payer"
 * name = "ACME CT Premium Preferred Provider Network"
-* contact.telecom.extension[via-intermediary].valueReference = Reference(PayerOrganizationA)
+* contact.telecom.extension[via-intermediary].valueReference = Reference(AcmeOrganization)
 * contact.name.family = "Kawasaki"
 * contact.name.given = "Jane"
 
@@ -41,7 +41,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "Acme of CT"
-* type = #payer "Payer"
+* type = OrgTypeCS#payer "Payer"
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
@@ -68,8 +68,8 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * name = "Acme of CT QHP Gold"
-* type = #QHP "QHP"
-* plan.type = #GOLD "Gold"
+* type = InsuranceProductTypeCS#QHP "Qualified Health Plan"
+* plan.type = InsurancePlanTypeCS#gold "Gold-QHP"
 * ownedBy = Reference (AcmeOrganization)
 * administeredBy = Reference (AcmeOrganization)     // 1..1
 * network[0] = Reference(AcmeOfCTStandardNetwork)
@@ -86,8 +86,8 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * name = "Acme of CT QHP Bronze"
-* type = #QHP "QHP"
-* plan.type = #Bronze "Bronze"
+* type = InsuranceProductTypeCS#QHP "Qualified Health Plan"
+* plan.type = InsurancePlanTypeCS#bronze "Bronze-QHP"
 * ownedBy = Reference (AcmeOrganization)
 * administeredBy = Reference (AcmeOrganization)     // 1..1
 * network[0] = Reference(AcmeOfCTStandardNetwork)
@@ -103,7 +103,6 @@ Usage: #example
 * language = #en-US
 * status = #active 
 * name = "State of CT Area"
-* type = #CoverageArea
 * address.state = "CT"
 * extension[region].valueAttachment.contentType = #application/json
 * extension[region].valueAttachment.title = "GeoJSON Outline of the State of Connecticut"
@@ -120,7 +119,7 @@ Usage: #example
 * language = #en-US
 * status = #active 
 * name = "Endpoint for Acme of CT Portal"
-* connectionType = #non-fhir-rest 
-* payloadType = #NA
+* connectionType = EndpointConnectionTypeCS#non-fhir-rest 
+* payloadType = EndpointPayloadTypeCS#NA
 * address = "https://urlofportal.acmect.com"
-* extension[endpoint-usecase].extension[Type].valueCodeableConcept = #HOPERAT
+* extension[endpoint-usecase].extension[Type].valueCodeableConcept = $V3ActReason#HOPERAT

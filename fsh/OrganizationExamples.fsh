@@ -9,7 +9,7 @@ Usage: #example
 * identifier[NPI].value = "NPI456"
 * identifier[NPI].system = $NPICS
 * name = "Hartford Orthopedics Services"
-* type = #prvgrp "Provider Group"
+* type = OrgTypeCS#prvgrp "Provider Group"
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
@@ -62,13 +62,27 @@ Usage: #example
 * telecom[1].value = "https://www.hartfordgeneralhospital.com"
 * telecom[1].rank = 1
 * address.line[0] = "123 Main Street"
-* address.city = "Anytown"
+* address.city = "Hartford"
 * address.state = "CT"
 * address.postalCode = "00014-1234"
 * contact.telecom[0].system = #phone
 * contact.telecom[0].value = "(111)-222-3333"
 * contact.telecom[0].rank = 1
-* type = #fac "Facility"
+* type = OrgTypeCS#fac "Facility"
+
+Instance: HartfordGeneralHospitalEmergencyService
+InstanceOf: PlannetHealthcareService
+Description: "Hartford General Hospital ER"
+Usage: #example
+* meta.profile = Canonical(PlannetPractitionerRole)
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* language = #en-US
+* active = true
+* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* category = HealthcareServiceCategoryCS#Emergency 
+* specialty =  $NUCCProviderTaxonomy#207P00000X   "Emergency Medicine Physician"
+* providedBy = Reference(HartfordGeneralHospital)
+* location[0] = Reference(HartfordHospitalLocation1)
 
 
 
@@ -83,8 +97,8 @@ Usage: #example
 * name = "Hartford Hospital Location 1"
 * type = $V3RoleCode#HOSP 
 * managingOrganization = Reference(HartfordGeneralHospital)
-* extension[accessibility][1].valueCodeableConcept = #pubtrans
-* extension[accessibility][0].valueCodeableConcept = #adacomp
+* extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
+* extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
@@ -127,8 +141,8 @@ Usage: #example
 * name = "Hartford Hospital Location 2"
 * type = $V3RoleCode#HOSP
 * managingOrganization = Reference(HartfordGeneralHospital)
-* extension[accessibility][1].valueCodeableConcept = #pubtrans
-* extension[accessibility][0].valueCodeableConcept = #adacomp
+* extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
+* extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
@@ -177,17 +191,17 @@ Instance: HartfordOrthopedicServicesAffiliation
 InstanceOf: PlannetOrganizationAffiliation
 Description: "Hartford Orthopedic Services affiliation with Acme of CT Provider Network and Hartford General Hospital"
 Usage: #example
-* meta.profile = Canonical(PlannetHealthcareService)
+* meta.profile = Canonical(PlannetOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = #Provider 
+* code = $HL7OrganizationRoleCS#provider 
 * healthcareService = Reference(HartfordOrthopedicServices)
 * participatingOrganization = Reference(HartfordOrthopedicServicesOrganization)
-* organization = Reference(HartordGeneralHospital)
+* organization = Reference(HartfordGeneralHospital)
 * location[1] = Reference(HartfordHospitalLocation2)
 * location[0] = Reference(HartfordHospitalLocation1)
-* network = Reference(eference(AcmeCTStandardNetwork))
+* network = Reference(AcmeOfCTStandardNetwork)
 
 Instance: HamiltonClinicAffiliation
 InstanceOf: PlannetOrganizationAffiliation
@@ -197,11 +211,11 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = #Outpatient 
+* code = OrganizationAffiliationRoleCS#outpatient 
 * healthcareService = Reference(HamiltonClinicServices)
 * participatingOrganization = Reference(HamiltonClinicOrganization)
 * location[0] = Reference(HartfordHospitalLocation1)
-* network = Reference(eference(AcmeCTStandardNetwork))
+* network = Reference(AcmeOfCTStandardNetwork)
 
 
 Instance: HamiltonClinicServices
@@ -221,7 +235,7 @@ Usage: #example
 
 Instance: HamiltonClinicOrganization
 InstanceOf: PlannetOrganization
-Description: "Hamilton Clinic (a Division of Hartord Hospital)"
+Description: "Hamilton Clinic (a Division of Hartford Hospital)"
 Usage: #example
 * meta.profile = Canonical(PlannetOrganization)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
@@ -244,7 +258,7 @@ Usage: #example
 * contact.telecom[0].system = #phone
 * contact.telecom[0].value = "(111)-222-3333"
 * contact.telecom[0].rank = 1
-* type = #fac "Facility"
+* type = OrgTypeCS#fac "Facility"
 
 
 Instance: BurrClinicAffiliation
@@ -255,11 +269,11 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = #Outpatient 
+* code = OrganizationAffiliationRoleCS#outpatient 
 * healthcareService = Reference(BurrClinicServices)
 * participatingOrganization = Reference(BurrClinicOrganization)
 * location[0] = Reference(HartfordHospitalLocation2)
-* network = Reference(eference(AcmeCTStandardNetwork))
+* network = Reference(AcmeOfCTStandardNetwork)
 * organization = Reference(HartfordGeneralHospital)
 
 Instance: BurrClinicServices
@@ -279,7 +293,7 @@ Usage: #example
 
 Instance: BurrClinicOrganization
 InstanceOf: PlannetOrganization
-Description: "Burr Clinic provides service to Hartord Hospital"
+Description: "Burr Clinic provides service to Hartford Hospital"
 Usage: #example
 * meta.profile = Canonical(PlannetOrganization)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
@@ -301,7 +315,7 @@ Usage: #example
 * contact.telecom[0].system = #phone
 * contact.telecom[0].value = "(111)-222-3333"
 * contact.telecom[0].rank = 1
-* type = #fac "Facility"
+* type = OrgTypeCS#fac "Facility"
 
 
 Instance: ConnHIE
@@ -326,7 +340,7 @@ Usage: #example
 * contact.telecom[0].system = #phone
 * contact.telecom[0].value = "(111)-222-3333"
 * contact.telecom[0].rank = 1
-* type = #atyp "Atypical Provider"
+* type = OrgTypeCS#atyprv "Atypical Provider"
 
 Instance: ConnHIEAffiliation
 InstanceOf: PlannetOrganizationAffiliation
@@ -336,10 +350,10 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = #belongsTo
+* code = OrganizationAffiliationRoleCS#bt
 * participatingOrganization = Reference(BurrClinicOrganization)
 * location[0] = Reference(HartfordHospitalLocation2)
-* network = Reference(eference(AcmeCTStandardNetwork))
+* network = Reference(AcmeOfCTStandardNetwork)
 * organization = Reference(ConnHIE)
 
 
@@ -410,13 +424,13 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* network = Reference(AcmeCTPreferredProviderNetwork)
+* network = Reference(AcmeOfCTSPreferredProviderNetwork)
 * participatingOrganization = Reference (PharmacyOrganizationA)
 * healthcareService = Reference(PharmacyAHealthCareService)
 * location[0] = Reference(PharmacyLocation1)
 * location[1] = Reference(PharmacyLocation2)
 
-Instance: AcmeCTPreferredProviderNetwork
+Instance: AcmeOfCTSPreferredProviderNetwork
 InstanceOf: PlannetNetwork
 Description: "Acme of CT Preferred Provider Network"
 Usage: #example

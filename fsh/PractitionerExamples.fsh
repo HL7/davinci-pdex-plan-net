@@ -15,17 +15,17 @@ Usage: #example
 * qualification[0].issuer.display = "State of Illinois"
 * qualification[0].code.text = "MD"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
-* qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = #IL 
+* qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
 * qualification[1].code = $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
 * qualification[1].issuer.display = "American Board of Internal Medicine"
 * qualification[1].code.text = "Board Certified Internal Medicine"
 * qualification[1].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
-* qualification[1].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = #IL 
+* qualification[1].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
 * qualification[2].code = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease"
 * qualification[2].issuer.display = "American Board of Internal Medicine"
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
-* qualification[2].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = #IL 
+* qualification[2].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
 
 
 Instance: HansSoloPractitioner
@@ -45,17 +45,17 @@ Usage: #example
 * qualification[0].issuer.display = "State of Illinois"
 * qualification[0].code.text = "MD"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
-* qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = #IL 
+* qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
 * qualification[1].code = $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
 * qualification[1].issuer.display = "American Board of Internal Medicine"
 * qualification[1].code.text = "Board Certified Internal Medicine"
 * qualification[1].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
-* qualification[1].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = #IL 
+* qualification[1].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
 * qualification[2].code = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease"
 * qualification[2].issuer.display = "American Board of Internal Medicine"
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
-* qualification[2].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = #IL 
+* qualification[2].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
 
 
 Instance: HansSoloPractitionerARole1
@@ -66,13 +66,13 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = ProviderRoleCS#PH 
+* code = ProviderRoleCS#ph 
 * practitioner = Reference(HansSoloPractitionerA)
 * healthcareService = Reference(HansSoloHealthcareService)
-* extension[network-reference].valueReference = Reference(AcmeCTStandardNetwork)
+* extension[network-reference].valueReference = Reference(AcmeOfCTStandardNetwork)
 * location[0] = Reference(HansSoloClinic)
 * specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
-* organization = Reference(HartfordHospitalOrganization)
+* organization = Reference(HartfordGeneralHospital)
 // specialty = internal medicine
 // available M-F
 
@@ -100,10 +100,10 @@ Usage: #example
 * name = "OrgA CT Location 1"
 * type = $V3RoleCode#OUTPHARM
 * managingOrganization = Reference(OrganizationB)
-* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = #AcceptingPatientsCS#existing
-* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeCTStandardNetwork)
-* extension[accessibility][1].valueCodeableConcept = #pubtrans
-* extension[accessibility][0].valueCodeableConcept = #adacomp
+* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
+* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeOfCTStandardNetwork)
+* extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
+* extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
@@ -140,13 +140,13 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = ProviderRoleCS#PH 
+* code = ProviderRoleCS#ph 
 * practitioner = Reference(JoeSmithPractitionerA)
 * healthcareService = Reference(HartfordGeneralHospitalEmergencyService)
-* extension[network-reference].valueReference = Reference(AcmeCTStandardNetwork)
+* extension[network-reference].valueReference = Reference(AcmeOfCTStandardNetwork)
 * location[0] = Reference(HartfordHospitalLocation1)
 * specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
-* organization = Reference(HartfordHospitalOrganization)
+* organization = Reference(HartfordGeneralHospital)
 // specialty = internal medicine
 // available M-F
 
@@ -158,11 +158,11 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = ProviderRoleCS#PH
+* code = ProviderRoleCS#ph
 // specialty = internal medicine
 // Available:  Sat/Sun
 * healthcareService = Reference(BurrClinicServices)
-* extension[network-reference].valueReference = Reference(AcmeCTStandardNetwork)
+* extension[network-reference].valueReference = Reference(AcmeOfCTStandardNetwork)
 * location[0] = Reference(HartfordHospitalLocation2)
 * specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
 * organization = Reference(BurrClinicOrganization)
@@ -175,13 +175,13 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = ProviderRoleCS#AP
+* code = ProviderRoleCS#ap 
 * healthcareService = Reference(BurrClinicServices)
-* extension[network-reference].valueReference = Reference(AcmeCTStandardNetwork)
+* extension[network-reference].valueReference = Reference(AcmeOfCTStandardNetwork)
 * location[0] = Reference(HartfordHospitalLocation2)
 * specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
 * specialty[1] = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease"
-* organization = Reference(HartfordHospitalOrganization)
+* organization = Reference(HartfordGeneralHospital)
 
 Instance: AnonymousPractitionerARole
 InstanceOf: PlannetPractitionerRole
@@ -191,9 +191,9 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = ProviderRoleCS#AP
+* code = ProviderRoleCS#ph
 * healthcareService = Reference(BurrClinicServices)
-* extension[network-reference].valueReference = Reference(AcmeCTStandardNetwork)
+* extension[network-reference].valueReference = Reference(AcmeOfCTStandardNetwork)
 * location[0] = Reference(HartfordHospitalLocation2)
 * specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
 * organization = Reference(HartfordCancerClinicLLC)
@@ -222,9 +222,9 @@ Usage: #example
 * status = #active 
 * name = "Cancer Clinic"
 * type = $V3RoleCode#HOSP 
-* managingOrganization = Reference(CancerClinicOrganization)
-* extension[accessibility][1].valueCodeableConcept = #pubtrans
-* extension[accessibility][0].valueCodeableConcept = #adacomp
+* managingOrganization = Reference(HartfordCancerClinicLLCOrganization)
+* extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
+* extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
@@ -273,4 +273,5 @@ Usage: #example
 * contact.telecom[0].system = #phone
 * contact.telecom[0].value = "(111)-222-3333"
 * contact.telecom[0].rank = 1
-* type = #fac "Facility"
+* type = OrgTypeCS#fac "Facility"
+
