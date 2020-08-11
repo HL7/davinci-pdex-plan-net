@@ -72,17 +72,15 @@ Title: "Location Reference"
 Description: "A reference to a Location resource (plannet-Location) defining the coverage area of a health insurance provider network"
 * value[x] only Reference (PlannetLocation)
 * value[x] 1..1 MS 
-//* valueReference MS
-//* valueReference only Reference(PlannetLocation) 
+
 
 Extension: NetworkReference
 Id: network-reference
 Title: "Network Reference"
 Description: "A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role"
-* value[x] only Reference
-* value[x] 1..1
-* valueReference MS
-* valueReference only Reference(PlannetNetwork) 
+* value[x] only Reference(PlannetNetwork) 
+* value[x] 1..1 MS 
+
 
 Extension: NewPatients
 Id: newpatients
@@ -174,7 +172,7 @@ Extension: ViaIntermediary
 Id: via-intermediary
 Title: "Via Intermediary"
 Description: "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization"
-* value[x] only Reference
-* valueReference 1..1 MS
 * value[x] only Reference(PlannetPractitionerRole or PlannetOrganizationAffiliation or PlannetLocation or PlannetOrganization) 
+* value[x] 1..1 MS
+
 
