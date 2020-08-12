@@ -4,9 +4,10 @@
 <p>This page contains miscellaneous information on  FHIR implementation. The content is primarily directed at implementers of Plan-Net. The following topics are addressed: </p>
 
 <ul>
-    <li><a href="#Privacy">Privacy Considerations</a></li>
-    <li><a href="#Conformance">Conformance Requirements</a></li>
-    <li><a href="#USCore">Relationship to USCore</a></li>
+    <li><a href="#privacy-considerations">Privacy Considerations</a></li>
+    <li><a href="#conformance-requirements">Conformance Requirements</a></li>
+    <li><a href="#relationship-to-us-core">Relationship to USCore</a></li>
+    <li><a href="#general-security-considerations">General Security Considerations</a></li>
 </ul>
 
 <h4><a name="Privacy"></a>Privacy Considerations</h4>
@@ -39,5 +40,6 @@ When querying and reading the Plan-Net Profiles defined in this IG, Must Support
 <h4>Relationship to US Core</h4>
 <p>This guide used a corresponding US Core profile as its base profile in all cases where such a profile existed and wasn't in conflict with the Payer data models supporting a provider directory (i.e. Location, Organization and Practitioner).   Conflicts prevented the use of the USCore PractitionerRole profile, but all compatible aspects of the USCore PractitionerRole profile were retained in the corresponding Plan-Net profile.   
 
+<h4>General Security Considerations</h4>
 
 </div>
