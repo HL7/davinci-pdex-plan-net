@@ -24,7 +24,7 @@
     "InsurancePlan"
   ],
   "type": "string",
-  "expression": "InsurancePlan.name",
+  "expression": "name | alias",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

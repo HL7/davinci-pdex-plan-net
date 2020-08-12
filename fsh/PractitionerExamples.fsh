@@ -67,7 +67,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * code = ProviderRoleCS#ph 
-* practitioner = Reference(HansSoloPractitionerA)
+* practitioner = Reference(HansSoloPractitioner)
 * healthcareService = Reference(HansSoloHealthcareService)
 * extension[network-reference].valueReference = Reference(AcmeOfCTStandardNetwork)
 * location[0] = Reference(HansSoloClinic)
@@ -141,7 +141,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * code = ProviderRoleCS#ph 
-* practitioner = Reference(JoeSmithPractitionerA)
+* practitioner = Reference(JoeSmithPractitioner)
 * healthcareService = Reference(HartfordGeneralHospitalEmergencyService)
 * extension[network-reference].valueReference = Reference(AcmeOfCTStandardNetwork)
 * location[0] = Reference(HartfordHospitalLocation1)
@@ -196,7 +196,7 @@ Usage: #example
 * extension[network-reference].valueReference = Reference(AcmeOfCTStandardNetwork)
 * location[0] = Reference(HartfordHospitalLocation2)
 * specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
-* organization = Reference(HartfordCancerClinicLLC)
+* organization = Reference(HartfordCancerClinicLLCOrganization)
 
 Instance: CancerClinicHealthcareService
 InstanceOf: PlannetHealthcareService

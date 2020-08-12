@@ -93,7 +93,7 @@ Usage: #example
 * healthcareService = Reference(PharmacyAHealthCareService)
 * location[0] = Reference(PharmacyLocation1)
 * location[1] = Reference(PharmacyLocation2)
-* code = #pharmacy 
+* code = OrganizationAffiliationRoleCS#pharmacy 
 
 Instance: PharmacyOrganizationAffiliation2
 InstanceOf: PlannetOrganizationAffiliation
@@ -107,7 +107,7 @@ Usage: #example
 * participatingOrganization = Reference (PharmacyOrganizationA)
 * healthcareService = Reference(CompoundingPharmacyHealthCareService)
 * location[0] = Reference(PharmacyLocation1)
-* code = #pharmacy 
+* code = OrganizationAffiliationRoleCS#pharmacy 
 
 Instance: CompoundingPharmacyHealthCareService
 InstanceOf: PlannetHealthcareService

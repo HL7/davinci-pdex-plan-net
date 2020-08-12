@@ -80,12 +80,6 @@ The following search parameters are required for conformance to this implementat
 <td>Select products that are offered in the specified location</td>
 </tr>
 <tr>
-<td><a href="SearchParameter-insuranceplan-coverage-type.html">coverage-type</a></td>
-<td>InsurancePlan</td>
-<td>token</td>
-<td>Select products offering the specified type of coverage</td>
-</tr>
-<tr>
 <td><a href="SearchParameter-insuranceplan-name.html">name</a></td>
 <td>InsurancePlan</td>
 <td>string</td>
@@ -104,7 +98,7 @@ The following search parameters are required for conformance to this implementat
 <td>Select products that are owned by the specified organization</td>
 </tr>
 <tr>
-<td><a href="SearchParameter-insuranceplan-plan-coverage-area.html">plan-coverage-area</a></td>
+<td><a href="SearchParameter-insuranceplan-coverage-area.html">plan-coverage-area</a></td>
 <td>InsurancePlan</td>
 <td>reference</td>
 <td>Select plans that are available in the specified location</td>
@@ -168,18 +162,6 @@ The following search parameters are required for conformance to this implementat
 <td>Organization</td>
 <td>reference</td>
 <td>Select Organizations that are part of the specified organization</td>
-</tr>
-<tr>
-<td><a href="SearchParameter-organization-type.html">type</a></td>
-<td>Organization</td>
-<td>token</td>
-<td>Select Organizations of the specified type</td>
-</tr>
-<tr>
-<td><a href="SearchParameter-organizationaffiliation-identifier-assigner.html">identifier-assigner</a></td>
-<td>OrganizationAffiliation</td>
-<td>reference</td>
-<td>Select OrganizationAffiliations with an identifier issued by the specified organization</td>
 </tr>
 <tr>
 <td><a href="SearchParameter-organizationaffiliation-location.html">location</a></td>
@@ -270,12 +252,6 @@ The following search parameters are required for conformance to this implementat
 <td>PractitionerRole</td>
 <td>reference</td>
 <td>Select roles filled by the specified practitioner</td>
-</tr>
-<tr>
-<td><a href="SearchParameter-practitionerrole-qualification-code.html">qualification-code</a></td>
-<td>PractitionerRole</td>
-<td>token</td>
-<td>Select PractitionerRoles with a type of qualification matching the specified code</td>
 </tr>
 <tr>
 <td><a href="SearchParameter-practitionerrole-role.html">role</a></td>
