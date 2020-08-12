@@ -54,7 +54,7 @@
         </tr>
          <tr>
           <td><a href="StructureDefinition-practitioner-qualification.html">Practitioner-Qualification</a></td>
-          <td>{% capture md_text %}An extension to add status and whereValie elements to a practitioner’s qualifications.{% endcapture %}{{ md_text | markdownify }}</td>
+          <td>{% capture md_text %}An extension to add status and whereValid elements to a practitioner’s qualifications.{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
       <tr>
           <td><a href="StructureDefinition-qualification.html">Qualification</a></td>

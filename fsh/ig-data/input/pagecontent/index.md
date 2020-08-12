@@ -68,7 +68,7 @@ Note: the following diagrams provide a high-level view of the relationships betw
 <img src="Slide3.png" alt = "Relationships Between Payer Directory Resources -- Endpoints" style="height:auto;float:none;align:middle;"  />
 
 </h4>Credits</h4>
-This IG was developed by the MITRE Corporation under the direction of the authors using [FHIR Shorthand syntax](https://build.fhir.org/ig/HL7/fhir-shorthand/) and the [SUSHI tookit](https://github.com/FHIR/sushi),  a free, open source toolchain from the MITRE Corporation.  The capability statements were developed with support of tools and generous guidance from Eric Haas.
+This IG was developed by the MITRE Corporation under the direction of the authors using [FHIR Shorthand syntax](https://build.fhir.org/ig/HL7/fhir-shorthand/) and the [SUSHI tookit](https://github.com/FHIR/sushi),  a free, open source toolchain from the MITRE Corporation.  Generous guidance on FHIR Shorthand and sushi was provided by Chris Moessel.  The capability statements were developed with support of tools and generous guidance from Eric Haas, and received critical review by Yengibar Manasyan.
 
   
 <h4>Authors</h4>

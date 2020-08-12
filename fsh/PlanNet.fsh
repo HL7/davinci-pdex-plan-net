@@ -4,7 +4,7 @@ Profile:        PlannetEndpoint
 Parent:         Endpoint
 Id:             plannet-Endpoint 
 Title:          "Plan-net Endpoint"
-Description:    "The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information."
+Description:    "The technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging."
 * meta.lastUpdated 1..1
 * extension contains 
     EndpointUsecase named endpoint-usecase 0..*
