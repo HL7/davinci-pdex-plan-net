@@ -2,7 +2,7 @@
 
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 <h3>Required Search Parameters</h3>
-The following search parameters are required for conformance to this implementation guide (see the <a href="capability.html">capability statement</a> for details).
+The following search parameters are required for conformance to this implementation guide (see the <a href="CapabilityStatement-davinci-pdex-plan-net.html">capability statement</a> for details).
 <table border="1">
 <thead>
 <tr>
