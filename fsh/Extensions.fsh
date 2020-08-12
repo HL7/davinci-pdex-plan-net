@@ -18,7 +18,7 @@ Description: "An extension to express a practitioner’s spoken proficiency with
 Extension: ContactPointAvailableTime
 Id: contactpoint-availabletime
 Title: "Contactpoint Availabletime"
-Description: "An extension representing the times a contact point is available"
+Description: "An extension representing the days and times a contact point is available"
 * value[x] 0..0
 * extension contains
    daysOfWeek 0..* MS and 

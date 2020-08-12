@@ -26,6 +26,7 @@ Alias:   $HL7PractitionerRoleCS = http://terminology.hl7.org/CodeSystem/practiti
 Alias:   $HL7OrganizationRoleCS = http://hl7.org/fhir/organization-role
 Alias:   $ServiceTypeCS = http://terminology.hl7.org/CodeSystem/service-type 
 Alias:   $NPICS = http://hl7.org/fhir/sid/us-npi
+Alias: $BCP47 = urn:ietf:bcp:47
 
 // CodeSystem and ValueSet Aliases
 Alias:  $V3ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason

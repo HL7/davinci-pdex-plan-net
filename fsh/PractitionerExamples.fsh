@@ -56,7 +56,8 @@ Usage: #example
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[2].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-
+* extension[communication-proficiency].valueCodeableConcept = LanguageProficiencyCS#30
+* communication = $BCP47#ja 
 
 Instance: HansSoloPractitionerARole1
 InstanceOf: PlannetPractitionerRole

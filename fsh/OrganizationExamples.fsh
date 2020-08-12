@@ -69,6 +69,12 @@ Usage: #example
 * contact.telecom[0].value = "(111)-222-3333"
 * contact.telecom[0].rank = 1
 * type = OrgTypeCS#fac "Facility"
+/* 
+* extension[qualification].extension[identifier]
+* extension[qualification].extension[code] = 
+* extension[qualification].extension[issuer].display = "CMS"
+* extension[qualification].extension[status] = $QualificationStatusCS#active
+*/
 
 Instance: HartfordGeneralHospitalEmergencyService
 InstanceOf: PlannetHealthcareService

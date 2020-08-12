@@ -12,7 +12,7 @@ Access to the Plan-net service should not require authentication, and the server
 <p>A conformant Plan-net service <strong>SHALL NOT</strong> require a directory mobile application to send consumer identifying information in order to query content.</p>
 <p>A directory mobile application <strong>SHALL NOT</strong> send consumer identifiable information when querying a Plan-net service.</p>
 <h4><a name="Conformance"></a>Conformance Requirements</h4>
-<p>The conformance verbs - <strong>SHALL</strong>, <strong>SHOULD</strong>, <strong>MAY</strong> - used in this guide are defined in [FHIR Conformance Rules](https://trifolia-fhir-dev.lantanagroup.com/http:/hl7.org/fhir/R4/conformance-rules.html).</p>
+<p>The conformance verbs - <strong>SHALL</strong>, <strong>SHALL NOT,&nbsp;</strong><strong>SHOULD</strong>, <strong>MAY</strong> - used in this guide are defined in <a href="http:/hl7.org/fhir/R4/conformance-rules.html">FHIR Conformance Rules</a>.</p>
 <h4><a name="MustSupport"></a>Must Support</h4>
 <p>When querying and reading the Plan-Net Profiles defined in this IG, Must Support on any profile data element <strong>SHALL</strong> be interpreted as follows:</p>
 <h5>Health Plan API Requirements</h5>
