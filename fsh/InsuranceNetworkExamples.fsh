@@ -119,7 +119,7 @@ Usage: #example
 * language = #en-US
 * status = #active 
 * name = "Endpoint for Acme of CT Portal"
-* connectionType = EndpointConnectionTypeCS#non-fhir-rest 
+* connectionType = EndpointConnectionTypeCS#rest-non-fhir
 * payloadType = EndpointPayloadTypeCS#NA
 * address = "https://urlofportal.acmect.com"
 * extension[endpoint-usecase].extension[Type].valueCodeableConcept = $V3ActReason#HOPERAT

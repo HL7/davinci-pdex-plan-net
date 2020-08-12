@@ -74,7 +74,7 @@ Instance: HartfordGeneralHospitalEmergencyService
 InstanceOf: PlannetHealthcareService
 Description: "Hartford General Hospital ER"
 Usage: #example
-* meta.profile = Canonical(PlannetPractitionerRole)
+* meta.profile = Canonical(PlannetHealthcareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
