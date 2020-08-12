@@ -31,8 +31,8 @@ Alias:   $NPICS = http://hl7.org/fhir/sid/us-npi
 Alias:  $V3ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
 Alias: $V3RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 //Alias:  $PaymentTypology =  urn:oid:2.16.840.1.113883.3.221.5  
-// Alias:  $NUCCProviderTaxonomy = http://nucc.org/provider-taxonomy
-Alias:  $NUCCProviderTaxonomy  = https://taxonomy.nucc.org
+Alias:  $NUCCProviderTaxonomy = http://nucc.org/provider-taxonomy
+///Alias:  $NUCCProviderTaxonomy  = https://taxonomy.nucc.org
 Alias:  $V2table0360VS = http://terminology.hl7.org/ValueSet/v2-0360 
 Alias:  $V2table0360CS = http://terminology.hl7.org/CodeSystem/v2-0360 
 
