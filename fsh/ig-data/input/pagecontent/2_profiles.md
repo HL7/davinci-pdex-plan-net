@@ -51,7 +51,7 @@ In the PlanNet IG, individuals and organizations are represented as participants
     </tr>
     <tr>
       <td><a href="StructureDefinition-plannet-Organization.html">PlannetOrganization</a></td>
-      <td><a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-organization.html ">Organization (US Core)</a></td>
+      <td><a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-organization.html">Organization (US Core)</a></td>
       <td>{% capture md_text %}An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.
       {% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
