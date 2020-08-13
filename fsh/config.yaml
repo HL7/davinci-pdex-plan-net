@@ -62,7 +62,9 @@ template: hl7.davinci.template#current
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home          : index.html
-  Implementation: implementation.html
+  Implementation:
+    Implementation                              :         implementation.html
+    Representing Provider Directories in Plannet:         representing.html
   FHIR Artifacts:
     Profiles            : profiles.html
     Extensions          : extensions.html

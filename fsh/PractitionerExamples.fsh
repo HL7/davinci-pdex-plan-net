@@ -210,7 +210,7 @@ Usage: #example
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#Outpatient 
 * providedBy = Reference(HartfordCancerClinicLLCOrganization)
-* specialty = $NUCCProviderTaxonomy#XXXXXXXX "Cancer Treament"  
+* specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology Physician"  
 * location[0] = Reference(CancerClinicLocation)
 
 Instance: CancerClinicLocation
