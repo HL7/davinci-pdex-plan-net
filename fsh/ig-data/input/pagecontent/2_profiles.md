@@ -38,7 +38,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
     </tr>
     <tr>
       <td><a href="StructureDefinition-plannet-Location.html">PlannetLocation</a></td>
-      <td><a href="http://hl7.org/fhir/us/core/STU3/StructureDefinition-us-core-location.html">Location (US Core)</a></td>
+      <td><a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-location.html">Location (US Core)</a></td>
       <td>{% capture md_text %}A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
@@ -51,7 +51,7 @@ In the PlanNet IG, individuals and organizations are represented as participants
     </tr>
     <tr>
       <td><a href="StructureDefinition-plannet-Organization.html">PlannetOrganization</a></td>
-      <td><a href="http://hl7.org/fhir/us/core/STU3/StructureDefinition-us-core-organization.html ">Organization (US Core)</a></td>
+      <td><a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-organization.html ">Organization (US Core)</a></td>
       <td>{% capture md_text %}An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.
       {% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
@@ -62,7 +62,7 @@ In the PlanNet IG, individuals and organizations are represented as participants
     </tr>
     <tr>
       <td><a href="StructureDefinition-plannet-Practitioner.html">PlannetPractitioner</a></td>
-      <td><a href="http://hl7.org/fhir/us/core/STU3/StructureDefinition-us-core-practitioner.html">Practitioner (US Core)</a></td>
+      <td><a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-practitioner.html">Practitioner (US Core)</a></td>
       <td>{% capture md_text %}Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
