@@ -1,4 +1,4 @@
-Instance: HartfordOrthopedicServicesOrganization
+Instance: HartfordOrthopedics 
 InstanceOf: PlannetOrganization
 Description: "Hartford Orthpedic Services is a group providing Orthpods for Acme of CT at Hartford General Hospital"
 Usage: #example
@@ -44,7 +44,7 @@ Usage: #example
 * contact.telecom[0].extension[contactpoint-availabletime][1].extension[availableStartTime].valueTime = 08:00:00
 * contact.telecom[0].extension[contactpoint-availabletime][1].extension[availableEndTime].valueTime = 17:00:00
 
-Instance: HartfordGeneralHospital
+Instance: Hospital
 InstanceOf: PlannetOrganization
 Description: "Hartford General Hospital"
 Usage: #example
@@ -76,7 +76,7 @@ Usage: #example
 * extension[qualification].extension[status] = $QualificationStatusCS#active
 */
 
-Instance: HartfordGeneralHospitalEmergencyService
+Instance: HospERService
 InstanceOf: PlannetHealthcareService
 Description: "Hartford General Hospital ER"
 Usage: #example
@@ -87,12 +87,12 @@ Usage: #example
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#Emergency 
 * specialty =  $NUCCProviderTaxonomy#207P00000X   "Emergency Medicine Physician"
-* providedBy = Reference(HartfordGeneralHospital)
-* location[0] = Reference(HartfordHospitalLocation1)
+* providedBy = Reference(Hospital)
+* location[0] = Reference(HospLoc1)
 
 
 
-Instance: HartfordHospitalLocation1
+Instance: HospLoc1
 InstanceOf: PlannetLocation
 Description: "Location1 of Hartford Hospital"
 Usage: #example
@@ -102,7 +102,7 @@ Usage: #example
 * status = #active 
 * name = "Hartford Hospital Location 1"
 * type = $V3RoleCode#HOSP 
-* managingOrganization = Reference(HartfordGeneralHospital)
+* managingOrganization = Reference(Hospital)
 * extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
 * extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * telecom[0].system = #phone
@@ -136,7 +136,7 @@ Usage: #example
 
 
 
-Instance: HartfordHospitalLocation2
+Instance: HospLoc2
 InstanceOf: PlannetLocation
 Description: "Location2 of Hartford Hospital"
 Usage: #example
@@ -146,7 +146,7 @@ Usage: #example
 * status = #active 
 * name = "Hartford Hospital Location 2"
 * type = $V3RoleCode#HOSP
-* managingOrganization = Reference(HartfordGeneralHospital)
+* managingOrganization = Reference(Hospital)
 * extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
 * extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * telecom[0].system = #phone
@@ -189,11 +189,11 @@ Usage: #example
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#Provider 
 * specialty = $NUCCProviderTaxonomy#207X00000X "Orthopedic Surgery Physician"   // Orthopedics
-* providedBy = Reference(HartfordOrthopedicServicesOrganization)
-* location[1] = Reference(HartfordHospitalLocation2)
-* location[0] = Reference(HartfordHospitalLocation1)
+* providedBy = Reference(HartfordOrthopedics)
+* location[1] = Reference(HospLoc2)
+* location[0] = Reference(HospLoc1)
 
-Instance: HartfordOrthopedicServicesAffiliation
+Instance: HartfordOrthopedicAffil
 InstanceOf: PlannetOrganizationAffiliation
 Description: "Hartford Orthopedic Services affiliation with Acme of CT Provider Network and Hartford General Hospital"
 Usage: #example
@@ -203,13 +203,13 @@ Usage: #example
 * active = true
 * code = $HL7OrganizationRoleCS#provider 
 * healthcareService = Reference(HartfordOrthopedicServices)
-* participatingOrganization = Reference(HartfordOrthopedicServicesOrganization)
-* organization = Reference(HartfordGeneralHospital)
-* location[1] = Reference(HartfordHospitalLocation2)
-* location[0] = Reference(HartfordHospitalLocation1)
-* network = Reference(AcmeOfCTStandardNetwork)
+* participatingOrganization = Reference(HartfordOrthopedics)
+* organization = Reference(Hospital)
+* location[1] = Reference(HospLoc2)
+* location[0] = Reference(HospLoc1)
+* network = Reference(AcmeofCTStdNet)
 
-Instance: HamiltonClinicAffiliation
+Instance: HamiltonClinicAffil
 InstanceOf: PlannetOrganizationAffiliation
 Description: "Hamilton Clinic's affiliation with Acme of CT Provider Network and Hartford General Hospital"
 Usage: #example
@@ -219,9 +219,9 @@ Usage: #example
 * active = true
 * code = OrganizationAffiliationRoleCS#outpatient 
 * healthcareService = Reference(HamiltonClinicServices)
-* participatingOrganization = Reference(HamiltonClinicOrganization)
-* location[0] = Reference(HartfordHospitalLocation1)
-* network = Reference(AcmeOfCTStandardNetwork)
+* participatingOrganization = Reference(HamiltonClinic)
+* location[0] = Reference(HospLoc1)
+* network = Reference(AcmeofCTStdNet)
 
 
 Instance: HamiltonClinicServices
@@ -235,11 +235,11 @@ Usage: #example
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#Outpatient 
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
-* providedBy = Reference(HamiltonClinicOrganization)
-* location[0] = Reference(HartfordHospitalLocation1)
+* providedBy = Reference(HamiltonClinic)
+* location[0] = Reference(HospLoc1)
 
 
-Instance: HamiltonClinicOrganization
+Instance: HamiltonClinic
 InstanceOf: PlannetOrganization
 Description: "Hamilton Clinic (a Division of Hartford Hospital)"
 Usage: #example
@@ -250,7 +250,7 @@ Usage: #example
 * identifier[NPI].value = "NPI78"
 * identifier[NPI].system = $NPICS
 * name = "Hamilton Clinic"
-* partOf = Reference(HartfordGeneralHospital)
+* partOf = Reference(Hospital)
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
@@ -267,7 +267,7 @@ Usage: #example
 * type = OrgTypeCS#fac "Facility"
 
 
-Instance: BurrClinicAffiliation
+Instance: BurrClinicAffil
 InstanceOf: PlannetOrganizationAffiliation
 Description: "Burr Clinic's affiliation with Acme of CT Provider Network and Hartford General Hospital"
 Usage: #example
@@ -277,10 +277,10 @@ Usage: #example
 * active = true
 * code = OrganizationAffiliationRoleCS#outpatient 
 * healthcareService = Reference(BurrClinicServices)
-* participatingOrganization = Reference(BurrClinicOrganization)
-* location[0] = Reference(HartfordHospitalLocation2)
-* network = Reference(AcmeOfCTStandardNetwork)
-* organization = Reference(HartfordGeneralHospital)
+* participatingOrganization = Reference(BurrClinic)
+* location[0] = Reference(HospLoc2)
+* network = Reference(AcmeofCTStdNet)
+* organization = Reference(Hospital)
 
 Instance: BurrClinicServices
 InstanceOf: PlannetHealthcareService
@@ -293,11 +293,11 @@ Usage: #example
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#Outpatient 
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
-* providedBy = Reference(BurrClinicOrganization)
-* location[0] = Reference(HartfordHospitalLocation1)
+* providedBy = Reference(BurrClinic)
+* location[0] = Reference(HospLoc1)
 
 
-Instance: BurrClinicOrganization
+Instance: BurrClinic
 InstanceOf: PlannetOrganization
 Description: "Burr Clinic provides service to Hartford Hospital"
 Usage: #example
@@ -348,7 +348,7 @@ Usage: #example
 * contact.telecom[0].rank = 1
 * type = OrgTypeCS#atyprv "Atypical Provider"
 
-Instance: ConnHIEAffiliation
+Instance: ConnHIEAffil
 InstanceOf: PlannetOrganizationAffiliation
 Description: "Burr Clinic's affiliation with Conn HIE"
 Usage: #example
@@ -357,9 +357,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * code = OrganizationAffiliationRoleCS#bt
-* participatingOrganization = Reference(BurrClinicOrganization)
-* location[0] = Reference(HartfordHospitalLocation2)
-* network = Reference(AcmeOfCTStandardNetwork)
+* participatingOrganization = Reference(BurrClinic)
 * organization = Reference(ConnHIE)
 
 

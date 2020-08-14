@@ -1,4 +1,4 @@
-Instance: JoeSmithPractitioner
+Instance: JoeSmith
 InstanceOf: PlannetPractitioner
 Description: "Practitioner Dr Joe Smith"
 Usage: #example
@@ -28,7 +28,7 @@ Usage: #example
 * qualification[2].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
 
 
-Instance: HansSoloPractitioner
+Instance: HansSolo
 InstanceOf: PlannetPractitioner
 Description: "Solo Practitioner Hans Solo"
 Usage: #example
@@ -59,7 +59,7 @@ Usage: #example
 * extension[communication-proficiency].valueCodeableConcept = LanguageProficiencyCS#30
 * communication = $BCP47#ja 
 
-Instance: HansSoloPractitionerARole1
+Instance: HansSoloRole1
 InstanceOf: PlannetPractitionerRole
 Description: "Hans Solo is a solo practitioner"
 Usage: #example
@@ -68,16 +68,16 @@ Usage: #example
 * language = #en-US
 * active = true
 * code = ProviderRoleCS#ph 
-* practitioner = Reference(HansSoloPractitioner)
-* healthcareService = Reference(HansSoloHealthcareService)
-* extension[network-reference].valueReference = Reference(AcmeOfCTStandardNetwork)
+* practitioner = Reference(HansSolo)
+* healthcareService = Reference(HansSoloService)
+* extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HansSoloClinic)
 * specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
-* organization = Reference(HartfordGeneralHospital)
+* organization = Reference(Hospital)
 // specialty = internal medicine
 // available M-F
 
-Instance: HansSoloHealthcareService
+Instance: HansSoloService
 InstanceOf: PlannetHealthcareService
 Description: "Hans Solo Services"
 Usage: #example
@@ -100,9 +100,9 @@ Usage: #example
 * status = #active 
 * name = "OrgA CT Location 1"
 * type = $V3RoleCode#OUTPHARM
-* managingOrganization = Reference(OrganizationB)
+* managingOrganization = Reference(BigBox)
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
-* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeOfCTStandardNetwork)
+* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
 * extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * telecom[0].system = #phone
@@ -133,7 +133,7 @@ Usage: #example
 * hoursOfOperation[0].closingTime = 17:00:00
 
 
-Instance: JoeSmithPractitionerARole1
+Instance: JoeSmithRole1
 InstanceOf: PlannetPractitionerRole
 Description: "Dr Smith moonlighting as ER Doc at Hartford Hospital"
 Usage: #example
@@ -142,16 +142,16 @@ Usage: #example
 * language = #en-US
 * active = true
 * code = ProviderRoleCS#ph 
-* practitioner = Reference(JoeSmithPractitioner)
-* healthcareService = Reference(HartfordGeneralHospitalEmergencyService)
-* extension[network-reference].valueReference = Reference(AcmeOfCTStandardNetwork)
-* location[0] = Reference(HartfordHospitalLocation1)
+* practitioner = Reference(JoeSmith)
+* healthcareService = Reference(HospERService)
+* extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
+* location[0] = Reference(HospLoc1)
 * specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
-* organization = Reference(HartfordGeneralHospital)
+* organization = Reference(Hospital)
 // specialty = internal medicine
 // available M-F
 
-Instance: JoeSmithPractitionerARole2
+Instance: JoeSmithRole2
 InstanceOf: PlannetPractitionerRole
 Description: "Dr Smith Internal Medicine at Burr Clinic"
 Usage: #example
@@ -163,12 +163,12 @@ Usage: #example
 // specialty = internal medicine
 // Available:  Sat/Sun
 * healthcareService = Reference(BurrClinicServices)
-* extension[network-reference].valueReference = Reference(AcmeOfCTStandardNetwork)
-* location[0] = Reference(HartfordHospitalLocation2)
+* extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
+* location[0] = Reference(HospLoc2)
 * specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
-* organization = Reference(BurrClinicOrganization)
+* organization = Reference(BurrClinic)
 
-Instance: JoeSmithPractitionerARole3
+Instance: JoeSmithRole3
 InstanceOf: PlannetPractitionerRole
 Description: "Dr Smith Admitting Privileges at Hartford General"
 Usage: #example
@@ -178,13 +178,13 @@ Usage: #example
 * active = true
 * code = ProviderRoleCS#ap 
 * healthcareService = Reference(BurrClinicServices)
-* extension[network-reference].valueReference = Reference(AcmeOfCTStandardNetwork)
-* location[0] = Reference(HartfordHospitalLocation2)
+* extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
+* location[0] = Reference(HospLoc2)
 * specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
 * specialty[1] = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease"
-* organization = Reference(HartfordGeneralHospital)
+* organization = Reference(Hospital)
 
-Instance: AnonymousPractitionerARole
+Instance: AnonRole
 InstanceOf: PlannetPractitionerRole
 Description: "Practitioner role that doesn't refer to a specific practitioner"
 Usage: #example
@@ -194,12 +194,12 @@ Usage: #example
 * active = true
 * code = ProviderRoleCS#ph
 * healthcareService = Reference(BurrClinicServices)
-* extension[network-reference].valueReference = Reference(AcmeOfCTStandardNetwork)
-* location[0] = Reference(HartfordHospitalLocation2)
+* extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
+* location[0] = Reference(HospLoc2)
 * specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
-* organization = Reference(HartfordCancerClinicLLCOrganization)
+* organization = Reference(CancerClinic)
 
-Instance: CancerClinicHealthcareService
+Instance: CancerClinicService
 InstanceOf: PlannetHealthcareService
 Description: "Cancer Clinic Services"
 Usage: #example
@@ -209,11 +209,11 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#Outpatient 
-* providedBy = Reference(HartfordCancerClinicLLCOrganization)
+* providedBy = Reference(CancerClinic)
 * specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology Physician"  
-* location[0] = Reference(CancerClinicLocation)
+* location[0] = Reference(CancerClinicLoc)
 
-Instance: CancerClinicLocation
+Instance: CancerClinicLoc
 InstanceOf: PlannetLocation
 Description: "Location1 of Cancer Clinic"
 Usage: #example
@@ -223,7 +223,7 @@ Usage: #example
 * status = #active 
 * name = "Cancer Clinic"
 * type = $V3RoleCode#HOSP 
-* managingOrganization = Reference(HartfordCancerClinicLLCOrganization)
+* managingOrganization = Reference(CancerClinic)
 * extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
 * extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * telecom[0].system = #phone
@@ -250,7 +250,7 @@ Usage: #example
 * hoursOfOperation[0].daysOfWeek[3] = #thu
 * hoursOfOperation[0].daysOfWeek[4]  = #fri 
 
-Instance: HartfordCancerClinicLLCOrganization
+Instance: CancerClinic
 InstanceOf: PlannetOrganization
 Description: "HartfordCancerClinicLLC"
 Usage: #example
@@ -265,7 +265,7 @@ Usage: #example
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
 * telecom[1].system = #url
-* telecom[1].value = "https://www.hartfordgeneralhospital.com"
+* telecom[1].value = "https://www.Hospital.com"
 * telecom[1].rank = 1
 * address.line[0] = "123 Main Street"
 * address.city = "Anytown"

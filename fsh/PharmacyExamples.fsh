@@ -1,4 +1,4 @@
-Instance: PharmacyOrganizationA
+Instance: PharmChain
 InstanceOf: PlannetOrganization
 Description: "Organization that Provides Pharmacy Services"
 Usage: #example
@@ -6,7 +6,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* name = "PharmOrgA"
+* name = "Pharm Chain"
 * type = OrgTypeCS#prvgrp "Provider Group"
 * identifier[NPI].system = $NPICS
 * identifier[NPI].value = "NPI-ORGA"
@@ -21,22 +21,22 @@ Usage: #example
 * telecom[0].extension[contactpoint-availabletime][0].extension[availableStartTime].valueTime = 08:00:00
 * telecom[0].extension[contactpoint-availabletime][0].extension[availableEndTime].valueTime = 17:00:00
 * telecom[1].system = #url
-* telecom[1].value = "https://www.pharmorga.com"
+* telecom[1].value = "https://www.pharmchain.com"
 * telecom[1].rank = 1
 * address.line[0] = "123 Main Street"
 * address.city = "Norwalk"
 * address.state = "CT"
 * address.postalCode = "00014-1234"
 
-Instance: OrganizationB
+Instance: BigBox
 InstanceOf: PlannetOrganization
-Description: "Organization that Manages 2 of PharmacyOrganizationA's pharmacies"
+Description: "Organization that Manages 2 of PharmChain's pharmacies"
 Usage: #example
 * meta.profile =  Canonical(PlannetOrganization) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* name = "OrgB"
+* name = "BigBox"
 * type = OrgTypeCS#bus "Non-Healthcare business"
 * name = "Big Box Retailer"
 * telecom[0].system = #phone
@@ -58,58 +58,72 @@ Usage: #example
 * address.postalCode = "00014-1234"
 
 
-Instance: PharmacyAHealthCareService
+Instance: PharmChainRetailService
 InstanceOf: PlannetHealthcareService
-Description: "Pharmacy Service provided by PharmOrgA"
+Description: "Pharmacy Service provided by PharmChain"
 Usage: #example
 * meta.profile =  Canonical(PlannetHealthcareService) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* name = "Pharmacy by PharmOrgA"
+* name = "Pharmacy by PharmChain"
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
-* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeOfCTStandardNetwork)
+* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * category = HealthcareServiceCategoryCS#Pharmacy  "Pharmacy"
 * specialty = $NUCCProviderTaxonomy#3336C0003X "Retail Pharmacy"
-* providedBy = Reference(PharmacyOrganizationA)
-* location[0] = Reference(PharmacyLocation1)
-* location[1] = Reference(PharmacyLocation2)
-* location[2] = Reference(PharmacyLocation3)
-* location[3] = Reference(PharmacyLocation4)
-* telecom.extension[via-intermediary].valueReference = Reference(PharmacyOrganizationA)
+* providedBy = Reference(PharmChain)
+* location[0] = Reference(PharmLoc1)
+* location[1] = Reference(PharmLoc2)
+* location[2] = Reference(PharmLoc3)
+* location[3] = Reference(PharmLoc4)
+* telecom.extension[via-intermediary].valueReference = Reference(PharmChain)
 
 
-Instance: PharmacyOrganizationAffiliation1
+Instance: PharmChainAffil1
 InstanceOf: PlannetOrganizationAffiliation
-Description: "Organization Affiliation for PharmacyOrganizationA"
+Description: "Organization Affiliation for PharmChain"
 Usage: #example
 * meta.profile =  Canonical(PlannetOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* network = Reference(AcmeOfCTStandardNetwork)
-* participatingOrganization = Reference (PharmacyOrganizationA)
-* healthcareService = Reference(PharmacyAHealthCareService)
-* location[0] = Reference(PharmacyLocation1)
-* location[1] = Reference(PharmacyLocation2)
+* network = Reference(AcmeofCTStdNet)
+* participatingOrganization = Reference (PharmChain)
+* healthcareService = Reference(PharmChainRetailService)
+* location[0] = Reference(PharmLoc1)
+* location[1] = Reference(PharmLoc2)
 * code = OrganizationAffiliationRoleCS#pharmacy 
 
-Instance: PharmacyOrganizationAffiliation2
+Instance: PharmChainAffil2
 InstanceOf: PlannetOrganizationAffiliation
-Description: "Organization Affiliation for PharmacyOrganizationA"
+Description: "Organization Affiliation for PharmChain"
 Usage: #example
 * meta.profile = Canonical(PlannetOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* network = Reference(AcmeOfCTStandardNetwork)
-* participatingOrganization = Reference (PharmacyOrganizationA)
-* healthcareService = Reference(CompoundingPharmacyHealthCareService)
-* location[0] = Reference(PharmacyLocation1)
+* network = Reference(AcmeofCTStdNet)
+* participatingOrganization = Reference (PharmChain)
+* healthcareService = Reference(PharmChainCompService)
+* location[0] = Reference(PharmLoc1)
 * code = OrganizationAffiliationRoleCS#pharmacy 
 
-Instance: CompoundingPharmacyHealthCareService
+Instance: PharmChainAffil3
+InstanceOf: PlannetOrganizationAffiliation
+Description: "Organization Affiliation for PharmChain"
+Usage: #example
+* meta.profile = Canonical(PlannetOrganizationAffiliation)
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* language = #en-US
+* active = true
+* network = Reference(AcmeofCTStdNet)
+* participatingOrganization = Reference (PharmChain)
+* healthcareService = Reference(PharmChainMailService)
+* code = OrganizationAffiliationRoleCS#pharmacy 
+
+
+Instance: PharmChainCompService
 InstanceOf: PlannetHealthcareService
 Description: "Compound Pharmacy Service provided by PharmacyOrganization A"
 Usage: #example
@@ -122,11 +136,11 @@ Usage: #example
 * category = HealthcareServiceCategoryCS#Pharmacy "Pharmacy"
 * specialty = $NUCCProviderTaxonomy#3336C0003X "Compounding Pharmacy"
 * specialty.text = "Compounding Pharmacy"
-* providedBy = Reference(PharmacyOrganizationA)
-* location[0] = Reference(PharmacyLocation1)
-* telecom.extension[via-intermediary].valueReference = Reference(PharmacyLocation1)
+* providedBy = Reference(PharmChain)
+* location[0] = Reference(PharmLoc1)
+* telecom.extension[via-intermediary].valueReference = Reference(PharmLoc1)
 
-Instance: MailOrderPharmacyHealthCareService
+Instance: PharmChainMailService
 InstanceOf: PlannetHealthcareService
 Description: "Mail Order Pharmacy Service provided by PharmacyOrganization A"
 Usage: #example
@@ -142,7 +156,7 @@ Usage: #example
 * extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  VirtualModalitiesCS#phone 
 * category = HealthcareServiceCategoryCS#Pharmacy "Pharmacy"
 * specialty = $NUCCProviderTaxonomy#3336M0002X "Mail Order Pharmacy"
-* providedBy = Reference(PharmacyOrganizationA)
+* providedBy = Reference(PharmChain)
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
@@ -152,9 +166,9 @@ Usage: #example
 
 
 
-Instance: PharmacyLocation1
+Instance: PharmLoc1
 InstanceOf: PlannetLocation
-Description: "Location of Pharmacy1 in PharmacyOrganizationA's network"
+Description: "Location of Pharmacy1 in PharmChain's network"
 Usage: #example
 * meta.profile = Canonical(PlannetLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
@@ -162,9 +176,9 @@ Usage: #example
 * status = #active 
 * name = "OrgA CT Location 1"
 * type = $V3RoleCode#OUTPHARM "outpatient pharmacy"
-* managingOrganization = Reference(OrganizationB)
+* managingOrganization = Reference(BigBox)
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
-* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeOfCTStandardNetwork)
+* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
 * extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * telecom[0].system = #phone
@@ -202,9 +216,9 @@ Usage: #example
 
 
 
-Instance: PharmacyLocation2
+Instance: PharmLoc2
 InstanceOf: PlannetLocation
-Description: "Location of Pharmacy2 in PharmacyOrganizationA's network"
+Description: "Location of Pharmacy2 in PharmChain's network"
 Usage: #example
 * meta.profile = Canonical(PlannetLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
@@ -212,9 +226,9 @@ Usage: #example
 * status = #active 
 * name = "OrgA CT Location 2"
 * type = $V3RoleCode#OUTPHARM "outpatient pharmacy"
-* managingOrganization = Reference(OrganizationB)
+* managingOrganization = Reference(BigBox)
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
-* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeOfCTStandardNetwork)
+* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
 * telecom[0].system = #phone
@@ -251,9 +265,9 @@ Usage: #example
 * hoursOfOperation[1].closingTime = 17:00:00
 
 
-Instance: PharmacyLocation3
+Instance: PharmLoc3
 InstanceOf: PlannetLocation
-Description: "Location of Pharmacy3 in PharmacyOrganizationA's network"
+Description: "Location of Pharmacy3 in PharmChain's network"
 Usage: #example
 * meta.profile = Canonical(PlannetLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
@@ -261,9 +275,9 @@ Usage: #example
 * status = #active 
 * name = "OrgA MA Location 1"
 * type = $V3RoleCode#OUTPHARM "outpatient pharmacy"
-* managingOrganization = Reference(OrganizationB)
+* managingOrganization = Reference(BigBox)
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
-* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeOfCTStandardNetwork)
+* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
 * telecom[0].system = #phone
@@ -298,9 +312,9 @@ Usage: #example
 * hoursOfOperation[1].closingTime = 17:00:00
 
 
-Instance: PharmacyLocation4
+Instance: PharmLoc4
 InstanceOf: PlannetLocation
-Description: "Location of Pharmacy4 in PharmacyOrganizationA's network"
+Description: "Location of Pharmacy4 in PharmChain's network"
 Usage: #example
 * meta.profile = Canonical(PlannetLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
@@ -308,9 +322,9 @@ Usage: #example
 * status = #active 
 * name = "OrgA MA Location 2"
 * type = $V3RoleCode#OUTPHARM "outpatient pharmacy"
-* managingOrganization = Reference(OrganizationB)
+* managingOrganization = Reference(BigBox)
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
-* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeOfCTStandardNetwork)
+* extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * telecom[0].system = #phone
 * telecom[0].value = "(222)-333-4444"

@@ -46,7 +46,7 @@ Profile:        PlannetHealthcareService
 Parent:         HealthcareService
 Id:             plannet-HealthcareService
 Title:          "Plan-net HealthcareService"
-Description:    "The HealthCareService  resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
+Description:    "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
 * meta.lastUpdated 1..1
 * extension contains
     NewPatients named newpatients 0..* MS and

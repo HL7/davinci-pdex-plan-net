@@ -1,7 +1,7 @@
 
 
 
-Instance: AcmeOfCTStandardNetwork
+Instance: AcmeofCTStdNet
 InstanceOf: PlannetNetwork
 Description: "Acme of CT Standard Network"
 Usage: #example
@@ -9,15 +9,15 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* partOf = Reference(AcmeOrganization)
+* partOf = Reference(Acme)
 * type = OrgTypeCS#payer "Payer"
 * name = "ACME CT Preferred Provider Network"
-* contact.telecom.extension[via-intermediary].valueReference = Reference(AcmeOrganization)
+* contact.telecom.extension[via-intermediary].valueReference = Reference(Acme)
 * contact.name.family = "Kawasaki"
 * contact.name.given = "Jane"
 
 
-Instance: AcmeOfCTPremiumNetwork
+Instance: AcmeofCTPremNet
 InstanceOf: PlannetNetwork
 Description: "Acme of CT Premium Premium Network"
 Usage: #example
@@ -25,14 +25,14 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* partOf = Reference(AcmeOrganization)
+* partOf = Reference(Acme)
 * type = OrgTypeCS#payer "Payer"
 * name = "ACME CT Premium Preferred Provider Network"
-* contact.telecom.extension[via-intermediary].valueReference = Reference(AcmeOrganization)
+* contact.telecom.extension[via-intermediary].valueReference = Reference(Acme)
 * contact.name.family = "Kawasaki"
 * contact.name.given = "Jane"
 
-Instance: AcmeOrganization
+Instance: Acme
 InstanceOf: PlannetOrganization
 Description: "Payer Organization"
 Usage: #example
@@ -70,10 +70,10 @@ Usage: #example
 * name = "Acme of CT QHP Gold"
 * type = InsuranceProductTypeCS#QHP "Qualified Health Plan"
 * plan.type = InsurancePlanTypeCS#gold "Gold-QHP"
-* ownedBy = Reference (AcmeOrganization)
-* administeredBy = Reference (AcmeOrganization)     // 1..1
-* network[0] = Reference(AcmeOfCTStandardNetwork)
-* network[1] = Reference(AcmeOfCTPremiumNetwork)
+* ownedBy = Reference (Acme)
+* administeredBy = Reference (Acme)     // 1..1
+* network[0] = Reference(AcmeofCTStdNet)
+* network[1] = Reference(AcmeofCTPremNet)
 * coverageArea = Reference(StateOfCTLocation)
 * endpoint = Reference(AcmeOfCTPortalEndpoint)
 
@@ -88,9 +88,9 @@ Usage: #example
 * name = "Acme of CT QHP Bronze"
 * type = InsuranceProductTypeCS#QHP "Qualified Health Plan"
 * plan.type = InsurancePlanTypeCS#bronze "Bronze-QHP"
-* ownedBy = Reference (AcmeOrganization)
-* administeredBy = Reference (AcmeOrganization)     // 1..1
-* network[0] = Reference(AcmeOfCTStandardNetwork)
+* ownedBy = Reference (Acme)
+* administeredBy = Reference (Acme)     // 1..1
+* network[0] = Reference(AcmeofCTStdNet)
 * coverageArea = Reference(StateOfCTLocation)
 * endpoint = Reference(AcmeOfCTPortalEndpoint)
 
