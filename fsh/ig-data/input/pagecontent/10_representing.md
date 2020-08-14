@@ -1,7 +1,6 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
-<h3><a name="Reprsenting"></a>Representing and Searching Provider Directory Data</h3>
-<p>It is important for payers to use the Plan-Net profiles consistently in order to achieve true interoperability of directory information among payers. The intent. of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data.</p>
-<table width="947">
+<h3><a name="Representing"></a>Representing and Searching Provider Directory Data</h3>
+<p>It is important for payers to use the Plan-Net profiles consistently in order to achieve true interoperability of directory information among payers. The intent. of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data.&nbsp; The Plan-Net design is based around the following types of searches.</p>
+<table style="border-color: Black;" border="3" width="947">
 <tbody>
 <tr>
 <td width="231">
@@ -89,6 +88,8 @@
 </tr>
 </tbody>
 </table>
+<h4>&nbsp;</h4>
+<p>The content in this section of the IG is based on the <a href="artifacts.html#7">examples</a> provided and on the patterns provided <a href="patterns.pptx">here</a>.<br />Specific examples are referenced in the text below.</p>
 <h4><a name="Privacy"></a>HealthcareService</h4>
 <p>The first type of search starts from HealthcareService.category and HealthcareService.specialty, so it essential that each provider's service be supported by appropriate HealthcareService instances.&nbsp; HealthcareServices are typically provided by an organization, except in the case of a Practitioner that is not associated with an organization (see the solo practitioner example), and can be linked to a set of locations where service is provided, or identified as virtual services through an indicated set of virtual modalities.&nbsp; &nbsp;The examples illustrate this with an organization that provides three distinct Pharmacy services -- retail, compounding, and mail-order -- across its locations.&nbsp; All organizations that provide service should define an appropriate set. of HealthcareServices to facilitate search.&nbsp; The HealthcareService category, specialty and type fields are the highest level of organization of the services provided by the provider's network.</p>
 <p>Relevant examples:</p>
@@ -106,5 +107,4 @@
 <h4><a name="Privacy"></a>Endpoints</h4>
 <p>Relevant examples:</p>
 <h4>&nbsp;</h4>
-
-<div>
+<div>&nbsp;</div>

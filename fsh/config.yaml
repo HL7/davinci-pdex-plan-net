@@ -71,6 +71,6 @@ menu:
     Search Parameters   : searchParameters.html
     Terminology         : terminology.html
     Capability Statement: CapabilityStatement-davinci-pdex-plan-net.html
-  Examples      : examples.html
+  Examples      : artifacts.html#7
   Downloads     : downloads.html
   History       : http://www.hl7.org/fhir/us/davinci-pdex-plan-net/history.cfml
