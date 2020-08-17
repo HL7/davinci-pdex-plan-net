@@ -110,7 +110,7 @@
 <td style="width: 162px;"><a title="HealthcareService/PharmChainCompService" href="HealthcareService-PharmChainCompService.html">PharmChainCompService</a></td>
 </tr>
 <tr>
-<td style="width: 162px;">Mail Order Pharmacy</td>
+<td style="width: 162px;">Mail Order Pharmacy (virtual service with no physical location)</td>
 <td style="width: 162px;"><a title="HealthcareService/PharmChainMailService" href="HealthcareService-PharmChainMailService.html">PharmChainMailService</a></td>
 </tr>
 <tr>
