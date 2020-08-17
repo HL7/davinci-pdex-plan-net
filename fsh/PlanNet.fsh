@@ -383,8 +383,6 @@ Id:             plannet-Practitioner
 Title:          "Plan-net Practitioner"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * meta.lastUpdated 1..1
-* extension contains
-   CommunicationProficiency named communication-proficiency 0..1 MS
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -424,7 +422,8 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * qualification.period MS
 * qualification.issuer MS
 * communication MS
-
+* communication.extension contains
+   CommunicationProficiency named communication-proficiency 0..1 MS
 
 
 Profile:        PlannetPractitionerRole
