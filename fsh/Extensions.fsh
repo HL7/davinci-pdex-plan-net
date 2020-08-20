@@ -55,15 +55,15 @@ Title: "Endpoint Usecase"
 Description: "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint"
 * value[x] 0..0
 * extension contains
-   Type 1..1 MS and
-   Standard 0..1 MS 
-* extension[Type] ^short = "An indication of the type of services supported by the endpoint"
-* extension[Type].value[x] only  CodeableConcept 
-* extension[Type].value[x]  1..1
-* extension[Type].value[x] from EndpointUsecaseVS (extensible)
-* extension[Standard] ^short = "A URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)"
-* extension[Standard].value[x] only uri 
-* extension[Standard].value[x] 1..1
+   type 1..1 MS and
+   standard 0..1 MS 
+* extension[type] ^short = "An indication of the type of services supported by the endpoint"
+* extension[type].value[x] only  CodeableConcept 
+* extension[type].value[x]  1..1
+* extension[type].value[x] from EndpointUsecaseVS (extensible)
+* extension[standard] ^short = "A URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)"
+* extension[standard].value[x] only uri 
+* extension[standard].value[x] 1..1
 
 
 Extension: LocationReference

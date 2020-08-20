@@ -122,4 +122,4 @@ Usage: #example
 * connectionType = EndpointConnectionTypeCS#rest-non-fhir
 * payloadType = EndpointPayloadTypeCS#NA
 * address = "https://urlofportal.acmect.com"
-* extension[endpoint-usecase].extension[Type].valueCodeableConcept = $V3ActReason#HOPERAT
+* extension[endpoint-usecase].extension[type].valueCodeableConcept = $V3ActReason#HOPERAT

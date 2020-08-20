@@ -67,9 +67,9 @@ menu:
     Representing Provider Directories in Plannet:         representing.html
   FHIR Artifacts:
     Profiles            : profiles.html
-    Extensions          : extensions.html
+    Extensions          : artifacts.html#3
     Search Parameters   : searchParameters.html
-    Terminology         : terminology.html
+    Terminology         : artifacts.html#5
     Capability Statement: CapabilityStatement-davinci-pdex-plan-net.html
   Examples      : artifacts.html#7
   Downloads     : downloads.html

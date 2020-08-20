@@ -17,7 +17,8 @@ Access to the Plan-net service should not require authentication, and the server
 <p>When querying and reading the Plan-Net Profiles defined in this IG, Must Support on any profile data element <strong>SHALL</strong> be interpreted as follows:</p>
 <h5>Health Plan API Requirements</h5>
 <ul>
-<li>Health Plan API actors <strong>SHALL</strong> be capable of populating all data elements as part of the query results. * In situations where information on a particular data element is not present and the cardinality is 0.. , the Health Plan API actors <strong>SHALL NOT</strong> include the data elements in the resource instance returned as part of the query results.</li>
+<li>Health Plan API actors <strong>SHALL</strong> be capable of populating all data elements as part of the query results.</li>
+<li>In situations where information on a particular data element is not present and the cardinality is 0.. , the Health Plan API actors <strong>SHALL NOT</strong> include the data elements in the resource instance returned as part of the query results.</li>
 <li>In situations where information on a particular data element is not present and the cardinality is &gt;0.. <strong>SHALL</strong>&nbsp;send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or use the dataAbsentReason extension.</li>
 </ul>
 <h5>Application Requirements</h5>
@@ -30,4 +31,5 @@ Access to the Plan-net service should not require authentication, and the server
 <h4><a id="relationship-to-us-core"></a>Relationship to US Core</h4>
 <p>This guide used a corresponding US Core profile as its base profile in all cases where such a profile existed and wasn't in conflict with the Payer data models supporting a provider directory (i.e. Location, Organization and Practitioner). Conflicts prevented the use of the USCore PractitionerRole profile, but all compatible aspects of the USCore PractitionerRole profile were retained in the corresponding Plan-Net profile.</p>
 <h4><a id="general-security-considerations"></a>General Security Considerations</h4>
+<p>&nbsp;</p>
 </div>
