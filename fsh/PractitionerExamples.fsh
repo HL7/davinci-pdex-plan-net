@@ -86,7 +86,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#Outpatient 
+* category = HealthcareServiceCategoryCS#outpat 
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * location[0] = Reference(HansSoloClinic)
 
@@ -101,7 +101,7 @@ Usage: #example
 * name = "OrgA CT Location 1"
 * type = $V3RoleCode#OUTPHARM
 * managingOrganization = Reference(BigBox)
-* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
+* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existptonly
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
 * extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
@@ -177,9 +177,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * code = ProviderRoleCS#ap 
-* healthcareService = Reference(BurrClinicServices)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
-* location[0] = Reference(HospLoc2)
 * specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
 * specialty[1] = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease"
 * organization = Reference(Hospital)
@@ -208,7 +206,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#Outpatient 
+* category = HealthcareServiceCategoryCS#outpat
 * providedBy = Reference(CancerClinic)
 * specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology Physician"  
 * location[0] = Reference(CancerClinicLoc)

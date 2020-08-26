@@ -1,7 +1,7 @@
 
 ValueSet: AcceptingPatientsVS
 Title: "Accepting Patients Codes"
-Description: "Codes for acceptance of new patients"
+Description: "Codes to identify if the practice is accepting new patients"
 * codes from system AcceptingPatientsCS
 
 ValueSet: AccessibilityVS
@@ -82,29 +82,29 @@ Description:  "Endpoint Payload Types are constrained to NA (Not Applicable) as 
 
 ValueSet: OrgTypeVS
 Title: "Organization Type"
-Description:  "Provider Directory Organization Type."
+Description:  "Categories of organizations based on criteria in provider directories."
 * codes from system OrgTypeCS
 
 ValueSet: InsuranceProductTypeVS
 Title: "Insurance Product Type"
-Description: "Valueset for InsurancePlan product types. Any set of plans that share a network type and a set of benefits is a product.  Plans within a prouduct share coverage but differ in cost-sharing."
+Description: "A distinct package of health insurance coverage benefits that are offered using a particular product network type."
 * codes from system InsuranceProductTypeCS
 
 
 ValueSet: InsurancePlanTypeVS
 Title: "Insurance Plan Type"
-Description: "Valueset for InsurancePlan  plan types.  Plans within a prouduct share coverage but differ in cost-sharing."
+Description: "Categories of cost-sharing used by plans."
 * codes from system InsurancePlanTypeCS
 
 ValueSet: HealthcareServiceCategoryVS
 Title: "Healthcare Service Category"
-Description: "Valueset for descripting the broad category of service being performed or delivered by a health care service"
+Description: "Broad categories of healthcare services being performed or delivered."
 * codes from system HealthcareServiceCategoryCS
 
 
 ValueSet: QualificationStatusVS
 Title: "Qualification Status"
-Description: "Codes for documenting the status of a qualification."
+Description: "The state indicating if a qualification is currently valid."
 * codes from system QualificationStatusCS
 
 CodeSystem:  LanguageProficiencyCS
@@ -131,7 +131,7 @@ Description: "Codes for documenting spoken language proficiency based on the Int
 
 ValueSet: PractitionerRoleVS
 Title: "PractitionerRole Code "
-Description: "ValueSet for PractitionerRole.code "
+Description: "Codes for the capabilities that an individual, group, or organization is acknowledged to have in a payer network, including general codes from the HL7 PractitionerRole Code System."
 * codes from system ProviderRoleCS
 * codes from system $HL7PractitionerRoleCS
 

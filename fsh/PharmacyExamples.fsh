@@ -68,9 +68,9 @@ Usage: #example
 * active = true
 * name = "Pharmacy by PharmChain"
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
+* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existptonly
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
-* category = HealthcareServiceCategoryCS#Pharmacy  "Pharmacy"
+* category = HealthcareServiceCategoryCS#pharm   "Pharmacy"
 * specialty = $NUCCProviderTaxonomy#3336C0003X "Retail Pharmacy"
 * providedBy = Reference(PharmChain)
 * location[0] = Reference(PharmLoc1)
@@ -133,7 +133,7 @@ Usage: #example
 * active = true
 * name = "Compounding Pharmacy by OrgA"
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#Pharmacy "Pharmacy"
+* category = HealthcareServiceCategoryCS#pharm "Pharmacy"
 * specialty = $NUCCProviderTaxonomy#3336C0003X "Compounding Pharmacy"
 * specialty.text = "Compounding Pharmacy"
 * providedBy = Reference(PharmChain)
@@ -154,7 +154,7 @@ Usage: #example
 * extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = VirtualModalitiesCS#app 
 * extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = VirtualModalitiesCS#tdd 
 * extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  VirtualModalitiesCS#phone 
-* category = HealthcareServiceCategoryCS#Pharmacy "Pharmacy"
+* category = HealthcareServiceCategoryCS#pharm "Pharmacy"
 * specialty = $NUCCProviderTaxonomy#3336M0002X "Mail Order Pharmacy"
 * providedBy = Reference(PharmChain)
 * telecom[0].system = #phone
@@ -177,7 +177,7 @@ Usage: #example
 * name = "OrgA CT Location 1"
 * type = $V3RoleCode#OUTPHARM "outpatient pharmacy"
 * managingOrganization = Reference(BigBox)
-* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
+* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existptonly
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
 * extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
@@ -227,7 +227,7 @@ Usage: #example
 * name = "OrgA CT Location 2"
 * type = $V3RoleCode#OUTPHARM "outpatient pharmacy"
 * managingOrganization = Reference(BigBox)
-* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
+* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existptonly
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
@@ -276,7 +276,7 @@ Usage: #example
 * name = "OrgA MA Location 1"
 * type = $V3RoleCode#OUTPHARM "outpatient pharmacy"
 * managingOrganization = Reference(BigBox)
-* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
+* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existptonly
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
@@ -323,7 +323,7 @@ Usage: #example
 * name = "OrgA MA Location 2"
 * type = $V3RoleCode#OUTPHARM "outpatient pharmacy"
 * managingOrganization = Reference(BigBox)
-* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existing
+* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existptonly
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
 * telecom[0].system = #phone
