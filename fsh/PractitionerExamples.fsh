@@ -59,6 +59,7 @@ Usage: #example
 * extension[communication-proficiency].valueCodeableConcept = LanguageProficiencyCS#30
 * communication = $BCP47#ja 
 
+
 Instance: HansSoloRole1
 InstanceOf: PlannetPractitionerRole
 Description: "Hans Solo is a solo practitioner"
@@ -73,7 +74,6 @@ Usage: #example
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HansSoloClinic)
 * specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
-* organization = Reference(Hospital)
 // specialty = internal medicine
 // available M-F
 
@@ -132,6 +132,58 @@ Usage: #example
 * hoursOfOperation[0].openingTime = 08:00:00
 * hoursOfOperation[0].closingTime = 17:00:00
 
+
+Instance: Counselor
+InstanceOf: PlannetPractitioner
+Description: "Counselor Susie Smith"
+Usage: #example
+* meta.profile = Canonical(PlannetPractitioner)
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* language = #en-US
+* active = true
+* identifier[NPI].value = "NPI3238"
+* identifier[NPI].system = $NPICS
+* name.text = "Susie Smith, LPC"
+* name.family = "Smith"
+* name.given[0] = "Susie"
+* qualification[0].code = $V2table0360CS#LPC
+* qualification[0].issuer.display = "State of Illinois"
+* qualification[0].code.text = "IL"
+* qualification[0].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
+* qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
+* extension[communication-proficiency].valueCodeableConcept = LanguageProficiencyCS#30
+* communication = $BCP47#ru 
+
+Instance: CounselorRole1
+InstanceOf: PlannetPractitionerRole
+Description: "Susie  Smith is a counselor via Telemedicine"
+Usage: #example
+* meta.profile = Canonical(PlannetPractitionerRole)
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* language = #en-US
+* active = true
+* code = ProviderRoleCS#co "Counselor"
+* practitioner = Reference(Counselor)
+* healthcareService = Reference(VirtualCounselService)
+* extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
+* specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
+
+
+Instance: VirtualCounselService
+InstanceOf: PlannetHealthcareService
+Description: "Virtual Counseling Service"
+Usage: #example
+* meta.profile = Canonical(PlannetHealthcareService)
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* language = #en-US
+* active = true
+* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#virtual
+* extension[deliverymethod].extension[virtualModalities][0].valueCodeableConcept = VirtualModalitiesCS#web
+* extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = VirtualModalitiesCS#app 
+* extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = VirtualModalitiesCS#tdd 
+* extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  VirtualModalitiesCS#phone 
+* category = HealthcareServiceCategoryCS#prov "Provider"
+* specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
 
 Instance: JoeSmithRole1
 InstanceOf: PlannetPractitionerRole
