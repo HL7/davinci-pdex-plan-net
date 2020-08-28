@@ -125,6 +125,18 @@
 <td style="width: 162px;">Cancer Clinic</td>
 <td style="width: 162px;"><a title="HealthcareService/CancerClinicService" href="HealthcareService-CancerClinicService.html">CancerClinicService</a></td>
 </tr>
+<tr>
+<td style="width: 162px;">
+<div>
+<div>Virtual Counseling Service</div>
+</div>
+</td>
+<td style="width: 162px;"><a href="HealthcareService-VirtualCounselService.html">VirtualCounselService</a></td>
+</tr>
+<tr>
+<td style="width: 162px;">&nbsp;Solo Family Practitioner&nbsp;</td>
+<td style="width: 162px;">&nbsp;<a href="HealthcareService-HansSoloService.html">HansSoloService</a></td>
+</tr>
 </tbody>
 </table>
 <h4><a name="Privacy"></a>Insurance Plan and Network<br /><br /></h4>
@@ -223,6 +235,14 @@
 <tr>
 <td style="width: 432px;">Physician working at a hospital</td>
 <td style="width: 355px;"><a title="Practitioner/JoeSmith" href="Practitioner-JoeSmith.html">JoeSmith</a><a title="PractitionerRole/JoeSmithRole1" href="PractitionerRole-JoeSmithRole1.html">, JoeSmithRole1</a></td>
+</tr>
+<tr>
+<td style="width: 432px;">Counselor working virtually</td>
+<td style="width: 355px;">
+<div>
+<div><a href="PractitionerRole-CounselorRole1.html">CounselorRole1</a></div>
+</div>
+</td>
 </tr>
 </tbody>
 </table>
