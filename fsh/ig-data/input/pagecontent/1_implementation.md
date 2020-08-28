@@ -1,4 +1,3 @@
-<div>
 <h3><a name="Implementation"></a>Implementation Notes</h3>
 <p>This page contains miscellaneous information on FHIR implementation. The content is primarily directed at implementers of Plan-Net. The following topics are addressed:</p>
 <ul>
@@ -8,7 +7,7 @@
 <li><a href="implementation.html#general-security-considerations">General Security Considerations</a></li>
 </ul>
 <h4><a id="privacy-considerations"></a>Privacy Considerations</h4>
-Access to the Plan-net service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that were queried.
+<p>Access to the Plan-net service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that were queried.</p>
 <p>A conformant Plan-net service <strong>SHALL NOT</strong> require a directory mobile application to send consumer identifying information in order to query content.</p>
 <p>A directory mobile application <strong>SHALL NOT</strong> send consumer identifiable information when querying a Plan-net service.</p>
 <h4><a id="conformance-requirements"></a>Conformance Requirements</h4>
@@ -28,8 +27,9 @@ Access to the Plan-net service should not require authentication, and the server
 <li>When querying Health Plan API actors, Application actors <strong>SHALL</strong>&nbsp;interpret missing data elements within resource instances as data not present in the Health Plan API actors system.</li>
 <li>Consumer App actors&nbsp;<strong>SHALL</strong>&nbsp;be able to process resource instances containing data elements asserting missing information.</li>
 </ul>
+<h4><a id="relationship-to-us-core"></a>Client Detection of Updates Directory Content</h4>
+<p>Each profile in this guide requires that the lastUpdate timestamp be provided as part of the profile's data content.&nbsp; Clients that cache query results can track additions or modifications to directory content through queries that filter content using the _lastUpdated search parameter.&nbsp; Clients should periodically check that data cached from past queries has not been deleted by querying for the same elements by _id.</p>
 <h4><a id="relationship-to-us-core"></a>Relationship to US Core</h4>
 <p>This guide used a corresponding US Core profile as its base profile in all cases where such a profile existed and wasn't in conflict with the Payer data models supporting a provider directory (i.e. Location, Organization and Practitioner). Conflicts prevented the use of the USCore PractitionerRole profile, but all compatible aspects of the USCore PractitionerRole profile were retained in the corresponding Plan-Net profile.</p>
 <h4><a id="general-security-considerations"></a>General Security Considerations</h4>
 <p>&nbsp;</p>
-</div>
