@@ -37,7 +37,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "BigBox"
-* type = OrgTypeCS#bus "Non-Healthcare business"
+* type = OrgTypeCS#bus "Non-Healthcare Business"
 * name = "Big Box Retailer"
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
