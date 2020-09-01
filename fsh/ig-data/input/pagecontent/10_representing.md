@@ -185,12 +185,12 @@
 <tr>
 <td>Hospital Location #1</td>
 <td>
-<p><a title="Location/HospLoc1" href="HospLoc1.html">HospLoc1</a></p>
+<p><a title="Location/HospLoc1" href="Location-HospLoc1.html">HospLoc1</a></p>
 </td>
 </tr>
 <tr>
 <td>Hospital Location #2</td>
-<td><a title="Location/HospLoc2" href="HospLoc2.html">HospLoc2</a></td>
+<td><a title="Location/HospLoc2" href="Location-HospLoc2.html">HospLoc2</a></td>
 </tr>
 <tr>
 <td>Pharmacy Location #1 .&nbsp; Shows newpatient,<br />accessibliity, and contactpoint-availabletime extensions</td>
@@ -198,11 +198,11 @@
 </tr>
 <tr>
 <td>Pharmacy Location #2</td>
-<td><a title="Location/PharmLoc2" href="PharmLoc2.html">PharmLoc2</a></td>
+<td><a title="Location/PharmLoc2" href="Location-PharmLoc2.html">PharmLoc2</a></td>
 </tr>
 <tr>
 <td>Location used as CoverageArea</td>
-<td><a title="Location/StateOfCTLocation" href="StateOfCTLocation.html">StateOfCTLocation</a></td>
+<td><a title="Location/StateOfCTLocation" href="Location-StateOfCTLocation.html">StateOfCTLocation</a></td>
 </tr>
 </tbody>
 </table>
@@ -217,12 +217,12 @@
 <tr>
 <td style="width: 432px;">Solo Practitioner (no organization)</td>
 <td style="width: 355px;">
-<p><a title="Practitioner/HansSolo" href="HansSolo.html">HansSolo</a>,&nbsp;<a title="PractitionerRole/HansSoloRole1" href="HansSoloRole1.html">HansSoloRole1</a>,&nbsp;<a title="HealthcareService/HansSoloService" href="HealthcareService-HansSoloService.html">HansSoloService</a></p>
+<p><a title="Practitioner/HansSolo" href="Practitioner-HansSolo.html">HansSolo</a>,&nbsp;<a title="PractitionerRole/HansSoloRole1" href="PractitionerRole-HansSoloRole1.html">HansSoloRole1</a>,&nbsp;<a title="HealthcareService/HansSoloService" href="HealthcareService-HansSoloService.html">HansSoloService</a></p>
 </td>
 </tr>
 <tr>
 <td style="width: 432px;">Anonymous role (not associated with a specific practitioner)</td>
-<td style="width: 355px;"><a title="PractitionerRole/AnonRole" href="AnonRole.html">AnonRole</a></td>
+<td style="width: 355px;"><a title="PractitionerRole/AnonRole" href="PractitionerRole-AnonRole.html">AnonRole</a></td>
 </tr>
 <tr>
 <td style="width: 432px;">Physician working at a provider group</td>
@@ -257,7 +257,7 @@
 <tr>
 <td>Pharmacy services are associated with a specific provider network</td>
 <td>
-<p><a title="Organization/PharmChain" href="PharmChain.html">PharmChain</a>,&nbsp;<a title="OrganizationAffiliation/PharmChainAffil1" href="OrganizationAffiliation-PharmChainAffil1.html">PharmChainAffil1</a>,&nbsp;<a title="OrganizationAffiliation/PharmChainAffil2" href="OrganizationAffiliation-PharmChainAffil2.html">PharmChainAffil1</a>,&nbsp;<a title="OrganizationAffiliation/PharmChainAffil3" href="OrganizationAffiliation-PharmChainAffil3.html">PharmChainAffil1</a></p>
+<p><a title="Organization/PharmChain" href="Organization-PharmChain.html">PharmChain</a>,&nbsp;<a title="OrganizationAffiliation/PharmChainAffil1" href="OrganizationAffiliation-PharmChainAffil1.html">PharmChainAffil1</a>,&nbsp;<a title="OrganizationAffiliation/PharmChainAffil2" href="OrganizationAffiliation-PharmChainAffil2.html">PharmChainAffil1</a>,&nbsp;<a title="OrganizationAffiliation/PharmChainAffil3" href="OrganizationAffiliation-PharmChainAffil3.html">PharmChainAffil1</a></p>
 </td>
 </tr>
 <tr>
