@@ -1,0 +1,146 @@
+<table border="1"><tr><td><b>Field</b></td><td><b>Value</b></td></tr>
+<tr><td>id</td><td>
+"plannet-location-1233319368"
+</td></tr>
+<tr><td>meta.lastUpdated</td><td>
+"2020-08-17T10:03:10Z"
+</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"</td>
+<tr><td>extension[0].url</td><td>
+"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/accessibility"
+</td></tr>
+<tr><td>extension[0].valueCodeableConcept.coding[0].system</td><td>
+"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AccessibilityCS"
+</td></tr>
+<tr><td>extension[0].valueCodeableConcept.coding[0].code</td><td>
+#handiaccess
+</td></tr>
+<tr><td>extension[0].valueCodeableConcept.coding[0].display</td><td>
+"handicap accessible"
+</td></tr>
+<tr><td>extension[0].valueCodeableConcept.text</td><td>
+"Offers a variety of services and programs for persons with disabilities"
+</td></tr>
+<tr><td>extension[1].extension[0].url</td><td>
+"acceptingPatients"
+</td></tr>
+<tr><td>extension[1].extension[0].valueCodeableConcept.coding[0].system</td><td>
+"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS"
+</td></tr>
+<tr><td>extension[1].extension[0].valueCodeableConcept.coding[0].code</td><td>
+#existing
+</td></tr>
+<tr><td>extension[1].url</td><td>
+"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+</td></tr>
+<tr><td>identifier[0].use</td><td>
+"secondary"
+</td></tr>
+<tr><td>identifier[0].system</td><td>
+"https://rhode-island-substance-abuse-treatment-inc.com"
+</td></tr>
+<tr><td>identifier[0].value</td><td>
+main campus
+</td></tr>
+<tr><td>identifier[0].assigner.reference</td><td>
+"Organization/plannet-organization-1233319368"
+</td></tr>
+<tr><td>identifier[0].assigner.display</td><td>
+"RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC."
+</td></tr>
+<tr><td>status</td><td>
+"active"
+</td></tr>
+<tr><td>name</td><td>
+"RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC."
+</td></tr>
+<tr><td>description</td><td>
+"Main campus of RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC."
+</td></tr>
+<tr><td>telecom[0].extension[0].extension[0].url</td><td>
+"allDay"
+</td></tr>
+<tr><td>telecom[0].extension[0].extension[0].valueBoolean</td><td>
+"true"
+</td></tr>
+<tr><td>telecom[0].extension[0].url</td><td>
+"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+</td></tr>
+<tr><td>telecom[0].system</td><td>
+"phone"
+</td></tr>
+<tr><td>telecom[0].value</td><td>
+468.489.5165 x60446
+</td></tr>
+<tr><td>telecom[0].use</td><td>
+"work"
+</td></tr>
+<tr><td>telecom[1].extension[0].extension[0].url</td><td>
+"allDay"
+</td></tr>
+<tr><td>telecom[1].extension[0].extension[0].valueBoolean</td><td>
+"true"
+</td></tr>
+<tr><td>telecom[1].extension[0].url</td><td>
+"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+</td></tr>
+<tr><td>telecom[1].system</td><td>
+"fax"
+</td></tr>
+<tr><td>telecom[1].value</td><td>
+(811) 138-4022
+</td></tr>
+<tr><td>telecom[1].use</td><td>
+"work"
+</td></tr>
+<tr><td>address.use</td><td>
+"work"
+</td></tr>
+<tr><td>address.type</td><td>
+"both"
+</td></tr>
+<tr><td>address.text</td><td>
+"66 PAVILION AVE, PROVIDENCE, RI 029051522"
+</td></tr>
+<tr><td>address.line[0]</td><td>"66 PAVILION AVE"</td>
+<tr><td>address.city</td><td>
+"PROVIDENCE"
+</td></tr>
+<tr><td>address.state</td><td>
+"RI"
+</td></tr>
+<tr><td>address.postalCode</td><td>
+"029051522"
+</td></tr>
+<tr><td>address.country</td><td>
+"USA"
+</td></tr>
+<tr><td>position.longitude</td><td>
+"-71.40409"
+</td></tr>
+<tr><td>position.latitude</td><td>
+"41.79822"
+</td></tr>
+<tr><td>managingOrganization.reference</td><td>
+"Organization/plannet-organization-1233319368"
+</td></tr>
+<tr><td>managingOrganization.display</td><td>
+"RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC."
+</td></tr>
+<tr><td>hoursOfOperation[0].daysOfWeek[0]</td><td>"mon"</td>
+<tr><td>hoursOfOperation[0].daysOfWeek[1]</td><td>"tue"</td>
+<tr><td>hoursOfOperation[0].daysOfWeek[2]</td><td>"wed"</td>
+<tr><td>hoursOfOperation[0].daysOfWeek[3]</td><td>"thu"</td>
+<tr><td>hoursOfOperation[0].daysOfWeek[4]</td><td>"fri"</td>
+<tr><td>hoursOfOperation[0].daysOfWeek[5]</td><td>"sat"</td>
+<tr><td>hoursOfOperation[0].daysOfWeek[6]</td><td>"sun"</td>
+<tr><td>hoursOfOperation[0].allDay</td><td>
+"true"
+</td></tr>
+<tr><td>availabilityExceptions</td><td>
+"visiting hours from 6:00 am - 10:00 pm"
+</td></tr>
+<tr><td>resourceType</td><td>
+"Location"
+</td></tr>
+</table>

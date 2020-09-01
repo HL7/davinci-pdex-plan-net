@@ -1,0 +1,27 @@
+<table border="1"><tr><td><b>Field</b></td><td><b>Value</b></td></tr>
+<tr><td>resourceType</td><td>
+"PractitionerRole"
+</td></tr>
+<tr><td>id</td><td>
+"PractitionerARole2"
+</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"</td>
+<tr><td>meta.lastUpdated</td><td>
+"2020-07-07T13:26:22.0314215+00:00"
+</td></tr>
+<tr><td>active</td><td>
+"true"
+</td></tr>
+<tr><td>language</td><td>
+"en-US"
+</td></tr>
+<tr><td>code[0].coding[0].code</td><td>
+#PH
+</td></tr>
+<tr><td>code[0].coding[0].system</td><td>
+"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS"
+</td></tr>
+<tr><td>healthcareService[0].reference</td><td>
+"HealthcareService/HealthCareServiceOutpatientClinic"
+</td></tr>
+</table>

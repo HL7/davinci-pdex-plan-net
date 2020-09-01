@@ -1,0 +1,127 @@
+<table border="1"><tr><td><b>Field</b></td><td><b>Value</b></td></tr>
+<tr><td>id</td><td>
+"plannet-practitionerrole-1233011061"
+</td></tr>
+<tr><td>meta.lastUpdated</td><td>
+"2020-08-17T10:03:10Z"
+</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"</td>
+<tr><td>extension[0].url</td><td>
+"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference"
+</td></tr>
+<tr><td>extension[0].valueReference.reference</td><td>
+"Organization/plannet-network-HPID020000"
+</td></tr>
+<tr><td>extension[0].valueReference.display</td><td>
+"Green Circle of Massachusetts HMO"
+</td></tr>
+<tr><td>extension[1].url</td><td>
+"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference"
+</td></tr>
+<tr><td>extension[1].valueReference.reference</td><td>
+"Organization/plannet-network-HPID100000"
+</td></tr>
+<tr><td>extension[1].valueReference.display</td><td>
+"State of Massachusetts Preferred Provider Network"
+</td></tr>
+<tr><td>identifier[0].use</td><td>
+"secondary"
+</td></tr>
+<tr><td>identifier[0].type.coding[0].system</td><td>
+"http://terminology.hl7.org/CodeSystem/v2-0203"
+</td></tr>
+<tr><td>identifier[0].type.coding[0].code</td><td>
+#PRN
+</td></tr>
+<tr><td>identifier[0].type.coding[0].display</td><td>
+"Provider Number"
+</td></tr>
+<tr><td>identifier[0].type.text</td><td>
+"Hospital ID"
+</td></tr>
+<tr><td>identifier[0].system</td><td>
+"https://quincy-medical-center.com"
+</td></tr>
+<tr><td>identifier[0].value</td><td>
+5b150bc2d474b0
+</td></tr>
+<tr><td>active</td><td>
+"true"
+</td></tr>
+<tr><td>practitioner.reference</td><td>
+"Practitioner/plannet-practitioner-1233011061"
+</td></tr>
+<tr><td>practitioner.display</td><td>
+"Virgilio Roberts"
+</td></tr>
+<tr><td>organization.reference</td><td>
+"Organization/plannet-organization-1239972445"
+</td></tr>
+<tr><td>organization.display</td><td>
+"QUINCY MEDICAL CENTER"
+</td></tr>
+<tr><td>code[0].coding[0].system</td><td>
+"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS"
+</td></tr>
+<tr><td>code[0].coding[0].code</td><td>
+#ph
+</td></tr>
+<tr><td>code[0].coding[0].display</td><td>
+"Physician"
+</td></tr>
+<tr><td>specialty[0].coding[0].system</td><td>
+"http://nucc.org/provider-taxonomy"
+</td></tr>
+<tr><td>specialty[0].coding[0].code</td><td>
+#231H00000X
+</td></tr>
+<tr><td>specialty[0].coding[0].display</td><td>
+"Audiologist"
+</td></tr>
+<tr><td>specialty[0].text</td><td>
+"Audiologist"
+</td></tr>
+<tr><td>location[0].reference</td><td>
+"Location/plannet-location-1239972445"
+</td></tr>
+<tr><td>location[0].display</td><td>
+"QUINCY MEDICAL CENTER"
+</td></tr>
+<tr><td>healthcareService[0].reference</td><td>
+"outpatient-healthcareservice-1239972445"
+</td></tr>
+<tr><td>healthcareService[0].display</td><td>
+"QUINCY MEDICAL CENTER"
+</td></tr>
+<tr><td>telecom[0].system</td><td>
+"phone"
+</td></tr>
+<tr><td>telecom[0].value</td><td>
+(224) 541-6690 x21778
+</td></tr>
+<tr><td>telecom[0].use</td><td>
+"work"
+</td></tr>
+<tr><td>telecom[1].system</td><td>
+"fax"
+</td></tr>
+<tr><td>telecom[1].value</td><td>
+1-167-768-4114 x7424
+</td></tr>
+<tr><td>telecom[1].use</td><td>
+"work"
+</td></tr>
+<tr><td>availableTime[0].daysOfWeek[0]</td><td>"mon"</td>
+<tr><td>availableTime[0].daysOfWeek[1]</td><td>"tue"</td>
+<tr><td>availableTime[0].daysOfWeek[2]</td><td>"wed"</td>
+<tr><td>availableTime[0].daysOfWeek[3]</td><td>"thu"</td>
+<tr><td>availableTime[0].availableStartTime</td><td>
+"09:00:00"
+</td></tr>
+<tr><td>availableTime[0].availableEndTime</td><td>
+"12:00:00"
+</td></tr>
+<tr><td>resourceType</td><td>
+"PractitionerRole"
+</td></tr>
+</table>

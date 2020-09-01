@@ -1,0 +1,70 @@
+<table border="1"><tr><td><b>Field</b></td><td><b>Value</b></td></tr>
+<tr><td>id</td><td>
+"plannet-organization-1230085657-direct"
+</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"</td>
+<tr><td>extension[0].extension[0].url</td><td>
+"type"
+</td></tr>
+<tr><td>extension[0].extension[0].valueCodeableConcept.coding[0].system</td><td>
+"http://hl7.org/fhir/uv/vhdir/CodeSystem/usecase"
+</td></tr>
+<tr><td>extension[0].extension[0].valueCodeableConcept.coding[0].code</td><td>
+#treatment
+</td></tr>
+<tr><td>extension[0].extension[0].valueCodeableConcept.coding[0].display</td><td>
+"treatment"
+</td></tr>
+<tr><td>extension[0].extension[1].url</td><td>
+"standard"
+</td></tr>
+<tr><td>extension[0].extension[1].valueUri</td><td>
+"http://wiki.directproject.org/File:2011-03-09_PDF_-_XDR_and_XDM_for_Direct_Messaging_Specification_FINAL.pdf"
+</td></tr>
+<tr><td>extension[0].url</td><td>
+"http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase"
+</td></tr>
+<tr><td>status</td><td>
+"active"
+</td></tr>
+<tr><td>connectionType.system</td><td>
+"http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+</td></tr>
+<tr><td>connectionType.code</td><td>
+#direct-project
+</td></tr>
+<tr><td>connectionType.display</td><td>
+"Direct Project"
+</td></tr>
+<tr><td>name</td><td>
+"BAYSIDE ENDOSCOPY, LLC Direct Address"
+</td></tr>
+<tr><td>managingOrganization.reference</td><td>
+"Organization/plannet-organization-1230085657"
+</td></tr>
+<tr><td>managingOrganization.display</td><td>
+"BAYSIDE ENDOSCOPY, LLC"
+</td></tr>
+<tr><td>contact[0].system</td><td>
+"phone"
+</td></tr>
+<tr><td>contact[0].value</td><td>
+(340) 719-8465
+</td></tr>
+<tr><td>payloadType[0].coding[0].system</td><td>
+"urn:oid:1.3.6.1.4.1.19376.1.2.3"
+</td></tr>
+<tr><td>payloadType[0].coding[0].code</td><td>
+#urn:ihe:pcc:xphr:2007
+</td></tr>
+<tr><td>payloadType[0].coding[0].display</td><td>
+"HL7 CCD Document"
+</td></tr>
+<tr><td>payloadMimeType[0]</td><td>"application/hl7-v3+xml"</td>
+<tr><td>address</td><td>
+"mailto:bayside-endoscopy-llc@direct.bayside-endoscopy-llc.org"
+</td></tr>
+<tr><td>resourceType</td><td>
+"Endpoint"
+</td></tr>
+</table>
