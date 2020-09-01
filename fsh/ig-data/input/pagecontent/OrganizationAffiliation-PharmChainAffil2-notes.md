@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "PharmChainAffil2"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -17,6 +17,15 @@
 </td></tr>
 <tr><td>network[0].reference</td><td>
 "Organization/AcmeofCTStdNet"
+</td></tr>
+<tr><td>specialty[0].coding[0].code</td><td>
+#3336C0004X
+</td></tr>
+<tr><td>specialty[0].coding[0].system</td><td>
+"http://nucc.org/provider-taxonomy"
+</td></tr>
+<tr><td>specialty[0].coding[0].display</td><td>
+"Compounding Pharmacy"
 </td></tr>
 <tr><td>participatingOrganization.reference</td><td>
 "Organization/PharmChain"

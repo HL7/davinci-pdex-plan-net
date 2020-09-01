@@ -5,7 +5,7 @@
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"</td></tr>
 <tr><td>extension[0].extension[0].url</td><td>
 "acceptingPatients"
 </td></tr>
@@ -135,11 +135,11 @@
 <tr><td>appointmentRequired</td><td>
 "true"
 </td></tr>
-<tr><td>availableTime[0].daysOfWeek[0]</td><td>"mon"</td>
-<tr><td>availableTime[0].daysOfWeek[1]</td><td>"tue"</td>
-<tr><td>availableTime[0].daysOfWeek[2]</td><td>"wed"</td>
-<tr><td>availableTime[0].daysOfWeek[3]</td><td>"thu"</td>
-<tr><td>availableTime[0].daysOfWeek[4]</td><td>"fri"</td>
+<tr><td>availableTime[0].daysOfWeek[0]</td><td>"mon"</td></tr>
+<tr><td>availableTime[0].daysOfWeek[1]</td><td>"tue"</td></tr>
+<tr><td>availableTime[0].daysOfWeek[2]</td><td>"wed"</td></tr>
+<tr><td>availableTime[0].daysOfWeek[3]</td><td>"thu"</td></tr>
+<tr><td>availableTime[0].daysOfWeek[4]</td><td>"fri"</td></tr>
 <tr><td>availableTime[0].allDay</td><td>
 "false"
 </td></tr>

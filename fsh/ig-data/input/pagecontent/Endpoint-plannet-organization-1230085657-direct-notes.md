@@ -2,7 +2,7 @@
 <tr><td>id</td><td>
 "plannet-organization-1230085657-direct"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"</td></tr>
 <tr><td>extension[0].extension[0].url</td><td>
 "type"
 </td></tr>
@@ -60,7 +60,7 @@
 <tr><td>payloadType[0].coding[0].display</td><td>
 "HL7 CCD Document"
 </td></tr>
-<tr><td>payloadMimeType[0]</td><td>"application/hl7-v3+xml"</td>
+<tr><td>payloadMimeType[0]</td><td>"application/hl7-v3+xml"</td></tr>
 <tr><td>address</td><td>
 "mailto:bayside-endoscopy-llc@direct.bayside-endoscopy-llc.org"
 </td></tr>

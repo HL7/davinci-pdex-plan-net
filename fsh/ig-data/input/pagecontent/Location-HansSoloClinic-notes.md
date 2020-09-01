@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "HansSoloClinic"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -126,7 +126,7 @@ https://www.hanssolo.com
 <tr><td>managingOrganization.reference</td><td>
 "Organization/BigBox"
 </td></tr>
-<tr><td>address.line[0]</td><td>"123 Main Street"</td>
+<tr><td>address.line[0]</td><td>"123 Main Street"</td></tr>
 <tr><td>address.city</td><td>
 "Anytown"
 </td></tr>
@@ -142,11 +142,11 @@ https://www.hanssolo.com
 <tr><td>position.latitude</td><td>
 "15"
 </td></tr>
-<tr><td>hoursOfOperation[0].daysOfWeek[0]</td><td>"mon"</td>
-<tr><td>hoursOfOperation[0].daysOfWeek[1]</td><td>"tue"</td>
-<tr><td>hoursOfOperation[0].daysOfWeek[2]</td><td>"wed"</td>
-<tr><td>hoursOfOperation[0].daysOfWeek[3]</td><td>"thu"</td>
-<tr><td>hoursOfOperation[0].daysOfWeek[4]</td><td>"fri"</td>
+<tr><td>hoursOfOperation[0].daysOfWeek[0]</td><td>"mon"</td></tr>
+<tr><td>hoursOfOperation[0].daysOfWeek[1]</td><td>"tue"</td></tr>
+<tr><td>hoursOfOperation[0].daysOfWeek[2]</td><td>"wed"</td></tr>
+<tr><td>hoursOfOperation[0].daysOfWeek[3]</td><td>"thu"</td></tr>
+<tr><td>hoursOfOperation[0].daysOfWeek[4]</td><td>"fri"</td></tr>
 <tr><td>hoursOfOperation[0].openingTime</td><td>
 "08:00:00"
 </td></tr>

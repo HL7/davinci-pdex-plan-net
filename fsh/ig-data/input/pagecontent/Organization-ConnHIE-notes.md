@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "ConnHIE"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -36,7 +36,7 @@ https://www.connhie.com
 <tr><td>telecom[1].rank</td><td>
 "1"
 </td></tr>
-<tr><td>address[0].line[0]</td><td>"123 Main Street"</td>
+<tr><td>address[0].line[0]</td><td>"123 Main Street"</td></tr>
 <tr><td>address[0].city</td><td>
 "Anytown"
 </td></tr>

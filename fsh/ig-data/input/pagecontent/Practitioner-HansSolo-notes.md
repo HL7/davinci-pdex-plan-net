@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "HansSolo"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -132,7 +132,7 @@ NPI3233
 <tr><td>name[0].family</td><td>
 "Solo"
 </td></tr>
-<tr><td>name[0].given[0]</td><td>"Hans"</td>
+<tr><td>name[0].given[0]</td><td>"Hans"</td></tr>
 <tr><td>communication[0].coding[0].code</td><td>
 #ja
 </td></tr>

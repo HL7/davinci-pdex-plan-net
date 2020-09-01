@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "Counselor"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -36,9 +36,6 @@ NPI3238
 <tr><td>qualification[0].code.coding[0].code</td><td>
 #LPC
 </td></tr>
-<tr><td>qualification[0].code.coding[0].system</td><td>
-"http://terminology.hl7.org/CodeSystem/v2-0360"
-</td></tr>
 <tr><td>qualification[0].code.text</td><td>
 "IL"
 </td></tr>
@@ -66,7 +63,7 @@ NPI3238
 <tr><td>name[0].family</td><td>
 "Smith"
 </td></tr>
-<tr><td>name[0].given[0]</td><td>"Susie"</td>
+<tr><td>name[0].given[0]</td><td>"Susie"</td></tr>
 <tr><td>communication[0].coding[0].code</td><td>
 #ru
 </td></tr>

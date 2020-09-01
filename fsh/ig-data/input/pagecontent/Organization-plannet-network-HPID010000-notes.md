@@ -5,7 +5,7 @@
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"</td></tr>
 <tr><td>identifier[0].use</td><td>
 "official"
 </td></tr>
@@ -60,7 +60,7 @@ HPID010000
 <tr><td>address[0].text</td><td>
 "120 St James Ave, Boston, MA 02101"
 </td></tr>
-<tr><td>address[0].line[0]</td><td>"120 St James Ave"</td>
+<tr><td>address[0].line[0]</td><td>"120 St James Ave"</td></tr>
 <tr><td>address[0].city</td><td>
 "Boston"
 </td></tr>
@@ -97,7 +97,7 @@ HPID010000
 <tr><td>contact[0].name.family</td><td>
 "Stark"
 </td></tr>
-<tr><td>contact[0].name.given[0]</td><td>"Sandy"</td>
+<tr><td>contact[0].name.given[0]</td><td>"Sandy"</td></tr>
 <tr><td>contact[0].telecom[0].extension[0].extension[0].url</td><td>
 "daysOfWeek"
 </td></tr>
@@ -161,7 +161,7 @@ HPID010000
 <tr><td>contact[0].address.text</td><td>
 "120 St James Ave, Boston, MA 02101"
 </td></tr>
-<tr><td>contact[0].address.line[0]</td><td>"120 St James Ave"</td>
+<tr><td>contact[0].address.line[0]</td><td>"120 St James Ave"</td></tr>
 <tr><td>contact[0].address.city</td><td>
 "Boston"
 </td></tr>

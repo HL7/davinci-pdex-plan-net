@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "PharmChainAffil1"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -35,5 +35,14 @@
 </td></tr>
 <tr><td>code[0].coding[0].system</td><td>
 "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrganizationAffiliationRoleCS"
+</td></tr>
+<tr><td>specialty[0].coding[0].code</td><td>
+#3336C0003X
+</td></tr>
+<tr><td>specialty[0].coding[0].system</td><td>
+"http://nucc.org/provider-taxonomy"
+</td></tr>
+<tr><td>specialty[0].coding[0].display</td><td>
+"Community/Retail Pharmacy"
 </td></tr>
 </table>

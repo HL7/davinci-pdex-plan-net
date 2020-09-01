@@ -5,7 +5,7 @@
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"</td></tr>
 <tr><td>extension[0].url</td><td>
 "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/accessibility"
 </td></tr>
@@ -102,7 +102,7 @@ main campus
 <tr><td>address.text</td><td>
 "66 PAVILION AVE, PROVIDENCE, RI 029051522"
 </td></tr>
-<tr><td>address.line[0]</td><td>"66 PAVILION AVE"</td>
+<tr><td>address.line[0]</td><td>"66 PAVILION AVE"</td></tr>
 <tr><td>address.city</td><td>
 "PROVIDENCE"
 </td></tr>
@@ -127,13 +127,13 @@ main campus
 <tr><td>managingOrganization.display</td><td>
 "RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC."
 </td></tr>
-<tr><td>hoursOfOperation[0].daysOfWeek[0]</td><td>"mon"</td>
-<tr><td>hoursOfOperation[0].daysOfWeek[1]</td><td>"tue"</td>
-<tr><td>hoursOfOperation[0].daysOfWeek[2]</td><td>"wed"</td>
-<tr><td>hoursOfOperation[0].daysOfWeek[3]</td><td>"thu"</td>
-<tr><td>hoursOfOperation[0].daysOfWeek[4]</td><td>"fri"</td>
-<tr><td>hoursOfOperation[0].daysOfWeek[5]</td><td>"sat"</td>
-<tr><td>hoursOfOperation[0].daysOfWeek[6]</td><td>"sun"</td>
+<tr><td>hoursOfOperation[0].daysOfWeek[0]</td><td>"mon"</td></tr>
+<tr><td>hoursOfOperation[0].daysOfWeek[1]</td><td>"tue"</td></tr>
+<tr><td>hoursOfOperation[0].daysOfWeek[2]</td><td>"wed"</td></tr>
+<tr><td>hoursOfOperation[0].daysOfWeek[3]</td><td>"thu"</td></tr>
+<tr><td>hoursOfOperation[0].daysOfWeek[4]</td><td>"fri"</td></tr>
+<tr><td>hoursOfOperation[0].daysOfWeek[5]</td><td>"sat"</td></tr>
+<tr><td>hoursOfOperation[0].daysOfWeek[6]</td><td>"sun"</td></tr>
 <tr><td>hoursOfOperation[0].allDay</td><td>
 "true"
 </td></tr>

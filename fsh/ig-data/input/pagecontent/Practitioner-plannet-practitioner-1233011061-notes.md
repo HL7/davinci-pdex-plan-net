@@ -8,7 +8,7 @@
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"</td></tr>
 <tr><td>identifier[0].use</td><td>
 "official"
 </td></tr>
@@ -45,10 +45,10 @@
 <tr><td>name[0].family</td><td>
 "Fay"
 </td></tr>
-<tr><td>name[0].given[0]</td><td>"Jarvis"</td>
-<tr><td>name[0].given[1]</td><td>"Erasmo"</td>
-<tr><td>name[0].prefix[0]</td><td>"Dr."</td>
-<tr><td>name[0].suffix[0]</td><td>"AU.D."</td>
+<tr><td>name[0].given[0]</td><td>"Jarvis"</td></tr>
+<tr><td>name[0].given[1]</td><td>"Erasmo"</td></tr>
+<tr><td>name[0].prefix[0]</td><td>"Dr."</td></tr>
+<tr><td>name[0].suffix[0]</td><td>"AU.D."</td></tr>
 <tr><td>telecom[0].system</td><td>
 "phone"
 </td></tr>
@@ -91,8 +91,8 @@
 <tr><td>address[0].text</td><td>
 "266 CABOT ST, P.O. BOX 488, BEVERLY, MA 019153370"
 </td></tr>
-<tr><td>address[0].line[0]</td><td>"266 CABOT ST"</td>
-<tr><td>address[0].line[1]</td><td>"P.O. BOX 488"</td>
+<tr><td>address[0].line[0]</td><td>"266 CABOT ST"</td></tr>
+<tr><td>address[0].line[1]</td><td>"P.O. BOX 488"</td></tr>
 <tr><td>address[0].city</td><td>
 "BEVERLY"
 </td></tr>

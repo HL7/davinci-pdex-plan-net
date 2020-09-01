@@ -5,7 +5,7 @@
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"</td></tr>
 <tr><td>identifier[0].use</td><td>
 "official"
 </td></tr>
@@ -99,7 +99,7 @@
 <tr><td>contact[0].name.family</td><td>
 "Lehner"
 </td></tr>
-<tr><td>contact[0].name.given[0]</td><td>"Ken"</td>
+<tr><td>contact[0].name.given[0]</td><td>"Ken"</td></tr>
 <tr><td>contact[0].telecom[0].extension[0].extension[0].url</td><td>
 "daysOfWeek"
 </td></tr>

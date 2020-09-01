@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "VirtualCounselService"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -70,7 +70,7 @@
 "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS"
 </td></tr>
 <tr><td>category[0].coding[0].display</td><td>
-"Provider"
+"Medical Provider"
 </td></tr>
 <tr><td>specialty[0].coding[0].code</td><td>
 #101YP2500X

@@ -5,7 +5,7 @@
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan"</td>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan"</td></tr>
 <tr><td>identifier[0].use</td><td>
 "official"
 </td></tr>
@@ -39,7 +39,7 @@ HPID450000
 <tr><td>name</td><td>
 "Acme Insurance Co of MassachusettsGold PPO Plan"
 </td></tr>
-<tr><td>alias[0]</td><td>"Acme MA GOLD PPO"</td>
+<tr><td>alias[0]</td><td>"Acme MA GOLD PPO"</td></tr>
 <tr><td>ownedBy.reference</td><td>
 "Organization/plannet-organization-1230210000"
 </td></tr>
