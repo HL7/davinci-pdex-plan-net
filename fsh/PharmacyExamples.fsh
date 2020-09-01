@@ -71,7 +71,7 @@ Usage: #example
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existptonly
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * category = HealthcareServiceCategoryCS#pharm   "Pharmacy"
-* specialty = $NUCCProviderTaxonomy#3336C0003X "Retail Pharmacy"
+* specialty = $NUCCProviderTaxonomy#3336C0003X "Community/Retail Pharmacy"
 * providedBy = Reference(PharmChain)
 * location[0] = Reference(PharmLoc1)
 * location[1] = Reference(PharmLoc2)
@@ -82,7 +82,7 @@ Usage: #example
 
 Instance: PharmChainAffil1
 InstanceOf: PlannetOrganizationAffiliation
-Description: "Organization Affiliation for PharmChain"
+Description: "Organization Affiliation for PharmChain (Retail)"
 Usage: #example
 * meta.profile =  Canonical(PlannetOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
@@ -94,16 +94,18 @@ Usage: #example
 * location[0] = Reference(PharmLoc1)
 * location[1] = Reference(PharmLoc2)
 * code = OrganizationAffiliationRoleCS#pharmacy 
+* specialty = $NUCCProviderTaxonomy#3336C0003X "Community/Retail Pharmacy"
 
 Instance: PharmChainAffil2
 InstanceOf: PlannetOrganizationAffiliation
-Description: "Organization Affiliation for PharmChain"
+Description: "Organization Affiliation for PharmChain (Compounding)"
 Usage: #example
 * meta.profile = Canonical(PlannetOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * network = Reference(AcmeofCTStdNet)
+* specialty = $NUCCProviderTaxonomy#3336C0004X "Compounding Pharmacy"
 * participatingOrganization = Reference (PharmChain)
 * healthcareService = Reference(PharmChainCompService)
 * location[0] = Reference(PharmLoc1)
@@ -111,7 +113,7 @@ Usage: #example
 
 Instance: PharmChainAffil3
 InstanceOf: PlannetOrganizationAffiliation
-Description: "Organization Affiliation for PharmChain"
+Description: "Organization Affiliation for PharmChain (MailOrder)"
 Usage: #example
 * meta.profile = Canonical(PlannetOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
@@ -121,6 +123,7 @@ Usage: #example
 * participatingOrganization = Reference (PharmChain)
 * healthcareService = Reference(PharmChainMailService)
 * code = OrganizationAffiliationRoleCS#pharmacy 
+* specialty = $NUCCProviderTaxonomy#3336M0002X "Mail Order Pharmacy"
 
 
 Instance: PharmChainCompService
@@ -134,7 +137,7 @@ Usage: #example
 * name = "Compounding Pharmacy by OrgA"
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#pharm "Pharmacy"
-* specialty = $NUCCProviderTaxonomy#3336C0003X "Compounding Pharmacy"
+* specialty = $NUCCProviderTaxonomy#3336C0004X "Compounding Pharmacy"
 * specialty.text = "Compounding Pharmacy"
 * providedBy = Reference(PharmChain)
 * location[0] = Reference(PharmLoc1)
