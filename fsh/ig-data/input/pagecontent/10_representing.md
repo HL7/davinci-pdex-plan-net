@@ -194,7 +194,7 @@
 </tr>
 <tr>
 <td>Pharmacy Location #1 .&nbsp; Shows newpatient,<br />accessibliity, and contactpoint-availabletime extensions</td>
-<td><a title="Location/PharmLoc1" href="PharmLoc1.html">PharmLoc1</a></td>
+<td><a title="Location/PharmLoc1" href="Location-PharmLoc1.html">PharmLoc1</a></td>
 </tr>
 <tr>
 <td>Pharmacy Location #2</td>
