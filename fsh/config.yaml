@@ -64,11 +64,11 @@ menu:
   Home          : index.html
   Implementation:
     Implementation                              :         implementation.html
-    Representing Provider Directories in Plannet:         representing.html
+    Representing Provider Directories in Plan Net:          implementation.html#Representing
   FHIR Artifacts:
     Profiles            : profiles.html
     Extensions          : artifacts.html#3
-    Search Parameters   : searchParameters.html
+    Search Parameters   : artifacts.html#2
     Terminology         : artifacts.html#5
     Capability Statement: CapabilityStatement-davinci-pdex-plan-net.html
   Examples      : artifacts.html#7
