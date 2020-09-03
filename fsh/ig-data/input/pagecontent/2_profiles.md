@@ -43,7 +43,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
     </tr>
     <tr>
       <td><a href="StructureDefinition-plannet-Network.html">PlannetNetwork</a></td>
-      <td><a href="http://hl7.org/fhir/R4/organization.html">Organization (R4)</a></td>
+      <td><a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-organization.html">Organization (US Core)</a></td>
       <td>{% capture md_text %}A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
 
 In the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.

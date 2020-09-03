@@ -218,7 +218,7 @@ Description:    "A Location is the physical place where healthcare services are 
 
 
 Profile:        PlannetNetwork
-Parent:         Organization 
+Parent:         $USCoreOrganization    //Organization 
 Id:             plannet-Network
 Title:          "Plan-net Network"
 Description:    "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
