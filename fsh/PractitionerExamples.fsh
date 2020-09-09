@@ -74,6 +74,9 @@ Usage: #example
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HansSoloClinic)
 * specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
+* extension[qualification].extension[code].valueCodeableConcept = $NUCCProviderTaxonomy#207R00000X 
+* extension[qualification].extension[issuer].valueReference.display = "American Board of Internal Medicine"
+* extension[qualification].extension[status].valueCode = QualificationStatusCS#active 
 // specialty = internal medicine
 // available M-F
 
@@ -87,7 +90,7 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#outpat 
-* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
+* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
 * location[0] = Reference(HansSoloClinic)
 
 Instance: HansSoloClinic
@@ -184,7 +187,7 @@ Usage: #example
 * extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = VirtualModalitiesCS#tdd 
 * extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  VirtualModalitiesCS#phone 
 * category = HealthcareServiceCategoryCS#prov "Medical Provider"
-* specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
+* specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional"
 
 Instance: JoeSmithRole1
 InstanceOf: PlannetPractitionerRole
@@ -261,7 +264,7 @@ Usage: #example
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#outpat
 * providedBy = Reference(CancerClinic)
-* specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology Physician"  
+* specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology"  
 * location[0] = Reference(CancerClinicLoc)
 
 Instance: CancerClinicLoc

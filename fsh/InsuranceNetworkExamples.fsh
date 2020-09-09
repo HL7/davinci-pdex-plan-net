@@ -31,6 +31,7 @@ Usage: #example
 * contact.telecom.extension[via-intermediary].valueReference = Reference(Acme)
 * contact.name.family = "Kawasaki"
 * contact.name.given = "Jane"
+* extension[location-reference].valueReference = Reference(StateOfCTLocation)
 
 Instance: Acme
 InstanceOf: PlannetOrganization
@@ -59,6 +60,7 @@ Usage: #example
 * address.city = "Norwalk"
 * address.state = "CT"
 * address.postalCode = "00014-1234"
+* extension[org-description].valueString = "Acme of CT is a leading provider of health and other insurance products."
 
 Instance: AcmeQHPGold
 InstanceOf: PlannetInsurancePlan

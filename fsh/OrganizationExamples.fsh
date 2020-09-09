@@ -86,7 +86,7 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#emerg  
-* specialty =  $NUCCProviderTaxonomy#207P00000X   "Emergency Medicine Physician"
+* specialty =  $NUCCProviderTaxonomy#207P00000X   "Emergency Medicine"
 * providedBy = Reference(Hospital)
 * location[0] = Reference(HospLoc1)
 
@@ -188,7 +188,7 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#prov 
-* specialty = $NUCCProviderTaxonomy#207X00000X "Orthopedic Surgery Physician"   // Orthopedics
+* specialty = $NUCCProviderTaxonomy#207X00000X "Orthopedic Surgery"   // Orthopedics
 * providedBy = Reference(HartfordOrthopedics)
 * location[1] = Reference(HospLoc2)
 * location[0] = Reference(HospLoc1)
@@ -234,7 +234,7 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#outpat
-* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
+* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
 * providedBy = Reference(HamiltonClinic)
 * location[0] = Reference(HospLoc1)
 
@@ -292,7 +292,7 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#outpat
-* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
+* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
 * providedBy = Reference(BurrClinic)
 * location[0] = Reference(HospLoc1)
 
