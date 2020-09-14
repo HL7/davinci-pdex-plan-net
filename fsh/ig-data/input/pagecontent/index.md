@@ -20,7 +20,7 @@ The diagram below depicts the scope of this implementation guide (IG). The IG de
 
 <h4>Relation to US Core and other IGs</h4>
 
-This implementation guide was written for a US audience and profiles resources from the R4 version of the US Core IG, where available (Practitioner, Organization and Location), and otherwise from R4 (OrganizationAffiliation, PractitionerRole, HealthCareService, Endpoint).  The PractitionerRole profile from US Core was not used because it is over-constrained for use in a Provider Directory based on Payer information.  Alignment with VhDir is maintained by using extensions and value sets from VhDir where possible, or adapting their content when direct usage is not possible.
+This implementation guide was written for a US audience and profiles resources from <a href="http://hl7.org/fhir/us/core/STU3.1/">US Core STU 3.1</a>, where available (Practitioner, Organization and Location), and otherwise from R4 (OrganizationAffiliation, PractitionerRole, HealthCareService, Endpoint).  The PractitionerRole profile from US Core was not used because it is over-constrained for use in a Provider Directory based on Payer information.  Alignment with VhDir is maintained by adapting VhDir content, where possible.
 
 <h4>Disclaimers and Assumptions</h4>
 
@@ -32,43 +32,36 @@ This implementation guide was written for a US audience and profiles resources f
 
 Provider directories play a critical role in enabling identification of individual providers and provider organizations, as well as characteristics about them. Provider directories support a variety of use cases, including:
 <ul>
-<li>Patient/Payer focused
-</li><li>Find provider accessibility information (specialty, office hours, languages spoken, taking patients) - enables individuals and consumers to find contact and other accessibility information for individual healthcare providers and/or healthcare organizations
-</li><li>Relationship between provider and insurance plan (insurance accepted) or plan and provider (network) - enables individual healthcare providers, organizations, and payers to discover the relationships between providers, organizations, and payers, as well as additional details about the relationships and entities involved
-</li><li>Basic Information Exchange
-</li><li>Enable electronic exchange (e.g. discovery of electronic endpoints such as IHE/EHR endpoints, FHIR server URLs, Direct addresses) - enables the electronic exchange of health information by supporting the ability to discover electronic service information including electronic endpoints or electronic addresses
-</li><li>Find an individual and/or organization (even if no electronic endpoint is available) - enables users to find contact and other identifying information about healthcare organizations and individual healthcare providers</li>
-</ul>
-All use cases involve an application or consumer client querying a service provided by a payer.
-
-
-<h4>Use Case Examples</h4>
-
-<ol>
-<li>Find Information about a Specific Practitioner
+<li>Patient/Payer focused</li>
+<ul
+><li>Find provider accessibility information (specialty, office hours, languages spoken, taking patients) - enables individuals and consumers to find contact and other accessibility information for individual healthcare providers and/or healthcare organizations
 </li>
-<li>Lookup by Name
-</li><li>Lookup by NPI
-</li><li>What Insurance Plans does a Practitioner Accept
-</li><li>Find a Practitioner based on Properties
-</li><li>Find a specialist who accepts my insurance and is affiliated with my local hospital
-</li><li>Find a specialist who has office hours on Wednesdays
-</li><li>Find a practitioner near me who accepts my insurance and is accepting new patients
-</li><li>Find a female practitioner near me who speaks Spanish
-</li><li>Healthcare Services
-</li><li>Who provides opthalmology services in my area
-</li><li>What locations provide specialty services for my local hospital network</li>
-</ol>
+<li>Relationship between provider and insurance plan (insurance accepted) or plan and provider (network) - enables individual healthcare providers, organizations, and payers to discover the relationships between providers, organizations, and payers, as well as additional details about the relationships and entities involved
+</li>
+</ul>
+<li>Basic Information Exchange</li>
+<ul>
+<li>Enable electronic exchange (e.g. discovery of electronic endpoints such as IHE/EHR endpoints, FHIR server URLs, Direct addresses) - enables the electronic exchange of health information by supporting the ability to discover electronic service information including electronic endpoints or electronic addresses</li>
+<li>Find an individual and/or organization (even if no electronic endpoint is available) - enables users to find contact and other identifying information about healthcare organizations and individual healthcare providers</li>
+</ul>
+</ul>
+<br>
+This IG addresses two actors:
+<ul>
+<li>Health Plan API Actor:  A payer publishing a directory of its provider networks through a FHIR endpoing.</li>
+<li>Application Actor:  A third party using the API published by a payer to provide useful views of the payer's provider networks for end users.</li>
+</ul>
+For anticipated query use cases, please see <a href="implementation.html#representing-and-searching-provider-directory-data">Representing and Searching Provider Data</a>.
 
 <h4>Overview of Payer Directory - Resource Relationships</h4>
 
 Note: the following diagrams provide a high-level view of the relationships between resources used in this IG. They do not necessarily reflect all of the relationships/references between resources.
 
-<img src="Slide2.png" alt = "Key Relationships Among Payer Directory Resources" style="height:auto;float:none;align:middle;width:80%;"  />
-<img src="Slide3.png" alt = "Relationships Between Payer Directory Resources -- Endpoints" style="height:auto;float:none;align:middle;width:80%;"  />
+<img src="Slide2.png" alt = "Key Relationships Among Payer Directory Resources" style="height:auto;float:none;align:middle;width:100%;"  />
+<img src="Slide3.png" alt = "Relationships Between Payer Directory Resources -- Endpoints" style="height:auto;float:none;align:middle;width:100%;"  />
 
 <h4>Credits</h4>
-This IG was developed by the MITRE Corporation under the direction of the authors using [FHIR Shorthand syntax](https://build.fhir.org/ig/HL7/fhir-shorthand/) and the [SUSHI tookit](https://github.com/FHIR/sushi),  a free, open source toolchain from the MITRE Corporation.  Generous guidance on FHIR Shorthand and sushi was provided by Chris Moessel.  The capability statements were developed with support of tools and generous guidance from Eric Haas, and benefited from critical review by Yengibar Manasyan.
+This IG was developed by the MITRE Corporation under the direction of the authors using [FHIR Shorthand syntax](https://build.fhir.org/ig/HL7/fhir-shorthand/) and the [SUSHI tookit](https://github.com/FHIR/sushi),  a free, open source toolchain from the MITRE Corporation.  Generous guidance on FHIR Shorthand and SUSHI was provided by Chris Moesel.  The capability statements were developed with support of tools and generous guidance from Eric Haas, and benefited from critical review by Yengibar Manasyan.
 
   
 <h4>Authors</h4>

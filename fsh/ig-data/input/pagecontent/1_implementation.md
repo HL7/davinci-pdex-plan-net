@@ -1,11 +1,5 @@
 <h3><a name="Implementation"></a>Implementation Notes</h3>
-<p>This page contains miscellaneous information on FHIR implementation. The content is primarily directed at implementers of Plan-Net. The following topics are addressed:</p>
-<ul>
-<li><a href="implementation.html#privacy-considerations">Privacy Considerations</a></li>
-<li><a href="implementation.html#conformance-requirements">Conformance Requirements</a></li>
-<li><a href="implementation.html#relationship-to-us-core">Relationship to USCore</a></li>
-<li><a href="implementation.html#general-security-considerations">General Security Considerations</a></li>
-</ul>
+<p>This page contains miscellaneous information on FHIR implementation. The content is primarily directed at implementers of Plan-Net. </p>
 <h4><a id="privacy-considerations"></a>Privacy Considerations</h4>
 <p>Access to the Plan-net service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that were queried.</p>
 <p>A conformant Plan-net service <strong>SHALL NOT</strong> require a directory mobile application to send consumer identifying information in order to query content.</p>
@@ -16,25 +10,23 @@
 <p>When querying and reading the Plan-Net Profiles defined in this IG, Must Support on any profile data element <strong>SHALL</strong> be interpreted as follows:</p>
 <h5>Health Plan API Requirements</h5>
 <ul>
-<li>Health Plan API actors <strong>SHALL</strong> be capable of populating all data elements as part of the query results.</li>
-<li>In situations where information on a particular data element is not present and the cardinality is 0.. , the Health Plan API actors <strong>SHALL NOT</strong> include the data elements in the resource instance returned as part of the query results.</li>
+<li>Health Plan API actors <strong>SHALL</strong> be capable of populating all Must Support data elements as part of the query results.</li>
+<li>In situations where information on a particular Must Support data element is not present and the cardinality is 0.. , the Health Plan API actors <strong>SHALL NOT</strong> include the data elements in the resource instance returned as part of the query results.</li>
 <li>In situations where information on a particular data element is not present and the cardinality is &gt;0.. <strong>SHALL</strong>&nbsp;send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or use the dataAbsentReason extension.</li>
 </ul>
 <h5>Application Requirements</h5>
 <ul>
-<li>Application actors&nbsp;<strong>SHALL</strong> be capable of processing resource instances containing the data elements without generating an error or causing the application to fail.</li>
+<li>Application actors&nbsp;<strong>SHALL</strong> be capable of processing resource instances containing the Must Support data elements without generating an error or causing the application to fail.</li>
 <li>Application actors <strong>SHOULD</strong> be capable of displaying the data elements for human use or storing the information for other purposes.</li>
-<li>When querying Health Plan API actors, Application actors <strong>SHALL</strong>&nbsp;interpret missing data elements within resource instances as data not present in the Health Plan API actors system.</li>
-<li>Consumer App actors&nbsp;<strong>SHALL</strong>&nbsp;be able to process resource instances containing data elements asserting missing information.</li>
+<li>When querying Health Plan API actors, Application actors <strong>SHALL</strong>&nbsp;interpret missing Must Support data elements within resource instances as data not present in the Health Plan API actors system.</li>
+<li>Consumer App actors&nbsp;<strong>SHALL</strong>&nbsp;be able to process resource instances containing Must Support data elements asserting missing information.</li>
 </ul>
 <h4><a id="relationship-to-us-core"></a>Client Detection of Updates Directory Content</h4>
 <p>Each profile in this guide requires that the lastUpdate timestamp be provided as part of the profile's data content.&nbsp; Clients that cache query results can track additions or modifications to directory content through queries that filter content using the _lastUpdated search parameter.&nbsp; Clients should periodically check that data cached from past queries has not been deleted by querying for the same elements by _id.</p>
-<h4><a id="relationship-to-us-core"></a>Relationship to US Core</h4>
-<p>This guide used a corresponding US Core profile as its base profile in all cases where such a profile existed and wasn't in conflict with the Payer data models supporting a provider directory (i.e. Location, Organization and Practitioner). Conflicts prevented the use of the USCore PractitionerRole profile, but all compatible aspects of the USCore PractitionerRole profile were retained in the corresponding Plan-Net profile.</p>
 <h4><a id="general-security-considerations"></a>General Security Considerations</h4>
-<p>&nbsp;</p>
+<strong>NO CONTENT</strong>
 <h3><a name="Representing"></a>Representing and Searching Provider Directory Data</h3>
-<p>It is important for payers to use the Plan-Net profiles consistently in order to achieve true interoperability of directory information among payers. The intent. of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data.&nbsp; The Plan-Net design is based around the following types of searches.</p>
+<p>It is important for payers to use the Plan-Net profiles consistently in order to achieve true interoperability of directory information among payers. The intent of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data.&nbsp; The Plan-Net design is based around the following types of searches.</p>
 <table style="border-color: Black;" border="3" width="947">
 <tbody>
 <tr>
@@ -123,10 +115,9 @@
 </tr>
 </tbody>
 </table>
-<h4>&nbsp;</h4>
 <p>The content in this section of the IG is based on the <a href="artifacts.html#7">examples</a> provided and on the patterns provided <a href="patterns.pptx">here</a>.<br />Specific examples are referenced in the text below.</p>
-<h4><a name="Privacy"></a>HealthcareService</h4>
-<p>The first type of search starts from HealthcareService.category and HealthcareService.specialty, so it essential that each provider's service be supported by appropriate HealthcareService instances.&nbsp; HealthcareServices are typically provided by an organization, except in the case of a Practitioner that is not associated with an organization (see the solo practitioner example), and can be linked to a set of locations where service is provided, or identified as virtual services through an indicated set of virtual modalities.&nbsp; &nbsp;The examples illustrate this with an organization that provides three distinct Pharmacy services -- retail, compounding, and mail-order -- across its locations.&nbsp; All organizations that provide service should define an appropriate set. of HealthcareServices to facilitate search.&nbsp; The HealthcareService category, specialty and type fields are the highest level of organization of the services provided by the provider's network.</p>
+<h4><a name="HealthcareService"></a>HealthcareService</h4>
+<p>The first type of search starts from HealthcareService.category and HealthcareService.specialty, so it essential that each provider's service be supported by appropriate set of HealthcareService instances.&nbsp; HealthcareServices are typically provided by an organization, except in the case of a Practitioner that is not associated with an organization (see the solo practitioner example), and can be linked to a set of locations where service is provided, or identified as virtual services through an indicated set of virtual modalities.&nbsp; &nbsp;The examples illustrate this with an organization that provides three distinct Pharmacy services -- retail, compounding, and mail-order -- across its locations.&nbsp; All organizations that provide service should define an appropriate set. of HealthcareServices to facilitate search.&nbsp; The HealthcareService category, specialty and type fields are the highest level of organization of the services provided by the provider's network.</p>
 <p>Relevant examples:</p>
 <table style="height: 119px; border-color: Black;" border="1" width="509">
 <tbody>
@@ -174,9 +165,9 @@
 </tr>
 </tbody>
 </table>
-<h4><a name="Privacy"></a>Insurance Plan and Network<br /><br /></h4>
+<h4><a name="InsurancePlanAndNetwork"></a>Insurance Plan and Network<br /><br /></h4>
 <p>Each payer will offer one or more products -- Insurance Plans -- and each plan is associated with one or more Networks.&nbsp; Practitioners and Organizations indicate participation in a Network with a link to the Network using a PractitionerRole or OrganizationAffiliation instance, respectively.&nbsp; &nbsp;PractitionerRole and OrganizationAffiliation instances are what tie Practitioners and Organizations to HealthcareServices, Organizations, Networks and Locations.</p>
-<p>The examples demonstrate the use of the InsurancePlan profile to represent two distinct Qualified Health Plan products covering the state of Connecticut, using. a pair of Networks.&nbsp; The practitioners and organizations in the examples participate in one or both of these networks.</p>
+<p>The examples demonstrate the use of the InsurancePlan profile to represent two distinct Qualified Health Plan products covering the state of Connecticut, using a pair of Networks.&nbsp; The practitioners and organizations in the examples participate in one or both of these networks.</p>
 <p>Relevant examples:</p>
 <table border="1" width="509">
 <tbody>
@@ -208,8 +199,8 @@
 </tr>
 </tbody>
 </table>
-<h4><a name="Privacy"></a>Location</h4>
-<p>Location instances provide all of the information of interest to consumers about a particular location where service is provided, including contact information, address, accessibility, hours of operation and contact, as well as position (lattitude and longitude).&nbsp; &nbsp;Locations can also be used to represent regions using an associated or attached GeoJSON object.</p>
+<h4><a name="Location"></a>Location</h4>
+<p>Location instances provide information about location where service is provided, including contact information, address, accessibility, hours of operation and contact, as well as position (lattitude and longitude).&nbsp; &nbsp;Locations can also be used to represent regions using an associated or attached GeoJSON object.</p>
 <p>Relevant examples:</p>
 <table border="1" width="509">
 <tbody>
@@ -241,7 +232,7 @@
 </tr>
 </tbody>
 </table>
-<h4><a name="Privacy"></a>Practitioners and PractitionerRoles</h4>
+<h4><a name="PractitionersAndPractitionerRole"></a>Practitioners and PractitionerRoles</h4>
 <p>Practitioner instances provide information about a specific person, including name, gender, languages spoken, and qualifications.&nbsp; &nbsp;PractitionerRole defines a role for a particular practitioner, and associates it with locations, specialties, an organization, and networks.</p>
 <table style="height: 243px; width: 803px;" border="1">
 <tbody>
@@ -281,7 +272,7 @@
 </tr>
 </tbody>
 </table>
-<h4><a name="Privacy"></a>Organizations and Organization Affiliations</h4>
+<h4><a name="OrganizationAndOrganizationAffiliation"></a>Organizations and Organization Affiliations</h4>
 <p>Organization instances provide information about a specific organization and organizational hierarchies, including organization name, specialty, type, address and contact information.&nbsp; Organization Affiliation instances describe a role, and link a participating organization that provides or performs the role, with an organization where that role is available, and also links the participating organization to a HealthcareServices and networks.&nbsp; OrganizationalAffiliation can also be used to associate a HealthcareService provided by an organization with networks.</p>
 <table border="1">
 <tbody>

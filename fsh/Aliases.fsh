@@ -15,6 +15,7 @@ Alias: $GeolocationExtension = http://hl7.org/fhir/StructureDefinition/geolocati
 Alias:   $OrgType = http://terminology.hl7.org/CodeSystem/organization-type
 Alias:   $EndpointStatus = http://hl7.org/fhir/ValueSet/endpoint-status
 Alias:   $PublicationStatus = http://hl7.org/fhir/ValueSet/publication-status
+Alias:   $LocationStatus = http://hl7.org/fhir/location-status 
 Alias:   $USPSState = http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state
 Alias:   $USPSStateCS = https://www.usps.com/
 Alias:   $ConnectionTypeCS = http://terminology.hl7.org/CodeSystem/endpoint-connection-type

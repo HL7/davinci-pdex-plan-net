@@ -156,12 +156,15 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * contact.telecom.use MS
 * contact.telecom.period MS
 * endpoint only Reference(PlannetEndpoint)
+* endpoint MS 
 * network only Reference(PlannetNetwork)
+* network MS // post connectathon 
 * plan ^short = "Cost sharing details for the plan"
 * plan.type from InsurancePlanTypeVS (extensible)
 * plan.type MS 
 * plan.type ^short = "Categorization of the cost sharing for the plan"
 * plan.coverageArea only Reference(PlannetLocation)
+* plan.coverageArea MS   // post connectathon 
 * plan.network only Reference(PlannetNetwork)
 
 
@@ -187,6 +190,7 @@ Description:    "A Location is the physical place where healthcare services are 
 * identifier.period MS
 * identifier.assigner MS
 * status 1..1 MS
+* status = $LocationStatus#active  (exactly) 
 * alias MS
 * description MS
 * mode 0..0
@@ -230,7 +234,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * meta.lastUpdated 1..1
 * extension contains
     LocationReference named location-reference 0..* MS
-* extension[location-reference] ^short = "Location Reference"
+* extension[location-reference] ^short = "Network coverage area"
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -280,8 +284,8 @@ Description:    "An organization is a formal or informal grouping of people or o
 Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"
 * meta.lastUpdated 1..1
 * extension contains
-   Qualification named qualification 0..*  and
-   OrgDescription named org-description 0..1 
+   Qualification named qualification 0..*  MS and
+   OrgDescription named org-description  0..1 MS
 * extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (required)
 * extension[qualification] ^short = "Qualification"
 * extension[org-description] ^short = "Organization Description"
@@ -299,7 +303,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * partOf MS  
 * partOf only Reference(PlannetOrganization)
 * address MS
-* address.extension contains $GeolocationExtension named geolocation 0..* MS
+* address.extension contains $GeolocationExtension named geolocation 0..1 MS
 * address.use MS
 * address.type MS
 * address.text MS
@@ -400,7 +404,9 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * name.prefix MS
 * name.suffix MS
 * name.period MS
-* address.extension contains $GeolocationExtension named geolocation 0..* 
+* address.extension contains $GeolocationExtension named geolocation 0..1 
+* telecom MS 
+* address MS 
 * telecom.extension contains
     ContactPointAvailableTime named contactpoint-availabletime 0..*  and
     ViaIntermediary named via-intermediary 0..* 
@@ -439,7 +445,7 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * extension contains
    NewPatients named newpatients 0..* MS and
    NetworkReference named network-reference 0..* MS and
-   Qualification named qualification 0..* 
+   Qualification named qualification  0..* MS
 * extension[qualification].extension[code].value[x] from IndividualSpecialtyAndDegreeLicenseCertificateVS (required)
 * extension[newpatients] ^short = "New Patients"
 * extension[network-reference] ^short = "NetworkReference"
