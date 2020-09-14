@@ -149,8 +149,8 @@ Usage: #example
 * name.text = "Susie Smith, LPC"
 * name.family = "Smith"
 * name.given[0] = "Susie"
-//* qualification[0].code = $V2table0360CS#LPC
-* qualification[0].code = #LPC
+* qualification[0].code.coding.display = "LPC"
+* qualification[0].code.text = "LPC"
 * qualification[0].issuer.display = "State of Illinois"
 * qualification[0].code.text = "IL"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
