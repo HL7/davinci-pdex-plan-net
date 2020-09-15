@@ -23,7 +23,6 @@ The diagram below depicts the scope of this implementation guide (IG). The IG de
 This implementation guide was written for a US audience and profiles resources from <a href="http://hl7.org/fhir/us/core/STU3.1/">US Core STU 3.1</a>, where available (Practitioner, Organization and Location), and otherwise from R4 (OrganizationAffiliation, PractitionerRole, HealthCareService, Endpoint).  The PractitionerRole profile from US Core was not used because it is over-constrained for use in a Provider Directory based on Payer information.  Alignment with VhDir is maintained by adapting VhDir content, where possible.
 
 <h4>Disclaimers and Assumptions</h4>
-
 <ul>
 <li> <b>PDEX Payer Network is based conceptually on VhDir</b>: The PDEX Payer Network implementation guide is based conceptually on the VhDir implementation guide, which is still a work in progress. Plan-net will need to track changes to VhDir to fulfill its goal of minimizing rework.
 </li><li> <b>The PDEX Payer Network endpoint is known to the client</b>: This implementation guide assumes that the directory endpoint is known to the client. There is an overarching system architecture issue that is critical to resolve -- how does the client discover the FHIR endpoint of interest. For the purposes of this IG, we consider that problem out of scope.</li>
