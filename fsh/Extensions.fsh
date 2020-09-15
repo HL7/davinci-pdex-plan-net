@@ -155,7 +155,7 @@ Description: "An extension to add qualifications for an organization (e.g. accre
 * extension[identifier].value[x] 1..1
 * extension[code].value[x] only CodeableConcept
 * extension[code].value[x] 1..1
-* extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (required)
+* extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
 * extension[issuer].value[x] 1..1
 * extension[issuer].value[x] only Reference(PlannetOrganization)
 * extension[status].value[x] 1..1

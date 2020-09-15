@@ -1,18 +1,18 @@
 <h3><a name="Implementation"></a>Implementation Notes</h3>
 <p>This page contains miscellaneous information on FHIR implementation. The content is primarily directed at implementers of Plan-Net. </p>
+<h4><a id="conformance-requirements"></a>Conformance Requirements</h4>
+<p>The conformance verbs (<strong>SHALL</strong>, <strong>SHALL NOT,&nbsp;</strong><strong>SHOULD</strong>, <strong>MAY</strong>) used in this guide are defined in <a href="http://hl7.org/fhir/R4/conformance-rules.html">FHIR Conformance Rules</a>.</p>
 <h4><a id="privacy-considerations"></a>Privacy Considerations</h4>
 <p>Access to the Plan-net service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that were queried.</p>
 <p>A conformant Plan-net service <strong>SHALL NOT</strong> require a directory mobile application to send consumer identifying information in order to query content.</p>
 <p>A directory mobile application <strong>SHALL NOT</strong> send consumer identifiable information when querying a Plan-net service.</p>
-<h4><a id="conformance-requirements"></a>Conformance Requirements</h4>
-<p>The conformance verbs - <strong>SHALL</strong>, <strong>SHALL NOT,&nbsp;</strong><strong>SHOULD</strong>, <strong>MAY</strong> - used in this guide are defined in <a href="http://hl7.org/fhir/R4/conformance-rules.html">FHIR Conformance Rules</a>.</p>
 <h4><a id="must-support"></a>Must Support</h4>
 <p>When querying and reading the Plan-Net Profiles defined in this IG, Must Support on any profile data element <strong>SHALL</strong> be interpreted as follows:</p>
 <h5>Health Plan API Requirements</h5>
 <ul>
 <li>Health Plan API actors <strong>SHALL</strong> be capable of populating all Must Support data elements as part of the query results.</li>
-<li>In situations where information on a particular Must Support data element is not present and the cardinality is 0.. , the Health Plan API actors <strong>SHALL NOT</strong> include the data elements in the resource instance returned as part of the query results.</li>
-<li>In situations where information on a particular data element is not present and the cardinality is &gt;0.. <strong>SHALL</strong>&nbsp;send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or use the dataAbsentReason extension.</li>
+<li>In situations where information on a particular Must Support data element is not present and the minimum cardinality is 0 , the Health Plan API actors <strong>SHALL NOT</strong> include the data elements in the resource instance returned as part of the query results.</li>
+<li>In situations where information on a particular data element is not present and the minimum cardinality is &gt;0 <strong>SHALL</strong>&nbsp;send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or use the dataAbsentReason extension.</li>
 </ul>
 <h5>Application Requirements</h5>
 <ul>
@@ -117,7 +117,7 @@
 </table>
 <p>The content in this section of the IG is based on the <a href="artifacts.html#7">examples</a> provided and on the patterns provided <a href="patterns.pptx">here</a>.<br />Specific examples are referenced in the text below.</p>
 <h4><a name="HealthcareService"></a>HealthcareService</h4>
-<p>The first type of search starts from HealthcareService.category and HealthcareService.specialty, so it essential that each provider's service be supported by appropriate set of HealthcareService instances.&nbsp; HealthcareServices are typically provided by an organization, except in the case of a Practitioner that is not associated with an organization (see the solo practitioner example), and can be linked to a set of locations where service is provided, or identified as virtual services through an indicated set of virtual modalities.&nbsp; &nbsp;The examples illustrate this with an organization that provides three distinct Pharmacy services -- retail, compounding, and mail-order -- across its locations.&nbsp; All organizations that provide service should define an appropriate set. of HealthcareServices to facilitate search.&nbsp; The HealthcareService category, specialty and type fields are the highest level of organization of the services provided by the provider's network.</p>
+<p>The first type of search starts from HealthcareService.category and HealthcareService.specialty, so it is essential that each provider's service be supported by appropriate set of HealthcareService instances.&nbsp; HealthcareServices are typically provided by an organization, except in the case of a Practitioner that is not associated with an organization (see the solo practitioner example), and can be linked to a set of locations where service is provided, or identified as virtual services through an indicated set of virtual modalities.&nbsp; &nbsp;The examples illustrate this with an organization that provides three distinct Pharmacy services -- retail, compounding, and mail-order -- across its locations.&nbsp; All organizations that provide service should define an appropriate set. of HealthcareServices to facilitate search.&nbsp; The HealthcareService category, specialty and type fields are the highest level of organization of the services provided by the provider's network.</p>
 <p>Relevant examples:</p>
 <table style="height: 119px; border-color: Black;" border="1" width="509">
 <tbody>
