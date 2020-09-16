@@ -20,7 +20,7 @@ The diagram below depicts the scope of this implementation guide (IG). The IG de
 
 <h4>Relation to US Core and other IGs</h4>
 
-This implementation guide was written for a US audience and profiles resources from <a href="http://hl7.org/fhir/us/core/STU3.1/">US Core STU 3.1</a>, where available (Practitioner, Organization and Location), and otherwise from R4 (OrganizationAffiliation, PractitionerRole, HealthCareService, Endpoint).  The PractitionerRole profile from US Core was not used because it is over-constrained for use in a Provider Directory based on Payer information.  Alignment with VhDir is maintained by adapting VhDir content, where possible.
+This implementation guide was written for a US audience and profiles resources from <a href="http://hl7.org/fhir/us/core/STU3.1/index.html">US Core STU 3.1</a>, where available (Practitioner, Organization and Location), and otherwise from R4 (OrganizationAffiliation, PractitionerRole, HealthCareService, Endpoint).  The PractitionerRole profile from US Core was not used because it is over-constrained for use in a Provider Directory based on Payer information.  Alignment with VhDir is maintained by adapting VhDir content, where possible.
 
 <h4>Disclaimers and Assumptions</h4>
 <ul>
@@ -50,7 +50,7 @@ This IG addresses two actors:
 <li>Health Plan API Actor:  A payer publishing a directory of its provider networks through a FHIR endpoing.</li>
 <li>Application Actor:  A third party using the API published by a payer to provide useful views of the payer's provider networks for end users.</li>
 </ul>
-For anticipated query use cases, please see <a href="implementation.html#representing-and-searching-provider-directory-data">Representing and Searching Provider Data</a>.
+For anticipated query use cases, please see <a href="implementation.html#Representing">Representing and Searching Provider Data</a>.
 
 <h4>Overview of Payer Directory - Resource Relationships</h4>
 
