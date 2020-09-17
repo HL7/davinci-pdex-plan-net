@@ -71,7 +71,7 @@ menu:
     Extensions          : artifacts.html#3
     Search Parameters   : artifacts.html#2
     Terminology         : artifacts.html#5
-    Capability Statement: CapabilityStatement-davinci-pdex-plan-net.html
+    Capability Statement: CapabilityStatement-plan-net.html
   Examples      : artifacts.html#7
   Downloads     : downloads.html
   History       : http://www.hl7.org/fhir/us/davinci-pdex-plan-net/history.cfml

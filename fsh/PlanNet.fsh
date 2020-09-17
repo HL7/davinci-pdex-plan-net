@@ -7,8 +7,29 @@ Title:          "Plan-net Endpoint"
 Description:    "The technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging."
 * meta.lastUpdated 1..1
 * extension contains 
-    EndpointUsecase named endpoint-usecase 0..*
+    EndpointUsecase named endpoint-usecase 0..* MS
 * extension[endpoint-usecase] ^short = "Endpoint Usecase"
+* status 1..1 MS
+* status = $EndpointStatus#active (exactly) 
+* connectionType MS 
+* connectionType from EndpointConnectionTypeVS (extensible)
+* connectionType ^binding.extension[0].url = $MinValueSet
+* connectionType ^binding.extension[0].valueCanonical = $MinEndpointConnectionTypeVS  
+* name MS
+* managingOrganization only Reference(PlannetOrganization)
+* managingOrganization MS
+* contact MS
+* contact.value MS
+* contact.system MS
+* payloadType 1..1 MS 
+* payloadType from EndpointPayloadTypeVS (extensible)
+* payloadMimeType MS
+* address MS
+/* Changes  on 9/17
+# Endpoint 
+*** Changed
+status 1..1 MS
+*** Deleted
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -16,31 +37,67 @@ Description:    "The technical details of an endpoint that can be used for elect
 * identifier.value MS
 * identifier.period MS
 * identifier.assigner MS
-* status MS
-* status = $EndpointStatus#active (exactly) 
-* connectionType MS 
-* connectionType from EndpointConnectionTypeVS (extensible)
-* connectionType ^binding.extension[0].url = $MinValueSet
-* connectionType ^binding.extension[0].valueCanonical = $MinEndpointConnectionTypeVS  // MinEndpointConnectionTypeVS
-* name MS
-* managingOrganization only Reference(PlannetOrganization)
-* managingOrganization MS
-* contact MS
 *  contact.extension contains
        ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
        ViaIntermediary named via-intermediary 0..* MS
 * contact.extension[via-intermediary] ^short = "Via Intermediary"
-* contact.value MS
-* contact.system MS
+* period MS
+* header MS
 * contact.use MS
 * contact.rank MS
 * contact.period MS
-* period MS
-* payloadType 1..1 MS 
-* payloadType from EndpointPayloadTypeVS (extensible)
-* payloadMimeType MS
-* address MS
-* header MS
+
+# HealthCareService
+*** Changed
+   active 1..1 MS 
+*** Deleted 9/17
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* identifier.period MS
+* identifier.assigner MS
+* extraDetails MS
+* photo MS
+* telecom.rank MS
+* telecom.use MS
+* telecom.period MS
+
+
+# InsurancePlan 
+*** Changed
+  * obeys network-or-plan-Network 
+*** Deleted 9/17
+* identifier.period MS
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* contact.name.use MS
+* contact.name.family MS
+* contact.name.given MS
+* contact.name.prefix MS
+* contact.name.suffix MS
+* contact.name.period MS
+* contact.telecom.extension contains
+       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
+       ViaIntermediary named via-intermediary 0..* MS
+* contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
+* contact.telecom.use MS
+* contact.telecom.period MS
+
+# Location 
+*** Changed
+  
+*** Deleted 9/17
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* identifier.period MS
+* identifier.assigner MS
+* telecom.rank MS
+* telecom.use MS
+* telecom.period MS
+
+*/
 
 Profile:        PlannetHealthcareService
 Parent:         HealthcareService
@@ -53,14 +110,9 @@ Description:    "The HealthCareService resource typically describes services off
     DeliveryMethod named deliverymethod 1..* MS 
 * extension[newpatients] ^short = "New Patients"
 * extension[deliverymethod] ^short = "Delivery Method"
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
 * identifier.type MS
 * identifier.value MS
-* identifier.period MS
-* identifier.assigner MS
-* active MS
+* active 1..1 MS
 * active = true 
 * providedBy only Reference(PlannetOrganization)
 * providedBy MS
@@ -74,8 +126,6 @@ Description:    "The HealthCareService resource typically describes services off
 * location MS
 * name MS
 * comment MS
-* extraDetails MS
-* photo MS
 * telecom MS
 * telecom.extension contains
        ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
@@ -83,9 +133,6 @@ Description:    "The HealthCareService resource typically describes services off
 * telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system MS
 * telecom.value MS
-* telecom.rank MS
-* telecom.use MS
-* telecom.period MS
 * coverageArea only Reference(PlannetLocation)
 * coverageArea MS
 // * serviceProvisionCode MS
@@ -108,7 +155,6 @@ Description:    "The HealthCareService resource typically describes services off
 
 
 
-
 Profile:        PlannetInsurancePlan
 Parent:         InsurancePlan
 Id:             plannet-InsurancePlan
@@ -116,13 +162,10 @@ Title:          "Plan-net InsurancePlan"
 Description:    "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).
 
 InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."
+* obeys network-or-plan-Network 
 * meta.lastUpdated 1..1
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
 * identifier.type MS
 * identifier.value MS
-* identifier.period MS
 * identifier.assigner MS
 * status 1..1 MS
 * status = $PublicationStatus#active  (exactly) 
@@ -139,33 +182,22 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * coverageArea MS
 * contact MS
 * contact.name MS
-* contact.name.use MS
 * contact.name.text MS
-* contact.name.family MS
-* contact.name.given MS
-* contact.name.prefix MS
-* contact.name.suffix MS
-* contact.name.period MS
 * contact.telecom MS
-* contact.telecom.extension contains
-       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
-       ViaIntermediary named via-intermediary 0..* MS
-* contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.telecom.value MS
 * contact.telecom.system MS
-* contact.telecom.use MS
-* contact.telecom.period MS
 * endpoint only Reference(PlannetEndpoint)
 * endpoint MS 
 * network only Reference(PlannetNetwork)
-* network MS // post connectathon 
+* network  MS
 * plan ^short = "Cost sharing details for the plan"
 * plan.type from InsurancePlanTypeVS (extensible)
 * plan.type MS 
 * plan.type ^short = "Categorization of the cost sharing for the plan"
 * plan.coverageArea only Reference(PlannetLocation)
-* plan.coverageArea MS   // post connectathon 
+* plan.coverageArea MS   
 * plan.network only Reference(PlannetNetwork)
+
 
 
 Profile:        PlannetLocation
@@ -182,13 +214,8 @@ Description:    "A Location is the physical place where healthcare services are 
 * extension[newpatients] ^short = "New Patients"
 * extension[accessibility] ^short = "Accessibility"
 * extension[region] ^short = "Associated Region (GeoJSON)"
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
 * identifier.type MS
 * identifier.value MS
-* identifier.period MS
-* identifier.assigner MS
 * status 1..1 MS
 * status = $LocationStatus#active  (exactly) 
 * alias MS
@@ -202,10 +229,6 @@ Description:    "A Location is the physical place where healthcare services are 
 * telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system MS
 * telecom.value MS
-* telecom.rank MS
-* telecom.use MS
-* telecom.period MS
-// * physicalType MS
 * position MS
 * managingOrganization 0..1 MS
 * managingOrganization only Reference(PlannetOrganization)
@@ -286,7 +309,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * extension contains
    Qualification named qualification 0..*  MS and
    OrgDescription named org-description  0..1 MS
-* extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (required)
+* extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
 * extension[qualification] ^short = "Qualification"
 * extension[org-description] ^short = "Organization Description"
 * identifier.id MS
@@ -344,7 +367,7 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * obeys organization-or-participatingOrganization 
 * extension contains
    Qualification named qualification 0..* 
-* extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (required)
+* extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
 * identifier.id MS
 * identifier.use MS
 * identifier.system MS
@@ -424,7 +447,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * qualification.identifier.period MS
 * qualification.identifier.assigner MS
 * qualification.code MS
-* qualification.code from IndividualSpecialtyAndDegreeLicenseCertificateVS (required)
+* qualification.code from IndividualSpecialtyAndDegreeLicenseCertificateVS (extensible)
 * qualification.period MS
 * qualification.issuer MS
 * communication MS
@@ -446,7 +469,7 @@ be a relationship to an organization. Practitioner participation in healthcare p
    NewPatients named newpatients 0..* MS and
    NetworkReference named network-reference 0..* MS and
    Qualification named qualification  0..* MS
-* extension[qualification].extension[code].value[x] from IndividualSpecialtyAndDegreeLicenseCertificateVS (required)
+* extension[qualification].extension[code].value[x] from IndividualSpecialtyAndDegreeLicenseCertificateVS (extensible)
 * extension[newpatients] ^short = "New Patients"
 * extension[network-reference] ^short = "NetworkReference"
 * extension[qualification] ^short = "Qualification"
@@ -505,4 +528,11 @@ Description: "PlannetOrganizationAffiliation.organization or  PlannetOrganizatio
 Expression: "organization.exists() or participatingOrganization.exists()"
 Severity:   #error
 XPath:      "f:organization or f:participatingOrganization "
+
+// New 09/17
+Invariant:  network-or-plan-Network 
+Description: "If an insuranceplan does not define a network, than each plan must define one"
+Expression: "network.exists() or plan.network.exists.allTrue()"
+Severity:   #error
+//XPath:      "f:network or f:plan.network "
 

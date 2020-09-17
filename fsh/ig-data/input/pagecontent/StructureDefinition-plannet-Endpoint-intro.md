@@ -23,7 +23,7 @@
     <tr>
     <td>direct-project</td>
   <td>NA</td>
-  <td>Ignored</td>
+  <td>Relevant MIME Types</td>
   </tr>
      <tr>
     <td>rest-non-fhir</td>
