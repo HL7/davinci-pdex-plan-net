@@ -3,7 +3,7 @@
 Profile:        PlannetEndpoint
 Parent:         Endpoint
 Id:             plannet-Endpoint 
-Title:          "Plan-net Endpoint"
+Title:          "Plan-Net Endpoint"
 Description:    "The technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging."
 * meta.lastUpdated 1..1
 * extension contains 
@@ -102,7 +102,7 @@ status 1..1 MS
 Profile:        PlannetHealthcareService
 Parent:         HealthcareService
 Id:             plannet-HealthcareService
-Title:          "Plan-net HealthcareService"
+Title:          "Plan-Net HealthcareService"
 Description:    "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
 * meta.lastUpdated 1..1
 * extension contains
@@ -158,7 +158,7 @@ Description:    "The HealthCareService resource typically describes services off
 Profile:        PlannetInsurancePlan
 Parent:         InsurancePlan
 Id:             plannet-InsurancePlan
-Title:          "Plan-net InsurancePlan"
+Title:          "Plan-Net InsurancePlan"
 Description:    "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).
 
 InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."
@@ -203,7 +203,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 Profile:        PlannetLocation
 Parent:         $USCoreLocation
 Id:             plannet-Location
-Title:          "Plan-net Location"
+Title:          "Plan-Net Location"
 Description:    "A Location is the physical place where healthcare services are provided, practitioners are employed, 
                  organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."
 * meta.lastUpdated 1..1
@@ -247,7 +247,7 @@ Description:    "A Location is the physical place where healthcare services are 
 Profile:        PlannetNetwork
 Parent:         $USCoreOrganization    //Organization 
 Id:             plannet-Network
-Title:          "Plan-net Network"
+Title:          "Plan-Net Network"
 Description:    "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
 
 In the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.
@@ -302,7 +302,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 Profile:        PlannetOrganization
 Parent:         $USCoreOrganization
 Id:             plannet-Organization
-Title:          "Plan-net Organization"
+Title:          "Plan-Net Organization"
 Description:    "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.
 Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"
 * meta.lastUpdated 1..1
@@ -361,7 +361,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 Profile:        PlannetOrganizationAffiliation
 Parent:         OrganizationAffiliation
 Id:             plannet-OrganizationAffiliation
-Title:          "Plan-net OrganizationAffiliation"
+Title:          "Plan-Net OrganizationAffiliation"
 Description:    "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."
 * meta.lastUpdated 1..1
 * obeys organization-or-participatingOrganization 
@@ -407,7 +407,7 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 Profile:        PlannetPractitioner
 Parent:         $USCorePractitioner
 Id:             plannet-Practitioner
-Title:          "Plan-net Practitioner"
+Title:          "Plan-Net Practitioner"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * meta.lastUpdated 1..1
 * identifier.id MS
@@ -458,7 +458,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 Profile:        PlannetPractitionerRole
 Parent:         PractitionerRole
 Id:             plannet-PractitionerRole
-Title:          "Plan-net PractitionerRole"
+Title:          "Plan-Net PractitionerRole"
 Description:    "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, 
 there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also 
 be a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."
