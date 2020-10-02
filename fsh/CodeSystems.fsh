@@ -108,6 +108,7 @@ CodeSystem:  OrgTypeCS
 * #payer "Payer" "A healthcare payer."
 * #atyprv "Atypical Provider" "Providers that do not provide healthcare"
 * #bus "Non-Healthcare Business" "An organization that does not meet the definitions of a Healthcare or Atypical Provider, and is not a payer or healthcare facility"
+* #ntwk "Network" "A healthcare provider insurance network"
 
 
 CodeSystem: QualificationStatusCS

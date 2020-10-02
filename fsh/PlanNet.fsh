@@ -267,9 +267,8 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * identifier.assigner MS
 * active 1..1 MS
 * active = true (exactly)
-* type MS
-* type from OrgTypeVS
-* type = OrgTypeCS#payer 
+* type 1..* MS
+* type = OrgTypeCS#ntwk // was #payer  
 * name MS
 * alias MS
 * telecom 0..0
@@ -440,12 +439,6 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * qualification.extension contains 
     PractitionerQualification named practitioner-qualification 0..1 MS
 * qualification.identifier MS
-* qualification.identifier.use MS
-* qualification.identifier.type MS
-* qualification.identifier.system MS
-* qualification.identifier.value MS
-* qualification.identifier.period MS
-* qualification.identifier.assigner MS
 * qualification.code MS
 * qualification.code from IndividualSpecialtyAndDegreeLicenseCertificateVS (extensible)
 * qualification.period MS

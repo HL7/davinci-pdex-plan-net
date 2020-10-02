@@ -84,6 +84,7 @@ ValueSet: OrgTypeVS
 Title: "Organization Type"
 Description:  "Categories of organizations based on criteria in provider directories."
 * codes from system OrgTypeCS
+* exclude OrgTypeCS#netwk   // only Network profile uses this type 
 
 ValueSet: InsuranceProductTypeVS
 Title: "Insurance Product Type"

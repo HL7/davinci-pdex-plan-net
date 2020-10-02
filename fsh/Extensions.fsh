@@ -129,7 +129,7 @@ Description: "An extension to add status and whereValid elements to a practition
 * value[x] 0..0
 * extension contains
    status 1..1 MS and
-   whereValid 0..1 MS 
+   whereValid 0..* MS 
 * extension[status] ^short = "Status"
 * extension[status].value[x] only  code 
 * extension[status].value[x] 1..1
@@ -147,7 +147,7 @@ Description: "An extension to add qualifications for an organization (e.g. accre
 * extension contains
    identifier 0..* MS and 
    code 1..1 MS and
-   issuer 1..1 MS and
+   issuer 0..1 MS and
    status 1..1 MS and
    period 0..1 MS and 
    whereValid 0..* MS

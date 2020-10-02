@@ -1,0 +1,34 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "location-address-postalcode",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-address-postalcode",
+  "version": "0.2.0",
+  "name": "Plannet_sp_location_address",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-address-postalcode",
+  "status": "active",
+  "date": "2018-05-23T00:00:00+00:00",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select Locations with the specified address",
+  "code": "address-postalcode",
+  "base": [
+    "Location"
+  ],
+  "type": "string",
+  "expression": "Location.address.postalCode",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "exact",
+    "contains"
+  ]
+}
