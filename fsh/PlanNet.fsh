@@ -163,6 +163,7 @@ Description:    "An InsurancePlan is a discrete package of health insurance cove
 
 InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."
 * obeys network-or-plan-Network 
+* obeys plan-type-is-distinct
 * meta.lastUpdated 1..1
 * identifier.type MS
 * identifier.value MS
@@ -243,6 +244,24 @@ Description:    "A Location is the physical place where healthcare services are 
 * endpoint MS
 * endpoint only Reference(PlannetEndpoint)
 
+/* Network -- deleted 
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* identifier.period MS
+* identifier.assigner MS
+* alias MS
+* contact.name.use MS
+* contact.name.text MS
+* contact.name.family MS
+* contact.name.given MS
+* contact.name.prefix MS
+* contact.name.suffix MS
+* contact.name.period MS
+* contact.telecom.use MS
+* contact.telecom.period MS
+* contact.telecom extensions -- not MS
+*/
 
 Profile:        PlannetNetwork
 Parent:         $USCoreOrganization    //Organization 
@@ -258,45 +277,41 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * extension contains
     LocationReference named location-reference 0..* MS
 * extension[location-reference] ^short = "Network coverage area"
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
 * identifier.type MS
 * identifier.value MS
-* identifier.period MS
-* identifier.assigner MS
 * active 1..1 MS
 * active = true (exactly)
 * type 1..* MS
 * type = OrgTypeCS#ntwk // was #payer  
 * name MS
-* alias MS
 * telecom 0..0
 * address 0..1 MS
 * partOf 1..1 MS
 * partOf only Reference(PlannetOrganization)
 * contact MS
 * contact.name MS
-* contact.name.use MS
-* contact.name.text MS
-* contact.name.family MS
-* contact.name.given MS
-* contact.name.prefix MS
-* contact.name.suffix MS
-* contact.name.period MS
 * contact.telecom MS
 * contact.telecom.extension contains
-       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
-       ViaIntermediary named via-intermediary 0..* MS
+       ContactPointAvailableTime named contactpoint-availabletime 0..*  and
+       ViaIntermediary named via-intermediary 0..* 
 * contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.telecom.value  MS
 * contact.telecom.system  MS
-* contact.telecom.use MS
-* contact.telecom.period MS
 * endpoint only Reference(PlannetEndpoint)
 * endpoint MS 
 
-
+/*  Organizaiton
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* identifier.period MS
+* identifier.assigner MS
+* alias MS
+* address.use MS
+* address.period MS
+* telecom.use MS
+* telecom.period MS
+*/
 
 Profile:        PlannetOrganization
 Parent:         $USCoreOrganization
@@ -311,22 +326,15 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
 * extension[qualification] ^short = "Qualification"
 * extension[org-description] ^short = "Organization Description"
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
 * identifier.type MS
 * identifier.value MS
-* identifier.period MS
-* identifier.assigner MS
-* active MS
+* active 1..1 MS
 * active = true 
 * name MS
-* alias MS
 * partOf MS  
 * partOf only Reference(PlannetOrganization)
 * address MS
 * address.extension contains $GeolocationExtension named geolocation 0..1 MS
-* address.use MS
 * address.type MS
 * address.text MS
 * address.line MS 
@@ -334,12 +342,11 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * address.state MS
 * address.postalCode MS
 * address.country MS
-* address.period MS
 * contact MS
 * contact.telecom MS
 * contact.telecom.extension contains
-       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
-       ViaIntermediary named via-intermediary 0..* MS
+       ContactPointAvailableTime named contactpoint-availabletime 0..* and
+       ViaIntermediary named via-intermediary 0..* 
 * contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.telecom.value MS
 * contact.telecom.system MS
@@ -352,10 +359,20 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
+* type from OrgTypeVS (extensible)
+* type MS 
+* endpoint MS
+
+/* OrgAffiliation 
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* identifier.period MS
+* identifier.assigner MS
+* period MS
 * telecom.use MS
 * telecom.period MS
-* type from OrgTypeVS
-* endpoint MS
+*/
 
 Profile:        PlannetOrganizationAffiliation
 Parent:         OrganizationAffiliation
@@ -367,16 +384,11 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * extension contains
    Qualification named qualification 0..* 
 * extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
 * identifier.type MS
 * identifier.value MS
-* identifier.period MS
-* identifier.assigner MS
-* active MS
+* active 1..1 MS
 * active = true 
-* period MS
+
 * organization MS 
 * organization only Reference (PlannetOrganization)
 * participatingOrganization MS 
@@ -395,12 +407,23 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
-* telecom.use MS
-* telecom.period MS
 * endpoint MS
 * endpoint only Reference (PlannetEndpoint)
 
+/* Practitioner
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* identifier.period MS
+* identifier.assigner MS
+* name.use MS
+* name.prefix MS
+* name.suffix MS
+* name.period MS
+* gender MS
+* photo MS
 
+*/
 
 
 Profile:        PlannetPractitioner
@@ -409,44 +432,43 @@ Id:             plannet-Practitioner
 Title:          "Plan-Net Practitioner"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * meta.lastUpdated 1..1
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
 * identifier.type MS
 * identifier.value MS
-* identifier.period MS
-* identifier.assigner MS
-* active MS
+* active 1..1  MS
 * active = true 
 * name MS
-* name.use MS
 * name.text MS
 * name.family MS
 * name.given MS
-* name.prefix MS
-* name.suffix MS
-* name.period MS
-* address.extension contains $GeolocationExtension named geolocation 0..1 
+* address.extension contains $GeolocationExtension named geolocation 0..1 MS 
 * telecom MS 
 * address MS 
 * telecom.extension contains
     ContactPointAvailableTime named contactpoint-availabletime 0..*  and
     ViaIntermediary named via-intermediary 0..* 
 * telecom.extension[via-intermediary] ^short = "Via Intermediary"
-* gender MS
-* photo MS
 * qualification MS
 * qualification.extension contains 
     PractitionerQualification named practitioner-qualification 0..1 MS
 * qualification.identifier MS
-* qualification.code MS
+* qualification.code 1..1 MS
 * qualification.code from IndividualSpecialtyAndDegreeLicenseCertificateVS (extensible)
-* qualification.period MS
 * qualification.issuer MS
+* qualification.period MS
 * communication MS
 * communication.extension contains
    CommunicationProficiency named communication-proficiency 0..1 MS
 
+/* PractitionerRole
+* identifier.id MS
+* identifier.use MS
+* identifier.system MS
+* identifier.period MS
+* identifier.assigner MS
+* telecom.use MS
+* telecom.period MS
+
+*/
 
 Profile:        PlannetPractitionerRole
 Parent:         PractitionerRole
@@ -466,13 +488,8 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * extension[newpatients] ^short = "New Patients"
 * extension[network-reference] ^short = "NetworkReference"
 * extension[qualification] ^short = "Qualification"
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
 * identifier.type MS
 * identifier.value MS
-* identifier.period MS
-* identifier.assigner MS
 * active 1..1 MS
 * active = true 
 * period MS 
@@ -495,8 +512,6 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * telecom.system 1..1 MS
 * telecom.value 1..1 MS
 * telecom.rank MS
-* telecom.use MS
-* telecom.period MS
 * availableTime MS
 * availableTime.daysOfWeek MS
 * availableTime.allDay MS
@@ -529,3 +544,7 @@ Expression: "network.exists() or plan.network.exists.allTrue()"
 Severity:   #error
 //XPath:      "f:network or f:plan.network "
 
+Invariant: plan-type-is-distinct
+Description: "Each InsurancePlan.plan should have a distinct plan.type."
+Expression: "plan.type.coding.code.isDistinct()"
+Severity:   #error
