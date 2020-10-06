@@ -528,14 +528,12 @@ Invariant:  practitioner-or-organization-or-healthcareservice-or-location
 Description: "If PlannetPractitionerRole.practitioner is absent  ( PlannetPractitionerRole.organization, PlannetPractitionerRole.healthcareservice, PlannetPractitionerRole.location) must be present"
 Expression: "practitioner.exists() or (organization.exists() or healthcareservice.exists() or location.exists())"
 Severity:   #error
-XPath:      "f:practitioner or (f:organization or f:healthcareservice or f:location) "
 
 
 Invariant:  organization-or-participatingOrganization 
 Description: "PlannetOrganizationAffiliation.organization or  PlannetOrganizationAffiliation.participatingOrganization"
 Expression: "organization.exists() or participatingOrganization.exists()"
 Severity:   #error
-XPath:      "f:organization or f:participatingOrganization "
 
 // New 09/17
 Invariant:  network-or-plan-Network 
