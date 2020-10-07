@@ -20,10 +20,9 @@ The diagram below depicts the scope of this implementation guide (IG). The IG de
 
 <h4>Relation to US Core and other IGs</h4>
 
-This implementation guide was written for a US audience and profiles resources from <a href="http://hl7.org/fhir/us/core/STU3.1/">US Core STU 3.1</a>, where available (Practitioner, Organization and Location), and otherwise from R4 (OrganizationAffiliation, PractitionerRole, HealthCareService, Endpoint).  The PractitionerRole profile from US Core was not used because it is over-constrained for use in a Provider Directory based on Payer information.  Alignment with VhDir is maintained by adapting VhDir content, where possible.
+This implementation guide was written for a US audience and profiles resources from <a href="http://hl7.org/fhir/us/core/STU3.1/index.html">US Core STU 3.1</a>, where available (Practitioner, Organization and Location), and otherwise from R4 (OrganizationAffiliation, PractitionerRole, HealthCareService, Endpoint).  The PractitionerRole profile from US Core was not used because it is over-constrained for use in a Provider Directory based on Payer information.  The Network profile is based on USCore Organization, since there was no contradiction between the USCore profile and the Plan-Net requirements.  However, the NPI and CLIA identifier types, which are Must-Support, are clearly intended for provider organizations only and are not expected to be populated for other organization types. Alignment with VhDir is maintained by adapting VhDir content, where possible.
 
 <h4>Disclaimers and Assumptions</h4>
-
 <ul>
 <li> <b>PDEX Payer Network is based conceptually on VhDir</b>: The PDEX Payer Network implementation guide is based conceptually on the VhDir implementation guide, which is still a work in progress. Plan-net will need to track changes to VhDir to fulfill its goal of minimizing rework.
 </li><li> <b>The PDEX Payer Network endpoint is known to the client</b>: This implementation guide assumes that the directory endpoint is known to the client. There is an overarching system architecture issue that is critical to resolve -- how does the client discover the FHIR endpoint of interest. For the purposes of this IG, we consider that problem out of scope.</li>
@@ -51,7 +50,7 @@ This IG addresses two actors:
 <li>Health Plan API Actor:  A payer publishing a directory of its provider networks through a FHIR endpoing.</li>
 <li>Application Actor:  A third party using the API published by a payer to provide useful views of the payer's provider networks for end users.</li>
 </ul>
-For anticipated query use cases, please see <a href="implementation.html#representing-and-searching-provider-directory-data">Representing and Searching Provider Data</a>.
+For anticipated query use cases, please see <a href="implementation.html#Representing">Representing and Searching Provider Data</a>.
 
 <h4>Overview of Payer Directory - Resource Relationships</h4>
 
