@@ -6,12 +6,12 @@ Description: "Codes to identify if the practice is accepting new patients"
 
 ValueSet: AccessibilityVS
 Title: "Accessibility"
-Description: "Codes for documenting general categories of accommodations available. "
+Description: "Codes for documenting general categories of accommodations available."
 * codes from system AccessibilityCS
 
 ValueSet: DeliveryMethodVS
 Title: "Delivery Methods"
-Description: "Codes for documenting delivery methods. "
+Description: "Codes for documenting delivery methods."
 * codes from system DeliveryMethodCS
 
 ValueSet: VirtualModalitiesVS
@@ -84,7 +84,7 @@ ValueSet: OrgTypeVS
 Title: "Organization Type"
 Description:  "Categories of organizations based on criteria in provider directories."
 * codes from system OrgTypeCS
-* exclude OrgTypeCS#netwk   // only Network profile uses this type 
+* exclude OrgTypeCS#ntwk   // only Network profile uses this type 
 
 ValueSet: InsuranceProductTypeVS
 Title: "Insurance Product Type"
@@ -131,7 +131,7 @@ Description: "Codes for documenting spoken language proficiency based on the Int
 
 
 ValueSet: PractitionerRoleVS
-Title: "PractitionerRole Code "
+Title: "PractitionerRole Code"
 Description: "Codes for the capabilities that an individual, group, or organization is acknowledged to have in a payer network, including general codes from the HL7 PractitionerRole Code System."
 * codes from system ProviderRoleCS
 * codes from system $HL7PractitionerRoleCS

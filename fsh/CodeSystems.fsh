@@ -60,7 +60,7 @@ CodeSystem:  EndpointPayloadTypeCS
 * #outpat "Clinic or Outpatient Facility" "Health care services rendered in an outpatient facility, e.g. medical procedures, surgeries, etc."
 * #prov "Medical Provider"  "Health care services rendered by a person, e.g. Physician."
 * #pharm "Pharmacy" "Services related to the storage, compounding, dispensing and sale of drugs."
-* #trans "Transporation" "Services which transport patients to or from a medical facility, e.g., ambulance. "
+* #trans "Transporation" "Services which transport patients to or from a medical facility, e.g., ambulance."
 * #urg "Urgent Care" "Unscheduled health care services which provide for point-in-time evaluation or treatment of a non-life-threatening medical condition."
 * #vis "Vision" "Services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes."
 
@@ -72,7 +72,7 @@ Description:  "A distinct package of health insurance coverage benefits that are
 * #commpos "Commercial POS" "Health insurance provided through a Point-of-Service (POS) Plan	"
 * #commhmo "Commercial HMO" "Health insurance provided through a Health Maintenance Organization (HMO)"
 * #commepo "Commercial EPO" "Health insurance provided through a Exclusive Provider Organization(EPO)"
-* #medi "Medicaid" "Health insurance provided to eligible adults and children under the Federal Medicaid program	"
+* #medi "Medicaid" "Health insurance provided to eligible adults and children under the Federal Medicaid program"
 * #medihmo "Medicaid HMO" "Health insurance provided to eligible adults and children under the Federal Medicaid program through a Health Maintenance Organization (HMO)	"
 * #mediadv "Medicare Advantage" "Health insurance provided by a private company that contracts with Medicare to provide all Medicare Part A and Part B benefits."
 * #mediadvhmo "Medicare Advantage HMO" "Health insurance offered by a private company that contracts with Medicare to provide all Medicare Part A and Part B benefits through a Health Maintenance Organization (HMO)"

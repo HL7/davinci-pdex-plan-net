@@ -3,7 +3,7 @@
   "id": "location-address-state",
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-address-state",
   "version": "0.2.0",
-  "name": "Plannet_sp_location_address",
+  "name": "Plannet_sp_location_address_state",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-address-state",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",

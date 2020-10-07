@@ -3,7 +3,7 @@
   "id": "location-address-city",
   "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/location-address-city",
   "version": "0.2.0",
-  "name": "Plannet_sp_location_address",
+  "name": "Plannet_sp_location_address_city",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-address-city",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",
