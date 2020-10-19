@@ -22,6 +22,12 @@
 "Kawasaki"
 </td></tr>
 <tr><td>contact[0].name.given[0]</td><td>"Jane"</td></tr>
+<tr><td>extension[0].url</td><td>
+"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/location-reference"
+</td></tr>
+<tr><td>extension[0].valueReference.reference</td><td>
+"Location/StateOfCTLocation"
+</td></tr>
 <tr><td>language</td><td>
 "en-US"
 </td></tr>
@@ -29,13 +35,13 @@
 "Organization/Acme"
 </td></tr>
 <tr><td>type[0].coding[0].code</td><td>
-#payer
+#ntwk
 </td></tr>
 <tr><td>type[0].coding[0].system</td><td>
 "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS"
 </td></tr>
 <tr><td>type[0].coding[0].display</td><td>
-"Payer"
+"Network"
 </td></tr>
 <tr><td>name</td><td>
 "ACME CT Premium Preferred Provider Network"

@@ -29,13 +29,13 @@
 "Organization/Acme"
 </td></tr>
 <tr><td>type[0].coding[0].code</td><td>
-#payer
+#ntwk
 </td></tr>
 <tr><td>type[0].coding[0].system</td><td>
 "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS"
 </td></tr>
 <tr><td>type[0].coding[0].display</td><td>
-"Payer"
+"Network"
 </td></tr>
 <tr><td>name</td><td>
 "ACME CT Preferred Provider Network"

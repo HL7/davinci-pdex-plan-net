@@ -75,6 +75,12 @@ https://www.acmeofct.com
 <tr><td>telecom[1].rank</td><td>
 "1"
 </td></tr>
+<tr><td>extension[0].url</td><td>
+"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/org-description"
+</td></tr>
+<tr><td>extension[0].valueString</td><td>
+"Acme of CT is a leading provider of health and other insurance products."
+</td></tr>
 <tr><td>language</td><td>
 "en-US"
 </td></tr>
