@@ -9,6 +9,9 @@
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
+<tr><td>status</td><td>
+"active"
+</td></tr>
 <tr><td>extension[0].url</td><td>
 "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/accessibility"
 </td></tr>
@@ -98,9 +101,6 @@ https://www.hgh.com
 </td></tr>
 <tr><td>language</td><td>
 "en-US"
-</td></tr>
-<tr><td>status</td><td>
-"active"
 </td></tr>
 <tr><td>name</td><td>
 "Hartford Hospital Location 1"

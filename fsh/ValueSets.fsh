@@ -79,6 +79,11 @@ Title: "Endpoint Payload Types"
 Description:  "Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"
 * EndpointPayloadTypeCS#NA  "Not Applicable"
 
+ValueSet: NetworkTypeVS
+Title: "Network Type"
+Description:  "Single value describing networks."
+* OrgTypeCS#ntwk   // only Network profile uses this type 
+
 
 ValueSet: OrgTypeVS
 Title: "Organization Type"

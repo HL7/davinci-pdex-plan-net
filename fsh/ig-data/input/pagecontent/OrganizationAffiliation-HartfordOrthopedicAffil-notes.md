@@ -9,11 +9,11 @@
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
-<tr><td>language</td><td>
-"en-US"
-</td></tr>
 <tr><td>active</td><td>
 "true"
+</td></tr>
+<tr><td>language</td><td>
+"en-US"
 </td></tr>
 <tr><td>code[0].coding[0].code</td><td>
 #provider

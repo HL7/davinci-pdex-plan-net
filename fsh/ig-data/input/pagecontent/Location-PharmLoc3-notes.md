@@ -9,6 +9,9 @@
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
+<tr><td>status</td><td>
+"active"
+</td></tr>
 <tr><td>extension[0].extension[0].url</td><td>
 "acceptingPatients"
 </td></tr>
@@ -131,9 +134,6 @@ https://www.orga.com
 </td></tr>
 <tr><td>language</td><td>
 "en-US"
-</td></tr>
-<tr><td>status</td><td>
-"active"
 </td></tr>
 <tr><td>name</td><td>
 "OrgA MA Location 1"

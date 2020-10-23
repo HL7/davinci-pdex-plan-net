@@ -281,8 +281,8 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * identifier.value MS
 * active 1..1 MS
 * active = true (exactly)
-* type 1..* MS
-* type = OrgTypeCS#ntwk // was #payer  
+* type from NetworkTypeVS (required)
+* type 1..1 MS
 * name MS
 * telecom 0..0
 * address 0..1 MS
@@ -359,8 +359,8 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
+* type 1..* MS
 * type from OrgTypeVS (extensible)
-* type MS 
 * endpoint MS
 
 /* OrgAffiliation 
