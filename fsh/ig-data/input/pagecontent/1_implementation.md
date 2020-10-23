@@ -1,5 +1,5 @@
 <h3><a name="Implementation"></a>Implementation Notes</h3>
-<p>This page contains miscellaneous information on FHIR implementation. The content is primarily directed at implementers of Plan-Net. </p>
+<p>This page contains miscellaneous information on FHIR implementation. The content is primarily directed at implementers of Plan-Net.</p>
 <h4><a id="conformance-requirements"></a>Conformance Requirements</h4>
 <p>The conformance verbs (<strong>SHALL</strong>, <strong>SHALL NOT,&nbsp;</strong><strong>SHOULD</strong>, <strong>MAY</strong>) used in this guide are defined in <a href="http://hl7.org/fhir/R4/conformance-rules.html">FHIR Conformance Rules</a>.</p>
 <h4><a id="privacy-considerations"></a>Privacy Considerations</h4>
@@ -24,7 +24,7 @@
 <h4><a id="relationship-to-us-core"></a>Client Detection of Updates Directory Content</h4>
 <p>Each profile in this guide requires that the lastUpdate timestamp be provided as part of the profile's data content.&nbsp; Clients that cache query results can track additions or modifications to directory content through queries that filter content using the _lastUpdated search parameter.&nbsp; Clients should periodically check that data cached from past queries has not been deleted by querying for the same elements by _id.</p>
 <h4><a id="general-security-considerations"></a>General Security Considerations</h4>
-<strong>NO CONTENT</strong>
+<p><strong>NO CONTENT</strong></p>
 <h3><a name="Representing"></a>Representing and Searching Provider Directory Data</h3>
 <p>It is important for payers to use the Plan-Net profiles consistently in order to achieve true interoperability of directory information among payers. The intent of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data.&nbsp; The Plan-Net design is based around the following types of searches.</p>
 <table style="border-color: Black;" border="3" width="947">
@@ -68,7 +68,7 @@
 <p>Practitioner.name</p>
 </td>
 <td width="257">
-<p>Location, network, specialty/role, privileges</p>
+<p>Location, network, specialty, role/privileges</p>
 </td>
 </tr>
 <tr>
@@ -93,10 +93,10 @@
 <p>Cardiologist</p>
 </td>
 <td width="279">
-<p>Practitioner.qualification, PractitionerRole.specialty</p>
+<p>PractitionerRole.specialty</p>
 </td>
 <td width="257">
-<p>Location, network, name</p>
+<p>Location, network, name, qualification</p>
 </td>
 </tr>
 <tr>
@@ -107,10 +107,10 @@
 <p>Compounding Pharmacy</p>
 </td>
 <td width="279">
-<p>Organization.qualification,<br /> OrganizationAffiliation.specialty</p>
+<p>OrganizationAffiliation.specialty</p>
 </td>
 <td width="257">
-<p>Location, network, name</p>
+<p>Location, network, name, qualification</p>
 </td>
 </tr>
 </tbody>
