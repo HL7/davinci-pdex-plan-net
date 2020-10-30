@@ -29,10 +29,6 @@
   ],
   "multipleOr": true,
   "multipleAnd": true,
-  "modifier": [
-    "above",
-    "below"
-  ],
   "chain": [
     "identifier",
     "name",
