@@ -35,24 +35,6 @@ releaseLabel: STU1
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
 # │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-history:
-  title: PDEX Payer Network Implementation Guide 
-  introduction: This implementation guide defines a FHIR interface to a health insurers insurance plans, their associated networks, and the organizations and providers that participate in these networks.
-  current:
-    version: current
-    desc: PDEX Payer Network Implementation Guide CI Build
-    path: https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/
-    status: ci-build
-    fhirversion: 4.0.1
-    current: true
-  0.1.0:
-    desc: Davinci PDEX Plan Net - STU Ballot
-    date: 2019-10-24
-    sequence: STU1
-    path: http://hl7.org/fhir/us/davinci-pdex-plan-net/2020Feb/
-    status: ballot
-    fhirversion: 4.0.1
-    current: false
 # ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
 # │  To control the ig.ini using this config, uncomment and set the "template" property.           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
