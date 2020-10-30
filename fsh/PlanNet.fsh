@@ -269,10 +269,7 @@ Id:             plannet-Network
 Title:          "Plan-Net Network"
 Description:    "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
 
-In the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.
-
-
-Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.nae.text"
+In the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively."
 * meta.lastUpdated 1..1
 * extension contains
     LocationReference named location-reference 0..* MS
@@ -288,6 +285,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * address 0..1 MS
 * partOf 1..1 MS
 * partOf only Reference(PlannetOrganization)
+* partOf ^short = "The organization that manages this network"
 * contact MS
 * contact.name MS
 * contact.telecom MS

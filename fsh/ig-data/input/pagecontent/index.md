@@ -47,7 +47,7 @@ Provider directories play a critical role in enabling identification of individu
 <br>
 This IG addresses two actors:
 <ul>
-<li>Health Plan API Actor:  A payer publishing a directory of its provider networks through a FHIR endpoing.</li>
+<li>Health Plan API Actor:  A payer publishing a directory of its provider networks through a FHIR endpoint.</li>
 <li>Application Actor:  A third party using the API published by a payer to provide useful views of the payer's provider networks for end users.</li>
 </ul>
 For anticipated query use cases, please see <a href="implementation.html#Representing">Representing and Searching Provider Data</a>.
