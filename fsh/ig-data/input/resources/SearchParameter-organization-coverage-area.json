@@ -23,14 +23,12 @@
     "Organization"
   ],
   "type": "reference",
-  "expression": "Organization.extension.where(url='http://hl7.org/fhir/uv/vhdir/StructureDefinition/location-reference')",
+  "expression": "Organization.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/location-reference')",
   "target": [
     "Location"
   ],
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "identifier",
-    "contains"
   ]
 }

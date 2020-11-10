@@ -11,7 +11,16 @@
         "current": true
       },
       {
-        "version": "0.1.0",
+        "version": "1.0.0",
+        "date": "2019-11-10",
+        "desc": "Davinci pdex Plan Net, Release 1 - US Realm STU",
+        "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1",
+        "status": "ci-build",
+        "sequence": "STU 1",
+        "fhirversion": "4.0.0"
+      },
+      {
+        "version": "0.1.0",     
         "date": "2019-10-24",
         "desc": "Davinci pdex Plan Net - STU Ballot",
         "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net/2020Feb",

@@ -31,7 +31,6 @@
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "identifier",
     "service-category",
     "organization",
     "location"

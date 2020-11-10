@@ -31,8 +31,6 @@
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "identifier",
-    "connection-type",
     "organization"
   ]
 }
