@@ -32,7 +32,6 @@
   "multipleAnd": true,
 
   "chain": [
-    "identifier",
     "name",
     "partof"
   ]

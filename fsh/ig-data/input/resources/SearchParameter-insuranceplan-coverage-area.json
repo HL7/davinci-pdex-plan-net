@@ -30,6 +30,5 @@
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "identifier"
   ]
 }

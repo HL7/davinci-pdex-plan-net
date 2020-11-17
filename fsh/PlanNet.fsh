@@ -502,6 +502,7 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * location only Reference(PlannetLocation)
 * location MS
 * healthcareService only Reference(PlannetHealthcareService)
+* healthcareService MS 
 * telecom MS
 * telecom.extension contains
     ContactPointAvailableTime named contactpoint-availabletime 0..* MS and

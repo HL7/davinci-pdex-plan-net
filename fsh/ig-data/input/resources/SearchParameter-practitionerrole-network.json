@@ -30,7 +30,6 @@
   "multipleOr": true,
   "multipleAnd": true,
   "chain": [
-    "identifier",
     "name",
     "address",
     "partof",
