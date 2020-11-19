@@ -13,11 +13,11 @@
       {
         "version": "1.0.0",
         "date": "2019-11-10",
-        "desc": "Davinci pdex Plan Net, Release 1 - US Realm STU",
+        "desc": "Davinci PDEX Plan Net, Release 1 - US Realm STU",
         "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1",
-        "status": "ci-build",
+        "status": "trial-use",
         "sequence": "STU 1",
-        "fhirversion": "4.0.0"
+        "fhirversion": "4.0.1"
       },
       {
         "version": "0.1.0",     
