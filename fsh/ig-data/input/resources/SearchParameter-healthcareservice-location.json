@@ -32,6 +32,9 @@
   "multipleAnd": true,
   "chain": [
     "address",
+    "address-postalcode",
+    "address-city",
+    "address-state",
     "organization",
     "type"
   ]
