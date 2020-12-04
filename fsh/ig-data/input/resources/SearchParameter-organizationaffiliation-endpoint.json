@@ -3,7 +3,7 @@
   "id" : "organizationaffiliation-endpoint",
   "url" : "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-endpoint",
   "version" : "0.2.0",
-  "name" : "VhDir_sp_organizationaffiliation_endpoint",
+  "name" : "Plannet_sp_organizationaffiliation_endpoint",
   "derivedFrom" : "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-endpoint",
   "status" : "draft",
   "date" : "2018-05-23T00:00:00+00:00",
