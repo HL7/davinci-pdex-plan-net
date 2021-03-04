@@ -536,7 +536,7 @@ Severity:   #error
 
 // New 09/17
 Invariant:  network-or-plan-Network 
-Description: "If an insuranceplan does not define a network, than each plan must define one"
+Description: "If an insuranceplan does not define a network, then each plan must define one"
 Expression: "network.exists() or plan.network.exists.allTrue()"
 Severity:   #error
 //XPath:      "f:network or f:plan.network "
