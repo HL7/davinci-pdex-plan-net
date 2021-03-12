@@ -96,7 +96,7 @@
 <p>PractitionerRole.specialty</p>
 </td>
 <td width="257">
-<p>Location, network, name, qualification</p>
+<p>Location, network, name</p>
 </td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@
 <p>OrganizationAffiliation.specialty</p>
 </td>
 <td width="257">
-<p>Location, network, name, qualification</p>
+<p>Location, network, name</p>
 </td>
 </tr>
 </tbody>
