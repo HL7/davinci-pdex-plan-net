@@ -166,6 +166,7 @@ Description:  "Individual and Group Specialties from National Uniform Claim Comm
 * $NUCCProviderTaxonomy#1710I1002X "Independent Duty Corpsman" 
 * $NUCCProviderTaxonomy#1710I1003X "Independent Duty Medical Technicians" 
 * $NUCCProviderTaxonomy#171100000X "Acupuncturist" 
+* $NUCCProviderTaxonomy#171400000X "Health & Wellness Coach"   //added 04/21/21
 * $NUCCProviderTaxonomy#171M00000X "Case Manager/Care Coordinator" 
 * $NUCCProviderTaxonomy#171R00000X "Interpreter" 
 * $NUCCProviderTaxonomy#171W00000X "Contractor" 

@@ -174,6 +174,7 @@ Description:  "Non-Individual Specialties from National Uniform Claim Committee 
 * $NUCCProviderTaxonomy#3418M1110X "Military or U.S. Coast Guard Ground Transport Ambulance"
 * $NUCCProviderTaxonomy#3418M1120X "Military or U.S. Coast Guard Air Transport Ambulance"
 * $NUCCProviderTaxonomy#3418M1130X "Military or U.S. Coast Guard Water Transport Ambulance"
+* $NUCCProviderTaxonomy#342000000X "Transportation Network Company"   // added effective 04/21/21
 * $NUCCProviderTaxonomy#343800000X "Secured Medical Transport (VAN)"
 * $NUCCProviderTaxonomy#343900000X "Non-emergency Medical Transport (VAN)"
 * $NUCCProviderTaxonomy#344600000X "Taxi"
