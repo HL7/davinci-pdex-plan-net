@@ -10,7 +10,7 @@ Description:    "The technical details of an endpoint that can be used for elect
     EndpointUsecase named endpoint-usecase 0..* MS
 * extension[endpoint-usecase] ^short = "Endpoint Usecase"
 * status 1..1 MS
-* status = $EndpointStatus#active (exactly) 
+* status = #active (exactly) 
 * connectionType MS 
 * connectionType from EndpointConnectionTypeVS (extensible)
 * connectionType ^binding.extension[0].url = $MinValueSet
@@ -114,7 +114,7 @@ Description:    "The HealthCareService resource typically describes services off
 * identifier.value MS
 * active 1..1 MS
 * active = true 
-* providedBy only Reference(PlannetOrganization)
+* providedBy only Reference(PlannetOrganization) 
 * providedBy MS
 * category 1..1 MS
 * category from HealthcareServiceCategoryVS (extensible)
@@ -169,7 +169,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * identifier.value MS
 * identifier.assigner MS
 * status 1..1 MS
-* status = $PublicationStatus#active  (exactly) 
+* status = #active  (exactly) 
 * type 1..1 MS 
 * type from InsuranceProductTypeVS (extensible)
 * type ^short = "Product Type"
@@ -198,7 +198,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * plan.coverageArea only Reference(PlannetLocation)
 * plan.coverageArea MS   
 * plan.network only Reference(PlannetNetwork)
-
+* period MS // Jira ticket FHIR-33206 - SMM
 
 
 Profile:        PlannetLocation
@@ -331,7 +331,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * name MS
 * partOf MS  
 * partOf only Reference(PlannetOrganization)
-* address MS
+* address 1..* MS
 * address.extension contains $GeolocationExtension named geolocation 0..1 MS
 * address.type MS
 * address.text MS
@@ -386,7 +386,7 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * identifier.value MS
 * active 1..1 MS
 * active = true 
-
+* period MS //Jira ticket FHIR-33206 SMM
 * organization MS 
 * organization only Reference (PlannetOrganization)
 * participatingOrganization MS 
@@ -480,7 +480,7 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * obeys practitioner-or-organization-or-healthcareservice-or-location 
 * extension contains
    NewPatients named newpatients 0..* MS and
-   NetworkReference named network-reference 0..* MS and
+   NetworkReference named network-reference 0..1 MS and
    Qualification named qualification  0..* MS
 * extension[qualification].extension[code].value[x] from IndividualSpecialtyAndDegreeLicenseCertificateVS (extensible)
 * extension[newpatients] ^short = "New Patients"
@@ -489,7 +489,7 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * identifier.type MS
 * identifier.value MS
 * active 1..1 MS
-* active = true 
+//* active = true // Jira ticket FHIR-33206-SMM to support incoming/outcgoing practititcioners
 * period MS 
 * practitioner only Reference(PlannetPractitioner)   // 1..1 from USCore
 * organization only Reference(PlannetOrganization)         // 1..1 from USCore
