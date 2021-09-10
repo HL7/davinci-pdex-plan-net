@@ -1,5 +1,10 @@
 
 <h3>PDEX Payer Network Implementation Guide</h3>
+<h4>Changes Since v1.0.0</h4>
+<ul>
+<li>Transitioned IG to Sushi 1.0.0 directory structure</li>
+<li>Fixed names of 3 search parameter files based on improved IG publisher error checking:   healthcareservice-service-category, location-address-postalcode and location-address-state.  All of these were mismatched with the search parameter name, so the file couldn't be found.</li>
+</ul>
 <h4>Introduction</h4>
 
 This implementation guide defines a FHIR interface to a health insurer's insurance plans, their associated networks, and the organizations and providers that participate in these networks. Publication of this data through a standard FHIR-based API will enable third parties to develop applications through which consumers and providers can query the participants in a payer's network that may provide services that address their health care needs. Although there are multiple types and sources of providers' directories, including provider organizations (i.e., a hospital listing all its physicians), government (i.e., listing of providers in Medicare), payers (i.e., a health plan's provider network), and third-party entities (such as vendors that maintain provider directories), the focus of this implementation guide is on Payer Provider Directories.

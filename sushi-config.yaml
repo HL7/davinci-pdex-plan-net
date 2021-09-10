@@ -8,7 +8,7 @@
 # ╭───────────────────ImplementationGuide-hl7.fhir.us.davinci-pdex-plan-net.json───────────────────╮
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see:                                                                    │
-# │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
+# │  http://build.fhir.org/ig/HL7/fhir-shorthand/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.davinci-pdex-plan-net
 canonical: http://hl7.org/fhir/us/davinci-pdex-plan-net
@@ -35,10 +35,6 @@ releaseLabel: STU1
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
 # │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
-# │  To control the ig.ini using this config, uncomment and set the "template" property.           │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-template: hl7.davinci.template#current
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To control the menu.xml using this config, uncomment and set the "menu" property.             │

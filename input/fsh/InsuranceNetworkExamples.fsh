@@ -78,7 +78,7 @@ Usage: #example
 * network[1] = Reference(AcmeofCTPremNet)
 * coverageArea = Reference(StateOfCTLocation)
 * endpoint = Reference(AcmeOfCTPortalEndpoint)
-
+* status = #active
 
 Instance: AcmeQHPBronze
 InstanceOf: PlannetInsurancePlan
@@ -95,6 +95,7 @@ Usage: #example
 * network[0] = Reference(AcmeofCTStdNet)
 * coverageArea = Reference(StateOfCTLocation)
 * endpoint = Reference(AcmeOfCTPortalEndpoint)
+* status = #active
 
 Instance: StateOfCTLocation
 InstanceOf: PlannetLocation

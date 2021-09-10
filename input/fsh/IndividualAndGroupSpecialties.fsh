@@ -1,6 +1,7 @@
 ValueSet: IndividualAndGroupSpecialtiesVS
 Title: "Individual and Group Specialties"
 Description:  "Individual and Group Specialties from National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."
+* $NUCCProviderTaxonomy#101200000X "Drama Therapist"  // added 4/21/21
 * $NUCCProviderTaxonomy#101Y00000X "Counselor" 
 * $NUCCProviderTaxonomy#101YA0400X "Addiction (Substance Use Disorder) Counselor" 
 * $NUCCProviderTaxonomy#101YM0800X "Mental Health Counselor" 
@@ -166,6 +167,7 @@ Description:  "Individual and Group Specialties from National Uniform Claim Comm
 * $NUCCProviderTaxonomy#1710I1002X "Independent Duty Corpsman" 
 * $NUCCProviderTaxonomy#1710I1003X "Independent Duty Medical Technicians" 
 * $NUCCProviderTaxonomy#171100000X "Acupuncturist" 
+* $NUCCProviderTaxonomy#171400000X "Health & Wellness Coach"   //added 04/21/21
 * $NUCCProviderTaxonomy#171M00000X "Case Manager/Care Coordinator" 
 * $NUCCProviderTaxonomy#171R00000X "Interpreter" 
 * $NUCCProviderTaxonomy#171W00000X "Contractor" 
