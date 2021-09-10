@@ -160,6 +160,7 @@
 <artifact id="SearchParameter/practitionerrole-location" key="SearchParameter-practitionerrole-location" name="Plannet_sp_practitionerrole_location"/>
 <artifact id="SearchParameter/practitionerrole-network" key="SearchParameter-practitionerrole-network" name="Plannet_sp_practitionerrole_network"/>
 <artifact id="SearchParameter/practitionerrole-organization" key="SearchParameter-practitionerrole-organization" name="Plannet_sp_practitionerrole_organization"/>
+<artifact id="SearchParameter/practitionerrole-period" key="SearchParameter-practitionerrole-period" name="Plannet_sp_practitionerrole_period"/>
 <artifact id="SearchParameter/practitionerrole-practitioner" key="SearchParameter-practitionerrole-practitioner" name="Plannet_sp_practitionerrole_practitioner"/>
 <artifact id="SearchParameter/practitionerrole-role" key="SearchParameter-practitionerrole-role" name="Plannet_sp_practitionerrole_role"/>
 <artifact id="SearchParameter/practitionerrole-service" key="SearchParameter-practitionerrole-service" name="Plannet_sp_practitionerrole_service"/>
