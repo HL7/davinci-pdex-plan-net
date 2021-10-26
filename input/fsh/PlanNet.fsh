@@ -489,7 +489,7 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * identifier.type MS
 * identifier.value MS
 * active 1..1 MS
-//* active = true // Jira ticket FHIR-33206-SMM to support incoming/outcgoing practititcioners
+* active = true 
 * period MS 
 * practitioner only Reference(PlannetPractitioner)   // 1..1 from USCore
 * organization only Reference(PlannetOrganization)         // 1..1 from USCore

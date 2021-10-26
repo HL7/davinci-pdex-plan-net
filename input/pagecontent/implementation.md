@@ -116,6 +116,15 @@
 </tbody>
 </table>
 <p>The content in this section of the IG is based on the <a href="artifacts.html#7">examples</a> provided and on the patterns provided <a href="patterns.pptx">here</a>.<br />Specific examples are referenced in the text below.</p>
+<h4><a id="searching-for-active"></a>Searching for active practictioners and organizations</h4>
+<p>
+Sample query to search for currently active Practitioners (replace date in query with current date):<br/>
+http://davinci-plan-net-ri.logicahealth.org/fhir/PractitionerRole?_include=PractitionerRole:date=ge2021-10-25 <br/><br/>
+Sample query to search for currently active Organizations (replace date in query with current date): <br/>
+http://davinci-plan-net-ri.logicahealth.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:date=ge2021-10-25 <br/><br/>
+To search for Practitioners or Organizations that will be active at a future time, change the date to a future date.
+</p>
+
 <h4><a name="HealthcareService"></a>HealthcareService</h4>
 <p>The first type of search starts from HealthcareService.category and HealthcareService.specialty, so it is essential that each provider's service be supported by appropriate set of HealthcareService instances.&nbsp; HealthcareServices are typically provided by an organization, except in the case of a Practitioner that is not associated with an organization (see the solo practitioner example), and can be linked to a set of locations where service is provided, or identified as virtual services through an indicated set of virtual modalities.&nbsp; &nbsp;The examples illustrate this with an organization that provides three distinct Pharmacy services -- retail, compounding, and mail-order -- across its locations.&nbsp; All organizations that provide service should define an appropriate set. of HealthcareServices to facilitate search.&nbsp; The HealthcareService category, specialty and type fields are the highest level of organization of the services provided by the provider's network.</p>
 <p>Relevant examples:</p>
