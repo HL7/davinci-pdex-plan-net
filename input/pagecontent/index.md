@@ -4,6 +4,8 @@
 <ul>
 <li>Transitioned IG to Sushi 1.0.0 directory structure</li>
 <li>Fixed names of 3 search parameter files based on improved IG publisher error checking:   healthcareservice-service-category, location-address-postalcode and location-address-state.  All of these were mismatched with the search parameter name, so the file couldn't be found.</li>
+<li>Updated Taxonomy Codes</li>
+<li>Added 'catastrophic' options to Insurance Plan Types</li>
 </ul>
 <h4>Introduction</h4>
 

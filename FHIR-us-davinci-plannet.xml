@@ -149,6 +149,7 @@
 <artifact id="SearchParameter/organizationaffiliation-location" key="SearchParameter-organizationaffiliation-location" name="Plannet_sp_organizationaffiliation_location"/>
 <artifact id="SearchParameter/organizationaffiliation-network" key="SearchParameter-organizationaffiliation-network" name="Plannet_sp_organizationaffiliation_network"/>
 <artifact id="SearchParameter/organizationaffiliation-participating-organization" key="SearchParameter-organizationaffiliation-participating-organization" name="Plannet_sp_organizationaffiliation_participating_organization"/>
+<artifact id="SearchParameter/organizationaffiliation-period" key="SearchParameter-organizationaffiliation-period" name="Plannet_sp_organizationaffiliation_period"/>
 <artifact id="SearchParameter/organizationaffiliation-primary-organization" key="SearchParameter-organizationaffiliation-primary-organization" name="Plannet_sp_organizationaffiliation_primary_organization"/>
 <artifact id="SearchParameter/organizationaffiliation-role" key="SearchParameter-organizationaffiliation-role" name="Plannet_sp_organizationaffiliation_role"/>
 <artifact id="SearchParameter/organizationaffiliation-service" key="SearchParameter-organizationaffiliation-service" name="Plannet_sp_organizationaffiliation_service"/>
