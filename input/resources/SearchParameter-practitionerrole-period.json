@@ -23,11 +23,7 @@
   "base": [
     "PractitionerRole"
   ],
-  "type": "reference",
+  "type": "date",
   "expression": "PractitionerRole.period",
-  "target": [
-    "Period"
-  ],
-  "multipleOr": true,
-  "multipleAnd": true
+  "multipleOr": true
 }

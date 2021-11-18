@@ -23,11 +23,7 @@
   "base": [
     "OrganizationAffiliation-"
   ],
-  "type": "reference",
+  "type": "date",
   "expression": "OrganizationAffiliation.period",
-  "target": [
-    "Period"
-  ],
-  "multipleOr": true,
-  "multipleAnd": true
+  "multipleOr": true
 }

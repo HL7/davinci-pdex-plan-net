@@ -116,13 +116,14 @@
 </tbody>
 </table>
 <p>The content in this section of the IG is based on the <a href="artifacts.html#7">examples</a> provided and on the patterns provided <a href="patterns.pptx">here</a>.<br />Specific examples are referenced in the text below.</p>
-<h4><a id="searching-for-active"></a>Searching for active practictioners and organizations</h4>
+<h4><a id="searching-for-active"></a>Searching for active Practictioners and Organizations</h4>
 <p>
 Sample query to search for currently active Practitioners (replace date in query with current date):<br/>
 http://davinci-plan-net-ri.logicahealth.org/fhir/PractitionerRole?_include=PractitionerRole:date=ge2021-10-25 <br/><br/>
 Sample query to search for currently active Organizations (replace date in query with current date): <br/>
 http://davinci-plan-net-ri.logicahealth.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:date=ge2021-10-25 <br/><br/>
-To search for Practitioners or Organizations that will be active at a future time, change the date to a future date.
+To search for Practitioners or Organizations that will be active at a future time, change the date to a future date.<br/><br/>
+If no period is provided, then it is assumend the role is active with no expiration date.
 </p>
 
 <h4><a name="HealthcareService"></a>HealthcareService</h4>
