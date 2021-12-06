@@ -73,7 +73,7 @@ NPI323
 "http://nucc.org/provider-taxonomy"
 </td></tr>
 <tr><td>qualification[1].code.coding[0].display</td><td>
-"Internal Medicine"
+"Internal Medicine Physician"
 </td></tr>
 <tr><td>qualification[1].code.text</td><td>
 "Board Certified Internal Medicine"
@@ -106,7 +106,7 @@ NPI323
 "http://nucc.org/provider-taxonomy"
 </td></tr>
 <tr><td>qualification[2].code.coding[0].display</td><td>
-"Cardiovascular Disease"
+"Cardiovascular Disease Physician"
 </td></tr>
 <tr><td>qualification[2].code.text</td><td>
 "Board Certified Cardiovascular Disease"

@@ -127,6 +127,7 @@ Description: "Codes for documenting spoken language proficiency based on the Int
 * #40	"Advanced professional proficiency"	"Able to use the language fluently and accurately on all levels normally pertinent to professional needs."
 //* #46	"Advanced professional proficiency, plus"	"Speaking proficiency is regularly superior in all respects, usually equivalent to that of a well educated, highly articulate native speaker."
 * #50	"Functional native proficiency"	"Speaking proficiency is functionally equivalent to that of a highly articulate well-educated native speaker and reflects the cultural standards of the country where the language is natively spoken."
+* ^caseSensitive = true
 
 ValueSet: LanguageProficiencyVS
 Title: "Language Proficiency"

@@ -40,7 +40,7 @@
 "http://nucc.org/provider-taxonomy"
 </td></tr>
 <tr><td>specialty[0].coding[0].display</td><td>
-"Internal Medicine"
+"Internal Medicine Physician"
 </td></tr>
 <tr><td>specialty[1].coding[0].code</td><td>
 #207RC0000X
@@ -49,7 +49,7 @@
 "http://nucc.org/provider-taxonomy"
 </td></tr>
 <tr><td>specialty[1].coding[0].display</td><td>
-"Cardiovascular Disease"
+"Cardiovascular Disease Physician"
 </td></tr>
 <tr><td>organization.reference</td><td>
 "HartfordGeneralHospital"

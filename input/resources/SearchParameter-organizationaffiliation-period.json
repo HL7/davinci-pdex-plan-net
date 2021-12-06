@@ -1,10 +1,10 @@
 {
   "resourceType": "SearchParameter",
   "id": "organizationaffiliation-period",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/OrganizationAffiliation-period",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-period",
   "version": "0.2.0",
   "name": "Plannet_sp_organizationaffiliation_period",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-period",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-date",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",
   "publisher": "HL7 Patient Administration Committee",
@@ -21,7 +21,7 @@
   "description": "Select Organization Affiliations available in the specified period",
   "code": "period",
   "base": [
-    "OrganizationAffiliation-"
+    "OrganizationAffiliation"
   ],
   "type": "date",
   "expression": "OrganizationAffiliation.period",

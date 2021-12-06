@@ -38,12 +38,12 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
     </tr>
     <tr>
       <td><a href="StructureDefinition-plannet-Location.html">PlannetLocation</a></td>
-      <td><a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-location.html">Location (US Core)</a></td>
+      <td><a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-location.html">Location (US Core)</a></td>
       <td>{% capture md_text %}A Location is the physical place where healthcare services are provided, practitioners are employed, organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-plannet-Network.html">PlannetNetwork</a></td>
-      <td><a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-organization.html">Organization (US Core)</a></td>
+      <td><a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-organization.html">Organization (US Core)</a></td>
       <td>{% capture md_text %}A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
 
 In the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively.
@@ -51,7 +51,7 @@ In the PlanNet IG, individuals and organizations are represented as participants
     </tr>
     <tr>
       <td><a href="StructureDefinition-plannet-Organization.html">PlannetOrganization</a></td>
-      <td><a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-organization.html">Organization (US Core)</a></td>
+      <td><a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-organization.html">Organization (US Core)</a></td>
       <td>{% capture md_text %}An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.
       {% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
@@ -62,7 +62,7 @@ In the PlanNet IG, individuals and organizations are represented as participants
     </tr>
     <tr>
       <td><a href="StructureDefinition-plannet-Practitioner.html">PlannetPractitioner</a></td>
-      <td><a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-practitioner.html">Practitioner (US Core)</a></td>
+      <td><a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">Practitioner (US Core)</a></td>
       <td>{% capture md_text %}Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>

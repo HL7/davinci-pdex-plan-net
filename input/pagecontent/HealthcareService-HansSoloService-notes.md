@@ -40,7 +40,7 @@
 "http://nucc.org/provider-taxonomy"
 </td></tr>
 <tr><td>specialty[0].coding[0].display</td><td>
-"Family Medicine"
+"Family Medicine Physician"
 </td></tr>
 <tr><td>location[0].reference</td><td>
 "Location/HansSoloClinic"
