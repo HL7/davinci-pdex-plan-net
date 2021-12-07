@@ -107,7 +107,7 @@ Description:    "The HealthCareService resource typically describes services off
 * meta.lastUpdated 1..1
 * extension contains
     NewPatients named newpatients 0..* MS and
-    DeliveryMethod named deliverymethod 1..* MS 
+    DeliveryMethod named deliverymethod 0..* MS 
 * extension[newpatients] ^short = "New Patients"
 * extension[deliverymethod] ^short = "Delivery Method"
 * identifier.type MS
@@ -282,7 +282,7 @@ In the PlanNet IG, individuals and organizations are represented as participants
 * type 1..1 MS
 * name MS
 * telecom 0..0
-* address 0..1 MS
+* address 0..* MS
 * partOf 1..1 MS
 * partOf only Reference(PlannetOrganization)
 * partOf ^short = "The organization that manages this network"

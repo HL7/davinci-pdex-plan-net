@@ -79,6 +79,6 @@
 "http://nucc.org/provider-taxonomy"
 </td></tr>
 <tr><td>specialty[0].coding[0].display</td><td>
-"Professional"
+"Professional Counselor"
 </td></tr>
 </table>

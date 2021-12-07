@@ -19,6 +19,7 @@ Description: "Codes For Organization Affiliation Role"
 * #residential "Residential Treatment Facility" "Residential Treatment Facility"
 * #respite "Respite Care Facility" "Respite Care Facility"
 * #retail	"Retail Health Center"	"Retail Health Center"
+* ^caseSensitive = true
 
 
 ValueSet: OrganizationAffiliationRoleVS

@@ -67,6 +67,6 @@
 "http://nucc.org/provider-taxonomy"
 </td></tr>
 <tr><td>specialty[0].coding[0].display</td><td>
-"Internal Medicine"
+"Internal Medicine Physician"
 </td></tr>
 </table>

@@ -12,7 +12,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.davinci-pdex-plan-net
 canonical: http://hl7.org/fhir/us/davinci-pdex-plan-net
-version: 1.0.0
+version: 1.0.1
 name: DaVinciPDEXPlanNet
 title: DaVinci PDEX Plan Net
 status: active
@@ -25,7 +25,7 @@ jurisdiction: urn:iso:std:iso:3166#US
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
-  hl7.fhir.us.core: 3.1.0
+  hl7.fhir.us.core: 4.0.0
 parameters:
   show-inherited-invariants: false
   jira-code: davinci-plannet
@@ -45,7 +45,7 @@ menu:
     Implementation                              :         implementation.html
     Representing Provider Directories in Plan Net:          implementation.html#Representing
   FHIR Artifacts:
-    Profiles            : profiles.html
+    Profiles            : artifacts.html#1
     Extensions          : artifacts.html#3
     Search Parameters   : artifacts.html#2
     Terminology         : artifacts.html#5

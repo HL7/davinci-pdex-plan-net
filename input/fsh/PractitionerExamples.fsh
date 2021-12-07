@@ -16,12 +16,12 @@ Usage: #example
 * qualification[0].code.text = "MD"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* qualification[1].code = $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
+* qualification[1].code = $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
 * qualification[1].issuer.display = "American Board of Internal Medicine"
 * qualification[1].code.text = "Board Certified Internal Medicine"
 * qualification[1].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[1].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* qualification[2].code = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease"
+* qualification[2].code = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease Physician"
 * qualification[2].issuer.display = "American Board of Internal Medicine"
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
@@ -46,12 +46,12 @@ Usage: #example
 * qualification[0].code.text = "MD"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* qualification[1].code = $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
+* qualification[1].code = $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
 * qualification[1].issuer.display = "American Board of Internal Medicine"
 * qualification[1].code.text = "Board Certified Internal Medicine"
 * qualification[1].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[1].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* qualification[2].code = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease"
+* qualification[2].code = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease Physician"
 * qualification[2].issuer.display = "American Board of Internal Medicine"
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
@@ -73,7 +73,7 @@ Usage: #example
 * healthcareService = Reference(HansSoloService)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HansSoloClinic)
-* specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
+* specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
 * extension[qualification].extension[code].valueCodeableConcept = $NUCCProviderTaxonomy#207R00000X 
 * extension[qualification].extension[issuer].valueReference.display = "American Board of Internal Medicine"
 * extension[qualification].extension[status].valueCode = QualificationStatusCS#active 
@@ -90,7 +90,7 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#outpat 
-* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
+* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * location[0] = Reference(HansSoloClinic)
 
 Instance: HansSoloClinic
@@ -187,7 +187,7 @@ Usage: #example
 * extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = VirtualModalitiesCS#tdd 
 * extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  VirtualModalitiesCS#phone 
 * category = HealthcareServiceCategoryCS#prov "Medical Provider"
-* specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional"
+* specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
 
 Instance: JoeSmithRole1
 InstanceOf: PlannetPractitionerRole
@@ -202,7 +202,7 @@ Usage: #example
 * healthcareService = Reference(HospERService)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HospLoc1)
-* specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
+* specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
 * organization = Reference(Hospital)
 // specialty = internal medicine
 // available M-F
@@ -221,7 +221,7 @@ Usage: #example
 * healthcareService = Reference(BurrClinicServices)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HospLoc2)
-* specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
+* specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
 * organization = Reference(BurrClinic)
 
 Instance: JoeSmithRole3
@@ -234,8 +234,8 @@ Usage: #example
 * active = true
 * code = ProviderRoleCS#ap 
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
-* specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
-* specialty[1] = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease"
+* specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
+* specialty[1] = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease Physician"
 * organization = Reference(Hospital)
 
 Instance: AnonRole
@@ -250,7 +250,7 @@ Usage: #example
 * healthcareService = Reference(BurrClinicServices)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HospLoc2)
-* specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
+* specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
 * organization = Reference(CancerClinic)
 
 Instance: CancerClinicService
@@ -264,7 +264,7 @@ Usage: #example
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#outpat
 * providedBy = Reference(CancerClinic)
-* specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology"  
+* specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology Physician"  
 * location[0] = Reference(CancerClinicLoc)
 
 Instance: CancerClinicLoc

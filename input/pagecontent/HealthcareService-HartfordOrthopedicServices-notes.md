@@ -40,7 +40,7 @@
 "http://nucc.org/provider-taxonomy"
 </td></tr>
 <tr><td>specialty[0].coding[0].display</td><td>
-"Orthopedic Surgery"
+"Orthopaedic Surgery Physician"
 </td></tr>
 <tr><td>providedBy.reference</td><td>
 "Organization/HartfordOrthopedics"

@@ -34,6 +34,13 @@ WARNING: PractitionerRole/JoeSmithRole2: PractitionerRole.specialty[0]: The disp
 WARNING: PractitionerRole/JoeSmithRole3: PractitionerRole.specialty[0]: The display "Internal Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207R00000X - should be one of ["Internal Medicine Physician"] (from http://tx.fhir.org/r4)
 WARNING: PractitionerRole/JoeSmithRole3: PractitionerRole.specialty[1]: The display "Cardiovascular Disease" is not a valid display for the code {http://nucc.org/provider-taxonomy}207RC0000X - should be one of ["Cardiovascular Disease Physician"] (from http://tx.fhir.org/r4)
 
+
+# WARNING: The following codes are reported as not included in http://nucc.org/provider-taxonomy, but are included in the latest version here: https://nucc.org/images/stories/CSV/nucc_taxonomy_210.csv
+WARNING: ValueSet/IndividualAndGroupSpecialtiesVS: ValueSet.compose[0].include[0].concept[0]: The code 101200000X is not valid in the system http://nucc.org/provider-taxonomy
+WARNING: ValueSet/IndividualAndGroupSpecialtiesVS: ValueSet.compose[0].include[0].concept[166]: The code 171400000X is not valid in the system http://nucc.org/provider-taxonomy
+WARNING: ValueSet/NonIndividualSpecialtiesVS: ValueSet.compose[0].include[0].concept[173]: The code 342000000X is not valid in the system http://nucc.org/provider-taxonomy
+
+
 # Informational -- these examples are in the IG because they are examples of the referenced profiles.  They are generated using FSH, so their profiles are correct by construction
 INFORMATION: Endpoint/AcmeOfCTPortalEndpoint: Endpoint: Validate resource against profile http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint
 INFORMATION: HealthcareService/BurrClinicServices: HealthcareService: Validate resource against profile http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService
