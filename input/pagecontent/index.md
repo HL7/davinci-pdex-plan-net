@@ -11,6 +11,8 @@
 <li>Update Resource Relationships Diagram (Jira ticket <a href='https://jira.hl7.org/browse/FHIR-34289?filter=14707'>FHIR 34289</a>)</li>
 <li>Fix Spelling (Jira ticket <a href='https://jira.hl7.org/browse/FHIR-33140?filter=14707'>FHIR 33140</a>)</li>
 <li>Make HealthcareService Delivery Method optional (Jira ticket <a href='https://jira.hl7.org/browse/FHIR-34140?filter=14707'>FHIR 34140</a>)</li>
+<li>Change Organization.type binding from OrganizationType to NetworkType (Jira ticket <a href='https://jira.hl7.org/browse/FHIR-28919?filter=14707'>FHIR 28919</a>)</li>
+
 </ul>
 
 <h4>Introduction</h4>
@@ -112,5 +114,14 @@ This IG was developed by the MITRE Corporation under the direction of the author
   <td>Mary Kay McDaniel </td>
   <td>MaryKay.McDaniel@cognosante.com</td>
   </tr>
+<tr>
+  <td>Sean Mahoney </td>
+  <td>smahoney@mitre.org</td>
+  </tr>
+<tr>
+  <td>Corey Spears </td>
+  <td>cspears@mitre.org</td>
+  </tr>
+
   </table>
 {: rules="groups"}
