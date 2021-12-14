@@ -45,11 +45,11 @@ menu:
     Implementation                              :         implementation.html
     Representing Provider Directories in Plan Net:          implementation.html#Representing
   FHIR Artifacts:
-    Profiles            : artifacts.html#1
-    Extensions          : artifacts.html#3
+    Profiles            : artifacts.html#3
+    Extensions          : artifacts.html#4
     Search Parameters   : artifacts.html#2
     Terminology         : artifacts.html#5
-    Capability Statement: CapabilityStatement-plan-net.html
+    Capability Statement: artifacts.html#1
   Examples      : artifacts.html#7
   Downloads     : downloads.html
   History       : http://www.hl7.org/fhir/us/davinci-pdex-plan-net/history.cfml
