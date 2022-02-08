@@ -71,7 +71,7 @@ Description:  "Codes for documenting business use case by a general grouping by 
 * $V3ActReason#HRESCH "healthcare research"
 * $V3ActReason#ETREAT "emergency treatment"
 * $V3ActReason#PATRQT "patient requested"   
-* $V3ActReason#HRESCH "healthcare research"
+
 
 
 ValueSet: EndpointPayloadTypeVS
