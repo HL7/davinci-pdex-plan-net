@@ -1,57 +1,57 @@
 
 ValueSet: AcceptingPatientsVS
-Title: "Accepting Patients Codes"
+Title: "Accepting Patients Codes VS"
 Description: "Codes to identify if the practice is accepting new patients"
 * codes from system AcceptingPatientsCS
 
 ValueSet: AccessibilityVS
-Title: "Accessibility"
+Title: "Accessibility VS"
 Description: "Codes for documenting general categories of accommodations available."
 * codes from system AccessibilityCS
 
 ValueSet: DeliveryMethodVS
-Title: "Delivery Methods"
+Title: "Delivery Methods VS"
 Description: "Codes for documenting delivery methods."
 * codes from system DeliveryMethodCS
 
 ValueSet: VirtualModalitiesVS
-Title: "Virtual Modalities"
+Title: "Virtual Modalities VS"
 Description: "Codes for virtual service delivery modalities ."
 * codes from system VirtualModalitiesCS
 
 
 ValueSet: SpecialtiesVS
-Title: "Specialties"
+Title: "Specialties VS"
 Description:  "Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."
 * codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from valueset NonIndividualSpecialtiesVS
 
 ValueSet: SpecialtyAndDegreeLicenseCertificateVS
-Title: "Specialties, Degrees, Licenses, and Certificates"
+Title: "Specialties, Degrees, Licenses, and Certificates VS"
 Description:  "Specialties and Degree License and Certificates"
 * codes from valueset SpecialtiesVS 
 * codes from system $V2table0360CS
 
 ValueSet: IndividualSpecialtyAndDegreeLicenseCertificateVS
-Title: "Individual Specialties, Degrees, Licenses, and Certificates"
+Title: "Individual Specialties, Degrees, Licenses, and Certificates VS"
 Description: "Individual Specialties, Degrees, Licenses, and Certificates"
 * codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from system $V2table0360CS
 
 ValueSet: NonIndividualSpecialtyAndDegreeLicenseCertificateVS
-Title: "Non-Individual Specialties, Degrees, Licenses, and Certificates"
+Title: "Non-Individual Specialties, Degrees, Licenses, and Certificates VS"
 Description: "Non-Individual Specialties, Degrees, Licenses, and Certificates"
 * codes from valueset NonIndividualSpecialtiesVS
 * codes from system $V2table0360CS
 
 ValueSet: EndpointConnectionTypeVS
-Title: "Endpoint Connection Types"
+Title: "Endpoint Connection Types VS"
 Description:  "Endpoint Connection Types"
 * codes from system $ConnectionTypeCS
 * codes from system EndpointConnectionTypeCS 
 
 ValueSet: MinEndpointConnectionTypeVS
-Title: "Minimum Endpoint Connection Types"
+Title: "Minimum Endpoint Connection Types VS"
 Description:  "Minimum Endpoint Connection Types"
 * $ConnectionTypeCS#hl7-fhir-rest "HL7 FHIR"
 * $ConnectionTypeCS#hl7-fhir-msg "HL7 FHIR Messaging"
@@ -60,7 +60,7 @@ Description:  "Minimum Endpoint Connection Types"
 * EndpointConnectionTypeCS#rest-non-fhir "REST (not FHIR)"
 
 ValueSet: EndpointUsecaseVS
-Title: "Endpoint Usecases"
+Title: "Endpoint Usecases VS"
 Description:  "Codes for documenting business use case by a general grouping by business area."
 * $V3ActReason#TREAT  "treatment"
 * $V3ActReason#HPAYMT "healthcare payment"
@@ -75,69 +75,54 @@ Description:  "Codes for documenting business use case by a general grouping by 
 
 
 ValueSet: EndpointPayloadTypeVS
-Title: "Endpoint Payload Types"
+Title: "Endpoint Payload Types VS"
 Description:  "Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"
 * EndpointPayloadTypeCS#NA  "Not Applicable"
 
 ValueSet: NetworkTypeVS
-Title: "Network Type"
+Title: "Network Type VS"
 Description:  "Single value describing networks."
 * OrgTypeCS#ntwk   // only Network profile uses this type 
 
 
 ValueSet: OrgTypeVS
-Title: "Organization Type"
+Title: "Organization Type VS"
 Description:  "Categories of organizations based on criteria in provider directories."
 * codes from system OrgTypeCS
 * exclude OrgTypeCS#ntwk   // only Network profile uses this type 
 
 ValueSet: InsuranceProductTypeVS
-Title: "Insurance Product Type"
+Title: "Insurance Product Type VS"
 Description: "A distinct package of health insurance coverage benefits that are offered using a particular product network type."
 * codes from system InsuranceProductTypeCS
 
 
 ValueSet: InsurancePlanTypeVS
-Title: "Insurance Plan Type"
+Title: "Insurance Plan TypeVS"
 Description: "Categories of cost-sharing used by plans."
 * codes from system InsurancePlanTypeCS
 
 ValueSet: HealthcareServiceCategoryVS
-Title: "Healthcare Service Category"
+Title: "Healthcare Service CategoryVS"
 Description: "Broad categories of healthcare services being performed or delivered."
 * codes from system HealthcareServiceCategoryCS
 
 
 ValueSet: QualificationStatusVS
-Title: "Qualification Status"
+Title: "Qualification Status VS"
 Description: "The state indicating if a qualification is currently valid."
 * codes from system QualificationStatusCS
 
-CodeSystem:  LanguageProficiencyCS
-Title: "Language Proficiency"
-Description: "Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."
-* #00	"No proficiency"	"Unable to function in the spoken language."
-//* #06	"Memorized proficiency"	"Able to satisfy immediate needs using rehearsed utterances. Shows little real autonomy of expression, flexibility or spontaneity."
-* #10	"Elementary proficiency"	"Able to satisfy minimum courtesy requirements and maintain very simple face-to-face conversations on familiar topics. A native speaker must often use slowed speech, repetition, paraphrase, or a combination of these to be understood by this individual."
-//* #16	"Elementary proficiency, plus"	"Can initiate and maintain predictable face-to-face conversations and satisfy limited social demands."
-* #20	"Limited working proficiency"	"Able to satisfy routine social demands and limited work requirements."
-//* #26	"Limited working proficiency, plus"	"Able to satisfy most work requirements with language usage that is often, but not always, acceptable and effective."
-* #30	"General professional proficiency"	"Able to speak the language with sufficient structural accuracy and vocabulary to participate effectively in most formal and informal conversations in practical, social and professional topics."
-//* #36	"General professional proficiency, plus"	"Is often able to use the language to satisfy professional needs in a wide range of sophisticated and demanding tasks."
-* #40	"Advanced professional proficiency"	"Able to use the language fluently and accurately on all levels normally pertinent to professional needs."
-//* #46	"Advanced professional proficiency, plus"	"Speaking proficiency is regularly superior in all respects, usually equivalent to that of a well educated, highly articulate native speaker."
-* #50	"Functional native proficiency"	"Speaking proficiency is functionally equivalent to that of a highly articulate well-educated native speaker and reflects the cultural standards of the country where the language is natively spoken."
-* ^caseSensitive = true
 
 ValueSet: LanguageProficiencyVS
-Title: "Language Proficiency"
+Title: "Language Proficiency VS"
 Description: "Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."
 * codes from system LanguageProficiencyCS
 
 
 
 ValueSet: PractitionerRoleVS
-Title: "PractitionerRole Code"
+Title: "PractitionerRole Code VS"
 Description: "Codes for the capabilities that an individual, group, or organization is acknowledged to have in a payer network, including general codes from the HL7 PractitionerRole Code System."
 * codes from system ProviderRoleCS
 * codes from system $HL7PractitionerRoleCS
@@ -146,7 +131,7 @@ Description: "Codes for the capabilities that an individual, group, or organizat
 
 ValueSet: HealthcareServiceTypeVS
 Description: "Valueset for HealthCareService type"
-Title: "HealthcareService Types"
+Title: "HealthcareService Types VS"
 * $ServiceTypeCS#1 "Adoption/Permanent Care Info/Support" 
 * $ServiceTypeCS#3 "Aged Care Information/Referral" 
 * $ServiceTypeCS#8 "Home Care/Housekeeping Assistance" 

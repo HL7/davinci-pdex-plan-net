@@ -6,7 +6,7 @@
       {
         "version": "current",
         "desc": "Continuous Integration Build (latest in version control)",
-        "path": "http://build.fhir.org/ig/HL7/davinci-pdex-plan-net/",
+        "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net",
         "status": "ci-build",
         "current": true
       },
@@ -29,5 +29,6 @@
         "fhirversion": "4.0.0"
       }
     ],
-    "category": "Administration"
+    "category": "Administration",
+    "defaultWorkgroup": "Patient Administration"
   }
