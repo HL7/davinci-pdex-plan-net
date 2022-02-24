@@ -5,9 +5,19 @@
     "list": [
       {
         "version": "current",
-        "desc": "Continuous Integration Build (latest in version control)",
-        "path": "http://build.fhir.org/ig/HL7/davinci-pdex-plan-net/",
+        "desc": "Davinci pdex Plan Net, Continuous Integration Build (latest in version control)",
+        "path": "http://build.fhir.org/HL7/ig/davinci-pdex-plan-net",
         "status": "ci-build",
+        "current": true
+      },
+      {
+        "version": "1.1.0",
+        "desc": "Davinci pdex Plan Net, Release 1 - US Realm STU",
+        "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1",
+        "date": "2022-03-18",
+        "status": "trial-use",
+        "sequence": "STU 1",
+        "fhirversion": "4.0.1",
         "current": true
       },
       {
@@ -17,17 +27,10 @@
         "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1",
         "status": "ci-build",
         "sequence": "STU 1",
-        "fhirversion": "4.0.0"
-      },
-      {
-        "version": "0.1.0",     
-        "date": "2019-10-24",
-        "desc": "Davinci pdex Plan Net - STU Ballot",
-        "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net/2020Feb",
-        "status": "ballot",
-        "sequence": "STU 1",
-        "fhirversion": "4.0.0"
+        "fhirversion": "4.0.0",
+        "current": true
       }
     ],
-    "category": "Administration"
+    "category": "Administration",
+    "defaultWorkgroup": "Financial Management"
   }

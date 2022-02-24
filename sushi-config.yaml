@@ -12,24 +12,24 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.davinci-pdex-plan-net
 canonical: http://hl7.org/fhir/us/davinci-pdex-plan-net
-version: 1.0.1
+version: 1.1.0
 name: DaVinciPDEXPlanNet
 title: DaVinci PDEX Plan Net
 status: active
 publisher:
   name: HL7 Financial Management Working Group
-  url: http://www.hl7.org/Special/committees/fm/index.cfm
+  url: http://www.hl7.org/Special/committees/fm
   email: fm@lists.HL7.org
 description: Davinci PDEX Plan Net 
 jurisdiction: urn:iso:std:iso:3166#US
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
-  hl7.fhir.us.core: 4.0.0
+  hl7.fhir.us.core: 3.1.1
 parameters:
   show-inherited-invariants: false
   jira-code: davinci-plannet
-copyrightYear: 2020+
+copyrightYear: 2022+
 releaseLabel: STU1
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
