@@ -12,13 +12,13 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.davinci-pdex-plan-net
 canonical: http://hl7.org/fhir/us/davinci-pdex-plan-net
-version: 1.0.1
+version: 1.1.0
 name: DaVinciPDEXPlanNet
 title: DaVinci PDEX Plan Net
 status: active
 publisher:
   name: HL7 Financial Management Working Group
-  url: http://www.hl7.org/Special/committees/fm/index.cfm
+  url: http://www.hl7.org/Special/committees/fm
   email: fm@lists.HL7.org
 description: Davinci PDEX Plan Net 
 jurisdiction: urn:iso:std:iso:3166#US
