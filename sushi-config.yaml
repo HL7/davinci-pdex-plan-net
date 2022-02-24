@@ -29,7 +29,7 @@ dependencies:
 parameters:
   show-inherited-invariants: false
   jira-code: davinci-plannet
-copyrightYear: 2020+
+copyrightYear: 2022+
 releaseLabel: STU1
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
