@@ -2,3 +2,15 @@
 
 # Approved US Core Variance for Practitioner (Approved by US Core in original IG version)
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole').baseDefinition: US FHIR Usage rules require that all profiles on PractitionerRole derive from the core US profile
+
+# These are actual warnings to surpress
+# The display values for NUCC Provider Taxonomy have been updated, and the HL7 Terminology server does not yet incorporate the updated values.
+
+
+The code 101200000X is not valid in the system http://nucc.org/provider-taxonomy
+The code 171400000X is not valid in the system http://nucc.org/provider-taxonomy
+The code 342000000X is not valid in the system http://nucc.org/provider-taxonomy
+
+ 
+
+
