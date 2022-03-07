@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-pdex-plan-net/2020Feb" ciUrl="http://build.fhir.org/HL7/ig/davinci-pdex-plan-net" defaultVersion="1.1.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-pdex-plan-net" url="http://hl7.org/fhir/us/davinci-pdex-plan-net">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="http://build.fhir.org/HL7/ig/davinci-pdex-plan-net" defaultVersion="1.1.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-pdex-plan-net" url="http://hl7.org/fhir/us/davinci-pdex-plan-net">
 <version code="current" url="http://build.fhir.org/HL7/ig/davinci-pdex-plan-net"/>
 <version code="1.1.0" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1"/>
@@ -182,6 +182,7 @@
 <page key="implementation" name="Implementation"/>
 <page key="profiles" name="Profiles"/>
 <page key="toc" name="Table of Contents"/>
+<page key="Version-history" name="Version History"/>
 <page deprecated="true" key="codesystems" name="codesystems"/>
 <page deprecated="true" key="extensions" name="extensions"/>
 <page deprecated="true" key="searchparameters" name="searchparameters"/>
