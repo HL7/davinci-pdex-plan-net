@@ -52,5 +52,5 @@ menu:
     Capability Statement: artifacts.html#1
   Examples      : artifacts.html#7
   Downloads     : downloads.html
-  Release       : version-history.html
+  Change History       : ChangeHistory.html
   History       : http://www.hl7.org/fhir/us/davinci-pdex-plan-net/history.cfml

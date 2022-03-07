@@ -176,13 +176,13 @@
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="ChangeHistory" name="Change History"/>
 <page key="downloads" name="Downloads"/>
 <page key="examples" name="Examples"/>
 <page key="index" name="Home"/>
 <page key="implementation" name="Implementation"/>
 <page key="profiles" name="Profiles"/>
 <page key="toc" name="Table of Contents"/>
-<page key="Version-history" name="Version History"/>
 <page deprecated="true" key="codesystems" name="codesystems"/>
 <page deprecated="true" key="extensions" name="extensions"/>
 <page deprecated="true" key="searchparameters" name="searchparameters"/>
