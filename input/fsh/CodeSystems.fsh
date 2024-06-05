@@ -1,6 +1,7 @@
 CodeSystem: AcceptingPatientsCS
 Title: "Accepting Patients Codes"
 Description: "Codes to identify if the practice is accepting new patients"
+* ^experimental = false
 * #nopt	"Not Accepting" "Not accepting patients"
 * #newpt	"Accepting" "Accepting patients"
 * #existptonly	"Accepting existing patients" "Accepting existing patients"
@@ -10,6 +11,7 @@ Description: "Codes to identify if the practice is accepting new patients"
 CodeSystem: AccessibilityCS
 Title: "Accessibility CS"
 Description: "General categories of accommodations available."
+* ^experimental = false
 * #cultcomp	"Cultural competence"	"Provides services that meet the social, cultural, and linguistic needs of persons."
 * #handiaccess	"handicap accessible"	"Provides access to persons with disabilities."
 * #adacomp	"ADA compliant"	"Provides access which complies with the Americans with Disabilities Act and/or amendments."
@@ -22,6 +24,7 @@ Description: "General categories of accommodations available."
 CodeSystem: DeliveryMethodCS
 Title: "Delivery Methods"
 Description: "Categories of healthcare service delivery methods."
+* ^experimental = false
 * #virtual	"Virtual" "Delivery not requiring provider and patient to be physically co-located, such as tele-medicine"
 * #physical	"Physical" "Traditional delivery requiring provider and patient to be physically co-located."
 * ^caseSensitive = true
@@ -29,6 +32,7 @@ Description: "Categories of healthcare service delivery methods."
 CodeSystem: VirtualModalitiesCS
 Title: "Virtual Modalities"
 Description: "Categories of virtual service delivery modalities."
+* ^experimental = false
 * #phone	"phone" "Voice Telephone"
 * #video	"video chat" "Video Chat"
 * #tdd	"TDD" "Telecommunications Device for the Deaf"
@@ -38,22 +42,25 @@ Description: "Categories of virtual service delivery modalities."
 * ^caseSensitive = true
 
 CodeSystem:  EndpointConnectionTypeCS
-  Title: "Endpoint Connection Types (additional)"
-  Description:  "Extension codes for http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+Title: "Endpoint Connection Types (additional)"
+Description:  "Extension codes for http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+* ^experimental = false
 * #hl7-fhir-opn "HL7 FHIR Operation" "Interact with a FHIR server interface using FHIR's RESTful interface using an operation other than messaging. For details on its version/capabilities you should connect the value in Endpoint.address and retrieve the FHIR CapabilityStatement."
 * #rest-non-fhir "REST (not FHIR)" "Interact with a server using HTTP/REST but not FHIR.  Should be used for web portals."
 * ^caseSensitive = true
  
 
 CodeSystem:  EndpointPayloadTypeCS
-  Title: "Endpoint Payload Types"
-  Description:  "Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"
+Title: "Endpoint Payload Types"
+Description:  "Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"
+* ^experimental = false
 * #NA "Not Applicable" "Not Applicable"
 * ^caseSensitive = true
  
- CodeSystem:  LanguageProficiencyCS
+CodeSystem:  LanguageProficiencyCS
 Title: "Language Proficiency CS"
 Description: "Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."
+* ^experimental = false
 * #00	"No proficiency"	"Unable to function in the spoken language."
 //* #06	"Memorized proficiency"	"Able to satisfy immediate needs using rehearsed utterances. Shows little real autonomy of expression, flexibility or spontaneity."
 * #10	"Elementary proficiency"	"Able to satisfy minimum courtesy requirements and maintain very simple face-to-face conversations on familiar topics. A native speaker must often use slowed speech, repetition, paraphrase, or a combination of these to be understood by this individual."
@@ -70,6 +77,7 @@ Description: "Codes for documenting spoken language proficiency based on the Int
  CodeSystem: HealthcareServiceCategoryCS
  Title: "Healthcare Service Category"
  Description: "Broad categories of healthcare services being performed or delivered"
+* ^experimental = false
 * #behav "Behavioral Health" "Services related to the promotion of mental health, resilience and wellbeing; the treatment of mental and substance use disorders; and the support of those who experience and/or are in recovery from these conditions, along with their families and communities."
 * #dent "Dental" "Services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the mouth."
 * #dme "DME/Medical Supplies" "Health care consumables or equipments supplied to patients"
@@ -90,6 +98,7 @@ Description: "Codes for documenting spoken language proficiency based on the Int
 CodeSystem: InsuranceProductTypeCS
 Title: "Insurance Product Type"
 Description:  "A distinct package of health insurance coverage benefits that are offered using a particular product network type."
+* ^experimental = false
 * #commppo "Commercial PPO"  "Health insurance provided through a Preferred Provider Organization (PPO)."
 * #commhdhp "Commercial HDHP" "Health insurance provided through a High Deductible Health Plan (HDHP)."
 * #commpos "Commercial POS" "Health insurance provided through a Point-of-Service (POS) Plan."
@@ -117,6 +126,7 @@ Description:  "A distinct package of health insurance coverage benefits that are
 CodeSystem: InsurancePlanTypeCS
 Title: "Insurance Plan Type"
 Description:  "Categories of cost-sharing used by plans"
+* ^experimental = false
 * #platinum "Platinum-QHP" "Plan with highest monthly premium and lowest costs when you need care	A Qualified Health Plan with the highest monthly premiums and smallest out-of-pocket costs for the member in comparison to other metal-category plans"
 * #gold "Gold-QHP" "Plan with high monthly premium and low costs when you need care	A Qualified Health Plan with the higher monthly premiums and smaller out-of-pocket costs for the member in comparison to other metal-category plans"
 * #silver "Silver-QHP" "Plan with moderate monthly premium and moderate costs when you need care	A Qualified Health Plan with the lower monthly premiums and larger out-of-pocket costs for the member in comparison to other metal-category plans"
@@ -128,8 +138,9 @@ Description:  "Categories of cost-sharing used by plans"
 * ^caseSensitive = true
 
 CodeSystem:  OrgTypeCS
-  Title: "Organization Type"
-  Description:  "Categories of organizations based on criteria in provider directories."
+Title: "Organization Type"
+Description:  "Categories of organizations based on criteria in provider directories."
+* ^experimental = false
 * #fac "Facility" "A physical healthcare facility."
 * #prvgrp "Provider Group" "A healthcare provider entity"
 * #payer "Payer" "A healthcare payer."
@@ -141,6 +152,7 @@ CodeSystem:  OrgTypeCS
 CodeSystem: QualificationStatusCS
 Title: "Qualification Status"
 Description: "The state indicating if a qualification is currently valid."
+* ^experimental = false
 * #active "active" "The credential may be considered valid for use."
 * #inactive "inactive" "The credential may not be considered valid for use."
 * #issiner "issued in error" "The credential was mistakenly assigned and should not be considered valid for use."
@@ -153,6 +165,7 @@ Description: "The state indicating if a qualification is currently valid."
 CodeSystem: ProviderRoleCS
 Title: "Provider Role Codes"
 Description: "A capability that an individual, group, or organization is acknowledged to have in a payer network."
+* ^experimental = false
 // These are Payer Roles from Gail
 * #ap "Admitting Privileges" "Practitioner has admitting privileges at hospital (organization)"
 * #apn "Advanced Practice Nursing Providers" "Advanced Practice Nursing Providers"
@@ -197,5 +210,28 @@ Description: "A capability that an individual, group, or organization is acknowl
 * #te "Technologists, Technicians and Other Technical Service Providers" "Technologists, Technicians and Other Technical Service Providers"
 * ^caseSensitive = true
 
+
+CodeSystem: OrganizationAffiliationRoleCS
+Title: "Organization Affiliation Role"
+Description: "Codes For Organization Affiliation Role"
+* ^experimental = false
+* #behavioral	"Outpatient Behavioral Health Provider" "Provider of services related to the promotion of mental health, resilience and wellbeing; the treatment of mental and substance use disorders; and the support of those who experience and/or are in recovery from these conditions, along with their families and communities."
+* #bt "Member Of" "Has a relationship of participation with.  This does NOT represent a member of an insurance plan, but other types of membership such as membership of a hospital in an HIE"    // Added 7/15/2020
+* #dme	"DME/Medical Supplier"	"Supplier of health care consumables or equipments supplied to patients."
+* #group	"Medical Group"	"A group of people, e.g. a group of Physicians, who render health care services."
+* #home	"Home Health Provider"	"Provider of health care services delivered to patients within their residence rather than a clinical setting; usually provided by nurses, home health aides, and other professionals on a regularly scheduled visit."
+* #hospital	"Hospital"	"An inpatient facility, other than long-term care, providng patient treatment with specialzed medical and nursing staff and medical equipment."
+* #laboratory	"Laboratory"	"Pathology and laboratory testing on clinical specimenst to obtain informaion about the health of a paeint to aid in diagnosis, treatment and prevention of disease."
+* #other	"Other"		"A provider of heatlh care services not otherwise listed in this value set."
+* #outpatient	"Clinic or Outpatient Facility"	 "An outpatient facility providing patient services, e.g. medical procedures, surgeries, etc."
+* #pharmacy	"Pharmacy"	"An entity which provider services related to the storage, compounding, dispensing and sale of drugs."
+* #transport	"Transporation Provider"	"A provider which transports patients to or from a medical facility, e.g., ambulance."
+* #urgent	"Urgent Care Center"	"A center in which unscheduled health care services are provided for point-in-time evaluation or treatment of a non-life-threatening medical condition."
+* #hospice "Hospice" "Hospice"
+* #nurseCustodial "Nursing and Custodial Care Facility" "Nursing and Custodial Care Facility"
+* #residential "Residential Treatment Facility" "Residential Treatment Facility"
+* #respite "Respite Care Facility" "Respite Care Facility"
+* #retail	"Retail Health Center"	"Retail Health Center"
+* ^caseSensitive = true
 
 

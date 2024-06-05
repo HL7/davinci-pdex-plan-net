@@ -17,11 +17,16 @@ name: DaVinciPDEXPlanNet
 title: DaVinci PDEX Plan Net
 status: active
 publisher:
-  name: HL7 Financial Management Working Group
+  name: HL7 International / Financial Management
   url: http://www.hl7.org/Special/committees/fm
   email: fm@lists.HL7.org
 description: Davinci PDEX Plan Net 
 jurisdiction: urn:iso:std:iso:3166#US
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: trial-use
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: fm
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
