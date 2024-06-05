@@ -112,6 +112,7 @@
 <artifact id="SearchParameter/endpoint-organization" key="SearchParameter-endpoint-organization" name="Plannet_sp_endpoint_organization"/>
 <artifact id="SearchParameter/healthcareservice-service-category" key="SearchParameter-healthcareservice-service-category" name="Plannet_sp_healthcareservice_category"/>
 <artifact id="SearchParameter/healthcareservice-coverage-area" key="SearchParameter-healthcareservice-coverage-area" name="Plannet_sp_healthcareservice_coverage_area"/>
+<artifact id="SearchParameter/healthcareservice-delivery-method" key="SearchParameter-healthcareservice-delivery-method" name="Plannet_sp_healthcareservice_delivery_method"/>
 <artifact id="SearchParameter/healthcareservice-endpoint" key="SearchParameter-healthcareservice-endpoint" name="Plannet_sp_healthcareservice_endpoint"/>
 <artifact id="SearchParameter/healthcareservice-location" key="SearchParameter-healthcareservice-location" name="Plannet_sp_healthcareservice_location"/>
 <artifact id="SearchParameter/healthcareservice-name" key="SearchParameter-healthcareservice-name" name="Plannet_sp_healthcareservice_name"/>

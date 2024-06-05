@@ -1,39 +1,29 @@
 {
-  "resourceType": "SearchParameter",
-  "id": "healthcareservice-organization",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-organization",
-  "version": "0.2.0",
-  "name": "Plannet_sp_healthcareservice_organization",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-organization",
-  "status": "active",
-  "date": "2018-05-23T00:00:00+00:00",
-  "publisher": "HL7 Patient Administration Committee",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
-        }
-      ]
-    }
-  ],
-  "description": "Select HealthcareServices provided by the specified organization",
-  "code": "organization",
-  "base": [
-    "HealthcareService"
-  ],
-  "type": "reference",
-  "expression": "HealthcareService.providedBy",
-  "target": [
-    "Organization"
-  ],
-  "multipleOr": true,
-  "multipleAnd": true,
-  "chain": [
-    "name",
-    "address",
-    "partof",
-    "type"
-  ]
+	"resourceType": "SearchParameter",
+	"id": "healthcareservice-delivery-method",
+	"url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-delivery-method",
+	"version": "0.2.0",
+	"name": "Plannet_sp_healthcareservice_delivery_method",
+	"status": "active",
+	"date": "2018-05-23T00:00:00+00:00",
+	"publisher": "HL7 Patient Administration Committee",
+	"contact": [
+		{
+			"telecom": [
+				{
+					"system": "url",
+					"value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+				}
+			]
+		}
+	],
+	"description": "Select HealthcareServices based on the delivery method type",
+	"code": "delivery-method",
+	"base": [
+		"HealthcareService"
+	],
+	"type": "token",
+	"expression": "HealthcareService.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/delivery-method').extension.where(url='type')",
+	"multipleOr": true,
+	"multipleAnd": true
 }
