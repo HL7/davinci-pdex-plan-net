@@ -469,7 +469,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 */
 
 Profile:        PlannetPractitionerRole
-Parent:         PractitionerRole
+Parent:         USCorePractitionerRoleProfile
 Id:             plannet-PractitionerRole
 Title:          "Plan-Net PractitionerRole"
 Description:    "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, 

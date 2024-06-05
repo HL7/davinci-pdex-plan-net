@@ -79,6 +79,8 @@ Usage: #example
 * extension[qualification].extension[status].valueCode = QualificationStatusCS#active 
 // specialty = internal medicine
 // available M-F
+* telecom[0].system = #url
+* telecom[0].value = "https://www.example.org"
 
 Instance: HansSoloService
 InstanceOf: PlannetHealthcareService
@@ -149,10 +151,8 @@ Usage: #example
 * name.text = "Susie Smith, LPC"
 * name.family = "Smith"
 * name.given[0] = "Susie"
-* qualification[0].code.coding.display = "LPC"
-* qualification[0].code.text = "LPC"
+* qualification[0].code = $NUCCProviderTaxonomy#101YP2500X "Professional Counselor"
 * qualification[0].issuer.display = "State of Illinois"
-* qualification[0].code.text = "IL"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
 * extension[communication-proficiency].valueCodeableConcept = LanguageProficiencyCS#30
@@ -171,6 +171,8 @@ Usage: #example
 * healthcareService = Reference(VirtualCounselService)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
+* telecom[0].system = #url
+* telecom[0].value = "https://www.example.org"
 
 
 Instance: VirtualCounselService
@@ -206,6 +208,8 @@ Usage: #example
 * organization = Reference(Hospital)
 // specialty = internal medicine
 // available M-F
+* telecom[0].system = #url
+* telecom[0].value = "https://www.example.org"
 
 Instance: JoeSmithRole2
 InstanceOf: PlannetPractitionerRole
@@ -223,6 +227,8 @@ Usage: #example
 * location[0] = Reference(HospLoc2)
 * specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
 * organization = Reference(BurrClinic)
+* telecom[0].system = #url
+* telecom[0].value = "https://www.example.org"
 
 Instance: JoeSmithRole3
 InstanceOf: PlannetPractitionerRole
@@ -237,6 +243,8 @@ Usage: #example
 * specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
 * specialty[1] = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease Physician"
 * organization = Reference(Hospital)
+* telecom[0].system = #url
+* telecom[0].value = "https://www.example.org"
 
 Instance: AnonRole
 InstanceOf: PlannetPractitionerRole
@@ -252,6 +260,8 @@ Usage: #example
 * location[0] = Reference(HospLoc2)
 * specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
 * organization = Reference(CancerClinic)
+* telecom[0].system = #url
+* telecom[0].value = "https://www.example.org"
 
 Instance: CancerClinicService
 InstanceOf: PlannetHealthcareService
