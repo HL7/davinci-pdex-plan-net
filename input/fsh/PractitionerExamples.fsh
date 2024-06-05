@@ -6,7 +6,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* identifier[NPI].value = "NPI323"
+* identifier[NPI].value = "9941339100"
 * identifier[NPI].system = $NPICS
 * name.text = "Joe Smith, MD"
 * name.family = "Smith"
@@ -36,7 +36,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* identifier[NPI].value = "NPI3233"
+* identifier[NPI].value = "9941339100"
 * identifier[NPI].system = $NPICS
 * name.text = "Hans Solo, MD"
 * name.family = "Solo"
@@ -144,7 +144,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* identifier[NPI].value = "NPI3238"
+* identifier[NPI].value = "9941339100"
 * identifier[NPI].system = $NPICS
 * name.text = "Susie Smith, LPC"
 * name.family = "Smith"
@@ -312,7 +312,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* identifier[NPI].value = "NPI788"
+* identifier[NPI].value = "9941339100"
 * identifier[NPI].system = $NPICS
 * name = "Hamilton Clinic"
 * telecom[0].system = #phone

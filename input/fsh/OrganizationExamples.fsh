@@ -6,7 +6,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* identifier[NPI].value = "NPI456"
+* identifier[NPI].value = "1407071236"
 * identifier[NPI].system = $NPICS
 * name = "Hartford Orthopedics Services"
 * type = OrgTypeCS#prvgrp "Provider Group"
@@ -52,7 +52,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* identifier[NPI].value = "NPI456"
+* identifier[NPI].value = "1407071236"
 * identifier[NPI].system = $NPICS
 * name = "Hartford General Hospital"
 * telecom[0].system = #phone
@@ -247,7 +247,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* identifier[NPI].value = "NPI78"
+* identifier[NPI].value = "1407071236"
 * identifier[NPI].system = $NPICS
 * name = "Hamilton Clinic"
 * partOf = Reference(Hospital)
@@ -305,7 +305,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* identifier[NPI].value = "NPI999"
+* identifier[NPI].value = "1407071236"
 * identifier[NPI].system = $NPICS
 * name = "Burr Clinic"
 * telecom[0].system = #phone

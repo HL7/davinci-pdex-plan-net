@@ -9,7 +9,7 @@ Usage: #example
 * name = "Pharm Chain"
 * type = OrgTypeCS#prvgrp "Provider Group"
 * identifier[NPI].system = $NPICS
-* identifier[NPI].value = "NPI-ORGA"
+* identifier[NPI].value = "1407071236"
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
