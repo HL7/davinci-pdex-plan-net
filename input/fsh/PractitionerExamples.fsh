@@ -56,8 +56,8 @@ Usage: #example
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[2].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* extension[communication-proficiency].valueCodeableConcept = LanguageProficiencyCS#30
 * communication = $BCP47#ja 
+* communication.extension[communication-proficiency].valueCodeableConcept = LanguageProficiencyCS#30
 
 
 Instance: HansSoloRole1
@@ -79,8 +79,12 @@ Usage: #example
 * extension[qualification].extension[status].valueCode = QualificationStatusCS#active 
 // specialty = internal medicine
 // available M-F
-* telecom[0].system = #url
-* telecom[0].value = "https://www.example.org"
+// * telecom[0].system = #url
+// * telecom[0].value = "https://www.example.org"
+* endpoint[0].extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* endpoint[0].extension.valueCode = #unknown
+* endpoint[0].display = "Unknown"
+
 
 Instance: HansSoloService
 InstanceOf: PlannetHealthcareService
@@ -155,8 +159,8 @@ Usage: #example
 * qualification[0].issuer.display = "State of Illinois"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* extension[communication-proficiency].valueCodeableConcept = LanguageProficiencyCS#30
 * communication = $BCP47#ru 
+* communication.extension[communication-proficiency].valueCodeableConcept = LanguageProficiencyCS#30
 
 Instance: CounselorRole1
 InstanceOf: PlannetPractitionerRole

@@ -2,6 +2,8 @@ Extension: Accessibility
 Id: accessibility
 Title: "Accessibility"
 Description: "An extension to describe accessibility options offered by a practitioner or at a location."
+* ^context[+].type = #element
+* ^context[=].expression = "Location"
 * value[x] 1..1 
 * value[x] only CodeableConcept 
 * value[x] from AccessibilityVS (extensible)
@@ -11,6 +13,8 @@ Extension: CommunicationProficiency
 Id: communication-proficiency
 Title: "Communication Proficiency"
 Description: "An extension to express a practitioner’s spoken proficiency with the language indicated in practitioner.communication."
+* ^context[+].type = #element
+* ^context[=].expression = "Practitioner.communication"
 * value[x] 1..1 
 * value[x] only CodeableConcept 
 * valueCodeableConcept from LanguageProficiencyVS (required)   // was example
@@ -19,6 +23,8 @@ Extension: ContactPointAvailableTime
 Id: contactpoint-availabletime
 Title: "Contactpoint Availabletime"
 Description: "An extension representing the days and times a contact point is available"
+* ^context[+].type = #element
+* ^context[=].expression = "ContactPoint"
 * value[x] 0..0
 * extension contains
    daysOfWeek 0..* MS and 
@@ -35,6 +41,8 @@ Extension: DeliveryMethod
 Id: delivery-method
 Title: "Delivery Method"
 Description: "An extension describing the service delivery method.   If service delivery is virtual, one or more delivery modalities should be specified."
+* ^context[+].type = #element
+* ^context[=].expression = "HealthcareService"
 * value[x] 0..0
 * extension contains
    type 1..1 and
@@ -53,6 +61,8 @@ Extension: EndpointUsecase
 Id: endpoint-usecase
 Title: "Endpoint Usecase"
 Description: "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint"
+* ^context[+].type = #element
+* ^context[=].expression = "Endpoint"
 * value[x] 0..0
 * extension contains
    type 1..1 MS and
@@ -70,6 +80,8 @@ Extension: LocationReference
 Id: location-reference
 Title: "Location Reference"
 Description: "A reference to a Location resource (plannet-Location) defining the coverage area of a health insurance provider network"
+* ^context[+].type = #element
+* ^context[=].expression = "Organization"
 * value[x] only Reference (PlannetLocation)
 * value[x] 1..1 MS 
 
@@ -78,6 +90,8 @@ Extension: NetworkReference
 Id: network-reference
 Title: "Network Reference"
 Description: "A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role"
+* ^context[+].type = #element
+* ^context[=].expression = "PractitionerRole"
 * value[x] only Reference(PlannetNetwork) 
 * value[x] 1..1 MS 
 
@@ -88,6 +102,12 @@ Title: "New Patients"
 Description: "New Patients indicates whether new patients are being accepted in general, or from a specific network.   
               This extension is included in the PractitionerRole, HealthcareService, and Location profiles.  
               This provides needed flexibility for specifying whether a provider accepts new patients by location and network."
+* ^context[+].type = #element
+* ^context[=].expression = "HealthcareService"
+* ^context[+].type = #element
+* ^context[=].expression = "Location"
+* ^context[+].type = #element
+* ^context[=].expression = "PractitionerRole"
 * obeys new-patients-characteristics
 * value[x] 0..0
 * extension contains
@@ -117,6 +137,8 @@ Extension: OrgDescription
 Id: org-description
 Title: "Org Description"
 Description: "An extension to provide a human-readable description of an organization."
+* ^context[+].type = #element
+* ^context[=].expression = "Organization"
 * value[x] 1..1 MS
 * value[x] only string 
 
@@ -126,6 +148,8 @@ Extension: PractitionerQualification
 Id: practitioner-qualification
 Title: "Practitioner Qualification"
 Description: "An extension to add status and whereValid elements to a practitioner’s qualifications."
+* ^context[+].type = #element
+* ^context[=].expression = "Practitioner.qualification"
 * value[x] 0..0
 * extension contains
    status 1..1 MS and
@@ -144,6 +168,12 @@ Extension: Qualification
 Id: qualification
 Title: "Qualification"
 Description: "An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances)."
+* ^context[+].type = #element
+* ^context[=].expression = "Organization"
+* ^context[+].type = #element
+* ^context[=].expression = "OrganizationAffiliation"
+* ^context[+].type = #element
+* ^context[=].expression = "PractitionerRole"
 * extension contains
    identifier 0..* MS and 
    code 1..1 MS and
@@ -172,6 +202,8 @@ Extension: ViaIntermediary
 Id: via-intermediary
 Title: "Via Intermediary"
 Description: "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization"
+* ^context[+].type = #element
+* ^context[=].expression = "ContactPoint"
 * value[x] only Reference(PlannetPractitionerRole or PlannetOrganizationAffiliation or PlannetLocation or PlannetOrganization) 
 * value[x] 1..1 MS
 
