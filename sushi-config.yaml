@@ -35,7 +35,7 @@ parameters:
   show-inherited-invariants: false
   jira-code: davinci-plannet
 copyrightYear: 2022+
-releaseLabel: STU1
+releaseLabel: STU 2 (ci-build)
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
 # │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │
