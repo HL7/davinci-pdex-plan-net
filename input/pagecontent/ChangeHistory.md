@@ -1,5 +1,9 @@
 
 <h3>PDEX Payer Network Implementation Guide</h3>
+<h4>Changes since v1.1.0</h4>
+<ul>
+<li>Upgraded US Core version to 6.1.0</li>
+</ul>
 <h4>Changes Since v1.0.0</h4>
 <ul>
 <li>Fixed names of 3 search parameter files based on improved IG publisher error checking:   healthcareservice-service-category, location-address-postalcode and location-address-state.  All of these were mismatched with the search parameter name, so the file couldn't be found.</li>
