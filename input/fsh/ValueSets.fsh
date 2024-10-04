@@ -123,6 +123,7 @@ Title: "Healthcare Service CategoryVS"
 Description: "Broad categories of healthcare services being performed or delivered."
 * ^experimental = false
 * codes from system HealthcareServiceCategoryCS
+* exclude HealthcareServiceCategoryCS#other
 
 
 ValueSet: QualificationStatusVS
