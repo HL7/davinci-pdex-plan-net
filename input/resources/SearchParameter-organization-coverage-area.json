@@ -23,7 +23,7 @@
     "Organization"
   ],
   "type": "reference",
-  "expression": "Organization.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/location-reference')",
+  "expression": "Organization.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/location-reference').valueReference",
   "target": [
     "Location"
   ],
