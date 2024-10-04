@@ -472,9 +472,7 @@ Profile:        PlannetPractitionerRole
 Parent:         USCorePractitionerRoleProfile
 Id:             plannet-PractitionerRole
 Title:          "Plan-Net PractitionerRole"
-Description:    "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, 
-there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also 
-be a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."
+Description:    "PractitionerRole typically describes details about a provider. When the provider is a practitioner, there may be a relationship to an organization. A provider renders services to patients at a location. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization. PractitionerRole involves either the actual or potential (hence the optionality on Practitioner) of an individual to play this role on behalf of or under the auspices of an organization. The absence of a Practitioner resource does not imply that the Organization itself is playing the role of a Practitioner, instead it implies that that role has been established by the Organization and MAY apply that to a specific Practitioner."
 
 * meta.lastUpdated 1..1
 * obeys practitioner-or-organization-or-healthcareservice-or-location 
