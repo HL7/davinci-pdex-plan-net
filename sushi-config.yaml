@@ -14,13 +14,13 @@ id: hl7.fhir.us.davinci-pdex-plan-net
 canonical: http://hl7.org/fhir/us/davinci-pdex-plan-net
 version: 1.2.0
 name: DaVinciPDEXPlanNet
-title: DaVinci PDEX Plan Net
+title: Da Vinci PDex Plan Net
 status: active
 publisher:
   name: HL7 International / Financial Management
   url: http://www.hl7.org/Special/committees/fm
   email: fm@lists.HL7.org
-description: Davinci PDEX Plan Net 
+description: Da Vinci PDex Plan Net 
 jurisdiction: urn:iso:std:iso:3166#US
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status

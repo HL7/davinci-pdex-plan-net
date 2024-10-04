@@ -104,9 +104,13 @@ This IG was developed by the MITRE Corporation under the direction of the author
   <td>smahoney@mitre.org</td>
   </tr>
 <tr>
-  <td>Corey Spears </td>
-  <td>cspears@mitre.org</td>
-  </tr>
+  <td>Corey Spears</td>
+  <td>corey.spears@lantanagroup.com</td>
+</tr>
+<tr>
+  <td>Rick Geimer</td>
+  <td>rick.geimer@lantanagroup.com</td>
+</tr>
 
-  </table>
+ </table>
 {: rules="groups"}

@@ -1,18 +1,18 @@
 {
     "package-id": "hl7.fhir.us.davinci-pdex-plan-net",
-    "title": "DaVinci PDEX Plan Net",
+    "title": "Da Vinci PDex Plan Net",
     "canonical": "http://hl7.org/fhir/us/davinci-pdex-plan-net",
     "list": [
       {
         "version": "current",
-        "desc": "Davinci pdex Plan Net, Continuous Integration Build (latest in version control)",
+        "desc": "Da Vinci PDex Plan Net, Continuous Integration Build (latest in version control)",
         "path": "http://build.fhir.org/HL7/ig/davinci-pdex-plan-net",
         "status": "ci-build",
         "current": true
       },
       {
         "version": "1.1.0",
-        "desc": "Davinci pdex Plan Net, Release 1 - US Realm STU",
+        "desc": "Da Vinci PDex Plan Net, Release 1 - US Realm STU",
         "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1",
         "date": "2022-03-18",
         "status": "trial-use",
@@ -23,7 +23,7 @@
       {
         "version": "1.0.0",
         "date": "2019-11-10",
-        "desc": "Davinci pdex Plan Net, Release 1 - US Realm STU",
+        "desc": "Da Vinci PDex Plan Net, Release 1 - US Realm STU",
         "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1",
         "status": "ci-build",
         "sequence": "STU 1",
