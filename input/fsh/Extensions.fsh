@@ -101,7 +101,7 @@ Id: newpatients
 Title: "New Patients"
 Description: "New Patients indicates whether new patients are being accepted in general, or from a specific network.   
               This extension is included in the PractitionerRole, HealthcareService, and Location profiles.  
-              This provides needed flexibility for specifying whether a provider accepts new patients by location and network."
+              This provides needed flexibility for specifying whether a provider accepts new patients by location and network. While the role is constrained to participation in a single network where it describes the single role this practitioner is playing (e.g., internal medicine physician) this does not in any way prohibit the practitioner from seeing patients from any  other network, they will however be 'out of network' for those patients."
 * ^context[+].type = #element
 * ^context[=].expression = "HealthcareService"
 * ^context[+].type = #element
