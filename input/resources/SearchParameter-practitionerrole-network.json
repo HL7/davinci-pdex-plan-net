@@ -23,7 +23,7 @@
     "PractitionerRole"
   ],
   "type": "reference",
-  "expression": "PractitionerRole.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference').valueReference",
+  "expression": "PractitionerRole.extension.where(url='http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference')",
   "target": [
     "Organization"
   ],
