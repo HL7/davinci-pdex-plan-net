@@ -30,6 +30,8 @@ Description:  "Specialties value set based on National Uniform Claim Committee (
 * ^experimental = false
 * codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from valueset NonIndividualSpecialtiesVS
+* $NUCCProviderTaxonomy#202D00000X "Integrative Medicine Physician"
+* $NUCCProviderTaxonomy#207VC0300X "Complex Family Planning Physician"
 
 ValueSet: SpecialtyAndDegreeLicenseCertificateVS
 Title: "Specialties, Degrees, Licenses, and Certificates VS"
