@@ -29,11 +29,33 @@ extension:
     valueCode: fm
 license: CC0-1.0
 fhirVersion: 4.0.1
-dependencies:
-  hl7.fhir.us.core: 7.0.0
+dependencies:  
+  hl7.fhir.us.core.v311:
+    version: 3.1.1
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore3
+    reason: |
+      Needed for systems supporting USCDI v1
+  hl7.fhir.us.core.v610:
+    version: 6.1.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore6
+    reason: |
+      Needed for systems supporting USCDI v3
+  hl7.fhir.us.core:
+    version: 7.0.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore7
+    reason: |
+      Needed for systems supporting USCDI v4
+  hl7.fhir.us.davinci-hrex:
+    uri: http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/hl7.fhir.us.davinci-hrex
+    version: 1.1.0
+    id: hrex
 parameters:
   show-inherited-invariants: false
   jira-code: davinci-plannet
+  shownav: 'true'
 copyrightYear: 2022+
 releaseLabel: STU 2 (ci-build)
 
@@ -55,7 +77,13 @@ menu:
     Search Parameters   : artifacts.html#2
     Terminology         : artifacts.html#5
     Capability Statement: artifacts.html#1
-  Examples      : artifacts.html#7
-  Downloads     : downloads.html
-  Change History       : ChangeHistory.html
+  Examples      : artifacts.html#7  
+  Support:
+    Discussion Forum: https://chat.fhir.org/#narrow/stream/208874-Da-Vinci-PAS
+    Project Page: https://confluence.hl7.org/pages/viewpage.action?pageId=42993876
+    Implementer Support: https://confluence.hl7.org/display/DVP/PAS+Implementer+Support
+    Specification Dashboard: https://jira.hl7.org/secure/Dashboard.jspa?selectPageId=11813
+    Propose a Change: https://jira.hl7.org/secure/CreateIssueDetails!init.jspa?pid=10405&amp;issuetype=10600&amp;customfield_11302=FHIR-us-davinci-pas
+    Downloads: downloads.html
+  Change Log       : ChangeHistory.html
   History       : http://www.hl7.org/fhir/us/davinci-pdex-plan-net/history.cfml
