@@ -1129,3 +1129,4 @@ Description:  "Non-Individual Specialties from National Uniform Claim Committee 
 * $NUCCProviderTaxonomy#347C00000X "Private Vehicle"
 * $NUCCProviderTaxonomy#347D00000X "Train"
 * $NUCCProviderTaxonomy#347E00000X "Transportation Broker"
+* $NUCCProviderTaxonomy#342000000X "Transportation Network Company"

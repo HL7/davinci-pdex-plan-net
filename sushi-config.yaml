@@ -92,9 +92,9 @@ menu:
     US Core 7.0.0: new-tab https://hl7.org/fhir/us/core/STU7/index.html
   Support:
     Discussion Forum: https://chat.fhir.org/#narrow/stream/208874-Da-Vinci-PAS
-    Project Page: https://confluence.hl7.org/pages/viewpage.action?pageId=42993876
-    Implementer Support: https://confluence.hl7.org/display/DVP/PAS+Implementer+Support
-    Specification Dashboard: https://jira.hl7.org/secure/Dashboard.jspa?selectPageId=11813
+    Project Page: https://confluence.hl7.org/pages/viewpage.action?pageId=116462616
+    Implementer Support: https://confluence.hl7.org/pages/viewpage.action?pageId=116462616
+    Specification Dashboard: https://jira.hl7.org/secure/Dashboard.jspa?selectPageId=11903
     Propose a Change: https://jira.hl7.org/secure/CreateIssueDetails!init.jspa?pid=10405&amp;issuetype=10600&amp;customfield_11302=FHIR-us-davinci-pas
     Downloads: downloads.html
   Change Log       : ChangeHistory.html
