@@ -74,7 +74,7 @@ menu:
     Project and Participants: project.html
   Specification: 
     Conformance Expectations        : confexpectations.html
-    ImplementationGuide             : implementation.html
+    Implementation                  : implementation.html
     Privacy, Safety, and Security   : security.html
   FHIR Artifacts:
     Profiles            : artifacts.html#3
