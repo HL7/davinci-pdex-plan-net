@@ -9,6 +9,9 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-pdex-pl
 WARNING: DA VINCI: The Change Log page (ChangeHistory.html) does not include any Jira tracker items links for the section with title Changes and Updates for Version 1.0.0
 WARNING: DA VINCI: The Change Log page (ChangeHistory.html) does not include any Jira tracker items links for the section with title Changes and Updates for Version 0.1.0
 
+# The project page has such a section, but this warning appears anyway
+
+WARNING: DA VINCI: The Project page (project.html) should include a section called ^The Da Vinci [Something] project^
  
 
 
