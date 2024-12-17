@@ -67,17 +67,29 @@ releaseLabel: STU 2 (ci-build)
 # │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home          : index.html
-  Implementation:
-    Implementation                              :         implementation.html
-    Representing Provider Directories in Plan Net:          implementation.html#Representing
+  IG Home                  : index.html
+  Background:
+    Reading this IG: reading.html
+    Use Cases: background.html
+    Project and Participants: project.html
+  Specification: 
+    Conformance Expectations        : confexpectations.html
+    ImplementationGuide             : implementation.html
+    Privacy, Safety, and Security   : security.html
   FHIR Artifacts:
     Profiles            : artifacts.html#3
     Extensions          : artifacts.html#4
     Search Parameters   : artifacts.html#2
     Terminology         : artifacts.html#5
     Capability Statement: artifacts.html#1
-  Examples      : artifacts.html#7  
+    Examples            : artifacts.html#7  
+  
+  Base Specs:
+    FHIR R4 Spec: new-tab {{site.data.fhir.path}}
+    HRex 1.1.0: new-tab {{site.data.fhir.ver.hrex}}
+    US Core 3.1.1: new-tab http://hl7.org/fhir/us/core/STU3.1.1/index.html
+    US Core 6.1.0: new-tab https://hl7.org/fhir/us/core/STU6.1/index.html
+    US Core 7.0.0: new-tab https://hl7.org/fhir/us/core/STU7/index.html
   Support:
     Discussion Forum: https://chat.fhir.org/#narrow/stream/208874-Da-Vinci-PAS
     Project Page: https://confluence.hl7.org/pages/viewpage.action?pageId=42993876

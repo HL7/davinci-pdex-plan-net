@@ -1,6 +1,5 @@
 
-<h3>PDEX Payer Network Implementation Guide</h3>
-<h4>Introduction</h4>
+### Introduction
 
 This implementation guide defines a FHIR interface to a health insurer's insurance plans, their associated networks, and the organizations and providers that participate in these networks. Publication of this data through a standard FHIR-based API will enable third parties to develop applications through which consumers and providers can query the participants in a payer's network that may provide services that address their health care needs. Although there are multiple types and sources of providers' directories, including provider organizations (i.e., a hospital listing all its physicians), government (i.e., listing of providers in Medicare), payers (i.e., a health plan's provider network), and third-party entities (such as vendors that maintain provider directories), the focus of this implementation guide is on Payer Provider Directories.
 
@@ -18,7 +17,16 @@ The diagram below depicts the scope of this implementation guide (IG). The IG de
 
 <img style="width:60%;height:auto;float:none;align:middle;" src="Bob3.png"/>
 
-<h4>Relation to US Core and other IGs</h4>
+### Content and Organization
+
+The IG is organized into the following sections:
+
+* [Conformance Expectations](confexpectations.html): Conformance rules for this IG.
+* [Background](background.html): Provides examples of how this specification can be used healthcare organizations.
+* [Implementation](implementation.html): Provides examples of how this specification can be used healthcare organizations.
+* [Artifacts](artifacts.html): The computable FHIR artifacts (profiles, value sets, etc.) for this specification.
+
+### Relation to US Core and other IGs
 
 This implementation guide was written for a US audience and profiles resources from <a href="{{site.data.fhir.ver.hl7_fhir_us_core}}/index.html">US Core STU 4</a>, where available (Practitioner, Organization and Location), and otherwise from R4 (OrganizationAffiliation, PractitionerRole, HealthCareService, Endpoint).  The PractitionerRole profile from US Core was not used because it is over-constrained for use in a Provider Directory based on Payer information.  The Network profile is based on USCore Organization, since there was no contradiction between the USCore profile and the Plan-Net requirements.  However, the NPI and CLIA identifier types, which are Must-Support, are clearly intended for provider organizations only and are not expected to be populated for other organization types. Alignment with VhDir is maintained by adapting VhDir content, where possible.
 
@@ -62,55 +70,13 @@ Note: the following diagrams provide a high-level view of the relationships betw
 <h4>Credits</h4>
 This IG was developed by the MITRE Corporation under the direction of the authors using [FHIR Shorthand syntax](https://build.fhir.org/ig/HL7/fhir-shorthand/) and the [SUSHI tookit](https://github.com/FHIR/sushi),  a free, open source toolchain from the MITRE Corporation.  Generous guidance on FHIR Shorthand and SUSHI was provided by Chris Moesel.  The capability statements were developed with support of tools and generous guidance from Eric Haas, and benefited from critical review by Yengibar Manasyan.
 
+
+### Dependencies
+
+{% include dependency-table.xhtml %}
+
+### Intellectual Property Considerations
+This implementation guide and the underlying FHIR specification are licensed as public domain under the [FHIR license](http://hl7.org/fhir/R4/license.html#license). The license page also describes rules for the use of the FHIR name and logo.
+
+{% include ip-statements.xhtml %}
   
-<h4>Authors</h4>
-
-<table border="1" style="width:100%">
-  <tr>
-    <th>Name</th>
-    <th>Email</th>
-  </tr>
-
- <tr>
-  <td>Troy Bergstrand</td>
-  <td>Troy.Bergstrand@bcidaho.com</td>
-  </tr>
-  <tr>
-  <td>Laurie Burckhardt</td>
-  <td>Laurie.Burckhardt@wpsic.com</td>
-  </tr>
-   <tr>
-   <td>Bob Dieterle </td>
-  <td>rdieterle@enablecare.us</td>
-  </tr>    
-  <tr>
-  <td>Gail Kocher</td>
-  <td>Gail.Kocher@bcbsa.com</td>
-  </tr>
-  <tr>
-  <td>Saul A. Kravitz</td>
-  <td>saul@mitre.org</td>
-  </tr>
-    <tr>
-  <td>Robert McClure MD </td>
-  <td>rmcclure@mdpartners.com</td>
-  </tr>
-<tr>
-  <td>Mary Kay McDaniel </td>
-  <td>MaryKay.McDaniel@cognosante.com</td>
-  </tr>
-<tr>
-  <td>Sean Mahoney </td>
-  <td>smahoney@mitre.org</td>
-  </tr>
-<tr>
-  <td>Corey Spears</td>
-  <td>corey.spears@lantanagroup.com</td>
-</tr>
-<tr>
-  <td>Rick Geimer</td>
-  <td>rick.geimer@lantanagroup.com</td>
-</tr>
-
- </table>
-{: rules="groups"}
