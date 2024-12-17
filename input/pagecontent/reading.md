@@ -28,6 +28,7 @@ The following FHIR Resources are used in this IG:
 * [capabilitystatement](http://hl7.org/fhir/R4/capabilitystatement.html)
 * [codesystem](http://hl7.org/fhir/R4/codesystem.html)
 * [endpoint](http://hl7.org/fhir/R4/endpoint.html)
+* [healthcareservice](http://hl7.org/fhir/R4/healthcareservice.html)
 * [insuranceplan](http://hl7.org/fhir/R4/insuranceplan.html)
 * [location](http://hl7.org/fhir/R4/location.html)
 * [organization](http://hl7.org/fhir/R4/organization.html)
