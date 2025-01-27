@@ -123,6 +123,7 @@
 <artifact id="SearchParameter/insuranceplan-coverage-area" key="SearchParameter-insuranceplan-coverage-area" name="Plannet_sp_insuranceplan_coverage_area"/>
 <artifact id="SearchParameter/insuranceplan-identifier" key="SearchParameter-insuranceplan-identifier" name="Plannet_sp_insuranceplan_identifier"/>
 <artifact id="SearchParameter/insuranceplan-name" key="SearchParameter-insuranceplan-name" name="Plannet_sp_insuranceplan_name"/>
+<artifact id="SearchParameter/insuranceplan-network" key="SearchParameter-insuranceplan-network" name="Plannet_sp_insuranceplan_network"/>
 <artifact id="SearchParameter/insuranceplan-owned-by" key="SearchParameter-insuranceplan-owned-by" name="Plannet_sp_insuranceplan_owned_by"/>
 <artifact id="SearchParameter/insuranceplan-plan-type" key="SearchParameter-insuranceplan-plan-type" name="Plannet_sp_insuranceplan_plan_type"/>
 <artifact id="SearchParameter/insuranceplan-type" key="SearchParameter-insuranceplan-type" name="Plannet_sp_insuranceplan_type"/>
@@ -139,6 +140,7 @@
 <artifact id="SearchParameter/organization-endpoint" key="SearchParameter-organization-endpoint" name="Plannet_sp_organization_endpoint"/>
 <artifact id="SearchParameter/organization-name" key="SearchParameter-organization-name" name="Plannet_sp_organization_name"/>
 <artifact id="SearchParameter/organization-partof" key="SearchParameter-organization-partof" name="Plannet_sp_organization_partof"/>
+<artifact id="SearchParameter/organization-period" key="SearchParameter-organization-period" name="Plannet_sp_organization_period"/>
 <artifact id="SearchParameter/organization-type" key="SearchParameter-organization-type" name="Plannet_sp_organization_type"/>
 <artifact id="SearchParameter/organizationaffiliation-endpoint" key="SearchParameter-organizationaffiliation-endpoint" name="Plannet_sp_organizationaffiliation_endpoint"/>
 <artifact id="SearchParameter/organizationaffiliation-location" key="SearchParameter-organizationaffiliation-location" name="Plannet_sp_organizationaffiliation_location"/>
@@ -152,6 +154,7 @@
 <artifact id="SearchParameter/practitioner-family-name" key="SearchParameter-practitioner-family-name" name="Plannet_sp_practitioner_family_name"/>
 <artifact id="SearchParameter/practitioner-given-name" key="SearchParameter-practitioner-given-name" name="Plannet_sp_practitioner_given_name"/>
 <artifact id="SearchParameter/practitioner-name" key="SearchParameter-practitioner-name" name="Plannet_sp_practitioner_name"/>
+<artifact id="SearchParameter/practitioner-period" key="SearchParameter-practitioner-period" name="Plannet_sp_practitioner_period"/>
 <artifact id="SearchParameter/practitionerrole-endpoint" key="SearchParameter-practitionerrole-endpoint" name="Plannet_sp_practitionerrole_endpoint"/>
 <artifact id="SearchParameter/practitionerrole-location" key="SearchParameter-practitionerrole-location" name="Plannet_sp_practitionerrole_location"/>
 <artifact id="SearchParameter/practitionerrole-network" key="SearchParameter-practitionerrole-network" name="Plannet_sp_practitionerrole_network"/>
@@ -175,8 +178,6 @@
 <artifact id="CodeSystem/VirtualModalitiesCS" key="CodeSystem-VirtualModalitiesCS" name="Virtual Modalities"/>
 <artifact id="ValueSet/VirtualModalitiesVS" key="ValueSet-VirtualModalitiesVS" name="Virtual Modalities VS"/>
 <artifact id="HealthcareService/VirtualCounselService" key="HealthcareService-VirtualCounselService" name="VirtualCounselService"/>
-<artifact id="SearchParameter/organization-period" key="SearchParameter-organization-period" name="organization-period"/>
-<artifact id="SearchParameter/practitioner-period" key="SearchParameter-practitioner-period" name="practitioner-period"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

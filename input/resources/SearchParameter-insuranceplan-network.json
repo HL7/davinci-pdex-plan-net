@@ -1,0 +1,47 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "insuranceplan-network",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fm"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-network",
+  "version" : "1.2.0",
+  "name" : "Plannet_sp_insuranceplan_network",
+  "status" : "active",
+  "date" : "2025-01-27T12:58:41-05:00",
+  "publisher" : "HL7 International / Financial Management",
+  "contact" : [{
+    "name" : "HL7 International / Financial Management",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fm"
+    },
+    {
+      "system" : "email",
+      "value" : "fm@lists.HL7.org"
+    }]
+  }],
+  "description" : "Select Organization entries in a given InsurancePlan's network",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "code" : "network",
+  "base" : ["InsurancePlan"],
+  "type" : "reference",
+  "expression" : "InsurancePlan.network",
+  "multipleOr" : true
+}
