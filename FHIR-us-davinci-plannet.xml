@@ -161,6 +161,7 @@
 <artifact id="SearchParameter/practitionerrole-role" key="SearchParameter-practitionerrole-role" name="Plannet_sp_practitionerrole_role"/>
 <artifact id="SearchParameter/practitionerrole-service" key="SearchParameter-practitionerrole-service" name="Plannet_sp_practitionerrole_service"/>
 <artifact id="SearchParameter/practitionerrole-specialty" key="SearchParameter-practitionerrole-specialty" name="Plannet_sp_practitionerrole_specialty"/>
+<artifact id="StructureDefinition/practitioner-period" key="StructureDefinition-practitioner-period" name="Practitioner Description"/>
 <artifact id="StructureDefinition/practitioner-qualification" key="StructureDefinition-practitioner-qualification" name="Practitioner Qualification"/>
 <artifact id="ValueSet/PractitionerRoleVS" key="ValueSet-PractitionerRoleVS" name="PractitionerRole Code VS"/>
 <artifact id="CodeSystem/ProviderRoleCS" key="CodeSystem-ProviderRoleCS" name="Provider Role Codes"/>
@@ -174,6 +175,8 @@
 <artifact id="CodeSystem/VirtualModalitiesCS" key="CodeSystem-VirtualModalitiesCS" name="Virtual Modalities"/>
 <artifact id="ValueSet/VirtualModalitiesVS" key="ValueSet-VirtualModalitiesVS" name="Virtual Modalities VS"/>
 <artifact id="HealthcareService/VirtualCounselService" key="HealthcareService-VirtualCounselService" name="VirtualCounselService"/>
+<artifact id="SearchParameter/organization-period" key="SearchParameter-organization-period" name="organization-period"/>
+<artifact id="SearchParameter/practitioner-period" key="SearchParameter-practitioner-period" name="practitioner-period"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

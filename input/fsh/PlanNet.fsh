@@ -327,7 +327,8 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * meta.lastUpdated 1..1
 * extension contains
    Qualification named qualification 0..*  MS and
-   OrgDescription named org-description  0..1 MS
+   OrgDescription named org-description  0..1 MS and
+   OrgPeriod named org-period 0..1 MS 
 * extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
 * extension[qualification] ^short = "Qualification"
 * extension[org-description] ^short = "Organization Description"
