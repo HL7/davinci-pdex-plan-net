@@ -12,6 +12,3 @@ WARNING: DA VINCI: The Change Log page (ChangeHistory.html) does not include any
 # The project page has such a section, but this warning appears anyway
 
 WARNING: DA VINCI: The Project page (project.html) should include a section called ^The Da Vinci [Something] project^
- 
-
-

@@ -46,6 +46,7 @@ Description: "Individual Specialties, Degrees, Licenses, and Certificates"
 * ^experimental = false
 * codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from system $V2table0360CS
+* AccessibilityCS#cultcomp "Cultural competence"
 
 ValueSet: NonIndividualSpecialtyAndDegreeLicenseCertificateVS
 Title: "Non-Individual Specialties, Degrees, Licenses, and Certificates VS"
