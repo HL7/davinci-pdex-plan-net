@@ -3,7 +3,7 @@
 ### Da Vinci
 {% include davinci.md %}
 
-### The PDex Plan-Net project:
+### The Da Vinci PDex Plan-Net project:
 
 * Enables patient to more easily understand what providers, facilities, pharmacies are in the network covered by the current or potential future plan. 
 * Increases transparency of available service providers at patient specific level

@@ -6,21 +6,7 @@
 <p>Access to the Plan-Net service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that were queried.</p>
 <p>A conformant Plan-Net service <strong>SHALL NOT</strong> require a directory mobile application to send consumer identifying information in order to query content.</p>
 <p>A directory mobile application <strong>SHALL NOT</strong> send consumer identifiable information when querying a Plan-Net service.</p>
-<h4><a id="must-support"></a>Must Support</h4>
-<p>When querying and reading the Plan-Net Profiles defined in this IG, Must Support on any profile data element <strong>SHALL</strong> be interpreted as follows:</p>
-<h5>Health Plan API Requirements</h5>
-<ul>
-<li>Health Plan API actors <strong>SHALL</strong> be capable of populating all Must Support data elements as part of the query results.</li>
-<li>In situations where information on a particular Must Support data element is not present and the minimum cardinality is 0 , the Health Plan API actors <strong>SHALL NOT</strong> include the data elements in the resource instance returned as part of the query results.</li>
-<li>In situations where information on a particular data element is not present and the minimum cardinality is &gt;0 <strong>SHALL</strong>&nbsp;send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or use the dataAbsentReason extension.</li>
-</ul>
-<h5>Application Requirements</h5>
-<ul>
-<li>Application actors&nbsp;<strong>SHALL</strong> be capable of processing resource instances containing the Must Support data elements without generating an error or causing the application to fail.</li>
-<li>Application actors <strong>SHOULD</strong> be capable of displaying the data elements for human use or storing the information for other purposes.</li>
-<li>When querying Health Plan API actors, Application actors <strong>SHALL</strong>&nbsp;interpret missing Must Support data elements within resource instances as data not present in the Health Plan API actors system.</li>
-<li>Consumer App actors&nbsp;<strong>SHALL</strong>&nbsp;be able to process resource instances containing Must Support data elements asserting missing information.</li>
-</ul>
+
 <h4><a id="relationship-to-us-core"></a>Client Detection of Updates Directory Content</h4>
 <p>Each profile in this guide requires that the lastUpdate timestamp be provided as part of the profile's data content.&nbsp; Clients that cache query results can track additions or modifications to directory content through queries that filter content using the _lastUpdated search parameter.&nbsp; Clients should periodically check that data cached from past queries has not been deleted by querying for the same elements by _id.</p>
 <h4><a id="general-security-considerations"></a>General Security Considerations</h4>
@@ -329,3 +315,11 @@ If no period is provided, then it is assumend the role is active with no expirat
 </tbody>
 </table>
 <div>&nbsp;</div>
+
+### Bulk Data
+Bulk data guidance in this version of the IG is draft only. It has not appeared in ballot and has not been fully tested.</i></b>
+
+A server **MAY** support [Bulk Data IG](http://hl7.org/fhir/uv/bulkdata/index.html) for the retrieval of directory data. 
+If and how authorization is supported is not defined by this specification, however, the Bulk IG does provide guidance on SMART Backend Service Authorization. 
+
+In the future, this IG will likely align bulk data support with the [National Directory Bulk Data implementation section](https://build.fhir.org/ig/HL7/fhir-us-ndh/ndapi-ig.html#bulk-data-export-of-the-national-directory), but that is currently unpublished.
