@@ -5,7 +5,7 @@ Parent:         Endpoint
 Id:             plannet-Endpoint 
 Title:          "Plan-Net Endpoint"
 Description:    "The technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging."
-* meta.lastUpdated 1..1
+// * meta.lastUpdated 1..1
 * extension contains 
     EndpointUsecase named endpoint-usecase 0..* MS
 * extension[endpoint-usecase] ^short = "Endpoint Usecase"
@@ -104,7 +104,7 @@ Parent:         HealthcareService
 Id:             plannet-HealthcareService
 Title:          "Plan-Net HealthcareService"
 Description:    "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
-* meta.lastUpdated 1..1
+// * meta.lastUpdated 1..1
 * extension contains
     NewPatients named newpatients 0..* MS and
     DeliveryMethod named deliverymethod 0..* MS 
@@ -171,7 +171,7 @@ Description:    "An InsurancePlan is a discrete package of health insurance cove
 InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."
 * obeys network-or-plan-Network 
 * obeys plan-type-is-distinct
-* meta.lastUpdated 1..1
+// * meta.lastUpdated 1..1
 * identifier.type MS
 * identifier.value MS
 * identifier.assigner MS
@@ -214,7 +214,7 @@ Id:             plannet-Location
 Title:          "Plan-Net Location"
 Description:    "A Location is the physical place where healthcare services are provided, practitioners are employed, 
                  organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."
-* meta.lastUpdated 1..1
+// * meta.lastUpdated 1..1
 * extension contains
     NewPatients named newpatients 0..* MS and
     Accessibility named accessibility 0..* MS and
@@ -277,7 +277,7 @@ Title:          "Plan-Net Network"
 Description:    "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
 
 In the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively."
-* meta.lastUpdated 1..1
+// * meta.lastUpdated 1..1
 * extension contains
     LocationReference named location-reference 0..* MS
 * extension[location-reference] ^short = "Network coverage area"
@@ -324,7 +324,7 @@ Id:             plannet-Organization
 Title:          "Plan-Net Organization"
 Description:    "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.
 Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"
-* meta.lastUpdated 1..1
+// * meta.lastUpdated 1..1
 * extension contains
    Qualification named qualification 0..*  MS and
    OrgDescription named org-description  0..1 MS and
@@ -385,7 +385,7 @@ Parent:         OrganizationAffiliation
 Id:             plannet-OrganizationAffiliation
 Title:          "Plan-Net OrganizationAffiliation"
 Description:    "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."
-* meta.lastUpdated 1..1
+// * meta.lastUpdated 1..1
 * obeys organization-or-participatingOrganization 
 * extension contains
    Qualification named qualification 0..* 
@@ -437,7 +437,7 @@ Parent:         $USCorePractitioner
 Id:             plannet-Practitioner
 Title:          "Plan-Net Practitioner"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
-* meta.lastUpdated 1..1
+// * meta.lastUpdated 1..1
 * identifier.type MS
 * identifier.value MS
 * active 1..1  MS
@@ -482,7 +482,7 @@ Id:             plannet-PractitionerRole
 Title:          "Plan-Net PractitionerRole"
 Description:    "PractitionerRole typically describes details about a provider. When the provider is a practitioner, there may be a relationship to an organization. A provider renders services to patients at a location. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization. PractitionerRole involves either the actual or potential (hence the optionality on Practitioner) of an individual to play this role on behalf of or under the auspices of an organization. The absence of a Practitioner resource does not imply that the Organization itself is playing the role of a Practitioner, instead it implies that that role has been established by the Organization and MAY apply that to a specific Practitioner."
 
-* meta.lastUpdated 1..1
+// * meta.lastUpdated 1..1
 * obeys practitioner-or-organization-or-healthcareservice-or-location 
 * extension contains
    NewPatients named newpatients 0..* MS and

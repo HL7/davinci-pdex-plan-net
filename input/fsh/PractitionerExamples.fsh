@@ -2,10 +2,8 @@ Instance: JoeSmith
 InstanceOf: PlannetPractitioner
 Description: "Practitioner Dr Joe Smith"
 Usage: #example
-* meta.profile = Canonical(PlannetPractitioner)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
-* language = #en-US
 * active = true
+* extension[practitioner-period].valuePeriod.start = "2020-07-07"
 * identifier[NPI].value = "9941339100"
 * identifier[NPI].system = $NPICS
 * name.text = "Joe Smith, MD"
@@ -32,9 +30,6 @@ Instance: HansSolo
 InstanceOf: PlannetPractitioner
 Description: "Solo Practitioner Hans Solo"
 Usage: #example
-* meta.profile = Canonical(PlannetPractitioner)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
-* language = #en-US
 * active = true
 * identifier[NPI].value = "9941339100"
 * identifier[NPI].system = $NPICS
