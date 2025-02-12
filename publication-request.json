@@ -1,0 +1,10 @@
+{
+    "package-id": "hl7.fhir.us.davinci-pdex-plan-net",
+    "version": "1.2.0",
+    "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.2",
+    "mode" : "milestone",
+    "status" : "trial-use",
+    "sequence" : "STU 1",
+    "desc" : "STU update to move to latest US Core versions",
+    "first" : false
+}

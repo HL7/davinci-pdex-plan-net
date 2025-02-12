@@ -1,7 +1,6 @@
 
 ### Changes and Updates for Version 1.2.0
 
-
 The following high level changes addressed in this release:
 
 * Updated dependencies to reference to multiple versions of US Core per latest Da Vinci recommendations (7.0.0, 6.1.0, and 3.1.1)

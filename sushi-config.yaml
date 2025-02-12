@@ -57,7 +57,7 @@ parameters:
   jira-code: davinci-plannet
   shownav: 'true'
 copyrightYear: 2025+
-releaseLabel: STU 2
+releaseLabel: STU 1
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
 # │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │
