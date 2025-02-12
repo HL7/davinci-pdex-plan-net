@@ -56,8 +56,8 @@ parameters:
   show-inherited-invariants: false
   jira-code: davinci-plannet
   shownav: 'true'
-copyrightYear: 2022+
-releaseLabel: STU 2 (ci-build)
+copyrightYear: 2025+
+releaseLabel: STU 2
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
 # │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │
@@ -76,14 +76,7 @@ menu:
     Conformance Expectations        : confexpectations.html
     Implementation                  : implementation.html
     Privacy, Safety, and Security   : security.html
-  FHIR Artifacts:
-    Profiles            : artifacts.html#3
-    Extensions          : artifacts.html#4
-    Search Parameters   : artifacts.html#2
-    Terminology         : artifacts.html#5
-    Capability Statement: artifacts.html#1
-    Examples            : artifacts.html#6  
-  
+  FHIR Artifacts: artifacts.html
   Base Specs:
     FHIR R4 Spec: new-tab {{site.data.fhir.path}}
     HRex 1.1.0: new-tab {{site.data.fhir.ver.hrex}}
