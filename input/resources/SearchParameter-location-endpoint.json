@@ -5,7 +5,7 @@
   "version" : "0.2.0",
   "name" : "Plannet_sp_location_endpoint",
   "derivedFrom" : "http://hl7.org/fhir/SearchParameter/Location-endpoint",
-  "status" : "draft",
+  "status" : "active",
   "date" : "2018-05-23T00:00:00+00:00",
   "publisher" : "HL7 Patient Administration Committee",
   "contact" : [

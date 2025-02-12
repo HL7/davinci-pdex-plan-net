@@ -1,14 +1,74 @@
 == Suppressed Messages ==
 
-# Approved US Core Variance for Practitioner (Approved by US Core in original IG version)
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole').baseDefinition: US FHIR Usage rules require that all profiles on PractitionerRole derive from the core US profile
-
-
 # The following historical IG versions did not include any JIRA trackers in their change logs, if they had a change log at all.
 
 WARNING: DA VINCI: The Change Log page (ChangeHistory.html) does not include any Jira tracker items links for the section with title Changes and Updates for Version 1.0.0
 WARNING: DA VINCI: The Change Log page (ChangeHistory.html) does not include any Jira tracker items links for the section with title Changes and Updates for Version 0.1.0
 
-# The project page has such a section, but this warning appears anyway
+# Will update slicing for the next balloted version
 
-WARNING: DA VINCI: The Project page (project.html) should include a section called ^The Da Vinci [Something] project^
+INFORMATION: StructureDefinition/plannet-HealthcareService: StructureDefinition.differential.element[8].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+
+INFORMATION: StructureDefinition/plannet-HealthcareService: StructureDefinition.snapshot.element[22].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+
+INFORMATION: StructureDefinition/plannet-Network: StructureDefinition.snapshot.element[10].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+
+INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+
+INFORMATION: StructureDefinition/plannet-Practitioner: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+
+# Acknowledged that this applies to all repeats
+
+INFORMATION: StructureDefinition/plannet-Network: StructureDefinition.snapshot.element[19].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+
+INFORMATION: StructureDefinition/plannet-Network: StructureDefinition.snapshot.element[20].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+
+INFORMATION: StructureDefinition/plannet-Network: StructureDefinition.snapshot.element[21].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+
+INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[21].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+
+INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[22].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+
+INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[23].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+
+INFORMATION: StructureDefinition/plannet-Practitioner: StructureDefinition.snapshot.element[18].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+
+# Acknowledge using deprecated extension. Will not change for this STU update to preserve backwards compatibility. Will consider changing for next ballot
+
+INFORMATION: StructureDefinition/plannet-Endpoint: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+
+INFORMATION: StructureDefinition/plannet-Endpoint: StructureDefinition.snapshot.element[12].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet|5.2.0 is deprecated
+
+# Acknowledge using draft code system
+
+INFORMATION: OrganizationAffiliation/HartfordOrthopedicAffil: OrganizationAffiliation.code[0]: Reference to draft CodeSystem http://hl7.org/fhir/organization-role|4.0.1
+
+# Not moving code systems to THO for this STU update, since it would impact backwards compatibility
+
+INFORMATION: CodeSystem/AcceptingPatientsCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+INFORMATION: CodeSystem/AccessibilityCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+INFORMATION: CodeSystem/DeliveryMethodCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+INFORMATION: CodeSystem/EndpointConnectionTypeCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+INFORMATION: CodeSystem/EndpointPayloadTypeCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+INFORMATION: CodeSystem/HealthcareServiceCategoryCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+INFORMATION: CodeSystem/InsurancePlanTypeCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+INFORMATION: CodeSystem/InsuranceProductTypeCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+INFORMATION: CodeSystem/LanguageProficiencyCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+INFORMATION: CodeSystem/OrganizationAffiliationRoleCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+INFORMATION: CodeSystem/ProviderRoleCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+INFORMATION: CodeSystem/QualificationStatusCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+INFORMATION: CodeSystem/VirtualModalitiesCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+INFORMATION: CodeSystem/OrgTypeCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)

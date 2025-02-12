@@ -82,7 +82,7 @@ menu:
     Search Parameters   : artifacts.html#2
     Terminology         : artifacts.html#5
     Capability Statement: artifacts.html#1
-    Examples            : artifacts.html#7  
+    Examples            : artifacts.html#6  
   
   Base Specs:
     FHIR R4 Spec: new-tab {{site.data.fhir.path}}

@@ -101,7 +101,7 @@
 </tr>
 </tbody>
 </table>
-<p>The content in this section of the IG is based on the <a href="artifacts.html#7">examples</a> provided and on the patterns provided <a href="patterns.pptx">here</a>.<br />Specific examples are referenced in the text below.</p>
+<p>The content in this section of the IG is based on the <a href="artifacts.html">examples</a> provided and on the patterns provided <a href="patterns.pptx">here</a>.<br />Specific examples are referenced in the text below.</p>
 <h4><a id="searching-for-active"></a>Searching for active Practictioners and Organizations</h4>
 <p>
 Sample query to search for currently active Practitioners (replace date in query with current date):<br/>
