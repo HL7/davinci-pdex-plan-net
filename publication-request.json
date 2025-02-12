@@ -4,7 +4,7 @@
     "path": "http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.2",
     "mode" : "milestone",
     "status" : "trial-use",
-    "sequence" : "STU 1",
+    "sequence" : "STU1.2",
     "desc" : "STU update to move to latest US Core versions",
     "first" : false
 }
