@@ -1,6 +1,6 @@
 == Suppressed Messages ==
 
-# The following historical IG versions did not include any JIRA trackers in their change logs, if they had a change log at all.
+# This is a Da Vinci requirement, but the following historical IG versions did not include any JIRA trackers in their change logs, if they had a change log at all.
 
 WARNING: DA VINCI: The Change Log page (ChangeHistory.html) does not include any Jira tracker items links for the section with title Changes and Updates for Version 1.0.0
 WARNING: DA VINCI: The Change Log page (ChangeHistory.html) does not include any Jira tracker items links for the section with title Changes and Updates for Version 0.1.0
