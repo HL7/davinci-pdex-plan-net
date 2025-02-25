@@ -116,11 +116,11 @@ Description:    "The HealthCareService resource typically describes services off
 * active = true 
 * providedBy only Reference(PlannetOrganization) 
 * providedBy MS
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category ^slicing.ordered = false   // can be omitted, since false is the default
-* category ^slicing.description = "Slice based on $this pattern"
+* category ^slicing.description = "Slice based on $this value"
 * category 1..* MS
 * category contains 
 	plan-net-category 0..1 MS
