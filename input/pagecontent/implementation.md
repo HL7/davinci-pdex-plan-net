@@ -317,7 +317,7 @@ If no period is provided, then it is assumend the role is active with no expirat
 <div>&nbsp;</div>
 
 ### Bulk Data
-Bulk data guidance in this version of the IG is draft only. It has not appeared in ballot and has not been fully tested.</i></b>
+Bulk data guidance in this version of the IG is draft only. It has not appeared in ballot and has not been fully tested.
 
 A server **MAY** support [Bulk Data IG](http://hl7.org/fhir/uv/bulkdata/index.html) for the retrieval of directory data. 
 If and how authorization is supported is not defined by this specification, however, the Bulk IG does provide guidance on SMART Backend Service Authorization. 
