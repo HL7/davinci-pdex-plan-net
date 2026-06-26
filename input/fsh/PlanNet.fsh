@@ -184,6 +184,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 	MA-PLAN-ID 0..1 MS
 * identifier[MA-PLAN-ID].system 1..1 MS
 * identifier[MA-PLAN-ID].system = "http://cms.gov/medicare/ma-plan-id"
+* identifier[MA-PLAN-ID].value 1..1 MS
 * status 1..1 MS
 * status = #active  (exactly) 
 * type 1..1 MS 
