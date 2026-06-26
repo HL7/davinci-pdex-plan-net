@@ -172,9 +172,18 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * obeys network-or-plan-Network 
 * obeys plan-type-is-distinct
 // * meta.lastUpdated 1..1
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "$this"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false   // can be omitted, since false is the default
+* identifier ^slicing.description = "Slice based on $this value"
 * identifier.type MS
 * identifier.value MS
 * identifier.assigner MS
+* identifier contains
+	MA-PLAN-ID 0..1 MS
+* identifier[MA-PLAN-ID].system 1..1 MS
+* identifier[MA-PLAN-ID].system = "http://cms.gov/medicare/ma-plan-id"
 * status 1..1 MS
 * status = #active  (exactly) 
 * type 1..1 MS 
