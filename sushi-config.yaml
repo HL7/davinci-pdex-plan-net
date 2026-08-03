@@ -30,6 +30,12 @@ extension:
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:  
+  hl7.fhir.us.core:
+    version: 7.0.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore7
+    reason: |
+      Needed for systems supporting USCDI v4
   hl7.fhir.us.core.v311:
     version: 3.1.1
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
@@ -42,16 +48,14 @@ dependencies:
     id: uscore6
     reason: |
       Needed for systems supporting USCDI v3
-  hl7.fhir.us.core:
-    version: 7.0.0
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
-    id: uscore7
-    reason: |
-      Needed for systems supporting USCDI v4
   hl7.fhir.us.davinci-hrex:
     uri: http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/hl7.fhir.us.davinci-hrex
-    version: 1.1.0
+    version: 1.2.0
     id: hrex
+  hl7.fhir.uv.bulkdata:
+    uri: https://hl7.org/fhir/uv/bulkdata/en/
+    version: current
+    id: bulk
 parameters:
   show-inherited-invariants: false
   jira-code: davinci-plannet
