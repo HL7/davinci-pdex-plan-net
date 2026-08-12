@@ -12,7 +12,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.davinci-pdex-plan-net
 canonical: http://hl7.org/fhir/us/davinci-pdex-plan-net
-version: 1.2.0
+version: 2.0.0-ballot
 name: DaVinciPDEXPlanNet
 title: Da Vinci PDex Plan Net
 status: active
@@ -60,8 +60,8 @@ parameters:
   show-inherited-invariants: false
   jira-code: davinci-plannet
   shownav: 'true'
-copyrightYear: 2025+
-releaseLabel: STU1.2
+copyrightYear: 2026+
+releaseLabel: STU2
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
 # │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │
