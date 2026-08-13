@@ -1,18 +1,27 @@
-<h3><a name="Implementation"></a>Implementation Notes</h3>
-<p>This page contains miscellaneous information on FHIR implementation. The content is primarily directed at implementers of Plan-Net.</p>
-<h4><a id="conformance-requirements"></a>Conformance Requirements</h4>
-<p>The conformance verbs (<strong>SHALL</strong>, <strong>SHALL NOT,&nbsp;</strong><strong>SHOULD</strong>, <strong>MAY</strong>) used in this guide are defined in <a href="http://hl7.org/fhir/R4/conformance-rules.html">FHIR Conformance Rules</a>.</p>
-<h4><a id="privacy-considerations"></a>Privacy Considerations</h4>
-<p>Access to the Plan-Net service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that were queried.</p>
-<p>A conformant Plan-Net service <strong>SHALL NOT</strong> require a directory mobile application to send consumer identifying information in order to query content.</p>
-<p>A directory mobile application <strong>SHALL NOT</strong> send consumer identifiable information when querying a Plan-Net service.</p>
+### Implementation Notes
 
-<h4><a id="relationship-to-us-core"></a>Client Detection of Updates Directory Content</h4>
-<p>Each profile in this guide requires that the lastUpdate timestamp be provided as part of the profile's data content.&nbsp; Clients that cache query results can track additions or modifications to directory content through queries that filter content using the _lastUpdated search parameter.&nbsp; Clients should periodically check that data cached from past queries has not been deleted by querying for the same elements by _id.</p>
-<h4><a id="general-security-considerations"></a>General Security Considerations</h4>
-<p><strong>NO CONTENT</strong></p>
-<h3><a name="Representing"></a>Representing and Searching Provider Directory Data</h3>
-<p>It is important for payers to use the Plan-Net profiles consistently in order to achieve true interoperability of directory information among payers. The intent of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data.&nbsp; The Plan-Net design is based around the following types of searches.</p>
+This page contains miscellaneous information on FHIR implementation. The content is primarily directed at implementers of Plan-Net.
+
+#### Conformance Requirements
+
+The conformance verbs *SHALL*, *SHALL NOT*, *SHOULD*, and *MAY) used in this guide are defined in 
+[FHIR Conformance Rules](http://hl7.org/fhir/R4/conformance-rules.html).
+
+#### Privacy Considerations
+Access to the Plan-Net service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that were queried.
+
+A conformant Plan-Net service *SHALL NOT* require a directory mobile application to send consumer identifying information in order to query content.
+
+A directory mobile application *SHALL NOT* send consumer identifiable information when querying a Plan-Net service.
+
+#### Client Detection of Updates Directory Content
+
+Clients that cache query results can track additions or modifications to directory content through queries that filter content using the _lastUpdated search parameter.  Clients should periodically check that data cached from past queries has not been deleted by querying for the same elements by _id. Note that _lastUpdated is server-controlled metadata, and it represents the time the server content was updated, not necessarily the update date from a business perspective. For example, if an InsurancePlan was updated in a backend system a week ago, but the changed content was added to the server today, the _lastUpdated date will be today. 
+
+### Representing and Searching Provider Directory Data
+
+It is important for payers to use the Plan-Net profiles consistently in order to achieve true interoperability of directory information among payers. The intent of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data. The Plan-Net design is based around the following types of searches.
+
 <table style="border-color: Black;" border="3" width="947">
 <tbody>
 <tr>
@@ -101,20 +110,27 @@
 </tr>
 </tbody>
 </table>
-<p>The content in this section of the IG is based on the <a href="artifacts.html">examples</a> provided and on the patterns provided <a href="patterns.pptx">here</a>.<br />Specific examples are referenced in the text below.</p>
-<h4><a id="searching-for-active"></a>Searching for active Practictioners and Organizations</h4>
-<p>
-Sample query to search for currently active Practitioners (replace date in query with current date):<br/>
-http://davinci-plan-net-ri.logicahealth.org/fhir/PractitionerRole?_include=PractitionerRole:date=ge2021-10-25 <br/><br/>
-Sample query to search for currently active Organizations (replace date in query with current date): <br/>
-http://davinci-plan-net-ri.logicahealth.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:date=ge2021-10-25 <br/><br/>
-To search for Practitioners or Organizations that will be active at a future time, change the date to a future date.<br/><br/>
-If no period is provided, then it is assumend the role is active with no expiration date.
-</p>
 
-<h4><a name="HealthcareService"></a>HealthcareService</h4>
-<p>The first type of search starts from HealthcareService.category and HealthcareService.specialty, so it is essential that each provider's service be supported by appropriate set of HealthcareService instances.&nbsp; HealthcareServices are typically provided by an organization, except in the case of a Practitioner that is not associated with an organization (see the solo practitioner example), and can be linked to a set of locations where service is provided, or identified as virtual services through an indicated set of virtual modalities.&nbsp; &nbsp;The examples illustrate this with an organization that provides three distinct Pharmacy services -- retail, compounding, and mail-order -- across its locations.&nbsp; All organizations that provide service should define an appropriate set. of HealthcareServices to facilitate search.&nbsp; The HealthcareService category, specialty and type fields are the highest level of organization of the services provided by the provider's network.</p>
-<p>Relevant examples:</p>
+The content in this section of the IG is based on the <a href="artifacts.html">examples</a> provided and on the patterns provided <a href="patterns.pptx">here</a>.<br />Specific examples are referenced in the text below.
+
+
+#### Searching for active Practictioners and Organizations
+
+Sample query to search for currently active Practitioners (replace date in query with current date):
+http://davinci-plan-net-ri.logicahealth.org/fhir/PractitionerRole?_include=PractitionerRole:date=ge2021-10-25
+
+Sample query to search for currently active Organizations (replace date in query with current date):
+http://davinci-plan-net-ri.logicahealth.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:date=ge2021-10-25
+
+To search for Practitioners or Organizations that will be active at a future time, change the date to a future date.
+
+If no period is provided, then it is assumend the role is active with no expiration date.
+
+#### HealthcareService
+The first type of search starts from HealthcareService.category and HealthcareService.specialty, so it is essential that each provider's service be supported by appropriate set of HealthcareService instances.&nbsp; HealthcareServices are typically provided by an organization, except in the case of a Practitioner that is not associated with an organization (see the solo practitioner example), and can be linked to a set of locations where service is provided, or identified as virtual services through an indicated set of virtual modalities.&nbsp; &nbsp;The examples illustrate this with an organization that provides three distinct Pharmacy services -- retail, compounding, and mail-order -- across its locations.&nbsp; All organizations that provide service should define an appropriate set. of HealthcareServices to facilitate search.&nbsp; The HealthcareService category, specialty and type fields are the highest level of organization of the services provided by the provider's network.
+
+Relevant examples:
+
 <table style="height: 119px; border-color: Black;" border="1" width="509">
 <tbody>
 <tr>
@@ -161,10 +177,15 @@ If no period is provided, then it is assumend the role is active with no expirat
 </tr>
 </tbody>
 </table>
-<h4><a name="InsurancePlanAndNetwork"></a>Insurance Plan and Network<br /><br /></h4>
-<p>Each payer will offer one or more products -- Insurance Plans -- and each plan is associated with one or more Networks.&nbsp; Practitioners and Organizations indicate participation in a Network with a link to the Network using a PractitionerRole or OrganizationAffiliation instance, respectively.&nbsp; &nbsp;PractitionerRole and OrganizationAffiliation instances are what tie Practitioners and Organizations to HealthcareServices, Organizations, Networks and Locations.</p>
-<p>The examples demonstrate the use of the InsurancePlan profile to represent two distinct Qualified Health Plan products covering the state of Connecticut, using a pair of Networks.&nbsp; The practitioners and organizations in the examples participate in one or both of these networks.</p>
-<p>Relevant examples:</p>
+
+#### Insurance Plan and Network
+
+Each payer will offer one or more products -- Insurance Plans -- and each plan is associated with one or more Networks.&nbsp; Practitioners and Organizations indicate participation in a Network with a link to the Network using a PractitionerRole or OrganizationAffiliation instance, respectively.&nbsp; &nbsp;PractitionerRole and OrganizationAffiliation instances are what tie Practitioners and Organizations to HealthcareServices, Organizations, Networks and Locations.
+
+The examples demonstrate the use of the InsurancePlan profile to represent two distinct Qualified Health Plan products covering the state of Connecticut, using a pair of Networks.&nbsp; The practitioners and organizations in the examples participate in one or both of these networks.
+
+Relevant examples:
+
 <table border="1" width="509">
 <tbody>
 <tr>
@@ -195,9 +216,13 @@ If no period is provided, then it is assumend the role is active with no expirat
 </tr>
 </tbody>
 </table>
-<h4><a name="Location"></a>Location</h4>
-<p>Location instances provide information about location where service is provided, including contact information, address, accessibility, hours of operation and contact, as well as position (lattitude and longitude).&nbsp; &nbsp;Locations can also be used to represent regions using an associated or attached GeoJSON object.</p>
-<p>Relevant examples:</p>
+
+#### Location
+
+Location instances provide information about location where service is provided, including contact information, address, accessibility, hours of operation and contact, as well as position (lattitude and longitude).&nbsp; &nbsp;Locations can also be used to represent regions using an associated or attached GeoJSON object.
+
+Relevant examples:
+
 <table border="1" width="509">
 <tbody>
 <tr>
@@ -228,8 +253,11 @@ If no period is provided, then it is assumend the role is active with no expirat
 </tr>
 </tbody>
 </table>
-<h4><a name="PractitionersAndPractitionerRole"></a>Practitioners and PractitionerRoles</h4>
-<p>Practitioner instances provide information about a specific person, including name, gender, languages spoken, and qualifications.&nbsp; &nbsp;PractitionerRole defines a role for a particular practitioner, and associates it with locations, specialties, an organization, and networks.</p>
+
+#### Practitioners and PractitionerRoles
+
+Practitioner instances provide information about a specific person, including name, gender, languages spoken, and qualifications.&nbsp; &nbsp;PractitionerRole defines a role for a particular practitioner, and associates it with locations, specialties, an organization, and networks.
+
 <table style="height: 243px; width: 803px;" border="1">
 <tbody>
 <tr>
@@ -268,8 +296,10 @@ If no period is provided, then it is assumend the role is active with no expirat
 </tr>
 </tbody>
 </table>
-<h4><a name="OrganizationAndOrganizationAffiliation"></a>Organizations and Organization Affiliations</h4>
-<p>Organization instances provide information about a specific organization and organizational hierarchies, including organization name, specialty, type, address and contact information.&nbsp; Organization Affiliation instances describe a role, and link a participating organization that provides or performs the role, with an organization where that role is available, and also links the participating organization to a HealthcareServices and networks.&nbsp; OrganizationalAffiliation can also be used to associate a HealthcareService provided by an organization with networks.</p>
+
+#### Organizations and Organization Affiliations
+
+Organization instances provide information about a specific organization and organizational hierarchies, including organization name, specialty, type, address and contact information.&nbsp; Organization Affiliation instances describe a role, and link a participating organization that provides or performs the role, with an organization where that role is available, and also links the participating organization to a HealthcareServices and networks. OrganizationalAffiliation can also be used to associate a HealthcareService provided by an organization with networks.
 <table border="1">
 <tbody>
 <tr>
@@ -300,8 +330,10 @@ If no period is provided, then it is assumend the role is active with no expirat
 </tr>
 </tbody>
 </table>
-<h4><a name="Privacy"></a>Endpoints</h4>
-<p>An Endpoint instance&nbsp;provides&nbsp; technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging.</p>
+
+#### Endpoints
+An Endpoint instance&nbsp;provides&nbsp; technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging.
+
 <table style="height: 33px;" border="1" width="776">
 <tbody>
 <tr>
@@ -314,7 +346,6 @@ If no period is provided, then it is assumend the role is active with no expirat
 </tr>
 </tbody>
 </table>
-<div>&nbsp;</div>
 
 ### Bulk Data
 Bulk data guidance in this version of the IG is draft only. It has not appeared in ballot and has not been fully tested.
