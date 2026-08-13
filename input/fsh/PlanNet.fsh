@@ -1,13 +1,10 @@
 
-
 Profile:        PlannetEndpoint
 Parent:         Endpoint
 Id:             plannet-Endpoint 
 Title:          "Plan-Net Endpoint"
 Description:    "The technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging."
-// * meta.lastUpdated 1..1
-* extension contains 
-    EndpointUsecase named endpoint-usecase 0..* MS
+* extension contains EndpointUsecase named endpoint-usecase 0..* MS
 * extension[endpoint-usecase] ^short = "Endpoint Usecase"
 * status 1..1 MS
 * status = #active (exactly) 
@@ -25,86 +22,13 @@ Description:    "The technical details of an endpoint that can be used for elect
 * payloadType from EndpointPayloadTypeVS (extensible)
 * payloadMimeType MS
 * address MS
-/* Changes  on 9/17
-# Endpoint 
-*** Changed
-status 1..1 MS
-*** Deleted
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* identifier.type MS
-* identifier.value MS
-* identifier.period MS
-* identifier.assigner MS
-*  contact.extension contains
-       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
-       ViaIntermediary named via-intermediary 0..* MS
-* contact.extension[via-intermediary] ^short = "Via Intermediary"
-* period MS
-* header MS
-* contact.use MS
-* contact.rank MS
-* contact.period MS
 
-# HealthCareService
-*** Changed
-   active 1..1 MS 
-*** Deleted 9/17
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* identifier.period MS
-* identifier.assigner MS
-* extraDetails MS
-* photo MS
-* telecom.rank MS
-* telecom.use MS
-* telecom.period MS
-
-
-# InsurancePlan 
-*** Changed
-  * obeys network-or-plan-Network 
-*** Deleted 9/17
-* identifier.period MS
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* contact.name.use MS
-* contact.name.family MS
-* contact.name.given MS
-* contact.name.prefix MS
-* contact.name.suffix MS
-* contact.name.period MS
-* contact.telecom.extension contains
-       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
-       ViaIntermediary named via-intermediary 0..* MS
-* contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
-* contact.telecom.use MS
-* contact.telecom.period MS
-
-# Location 
-*** Changed
-  
-*** Deleted 9/17
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* identifier.period MS
-* identifier.assigner MS
-* telecom.rank MS
-* telecom.use MS
-* telecom.period MS
-
-*/
 
 Profile:        PlannetHealthcareService
 Parent:         HealthcareService
 Id:             plannet-HealthcareService
 Title:          "Plan-Net HealthcareService"
 Description:    "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
-// * meta.lastUpdated 1..1
 * extension contains
     NewPatients named newpatients 0..* MS and
     DeliveryMethod named deliverymethod 0..* MS 
@@ -142,11 +66,6 @@ Description:    "The HealthCareService resource typically describes services off
 * telecom.value MS
 * coverageArea only Reference(PlannetLocation)
 * coverageArea MS
-// * serviceProvisionCode MS
-// eligibility  MS
-// program  
-//* characteristic MS
-//* referralMethod MS
 * appointmentRequired MS
 * availableTime MS
 * availableTime.daysOfWeek MS
@@ -171,7 +90,6 @@ Description:    "An InsurancePlan is a discrete package of health insurance cove
 InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."
 * obeys network-or-plan-Network 
 * obeys plan-type-is-distinct
-// * meta.lastUpdated 1..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
@@ -224,7 +142,6 @@ Id:             plannet-Location
 Title:          "Plan-Net Location"
 Description:    "A Location is the physical place where healthcare services are provided, practitioners are employed, 
                  organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."
-// * meta.lastUpdated 1..1
 * extension contains
     NewPatients named newpatients 0..* MS and
     Accessibility named accessibility 0..* MS and
@@ -261,25 +178,6 @@ Description:    "A Location is the physical place where healthcare services are 
 * endpoint MS
 * endpoint only Reference(PlannetEndpoint)
 
-/* Network -- deleted 
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* identifier.period MS
-* identifier.assigner MS
-* alias MS
-* contact.name.use MS
-* contact.name.text MS
-* contact.name.family MS
-* contact.name.given MS
-* contact.name.prefix MS
-* contact.name.suffix MS
-* contact.name.period MS
-* contact.telecom.use MS
-* contact.telecom.period MS
-* contact.telecom extensions -- not MS
-*/
-
 Profile:        PlannetNetwork
 Parent:         $USCoreOrganization    //Organization 
 Id:             plannet-Network
@@ -287,7 +185,6 @@ Title:          "Plan-Net Network"
 Description:    "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
 
 In the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively."
-// * meta.lastUpdated 1..1
 * extension contains
     LocationReference named location-reference 0..* MS
 * extension[location-reference] ^short = "Network coverage area"
@@ -315,18 +212,6 @@ In the PlanNet IG, individuals and organizations are represented as participants
 * endpoint only Reference(PlannetEndpoint)
 * endpoint MS 
 
-/*  Organizaiton
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* identifier.period MS
-* identifier.assigner MS
-* alias MS
-* address.use MS
-* address.period MS
-* telecom.use MS
-* telecom.period MS
-*/
 
 Profile:        PlannetOrganization
 Parent:         $USCoreOrganization
@@ -334,7 +219,6 @@ Id:             plannet-Organization
 Title:          "Plan-Net Organization"
 Description:    "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.
 Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"
-// * meta.lastUpdated 1..1
 * extension contains
    Qualification named qualification 0..*  MS and
    OrgDescription named org-description  0..1 MS and
@@ -379,23 +263,11 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * type from OrgTypeVS (extensible)
 * endpoint MS
 
-/* OrgAffiliation 
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* identifier.period MS
-* identifier.assigner MS
-* period MS
-* telecom.use MS
-* telecom.period MS
-*/
-
 Profile:        PlannetOrganizationAffiliation
 Parent:         OrganizationAffiliation
 Id:             plannet-OrganizationAffiliation
 Title:          "Plan-Net OrganizationAffiliation"
 Description:    "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."
-// * meta.lastUpdated 1..1
 * obeys organization-or-participatingOrganization 
 * extension contains
    Qualification named qualification 0..* 
@@ -426,20 +298,6 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * endpoint MS
 * endpoint only Reference (PlannetEndpoint)
 
-/* Practitioner
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* identifier.period MS
-* identifier.assigner MS
-* name.use MS
-* name.prefix MS
-* name.suffix MS
-* name.period MS
-* gender MS
-* photo MS
-
-*/
 
 
 Profile:        PlannetPractitioner
@@ -447,7 +305,6 @@ Parent:         $USCorePractitioner
 Id:             plannet-Practitioner
 Title:          "Plan-Net Practitioner"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
-// * meta.lastUpdated 1..1
 * identifier.type MS
 * identifier.value MS
 * active 1..1  MS
@@ -475,24 +332,11 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * communication.extension contains
    CommunicationProficiency named communication-proficiency 0..1 MS
 
-/* PractitionerRole
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* identifier.period MS
-* identifier.assigner MS
-* telecom.use MS
-* telecom.period MS
-
-*/
-
 Profile:        PlannetPractitionerRole
 Parent:         USCorePractitionerRoleProfile
 Id:             plannet-PractitionerRole
 Title:          "Plan-Net PractitionerRole"
 Description:    "PractitionerRole typically describes details about a provider. When the provider is a practitioner, there may be a relationship to an organization. A provider renders services to patients at a location. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization. PractitionerRole involves either the actual or potential (hence the optionality on Practitioner) of an individual to play this role on behalf of or under the auspices of an organization. The absence of a Practitioner resource does not imply that the Organization itself is playing the role of a Practitioner, instead it implies that that role has been established by the Organization and MAY apply that to a specific Practitioner."
-
-// * meta.lastUpdated 1..1
 * obeys practitioner-or-organization-or-healthcareservice-or-location 
 * extension contains
    NewPatients named newpatients 0..* MS and
@@ -544,18 +388,15 @@ Description: "If PlannetPractitionerRole.practitioner is absent  ( PlannetPracti
 Expression: "practitioner.exists() or (organization.exists() or healthcareService.exists() or location.exists())"
 Severity:   #error
 
-
 Invariant:  organization-or-participatingOrganization 
 Description: "PlannetOrganizationAffiliation.organization or  PlannetOrganizationAffiliation.participatingOrganization"
 Expression: "organization.exists() or participatingOrganization.exists()"
 Severity:   #error
 
-// New 09/17
 Invariant:  network-or-plan-Network 
 Description: "If an insuranceplan does not define a network, then each plan must define one"
 Expression: "network.exists() or plan.network.exists()"
 Severity:   #error
-//XPath:      "f:network or f:plan.network "
 
 Invariant: plan-type-is-distinct
 Description: "Each InsurancePlan.plan should have a distinct plan.type."

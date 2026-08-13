@@ -129,7 +129,7 @@ Description: "New Patients indicates whether new patients are being accepted in 
 
 Invariant:  new-patients-characteristics 
 Description: "If no new patients are accepted, no characteristics are allowed"
-Expression: "extension.where(url='acceptingPatients').value.ofType(CodeableConcept).coding.where(code = 'no') implies extension.where(url='characteristics').empty()"
+Expression: "extension.where(url='acceptingPatients').value.ofType(CodeableConcept).coding.where(code = 'nopt') implies extension.where(url='characteristics').empty()"
 Severity:   #error
 
 

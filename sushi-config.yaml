@@ -53,7 +53,7 @@ dependencies:
     version: 1.2.0
     id: hrex
   hl7.fhir.uv.bulkdata:
-    uri: https://hl7.org/fhir/uv/bulkdata/en/
+    uri: http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata
     version: current
     id: bulk
 parameters:
