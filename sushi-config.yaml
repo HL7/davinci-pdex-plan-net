@@ -54,7 +54,7 @@ dependencies:
     id: hrex
   hl7.fhir.uv.bulkdata:
     uri: http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata
-    version: current
+    version: 4.0.0-ballot
     id: bulk
 parameters:
   show-inherited-invariants: false
