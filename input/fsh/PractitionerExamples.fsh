@@ -59,10 +59,9 @@ Instance: HansSoloRole1
 InstanceOf: PlannetPractitionerRole
 Description: "Hans Solo is a solo practitioner"
 Usage: #example
-* meta.profile = Canonical(PlannetPractitionerRole)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
+* period.start = "2022-01-01"
 * code = ProviderRoleCS#ph 
 * practitioner = Reference(HansSolo)
 * healthcareService = Reference(HansSoloService)
@@ -85,8 +84,6 @@ Instance: HansSoloService
 InstanceOf: PlannetHealthcareService
 Description: "Hans Solo Services"
 Usage: #example
-* meta.profile = Canonical(PlannetHealthcareService)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
@@ -98,8 +95,6 @@ Instance: HansSoloClinic
 InstanceOf: PlannetLocation
 Description: "Location of Hans Solo's clinic"
 Usage: #example
-* meta.profile = Canonical(PlannetLocation) 
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
 * name = "OrgA CT Location 1"
@@ -141,8 +136,6 @@ Instance: Counselor
 InstanceOf: PlannetPractitioner
 Description: "Counselor Susie Smith"
 Usage: #example
-* meta.profile = Canonical(PlannetPractitioner)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * identifier[NPI].value = "9941339100"
@@ -161,8 +154,6 @@ Instance: CounselorRole1
 InstanceOf: PlannetPractitionerRole
 Description: "Susie  Smith is a counselor via Telemedicine"
 Usage: #example
-* meta.profile = Canonical(PlannetPractitionerRole)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * code = ProviderRoleCS#co "Counselor"
@@ -178,8 +169,6 @@ Instance: VirtualCounselService
 InstanceOf: PlannetHealthcareService
 Description: "Virtual Counseling Service"
 Usage: #example
-* meta.profile = Canonical(PlannetHealthcareService)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#virtual
@@ -194,8 +183,6 @@ Instance: JoeSmithRole1
 InstanceOf: PlannetPractitionerRole
 Description: "Dr Smith moonlighting as ER Doc at Hartford Hospital"
 Usage: #example
-* meta.profile = Canonical(PlannetPractitionerRole)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * code = ProviderRoleCS#ph 
@@ -214,8 +201,6 @@ Instance: JoeSmithRole2
 InstanceOf: PlannetPractitionerRole
 Description: "Dr Smith Internal Medicine at Burr Clinic"
 Usage: #example
-* meta.profile = Canonical(PlannetPractitionerRole)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * code = ProviderRoleCS#ph
@@ -233,8 +218,6 @@ Instance: JoeSmithRole3
 InstanceOf: PlannetPractitionerRole
 Description: "Dr Smith Admitting Privileges at Hartford General"
 Usage: #example
-* meta.profile = Canonical(PlannetPractitionerRole)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * code = ProviderRoleCS#ap 
@@ -249,8 +232,6 @@ Instance: AnonRole
 InstanceOf: PlannetPractitionerRole
 Description: "Practitioner role that doesn't refer to a specific practitioner"
 Usage: #example
-* meta.profile = Canonical(PlannetPractitionerRole)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * code = ProviderRoleCS#ph
@@ -266,8 +247,6 @@ Instance: CancerClinicService
 InstanceOf: PlannetHealthcareService
 Description: "Cancer Clinic Services"
 Usage: #example
-* meta.profile = Canonical(PlannetHealthcareService)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
@@ -280,8 +259,6 @@ Instance: CancerClinicLoc
 InstanceOf: PlannetLocation
 Description: "Location1 of Cancer Clinic"
 Usage: #example
-* meta.profile = Canonical(PlannetLocation) 
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
 * name = "Cancer Clinic"
@@ -317,8 +294,6 @@ Instance: CancerClinic
 InstanceOf: PlannetOrganization
 Description: "HartfordCancerClinicLLC"
 Usage: #example
-* meta.profile = Canonical(PlannetOrganization)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * identifier[NPI].value = "9941339100"

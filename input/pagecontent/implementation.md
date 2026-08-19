@@ -111,16 +111,19 @@ It is important for payers to use the Plan-Net profiles consistently in order to
 </tbody>
 </table>
 
-The content in this section of the IG is based on the <a href="artifacts.html">examples</a> provided and on the patterns provided <a href="patterns.pptx">here</a>.<br />Specific examples are referenced in the text below.
+The content in this section of the IG is based on the [examples](artifacts.html) provided and on the patterns provided (here}[a href="patterns.pptx"]
 
+Specific examples are referenced in the text below.
 
-#### Searching for active Practictioners and Organizations
+#### Searching for active Practitioners and Organizations
 
 Sample query to search for currently active Practitioners (replace date in query with current date):
-http://davinci-plan-net-ri.logicahealth.org/fhir/PractitionerRole?_include=PractitionerRole:date=ge2021-10-25
+
+[https://plan-net-ri.davinci.hl7.org/fhir/PractitionerRole?date=ge2021-10-25](https://plan-net-ri.davinci.hl7.org/fhir/PractitionerRole?date=ge2021-10-25)
 
 Sample query to search for currently active Organizations (replace date in query with current date):
-http://davinci-plan-net-ri.logicahealth.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:date=ge2021-10-25
+
+[https://plan-net-ri.davinci.hl7.org/fhir/OrganizationAffiliation?date=ge2021-10-25](https://plan-net-ri.davinci.hl7.org/fhir/OrganizationAffiliation?date=ge2021-10-25)
 
 To search for Practitioners or Organizations that will be active at a future time, change the date to a future date.
 
