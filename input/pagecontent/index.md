@@ -28,7 +28,8 @@ The IG is organized into the following sections:
 
 ### Relation to US Core and other IGs
 
-This implementation guide was written for a US audience and profiles resources from <a href="{{site.data.fhir.ver.hl7_fhir_us_core}}/index.html">US Core STU 4</a>, where available (Practitioner, Organization and Location), and otherwise from R4 (OrganizationAffiliation, PractitionerRole, HealthCareService, Endpoint).  The PractitionerRole profile from US Core was not used because it is over-constrained for use in a Provider Directory based on Payer information.  The Network profile is based on USCore Organization, since there was no contradiction between the USCore profile and the Plan-Net requirements.  However, the NPI and CLIA identifier types, which are Must-Support, are clearly intended for provider organizations only and are not expected to be populated for other organization types. Alignment with VhDir is maintained by adapting VhDir content, where possible.
+This implementation guide was written for a US audience and profiles resources from US Core where available (Practitioner, PractitionerRole, Organization and Location), and otherwise from R4 (OrganizationAffiliation, HealthCareService, Endpoint). In prior versions of Plan Net, the PractitionerRole profile from US Core 3.1.1 was not used because it is over-constrained for use in a Provider Directory based on Payer information. That has since been corrected in later versions of US Core. The Network profile is based on US Core Organization, since there was no contradiction between the US Core profile and the Plan-Net requirements. However, the NPI and CLIA identifier types, which are Must-Support, are clearly intended for provider organizations only and are not expected to be populated for other organization types. Alignment with VhDir is maintained by adapting VhDir content, where possible.
+
 
 <h4>Disclaimers and Assumptions</h4>
 <ul>

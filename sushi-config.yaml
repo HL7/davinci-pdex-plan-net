@@ -36,18 +36,18 @@ dependencies:
     id: uscore7
     reason: |
       Needed for systems supporting USCDI v4
-  hl7.fhir.us.core.v311:
-    version: 3.1.1
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
-    id: uscore3
-    reason: |
-      Needed for systems supporting USCDI v1
   hl7.fhir.us.core.v610:
     version: 6.1.0
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
     id: uscore6
     reason: |
       Needed for systems supporting USCDI v3
+  hl7.fhir.us.core.v311:
+    version: 3.1.1
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore3
+    reason: |
+      Needed for systems supporting USCDI v1
   hl7.fhir.us.davinci-hrex:
     uri: http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/hl7.fhir.us.davinci-hrex
     version: 1.2.0
