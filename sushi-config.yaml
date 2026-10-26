@@ -38,13 +38,13 @@ dependencies:
       Needed for systems supporting USCDI v4
   hl7.fhir.us.core.v610:
     version: 6.1.0
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core.v610
     id: uscore6
     reason: |
       Needed for systems supporting USCDI v3
   hl7.fhir.us.core.v311:
     version: 3.1.1
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core.v311
     id: uscore3
     reason: |
       Needed for systems supporting USCDI v1
@@ -61,6 +61,7 @@ parameters:
   jira-code: davinci-plannet
   shownav: true
   auto-oid-root: 2.16.840.1.113883.4.642.40.28
+  pin-canonicals: pin-multiples
   
 copyrightYear: 2026+
 releaseLabel: STU2

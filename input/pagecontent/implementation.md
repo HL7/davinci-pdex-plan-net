@@ -366,6 +366,18 @@ Plan-Net servers and clients SHALL support all the search parameters defined in 
   - service-type
   - specialty
 * InsurancePlan
+  - administered-by
+  - identifier
+  - name
+  - owned-by
+  - type
+  - address
+  - address-city
+  - address-country
+  - address-postalcode
+  - address-state
+  - address-use
+  
 * Organization
 
 Plan-Net servers and clients SHOULD support all core FHIR search parameters for the resources used in this IG.
