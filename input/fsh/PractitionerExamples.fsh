@@ -87,7 +87,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#outpat 
+* category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#outpat 
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * location[0] = Reference(HansSoloClinic)
 
@@ -176,7 +176,7 @@ Usage: #example
 * extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#app 
 * extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#tdd 
 * extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#phone 
-* category = HealthcareServiceCategoryCS#prov "Medical Provider"
+* category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#prov "Medical Provider"
 * specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
 
 Instance: JoeSmithRole1
@@ -250,7 +250,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#outpat
+* category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#outpat
 * providedBy = Reference(CancerClinic)
 * specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology Physician"  
 * location[0] = Reference(CancerClinicLoc)

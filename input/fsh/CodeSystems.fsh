@@ -62,6 +62,8 @@ Description: "Codes for documenting spoken language proficiency based on the Int
 * #50	"Functional native proficiency"	"Speaking proficiency is functionally equivalent to that of a highly articulate well-educated native speaker and reflects the cultural standards of the country where the language is natively spoken."
 * ^caseSensitive = true
 
+// Replaced with http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category
+/*
  CodeSystem: HealthcareServiceCategoryCS
  Title: "Healthcare Service Category"
  Description: "Broad categories of healthcare services being performed or delivered"
@@ -82,6 +84,8 @@ Description: "Codes for documenting spoken language proficiency based on the Int
 * #urg "Urgent Care" "Unscheduled health care services which provide for point-in-time evaluation or treatment of a non-life-threatening medical condition."
 * #vis "Vision" "Services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes."
 * ^caseSensitive = true
+
+*/
 
 CodeSystem: InsuranceProductTypeCS
 Title: "Insurance Product Type"

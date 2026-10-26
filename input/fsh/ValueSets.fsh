@@ -124,8 +124,9 @@ ValueSet: HealthcareServiceCategoryVS
 Title: "Healthcare Service CategoryVS"
 Description: "Broad categories of healthcare services being performed or delivered."
 * ^experimental = false
-* codes from system HealthcareServiceCategoryCS
-* exclude HealthcareServiceCategoryCS#other
+* codes from system http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category
+// * codes from system HealthcareServiceCategoryCS
+// * exclude HealthcareServiceCategoryCS#other
 
 
 ValueSet: QualificationStatusVS

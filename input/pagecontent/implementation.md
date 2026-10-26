@@ -352,7 +352,7 @@ An Endpoint instance&nbsp;provides&nbsp; technical details of an endpoint that c
 
 ### Search Parameters
 
-Plan-Net servers and clients SHALL support all the search parameters defined in this IG, as well as the following Core FHIR search parameters:
+Plan-Net servers and clients SHALL support all the search parameters defined in this IG, and SHALL support the following Core FHIR search parameters:
 * Endpoint
   - organization
 * HealthcareService
@@ -365,12 +365,15 @@ Plan-Net servers and clients SHALL support all the search parameters defined in 
   - service-category
   - service-type
   - specialty
-  - 
+  -
 * InsurancePlan
+  -
 * Organization
   - 
 
 Plan-Net servers and clients SHOULD support all core FHIR search parameters for the resources used in this IG.
+
+Note that versions of Plan Net prior to 2.0.0 contained customer search parameters that were duplicates of core FHIR search parameters. Those have been removed. 
 
 ### Bulk Data
 Bulk data guidance in this version of the IG is draft only. It has not appeared in ballot and has not been fully tested.
