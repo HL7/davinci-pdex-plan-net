@@ -84,7 +84,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#emerg  
 * specialty =  $NUCCProviderTaxonomy#207P00000X   "Emergency Medicine Physician"
 * providedBy = Reference(Hospital)
@@ -186,7 +186,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#prov 
 * specialty = $NUCCProviderTaxonomy#207X00000X "Orthopaedic Surgery Physician"   // Orthopedics
 * providedBy = Reference(HartfordOrthopedics)
@@ -232,7 +232,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#outpat
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * providedBy = Reference(HamiltonClinic)
@@ -290,7 +290,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#outpat
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * providedBy = Reference(BurrClinic)
@@ -399,7 +399,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#Outpatient
 * specialty = $NUCCProviderTaxonomy#3336C0003X   // Fix to Internal Medicine
 * providedBy = Reference(OrganizationInternalMedicineLLC)

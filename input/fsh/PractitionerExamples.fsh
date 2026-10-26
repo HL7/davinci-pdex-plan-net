@@ -86,7 +86,7 @@ Description: "Hans Solo Services"
 Usage: #example
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#outpat 
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * location[0] = Reference(HansSoloClinic)
@@ -171,7 +171,7 @@ Description: "Virtual Counseling Service"
 Usage: #example
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#virtual
+* extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#virtual
 * extension[deliverymethod].extension[virtualModalities][0].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#web
 * extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#app 
 * extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#tdd 
@@ -249,7 +249,7 @@ Description: "Cancer Clinic Services"
 Usage: #example
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#outpat
 * providedBy = Reference(CancerClinic)
 * specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology Physician"  

@@ -37,7 +37,7 @@
 <artifact id="Practitioner/Counselor" key="Practitioner-Counselor" name="Counselor"/>
 <artifact id="PractitionerRole/CounselorRole1" key="PractitionerRole-CounselorRole1" name="CounselorRole1"/>
 <artifact id="StructureDefinition/delivery-method" key="StructureDefinition-delivery-method" name="Delivery Method"/>
-<artifact id="CodeSystem/DeliveryMethodCS" key="CodeSystem-DeliveryMethodCS" name="Delivery Methods"/>
+<artifact deprecated="true" id="CodeSystem/DeliveryMethodCS" key="CodeSystem-DeliveryMethodCS" name="Delivery Methods"/>
 <artifact id="ValueSet/DeliveryMethodVS" key="ValueSet-DeliveryMethodVS" name="Delivery Methods VS"/>
 <artifact id="CodeSystem/EndpointConnectionTypeCS" key="CodeSystem-EndpointConnectionTypeCS" name="Endpoint Connection Types (additional)"/>
 <artifact id="ValueSet/EndpointConnectionTypeVS" key="ValueSet-EndpointConnectionTypeVS" name="Endpoint Connection Types VS"/>

@@ -21,6 +21,9 @@ Description: "General categories of accommodations available."
 * #mobility	"mobility"	"Provides services for mobility impaired persons."
 * ^caseSensitive = true
 
+// Replaced by http://terminology.hl7.org/CodeSystem/service-delivery-method
+/*
+
 CodeSystem: DeliveryMethodCS
 Title: "Delivery Methods"
 Description: "Categories of healthcare service delivery methods."
@@ -28,6 +31,8 @@ Description: "Categories of healthcare service delivery methods."
 * #virtual	"Virtual" "Delivery not requiring provider and patient to be physically co-located, such as tele-medicine"
 * #physical	"Physical" "Traditional delivery requiring provider and patient to be physically co-located."
 * ^caseSensitive = true
+
+*/
 
 CodeSystem:  EndpointConnectionTypeCS
 Title: "Endpoint Connection Types (additional)"

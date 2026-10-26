@@ -15,7 +15,7 @@ ValueSet: DeliveryMethodVS
 Title: "Delivery Methods VS"
 Description: "Codes for documenting delivery methods."
 * ^experimental = false
-* codes from system DeliveryMethodCS
+* codes from system http://terminology.hl7.org/CodeSystem/service-delivery-method
 
 ValueSet: VirtualModalitiesVS
 Title: "Virtual Modalities VS"

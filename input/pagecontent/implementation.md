@@ -365,11 +365,8 @@ Plan-Net servers and clients SHALL support all the search parameters defined in 
   - service-category
   - service-type
   - specialty
-  -
 * InsurancePlan
-  -
 * Organization
-  - 
 
 Plan-Net servers and clients SHOULD support all core FHIR search parameters for the resources used in this IG.
 

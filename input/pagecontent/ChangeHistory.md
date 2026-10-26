@@ -1,7 +1,17 @@
+### Changes and Updates for Version 2.0.0-ballot
+
+The following high level changes were addressed in this release:
+
+* Updated Bulk Data support to version 4.0.0 of the Bulk Data IG. This includes support for Bulk Publish. 
+* Removed code systems that have been moved to THO
+* Removed search parameters that were duplicative of core FHIR R4 search parameters
+
+Specific JIRA tickets applied in this update are listed below:
+
 
 ### Changes and Updates for Version 1.2.0
 
-The following high level changes addressed in this release:
+The following high level changes were addressed in this release:
 
 * Updated dependencies to reference to multiple versions of US Core per latest Da Vinci recommendations (7.0.0, 6.1.0, and 3.1.1)
 * Updated dependencies to reference Da Vinci HRex version 1.1.0

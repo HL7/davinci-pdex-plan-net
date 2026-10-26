@@ -67,7 +67,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "Pharmacy by PharmChain"
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existptonly
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#pharm   "Pharmacy"
@@ -135,7 +135,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "Compounding Pharmacy by OrgA"
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#pharm "Pharmacy"
 * specialty = $NUCCProviderTaxonomy#3336C0004X "Compounding Pharmacy"
 * specialty.text = "Compounding Pharmacy"
@@ -152,7 +152,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "Mail Order Pharmacy by OrgA"
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#virtual
+* extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#virtual
 * extension[deliverymethod].extension[virtualModalities][0].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#web
 * extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#app 
 * extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#tdd 
