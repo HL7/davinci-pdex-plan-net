@@ -124,7 +124,7 @@
 <artifact deprecated="true" id="SearchParameter/insuranceplan-administered-by" key="SearchParameter-insuranceplan-administered-by" name="Plannet_sp_insuranceplan_administered_by"/>
 <artifact id="SearchParameter/insuranceplan-coverage-area" key="SearchParameter-insuranceplan-coverage-area" name="Plannet_sp_insuranceplan_coverage_area"/>
 <artifact deprecated="true" id="SearchParameter/insuranceplan-identifier" key="SearchParameter-insuranceplan-identifier" name="Plannet_sp_insuranceplan_identifier"/>
-<artifact id="SearchParameter/insuranceplan-name" key="SearchParameter-insuranceplan-name" name="Plannet_sp_insuranceplan_name"/>
+<artifact deprecated="true" id="SearchParameter/insuranceplan-name" key="SearchParameter-insuranceplan-name" name="Plannet_sp_insuranceplan_name"/>
 <artifact id="SearchParameter/insuranceplan-network" key="SearchParameter-insuranceplan-network" name="Plannet_sp_insuranceplan_network"/>
 <artifact deprecated="true" id="SearchParameter/insuranceplan-owned-by" key="SearchParameter-insuranceplan-owned-by" name="Plannet_sp_insuranceplan_owned_by"/>
 <artifact id="SearchParameter/insuranceplan-plan-type" key="SearchParameter-insuranceplan-plan-type" name="Plannet_sp_insuranceplan_plan_type"/>
@@ -138,12 +138,12 @@
 <artifact deprecated="true" id="SearchParameter/location-partof" key="SearchParameter-location-partof" name="Plannet_sp_location_partof"/>
 <artifact deprecated="true" id="SearchParameter/location-type" key="SearchParameter-location-type" name="Plannet_sp_location_type"/>
 <artifact id="SearchParameter/organization-coverage-area" key="SearchParameter-organization-coverage-area" name="Plannet_sp_network_coverage_area"/>
-<artifact id="SearchParameter/organization-address" key="SearchParameter-organization-address" name="Plannet_sp_organization_address"/>
-<artifact id="SearchParameter/organization-endpoint" key="SearchParameter-organization-endpoint" name="Plannet_sp_organization_endpoint"/>
-<artifact id="SearchParameter/organization-name" key="SearchParameter-organization-name" name="Plannet_sp_organization_name"/>
-<artifact id="SearchParameter/organization-partof" key="SearchParameter-organization-partof" name="Plannet_sp_organization_partof"/>
+<artifact deprecated="true" id="SearchParameter/organization-address" key="SearchParameter-organization-address" name="Plannet_sp_organization_address"/>
+<artifact deprecated="true" id="SearchParameter/organization-endpoint" key="SearchParameter-organization-endpoint" name="Plannet_sp_organization_endpoint"/>
+<artifact deprecated="true" id="SearchParameter/organization-name" key="SearchParameter-organization-name" name="Plannet_sp_organization_name"/>
+<artifact deprecated="true" id="SearchParameter/organization-partof" key="SearchParameter-organization-partof" name="Plannet_sp_organization_partof"/>
 <artifact id="SearchParameter/organization-period" key="SearchParameter-organization-period" name="Plannet_sp_organization_period"/>
-<artifact id="SearchParameter/organization-type" key="SearchParameter-organization-type" name="Plannet_sp_organization_type"/>
+<artifact deprecated="true" id="SearchParameter/organization-type" key="SearchParameter-organization-type" name="Plannet_sp_organization_type"/>
 <artifact id="SearchParameter/organizationaffiliation-endpoint" key="SearchParameter-organizationaffiliation-endpoint" name="Plannet_sp_organizationaffiliation_endpoint"/>
 <artifact id="SearchParameter/organizationaffiliation-location" key="SearchParameter-organizationaffiliation-location" name="Plannet_sp_organizationaffiliation_location"/>
 <artifact id="SearchParameter/organizationaffiliation-network" key="SearchParameter-organizationaffiliation-network" name="Plannet_sp_organizationaffiliation_network"/>

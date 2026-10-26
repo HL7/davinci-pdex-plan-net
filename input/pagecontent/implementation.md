@@ -383,6 +383,9 @@ Plan-Net servers and clients SHALL support all the search parameters defined in 
   - partof
   - type
 * Organization
+  - name
+  - partof
+  - type
 * OrganizationAffiliation
 * Practitioner
 * PractitionerRole
