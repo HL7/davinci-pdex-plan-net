@@ -133,10 +133,10 @@
 <artifact deprecated="true" id="SearchParameter/location-address-city" key="SearchParameter-location-address-city" name="Plannet_sp_location_address_city"/>
 <artifact deprecated="true" id="SearchParameter/location-address-postalcode" key="SearchParameter-location-address-postalcode" name="Plannet_sp_location_address_postalcode"/>
 <artifact deprecated="true" id="SearchParameter/location-address-state" key="SearchParameter-location-address-state" name="Plannet_sp_location_address_state"/>
-<artifact id="SearchParameter/location-endpoint" key="SearchParameter-location-endpoint" name="Plannet_sp_location_endpoint"/>
-<artifact id="SearchParameter/location-organization" key="SearchParameter-location-organization" name="Plannet_sp_location_organization"/>
-<artifact id="SearchParameter/location-partof" key="SearchParameter-location-partof" name="Plannet_sp_location_partof"/>
-<artifact id="SearchParameter/location-type" key="SearchParameter-location-type" name="Plannet_sp_location_type"/>
+<artifact deprecated="true" id="SearchParameter/location-endpoint" key="SearchParameter-location-endpoint" name="Plannet_sp_location_endpoint"/>
+<artifact deprecated="true" id="SearchParameter/location-organization" key="SearchParameter-location-organization" name="Plannet_sp_location_organization"/>
+<artifact deprecated="true" id="SearchParameter/location-partof" key="SearchParameter-location-partof" name="Plannet_sp_location_partof"/>
+<artifact deprecated="true" id="SearchParameter/location-type" key="SearchParameter-location-type" name="Plannet_sp_location_type"/>
 <artifact id="SearchParameter/organization-coverage-area" key="SearchParameter-organization-coverage-area" name="Plannet_sp_network_coverage_area"/>
 <artifact id="SearchParameter/organization-address" key="SearchParameter-organization-address" name="Plannet_sp_organization_address"/>
 <artifact id="SearchParameter/organization-endpoint" key="SearchParameter-organization-endpoint" name="Plannet_sp_organization_endpoint"/>

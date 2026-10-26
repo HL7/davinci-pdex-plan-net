@@ -371,14 +371,21 @@ Plan-Net servers and clients SHALL support all the search parameters defined in 
   - name
   - owned-by
   - type
+* Location
   - address
   - address-city
   - address-country
   - address-postalcode
   - address-state
   - address-use
-  
+  - endpoint
+  - organization
+  - partof
+  - type
 * Organization
+* OrganizationAffiliation
+* Practitioner
+* PractitionerRole
 
 Plan-Net servers and clients SHOULD support all core FHIR search parameters for the resources used in this IG.
 
