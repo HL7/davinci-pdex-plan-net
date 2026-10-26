@@ -21,8 +21,7 @@ ValueSet: VirtualModalitiesVS
 Title: "Virtual Modalities VS"
 Description: "Codes for virtual service delivery modalities."
 * ^experimental = false
-* codes from system VirtualModalitiesCS
-
+* codes from system http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method
 
 ValueSet: SpecialtiesVS
 Title: "Specialties VS"
@@ -266,7 +265,7 @@ Description: "Value Set for Organization Affiliation Roles"
 * ^experimental = false
 * codes from system $HL7OrganizationRoleCS 
 * exclude  $HL7OrganizationRoleCS#member  // replaced by OrganizationAffiliationRoleCS#memberof
-* codes from system OrganizationAffiliationRoleCS
+* codes from system http://terminology.hl7.org/CodeSystem/organization-affiliation-role
 
 ValueSet: IndividualAndGroupSpecialtiesVS
 Title: "Individual and Group Specialties"

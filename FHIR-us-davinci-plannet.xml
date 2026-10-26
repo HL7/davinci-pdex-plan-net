@@ -85,7 +85,7 @@
 <artifact id="ValueSet/NonIndividualSpecialtiesVS" key="ValueSet-NonIndividualSpecialtiesVS" name="Non-Individual Specialties"/>
 <artifact id="ValueSet/NonIndividualSpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-NonIndividualSpecialtyAndDegreeLicenseCertificateVS" name="Non-Individual Specialties, Degrees, Licenses, and Certificates VS"/>
 <artifact id="StructureDefinition/org-description" key="StructureDefinition-org-description" name="Org Description"/>
-<artifact id="CodeSystem/OrganizationAffiliationRoleCS" key="CodeSystem-OrganizationAffiliationRoleCS" name="Organization Affiliation Role"/>
+<artifact deprecated="true" id="CodeSystem/OrganizationAffiliationRoleCS" key="CodeSystem-OrganizationAffiliationRoleCS" name="Organization Affiliation Role"/>
 <artifact id="CodeSystem/OrgTypeCS" key="CodeSystem-OrgTypeCS" name="Organization Type"/>
 <artifact id="ValueSet/OrgTypeVS" key="ValueSet-OrgTypeVS" name="Organization Type VS"/>
 <artifact id="ValueSet/OrganizationAffiliationRoleVS" key="ValueSet-OrganizationAffiliationRoleVS" name="OrganizationAffiliation Roles"/>
@@ -111,16 +111,16 @@
 <artifact deprecated="true" id="StructureDefinition/plannet-OrganizationAffiliation" key="OrganizationAffiliation" name="Plan-Net OrganizationAffiliation"/>
 <artifact deprecated="true" id="StructureDefinition/plannet-Practitioner" key="Practitioner" name="Plan-Net Practitioner"/>
 <artifact deprecated="true" id="StructureDefinition/plannet-PractitionerRole" key="PractitionerRole" name="Plan-Net PractitionerRole"/>
-<artifact id="SearchParameter/endpoint-organization" key="SearchParameter-endpoint-organization" name="Plannet_sp_endpoint_organization"/>
-<artifact id="SearchParameter/healthcareservice-service-category" key="SearchParameter-healthcareservice-service-category" name="Plannet_sp_healthcareservice_category"/>
-<artifact id="SearchParameter/healthcareservice-coverage-area" key="SearchParameter-healthcareservice-coverage-area" name="Plannet_sp_healthcareservice_coverage_area"/>
+<artifact deprecated="true" id="SearchParameter/endpoint-organization" key="SearchParameter-endpoint-organization" name="Plannet_sp_endpoint_organization"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-service-category" key="SearchParameter-healthcareservice-service-category" name="Plannet_sp_healthcareservice_category"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-coverage-area" key="SearchParameter-healthcareservice-coverage-area" name="Plannet_sp_healthcareservice_coverage_area"/>
 <artifact id="SearchParameter/healthcareservice-delivery-method" key="SearchParameter-healthcareservice-delivery-method" name="Plannet_sp_healthcareservice_delivery_method"/>
-<artifact id="SearchParameter/healthcareservice-endpoint" key="SearchParameter-healthcareservice-endpoint" name="Plannet_sp_healthcareservice_endpoint"/>
-<artifact id="SearchParameter/healthcareservice-location" key="SearchParameter-healthcareservice-location" name="Plannet_sp_healthcareservice_location"/>
-<artifact id="SearchParameter/healthcareservice-name" key="SearchParameter-healthcareservice-name" name="Plannet_sp_healthcareservice_name"/>
-<artifact id="SearchParameter/healthcareservice-organization" key="SearchParameter-healthcareservice-organization" name="Plannet_sp_healthcareservice_organization"/>
-<artifact id="SearchParameter/healthcareservice-specialty" key="SearchParameter-healthcareservice-specialty" name="Plannet_sp_healthcareservice_specialty"/>
-<artifact id="SearchParameter/healthcareservice-service-type" key="SearchParameter-healthcareservice-service-type" name="Plannet_sp_healthcareservice_type"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-endpoint" key="SearchParameter-healthcareservice-endpoint" name="Plannet_sp_healthcareservice_endpoint"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-location" key="SearchParameter-healthcareservice-location" name="Plannet_sp_healthcareservice_location"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-name" key="SearchParameter-healthcareservice-name" name="Plannet_sp_healthcareservice_name"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-organization" key="SearchParameter-healthcareservice-organization" name="Plannet_sp_healthcareservice_organization"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-specialty" key="SearchParameter-healthcareservice-specialty" name="Plannet_sp_healthcareservice_specialty"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-service-type" key="SearchParameter-healthcareservice-service-type" name="Plannet_sp_healthcareservice_type"/>
 <artifact id="SearchParameter/insuranceplan-administered-by" key="SearchParameter-insuranceplan-administered-by" name="Plannet_sp_insuranceplan_administered_by"/>
 <artifact id="SearchParameter/insuranceplan-coverage-area" key="SearchParameter-insuranceplan-coverage-area" name="Plannet_sp_insuranceplan_coverage_area"/>
 <artifact id="SearchParameter/insuranceplan-identifier" key="SearchParameter-insuranceplan-identifier" name="Plannet_sp_insuranceplan_identifier"/>
@@ -177,7 +177,7 @@
 <artifact id="ValueSet/SpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-SpecialtyAndDegreeLicenseCertificateVS" name="Specialties, Degrees, Licenses, and Certificates VS"/>
 <artifact id="Location/StateOfCTLocation" key="Location-StateOfCTLocation" name="StateOfCTLocation"/>
 <artifact id="StructureDefinition/via-intermediary" key="CViaIntermediary" name="Via Intermediary"/>
-<artifact id="CodeSystem/VirtualModalitiesCS" key="CodeSystem-VirtualModalitiesCS" name="Virtual Modalities"/>
+<artifact deprecated="true" id="CodeSystem/VirtualModalitiesCS" key="CodeSystem-VirtualModalitiesCS" name="Virtual Modalities"/>
 <artifact id="ValueSet/VirtualModalitiesVS" key="ValueSet-VirtualModalitiesVS" name="Virtual Modalities VS"/>
 <artifact id="HealthcareService/VirtualCounselService" key="HealthcareService-VirtualCounselService" name="VirtualCounselService"/>
 <page key="NA" name="(NA)"/>

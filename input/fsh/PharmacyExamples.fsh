@@ -93,7 +93,7 @@ Usage: #example
 * healthcareService = Reference(PharmChainRetailService)
 * location[0] = Reference(PharmLoc1)
 * location[1] = Reference(PharmLoc2)
-* code = OrganizationAffiliationRoleCS#pharmacy 
+* code = http://terminology.hl7.org/CodeSystem/organization-affiliation-role#pharmacy 
 * specialty = $NUCCProviderTaxonomy#3336C0003X "Community/Retail Pharmacy"
 
 Instance: PharmChainAffil2
@@ -109,7 +109,7 @@ Usage: #example
 * participatingOrganization = Reference (PharmChain)
 * healthcareService = Reference(PharmChainCompService)
 * location[0] = Reference(PharmLoc1)
-* code = OrganizationAffiliationRoleCS#pharmacy 
+* code = http://terminology.hl7.org/CodeSystem/organization-affiliation-role#pharmacy 
 
 Instance: PharmChainAffil3
 InstanceOf: PlannetOrganizationAffiliation
@@ -122,7 +122,7 @@ Usage: #example
 * network = Reference(AcmeofCTStdNet)
 * participatingOrganization = Reference (PharmChain)
 * healthcareService = Reference(PharmChainMailService)
-* code = OrganizationAffiliationRoleCS#pharmacy 
+* code = http://terminology.hl7.org/CodeSystem/organization-affiliation-role#pharmacy 
 * specialty = $NUCCProviderTaxonomy#3336M0002X "Mail Order Pharmacy"
 
 
@@ -153,10 +153,10 @@ Usage: #example
 * active = true
 * name = "Mail Order Pharmacy by OrgA"
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#virtual
-* extension[deliverymethod].extension[virtualModalities][0].valueCodeableConcept = VirtualModalitiesCS#web
-* extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = VirtualModalitiesCS#app 
-* extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = VirtualModalitiesCS#tdd 
-* extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  VirtualModalitiesCS#phone 
+* extension[deliverymethod].extension[virtualModalities][0].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#web
+* extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#app 
+* extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#tdd 
+* extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#phone 
 * category = HealthcareServiceCategoryCS#pharm "Pharmacy"
 * specialty = $NUCCProviderTaxonomy#3336M0002X "Mail Order Pharmacy"
 * providedBy = Reference(PharmChain)

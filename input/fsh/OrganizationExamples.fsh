@@ -217,7 +217,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = OrganizationAffiliationRoleCS#outpatient 
+* code = http://terminology.hl7.org/CodeSystem/organization-affiliation-role#outpatient 
 * healthcareService = Reference(HamiltonClinicServices)
 * participatingOrganization = Reference(HamiltonClinic)
 * location[0] = Reference(HospLoc1)
@@ -275,7 +275,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = OrganizationAffiliationRoleCS#outpatient 
+* code = http://terminology.hl7.org/CodeSystem/organization-affiliation-role#outpatient 
 * healthcareService = Reference(BurrClinicServices)
 * participatingOrganization = Reference(BurrClinic)
 * location[0] = Reference(HospLoc2)
@@ -356,7 +356,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = OrganizationAffiliationRoleCS#bt
+* code = http://terminology.hl7.org/CodeSystem/organization-affiliation-role#bt
 * participatingOrganization = Reference(BurrClinic)
 * organization = Reference(ConnHIE)
 

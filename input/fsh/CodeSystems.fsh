@@ -29,18 +29,6 @@ Description: "Categories of healthcare service delivery methods."
 * #physical	"Physical" "Traditional delivery requiring provider and patient to be physically co-located."
 * ^caseSensitive = true
 
-CodeSystem: VirtualModalitiesCS
-Title: "Virtual Modalities"
-Description: "Categories of virtual service delivery modalities."
-* ^experimental = false
-* #phone	"phone" "Voice Telephone"
-* #video	"video chat" "Video Chat"
-* #tdd	"TDD" "Telecommunications Device for the Deaf"
-* #sms	"SMS" "SMS Text Messaging"
-* #app  "App" "Mobile Application"
-* #web  "Website" "Website accessed through browser"
-* ^caseSensitive = true
-
 CodeSystem:  EndpointConnectionTypeCS
 Title: "Endpoint Connection Types (additional)"
 Description:  "Extension codes for http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
@@ -210,6 +198,8 @@ Description: "A capability that an individual, group, or organization is acknowl
 * #te "Technologists, Technicians and Other Technical Service Providers" "Technologists, Technicians and Other Technical Service Providers"
 * ^caseSensitive = true
 
+// Replaced by http://terminology.hl7.org/CodeSystem/organization-affiliation-role
+/*
 
 CodeSystem: OrganizationAffiliationRoleCS
 Title: "Organization Affiliation Role"
@@ -233,5 +223,7 @@ Description: "Codes For Organization Affiliation Role"
 * #respite "Respite Care Facility" "Respite Care Facility"
 * #retail	"Retail Health Center"	"Retail Health Center"
 * ^caseSensitive = true
+
+*/
 
 

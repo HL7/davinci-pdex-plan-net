@@ -60,6 +60,8 @@ parameters:
   show-inherited-invariants: false
   jira-code: davinci-plannet
   shownav: 'true'
+  auto-oid-root: 2.16.840.1.113883.4.642.40.28
+  
 copyrightYear: 2026+
 releaseLabel: STU2
 

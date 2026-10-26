@@ -172,10 +172,10 @@ Usage: #example
 * language = #en-US
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#virtual
-* extension[deliverymethod].extension[virtualModalities][0].valueCodeableConcept = VirtualModalitiesCS#web
-* extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = VirtualModalitiesCS#app 
-* extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = VirtualModalitiesCS#tdd 
-* extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  VirtualModalitiesCS#phone 
+* extension[deliverymethod].extension[virtualModalities][0].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#web
+* extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#app 
+* extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#tdd 
+* extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#phone 
 * category = HealthcareServiceCategoryCS#prov "Medical Provider"
 * specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
 
