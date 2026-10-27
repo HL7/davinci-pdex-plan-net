@@ -143,6 +143,7 @@ Usage: #example
 * name.text = "Susie Smith, LPC"
 * name.family = "Smith"
 * name.given[0] = "Susie"
+// * birthDate = "1991-11-02"
 * qualification[0].code = $NUCCProviderTaxonomy#101YP2500X "Professional Counselor"
 * qualification[0].issuer.display = "State of Illinois"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 

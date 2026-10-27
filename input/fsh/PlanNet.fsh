@@ -305,6 +305,7 @@ Parent:         $USCorePractitioner
 Id:             plannet-Practitioner
 Title:          "Plan-Net Practitioner"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
+* obeys practitioner-birthdate
 * identifier.type MS
 * identifier.value MS
 * active 1..1  MS
@@ -402,3 +403,9 @@ Invariant: plan-type-is-distinct
 Description: "Each InsurancePlan.plan should have a distinct plan.type."
 Expression: "plan.type.coding.code.isDistinct()"
 Severity:   #error
+
+
+Invariant: practitioner-birthdate
+Description: "Practitioner.birthdate SHOULD only be shared when the practitioner has provided their consent to do so."
+Expression: "birthDate.empty()"
+Severity:   #warning
