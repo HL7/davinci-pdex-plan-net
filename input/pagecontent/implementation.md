@@ -383,11 +383,24 @@ Plan-Net servers and clients SHALL support all the search parameters defined in 
   - partof
   - type
 * Organization
+  - address
+  - endpoint
   - name
   - partof
   - type
 * OrganizationAffiliation
+  - endpoint
+  - location
+  - network
+  - participating-organization
+  - primary-organization
+  - role
+  - service
+  - specialty
 * Practitioner
+  - family
+  - given
+  - name
 * PractitionerRole
 
 Plan-Net servers and clients SHOULD support all core FHIR search parameters for the resources used in this IG.

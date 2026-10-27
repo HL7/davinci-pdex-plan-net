@@ -153,9 +153,9 @@
 <artifact deprecated="true" id="SearchParameter/organizationaffiliation-role" key="SearchParameter-organizationaffiliation-role" name="Plannet_sp_organizationaffiliation_role"/>
 <artifact deprecated="true" id="SearchParameter/organizationaffiliation-service" key="SearchParameter-organizationaffiliation-service" name="Plannet_sp_organizationaffiliation_service"/>
 <artifact deprecated="true" id="SearchParameter/organizationaffiliation-specialty" key="SearchParameter-organizationaffiliation-specialty" name="Plannet_sp_organizationaffiliation_specialty"/>
-<artifact id="SearchParameter/practitioner-family-name" key="SearchParameter-practitioner-family-name" name="Plannet_sp_practitioner_family_name"/>
-<artifact id="SearchParameter/practitioner-given-name" key="SearchParameter-practitioner-given-name" name="Plannet_sp_practitioner_given_name"/>
-<artifact id="SearchParameter/practitioner-name" key="SearchParameter-practitioner-name" name="Plannet_sp_practitioner_name"/>
+<artifact deprecated="true" id="SearchParameter/practitioner-family-name" key="SearchParameter-practitioner-family-name" name="Plannet_sp_practitioner_family_name"/>
+<artifact deprecated="true" id="SearchParameter/practitioner-given-name" key="SearchParameter-practitioner-given-name" name="Plannet_sp_practitioner_given_name"/>
+<artifact deprecated="true" id="SearchParameter/practitioner-name" key="SearchParameter-practitioner-name" name="Plannet_sp_practitioner_name"/>
 <artifact id="SearchParameter/practitioner-period" key="SearchParameter-practitioner-period" name="Plannet_sp_practitioner_period"/>
 <artifact id="SearchParameter/practitionerrole-endpoint" key="SearchParameter-practitionerrole-endpoint" name="Plannet_sp_practitionerrole_endpoint"/>
 <artifact id="SearchParameter/practitionerrole-location" key="SearchParameter-practitionerrole-location" name="Plannet_sp_practitionerrole_location"/>
