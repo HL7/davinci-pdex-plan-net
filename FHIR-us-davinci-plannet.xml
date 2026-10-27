@@ -14,7 +14,7 @@
 <artifact id="ValueSet/AcceptingPatientsVS" key="ValueSet-AcceptingPatientsVS" name="Accepting Patients Codes VS"/>
 <artifact deprecated="true" key="AcceptingPatients" name="AcceptingPatients"/>
 <artifact id="StructureDefinition/accessibility" key="StructureDefinition-accessibility" name="Accessibility"/>
-<artifact id="CodeSystem/AccessibilityCS" key="CodeSystem-AccessibilityCS" name="Accessibility CS"/>
+<artifact deprecated="true" id="CodeSystem/AccessibilityCS" key="CodeSystem-AccessibilityCS" name="Accessibility CS"/>
 <artifact id="ValueSet/AccessibilityVS" key="ValueSet-AccessibilityVS" name="Accessibility VS"/>
 <artifact id="Organization/Acme" key="Organization-Acme" name="Acme"/>
 <artifact id="Endpoint/AcmeOfCTPortalEndpoint" key="Endpoint-AcmeOfCTPortalEndpoint" name="AcmeOfCTPortalEndpoint"/>

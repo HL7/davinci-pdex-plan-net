@@ -9,7 +9,8 @@ ValueSet: AccessibilityVS
 Title: "Accessibility VS"
 Description: "Codes for documenting general categories of accommodations available."
 * ^experimental = false
-* codes from system AccessibilityCS
+* codes from system http://terminology.hl7.org/CodeSystem/care-service-accessibility
+// * codes from system AccessibilityCS
 
 ValueSet: DeliveryMethodVS
 Title: "Delivery Methods VS"
@@ -45,7 +46,8 @@ Description: "Individual Specialties, Degrees, Licenses, and Certificates"
 * ^experimental = false
 * codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from system $V2table0360CS
-* AccessibilityCS#cultcomp "Cultural competence"
+* http://terminology.hl7.org/CodeSystem/care-service-accessibility#cultcomp
+// * AccessibilityCS#cultcomp "Cultural competence"
 
 ValueSet: NonIndividualSpecialtyAndDegreeLicenseCertificateVS
 Title: "Non-Individual Specialties, Degrees, Licenses, and Certificates VS"

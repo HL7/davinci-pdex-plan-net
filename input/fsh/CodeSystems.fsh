@@ -8,6 +8,9 @@ Description: "Codes to identify if the practice is accepting new patients"
 * #existptfam	"Accepting existing patients and their families" "Accepting existing patients and members of their families"
 * ^caseSensitive = true
 
+// Replaced with http://terminology.hl7.org/CodeSystem/care-service-accessibility
+/*
+
 CodeSystem: AccessibilityCS
 Title: "Accessibility CS"
 Description: "General categories of accommodations available."
@@ -20,6 +23,8 @@ Description: "General categories of accommodations available."
 * #cognitive	"cognitive"	"Provides services for cognitively impaired persons."
 * #mobility	"mobility"	"Provides services for mobility impaired persons."
 * ^caseSensitive = true
+
+*/
 
 // Replaced by http://terminology.hl7.org/CodeSystem/service-delivery-method
 /*

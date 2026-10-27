@@ -102,8 +102,8 @@ Usage: #example
 * managingOrganization = Reference(BigBox)
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existptonly
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
-* extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
-* extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
+* extension[accessibility][1].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/care-service-accessibility#pubtrans
+* extension[accessibility][0].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/care-service-accessibility#adacomp
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
@@ -264,8 +264,8 @@ Usage: #example
 * name = "Cancer Clinic"
 * type = $V3RoleCode#HOSP 
 * managingOrganization = Reference(CancerClinic)
-* extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
-* extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
+* extension[accessibility][1].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/care-service-accessibility#pubtrans
+* extension[accessibility][0].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/care-service-accessibility#adacomp
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
