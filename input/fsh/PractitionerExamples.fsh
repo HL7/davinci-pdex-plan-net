@@ -100,7 +100,7 @@ Usage: #example
 * name = "OrgA CT Location 1"
 * type = $V3RoleCode#OUTPHARM
 * managingOrganization = Reference(BigBox)
-* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existptonly
+* extension[newpatients].extension[acceptingPatients].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/accepting-patients#existptonly
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * extension[accessibility][1].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/care-service-accessibility#pubtrans
 * extension[accessibility][0].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/care-service-accessibility#adacomp

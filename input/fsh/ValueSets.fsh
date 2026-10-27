@@ -3,7 +3,8 @@ ValueSet: AcceptingPatientsVS
 Title: "Accepting Patients Codes VS"
 Description: "Codes to identify if the practice is accepting new patients"
 * ^experimental = false
-* codes from system AcceptingPatientsCS
+* codes from system http://terminology.hl7.org/CodeSystem/accepting-patients
+// * codes from system AcceptingPatientsCS
 
 ValueSet: AccessibilityVS
 Title: "Accessibility VS"

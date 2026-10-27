@@ -10,7 +10,7 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="CodeSystem/AcceptingPatientsCS" key="CodeSystem-AcceptingPatientsCS" name="Accepting Patients Codes"/>
+<artifact deprecated="true" id="CodeSystem/AcceptingPatientsCS" key="CodeSystem-AcceptingPatientsCS" name="Accepting Patients Codes"/>
 <artifact id="ValueSet/AcceptingPatientsVS" key="ValueSet-AcceptingPatientsVS" name="Accepting Patients Codes VS"/>
 <artifact deprecated="true" key="AcceptingPatients" name="AcceptingPatients"/>
 <artifact id="StructureDefinition/accessibility" key="StructureDefinition-accessibility" name="Accessibility"/>

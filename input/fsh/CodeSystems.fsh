@@ -1,3 +1,7 @@
+// Replaced with http://terminology.hl7.org/CodeSystem/accepting-patients
+
+/*
+
 CodeSystem: AcceptingPatientsCS
 Title: "Accepting Patients Codes"
 Description: "Codes to identify if the practice is accepting new patients"
@@ -7,6 +11,9 @@ Description: "Codes to identify if the practice is accepting new patients"
 * #existptonly	"Accepting existing patients" "Accepting existing patients"
 * #existptfam	"Accepting existing patients and their families" "Accepting existing patients and members of their families"
 * ^caseSensitive = true
+
+*/
+
 
 // Replaced with http://terminology.hl7.org/CodeSystem/care-service-accessibility
 /*
