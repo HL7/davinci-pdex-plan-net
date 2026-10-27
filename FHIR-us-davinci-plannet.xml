@@ -144,15 +144,15 @@
 <artifact deprecated="true" id="SearchParameter/organization-partof" key="SearchParameter-organization-partof" name="Plannet_sp_organization_partof"/>
 <artifact id="SearchParameter/organization-period" key="SearchParameter-organization-period" name="Plannet_sp_organization_period"/>
 <artifact deprecated="true" id="SearchParameter/organization-type" key="SearchParameter-organization-type" name="Plannet_sp_organization_type"/>
-<artifact id="SearchParameter/organizationaffiliation-endpoint" key="SearchParameter-organizationaffiliation-endpoint" name="Plannet_sp_organizationaffiliation_endpoint"/>
-<artifact id="SearchParameter/organizationaffiliation-location" key="SearchParameter-organizationaffiliation-location" name="Plannet_sp_organizationaffiliation_location"/>
-<artifact id="SearchParameter/organizationaffiliation-network" key="SearchParameter-organizationaffiliation-network" name="Plannet_sp_organizationaffiliation_network"/>
-<artifact id="SearchParameter/organizationaffiliation-participating-organization" key="SearchParameter-organizationaffiliation-participating-organization" name="Plannet_sp_organizationaffiliation_participating_organization"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-endpoint" key="SearchParameter-organizationaffiliation-endpoint" name="Plannet_sp_organizationaffiliation_endpoint"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-location" key="SearchParameter-organizationaffiliation-location" name="Plannet_sp_organizationaffiliation_location"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-network" key="SearchParameter-organizationaffiliation-network" name="Plannet_sp_organizationaffiliation_network"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-participating-organization" key="SearchParameter-organizationaffiliation-participating-organization" name="Plannet_sp_organizationaffiliation_participating_organization"/>
 <artifact id="SearchParameter/organizationaffiliation-period" key="SearchParameter-organizationaffiliation-period" name="Plannet_sp_organizationaffiliation_period"/>
-<artifact id="SearchParameter/organizationaffiliation-primary-organization" key="SearchParameter-organizationaffiliation-primary-organization" name="Plannet_sp_organizationaffiliation_primary_organization"/>
-<artifact id="SearchParameter/organizationaffiliation-role" key="SearchParameter-organizationaffiliation-role" name="Plannet_sp_organizationaffiliation_role"/>
-<artifact id="SearchParameter/organizationaffiliation-service" key="SearchParameter-organizationaffiliation-service" name="Plannet_sp_organizationaffiliation_service"/>
-<artifact id="SearchParameter/organizationaffiliation-specialty" key="SearchParameter-organizationaffiliation-specialty" name="Plannet_sp_organizationaffiliation_specialty"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-primary-organization" key="SearchParameter-organizationaffiliation-primary-organization" name="Plannet_sp_organizationaffiliation_primary_organization"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-role" key="SearchParameter-organizationaffiliation-role" name="Plannet_sp_organizationaffiliation_role"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-service" key="SearchParameter-organizationaffiliation-service" name="Plannet_sp_organizationaffiliation_service"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-specialty" key="SearchParameter-organizationaffiliation-specialty" name="Plannet_sp_organizationaffiliation_specialty"/>
 <artifact id="SearchParameter/practitioner-family-name" key="SearchParameter-practitioner-family-name" name="Plannet_sp_practitioner_family_name"/>
 <artifact id="SearchParameter/practitioner-given-name" key="SearchParameter-practitioner-given-name" name="Plannet_sp_practitioner_given_name"/>
 <artifact id="SearchParameter/practitioner-name" key="SearchParameter-practitioner-name" name="Plannet_sp_practitioner_name"/>
