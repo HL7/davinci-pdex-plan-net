@@ -402,6 +402,13 @@ Plan-Net servers and clients SHALL support all the search parameters defined in 
   - given
   - name
 * PractitionerRole
+  - endpoint
+  - location
+  - organization
+  - practitioner
+  - role
+  - service
+  - specialty
 
 Plan-Net servers and clients SHOULD support all core FHIR search parameters for the resources used in this IG.
 
