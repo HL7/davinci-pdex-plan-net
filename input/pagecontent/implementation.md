@@ -4,7 +4,7 @@ This page contains miscellaneous information on FHIR implementation. The content
 
 #### Conformance Requirements
 
-The conformance verbs *SHALL*, *SHALL NOT*, *SHOULD*, and *MAY) used in this guide are defined in 
+The conformance verbs **SHALL**, **SHALL NOT**, **SHOULD**, and **MAY**) used in this guide are defined in 
 [FHIR Conformance Rules](http://hl7.org/fhir/R4/conformance-rules.html).
 
 #### Privacy Considerations
@@ -20,7 +20,7 @@ Clients that cache query results can track additions or modifications to directo
 
 ### Representing and Searching Provider Directory Data
 
-It is important for payers to use the Plan-Net profiles consistently in order to achieve true interoperability of directory information among payers. The intent of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data. The Plan-Net design is based around the following types of searches.
+Server Actors **SHALL** use the [Plan-Net profiles and search parameters](artifacts.html) defined in this IG as well as the [core FHIR R4 search parameters](#search-parameters) used by this IG consistently in order to achieve true interoperability of directory information among payers. The intent of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data. The Plan-Net design is based around the following types of searches.
 
 <table style="border-color: Black;" border="3" width="947">
 <tbody>
@@ -130,7 +130,8 @@ To search for Practitioners or Organizations that will be active at a future tim
 If no period is provided, then it is assumend the role is active with no expiration date.
 
 #### HealthcareService
-The first type of search starts from HealthcareService.category and HealthcareService.specialty, so it is essential that each provider's service be supported by appropriate set of HealthcareService instances.&nbsp; HealthcareServices are typically provided by an organization, except in the case of a Practitioner that is not associated with an organization (see the solo practitioner example), and can be linked to a set of locations where service is provided, or identified as virtual services through an indicated set of virtual modalities.&nbsp; &nbsp;The examples illustrate this with an organization that provides three distinct Pharmacy services -- retail, compounding, and mail-order -- across its locations.&nbsp; All organizations that provide service should define an appropriate set. of HealthcareServices to facilitate search.&nbsp; The HealthcareService category, specialty and type fields are the highest level of organization of the services provided by the provider's network.
+
+The first type of search starts from HealthcareService.category and HealthcareService.specialty. For this to work, Server Actors **SHALL** provide appropriate set of [Plan-Net HealthcareService](StructureDefinition-plannet-HealthcareService.html) instances. HealthcareServices are typically provided by an organization, except in the case of a Practitioner that is not associated with an organization (see the solo practitioner example), and can be linked to a set of locations where service is provided, or identified as virtual services through an indicated set of virtual modalities.&nbsp; &nbsp;The examples illustrate this with an organization that provides three distinct Pharmacy services -- retail, compounding, and mail-order -- across its locations.&nbsp; All organizations that provide service should define an appropriate set. of HealthcareServices to facilitate search.&nbsp; The HealthcareService category, specialty and type fields are the highest level of organization of the services provided by the provider's network.
 
 Relevant examples:
 
@@ -352,7 +353,7 @@ An Endpoint instance&nbsp;provides&nbsp; technical details of an endpoint that c
 
 ### Search Parameters
 
-Plan-Net servers and clients SHALL support all the search parameters defined in this IG, and SHALL support the following Core FHIR search parameters:
+Plan-Net servers and clients **SHALL** support all the search parameters defined in this IG, and **SHALL** support the following Core FHIR search parameters:
 * Endpoint
   - organization
 * HealthcareService
