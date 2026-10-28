@@ -114,7 +114,8 @@ ValueSet: InsuranceProductTypeVS
 Title: "Insurance Product Type VS"
 Description: "A distinct package of health insurance coverage benefits that are offered using a particular product network type."
 * ^experimental = false
-* codes from system InsuranceProductTypeCS
+* codes from system http://terminology.hl7.org/CodeSystem/insurance-product-type
+// * codes from system InsuranceProductTypeCS
 
 
 ValueSet: InsurancePlanTypeVS

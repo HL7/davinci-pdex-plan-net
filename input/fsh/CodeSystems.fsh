@@ -104,6 +104,9 @@ Description: "Codes for documenting spoken language proficiency based on the Int
 
 */
 
+// Replaced by http://terminology.hl7.org/CodeSystem/insurance-product-type
+/*
+
 CodeSystem: InsuranceProductTypeCS
 Title: "Insurance Product Type"
 Description:  "A distinct package of health insurance coverage benefits that are offered using a particular product network type."
@@ -131,6 +134,8 @@ Description:  "A distinct package of health insurance coverage benefits that are
 * #vis "Vision Plan" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes."
 * #vishmo "Vision HMO" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes provided through a Health Maintenance Organization (HMO)."
 * ^caseSensitive = true
+
+*/
 
 CodeSystem: InsurancePlanTypeCS
 Title: "Insurance Plan Type"
