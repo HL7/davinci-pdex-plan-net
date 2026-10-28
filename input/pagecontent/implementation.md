@@ -127,7 +127,7 @@ Sample query to search for currently active Organizations (replace date in query
 
 To search for Practitioners or Organizations that will be active at a future time, change the date to a future date.
 
-If no period is provided, then it is assumend the role is active with no expiration date.
+If no period is provided, then it is assumed the role is active with no expiration date. If period is provided, the entry is assumed to be active during that period. Plan-Net requires that all resources in the directory have active set to true, since Plan-Net directories are assumed to contain only entries that are active currenly, historically, or in the future. When sourcing data from other sources such as a generic FHIR server, setting active to false in the source system will make the data invalid from a Plan-Net perspective, so it **SHALL** be removed from the target Plan-Net directory.
 
 #### HealthcareService
 

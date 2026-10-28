@@ -145,12 +145,30 @@ Description: "An extension to provide a human-readable description of an organiz
 
 Extension: PractitionerPeriod
 Id: practitioner-period
-Title: "Practitioner Description"
+Title: "Practitioner Period"
 Description: "Indicates when a Practitioner entry is or was active"
 * ^context[+].type = #element
 * ^context[=].expression = "Practitioner"
 * value[x] 1..1 MS
-* value[x] only Period 
+* value[x] only Period
+
+Extension: HealthcareServicePeriod
+Id: healthcare-service-period
+Title: "HealthcareService Period"
+Description: "Indicates when a HealthcareService entry is or was active"
+* ^context[+].type = #element
+* ^context[=].expression = "HealthcareService"
+* value[x] 1..1 MS
+* value[x] only Period
+
+Extension: LocationPeriod
+Id: location-period
+Title: "Location Period"
+Description: "Indicates when a Location entry is or was active"
+* ^context[+].type = #element
+* ^context[=].expression = "Location"
+* value[x] 1..1 MS
+* value[x] only Period
 
 Extension: PractitionerQualification
 Id: practitioner-qualification

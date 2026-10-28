@@ -31,9 +31,11 @@ Title:          "Plan-Net HealthcareService"
 Description:    "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
 * extension contains
     NewPatients named newpatients 0..* MS and
-    DeliveryMethod named deliverymethod 0..* MS 
+    DeliveryMethod named deliverymethod 0..* MS and
+	HealthcareServicePeriod named healthcare-service-period 0..1 MS 	
 * extension[newpatients] ^short = "New Patients"
 * extension[deliverymethod] ^short = "Delivery Method"
+* extension[healthcare-service-period] ^short = "HealthcareService Period"
 * identifier.type MS
 * identifier.value MS
 * active 1..1 MS
@@ -145,10 +147,12 @@ Description:    "A Location is the physical place where healthcare services are 
 * extension contains
     NewPatients named newpatients 0..* MS and
     Accessibility named accessibility 0..* MS and
-    $R4GeoJSONExtension named region 0..1 MS
+    LocBoundaryGeojson named region 0..1 MS and
+	LocationPeriod named location-period 0..1 MS
 * extension[newpatients] ^short = "New Patients"
 * extension[accessibility] ^short = "Accessibility"
 * extension[region] ^short = "Associated Region (GeoJSON)"
+* extension[location-period] ^short = "Location Period"
 * identifier.type MS
 * identifier.value MS
 * status 1..1 MS
@@ -186,7 +190,8 @@ Description:    "A Network refers to a healthcare provider insurance network. A 
 
 In the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively."
 * extension contains
-    LocationReference named location-reference 0..* MS
+    LocationReference named location-reference 0..* MS and
+	OrgPeriod named org-period 0..1 MS 
 * extension[location-reference] ^short = "Network coverage area"
 * identifier.type MS
 * identifier.value MS
@@ -306,6 +311,8 @@ Id:             plannet-Practitioner
 Title:          "Plan-Net Practitioner"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * obeys practitioner-birthdate
+* extension contains
+   PractitionerPeriod named practitioner-period 0..1 MS 
 * identifier.type MS
 * identifier.value MS
 * active 1..1  MS

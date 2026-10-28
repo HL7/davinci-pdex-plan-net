@@ -87,6 +87,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
+* extension[healthcare-service-period].valuePeriod.start = "2020-07-07"
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#outpat 
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * location[0] = Reference(HansSoloClinic)

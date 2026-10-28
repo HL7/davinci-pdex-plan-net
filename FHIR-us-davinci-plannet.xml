@@ -58,6 +58,7 @@
 <artifact id="Organization/HartfordOrthopedics" key="Organization-HartfordOrthopedics" name="HartfordOrthopedics"/>
 <artifact deprecated="true" id="CodeSystem/HealthcareServiceCategoryCS" key="CodeSystem-HealthcareServiceCategoryCS" name="Healthcare Service Category"/>
 <artifact id="ValueSet/HealthcareServiceCategoryVS" key="ValueSet-HealthcareServiceCategoryVS" name="Healthcare Service CategoryVS"/>
+<artifact id="StructureDefinition/healthcare-service-period" key="StructureDefinition-healthcare-service-period" name="HealthcareService Period"/>
 <artifact id="ValueSet/HealthcareServiceTypeVS" key="ValueSet-HealthcareServiceTypeVS" name="HealthcareService Types VS"/>
 <artifact id="HealthcareService/HospERService" key="HealthcareService-HospERService" name="HospERService"/>
 <artifact id="Location/HospLoc1" key="Location-HospLoc1" name="HospLoc1"/>
@@ -75,6 +76,7 @@
 <artifact id="PractitionerRole/JoeSmithRole3" key="PractitionerRole-JoeSmithRole3" name="JoeSmithRole3"/>
 <artifact id="CodeSystem/LanguageProficiencyCS" key="CodeSystem-LanguageProficiencyCS" name="Language Proficiency CS"/>
 <artifact id="ValueSet/LanguageProficiencyVS" key="ValueSet-LanguageProficiencyVS" name="Language Proficiency VS"/>
+<artifact id="StructureDefinition/location-period" key="StructureDefinition-location-period" name="Location Period"/>
 <artifact id="StructureDefinition/location-reference" key="StructureDefinition-location-reference" name="Location Reference"/>
 <artifact deprecated="true" id="StructureDefinition/plannet-Location-reference-extension" key="LocationReference" name="Location- reference"/>
 <artifact id="ValueSet/MinEndpointConnectionTypeVS" key="ValueSet-MinEndpointConnectionTypeVS" name="Minimum Endpoint Connection Types VS"/>
@@ -166,7 +168,7 @@
 <artifact deprecated="true" id="SearchParameter/practitionerrole-role" key="SearchParameter-practitionerrole-role" name="Plannet_sp_practitionerrole_role"/>
 <artifact deprecated="true" id="SearchParameter/practitionerrole-service" key="SearchParameter-practitionerrole-service" name="Plannet_sp_practitionerrole_service"/>
 <artifact deprecated="true" id="SearchParameter/practitionerrole-specialty" key="SearchParameter-practitionerrole-specialty" name="Plannet_sp_practitionerrole_specialty"/>
-<artifact id="StructureDefinition/practitioner-period" key="StructureDefinition-practitioner-period" name="Practitioner Description"/>
+<artifact id="StructureDefinition/practitioner-period" key="StructureDefinition-practitioner-period" name="Practitioner Period"/>
 <artifact id="StructureDefinition/practitioner-qualification" key="StructureDefinition-practitioner-qualification" name="Practitioner Qualification"/>
 <artifact id="ValueSet/PractitionerRoleVS" key="ValueSet-PractitionerRoleVS" name="PractitionerRole Code VS"/>
 <artifact id="CodeSystem/ProviderRoleCS" key="CodeSystem-ProviderRoleCS" name="Provider Role Codes"/>
