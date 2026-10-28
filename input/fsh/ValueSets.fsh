@@ -29,6 +29,7 @@ ValueSet: SpecialtiesVS
 Title: "Specialties VS"
 Description:  "Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."
 * ^experimental = false
+* ^copyright = "National Uniform Claim Committee (NUCC) Copyright 2026 American Medical Association. The National Uniform Claim Committee (NUCC) maintains the Health Insurance Claim Form (1500 Claim Form), the 1500 Health Insurance Claim Form Reference Instruction Manual (NUCC 1500 Instruction Manual) and two NUCC Data Sets, the Health Care Provider Taxonomy Code Set and the Provider Characteristics and Resources code set. As the NUCC Secretariat, the AMA holds the intellectual property on behalf of the NUCC and maintains the copyright of materials developed by the NUCC. For commercial use, including sales and redistribution, a license must be obtained."
 * codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from valueset NonIndividualSpecialtiesVS
 * $NUCCProviderTaxonomy#202D00000X "Integrative Medicine Physician"
@@ -276,6 +277,7 @@ ValueSet: IndividualAndGroupSpecialtiesVS
 Title: "Individual and Group Specialties"
 Description:  "Individual and Group Specialties from National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."
 * ^experimental = false
+* ^copyright = "National Uniform Claim Committee (NUCC) Copyright 2026 American Medical Association. The National Uniform Claim Committee (NUCC) maintains the Health Insurance Claim Form (1500 Claim Form), the 1500 Health Insurance Claim Form Reference Instruction Manual (NUCC 1500 Instruction Manual) and two NUCC Data Sets, the Health Care Provider Taxonomy Code Set and the Provider Characteristics and Resources code set. As the NUCC Secretariat, the AMA holds the intellectual property on behalf of the NUCC and maintains the copyright of materials developed by the NUCC. For commercial use, including sales and redistribution, a license must be obtained."
 * $NUCCProviderTaxonomy#101200000X "Drama Therapist"  // added 4/21/21
 * $NUCCProviderTaxonomy#101Y00000X "Counselor" 
 * $NUCCProviderTaxonomy#101YA0400X "Addiction (Substance Use Disorder) Counselor" 
@@ -952,6 +954,7 @@ ValueSet: NonIndividualSpecialtiesVS
 Title: "Non-Individual Specialties"
 Description:  "Non-Individual Specialties from National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."
 * ^experimental = false
+* ^copyright = "National Uniform Claim Committee (NUCC) Copyright 2026 American Medical Association. The National Uniform Claim Committee (NUCC) maintains the Health Insurance Claim Form (1500 Claim Form), the 1500 Health Insurance Claim Form Reference Instruction Manual (NUCC 1500 Instruction Manual) and two NUCC Data Sets, the Health Care Provider Taxonomy Code Set and the Provider Characteristics and Resources code set. As the NUCC Secretariat, the AMA holds the intellectual property on behalf of the NUCC and maintains the copyright of materials developed by the NUCC. For commercial use, including sales and redistribution, a license must be obtained."
 * $NUCCProviderTaxonomy#251300000X "Local Education Agency (LEA)"
 * $NUCCProviderTaxonomy#251B00000X "Case Management Agency"
 * $NUCCProviderTaxonomy#251C00000X "Developmentally Disabled Services Day Training Agency"
