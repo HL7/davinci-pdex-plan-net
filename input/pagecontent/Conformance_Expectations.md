@@ -5,15 +5,12 @@ Additional conformance expectations specific to this guide are as follows:
 ### Conformance Expectations
 * This guide inherits all conformance expectations identified in the Health Record Exchange (Hrex) Conformance Expectations section. All systems claiming conformance to this guide **SHALL** conform to the requirements listed in that section.
 
-* Server systems claiming conformance to this guide **SHALL** meet the capability statement expectation requirements identified in the [Plan Net CapabilityStatement](CapabilityStatement-plan-net.html) and **SHALL** have a CapabilityStatement that has a CapabilityStatement.instantiates containing the canonical URL http://hl7.org/fhir/us/davinci-pdex-plan-net/CapabilityStatement/plan-net or a URL to the appropriate version of the CapabilityStatement, and may include additional CapabilityStatement.instantiates elements with URLs conforming to others in the [Behavior: Capability Statements](artifacts.html#behavior-capability-statements) section of this guide. 
+* Server Actors claiming conformance to the REST API in this guide **SHALL** meet the capability statement expectation requirements identified in the [Plan Net CapabilityStatement](CapabilityStatement-plan-net.html) and **SHALL** have a CapabilityStatement that has a CapabilityStatement.instantiates containing the canonical URL http://hl7.org/fhir/us/davinci-pdex-plan-net/CapabilityStatement/plan-net or a URL to the appropriate version of the CapabilityStatement, and **MAY** include additional CapabilityStatement.instantiates elements with URLs conforming to others in the [Behavior: Capability Statements](artifacts.html#behavior-capability-statements) section of this guide. 
 
 ### MustSupport
 * The must support requirements for this IG inherit from the Conformance Expectations section of the [Da Vinci HRex IG]({{site.data.fhir.ver.hrex}}/conformance.html#mustsupport) and from [US Core]({{site.data.fhir.ver.uscore7}}/must-support.html). 
 
-
-When querying and reading the Plan-Net Profiles defined in this IG, Must Support on any profile data element **SHALL** be interpreted as follows:
-
-### Health Plan API Requirements
+### Server Actors Requirements
 
 * Health Plan API actors **SHALL** be capable of populating all Must Support data elements as part of the query results.
 * In situations where information on a particular Must Support data element is not present and the minimum cardinality is 0 , the Health Plan API actors **SHALL NOT** include the data elements in the resource instance returned as part of the query results.

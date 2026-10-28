@@ -80,7 +80,7 @@ menu:
     Use Cases: background.html
     Project and Participants: project.html
   Specification: 
-    Conformance Expectations        : confexpectations.html
+    Conformance Expectations        : Conformance_Expectations.html
     Implementation                  : implementation.html
     Privacy, Safety, and Security   : security.html
   FHIR Artifacts: artifacts.html

@@ -185,7 +185,8 @@
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="background" name="Background"/>
 <page key="ChangeHistory" name="Change History"/>
-<page key="confexpectations" name="Confexpectations"/>
+<page deprecated="true" key="confexpectations" name="Confexpectations"/>
+<page key="Conformance_Expectations" name="Conformance Expectations"/>
 <page key="downloads" name="Downloads"/>
 <page key="examples" name="Examples"/>
 <page key="index" name="Home"/>
