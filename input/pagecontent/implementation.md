@@ -353,67 +353,111 @@ An Endpoint instance&nbsp;provides&nbsp; technical details of an endpoint that c
 
 ### Search Parameters
 
-Plan-Net servers and clients **SHALL** support all the search parameters defined in this IG, and **SHALL** support the following Core FHIR search parameters:
-* Endpoint
-  - organization
-* HealthcareService
-  - coverage-area
-  - identifier
-  - endpoint
-  - location
-  - name
-  - organization
-  - service-category
-  - service-type
-  - specialty
-* InsurancePlan
-  - administered-by
-  - identifier
-  - name
-  - owned-by
-  - type
-* Location
-  - address
-  - address-city
-  - address-country
-  - address-postalcode
-  - address-state
-  - address-use
-  - endpoint
-  - organization
-  - partof
-  - type
-* Organization
-  - address
-  - endpoint
-  - name
-  - partof
-  - type
-* OrganizationAffiliation
-  - endpoint
-  - location
-  - network
-  - participating-organization
-  - primary-organization
-  - role
-  - service
-  - specialty
-* Practitioner
-  - family
-  - given
-  - name
-* PractitionerRole
-  - endpoint
-  - location
-  - organization
-  - practitioner
-  - role
-  - service
-  - specialty
+Plan-Net servers and clients **SHALL** support the following search parameters:
+* All the search parameters defined on the [Artifacts](artifacts) page of this IG. 
+* All the seach parameters defined in the [US Core implementation guide]({{site.data.fhir.ver.uscore7}}) for the US core resources inherited in this IG.
+* The following [Core FHIR R4](hl7.org/fhir/r4) search parameters:
 
-Plan-Net servers and clients SHOULD support all core FHIR search parameters for the resources used in this IG.
+[Endpoint](https://hl7.org/fhir/R4/endpoint.html#search)
+* organization
 
-Note that versions of Plan Net prior to 2.0.0 contained customer search parameters that were duplicates of core FHIR search parameters. Those have been removed. 
+[HealthcareService](https://hl7.org/fhir/R4/healthcareservice.html#search)
+* coverage-area
+* identifier
+* endpoint
+* location
+* name
+* organization
+* service-category
+* service-type
+* specialty
+
+[InsurancePlan](https://hl7.org/fhir/R4/insuranceplan.html#search)
+* administered-by
+* identifier
+* name
+* owned-by
+* type
+
+[Location](https://hl7.org/fhir/R4/location.html#search)
+* address
+* address-city
+* address-country
+* address-postalcode
+* address-state
+* address-use
+* endpoint
+* organization
+* partof
+* type
+
+[Organization](https://hl7.org/fhir/R4/organization.html#search)
+* address
+* endpoint
+* name
+* partof
+* type
+
+[OrganizationAffiliation](https://hl7.org/fhir/R4/organizationaffiliation.html#search)
+* endpoint
+* location
+* network
+* participating-organization
+* primary-organization
+* role
+* service
+* specialty
+
+[Practitioner](https://hl7.org/fhir/R4/practitioner.html#search)
+* family
+* given
+* name
+
+[PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html#search)
+* endpoint
+* location
+* organization
+* practitioner
+* role
+* service
+* specialty
+
+
+Plan-Net servers and clients **SHOULD** support all core FHIR search parameters for the resources used in this IG.
+
+Note that versions of Plan Net prior to 2.0.0 contained customer search parameters that were duplicates of core FHIR search parameters. Those have been removed in 2.0.0 and later releases. 
+
+#### Chaining and Reverse Chaining Requirements
+
+Many Plan-Net search parameters specify values for SearchParameter.chain. These are listed below. Server Actors **SHALL** support chaining for all these parameters and **SHOULD** support reverse chaining as well. 
+
+
+| Resource                | Search parameter                                                                 | `SearchParameter.chain` values                                                           |
+| ----------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Endpoint                | [organization][endpoint-organization]                                            | `name`, `address`, `partof`, `type`                                                      |
+| HealthcareService       | [endpoint][healthcareservice-endpoint]                                           | `organization`                                                                           |
+| HealthcareService       | [location][healthcareservice-location]                                           | `address`, `address-postalcode`, `address-city`, `address-state`, `organization`, `type` |
+| HealthcareService       | [organization][healthcareservice-organization]                                   | `name`, `address`, `partof`, `type`                                                      |
+| InsurancePlan           | [administered-by][insuranceplan-administered-by]                                 | `name`, `partof`                                                                         |
+| InsurancePlan           | [owned-by][insuranceplan-owned-by]                                               | `name`, `partof`                                                                         |
+| Location                | [endpoint][location-endpoint]                                                    | `organization`                                                                           |
+| Location                | [organization][location-organization]                                            | `name`, `address`, `partof`, `type`                                                      |
+| Location                | [partof][location-partof]                                                        | `type`, `address`, `organization`                                                        |
+| Organization            | [endpoint][organization-endpoint]                                                | `organization`                                                                           |
+| Organization            | [partof][organization-partof]                                                    | `name`, `address`, `type`                                                                |
+| OrganizationAffiliation | [endpoint][organizationaffiliation-endpoint]                                     | `organization`                                                                           |
+| OrganizationAffiliation | [location][organizationaffiliation-location]                                     | `address`, `address-postalcode`, `address-city`, `address-state`, `organization`, `type` |
+| OrganizationAffiliation | [network][organizationaffiliation-network]                                       | `name`, `partof`                                                                         |
+| OrganizationAffiliation | [participating-organization][organizationaffiliation-participating-organization] | `type`, `address`, `name`, `partof`                                                      |
+| OrganizationAffiliation | [primary-organization][organizationaffiliation-primary-organization]             | `type`, `address`, `name`, `partof`                                                      |
+| OrganizationAffiliation | [service][organizationaffiliation-service]                                       | `service-category`, `organization`, `location`                                           |
+| PractitionerRole        | [endpoint][practitionerrole-endpoint]                                            | `organization`                                                                           |
+| PractitionerRole        | [location][practitionerrole-location]                                            | `address`, `address-postalcode`, `address-city`, `address-state`, `organization`, `type` |
+| PractitionerRole        | [network][practitionerrole-network]                                              | `name`, `address`, `partof`, `type`                                                      |
+| PractitionerRole        | [organization][practitionerrole-organization]                                    | `name`, `address`, `partof`, `type`                                                      |
+| PractitionerRole        | [practitioner][practitionerrole-practitioner]                                    | `name`                                                                                   |
+| PractitionerRole        | [service][practitionerrole-service]                                              | `service-category`, `organization`, `location`                                           |
+
 
 ### Bulk Data
 Bulk data guidance in this version of the IG is draft only. It has not appeared in ballot and has not been fully tested.
