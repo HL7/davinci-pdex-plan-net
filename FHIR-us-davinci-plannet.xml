@@ -130,6 +130,7 @@
 <artifact deprecated="true" id="SearchParameter/insuranceplan-name" key="SearchParameter-insuranceplan-name" name="Plannet_sp_insuranceplan_name"/>
 <artifact id="SearchParameter/insuranceplan-network" key="SearchParameter-insuranceplan-network" name="Plannet_sp_insuranceplan_network"/>
 <artifact deprecated="true" id="SearchParameter/insuranceplan-owned-by" key="SearchParameter-insuranceplan-owned-by" name="Plannet_sp_insuranceplan_owned_by"/>
+<artifact id="SearchParameter/insuranceplan-period" key="SearchParameter-insuranceplan-period" name="Plannet_sp_insuranceplan_period"/>
 <artifact id="SearchParameter/insuranceplan-plan-type" key="SearchParameter-insuranceplan-plan-type" name="Plannet_sp_insuranceplan_plan_type"/>
 <artifact deprecated="true" id="SearchParameter/insuranceplan-type" key="SearchParameter-insuranceplan-type" name="Plannet_sp_insuranceplan_type"/>
 <artifact deprecated="true" id="SearchParameter/location-address" key="SearchParameter-location-address" name="Plannet_sp_location_address"/>

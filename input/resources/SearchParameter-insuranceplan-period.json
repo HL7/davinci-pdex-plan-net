@@ -1,0 +1,60 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "insuranceplan-period",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use",
+      "_valueCode": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "valueCanonical": "http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-period",
+  "version": "2.0.0-ballot",
+  "name": "Plannet_sp_insuranceplan_period",
+  "status": "active",
+  "publisher": "HL7 International / Financial Management",
+  "contact": [
+    {
+      "name": "HL7 International / Financial Management",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fm"
+        },
+        {
+          "system": "email",
+          "value": "fm@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Select InsurancePlan resources with coverage available during the specified period",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "code": "period",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "date",
+  "expression": "InsurancePlan.period",
+  "multipleOr": true
+}
