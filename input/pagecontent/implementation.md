@@ -425,7 +425,7 @@ Plan-Net servers and clients **SHALL** support the following search parameters:
 
 Plan-Net servers and clients **SHOULD** support all core FHIR search parameters for the resources used in this IG.
 
-Note that versions of Plan Net prior to 2.0.0 contained customer search parameters that were duplicates of core FHIR search parameters. Those have been removed in 2.0.0 and later releases. 
+Note that versions of Plan Net prior to 2.0.0 contained custom search parameters that were duplicates of core FHIR search parameters. Those have been removed in 2.0.0 and later releases. See the [Change Log](ChangeHistory.html#changes-and-updates-for-version-200-ballot) for details. 
 
 #### Chaining and Reverse Chaining Requirements
 
@@ -460,9 +460,75 @@ Many Plan-Net search parameters specify values for SearchParameter.chain. These 
 
 
 ### Bulk Data
-Bulk data guidance in this version of the IG is draft only. It has not appeared in ballot and has not been fully tested.
 
-A server **MAY** support [Bulk Data IG](http://hl7.org/fhir/uv/bulkdata/index.html) for the retrieval of directory data. 
-If and how authorization is supported is not defined by this specification, however, the Bulk IG does provide guidance on SMART Backend Service Authorization. 
+The [HL7 FHIR Bulk Data Access Implementation Guide (4.0.0-ballot)](https://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot/en/) defines mechanisms for exchanging large datasets of FHIR resources. Plan-Net directories may contain large numbers of insurance plans, networks, providers, locations, and healthcare services. Bulk Data provides an efficient alternative to retrieving this information through individual FHIR RESTful queries.
 
-In the future, this IG will likely align bulk data support with the [National Directory Bulk Data implementation section](https://build.fhir.org/ig/HL7/fhir-us-ndh/ndapi-ig.html#bulk-data-export-of-the-national-directory), but that is currently unpublished.
+Plan-Net servers **SHOULD** support one or both of the following Bulk Data mechanisms:
+
+- **[Bulk Export](https://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot/en/export.html):** Enables a Data Consumer to request and retrieve directory information from a Plan-Net server using an asynchronous export operation.
+- **[Bulk Publish](https://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot/en/publish.html):** Enables a Data Provider to publish directory information as downloadable files for retrieval by multiple Data Consumers without requiring each consumer to initiate a separate export.
+
+Implementations supporting either mechanism **SHALL** conform to the applicable requirements of the Bulk Data Access IG.
+
+#### Plan-Net Bulk Data Resources
+
+A Plan-Net Bulk Data dataset **SHOULD** include all applicable resources conforming to the Plan-Net profiles defined in this IG, including the following FHIR resource types:
+
+| Resource Type | Description |
+|---|---|
+| `InsurancePlan` | Insurance products and their associated provider networks. |
+| `Organization` | Payers, provider organizations, facilities, and networks. |
+| `OrganizationAffiliation` | Relationships between organizations, including network participation. |
+| `Practitioner` | Individual healthcare practitioners. |
+| `PractitionerRole` | Practitioner roles, specialties, practice locations, and network participation. |
+| `HealthcareService` | Healthcare services provided by organizations and practitioners. |
+| `Location` | Physical and virtual service locations, including geographic coverage areas. |
+| `Endpoint` | Electronic service endpoints associated with directory entities. |
+
+The dataset **SHOULD** include sufficient related resources to allow Data Consumers to resolve references and reconstruct the relationships between insurance plans, networks, providers, healthcare services, locations, and endpoints.
+
+Resources included in a Bulk Data dataset **SHALL** conform to the applicable Plan-Net profiles and requirements defined in this IG.
+
+#### Bulk Export
+
+Plan-Net servers supporting Bulk Export **SHOULD** support the [System Level Export](https://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot/en/export.html) operation:
+
+`POST [base]/$export`
+
+The system-level export enables Data Consumers to retrieve Plan-Net directory information, including resources that are not associated with individual patients.
+
+For Bulk Export:
+
+- The server **SHALL** support exporting all eight Plan-Net resource types listed above.
+- The server **SHOULD** support the `_type` parameter to allow Data Consumers to request specific resource types.
+- The server **SHOULD** support the `_since` parameter to allow Data Consumers to retrieve resources updated since a specified point in time, consistent with the Bulk Data Access IG.
+- The server **SHOULD** include resources of the requested types that are necessary to represent the directory information within the scope of the export.
+- The server **SHALL** implement the applicable Bulk Data Export kick-off, status, and file retrieval interactions as defined in the Bulk Data Access IG.
+
+Exported resources are delivered in newline-delimited JSON (NDJSON) files, with the file locations identified in the Bulk Data Export completion manifest.
+
+#### Bulk Publish
+
+Plan-Net servers supporting Bulk Publish **SHOULD** implement the [Bulk Publish](https://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot/en/publish.html) mechanism defined in the Bulk Data Access IG.
+
+Bulk Publish allows a Data Provider to make Plan-Net directory data available through a published manifest and associated downloadable resource files. Unlike Bulk Export, the Data Provider determines the contents of the published dataset, and multiple Data Consumers may retrieve the same published files.
+
+For Bulk Publish:
+
+- The Data Provider **SHALL** support publishing all eight Plan-Net resource types listed above, as applicable to the directory.
+- The Data Provider **SHALL** make a Bulk Publish manifest available through an HTTP GET endpoint terminating in `$bulk-publish`, as defined in the Bulk Data Access IG.
+- The manifest **SHALL** identify the downloadable files containing the published FHIR resources.
+- The published files **SHALL** conform to the applicable file format, access, and retrieval requirements of the Bulk Data Access IG.
+- The Data Provider **SHOULD** update the published dataset regularly to reflect changes to directory information.
+
+Bulk Publish also supports incremental updates, allowing Data Providers to publish changes to directory information without requiring Data Consumers to download the entire dataset each time. Implementations **MAY** use this capability to distribute additions, modifications, and deletions to directory resources.
+
+A draft CapabilityStatement for Bulk Publish is available on the [Artifacts](artifacts.html) page of this specification. The CapabilityStatement uses rest.operation to declare $bulk-publish, without requiring conventional FHIR resource-level REST interactions. This is consistent with the ballot's allowance for a simple HTTP server to host Bulk Publish. This will likely be updated when Bulk Data 4.0.0 is updated with it's own Bulk Publish CapabilityStatement, which the authors agreed to add during ballot reconciliation. 
+
+#### Bulk Data Security and Authorization
+
+Plan-Net directory information is generally intended to be publicly accessible. Bulk Data implementations **SHOULD** provide unauthenticated access to public directory data, consistent with the privacy and security requirements of this IG.
+
+When authentication or authorization is required, implementations **SHALL** follow the applicable security requirements of the Bulk Data Access IG, including its guidance for [SMART Backend Services Authorization](https://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot/en/authorization.html).
+
+

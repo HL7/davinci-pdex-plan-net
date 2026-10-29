@@ -103,6 +103,7 @@
 <artifact id="Location/PharmLoc2" key="Location-PharmLoc2" name="PharmLoc2"/>
 <artifact id="Location/PharmLoc3" key="Location-PharmLoc3" name="PharmLoc3"/>
 <artifact id="Location/PharmLoc4" key="Location-PharmLoc4" name="PharmLoc4"/>
+<artifact id="CapabilityStatement/plan-net-bulk-publish" key="CapabilityStatement-plan-net-bulk-publish" name="Plan-Net Bulk Publish CapabilityStatement (Draft)"/>
 <artifact id="CapabilityStatement/plan-net" key="CapabilityStatement-plan-net" name="Plan-Net CapabilityStatement"/>
 <artifact deprecated="true" id="StructureDefinition/plannet-Endpoint" key="Endpoint" name="Plan-Net Endpoint"/>
 <artifact deprecated="true" id="StructureDefinition/plannet-HealthcareService" key="HealthCareService" name="Plan-Net HealthcareService"/>

@@ -1,0 +1,81 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "plan-net-bulk-publish",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CapabilityStatement/plan-net-bulk-publish",
+  "version": "2.0.0-draft",
+  "name": "PlanNetBulkPublishCapabilityStatement",
+  "title": "Plan-Net Bulk Publish CapabilityStatement (Draft)",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-10-29",
+  "publisher": "HL7 International / Financial Management",
+  "description": "Draft requirements for a Plan-Net Data Provider supporting Bulk Publish using the Bulk Data Access IG 4.0.0-ballot. This artifact is intended to be reviewed and potentially replaced or aligned with a future Bulk Publish CapabilityStatement from the Bulk Data IG.",
+  "purpose": "Document the Bulk Publish endpoint and expected published Plan-Net resource types without implying on-demand Bulk Export or support for ordinary FHIR RESTful resource interactions.",
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "application/fhir+json"
+  ],
+  "implementationGuide": [
+    "http://hl7.org/fhir/us/davinci-pdex-plan-net/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net",
+    "http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata|4.0.0-ballot"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "documentation": "This CapabilityStatement describes a Bulk Publish Data Provider. GET [base]/$bulk-publish returns an application/json Bulk Publish manifest, which references published FHIR resource files in NDJSON. The operation may be hosted on an ordinary HTTP server and does not imply support for other FHIR RESTful interactions. The resource entries below identify the expected content of the published dataset, not searchable resources.",
+      "resource": [
+        {
+          "type": "Endpoint",
+          "profile": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint",
+          "documentation": "Published NDJSON files SHOULD contain Plan-Net conformant Endpoint resources when applicable. This entry describes dataset content, not support for resource-level REST interactions."
+        },
+        {
+          "type": "HealthcareService",
+          "profile": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService",
+          "documentation": "Published NDJSON files SHOULD contain Plan-Net conformant HealthcareService resources when applicable. This entry describes dataset content, not support for resource-level REST interactions."
+        },
+        {
+          "type": "InsurancePlan",
+          "profile": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan",
+          "documentation": "Published NDJSON files SHOULD contain Plan-Net conformant InsurancePlan resources when applicable. This entry describes dataset content, not support for resource-level REST interactions."
+        },
+        {
+          "type": "Location",
+          "profile": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location",
+          "documentation": "Published NDJSON files SHOULD contain Plan-Net conformant Location resources when applicable. This entry describes dataset content, not support for resource-level REST interactions."
+        },
+        {
+          "type": "Organization",
+          "profile": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization",
+          "documentation": "Published Organization resources can conform to the Plan-Net Organization or Plan-Net Network profile. These entries describe dataset content, not support for resource-level REST interactions.",
+          "supportedProfile": [
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"
+          ]
+        },
+        {
+          "type": "OrganizationAffiliation",
+          "profile": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation",
+          "documentation": "Published NDJSON files SHOULD contain Plan-Net conformant OrganizationAffiliation resources when applicable. This entry describes dataset content, not support for resource-level REST interactions."
+        },
+        {
+          "type": "Practitioner",
+          "profile": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner",
+          "documentation": "Published NDJSON files SHOULD contain Plan-Net conformant Practitioner resources when applicable. This entry describes dataset content, not support for resource-level REST interactions."
+        },
+        {
+          "type": "PractitionerRole",
+          "profile": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole",
+          "documentation": "Published NDJSON files SHOULD contain Plan-Net conformant PractitionerRole resources when applicable. This entry describes dataset content, not support for resource-level REST interactions."
+        }
+      ],
+      "operation": [
+        {
+          "name": "bulk-publish",
+          "definition": "http://hl7.org/fhir/uv/bulkdata/OperationDefinition/bulk-publish",
+          "documentation": "The Data Provider SHALL respond to HTTP GET [base]/$bulk-publish with a Bulk Publish manifest using application/json and provide the referenced files as specified by Bulk Data Access IG 4.0.0-ballot. The dataset SHOULD include applicable Plan-Net resources from the eight listed types, sufficient to preserve relevant directory relationships. This is a static or periodically updated publication; it does not initiate an asynchronous export."
+        }
+      ]
+    }
+  ]
+}
