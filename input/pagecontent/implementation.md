@@ -429,7 +429,7 @@ Note that versions of Plan Net prior to 2.0.0 contained custom search parameters
 
 #### Chaining and Reverse Chaining Requirements
 
-Many Plan-Net search parameters specify values for SearchParameter.chain. These are listed below. Server Actors **SHALL** support chaining for all these parameters and **SHOULD** support reverse chaining as well. 
+Server Actors **SHALL** support chaining for the following resources and search parameters and **SHOULD** support reverse chaining as well. 
 
 
 | Resource                | Search parameter                                                                 | `SearchParameter.chain` values                                                           |

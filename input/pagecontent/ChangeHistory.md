@@ -4,7 +4,60 @@ The following high level changes were addressed in this release:
 
 * Updated Bulk Data support to version 4.0.0 of the Bulk Data IG. This includes support for Bulk Publish. 
 * Removed code systems that have been moved to THO
-* Removed search parameters that were duplicative of core FHIR R4 search parameters
+* Removed search parameters that were duplicative of core FHIR R4 search parameters. These parameters are listed below: 
+  - Endpoint:
+    * Plannet_sp_endpoint_organization
+  - HealthcareService:
+    * Plannet_sp_healthcareservice_category
+    * Plannet_sp_healthcareservice_coverage_area
+    * Plannet_sp_healthcareservice_endpoint
+    * Plannet_sp_healthcareservice_location
+    * Plannet_sp_healthcareservice_name
+    * Plannet_sp_healthcareservice_organization
+    * Plannet_sp_healthcareservice_specialty
+    * Plannet_sp_healthcareservice_type
+  - InsurancePlan:
+    * Plannet_sp_insuranceplan_administered_by
+    * Plannet_sp_insuranceplan_identifier
+    * Plannet_sp_insuranceplan_name
+    * Plannet_sp_insuranceplan_owned_by
+    * Plannet_sp_insuranceplan_type
+  - Location:
+    * Plannet_sp_location_address
+    * Plannet_sp_location_address_city
+    * Plannet_sp_location_address_postalcode
+    * Plannet_sp_location_address_state
+    * Plannet_sp_location_endpoint
+    * Plannet_sp_location_organization
+    * Plannet_sp_location_partof
+    * Plannet_sp_location_type
+  - Organization:
+    * Plannet_sp_organization_address
+    * Plannet_sp_organization_endpoint
+    * Plannet_sp_organization_name
+    * Plannet_sp_organization_partof
+    * Plannet_sp_organization_type
+  - OrganizationAffiliation:
+    * Plannet_sp_organizationaffiliation_endpoint
+    * Plannet_sp_organizationaffiliation_location
+    * Plannet_sp_organizationaffiliation_network
+    * Plannet_sp_organizationaffiliation_participating_organization
+    * Plannet_sp_organizationaffiliation_primary_organization
+    * Plannet_sp_organizationaffiliation_role
+    * Plannet_sp_organizationaffiliation_service
+    * Plannet_sp_organizationaffiliation_specialty
+  - Practitioner:
+    * Plannet_sp_practitioner_family_name
+    * Plannet_sp_practitioner_given_name
+    * Plannet_sp_practitioner_name
+  - PractitionerRole:
+    * Plannet_sp_practitionerrole_endpoint
+    * Plannet_sp_practitionerrole_location
+    * Plannet_sp_practitionerrole_organization
+    * Plannet_sp_practitionerrole_practitioner
+    * Plannet_sp_practitionerrole_role
+    * Plannet_sp_practitionerrole_service
+    * Plannet_sp_practitionerrole_specialty
 
 Specific JIRA tickets applied in this update are listed below:
 
