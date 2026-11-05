@@ -59,5 +59,8 @@ INFORMATION: StructureDefinition/plannet-Practitioner: StructureDefinition.snaps
 
 WARNING: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#7.0.0 released on 2024-05-08, but the most recent appropriate version is 9.0.0. This reference is getting old and the more recent version should be considered
 
+# 9 - The NUCC code system in tx.fhir.org is stuck at 22.1 which is 4 years old. Latest is 26.1, and this IG includes codes from that version which is causing expansion to fail for value sets that include them. 
 
+%None of the codings provided are in the value set 'Specialties VS' (http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/SpecialtiesVS|2.0.0-ballot), and a coding from this value set is required)%
+%None of the codings provided are in the value set 'Individual and Group Specialties' (http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/IndividualAndGroupSpecialtiesVS|2.0.0-ballot), and a coding from this value set is required)%
 
