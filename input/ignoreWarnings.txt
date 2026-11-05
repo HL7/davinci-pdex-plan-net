@@ -32,7 +32,7 @@ INFORMATION: CodeSystem/VirtualModalitiesCS: CodeSystem: Most code systems defin
 
 
 # 4 - Acknowledge this IG is using code systems that are draft in THO
-INFORMATION: OrganizationAffiliation/HartfordOrthopedicAffil: OrganizationAffiliation.code[0]: Reference to draft CodeSystem http://hl7.org/fhir/organization-role|4.0.1
+INFORMATION: OrganizationAffiliation/HartfordOrthopedicAffil: OrganizationAffiliation.code[0]: Reference to draft CodeSystem http://hl7.org/fhir/organization-role|4.0.1 from active ValueSet http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/OrganizationAffiliationRoleVS|2.0.0-ballot
 
 
 # 5 - Information Message regarding a deprecated extension (maxValueSet), that was inherited through the FHIR R4 standard itself.
@@ -54,4 +54,10 @@ INFORMATION: StructureDefinition/plannet-Practitioner: StructureDefinition.snaps
 INFORMATION: StructureDefinition/plannet-Network: StructureDefinition.snapshot.element[10].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/plannet-Practitioner: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+
+# 8 - Acknowledge the use of an older version of US Core
+
+WARNING: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#7.0.0 released on 2024-05-08, but the most recent appropriate version is 9.0.0. This reference is getting old and the more recent version should be considered
+
+
 

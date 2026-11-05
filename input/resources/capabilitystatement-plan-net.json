@@ -1337,7 +1337,7 @@
         }
       ],
       "security": {
-        "description": "1. See the [General Security Considerations](implementation.html#general-security-considerations) section for requirements and recommendations.\n1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."
+        "description": "1. See the [Security](security.html) section for requirements and recommendations.\n1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."
       }
     }
   ],

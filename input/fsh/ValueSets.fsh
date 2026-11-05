@@ -273,6 +273,10 @@ Description: "Value Set for Organization Affiliation Roles"
 * exclude  $HL7OrganizationRoleCS#member  // replaced by OrganizationAffiliationRoleCS#memberof
 * codes from system http://terminology.hl7.org/CodeSystem/organization-affiliation-role
 
+
+// Moved IndividualAndGroupSpecialtiesVS into it's own file for updates. 
+/*
+
 ValueSet: IndividualAndGroupSpecialtiesVS
 Title: "Individual and Group Specialties"
 Description:  "Individual and Group Specialties from National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."
@@ -949,6 +953,8 @@ Description:  "Individual and Group Specialties from National Uniform Claim Comm
 * $NUCCProviderTaxonomy#376J00000X "Homemaker" 
 * $NUCCProviderTaxonomy#376K00000X "Nurse's Aide" 
 * $NUCCProviderTaxonomy#405300000X "Prevention Professional" 
+
+*/
 
 ValueSet: NonIndividualSpecialtiesVS
 Title: "Non-Individual Specialties"
