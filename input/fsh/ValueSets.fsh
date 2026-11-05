@@ -32,8 +32,8 @@ Description:  "Specialties value set based on National Uniform Claim Committee (
 * ^copyright = "National Uniform Claim Committee (NUCC) Copyright 2026 American Medical Association. The National Uniform Claim Committee (NUCC) maintains the Health Insurance Claim Form (1500 Claim Form), the 1500 Health Insurance Claim Form Reference Instruction Manual (NUCC 1500 Instruction Manual) and two NUCC Data Sets, the Health Care Provider Taxonomy Code Set and the Provider Characteristics and Resources code set. As the NUCC Secretariat, the AMA holds the intellectual property on behalf of the NUCC and maintains the copyright of materials developed by the NUCC. For commercial use, including sales and redistribution, a license must be obtained."
 * codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from valueset NonIndividualSpecialtiesVS
-* $NUCCProviderTaxonomy#202D00000X "Integrative Medicine Physician"
-* $NUCCProviderTaxonomy#207VC0300X "Complex Family Planning Physician"
+// * $NUCCProviderTaxonomy#202D00000X "Integrative Medicine Physician"    // removed from here since now part of IndividualAndGroupSpecialtiesVS
+// * $NUCCProviderTaxonomy#207VC0300X "Complex Family Planning Physician" // removed from here since now part of IndividualAndGroupSpecialtiesVS
 
 ValueSet: SpecialtyAndDegreeLicenseCertificateVS
 Title: "Specialties, Degrees, Licenses, and Certificates VS"
