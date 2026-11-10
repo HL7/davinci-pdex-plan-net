@@ -5,7 +5,7 @@ Additional conformance expectations specific to this guide are as follows:
 ### Conformance Expectations
 * This guide inherits all conformance expectations identified in the Health Record Exchange (Hrex) Conformance Expectations section. All systems claiming conformance to this guide **SHALL** conform to the requirements listed in that section.
 * Server Actors claiming conformance to the REST API in this guide **SHALL** meet the capability statement expectation requirements identified in the [Plan Net CapabilityStatement](CapabilityStatement-plan-net.html) and **SHALL** have a CapabilityStatement that has a CapabilityStatement.instantiates containing the canonical URL http://hl7.org/fhir/us/davinci-pdex-plan-net/CapabilityStatement/plan-net or a URL to the appropriate version of the CapabilityStatement.
-* Server systems claiming conformance to this guide SHOULD meet the capability statement expectation requirements identified in the Plan-Net Bulk Publish CapabilityStatement. Server Actors claiming conformance to this guide MAY have a CapabilityStatement that has a CapabilityStatement.instantiates with a URL of http://hl7.org/fhir/us/davinci-pdex-plan-net/CapabilityStatement/plan-net-bulk-publish.
+* Server systems claiming conformance to this guide SHOULD meet the capability statement expectation requirements identified in the [Plan-Net Bulk Publish CapabilityStatement](CapabilityStatement-plan-net-bulk-publish.html). Server Actors claiming conformance to this guide MAY have a CapabilityStatement that has a CapabilityStatement.instantiates with a URL of http://hl7.org/fhir/us/davinci-pdex-plan-net/CapabilityStatement/plan-net-bulk-publish.
 * Detailed conformance requirements are specified on the [Implementation](implementation.html) page of this guide. 
 
 ### MustSupport
@@ -14,10 +14,10 @@ Additional conformance expectations specific to this guide are as follows:
 ### Server Actors Requirements
 * Health Plan API actors **SHALL** be capable of populating all Must Support data elements as part of the query results.
 * In situations where information on a particular Must Support data element is not present and the minimum cardinality is 0 , the Health Plan API actors **SHALL NOT** include the data elements in the resource instance returned as part of the query results.
-* In situations where information on a particular data element is not present and the minimum cardinality is &gt;0 **SHALL**&nbsp;send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or use the dataAbsentReason extension.
+* In situations where information on a particular data element is not present and the minimum cardinality is &gt;0 **SHALL** send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or use the dataAbsentReason extension.
 
 ### Application Requirements
-* Application actors&nbsp;**SHALL** be capable of processing resource instances containing the Must Support data elements without generating an error or causing the application to fail.
+* Application actors **SHALL** be capable of processing resource instances containing the Must Support data elements without generating an error or causing the application to fail.
 * Application actors **SHOULD** be capable of displaying the data elements for human use or storing the information for other purposes.
 * When querying Health Plan API actors, Application actors **SHALL** interpret missing Must Support data elements within resource instances as data not present in the Health Plan API actors system.
 * Consumer App actors **SHALL** be able to process resource instances containing Must Support data elements asserting missing information.

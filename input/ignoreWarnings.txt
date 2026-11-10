@@ -59,8 +59,18 @@ INFORMATION: StructureDefinition/plannet-Practitioner: StructureDefinition.snaps
 
 WARNING: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#7.0.0 released on 2024-05-08, but the most recent appropriate version is 9.0.0. This reference is getting old and the more recent version should be considered
 
-# 9 - The NUCC code system in tx.fhir.org is stuck at 22.1 which is 4 years old. Latest is 26.1, and this IG includes codes from that version which is causing expansion to fail for value sets that include them. 
+# 9 - The NUCC code system in tx.fhir.org is stuck at 22.1 which is 4 years old. Latest is 26.1, and this IG includes codes from that version which is causing expansion to fail for value sets that include them. There is a pull request to update NUCC on tx.fhir.org here: https://github.com/FHIR/packages/pull/55. 
 
 %None of the codings provided are in the value set 'Specialties VS' (http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/SpecialtiesVS|2.0.0-ballot), and a coding from this value set is required)%
 %None of the codings provided are in the value set 'Individual and Group Specialties' (http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/IndividualAndGroupSpecialtiesVS|2.0.0-ballot), and a coding from this value set is required)%
+
+# 10 Da Vinci IGs require supporting multiple US Core versions as dependencies, which results in these errors:
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[3]: The canonical URL http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core points to the package hl7.fhir.us.core which is inconsistent with the stated packageId of hl7.fhir.us.core.v610
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[3]: The packageId hl7.fhir.us.core.v610 points to the canonical http://hl7.org/fhir/us/core/v610 which is inconsistent with the stated canonical of http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[4]: The canonical URL http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core points to the package hl7.fhir.us.core which is inconsistent with the stated packageId of hl7.fhir.us.core.v311
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[4]: The packageId hl7.fhir.us.core.v311 points to the canonical http://hl7.org/fhir/us/core/v311 which is inconsistent with the stated canonical of http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+
+# Acknowledge depending on the ballot version of Bulk Data 4.0.0. Will update to the final version when it is published.
+WARNING: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[6]: The ImplementationGuide uses package hl7.fhir.uv.bulkdata#4.0.0-ballot released on 2026-08-07, but the most recent appropriate version is 3.0.0. This reference is getting old and the more recent version should be considered
+
 

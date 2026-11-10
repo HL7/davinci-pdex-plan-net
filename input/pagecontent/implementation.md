@@ -354,9 +354,9 @@ An Endpoint instance&nbsp;provides&nbsp; technical details of an endpoint that c
 ### Search Parameters
 
 Plan-Net servers and clients **SHALL** support the following search parameters:
-* All the search parameters defined on the [Artifacts](artifacts) page of this IG. 
+* All the search parameters defined on the [Artifacts](artifacts.html) page of this IG. 
 * All the seach parameters defined in the [US Core implementation guide]({{site.data.fhir.ver.uscore7}}) for the US core resources inherited in this IG.
-* The following [Core FHIR R4](hl7.org/fhir/r4) search parameters:
+* The following [Core FHIR R4](http://hl7.org/fhir/r4) search parameters:
 
 [Endpoint](https://hl7.org/fhir/R4/endpoint.html#search)
 * organization
