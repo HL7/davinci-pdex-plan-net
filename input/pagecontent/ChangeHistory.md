@@ -61,7 +61,43 @@ The following high level changes were addressed in this release:
 
 Specific JIRA tickets applied in this update are listed below:
 
-* TBD
+
+#### Non-Compatible
+
+* [FHIR-58225](https://jira.hl7.org/browse/FHIR-58225) Clarify Conformance Expectations for Provider Directory Search Capabilities
+* [FHIR-57634](https://jira.hl7.org/browse/FHIR-57634) VirtualModalitiesVS is using local CodeSystem when the same exists in THO
+* [FHIR-57633](https://jira.hl7.org/browse/FHIR-57633) OrganizationAffiliationRoleVS is using a local CodeSystem when the same exists in THO
+* [FHIR-57632](https://jira.hl7.org/browse/FHIR-57632) HealthcareServiceCategoryVS is using a local CodeSystem when the same exists in THO
+* [FHIR-57631](https://jira.hl7.org/browse/FHIR-57631) DeliveryMethodVS is using a local CodeSystem when the same exists in THO
+* [FHIR-57630](https://jira.hl7.org/browse/FHIR-57630) the AccessibilityVS is using local codes when the same exist in THO
+* [FHIR-57460](https://jira.hl7.org/browse/FHIR-57460) Accessibility vocabulary should use THO codeSystem
+* [FHIR-57456](https://jira.hl7.org/browse/FHIR-57456) the AcceptingPatientsVS is using a local CodeSystem when the same exists in THO
+* [FHIR-57453](https://jira.hl7.org/browse/FHIR-57453) insurance-product-type is in THO so should not be duplicated in Plan-Net
+* [FHIR-51109](https://jira.hl7.org/browse/FHIR-51109) Clarify and narrow the required search parameter support
+
+#### Substantive
+
+* [FHIR-57809](https://jira.hl7.org/browse/FHIR-57809) Request to set Birthdate to 0..0 in Practitioner
+* [FHIR-56859](https://jira.hl7.org/browse/FHIR-56859) Add MA Plan Finder identifier to InsurancePlan
+* [FHIR-56850](https://jira.hl7.org/browse/FHIR-56850) Active flag on all PDEX FHIR Resources
+* [FHIR-56373](https://jira.hl7.org/browse/FHIR-56373) The Taxonomy codes mentioned in the IG 1.2.0 version don't consist of all the Taxonomy codes mentioned on the NUCC website
+* [FHIR-51909](https://jira.hl7.org/browse/FHIR-51909) New search parameters are not in the CapabilityStatement
+* [FHIR-51481](https://jira.hl7.org/browse/FHIR-51481) Evaluate REST vs. Bulk exchange options
+* [FHIR-51185](https://jira.hl7.org/browse/FHIR-51185) IG : DaVinci PDex Plan Net - Provider Dir (V1.1.0) - Practitioner Profile
+* [FHIR-51912](https://jira.hl7.org/browse/FHIR-51912) The sample queries under 7.2.1 "Searching for active Practitioners and Organizations" are not correct and there is a misspelling of Practitioners
+* [FHIR-51803](https://jira.hl7.org/browse/FHIR-51803) Conformance expectations incorrectly points to the Formulary CapabilityStatement vs PlanNet
+
+
+#### Non-substantive
+
+* [FHIR-56420](https://jira.hl7.org/browse/FHIR-56420) Incorrect word "Confexpectations" used as page header in Section 4
+* [FHIR-52377](https://jira.hl7.org/browse/FHIR-52377) IG seems to imply incorrect use of _LastUpdated
+* [FHIR-51844](https://jira.hl7.org/browse/FHIR-51844) Remove mention of PlanNet not including PracRole
+* [FHIR-51759](https://jira.hl7.org/browse/FHIR-51759) Clarify conformance actors
+* [FHIR-50180](https://jira.hl7.org/browse/FHIR-50180) new-patients-characteristics constraint typo
+* [FHIR-53594](https://jira.hl7.org/browse/FHIR-53594) Add CPT IP statement to rest of IP statements
+* [FHIR-53570](https://jira.hl7.org/browse/FHIR-53570) Change the Plan net Support->Discussion Forum link to point to the plan net stream
+
 
 
 ### Changes and Updates for Version 1.2.0
