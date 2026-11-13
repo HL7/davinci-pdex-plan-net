@@ -33,6 +33,7 @@ INFORMATION: CodeSystem/VirtualModalitiesCS: CodeSystem: Most code systems defin
 
 # 4 - Acknowledge this IG is using code systems that are draft in THO
 INFORMATION: OrganizationAffiliation/HartfordOrthopedicAffil: OrganizationAffiliation.code[0]: Reference to draft CodeSystem http://hl7.org/fhir/organization-role|4.0.1 from active ValueSet http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/OrganizationAffiliationRoleVS|2.0.0-ballot
+INFORMATION: ValueSet/OrganizationAffiliationRoleVS: ValueSet.compose.exclude[0].concept[0]: Reference to draft CodeSystem http://hl7.org/fhir/organization-role|4.0.1 from active ValueSet http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/OrganizationAffiliationRoleVS|2.0.0-ballot
 
 
 # 5 - Information Message regarding a deprecated extension (maxValueSet), that was inherited through the FHIR R4 standard itself.

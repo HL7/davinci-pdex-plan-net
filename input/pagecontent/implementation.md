@@ -4,15 +4,15 @@ This page contains miscellaneous information on FHIR implementation. The content
 
 #### Conformance Requirements
 
-The conformance verbs **SHALL**, **SHALL NOT**, **SHOULD**, and **MAY**) used in this guide are defined in 
+The conformance verbs used in this guide are defined in 
 [FHIR Conformance Rules](http://hl7.org/fhir/R4/conformance-rules.html).
 
 #### Privacy Considerations
 Access to the Plan-Net service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that were queried.
 
-A conformant Plan-Net service *SHALL NOT* require a directory mobile application to send consumer identifying information in order to query content.
+§plan-net-imp-1:A conformant Plan-Net service *SHALL NOT* require a directory mobile application to send consumer identifying information in order to query content.§
 
-A directory mobile application *SHALL NOT* send consumer identifiable information when querying a Plan-Net service.
+§plan-net-imp-2:A directory mobile application *SHALL NOT* send consumer identifiable information when querying a Plan-Net service.§
 
 #### Client Detection of Updates Directory Content
 
@@ -20,7 +20,7 @@ Clients that cache query results can track additions or modifications to directo
 
 ### Representing and Searching Provider Directory Data
 
-Server Actors **SHALL** use the [Plan-Net profiles and search parameters](artifacts.html) defined in this IG as well as the [core FHIR R4 search parameters](#search-parameters) used by this IG consistently in order to achieve true interoperability of directory information among payers. The intent of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data. The Plan-Net design is based around the following types of searches.
+§plan-net-imp-3:Server Actors **SHALL** use the [Plan-Net profiles and search parameters](artifacts.html) defined in this IG as well as the [core FHIR R4 search parameters](#search-parameters) used by this IG consistently in order to achieve true interoperability of directory information among payers. The intent of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data. The Plan-Net design is based around the following types of searches.§
 
 <table style="border-color: Black;" border="3" width="947">
 <tbody>
@@ -127,11 +127,11 @@ Sample query to search for currently active Organizations (replace date in query
 
 To search for Practitioners or Organizations that will be active at a future time, change the date to a future date.
 
-If no period is provided, then it is assumed the role is active with no expiration date. If period is provided, the entry is assumed to be active during that period. Plan-Net requires that all resources in the directory have active set to true, since Plan-Net directories are assumed to contain only entries that are active currenly, historically, or in the future. When sourcing data from other sources such as a generic FHIR server, setting active to false in the source system will make the data invalid from a Plan-Net perspective, so it **SHALL** be removed from the target Plan-Net directory.
+If no period is provided, then it is assumed the role is active with no expiration date. If period is provided, the entry is assumed to be active during that period. Plan-Net requires that all resources in the directory have active set to true, since Plan-Net directories are assumed to contain only entries that are active currenly, historically, or in the future. §plan-net-imp-4:When sourcing data from other sources such as a generic FHIR server, setting active to false in the source system will make the data invalid from a Plan-Net perspective, so it **SHALL** be removed from the target Plan-Net directory.§
 
 #### HealthcareService
 
-The first type of search starts from HealthcareService.category and HealthcareService.specialty. For this to work, Server Actors **SHALL** provide appropriate set of [Plan-Net HealthcareService](StructureDefinition-plannet-HealthcareService.html) instances. HealthcareServices are typically provided by an organization, except in the case of a Practitioner that is not associated with an organization (see the solo practitioner example), and can be linked to a set of locations where service is provided, or identified as virtual services through an indicated set of virtual modalities.&nbsp; &nbsp;The examples illustrate this with an organization that provides three distinct Pharmacy services -- retail, compounding, and mail-order -- across its locations.&nbsp; All organizations that provide service should define an appropriate set. of HealthcareServices to facilitate search.&nbsp; The HealthcareService category, specialty and type fields are the highest level of organization of the services provided by the provider's network.
+The first type of search starts from HealthcareService.category and HealthcareService.specialty. For this to work, §plan-net-imp-5:Server Actors **SHALL** provide appropriate set of [Plan-Net HealthcareService](StructureDefinition-plannet-HealthcareService.html) instances§. HealthcareServices are typically provided by an organization, except in the case of a Practitioner that is not associated with an organization (see the solo practitioner example), and can be linked to a set of locations where service is provided, or identified as virtual services through an indicated set of virtual modalities.&nbsp; &nbsp;The examples illustrate this with an organization that provides three distinct Pharmacy services -- retail, compounding, and mail-order -- across its locations.&nbsp; All organizations that provide service should define an appropriate set. of HealthcareServices to facilitate search.&nbsp; The HealthcareService category, specialty and type fields are the highest level of organization of the services provided by the provider's network.
 
 Relevant examples:
 
@@ -353,6 +353,8 @@ An Endpoint instance&nbsp;provides&nbsp; technical details of an endpoint that c
 
 ### Search Parameters
 
+§§plan-net-imp-6:Plan Net Search Parameter Requirements^
+
 Plan-Net servers and clients **SHALL** support the following search parameters:
 * All the search parameters defined on the [Artifacts](artifacts.html) page of this IG. 
 * All the seach parameters defined in the [US Core implementation guide]({{site.data.fhir.ver.uscore7}}) for the US core resources inherited in this IG.
@@ -429,7 +431,7 @@ Note that versions of Plan Net prior to 2.0.0 contained custom search parameters
 
 #### Chaining and Reverse Chaining Requirements
 
-Server Actors **SHALL** support chaining for the following resources and search parameters and **SHOULD** support reverse chaining as well. 
+Server Actors **SHALL** support chaining for the following resources and search parameters and **SHOULD** support reverse chaining as well.
 
 
 | Resource                | Search parameter                                                                 | `SearchParameter.chain` values                                                           |
@@ -458,12 +460,14 @@ Server Actors **SHALL** support chaining for the following resources and search 
 | PractitionerRole        | [practitioner][practitionerrole-practitioner]                                    | `name`                                                                                   |
 | PractitionerRole        | [service][practitionerrole-service]                                              | `service-category`, `organization`, `location`                                           |
 
+§§
 
 ### Bulk Data
 
 The [HL7 FHIR Bulk Data Access Implementation Guide (4.0.0-ballot)](https://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot/en/) defines mechanisms for exchanging large datasets of FHIR resources. Plan-Net directories may contain large numbers of insurance plans, networks, providers, locations, and healthcare services. Bulk Data provides an efficient alternative to retrieving this information through individual FHIR RESTful queries.
 
-Plan-Net servers **SHOULD** support one or both of the following Bulk Data mechanisms:
+
+§§plan-net-imp-7:Bulk Data Requirements^Plan-Net servers **SHOULD** support one or both of the following Bulk Data mechanisms
 
 - **[Bulk Export](https://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot/en/export.html):** Enables a Data Consumer to request and retrieve directory information from a Plan-Net server using an asynchronous export operation.
 - **[Bulk Publish](https://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot/en/publish.html):** Enables a Data Provider to publish directory information as downloadable files for retrieval by multiple Data Consumers without requiring each consumer to initiate a separate export.
@@ -532,3 +536,4 @@ Plan-Net directory information is generally intended to be publicly accessible. 
 When authentication or authorization is required, implementations **SHALL** follow the applicable security requirements of the Bulk Data Access IG, including its guidance for [SMART Backend Services Authorization](https://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot/en/authorization.html).
 
 
+§§

@@ -6,5 +6,88 @@
   "title" : "Narrative Conformance Statements",
   "status" : "active",
   "experimental" : false,
-  "description" : "Conformance statements found throughout the narrative of the IG consolidated into this computable resource for traceability purposes"
+  "description" : "Conformance statements found throughout the narrative of the IG consolidated into this computable resource for traceability purposes",
+  "statement" : [{
+    "key" : "plan-net-conf-1",
+    "conformance" : ["SHALL",
+    "SHOULD",
+    "MAY"],
+    "requirement" : "Use of Conformance Verbs^This implementation guide uses specific terminology such as **SHALL**, **SHOULD**, **MAY** to flag statements that have relevance for the evaluation of conformance with the guide."
+  },
+  {
+    "key" : "plan-net-conf-2",
+    "conformance" : ["SHALL"],
+    "requirement" : "This guide inherits all conformance expectations identified in the Health Record Exchange (Hrex) Conformance Expectations section. All systems claiming conformance to this guide **SHALL** conform to the requirements listed in that section."
+  },
+  {
+    "key" : "plan-net-conf-3",
+    "conformance" : ["SHALL"],
+    "requirement" : "Server Actors claiming conformance to the REST API in this guide **SHALL** meet the capability statement expectation requirements identified in the [Plan Net CapabilityStatement](CapabilityStatement-plan-net.html) and **SHALL** have a CapabilityStatement that has a CapabilityStatement.instantiates containing the canonical URL http://hl7.org/fhir/us/davinci-pdex-plan-net/CapabilityStatement/plan-net or a URL to the appropriate version of the CapabilityStatement."
+  },
+  {
+    "key" : "plan-net-conf-4",
+    "conformance" : ["SHOULD",
+    "MAY"],
+    "requirement" : "Server Actors claiming conformance to this guide SHOULD meet the capability statement expectation requirements identified in the [Plan-Net Bulk Publish CapabilityStatement](CapabilityStatement-plan-net-bulk-publish.html). Server Actors claiming conformance to this guide MAY have a CapabilityStatement that has a CapabilityStatement.instantiates with a URL of http://hl7.org/fhir/us/davinci-pdex-plan-net/CapabilityStatement/plan-net-bulk-publish."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+      "valueBoolean" : true
+    }],
+    "key" : "plan-net-conf-5",
+    "label" : "Server Actor Requirements",
+    "conformance" : ["SHALL"],
+    "requirement" : "Server Actor Requirements\r\n\r\n* Health Plan API actors **SHALL** be capable of populating all Must Support data elements as part of the query results.\r\n* In situations where information on a particular Must Support data element is not present and the minimum cardinality is 0 , the Health Plan API actors **SHALL NOT** include the data elements in the resource instance returned as part of the query results.\r\n* In situations where information on a particular data element is not present and the minimum cardinality is >0 **SHALL** send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or use the dataAbsentReason extension."
+  },
+  {
+    "key" : "plan-net-conf-6",
+    "label" : "Application Actor Requirements",
+    "conformance" : ["SHALL",
+    "SHOULD"],
+    "requirement" : "Application Actor Requirements\r\n\r\n* Application actors **SHALL** be capable of processing resource instances containing the Must Support data elements without generating an error or causing the application to fail.\r\n* Application actors **SHOULD** be capable of displaying the data elements for human use or storing the information for other purposes.\r\n* When querying Health Plan API actors, Application actors **SHALL** interpret missing Must Support data elements within resource instances as data not present in the Health Plan API actors system.\r\n* Consumer App actors **SHALL** be able to process resource instances containing Must Support data elements asserting missing information."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+      "valueBoolean" : true
+    }],
+    "key" : "plan-net-imp-1",
+    "requirement" : "A conformant Plan-Net service **SHALL NOT** require a directory mobile application to send consumer identifying information in order to query content."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+      "valueBoolean" : true
+    }],
+    "key" : "plan-net-imp-2",
+    "requirement" : "A directory mobile application **SHALL NOT** send consumer identifiable information when querying a Plan-Net service."
+  },
+  {
+    "key" : "plan-net-imp-3",
+    "conformance" : ["SHALL"],
+    "requirement" : "Server Actors **SHALL** use the [Plan-Net profiles and search parameters](artifacts.html) defined in this IG as well as the [core FHIR R4 search parameters](implementation.html#search-parameters) used by this IG consistently in order to achieve true interoperability of directory information among payers. The intent of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data. The Plan-Net design is based around the following types of searches."
+  },
+  {
+    "key" : "plan-net-imp-4",
+    "conformance" : ["SHALL"],
+    "requirement" : "When sourcing data from other sources such as a generic FHIR server, setting active to false in the source system will make the data invalid from a Plan-Net perspective, so it **SHALL** be removed from the target Plan-Net directory."
+  },
+  {
+    "key" : "plan-net-imp-5",
+    "conformance" : ["SHALL"],
+    "requirement" : "Server Actors **SHALL** provide appropriate set of [Plan-Net HealthcareService](StructureDefinition-plannet-HealthcareService.html) instances"
+  },
+  {
+    "key" : "plan-net-imp-6",
+    "label" : "Plan Net Search Parameter Requirements",
+    "conformance" : ["SHALL",
+    "SHOULD"],
+    "requirement" : "Plan-Net servers and clients **SHALL** support the following search parameters:\r\n\r\n* All the search parameters defined on the [Artifacts](artifacts.html) page of this IG.\r\n* All the seach parameters defined in the [US Core implementation guide](http://hl7.org/fhir/us/core/STU7) for the US core resources inherited in this IG.\r\n* The following [Core FHIR R4](http://hl7.org/fhir/r4) search parameters:\r\n\r\n[Endpoint](https://hl7.org/fhir/R4/endpoint.html#search)\r\n\r\n* organization\r\n\r\n[HealthcareService](https://hl7.org/fhir/R4/healthcareservice.html#search)\r\n\r\n* coverage-area\r\n* identifier\r\n* endpoint\r\n* location\r\n* name\r\n* organization\r\n* service-category\r\n* service-type\r\n* specialty\r\n\r\n[InsurancePlan](https://hl7.org/fhir/R4/insuranceplan.html#search)\r\n\r\n* administered-by\r\n* identifier\r\n* name\r\n* owned-by\r\n* type\r\n\r\n[Location](https://hl7.org/fhir/R4/location.html#search)\r\n\r\n* address\r\n* address-city\r\n* address-country\r\n* address-postalcode\r\n* address-state\r\n* address-use\r\n* endpoint\r\n* organization\r\n* partof\r\n* type\r\n\r\n[Organization](https://hl7.org/fhir/R4/organization.html#search)\r\n\r\n* address\r\n* endpoint\r\n* name\r\n* partof\r\n* type\r\n\r\n[OrganizationAffiliation](https://hl7.org/fhir/R4/organizationaffiliation.html#search)\r\n\r\n* endpoint\r\n* location\r\n* network\r\n* participating-organization\r\n* primary-organization\r\n* role\r\n* service\r\n* specialty\r\n\r\n[Practitioner](https://hl7.org/fhir/R4/practitioner.html#search)\r\n\r\n* family\r\n* given\r\n* name\r\n\r\n[PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html#search)\r\n\r\n* endpoint\r\n* location\r\n* organization\r\n* practitioner\r\n* role\r\n* service\r\n* specialty\r\n\r\nPlan-Net servers and clients **SHOULD** support all core FHIR search parameters for the resources used in this IG.\r\n\r\nNote that versions of Plan Net prior to 2.0.0 contained custom search parameters that were duplicates of core FHIR search parameters. Those have been removed in 2.0.0 and later releases. See the [Change Log](ChangeHistory.html#changes-and-updates-for-version-200-ballot) for details.\r\n\r\n#### Chaining and Reverse Chaining Requirements\r\n\r\nServer Actors **SHALL** support chaining for the following resources and search parameters and **SHOULD** support reverse chaining as well.\r\n\r\n| | | |\r\n| :--- | :--- | :--- |\r\n| Endpoint | [organization][endpoint-organization] | `name`,`address`,`partof`,`type` |\r\n| HealthcareService | [endpoint][healthcareservice-endpoint] | `organization` |\r\n| HealthcareService | [location][healthcareservice-location] | `address`,`address-postalcode`,`address-city`,`address-state`,`organization`,`type` |\r\n| HealthcareService | [organization][healthcareservice-organization] | `name`,`address`,`partof`,`type` |\r\n| InsurancePlan | [administered-by][insuranceplan-administered-by] | `name`,`partof` |\r\n| InsurancePlan | [owned-by][insuranceplan-owned-by] | `name`,`partof` |\r\n| Location | [endpoint][location-endpoint] | `organization` |\r\n| Location | [organization][location-organization] | `name`,`address`,`partof`,`type` |\r\n| Location | [partof][location-partof] | `type`,`address`,`organization` |\r\n| Organization | [endpoint][organization-endpoint] | `organization` |\r\n| Organization | [partof][organization-partof] | `name`,`address`,`type` |\r\n| OrganizationAffiliation | [endpoint][organizationaffiliation-endpoint] | `organization` |\r\n| OrganizationAffiliation | [location][organizationaffiliation-location] | `address`,`address-postalcode`,`address-city`,`address-state`,`organization`,`type` |\r\n| OrganizationAffiliation | [network][organizationaffiliation-network] | `name`,`partof` |\r\n| OrganizationAffiliation | [participating-organization][organizationaffiliation-participating-organization] | `type`,`address`,`name`,`partof` |\r\n| OrganizationAffiliation | [primary-organization][organizationaffiliation-primary-organization] | `type`,`address`,`name`,`partof` |\r\n| OrganizationAffiliation | [service][organizationaffiliation-service] | `service-category`,`organization`,`location` |\r\n| PractitionerRole | [endpoint][practitionerrole-endpoint] | `organization` |\r\n| PractitionerRole | [location][practitionerrole-location] | `address`,`address-postalcode`,`address-city`,`address-state`,`organization`,`type` |\r\n| PractitionerRole | [network][practitionerrole-network] | `name`,`address`,`partof`,`type` |\r\n| PractitionerRole | [organization][practitionerrole-organization] | `name`,`address`,`partof`,`type` |\r\n| PractitionerRole | [practitioner][practitionerrole-practitioner] | `name` |\r\n| PractitionerRole | [service][practitionerrole-service] | `service-category`,`organization`,`location` |"
+  },
+  {
+    "key" : "plan-net-security-1",
+    "conformance" : ["SHALL"],
+    "requirement" : "Users of this implementation guide **SHALL** conform to the [Da Vinci HRex](http://hl7.org/fhir/us/davinci-hrex/1.2.0/security.html) guidelines on privacy, safety, and security."
+  }]
 }
