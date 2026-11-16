@@ -168,6 +168,7 @@ Description:    "A Location is the physical place where healthcare services are 
 * telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system MS
 * telecom.value MS
+* physicalType from http://terminology.hl7.org/ValueSet/location-physical-type (preferred)
 * position MS
 * managingOrganization 0..1 MS
 * managingOrganization only Reference(PlannetOrganization)
