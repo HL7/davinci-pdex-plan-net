@@ -14,12 +14,12 @@ Usage: #example
 * qualification[0].code.text = "MD"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* qualification[1].code = $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
+* qualification[1].code = http://nucc.org/provider-taxonomy|26.1#207R00000X "Internal Medicine Physician"
 * qualification[1].issuer.display = "American Board of Internal Medicine"
 * qualification[1].code.text = "Board Certified Internal Medicine"
 * qualification[1].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[1].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* qualification[2].code = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease Physician"
+* qualification[2].code = http://nucc.org/provider-taxonomy|26.1#207RC0000X "Cardiovascular Disease Physician"
 * qualification[2].issuer.display = "American Board of Internal Medicine"
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
@@ -41,12 +41,12 @@ Usage: #example
 * qualification[0].code.text = "MD"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* qualification[1].code = $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
+* qualification[1].code = http://nucc.org/provider-taxonomy|26.1#207R00000X "Internal Medicine Physician"
 * qualification[1].issuer.display = "American Board of Internal Medicine"
 * qualification[1].code.text = "Board Certified Internal Medicine"
 * qualification[1].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[1].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* qualification[2].code = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease Physician"
+* qualification[2].code = http://nucc.org/provider-taxonomy|26.1#207RC0000X "Cardiovascular Disease Physician"
 * qualification[2].issuer.display = "American Board of Internal Medicine"
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
@@ -67,8 +67,8 @@ Usage: #example
 * healthcareService = Reference(HansSoloService)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HansSoloClinic)
-* specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
-* extension[qualification].extension[code].valueCodeableConcept = $NUCCProviderTaxonomy#207R00000X 
+* specialty =  http://nucc.org/provider-taxonomy|26.1#207R00000X "Internal Medicine Physician"
+* extension[qualification].extension[code].valueCodeableConcept = http://nucc.org/provider-taxonomy|26.1#207R00000X 
 * extension[qualification].extension[issuer].valueReference.display = "American Board of Internal Medicine"
 * extension[qualification].extension[status].valueCode = QualificationStatusCS#active 
 // specialty = internal medicine
@@ -89,7 +89,7 @@ Usage: #example
 * extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * extension[healthcare-service-period].valuePeriod.start = "2020-07-07"
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#outpat 
-* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
+* specialty = http://nucc.org/provider-taxonomy|26.1#207Q00000X "Family Medicine Physician"  
 * location[0] = Reference(HansSoloClinic)
 
 Instance: HansSoloClinic
@@ -145,7 +145,7 @@ Usage: #example
 * name.family = "Smith"
 * name.given[0] = "Susie"
 // * birthDate = "1991-11-02"
-* qualification[0].code = $NUCCProviderTaxonomy#101YP2500X "Professional Counselor"
+* qualification[0].code = http://nucc.org/provider-taxonomy|26.1#101YP2500X "Professional Counselor"
 * qualification[0].issuer.display = "State of Illinois"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
@@ -162,7 +162,7 @@ Usage: #example
 * practitioner = Reference(Counselor)
 * healthcareService = Reference(VirtualCounselService)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
-* specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
+* specialty =  http://nucc.org/provider-taxonomy|26.1#101YP2500X  "Professional Counselor"
 * telecom[0].system = #url
 * telecom[0].value = "https://www.example.org"
 
@@ -179,7 +179,7 @@ Usage: #example
 * extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#tdd 
 * extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#phone 
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#prov "Medical Provider"
-* specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
+* specialty =  http://nucc.org/provider-taxonomy|26.1#101YP2500X  "Professional Counselor"
 
 Instance: JoeSmithRole1
 InstanceOf: PlannetPractitionerRole
@@ -192,7 +192,7 @@ Usage: #example
 * healthcareService = Reference(HospERService)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HospLoc1)
-* specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
+* specialty =  http://nucc.org/provider-taxonomy|26.1#207R00000X "Internal Medicine Physician"
 * organization = Reference(Hospital)
 // specialty = internal medicine
 // available M-F
@@ -211,7 +211,7 @@ Usage: #example
 * healthcareService = Reference(BurrClinicServices)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HospLoc2)
-* specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
+* specialty =  http://nucc.org/provider-taxonomy|26.1#207R00000X "Internal Medicine Physician"
 * organization = Reference(BurrClinic)
 * telecom[0].system = #url
 * telecom[0].value = "https://www.example.org"
@@ -224,8 +224,8 @@ Usage: #example
 * active = true
 * code = ProviderRoleCS#ap 
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
-* specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
-* specialty[1] = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease Physician"
+* specialty[0] =  http://nucc.org/provider-taxonomy|26.1#207R00000X "Internal Medicine Physician"
+* specialty[1] = http://nucc.org/provider-taxonomy|26.1#207RC0000X "Cardiovascular Disease Physician"
 * organization = Reference(Hospital)
 * telecom[0].system = #url
 * telecom[0].value = "https://www.example.org"
@@ -240,7 +240,7 @@ Usage: #example
 * healthcareService = Reference(BurrClinicServices)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HospLoc2)
-* specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
+* specialty[0] =  http://nucc.org/provider-taxonomy|26.1#207R00000X "Internal Medicine Physician"
 * organization = Reference(CancerClinic)
 * telecom[0].system = #url
 * telecom[0].value = "https://www.example.org"
@@ -254,7 +254,7 @@ Usage: #example
 * extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#outpat
 * providedBy = Reference(CancerClinic)
-* specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology Physician"  
+* specialty = http://nucc.org/provider-taxonomy|26.1#207RX0202X "Medical Oncology Physician"  
 * location[0] = Reference(CancerClinicLoc)
 
 Instance: CancerClinicLoc

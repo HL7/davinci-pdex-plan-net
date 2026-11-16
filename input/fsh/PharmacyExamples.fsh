@@ -71,7 +71,7 @@ Usage: #example
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/accepting-patients#existptonly
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#pharm   "Pharmacy"
-* specialty = $NUCCProviderTaxonomy#3336C0003X "Community/Retail Pharmacy"
+* specialty = http://nucc.org/provider-taxonomy|26.1#3336C0003X "Community/Retail Pharmacy"
 * providedBy = Reference(PharmChain)
 * location[0] = Reference(PharmLoc1)
 * location[1] = Reference(PharmLoc2)
@@ -94,7 +94,7 @@ Usage: #example
 * location[0] = Reference(PharmLoc1)
 * location[1] = Reference(PharmLoc2)
 * code = http://terminology.hl7.org/CodeSystem/organization-affiliation-role#pharmacy 
-* specialty = $NUCCProviderTaxonomy#3336C0003X "Community/Retail Pharmacy"
+* specialty = http://nucc.org/provider-taxonomy|26.1#3336C0003X "Community/Retail Pharmacy"
 
 Instance: PharmChainAffil2
 InstanceOf: PlannetOrganizationAffiliation
@@ -105,7 +105,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * network = Reference(AcmeofCTStdNet)
-* specialty = $NUCCProviderTaxonomy#3336C0004X "Compounding Pharmacy"
+* specialty = http://nucc.org/provider-taxonomy|26.1#3336C0004X "Compounding Pharmacy"
 * participatingOrganization = Reference (PharmChain)
 * healthcareService = Reference(PharmChainCompService)
 * location[0] = Reference(PharmLoc1)
@@ -123,7 +123,7 @@ Usage: #example
 * participatingOrganization = Reference (PharmChain)
 * healthcareService = Reference(PharmChainMailService)
 * code = http://terminology.hl7.org/CodeSystem/organization-affiliation-role#pharmacy 
-* specialty = $NUCCProviderTaxonomy#3336M0002X "Mail Order Pharmacy"
+* specialty = http://nucc.org/provider-taxonomy|26.1#3336M0002X "Mail Order Pharmacy"
 
 
 Instance: PharmChainCompService
@@ -137,7 +137,7 @@ Usage: #example
 * name = "Compounding Pharmacy by OrgA"
 * extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#pharm "Pharmacy"
-* specialty = $NUCCProviderTaxonomy#3336C0004X "Compounding Pharmacy"
+* specialty = http://nucc.org/provider-taxonomy|26.1#3336C0004X "Compounding Pharmacy"
 * specialty.text = "Compounding Pharmacy"
 * providedBy = Reference(PharmChain)
 * location[0] = Reference(PharmLoc1)
@@ -158,7 +158,7 @@ Usage: #example
 * extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#tdd 
 * extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  http://terminology.hl7.org/CodeSystem/virtual-healthcare-delivery-method#phone 
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#pharm "Pharmacy"
-* specialty = $NUCCProviderTaxonomy#3336M0002X "Mail Order Pharmacy"
+* specialty = http://nucc.org/provider-taxonomy|26.1#3336M0002X "Mail Order Pharmacy"
 * providedBy = Reference(PharmChain)
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"

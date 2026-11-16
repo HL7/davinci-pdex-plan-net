@@ -28,7 +28,5 @@
     "Location"
   ],
   "multipleOr": true,
-  "multipleAnd": true,
-  "chain": [
-  ]
+  "multipleAnd": true
 }
