@@ -4,6 +4,7 @@ Description: "Practitioner Dr Joe Smith"
 Usage: #example
 * active = true
 * extension[practitioner-period].valuePeriod.start = "2020-07-07"
+* extension[verification-status].valueCodeableConcept = PlannetVerificationStatusCS#complete "Complete"
 * identifier[NPI].value = "9941339100"
 * identifier[NPI].system = $NPICS
 * name.text = "Joe Smith, MD"
@@ -268,6 +269,7 @@ Usage: #example
 * managingOrganization = Reference(CancerClinic)
 * extension[accessibility][1].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/care-service-accessibility#pubtrans
 * extension[accessibility][0].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/care-service-accessibility#adacomp
+* extension[location-period].valuePeriod..start = "2024-02-01T16:02:00-05:00"
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2

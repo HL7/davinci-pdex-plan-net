@@ -313,7 +313,8 @@ Title:          "Plan-Net Practitioner"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * obeys practitioner-birthdate
 * extension contains
-   PractitionerPeriod named practitioner-period 0..1 MS 
+   PractitionerPeriod named practitioner-period 0..1 MS  and
+   VerificationStatus named verification-status 0..1
 * identifier.type MS
 * identifier.value MS
 * active 1..1  MS

@@ -12,23 +12,14 @@ WARNING: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGu
 
 
 
-# 3 - INFORMATION: Previously defined CodeSystems currently in use by implementers. Will leave for an STU Update with the intent to make the change during a major version
-
-INFORMATION: CodeSystem/AcceptingPatientsCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
-INFORMATION: CodeSystem/AccessibilityCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
-INFORMATION: CodeSystem/DeliveryMethodCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+# 3 - INFORMATION: Previously defined CodeSystems currently in use by implementers. Some have moved to THO during harmonization with FAST/NDH, but some are still in progress and need to be harmonized. Since the NDH work will not be done by our ballot content deadline we will revisit these post-ballot. 
 INFORMATION: CodeSystem/EndpointConnectionTypeCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/EndpointPayloadTypeCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
-INFORMATION: CodeSystem/HealthcareServiceCategoryCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/InsurancePlanTypeCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
-INFORMATION: CodeSystem/InsuranceProductTypeCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/LanguageProficiencyCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/OrgTypeCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
-INFORMATION: CodeSystem/OrganizationAffiliationRoleCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/ProviderRoleCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/QualificationStatusCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
-INFORMATION: CodeSystem/VirtualModalitiesCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
-
 
 
 # 4 - Acknowledge this IG is using code systems that are draft in THO
@@ -37,24 +28,19 @@ INFORMATION: ValueSet/OrganizationAffiliationRoleVS: ValueSet.compose.exclude[0]
 
 
 # 5 - Information Message regarding a deprecated extension (maxValueSet), that was inherited through the FHIR R4 standard itself.
-INFORMATION: StructureDefinition/plannet-Endpoint: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
-INFORMATION: StructureDefinition/plannet-Endpoint: StructureDefinition.snapshot.element[12].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet|5.2.0 is deprecated
+
+
 
 
 # 6 - "All slices" constraints on the repeating element are either inherited from US Core and/or are explicitly meant to apply across all slices
-
-INFORMATION: StructureDefinition/plannet-Network: StructureDefinition.snapshot.element[19].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/plannet-Network: StructureDefinition.snapshot.element[20].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/plannet-Network: StructureDefinition.snapshot.element[21].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[21].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[22].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[23].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-INFORMATION: StructureDefinition/plannet-Practitioner: StructureDefinition.snapshot.element[18].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
 # 7 - Deprecated pattern slicing from an inherited US Core profile
-INFORMATION: StructureDefinition/plannet-Network: StructureDefinition.snapshot.element[10].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/plannet-Practitioner: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 
 # 8 - Acknowledge the use of an older version of US Core
 
@@ -62,8 +48,6 @@ WARNING: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGu
 
 # 9 - The NUCC code system in tx.fhir.org is stuck at 22.1 which is 4 years old. Latest is 26.1, and this IG includes codes from that version which is causing expansion to fail for value sets that include them. There is a pull request to update NUCC on tx.fhir.org here: https://github.com/FHIR/packages/pull/55. Also see this Zulip thread for discussions on the topic: https://chat.fhir.org/#narrow/channel/179202-terminology/topic/Add.20versionNeeded.20to.20NUCC.20code.20system.20on.20tx.2Efhir.2Eorg.3F/with/638256168
 
-%None of the codings provided are in the value set 'Specialties VS' (http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/SpecialtiesVS|2.0.0-ballot), and a coding from this value set is required)%
-%None of the codings provided are in the value set 'Individual and Group Specialties' (http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/IndividualAndGroupSpecialtiesVS|2.0.0-ballot), and a coding from this value set is required)%
 
 # 10 Da Vinci IGs require supporting multiple US Core versions as dependencies, which results in these errors:
 ERROR: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[3]: The canonical URL http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core points to the package hl7.fhir.us.core which is inconsistent with the stated packageId of hl7.fhir.us.core.v610
@@ -71,10 +55,11 @@ ERROR: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuid
 ERROR: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[4]: The canonical URL http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core points to the package hl7.fhir.us.core which is inconsistent with the stated packageId of hl7.fhir.us.core.v311
 ERROR: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[4]: The packageId hl7.fhir.us.core.v311 points to the canonical http://hl7.org/fhir/us/core/v311 which is inconsistent with the stated canonical of http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
 
-# Acknowledge depending on the ballot version of Bulk Data 4.0.0. Will update to the final version when it is published.
+# 10 Acknowledge depending on the ballot version of Bulk Data 4.0.0. Will update to the final version when it is published.
 WARNING: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[6]: The ImplementationGuide uses package hl7.fhir.uv.bulkdata#4.0.0-ballot released on 2026-08-07, but the most recent appropriate version is 3.0.0. This reference is getting old and the more recent version should be considered
 
-# Acknowledge pinned canonical URLs
+# 11 Acknowledge pinned canonical URLs
+
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-location to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: StructureDefinition.snapshot.element[10].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/location-boundary-geojson to 5.4.0 from choices of 1.0.0 (hl7.fhir.uv.extensions.r4#1.0.0), 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0-cibuild (hl7.fhir.uv.extensions.r4#5.1.0-snapshot1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (hl7.fhir.uv.extensions.r4#5.3.0), 5.4.0 (hl7.fhir.uv.extensions.r4#5.4.0)
 INFORMATION: StructureDefinition.snapshot.element[23].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0116 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.5.0), 3.0.0 (hl7.terminology.r4#7.5.0)
@@ -87,7 +72,6 @@ INFORMATION: StructureDefinition.snapshot.element[44].binding.valueSet: Pinned t
 INFORMATION: StructureDefinition.differential.element[3].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/organization-period to 5.4.0 from choices of 1.0.0 (hl7.fhir.uv.extensions.r4#1.0.0), 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0-cibuild (hl7.fhir.uv.extensions.r4#5.1.0-snapshot1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (hl7.fhir.uv.extensions.r4#5.3.0), 5.4.0 (hl7.fhir.uv.extensions.r4#5.4.0)
 INFORMATION: StructureDefinition/plannet-Network: StructureDefinition.snapshot.element[11].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/plannet-Network: StructureDefinition.snapshot.element[22].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: StructureDefinition.snapshot.element[10].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/organization-period to 5.4.0 from choices of 1.0.0 (hl7.fhir.uv.extensions.r4#1.0.0), 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0-cibuild (hl7.fhir.uv.extensions.r4#5.1.0-snapshot1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (hl7.fhir.uv.extensions.r4#5.3.0), 5.4.0 (hl7.fhir.uv.extensions.r4#5.4.0)
 INFORMATION: StructureDefinition.snapshot.element[41].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/geolocation to 5.4.0 from choices of 1.0.0 (hl7.fhir.uv.extensions.r4#1.0.0), 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0-cibuild (hl7.fhir.uv.extensions.r4#5.1.0-snapshot1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (hl7.fhir.uv.extensions.r4#5.3.0), 5.4.0 (hl7.fhir.uv.extensions.r4#5.4.0)
 INFORMATION: StructureDefinition.snapshot.element[48].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
@@ -102,9 +86,7 @@ INFORMATION: StructureDefinition/plannet-Practitioner: StructureDefinition.snaps
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[5].source: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[6].source: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: StructureDefinition.snapshot.element[42].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/USPS-State to 2.0.0 from choices of 1.0.0 (hl7.terminology.r4#7.INFORMATION: StructureDefinition.snapshot.element[13].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/USPS-State to 2.0.0 from choices of 1.0.0 (hl7.terminology.r4#7.1.0), 2.0.0 (hl7.terminology.r4#7.5.0)
 INFORMATION: StructureDefinition.differential.element[10].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/USPS-State to 2.0.0 from choices of 1.0.0 (hl7.terminology.r4#7.1.0), 2.0.0 (hl7.terminology.r4#7.5.0)
-1.0), 2.0.0 (hl7.terminology.r4#7.5.0)
 INFORMATION: StructureDefinition.snapshot.element[32].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/USPS-State to 2.0.0 from choices of 1.0.0 (hl7.terminology.r4#7.1.0), 2.0.0 (hl7.terminology.r4#7.5.0)
 INFORMATION: StructureDefinition.differential.element[25].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/USPS-State to 2.0.0 from choices of 1.0.0 (hl7.terminology.r4#7.1.0), 2.0.0 (hl7.terminology.r4#7.5.0)
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://terminology.hl7.org/CodeSystem/endpoint-connection-type to 2.1.1 from choices of 1.0.0 (hl7.terminology.r4#5.0.0), 2.1.0 (hl7.terminology.r4#5.5.0), 2.1.1 (hl7.terminology.r4#7.5.0)

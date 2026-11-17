@@ -38,3 +38,4 @@ The following FHIR Resources are used in this IG:
 * [searchparameter](http://hl7.org/fhir/R4/searchparameter.html)
 * [structuredefinition](http://hl7.org/fhir/R4/structuredefinition.html)
 * [valueset](http://hl7.org/fhir/R4/valueset.html)
+* [verificationresult](http://hl7.org/fhir/R4/verificationresult.html)

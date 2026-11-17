@@ -80,7 +80,6 @@
 <artifact id="StructureDefinition/location-reference" key="StructureDefinition-location-reference" name="Location Reference"/>
 <artifact deprecated="true" id="StructureDefinition/plannet-Location-reference-extension" key="LocationReference" name="Location- reference"/>
 <artifact id="ValueSet/MinEndpointConnectionTypeVS" key="ValueSet-MinEndpointConnectionTypeVS" name="Minimum Endpoint Connection Types VS"/>
-<artifact id="ValueSet/VerificationProcessVS" key="ValueSet-VerificationProcessVS" name="NDH Verification Process Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/plannet-Network-reference-extension" key="FromNetwork" name="Netowrk - reference"/>
 <artifact id="StructureDefinition/network-reference" key="StructureDefinition-network-reference" name="Network Reference"/>
 <artifact id="ValueSet/NetworkTypeVS" key="ValueSet-NetworkTypeVS" name="Network Type VS"/>
@@ -117,6 +116,7 @@
 <artifact deprecated="true" id="StructureDefinition/plannet-PractitionerRole" key="PractitionerRole" name="Plan-Net PractitionerRole"/>
 <artifact id="CodeSystem/PlannetVerificationStatusCS" key="CodeSystem-PlannetVerificationStatusCS" name="Plannet Resource Instance Verification Status Code System"/>
 <artifact id="StructureDefinition/Plannet-Verification" key="StructureDefinition-Plannet-Verification" name="Plannet Verification"/>
+<artifact id="ValueSet/VerificationProcessVS" key="ValueSet-VerificationProcessVS" name="Plannet Verification Process Value Set"/>
 <artifact id="StructureDefinition/base-ext-verification-status" key="StructureDefinition-base-ext-verification-status" name="Plannet Verification Status"/>
 <artifact id="ValueSet/PlannetVerificationStatusVS" key="ValueSet-PlannetVerificationStatusVS" name="Plannet Verification Status Value Set"/>
 <artifact deprecated="true" id="SearchParameter/endpoint-organization" key="SearchParameter-endpoint-organization" name="Plannet_sp_endpoint_organization"/>
@@ -185,6 +185,7 @@
 <artifact id="ValueSet/SpecialtiesVS" key="ValueSet-SpecialtiesVS" name="Specialties VS"/>
 <artifact id="ValueSet/SpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-SpecialtyAndDegreeLicenseCertificateVS" name="Specialties, Degrees, Licenses, and Certificates VS"/>
 <artifact id="Location/StateOfCTLocation" key="Location-StateOfCTLocation" name="StateOfCTLocation"/>
+<artifact id="VerificationResult/Verify-JoeSmith" key="VerificationResult-Verify-JoeSmith" name="Verify-JoeSmith"/>
 <artifact id="StructureDefinition/via-intermediary" key="CViaIntermediary" name="Via Intermediary"/>
 <artifact deprecated="true" id="CodeSystem/VirtualModalitiesCS" key="CodeSystem-VirtualModalitiesCS" name="Virtual Modalities"/>
 <artifact id="ValueSet/VirtualModalitiesVS" key="ValueSet-VirtualModalitiesVS" name="Virtual Modalities VS"/>
