@@ -41,6 +41,8 @@ INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snaps
 
 # 7 - Deprecated pattern slicing from an inherited US Core profile
 INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/plannet-Practitioner: StructureDefinition.snapshot.element[11].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/plannet-Practitioner: StructureDefinition.snapshot.element[20].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
 # 8 - Acknowledge the use of an older version of US Core
 
@@ -104,12 +106,15 @@ INFORMATION: StructureDefinition.snapshot.element[45].type[0].profile[0]: Pinned
 INFORMATION: StructureDefinition.snapshot.element[52].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: StructureDefinition.differential.element[11].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/geolocation to 5.4.0 from choices of 1.0.0 (hl7.fhir.uv.extensions.r4#1.0.0), 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0-cibuild (hl7.fhir.uv.extensions.r4#5.1.0-snapshot1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (hl7.fhir.uv.extensions.r4#5.3.0), 5.4.0 (hl7.fhir.uv.extensions.r4#5.4.0)
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://terminology.hl7.org/CodeSystem/validation-process to 2.0.0 from choices of 0.1.0 (hl7.terminology.r4#5.0.0), 1.0.0 (hl7.terminology.r4#5.5.0), 2.0.0 (hl7.terminology.r4#7.5.0)
+INFORMATION: StructureDefinition.snapshot.element[52].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/location-physical-type to 1.0.1 from choices of 0.3.0 (hl7.terminology.r4#5.0.0), 1.0.0 (hl7.terminology.r4#5.5.0), 1.0.1 (hl7.terminology.r4#7.5.0)
+INFORMATION: StructureDefinition.differential.element[16].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/location-physical-type to 1.0.1 from choices of 0.3.0 (hl7.terminology.r4#5.0.0), 1.0.0 (hl7.terminology.r4#5.5.0), 1.0.1 (hl7.terminology.r4#7.5.0)
 
 
 
-# Acknowledge use of a deprecated extension inherited from US Core
+# Acknowledge use of a deprecated extension in snapshots inherited from other specifications
 INFORMATION: StructureDefinition/plannet-Endpoint: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
 INFORMATION: StructureDefinition/plannet-Endpoint: StructureDefinition.snapshot.element[12].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet|5.4.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+INFORMATION: StructureDefinition/Plannet-Verification: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
 
 
 
