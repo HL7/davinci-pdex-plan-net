@@ -6,8 +6,9 @@
 This ballot includes significant changes to the Bulk Data requirements. Balloters are specifically requested to review the new guidance on Bulk Publish and updated Bulk Export details.
 
 Also, profiles on VerificationResult and a VerificationStatus extension were recently added to this IG in support of CMS-4214-P. These were largely taken from the NDH IG with minimal modification, in anticipation of future harmonization with the new version of NDH. Feedback on these new additions are encouraged.
-.
+
 Please submit comments through the HL7 ballot process.
+
 </div>
 
 ### Introduction
