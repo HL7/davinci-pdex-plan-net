@@ -116,6 +116,9 @@ INFORMATION: StructureDefinition/plannet-Endpoint: StructureDefinition.snapshot.
 INFORMATION: StructureDefinition/plannet-Endpoint: StructureDefinition.snapshot.element[12].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet|5.4.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
 INFORMATION: StructureDefinition/Plannet-Verification: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
 
+# The following CodeSystem was copied from NDH. Will work with the NDH authors to move this to THO post ballot. 
+INFORMATION: CodeSystem/PlannetVerificationStatusCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
 
 
 
