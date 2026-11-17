@@ -86,7 +86,7 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#emerg  
-* specialty =  $NUCCProviderTaxonomy#207P00000X   "Emergency Medicine Physician"
+* specialty =  http://nucc.org/provider-taxonomy|26.1#207P00000X   "Emergency Medicine Physician"
 * providedBy = Reference(Hospital)
 * location[0] = Reference(HospLoc1)
 
@@ -188,7 +188,7 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#prov 
-* specialty = $NUCCProviderTaxonomy#207X00000X "Orthopaedic Surgery Physician"   // Orthopedics
+* specialty = http://nucc.org/provider-taxonomy|26.1#207X00000X "Orthopaedic Surgery Physician"   // Orthopedics
 * providedBy = Reference(HartfordOrthopedics)
 * location[1] = Reference(HospLoc2)
 * location[0] = Reference(HospLoc1)
@@ -234,7 +234,7 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#outpat
-* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
+* specialty = http://nucc.org/provider-taxonomy|26.1#207Q00000X "Family Medicine Physician"  
 * providedBy = Reference(HamiltonClinic)
 * location[0] = Reference(HospLoc1)
 
@@ -292,7 +292,7 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#outpat
-* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
+* specialty = http://nucc.org/provider-taxonomy|26.1#207Q00000X "Family Medicine Physician"  
 * providedBy = Reference(BurrClinic)
 * location[0] = Reference(HospLoc1)
 
@@ -401,7 +401,7 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/service-delivery-method#physical
 * category = http://terminology.hl7.org/CodeSystem/ndh-healthcare-service-category#Outpatient
-* specialty = $NUCCProviderTaxonomy#3336C0003X   // Fix to Internal Medicine
+* specialty = http://nucc.org/provider-taxonomy|26.1#3336C0003X   // Fix to Internal Medicine
 * providedBy = Reference(OrganizationInternalMedicineLLC)
 * location[0] = Reference(RockvilleClinicLocation)
 

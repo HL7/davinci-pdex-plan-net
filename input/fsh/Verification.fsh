@@ -145,7 +145,7 @@ Usage: #example
 * qualification[=].code.text = "MD"
 * qualification[=].extension[scope].extension[status].valueCode = $CredentialStatusCS#active 
 * qualification[=].extension[scope].extension[whereValid].valueCodeableConcept = $USPSStateCS#CT 
-* qualification[+].code = $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
+* qualification[+].code = http://nucc.org/provider-taxonomy|26.1#207R00000X "Internal Medicine Physician"
 * qualification[=].issuer.display = "American Board of Internal Medicine"
 * qualification[=].code.text = "Board Certified Internal Medicine"
 * qualification[=].extension[scope].extension[status].valueCode = $CredentialStatusCS#active 
