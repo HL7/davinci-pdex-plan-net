@@ -27,6 +27,8 @@ extension:
     valueCode: trial-use
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
     valueCode: fm
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: 2
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:  
@@ -64,7 +66,7 @@ parameters:
   pin-canonicals: pin-multiples
   
 copyrightYear: 2026+
-releaseLabel: STU2
+releaseLabel: STU 2 ballot
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
 # │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │

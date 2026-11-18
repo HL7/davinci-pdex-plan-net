@@ -1,18 +1,18 @@
 == Suppressed Messages ==
 
-# 1 - This is a Da Vinci requirement, but the following historical IG versions did not include any JIRA trackers in their change logs, if they had a change log at all.
+# 01 - This is a Da Vinci requirement, but the following historical IG versions did not include any JIRA trackers in their change logs, if they had a change log at all.
 
 WARNING: DA VINCI: The Change Log page (ChangeHistory.html) does not include any Jira tracker items links for the section with title Changes and Updates for Version 1.0.0
 WARNING: DA VINCI: The Change Log page (ChangeHistory.html) does not include any Jira tracker items links for the section with title Changes and Updates for Version 0.1.0
 
 
-# 2 - NEW Warning about FMM Level Being missed - This warning showed up after all publication approvals, but before the IG was able to be published.
+# 02 - NEW Warning about FMM Level Being missed - This warning showed up after all publication approvals, but before the IG was able to be published.
 
 WARNING: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide: HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
 
 
 
-# 3 - INFORMATION: Previously defined CodeSystems currently in use by implementers. Some have moved to THO during harmonization with FAST/NDH, but some are still in progress and need to be harmonized. Since the NDH work will not be done by our ballot content deadline we will revisit these post-ballot. 
+# 03 - INFORMATION: Previously defined CodeSystems currently in use by implementers. Some have moved to THO during harmonization with FAST/NDH, but some are still in progress and need to be harmonized. Since the NDH work will not be done by our ballot content deadline we will revisit these post-ballot. 
 INFORMATION: CodeSystem/EndpointConnectionTypeCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/EndpointPayloadTypeCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/InsurancePlanTypeCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
@@ -22,40 +22,33 @@ INFORMATION: CodeSystem/ProviderRoleCS: CodeSystem: Most code systems defined in
 INFORMATION: CodeSystem/QualificationStatusCS: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
 
-# 4 - Acknowledge this IG is using code systems that are draft in THO
+# 04 - Acknowledge this IG is using code systems that are draft in THO
 INFORMATION: OrganizationAffiliation/HartfordOrthopedicAffil: OrganizationAffiliation.code[0]: Reference to draft CodeSystem http://hl7.org/fhir/organization-role|4.0.1 from active ValueSet http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/OrganizationAffiliationRoleVS|2.0.0-ballot
 INFORMATION: ValueSet/OrganizationAffiliationRoleVS: ValueSet.compose.exclude[0].concept[0]: Reference to draft CodeSystem http://hl7.org/fhir/organization-role|4.0.1 from active ValueSet http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/OrganizationAffiliationRoleVS|2.0.0-ballot
 
 
-# 5 - Information Message regarding a deprecated extension (maxValueSet), that was inherited through the FHIR R4 standard itself.
+# 05 - Information Message regarding a deprecated extension (maxValueSet), that was inherited through the FHIR R4 standard itself.
 
 
 
 
-# 6 - "All slices" constraints on the repeating element are either inherited from US Core and/or are explicitly meant to apply across all slices
+# 06 - "All slices" constraints on the repeating element are either inherited from US Core and/or are explicitly meant to apply across all slices
 INFORMATION: StructureDefinition/plannet-Network: StructureDefinition.snapshot.element[20].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/plannet-Network: StructureDefinition.snapshot.element[21].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[21].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[22].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[23].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
-# 7 - Deprecated pattern slicing from an inherited US Core profile
+# 07 - Deprecated pattern slicing from an inherited US Core profile
 INFORMATION: StructureDefinition/plannet-Organization: StructureDefinition.snapshot.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/plannet-Practitioner: StructureDefinition.snapshot.element[11].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/plannet-Practitioner: StructureDefinition.snapshot.element[20].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
-# 8 - Acknowledge the use of an older version of US Core
+# 08 - Acknowledge the use of an older version of US Core
 
 WARNING: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#7.0.0 released on 2024-05-08, but the most recent appropriate version is 9.0.0. This reference is getting old and the more recent version should be considered
 
-# 9 - The NUCC code system in tx.fhir.org is stuck at 22.1 which is 4 years old. Latest is 26.1, and this IG includes codes from that version which is causing expansion to fail for value sets that include them. There is a pull request to update NUCC on tx.fhir.org here: https://github.com/FHIR/packages/pull/55. Also see this Zulip thread for discussions on the topic: https://chat.fhir.org/#narrow/channel/179202-terminology/topic/Add.20versionNeeded.20to.20NUCC.20code.20system.20on.20tx.2Efhir.2Eorg.3F/with/638256168
-
-
-# 10 Da Vinci IGs require supporting multiple US Core versions as dependencies, which results in these errors:
-ERROR: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[3]: The canonical URL http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core points to the package hl7.fhir.us.core which is inconsistent with the stated packageId of hl7.fhir.us.core.v610
-ERROR: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[3]: The packageId hl7.fhir.us.core.v610 points to the canonical http://hl7.org/fhir/us/core/v610 which is inconsistent with the stated canonical of http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
-ERROR: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[4]: The canonical URL http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core points to the package hl7.fhir.us.core which is inconsistent with the stated packageId of hl7.fhir.us.core.v311
-ERROR: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[4]: The packageId hl7.fhir.us.core.v311 points to the canonical http://hl7.org/fhir/us/core/v311 which is inconsistent with the stated canonical of http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+# 09 - The NUCC code system in tx.fhir.org is stuck at 22.1 which is 4 years old. Latest is 26.1, and this IG includes codes from that version which is causing expansion to fail for value sets that include them. There is a pull request to update NUCC on tx.fhir.org here: https://github.com/FHIR/packages/pull/55. Also see this Zulip thread for discussions on the topic: https://chat.fhir.org/#narrow/channel/179202-terminology/topic/Add.20versionNeeded.20to.20NUCC.20code.20system.20on.20tx.2Efhir.2Eorg.3F/with/638256168
 
 # 10 Acknowledge depending on the ballot version of Bulk Data 4.0.0. Will update to the final version when it is published.
 WARNING: ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net: ImplementationGuide.dependsOn[6]: The ImplementationGuide uses package hl7.fhir.uv.bulkdata#4.0.0-ballot released on 2026-08-07, but the most recent appropriate version is 3.0.0. This reference is getting old and the more recent version should be considered
