@@ -82,9 +82,9 @@ menu:
     Use Cases: background.html
     Project and Participants: project.html
   Specification: 
-    Conformance Expectations        : Conformance_Expectations.html
-    Implementation                  : implementation.html
-    Privacy, Safety, and Security   : security.html
+    Conformance Expectations: confexpectations.html
+    Implementation: implementation.html
+    Privacy, Safety, and Security: security.html
   FHIR Artifacts: artifacts.html
   Base Specs:
     FHIR R4 Spec: new-tab {{site.data.fhir.path}}
@@ -99,5 +99,28 @@ menu:
     Specification Dashboard: https://jira.hl7.org/secure/Dashboard.jspa?selectPageId=11903
     Propose a Change: https://jira.hl7.org/secure/CreateIssueDetails!init.jspa?pid=10405&amp;issuetype=10600&amp;customfield_11302=FHIR-us-davinci-pas
     Downloads: downloads.html
-  Change Log       : ChangeHistory.html
-  History       : http://www.hl7.org/fhir/us/davinci-pdex-plan-net/history.cfml
+  Change Log: ChangeHistory.html
+  History: http://www.hl7.org/fhir/us/davinci-pdex-plan-net/history.cfml
+  
+  
+pages:
+  index.md:
+    title: Home
+  reading.md:
+    title: Reading this IG
+  confexpectations.md:
+    title: Conformance Expectations
+  project.md:
+    title: Project and Participants
+  background.md:
+    title: Background
+  implementation.md:
+    title: Implementation
+  security.md:
+    title: Privacy, Safety, and Security
+  artifacts.html:
+    title: Artifacts Summary
+  downloads.md:
+    title: Downloads
+  ChangeHistory.md:
+    title: Change History

@@ -33,7 +33,7 @@ The diagram below depicts the scope of this implementation guide (IG). The IG de
 
 The IG is organized into the following sections:
 
-* [Conformance Expectations](Conformance_Expectations.html): Conformance rules for this IG.
+* [Conformance Expectations](confexpectations.html): Conformance rules for this IG.
 * [Background](background.html): Provides examples of how this specification can be used healthcare organizations.
 * [Implementation](implementation.html): Provides examples of how this specification can be used healthcare organizations.
 * [Artifacts](artifacts.html): The computable FHIR artifacts (profiles, value sets, etc.) for this specification.
